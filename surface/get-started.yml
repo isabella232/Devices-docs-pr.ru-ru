@@ -1,0 +1,100 @@
+### YamlMime:Landing
+title: Документация по устройствам Surface
+summary: Используйте возможности Surface, Windows и Office, которые объединяет облако.
+metadata:
+  title: Документация по устройствам Surface
+  description: Начало работы с устройствами Microsoft Surface
+  ms.service: product-insights
+  ms.topic: landing-page
+  manager: laurawi
+  author: greg-lindsay
+  ms.author: greglin
+  audience: itpro
+  ms.localizationpriority: High
+  ms.openlocfilehash: 90908a9ff95875cf0c3337bf0b8e93f7bfc42e53
+  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.translationtype: MT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 06/27/2020
+  ms.locfileid: "10836850"
+landingContent:
+- title: Устройства Surface
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Surface Go 2 для бизнеса
+      url: https://www.microsoft.com/surface/business/surface-go-2
+    - text: Surface Book 3 для бизнеса
+      url: https://www.microsoft.com/surface/business/surface-book-3
+    - text: Ознакомьтесь со всеми продуктами семейства Surface
+      url: https://www.microsoft.com/surface/business
+- title: Get started
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Технический обзор графического процессора "Surface Book 3"
+      url: surface-book-gpu-overview.md
+    - text: Технический обзор Quadro 3000 RTX на Surface Book 3
+      url: surface-book-quadro.md
+    - text: Новые возможности дока на док-плоскости 2
+      url: surface-dock-whats-new.md
+- title: Развертывание устройств Surface
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Инструмент "ускоритель развертывания Surface"
+      url: microsoft-surface-deployment-accelerator.md
+    - text: Служба Autopilot и устройства Surface
+      url: windows-autopilot-and-surface-devices.md
+    - text: Виртуальный рабочий стол Windows на Surface
+      url: windows-virtual-desktop-surface.md
+- title: Управление поверхностными устройствами
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Управление обновлениями драйверов и встроенного ПО Surface, а также их развертывание
+      url: manage-surface-driver-and-firmware-updates.md
+    - text: Рекомендуемые параметры питания для устройств Surface
+      url: maintain-optimal-power-settings-on-Surface-devices.md
+    - text: Оптимизация соединения с Wi-Fi для устройств Surface
+      url: surface-wireless-connect.md
+- title: Ознакомьтесь с рекомендациями по безопасности
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Защищенные порты Surface Dock 2 с корпоративным режимом управления Surface Management (SEMM)
+      url: secure-surface-dock-ports-semm.md
+    - text: Управление параметрами UEFI Surface в Intune
+      url: surface-manage-dfci-guide.md
+    - text: Средство Surface Data Eraser
+      url: microsoft-surface-data-eraser.md
+- title: Изучите средства Surface
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Набор средств диагностики Surface для бизнеса
+      url: surface-diagnostic-toolkit-for-business-intro.md
+    - text: SEMM и UEFI
+      url: surface-enterprise-management-mode.md
+    - text: Параметр ограничения батареи
+      url: battery-limit.md
+- title: Обзор решений поддержки
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Основные решения поддержки
+      url: support-solutions-surface.md
+    - text: Защита данных во время восстановления или обслуживания поверхности
+      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
+    - text: Устранение неполадок с Surface Dock и стыковочными узлами Surface
+      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
+- title: Участие в сообществе Surface
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Блог о Surface для ИТ-специалистов
+      url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+    - text: Сообщество Surface Devices Tech Community
+      url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+    - text: Видео Microsoft Mechanics Surface
+      url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ

@@ -1,0 +1,54 @@
+### YamlMime:Hub
+title: Microsoft Surface
+summary: Узнайте, как планировать, развертывать и администрировать устройства Microsoft Surface и Surface Hub.
+brand: windows
+metadata:
+  title: Microsoft Surface
+  description: Узнайте, как планировать, развертывать и администрировать устройства Microsoft Surface и Surface Hub.
+  ms.prod: surface
+  ms.topic: hub-page
+  audience: ITPro
+  author: samanro
+  ms.author: samanro
+  ms.date: 07/03/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 7c723733836ee00e43571714c7df2ca11d3a8a49
+  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 06/27/2020
+  ms.locfileid: "10837151"
+additionalContent:
+  sections:
+  - title: Для ИТ-специалистов
+    items:
+    - title: Документация по устройствам Surface
+      summary: Используйте возможности Surface, Windows и Office, которые объединяет облако. Найдите средства, пошаговые руководства и другие ресурсы, которые помогут вам с планированием внедрения, развертыванием и администрированием устройств Surface в вашей организации.
+      url: https://docs.microsoft.com/en-us/surface/get-started
+    - title: Документация по Surface Hub
+      summary: Узнайте, как развернуть и настроить решение Surface Hub 2S, включающее цифровую интерактивную доску, платформу для собраний и вычислительное устройство для совместной работы.
+      url: https://docs.microsoft.com/surface-hub/index
+  - title: Другие ресурсы
+    items:
+    - title: Сообщества
+      links:
+      - text: Блог о Surface для ИТ-специалистов
+        url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+      - text: Сообщество технических специалистов по устройствам Surface
+        url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+    - title: Подробнее
+      links:
+      - text: Обучение работе с Surface на портале Microsoft Learn
+        url: https://docs.microsoft.com/learn/browse/?term=Surface
+      - text: Руководство по внедрению Surface Hub 2S
+        url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
+      - text: Видео Microsoft Mechanics Surface
+        url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
+    - title: Нужна помощь?
+      links:
+      - text: Устройства Surface
+        url: https://support.microsoft.com/products/surface-devices
+      - text: Surface Hub
+        url: https://support.microsoft.com/hub/4343507/surface-hub-help
+      - text: Обратитесь в службу поддержки Surface Hub
+        url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
