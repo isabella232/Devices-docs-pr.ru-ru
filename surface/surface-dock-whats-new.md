@@ -12,12 +12,12 @@ ms.date: 6/25/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 92838599a9d05dbe75f1caad948b97c9cb75bcac
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 1f6f4a7efb8dc345487e5e5054374f81a91a20d5
+ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834288"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860639"
 ---
 # Новые возможности дока на док-плоскости 2
 
@@ -35,19 +35,16 @@ Surface Dock 2 предназначен для упрощения управле
 - Windows 10 версии 1809. Устройства с Windows 7, Windows 8 и без Surface не поддерживаются. Surface Dock 2 работает со следующими устройствами Surface.
 
   - Surface Pro (5-го поколения)
-  - Surface Pro (5-го поколения) с дополнительным LTE
   - Surface ноутбук (1-го поколения)
   - Surface Pro 6
   - Surface Book 2
   - Surface Laptop 2
   - Surface Go
-  - Surface Go с функцией LTE Advanced 
   - Surface Pro 7
+  - Surface Pro X 
   - Surface ноутбук 3
   - Surface Book 3
   - Surface Go 2
-  - Surface Go 2 с улучшенным использованием LTE
-
 
 ## Компоненты Surface Dock 2
 
@@ -65,7 +62,6 @@ Surface Dock 2 предназначен для упрощения управле
 
   - Surface Book 3
   - Surface Go 2
-  - Surface Go 2 с улучшенным использованием LTE
   - Surface Pro 7
   - Surface Pro X
   - Surface ноутбук 3
@@ -74,7 +70,6 @@ Surface Dock 2 предназначен для упрощения управле
 
   - Surface Pro 6
   - Surface Pro (5-го поколения)
-  - Surface Pro (5-го поколения) с дополнительным LTE
   - Surface Laptop 2
   - Surface ноутбук (1-го поколения)
   - Surface Go

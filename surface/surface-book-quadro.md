@@ -8,15 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/02/2020
+ms.date: 7/07/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 52de90847d85698cba25cc511a4c6eda327c810d
-ms.sourcegitcommit: 1b673d9d3240d6217b36fcc5fea53c23ab8cf367
+ms.openlocfilehash: 35794e36f37041754ee722c286554437c6dd7be2
+ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857586"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860649"
 ---
 # Технический обзор Surface Book 3 Quadro RTX 3000
 
@@ -106,7 +107,7 @@ Surface Book 3 с Quadro RTX 3000 обеспечивает наилучшую п
 | **Конструктор веществ Adobe**                        | -Создание процедурных материалов для RTX ускоренного Bakers.<br><br>-Использует рендеринг Iray NVIDIA, в том числе текстурных и веществ и экспорт текстурных битов, для отрисовки в любых Iray, совместимых с MDL.<br><br>-DXR-ускорение света и наружный загораживание экрана зафиксировать.                                                                                                                                                                                                              |
 | **ANSYS**<br>**Обнаружение в реальном времени**                     | -ANSYS (ANSYS Discovery), основанный на CUDA, — это средство моделирования в режиме реального времени.                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Autodesk**<br>**Revit**                           | **Autodesk-протестированные и утвержденные для Surface Book 3 с Quadro RTX 3000**<br><br>-Окно просмотра с ускорителем в виде графического процессора для более гладкой и интерактивной работы с дизайном.<br><br>-Поддерживает сторонние трехмерные прорисовки с ускорителем, такие как V-Ray и Enscape.                                                                                                                                                                                                                                        |
-| **Autodesk**<br>**3ds Max**                         | **Autodesk-протестированные и утвержденные для Surface Book 3 с Quadro RTX 3000**<br><br>-Графические элементы окна просмотра с ускорителем для быстрой и интерактивной трехмерной модели.<br><br>-RTX-Ускоренная трассировка лучей и AI denoising с помощью обработчика Arnold по умолчанию.<br><br>-Более 70 процентов быстрее по сравнению с Surface Book 2 15.                                                                                                                                                        |
+| **Autodesk**<br>**AutoCad**                         | **Autodesk-протестированные и утвержденные для Surface Book 3 с Quadro RTX 3000**<br><br>-Графические элементы окна просмотра с ускорителем для быстрой и интерактивной трехмерной модели.<br><br>-RTX-Ускоренная трассировка лучей и AI denoising с помощью обработчика Arnold по умолчанию.<br><br>-Более 70 процентов быстрее по сравнению с Surface Book 2 15.                                                                                                                                                        |
 | **Autodesk**<br>**Юкатекского**                            | **Autodesk-протестированные и утвержденные для Surface Book 3 с Quadro RTX 3000**<br><br>-RTX-Ускоренная трассировка лучей и AI denoising с помощью обработчика Arnold по умолчанию.<br><br>-Ускорение просмотра OpenGL.                                                                                                                                                                                                                                                                                  |
 | **Bentleyная радиостанция**                            | **Bentley-протестированные и утвержденные для Surface Book 3 с Quadro RTX 3000**                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Dassaultные системы**<br>**Платформа 3D Experience** | – Обработка интерактивной трассировки лучей (в режиме реального времени), Ускоренная с помощью ядер RT.<br><br>-CATIA запускает более 100% по сравнению с Surface Book 2 15.                                                                                                                                                                                                                                                                                                                                     |
