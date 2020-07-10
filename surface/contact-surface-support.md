@@ -1,5 +1,5 @@
 ---
-title: Поддержка контактной поверхности
+title: Обратитесь в службу поддержки Surface
 ms.author: v-todmc
 author: todmccoy
 manager: laurawi
@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Информация о поддержке продуктов Microsoft Surface и Surface Hub.
-ms.openlocfilehash: 770c0c90762b2b6de7de66a06e04f1dcf4b231a2
-ms.sourcegitcommit: a292b4843d5808745b8320b721829a91d2b1a5d0
+ms.openlocfilehash: e36139b48e77907e0a2bc044e82cbc67c8bb6503
+ms.sourcegitcommit: ef49c3356fdce856b51239eb9c070df7b869e110
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861203"
+ms.locfileid: "10861251"
 ---
 # Поддержка Surface
 
@@ -38,8 +38,6 @@ ms.locfileid: "10861203"
 
 > [!NOTE]
 > Вам потребуется войти на портал отправки через Интернет с помощью учетной записи Майкрософт или учетной записи Azure Active Directory.  
-
-Вы можете отправить свой запрос, предоставив важные сведения вместе с запросом на онлайновый инцидент. Скачайте копию этого файла, добавьте необходимую информацию и отправьте ее после создания дела. 
 
 Для бизнес-клиентов: [отправьте запрос на обслуживание](https://support.microsoft.com/supportforbusiness/productselection?sapid=d383b26c-f150-6220-8f1b-e8aa325d9727). 
 
