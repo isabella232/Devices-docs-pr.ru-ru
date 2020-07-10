@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Microsoft Surface
+title: Microsoft Surface для ИТ-специалистов
 summary: Узнайте, как планировать, развертывать и администрировать устройства Microsoft Surface и Surface Hub.
 brand: windows
 metadata:
@@ -12,43 +12,59 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: 7c723733836ee00e43571714c7df2ca11d3a8a49
-  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.openlocfilehash: d751e7a08f492ed3b5799da08b5d0014123a758f
+  ms.sourcegitcommit: a292b4843d5808745b8320b721829a91d2b1a5d0
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "10837151"
+  ms.lasthandoff: 07/09/2020
+  ms.locfileid: "10861186"
+highlightedContent:
+  items:
+  - title: Документация по устройствам Surface
+    itemType: learn
+    url: https://docs.microsoft.com/surface/get-started
+  - title: Документация по Surface Hub
+    itemType: learn
+    url: https://docs.microsoft.com/surface-hub/index
 additionalContent:
   sections:
-  - title: Для ИТ-специалистов
+  - title: Ресурсы для Surface
+    summary: Найдите ресурсы для ваших устройств Microsoft Surface.
     items:
-    - title: Документация по устройствам Surface
-      summary: Используйте возможности Surface, Windows и Office, которые объединяет облако. Найдите средства, пошаговые руководства и другие ресурсы, которые помогут вам с планированием внедрения, развертыванием и администрированием устройств Surface в вашей организации.
-      url: https://docs.microsoft.com/en-us/surface/get-started
-    - title: Документация по Surface Hub
-      summary: Узнайте, как развернуть и настроить решение Surface Hub 2S, включающее цифровую интерактивную доску, платформу для собраний и вычислительное устройство для совместной работы.
-      url: https://docs.microsoft.com/surface-hub/index
-  - title: Другие ресурсы
-    items:
-    - title: Сообщества
+    - title: Общие сведения о Surface
+      links:
+      - text: Surface Go 2 для бизнеса
+        url: https://www.microsoft.com/surface/business/surface-go-2
+      - text: Surface Book 3 для бизнеса
+        url: https://www.microsoft.com/surface/business/surface-book-3
+      - text: Все продукты семейства Surface
+        url: https://www.microsoft.com/surface/business
+    - title: Сообщество Surface
       links:
       - text: Блог о Surface для ИТ-специалистов
         url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
       - text: Сообщество технических специалистов по устройствам Surface
         url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
-    - title: Подробнее
+    - title: Справка по Surface
       links:
-      - text: Обучение работе с Surface на портале Microsoft Learn
-        url: https://docs.microsoft.com/learn/browse/?term=Surface
-      - text: Руководство по внедрению Surface Hub 2S
-        url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
-      - text: Видео Microsoft Mechanics Surface
-        url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
-    - title: Нужна помощь?
+      - text: Обратитесь в службу поддержки Surface
+        url: contact-surface-support.md
+  - title: Ресурсы Surface Hub
+    summary: Найдите ресурсы для вашего Microsoft Surface Hub.
+    items:
+    - title: Общие сведения о Surface Hub
       links:
-      - text: Устройства Surface
-        url: https://support.microsoft.com/products/surface-devices
-      - text: Surface Hub
-        url: https://support.microsoft.com/hub/4343507/surface-hub-help
+      - text: Новые возможности Surface Hub 2S
+        url: /surface-hub/surface-hub-2s-whats-new.md
+      - text: Технические характеристики Surface Hub 2S
+        url: /surface-hub/surface-hub-2s-techspecs.md
+      - text: Основы операционной системы
+        url: /surface-hub/differences-between-surface-hub-and-windows-10-enterprise.md
+    - title: Сообщество Surface Hub
+      links:
+      - text: Техническое сообщество Surface Hub
+        url: https://techcommunity.microsoft.com/t5/surface-hub/bd-p/SurfaceHub
+    - title: Справка по Surface Hub
+      links:
       - text: Обратитесь в службу поддержки Surface Hub
         url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
