@@ -15,19 +15,19 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 98de32213861aa53ac00a565d4f81f0199995077
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 88c7029c99d69818e9f0b8fddef5fc193581963a
+ms.sourcegitcommit: 608226b64ef92743b1a3361877d4c49228e3ea5d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834275"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "10868753"
 ---
 # Основные решения поддержки для устройств Surface
 
 > [!Note]
-> **Домашние пользователи**: Эта статья предназначена только для ИТ-специалистов и агентов технической поддержки и применима только к устройствам Surface. Если вам нужна помощь в решении проблемы с вашим домашним устройством, посетите страницу [Справка по устройствам Surface](https://support.microsoft.com/products/surface-devices).
+> **Домашние пользователи**: Эта статья предназначена только для ИТ-специалистов и агентов технической поддержки и применима только к устройствам Surface. Если вам нужна помощь в решении проблемы с домашним устройством, обратитесь в [службу поддержки Surface](contact-surface-support.md?tabs=online).
 
-Ниже приведены рекомендации по устранению распространенных проблем, возникающих при использовании устройств Surface на предприятии. Если в этой статье не указана ваша неполадка, [обратитесь в службу поддержки Майкрософт](https://support.microsoft.com/supportforbusiness/productselection).
+Ниже приведены рекомендации по устранению распространенных проблем, возникающих при использовании устройств Surface на предприятии. Если в этой статье не указана ваша неполадка, [обратитесь в службу поддержки Surface](contact-surface-support.md?tabs=online).
 
 ## Драйверы и микропрограммы Surface
 
@@ -54,7 +54,7 @@ ms.locfileid: "10834275"
 
 ## Трещины или царапины на экране
 
-- [Обратиться в службу поддержки Майкрософт](https://support.microsoft.com/supportforbusiness/productselection)
+- [Обратитесь в службу поддержки Surface](contact-surface-support.md?tabs=online)
 
 ## Проблемы с питанием и батареей Surface
 
