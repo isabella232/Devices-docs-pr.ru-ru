@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 90908a9ff95875cf0c3337bf0b8e93f7bfc42e53
-  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.openlocfilehash: 79bd1f8bb8368efe391def8dafef22c687d08b4c
+  ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "10836850"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "10893071"
 landingContent:
 - title: Устройства Surface
   linkLists:
@@ -26,15 +26,15 @@ landingContent:
       url: https://www.microsoft.com/surface/business/surface-go-2
     - text: Surface Book 3 для бизнеса
       url: https://www.microsoft.com/surface/business/surface-book-3
-    - text: Ознакомьтесь со всеми продуктами семейства Surface
+    - text: Все продукты семейства Surface
       url: https://www.microsoft.com/surface/business
 - title: Get started
   linkLists:
   - linkListType: get-started
     links:
-    - text: Технический обзор графического процессора "Surface Book 3"
+    - text: Технический обзор Surface Book 3 GPU
       url: surface-book-gpu-overview.md
-    - text: Технический обзор Quadro 3000 RTX на Surface Book 3
+    - text: Технический обзор Surface Book 3 Quadro RTX 3000
       url: surface-book-quadro.md
     - text: Новые возможности дока на док-плоскости 2
       url: surface-dock-whats-new.md
@@ -48,7 +48,7 @@ landingContent:
       url: windows-autopilot-and-surface-devices.md
     - text: Виртуальный рабочий стол Windows на Surface
       url: windows-virtual-desktop-surface.md
-- title: Управление поверхностными устройствами
+- title: Сравнение устройств Surface
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -58,7 +58,7 @@ landingContent:
       url: maintain-optimal-power-settings-on-Surface-devices.md
     - text: Оптимизация соединения с Wi-Fi для устройств Surface
       url: surface-wireless-connect.md
-- title: Ознакомьтесь с рекомендациями по безопасности
+- title: Изучение руководства по безопасности
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -78,7 +78,7 @@ landingContent:
       url: surface-enterprise-management-mode.md
     - text: Параметр ограничения батареи
       url: battery-limit.md
-- title: Обзор решений поддержки
+- title: Устранение неполадок
   linkLists:
   - linkListType: learn
     links:
@@ -98,3 +98,9 @@ landingContent:
       url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
     - text: Видео Microsoft Mechanics Surface
       url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
+- title: Нужна помощь?
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Обратитесь в службу поддержки Surface
+      url: contact-surface-support.md
