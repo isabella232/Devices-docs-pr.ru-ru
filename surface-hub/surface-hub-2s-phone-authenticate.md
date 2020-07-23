@@ -1,6 +1,6 @@
 ---
-title: Настройка входа без пароля для Surface Hub 2S на телефоне
-description: В этой статье рассказывается о том, как упростить вход на Surface Hub 2 с помощью входа на телефоне с учетом пароля на мобильном устройстве.
+title: Настройка входа без пароля на Surface HUB
+description: В этой статье объясняется, как упростить вход на Surface Hub.
 keywords: Разделяйте значения запятыми
 ms.prod: surface-hub
 ms.sitesec: library
@@ -9,40 +9,75 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 07/21/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 95873e41588a6f07ece53fd04f7d63bf56143914
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 0eaa48200be9ff3c8087530b6dfddeb9aa4620d8
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835368"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893051"
 ---
-# Настройка входа без пароля для Surface Hub 2S на телефоне
+# Настройка входа без пароля на Surface HUB
 
-Если вы используете учетную запись с меньшим паролем, вы сможете войти на собрание и файлы на Surface Hub 2S.
+ 
+Вход без пароля упрощает доступ к приложениям, собраниям и файлам. Surface Hub поддерживает вход в систему с помощью приложения Microsoft Authenticator и ключей безопасности FIDO2, предоставленных вашей организацией.
+
+**Внимание!** Это содержимое предназначено для пользователей. Чтобы использовать учетную запись без пароля, ИТ-администратор должен включить для вашей организации проверку подлинности, не защищенную паролем. Дополнительные сведения см. в следующих разделах:
+
+- [Включить вход на мобильный телефон с паролем](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-phone)
+- [Включить вход в ключ безопасности без пароля](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
+
+
+## Настройка входа с помощью приложения Microsoft Authenticator
+
+**Примечание.** Начиная с Windows 10 Team 2020, пользователи могут использовать свои предпочтительные псевдонимы электронной почты в Azure AD, а также их имя участника-пользователя (UPN) для входа в систему с помощью средства проверки подлинности Microsoft. Например, пользователь может использовать либо предпочтительный псевдоним (John.Doe@contoso.com), либо его UPN (jdoe@contoso.com) для входа.
+ 
+Приложение Microsoft Authenticator поможет вам войти на Surface Hub с помощью мобильного устройства. Чтобы настроить вход с помощью средства проверки подлинности Microsoft:
+
+
+1. На мобильном устройстве Скачайте приложение Microsoft Authenticator.
+    - Google Android: на устройстве с Android перейдите в Google Play, чтобы [скачать и установить приложение Microsoft Authenticator](https://app.adjust.com/e3rxkc_7lfdtm?fallback=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.azure.authenticator).
+    - Apple iOS: на устройстве Apple iOS перейдите в магазин приложений, чтобы [скачать и установить приложение Microsoft Authenticator](https://app.adjust.com/e3rxkc_7lfdtm?fallback=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fmicrosoft-authenticator%2Fid983156458).
+2. На компьютере [Настройте приложение Microsoft Authenticator на странице "сведения о безопасности"](https://docs.microsoft.com/azure/active-directory/user-help/security-info-setup-auth-app#set-up-the-microsoft-authenticator-app-from-the-security-info-page) для своей рабочей или учебной учетной записи.
+3. В приложении Microsoft Authenticator на мобильном устройстве [включите и воспользуйтесь входом на телефоне](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-sign-in#turn-on-and-use-phone-sign-in-for-your-work-or-school-account) для своей рабочей или учебной учетной записи.
+
+ 
+## Настройка входа с помощью ключей безопасности FIDO2
 
 > [!NOTE]
-> Для входа в учетную запись без пароля необходимо, чтобы ваш основной адрес электронной почты был указан в соответствии с вашим именем участника-пользователя.
+>  Для входа без пароля на Surface Hub с помощью ключей безопасности FIDO2 требуется обновление Windows 10 Team 2020.
 
-## Настройка входа на телефон с меньшим паролем
+> [!IMPORTANT]
+> Surface Hub поддерживает только ключи контроля доступа USB.
+ 
+Вы также можете войти на Surface Hub, используя ключ безопасности FIDO2, предоставленный вашей организацией. 
 
-1. Скачайте приложение [Microsoft Authenticator](https://www.microsoft.com/account/authenticator) для iPhone или Android на свой телефон.
-2. Перейдите на компьютер [https://aka.ms/MFASetup](https://aka.ms/MFASetup) , войдите в систему с помощью своей учетной записи и нажмите кнопку **Далее.**
-3. На экране дополнительные проверки безопасности выберите мобильное приложение и используйте проверочный код, а затем нажмите кнопку **Настройка**.
+### Чтобы настроить вход с помощью ключа безопасности, выполните указанные ниже действия.
 
-## Настройка мобильного приложения
 
-1. В приложении Microsoft Authenticator на телефоне добавьте учетную запись, выберите **рабочую или учебную учетную запись**, а затем ОТсканируйте QR-код, показанный на компьютере.
-2. Отправьте уведомление на ваш телефон, а затем утвердите запрос на вход.
-3. В приложении для проверки подлинности на телефоне с помощью раскрывающегося меню рядом с вашей учетной записью нажмите кнопку **включить вход на телефоне**.
-4. При необходимости зарегистрируйте устройство в своей организации и следуйте инструкциям на экране.
+1. На компьютере перейдите на свою [https://myprofile.microsoft.com/](https://myprofile.microsoft.com/) страницу и войдите в свою рабочую или учебную учетную запись.
+2. В области навигации слева выберите пункт **сведения о безопасности** или щелкните ссылку в блоке **сведений** о безопасности, а затем нажмите кнопку **Добавить метод** на странице **сведения о безопасности** .
+3. На странице **Добавление метода** в раскрывающемся списке выберите **ключ безопасности** , а затем нажмите кнопку **добавить**.
+4. На странице **ключа контроля доступа** выберите **USB-устройство**.
+5. Обновите свой ключ безопасности и нажмите кнопку **Далее**.
+6. В появившемся диалоговом окне следуйте инструкциям по добавлению ключа безопасности, созданию или вводу ПИН-кода и выполнению требуемого жеста (биометрического или сенсорного ввода).
+7. На странице **ключа контроля доступа** введите имя ключа безопасности и нажмите кнопку **Далее**.
+8. Нажмите кнопку **Готово** , чтобы завершить процесс.
 
-## Вход в Surface HUB
+## Вход на Surface HUB
 
-1. На Surface Hub Войдите в раздел **Мои собрания и файлы** и нажмите кнопку **Отправить уведомление** при появлении соответствующего запроса.
-2. Соответствует номеру, отображаемому на телефоне, номер которого указан на Surface Hub для подтверждения запроса на вход.
-3. Если вам будет предложено, введите PIN-код или биометрический идентификатор на телефоне, чтобы завершить вход.
+После того как вы настроили вход без пароля, вы можете использовать его для более удобного доступа к приложениям, собраниям и файлам на Surface Hub.
+
+- Вы можете быстро присоединиться к собраниям и открыть последние файлы Microsoft 365. Дополнительные сведения можно найти в разделе [**Вход, чтобы просмотреть свои собрания и файлы**](https://support.microsoft.com/help/4506480/sign-in-to-see-your-meetings-and-files-on-surface-hub).
+- Быстрый вход в приложения Microsoft, например доска, PowerPoint, Word, Excel, OneDrive и Power BI.
+- Вы можете быстро войти в новый Microsoft EDGE, чтобы получить доступ к избранным и вашим настройкам просмотра. Дополнительные сведения можно найти [в разделе Установка и настройка нового приложения Microsoft Edge](surface-hub-install-chromium-edge.md).
+- Войдя в Surface Hub, вы можете использовать другие приложения, не входя в нее, пока не будет выбрано значение **завершить сеанс**. Нажмите кнопку **завершить сеанс** , чтобы удалить с устройства учетные данные, файлы и личные данные. Дополнительные сведения можно найти в разделе [Завершение сеанса](finishing-your-surface-hub-meeting.md).
+
 
 ## Подробнее
-Дополнительные сведения можно найти [в разделе Вход в систему без пароля на телефоне с помощью приложения Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-phone-sign-in).
+
+- [Параметры проверки подлинности с учетом пароля для Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless)
+- [Вход без пароля с помощью приложения Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-phone)
+- [Вход без пароля с помощью ключей безопасности FIDO2](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key#user-registration-and-management-of-fido2-security-keys)
+

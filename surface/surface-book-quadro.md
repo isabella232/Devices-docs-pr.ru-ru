@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/07/2020
+ms.date: 7/20/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 35794e36f37041754ee722c286554437c6dd7be2
-ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
+ms.openlocfilehash: 3bfdcf1d95b058270b741b7959d9161c66652b4c
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860649"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893091"
 ---
 # Технический обзор Surface Book 3 Quadro RTX 3000
 
@@ -116,7 +116,8 @@ Surface Book 3 с Quadro RTX 3000 обеспечивает наилучшую п
 | **Esri ArcGIS**                                     | -Результаты в реальном времени от того, что потребовало дней и недель из-за того, что в DL использован tensorные ядра.                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Luxion KeyShot**                                  | -Третья из интерактивных трассировочных лучей, используемых SolidWorks, Creo и Rhino. Ускоренное выполнение процессоров RT, OptiX™ denoising с AI-ускорением.                                                                                                                                                                                                                                                                                                                                                        |
 | **McNeel &**<br>**Rhino 3D**             | **Rhino-протестированные и утвержденные для Surface Book 3 с Quadro RTX 3000**<br><br>-Окно просмотра с ускорителем в виде графического процессора для плавных и интерактивных моделей и конструкторов.<br><br>-Поддерживает циклы для трехмерной отрисовки с ГРАФИЧЕСКИм ускорителем.                                                                                                                                                                                                                                                         |
-| **PTC Creo**                                        | -Creo — инструмент моделирования в реальном времени (модель Creo, активный) построен на CUDA.<br><br>-Запуск более 15% по сравнению с Surface Book 2 15 ".                                                                                                                                                                                                                                                                                                                                |
+| **PTC Creo**                                        | -Creo — инструмент моделирования в реальном времени (модель Creo, активный) построен на CUDA.<br><br>-Запуск более 15% по сравнению с Surface Book 2 15 ".                                                                                                                                                                                        |
+| **Компания Siemens SolidEdge 2020**                                        |  **Компания Siemens проверила и утверждена для Surface Book 3 с Quadro RTX 3000**                                                                                                                                                                                 |
 | **Siemens NX**                                      | -(Трассировка лучей на Ray) ускоряется с помощью ядра RT.<br><br>-Запуск более 10x быстрее по сравнению с Surface Book 2 15 ".                                                                                                                                                                                                                                                                                                                                    |
 
 
@@ -128,7 +129,7 @@ Surface Book 3 с Quadro RTX 3000 обеспечивает наилучшую п
 
 **Таблица4. Surface Book 3 с Quadro RTX 3000 SKU**
 
-| **Монитор** | **Процессор**                     | **Графический процессор**                                                                                          | **ОЗУ**    | **Хранилище** |
+| **Display** | **Процессор**                     | **Графический процессор**                                                                                          | **ОЗУ**    | **Storage** |
 | ----------- | --------------------------------- | ------------------------------------------------------------------------------------------------ | ---------- | ----------- |
 | 15 дюймов | Четырехъядерный Десятый Двухъядерный процессор для поколения 1065G7 | Графический™ Intel IRI +<br>NVIDIA Quadro RTX 3000. Шаблон "Макс-Q" с графической памятью 6GB GDDR6 | 32 LPDDR4x | 512 ГБ      |
 | 15 дюймов | Четырехъядерный Десятый Двухъядерный процессор для поколения 1065G7 | Графический™ Intel IRI +<br>NVIDIA Quadro RTX 3000. Шаблон "Макс-Q" с графической памятью 6GB GDDR6 | 32 LPDDR4x | 1 ТБ        |

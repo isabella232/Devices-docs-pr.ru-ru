@@ -15,17 +15,17 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 88c7029c99d69818e9f0b8fddef5fc193581963a
-ms.sourcegitcommit: 608226b64ef92743b1a3361877d4c49228e3ea5d
+ms.openlocfilehash: 661d84adbff40ff6cd89fb0c71c60fa795f4236c
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "10868753"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893081"
 ---
 # Основные решения поддержки для устройств Surface
 
 > [!Note]
-> **Домашние пользователи**: Эта статья предназначена только для ИТ-специалистов и агентов технической поддержки и применима только к устройствам Surface. Если вам нужна помощь в решении проблемы с домашним устройством, обратитесь в [службу поддержки Surface](contact-surface-support.md?tabs=online).
+> **Домашние пользователи**: Эта статья предназначена только для ИТ-специалистов и агентов технической поддержки и применима только к устройствам Surface. Если вам нужна помощь в решении проблемы с вашим домашним устройством, посетите страницу [Справка по устройствам Surface](https://support.microsoft.com/products/surface-devices).
 
 Ниже приведены рекомендации по устранению распространенных проблем, возникающих при использовании устройств Surface на предприятии. Если в этой статье не указана ваша неполадка, [обратитесь в службу поддержки Surface](contact-surface-support.md?tabs=online).
 
@@ -43,9 +43,7 @@ ms.locfileid: "10868753"
 ## Проблемы с подкреплением Surface
 
 - [Устранение неполадок с Surface Dock и стыковочными узлами Surface](https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations)
-
 - [Устранение неполадок с подключением к рабочей области на втором экране](https://support.microsoft.com/help/4023496)
-
 - [Обновление встроенного по Surface Dock (Майкрософт)](https://docs.microsoft.com/surface/surface-dock-updater)
 
 ## Проблемы с обложкой или клавиатурой устройств
@@ -59,25 +57,19 @@ ms.locfileid: "10868753"
 ## Проблемы с питанием и батареей Surface
 
 - [Способ оплаты Surface (сведения о Surfaces)](https://support.microsoft.com/help/4023496)
-
 - [Батарея Surface не взимается или поверхность не работает на батарее](https://support.microsoft.com/help/4023536)
-
 - [Планшет Surface не включается или не выходит из спящего режима](https://support.microsoft.com/help/4023537)
-
 - [Оптимизация использования батареи Surface](https://support.microsoft.com/help/4483194)
 
 ## Сброс устройства
 
 - [Создание и использование диска восстановления USB для Surface](https://support.microsoft.com/help/4023512)
-
 - [Вопросы и ответы: защита данных при отправке рабочей области на обслуживание](https://support.microsoft.com/help/4023508)
-
 - [Microsoft Surface Data Eraser](https://docs.microsoft.com/surface/microsoft-surface-data-eraser)
 
 ## Проблемы при развертывании
 
 - [DISK0 не найден при развертывании Windows на Surface Pro моделей 1796 или Surface.](https://support.microsoft.com/help/4046108)
-
 - [Модель Surface Pro 1796 и Surface (1 ТБАЙТ) отображаются два устройства](https://support.microsoft.com/help/4046105)
-
 - [Справочная информация о SKU системы](https://docs.microsoft.com/surface/surface-system-sku-reference)
+

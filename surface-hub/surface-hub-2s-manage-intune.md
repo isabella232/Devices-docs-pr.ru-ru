@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 1d1b836c18a41982497bb28c57f379408c04f8a5
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 05279a54b51113ca96c4c939e8d64e51c4eca543
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836635"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893118"
 ---
 # Управление Surface Hub 2S с помощью Intune
 
@@ -35,17 +35,27 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 
 В процессе начальной настройки, когда выполняется связывание Surface Hub с клиентом Azure AD с включенной автоматической регистрацией в Intune, устройство автоматически регистрируется в Intune. Дополнительные сведения см. в статье [Способы регистрации в Intune для устройств Windows](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods). Связывание с Azure AD и автоматическая регистрация в Intune требуются для того, чтобы Surface Hub было "соответствующим требованиям устройством" в Intune. 
 
-## Параметры выпуска Windows 10 для совместной работы
+## Управление параметрами Windows 10 Team Edition с помощью Intune
 
-Выберите Windows 10 для совместной работы в качестве предварительно заданных ограничений устройств для Surface Hub и Surface Hub 2.
+1. Войдите в **Microsoft Endpoint Manager**, выберите **Devices**  >  **профили конфигурации**устройств  >  **Создание профиля**. 
+2. В разделе **платформа**выберите ограничения на устройства с **Windows 10 и более поздними версиями**  >  **(Windows 10 Team)** и нажмите кнопку **создать**. 
+3. Теперь вы можете просматривать и выбирать стандартные параметры ограничений устройств для Surface HUB и Surface Hub 2S.
 
  ![Настройка ограничений устройства для Surface Hub 2.](images/sh2-set-intune3.png) <br>
 
-К этим параметрам относятся пользовательский интерфейс и поведение приложения, регистрация в службе аналитики журналов Azure, настройка окон обслуживания, параметры сеансов и параметры Miracast. Полный список доступных параметров Windows 10 для совместной работы см. в статье [Поставщик служб конфигурации SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp).
+Эти параметры охватывают следующие категории: приложения и опыт, служба Azure Operational Insights, обслуживание, сеанс и беспроводная проекция.  
 
-## Дополнительные поддерживаемые поставщики служб конфигурации (CSP)
+## Поддерживаемые поставщики услуг конфигурации (CSP)
 
-Дополнительные сведения см. в разделе [Поставщики службы конфигурации Surface Hub в Windows 10](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport).
+Помимо политик, доступных непосредственно через консоль Intune, существует множество поставщиков служб конфигурации (CSP), которые сопоставляются с разделами реестра или файлами. 
+
+Как правило, корпорация Майкрософт предоставляет новые поставщики служб криптографии для каждой новой версии операционной системы Windows 10. [Обновление для Windows 10 Team 2020](surface-hub-install-2020preview.md), которое можно просмотреть в рамках программы предварительной оценки Windows, включает более 20 новых и обновленных политик управления устройствами для Surface HUB и Surface Hub 2s. Эти политики MDM предоставляют ИТ-администраторам улучшенные возможности управления обновлениями приложений из Microsoft Store, параметров беспроводных проекций, таких как Miracast в инфраструктуре, сетевые параметры, такие как качество обслуживания и проводная проверка подлинности 802.1 x, а также новые параметры конфиденциальности и GDPR, связанные с другими параметрами.
+
+Подробнее: 
+
+- [Справочник по поставщикам служб конфигурации](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) 
+- [Поставщик служб конфигурации SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+- [Политика поставщиков служб конфигурации (CSP), поддерживаемая Microsoft Surface Hub](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
 
 ## Параметры качества обслуживания (QoS)
 

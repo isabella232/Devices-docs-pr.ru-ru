@@ -7,14 +7,14 @@ ms.sitesec: library
 author: greglin
 ms.author: greglin
 ms.topic: article
-ms.date: 06/15/2020
+ms.date: 07/15/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: d393385643b3f1ecad8db364e76711baa7a73aa1
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: fbdacbc2a5b0ca7e6b38dc5588ed7b0279ce0c68
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836208"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893041"
 ---
 # Приложение Microsoft Teams для Surface HUB 
 
@@ -24,6 +24,6 @@ ms.locfileid: "10836208"
 ## Журнал версий
 | Версия приложения Store | Обновления                                                                                         | Опубликовано в Microsoft Store |
 | --------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------- |
-| 0.2020.13201.0        | -представление коллекции 3x3 на Surface HUB<br>-Возможность поиска внешних пользователей                         | 10 июня 2020 г.<br>            |
+| 0.2020.521.2344.0         | -представление коллекции 3x3 на Surface HUB<br>-Возможность поиска внешних пользователей                         | 10 июня 2020 г.<br>            |
 | 0.2020.13201          | Улучшения качества и исправления ошибок                                                                | 1 июня 2020 г.<br>          |
 | 0.2020.4301.0         | -Прием входящих звонков по PSTN на Surface HUB<br>-Получение изменений в роли участника/докладчика            | 21 мая 2020 г.                     |
