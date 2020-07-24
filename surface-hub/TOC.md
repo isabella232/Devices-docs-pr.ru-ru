@@ -19,7 +19,7 @@
 #### [Обзор портов и клавиатуры Surface Hub 2S](surface-hub-2s-port-keypad-overview.md)
 #### [Подключение устройств к Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Подготовка среды для Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)
-### [Настройка удобной проверки подлинности для Surface Hub 2S](surface-hub-2s-phone-authenticate.md)
+
 
 ## Развертывание
 ### [Внедрение Surface Hub 2S и обучение](surface-hub-2s-adoption-kit.md)
@@ -35,6 +35,8 @@
 ### [Приложение Surface Hub Teams](hub-teams-app.md)
 
 ## Управление
+### [Установка предварительной сборки обновления Windows 10 для совместной работы 2020](surface-hub-install-2020preview.md)  
+### [Установка и настройка нового браузера Microsoft Edge на Surface Hub](surface-hub-install-chromium-edge.md)        
 ### [Управление Surface Hub 2S с помощью Microsoft Intune](surface-hub-2s-manage-intune.md)
 ### [Локальное управление параметрами Surface Hub 2S](local-management-surface-hub-settings.md)
 ### [Управление ротацией пароля учетной записи устройства](surface-hub-2s-manage-passwords.md)
@@ -45,9 +47,12 @@
 ### [Применение политик ActiveSync к учетным записям устройств](apply-activesync-policies-for-surface-hub-device-accounts.md)
 ### [Обновление ручки со встроенным ПО Surface Hub 2S](surface-hub-2s-pen-firmware.md)
 
+
 ## Защита
 ### [Обзор безопасности Surface Hub](surface-hub-security.md)
 ### [Защита и администрирование Surface Hub 2S с помощью SEMM и UEFI](surface-hub-2s-secure-with-uefi-semm.md)
+### [Современная проверка подлинности на Surface Hub](surface-hub-modern-auth.md) 
+### [Настройка входа без пароля на Surface Hub](surface-hub-2s-phone-authenticate.md) 
 ### [Как Surface Hub решает проблемы безопасности Wi-Fi Direct](surface-hub-wifi-direct.md)
 
 ## Устранение неполадок
@@ -88,6 +93,8 @@
 
 ## Управление
 ### [Управление Microsoft Surface Hub](manage-surface-hub.md)
+### [Установка предварительной сборки обновления Windows 10 для совместной работы 2020](surface-hub-install-2020preview.md)  
+### [Установка и настройка нового браузера Microsoft Edge на Surface Hub](surface-hub-install-chromium-edge.md)    
 ### [PowerShell для Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md)
 ### [Удаленное управление Surface Hub](remote-surface-hub-management.md)
 #### [Управление параметрами с помощью поставщика MDM](manage-settings-with-mdm-for-surface-hub.md)
@@ -113,6 +120,8 @@
 ## Защита
 ### [Вход в Surface Hub с помощью проверки Microsoft Authenticator](surface-hub-authenticator-app.md)
 ### [Сохранение ключа BitLocker](save-bitlocker-key-surface-hub.md)
+### [Современная проверка подлинности на Surface Hub](surface-hub-modern-auth.md) 
+### [Настройка входа без пароля на Surface Hub](surface-hub-2s-phone-authenticate.md) 
 ### [Как Surface Hub решает проблемы безопасности Wi-Fi Direct](surface-hub-wifi-direct.md)
 
 ## Устранение неполадок
