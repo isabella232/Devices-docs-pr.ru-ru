@@ -1,5 +1,5 @@
 ---
-title: Управление обновлениями драйвера Surface в Configuration Manager
+title: Управление обновлениями драйверов в Configuration Manager
 description: В этой статье описаны доступные параметры для управления и развертывания микропрограмм и обновлений драйверов для устройств Surface.
 ms.assetid: b64879c4-37eb-4fcf-a000-e05cbb3d26ea
 ms.reviewer: ''
@@ -14,14 +14,14 @@ ms.sitesec: library
 ms.author: daclark
 ms.topic: article
 audience: itpro
-ms.openlocfilehash: 1a9c8c64bd524de58696c73a28795b69cc70a7b2
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: be32309b26ff6a873c36927cc39595022c4dbb90
+ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835867"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10897077"
 ---
-# Управление обновлениями драйвера Surface в Configuration Manager
+# Управление обновлениями драйверов в Configuration Manager
 
 ## Краткий обзор
 
@@ -119,7 +119,7 @@ ms.locfileid: "10835867"
 
    Если вы не можете найти продукты, которые вы выбрали на шаге 6 в предыдущем разделе, проверьте, не сохраняются ли параметры SUP.
 
-   Вы также можете подождать, пока завершится следующая синхронизация, а затем проверить, указаны ли обновления для драйвера Surface и микропрограмм в разделе обновления программного обеспечения на консоли Configuration Manager. Например, консоль может отобразить следующие данные:
+   Вы также можете подождать, пока завершится следующая синхронизация, а затем проверить, указаны ли обновления для драйвера Surface и микропрограмм в разделе обновления программного обеспечения на консоли Configuration Manager. Например, консоль может отобразить следующие сведения.
 
    ![Все результаты поиска обновлений программного обеспечения](images/manage-surface-driver-updates-4.png)
 
@@ -162,24 +162,23 @@ ms.locfileid: "10835867"
 
 Если вы синхронизируются с вышестоящим сервером Windows Server Update Services (WSUS) вместо центра обновления Майкрософт, убедитесь в том, что вышестоящий WSUS-сервер настроен таким, чтобы он поддерживал и синхронизировались обновления драйверов Surface. Все подчиненные серверы ограничены обновлениями, которые присутствуют в базе данных вышестоящего сервера WSUS.
 
-В WSUS более 68 000 обновлений, которые классифицируются как драйверы. Чтобы предотвратить синхронизацию драйверов, не связанных с Surface, с помощью Configuration Manager, Microsoft фильтрует синхронизацию драйверов с разрешающим списком. После публикации и включения нового списка разрешенных в Configuration Manager новые драйверы добавляются на консоль после следующей синхронизации. Корпорация Майкрософт стремится получить драйверы Surface, добавленные в список разрешений ежемесячно с помощью обновления, чтобы сделать их доступными для синхронизации с Configuration Manager.
+В WSUS более 68 000 обновлений, которые классифицируются как драйверы. Чтобы предотвратить синхронизацию драйверов, не связанных с Surface, с помощью Configuration Manager, Microsoft фильтрует синхронизацию драйверов с разрешающим списком. После публикации и включения нового списка разрешенных в Configuration Manager новые драйверы добавляются на консоль после следующей синхронизации. Корпорация Майкрософт стремится получить драйверы Surface, добавленные в список разрешенных ежемесячно, по месяцам с выпуском обновлений, чтобы они были доступны для синхронизации с диспетчером конфигураций.
 
-Если ваша среда Configuration Manager находится в автономном режиме, каждый раз при импорте обновлений для [обслуживания](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool) в Configuration Manager будет импортироваться новый список разрешений. Кроме того, вы должны импортировать [новый каталог WSUS](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates-disconnected) , содержащий драйверы, прежде чем они будут отображаться в консоли Configuration Manager. Так как в автономной среде WSUS есть больше драйверов, чем SUP Configuration Manager, мы рекомендуем установить среду Configuration Manager, в которой есть возможности Online, и настроить ее для синхронизации драйверов Surface. Это обеспечивает меньший экспорт WSUS, похожий на автономную среду.
+Если ваша среда Configuration Manager находится в автономном режиме, каждый раз при импорте [обновлений обслуживания](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool) в Configuration Manager будет импортироваться новый список разрешений. Кроме того, вы должны импортировать [новый каталог WSUS](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates-disconnected) , содержащий драйверы, прежде чем они будут отображаться в консоли Configuration Manager. Так как в автономной среде WSUS есть больше драйверов, чем SUP Configuration Manager, мы рекомендуем установить среду Configuration Manager, в которой есть возможности Online, и настроить ее для синхронизации драйверов Surface. Это обеспечивает меньший экспорт WSUS, похожий на автономную среду.
 
-Если ваша среда Configuration Manager находится в сети и может определять новые обновления, вы будете получать обновления списка автоматически. Если вы не видите ожидаемых драйверов, ознакомьтесь с разработкой WCM. log и WsyncMgr. log на предмет ошибок синхронизации.
+Если ваша среда Configuration Manager находится в сети и может определять новые обновления, вы будете получать обновления списка автоматически. Если вы не видите ожидаемых драйверов, проверьте файлы WCM. log и WsyncMgr. log на наличие ошибок синхронизации.
 
-**Моя среда Configuration Manager находится в автономном режиме, можно ли вручную импортировать драйверы Surfaces в WSUS?**
+**Моя среда Configuration Manager находится в автономном режиме. Можно ли вручную импортировать драйверы Surfaces в WSUS?**
 
 Нет. Несмотря на то, что обновление будет импортировано в WSUS, оно не будет импортировано на консоль Configuration Manager для развертывания, если оно не указано в списке разрешений. Для импорта обновлений для обслуживания в Configuration Manager необходимо использовать [средство подключения служб](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool) , чтобы обновить список разрешений.
 
 **Какие альтернативные методы необходимо для развертывания драйверов Surface и обновлений микропрограмм?**
 
-Сведения о том, как развертывать драйверы Surface и обновления встроенного по с помощью альтернативных каналов, можно найти в разделе [Управление обновлениями Surface Driver и микропрограмм](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates). Если вы хотите скачать MSI-или exe-файл, а затем развернуть его через традиционные каналы развертывания программного обеспечения, ознакомьтесь со сведениями о том, как [обновить встроенное по в Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).
+Сведения о том, как развертывать драйверы Surface и обновления встроенного по с помощью альтернативных каналов, можно найти в разделе [Управление обновлениями Surface Driver и микропрограмм](manage-surface-driver-and-firmware-updates.md). Если вы хотите скачать MSI-или exe-файл, а затем развернуть его через традиционные каналы развертывания программного обеспечения, ознакомьтесь со сведениями о том, как [обновить встроенное по в Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).
 
 ## Дополнительные сведения
 
 Дополнительные сведения об обновлениях драйверов и микропрограмм Surface можно найти в следующих статьях:
 
-- [Скачивание последних версий встроенного ПО и драйверов для устройств Surface](https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices)
-- [Управление обновлениями драйверов и встроенного ПО Surface](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
-- [Рекомендации для Surface и System Center Configuration Manager](https://docs.microsoft.com/surface/considerations-for-surface-and-system-center-configuration-manager)
+- [Управление обновлениями драйверов и встроенного ПО Surface](manage-surface-driver-and-firmware-updates.md)
+- [Рекомендации для Surface и System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
