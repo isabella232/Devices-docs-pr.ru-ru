@@ -14,23 +14,23 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 975115cc4f7baea18bcd9ad119ce448d59772515
-  ms.sourcegitcommit: 63607aa9b65687bf597916f548f5a3416ef87fe8
+  ms.openlocfilehash: 9bbf8ae97aedde4c14670fd2a72f1286371a8a41
+  ms.sourcegitcommit: 819498edd5c7cf0eae038a561b2efd6c2903dee5
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 07/10/2020
-  ms.locfileid: "10861721"
+  ms.lasthandoff: 07/23/2020
+  ms.locfileid: "10895150"
 landingContent:
 - title: Подготовьтесь к внедрению Surface Hub 2S
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Новые возможности Surface Hub 2S
-      url: surface-hub-2s-whats-new.md
-    - text: Заказ Surface Hub 2S
-      url: https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab
-    - text: Подготовка среды для Surface Hub 2S
-      url: surface-hub-2s-prepare-environment.md
+    - text: Общедоступная предварительная версия нового обновления ОС для Surface Hub
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823
+    - text: Установка предварительной сборки обновления Windows 10 для совместной работы 2020
+      url: surface-hub-install-2020preview.md
+    - text: Установка и настройка нового браузера Microsoft Edge на Surface Hub
+      url: surface-hub-install-chromium-edge.md
     - text: Журнал обновлений Surface Hub
       url: surface-hub-update-history.md
   - linkListType: video
@@ -45,14 +45,14 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
+    - text: Заказ Surface Hub 2S
+      url: https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab
     - text: Основы операционной системы
       url: differences-between-surface-hub-and-windows-10-enterprise.md
     - text: Руководство по подготовке узла Surface Hub 2S
       url: surface-hub-2s-site-readiness-guide.md
-    - text: Настройка установки Surface Hub 2S
-      url: surface-hub-2s-custom-install.md
-    - url: https://support.office.com/article/Enable-Microsoft-Whiteboard-on-Surface-Hub-b5df4539-f735-42ff-b22a-0f5e21be7627
-      text: Включение приложения "Доска (Майкрософт)" на Surface Hub
+    - text: Включение приложения "Доска (Майкрософт)" на Surface Hub
+      url: https://support.office.com/article/Enable-Microsoft-Whiteboard-on-Surface-Hub-b5df4539-f735-42ff-b22a-0f5e21be7627
   - linkListType: deploy
     links:
     - url: surface-hub-2s-adoption-kit.md
