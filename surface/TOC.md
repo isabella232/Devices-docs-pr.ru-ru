@@ -52,6 +52,7 @@
 ### [Параметр ограничения батареи](battery-limit.md)
 ### [Элемент управления яркостью устройств Surface](microsoft-surface-brightness-control.md)
 ### [Тег ресурса Surface](assettag.md)
+### [Пробуждение при подаче питания для устройств Surface](wake-on-power-for-surface.md)
 
 ## Защита
 
