@@ -9,23 +9,23 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 03/09/2020
+ms.date: 08/04/2020
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 1fa192902b17ca811d4ecc8eac65abe1655ce370
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 3eb177e976bd99ec245996db8cb22eab639f63cc
+ms.sourcegitcommit: c0676329f894135388b6d52f85ee8ac9507a836e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835563"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905676"
 ---
 # Справочная информация о SKU системы
 
 Этот документ содержит ссылку на системную модель и имена SKU системы, которые можно использовать для быстрого определения состояния компьютера определенного устройства с помощью PowerShell или WMI.
 
-Системная модель и SKU системы — это переменные, хранящиеся в таблицах SMBIOS Management BIOS на уровне UEFI устройств Surface. Название системы должны различать устройства с одинаковыми именами системных моделей, например Surface Pro и Surface Pro с помощью LTE Advanced. 
+Системная модель и SKU системы — это переменные, хранящиеся в таблицах SMBIOS Management BIOS на уровне UEFI устройств Surface. Используйте имя системной конфигурации, если вам нужно отличать устройства с помощью одного и того же имени системной модели, например Surface Pro и Surface Pro, с помощью LTE дополнительно.
 
 | Устройство   | Модель системы | SKU системы       |
 | ---------- | ----------- | -------------- |
@@ -38,10 +38,12 @@ ms.locfileid: "10835563"
 | Surface Pro с функцией LTE Advanced                                | Surface Pro      | Surface_Pro_1807                 |
 | Surface Book 2 13 "                                        | Surface Book 2   | Surface_Book_1832                |
 | Surface Book 2 15 "                                        | Surface Book 2   | Surface_Book_1793                |
-| Поверхность — потребительский адрес по LTE  | Surface Go | Surface_Go_1825_Consumer |
+| Surface Book 3 13 "                                        | Surface Book 3   | Surface_Book_3_1900                |
+| Surface Book 3 15 "                                        | Surface Book 3   | Surface_Book_3_1899
 | Surface Go в коммерческой версии по LTE | Системный переход | Surface_Go_1825_Commercial |
 | Потребитель переходов Surface                                          | Surface Go       | Surface_Go_1824_Consumer         |
 | Профессиональная переход на Surface                                        | Surface Go       | Surface_Go_1824_Commercial       |
+| Surface Go 2                                                 | Surface Go 2     | Surface_Go_2_1927                |
 | Потребитель Surface Pro 6                                       | Surface Pro 6    | Surface_Pro_6_1796_Consumer      |
 | Профессиональная профессиональная (версия для Surface Pro 6)                                     | Surface Pro 6    | Surface_Pro_6_1796_Commercial    |
 | Surface Laptop                                               | Surface Laptop   | Surface_Laptop                   |
@@ -63,7 +65,7 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
 ```
 
 **Получение SKU с помощью сведений о системе**  
-Вы также можете найти конфигурацию системы и модель системы для устройства в разделе " **сведения о системе**". Для этого выполните указанные ниже действия.
+Вы также можете найти конфигурацию системы и модель системы для устройства в разделе " **сведения о системе**". Для этого выполните следующие действия:
 
 1. Нажмите кнопку **Пуск**и введите в поле поиска параметр **msinfo32** .  
 1. Выберите пункт **сведения о системе**.
