@@ -74,5 +74,11 @@
 #### [Развертывание набора средств диагностики Surface для бизнеса](surface-diagnostic-toolkit-business.md)
 #### [Использование набора средств диагностики Surface для бизнеса в режиме настольного компьютера](surface-diagnostic-toolkit-desktop-mode.md)
 #### [Запуск набора средств диагностики Surface для бизнеса с помощью команд](surface-diagnostic-toolkit-command-line.md)
-
 ### [Журнал изменений документации по Surface](change-history-for-surface.md)
+### [Справка для конечных пользователей](https://support.microsoft.com/products/surface-devices)
+
+## Гарантия и расширенные планы обслуживания
+### [Гарантия и расширенные планы обслуживания Surface для бизнеса](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
+### [Условия](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
+### [Проверка состояния гарантии устройства](https://mybusinessservice.surface.com/)
+### [Защита данных при отправке Surface для обслуживания](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
