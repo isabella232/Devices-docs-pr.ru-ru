@@ -13,13 +13,13 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 05/26/2020
-ms.openlocfilehash: 116aeb6d1d92f387efa34319f7852febda729207
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 08/05/2020
+ms.openlocfilehash: 4af917ca583dac504bc61bdfb36c8b8485473db9
+ms.sourcegitcommit: 97e19fdcd074647bedec9efdfd3ce28e900ae2ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835608"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916521"
 ---
 # Режим корпоративного управления Surface (Майкрософт)
 
@@ -226,6 +226,16 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 
 ## Журнал версий
 
+
+### Версия 2.73.136.0
+
+Эта версия SEMM включает:
+
+- Теперь звук можно отключить на Surface Hub2S с помощью SEMM
+- Поддержка Surface Pro X для Dock 2
+- Поддержка диспетчера UEFI для операций, связанных с Dock 2
+- Сброс ошибки пакета с выходом из Surface Go
+
 ### Версия 2.71.139.0
 
 Эта версия SEMM добавляет поддержку функций управления Surface Dock 2 для Surface Book 3, Surface 3 и Surface Pro 7, в том числе:
@@ -282,4 +292,4 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 
 - [Регистрация устройств Surface в SEMM и их настройка](enroll-and-configure-surface-devices-with-semm.md)
 - [Отмена регистрации устройств Surface в SEMM](unenroll-surface-devices-from-semm.md)
-- [Защищенные порты Surface Dock 2 с SEMM](secure-surface-dock-ports-semm.md)
+- [Обеспечение безопасности портов Surface Dock 2 с помощью SEMM](secure-surface-dock-ports-semm.md)
