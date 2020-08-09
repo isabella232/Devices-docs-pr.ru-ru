@@ -36,6 +36,7 @@
 
 ## Управление
 ### [Установка предварительной сборки обновления Windows 10 для совместной работы 2020](surface-hub-install-2020preview.md)  
+### [Известные проблемы: обновление для Windows 10 для совместной работы 2020](surface-hub-2020-team-update-known-issues.md)
 ### [Установка и настройка нового браузера Microsoft Edge на Surface Hub](surface-hub-install-chromium-edge.md)        
 ### [Управление Surface Hub 2S с помощью Microsoft Intune](surface-hub-2s-manage-intune.md)
 ### [Локальное управление параметрами Surface Hub 2S](local-management-surface-hub-settings.md)
