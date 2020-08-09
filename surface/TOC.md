@@ -70,6 +70,8 @@
 ## Устранение неполадок
 ### [Обратитесь в службу поддержки Surface](contact-surface-support.md)
 ### [Основные решения поддержки для устройств Surface](support-solutions-surface.md)
+### [Рекомендации по извлечению SSD на совместимых устройствах Surface](surface-ssd-removal-guide.md)
+### [Блог по Surface для ИТ-специалистов](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro)
 ### [Устранение распространенных проблем с Surface с помощью набора средств диагностики Surface для бизнеса](surface-diagnostic-toolkit-for-business-intro.md)
 #### [Развертывание набора средств диагностики Surface для бизнеса](surface-diagnostic-toolkit-business.md)
 #### [Использование набора средств диагностики Surface для бизнеса в режиме настольного компьютера](surface-diagnostic-toolkit-desktop-mode.md)
