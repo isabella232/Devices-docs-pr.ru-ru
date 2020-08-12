@@ -10,12 +10,12 @@ ms.date: 01/18/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: bdc6e384839606fe6138c75e190d68a84679f5b4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 722309a6b018c32bde329cb7b2cdd68b859fc1ca
+ms.sourcegitcommit: 8e809e8481023fe4421abcdaa1e055a6f2f74f5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834896"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924945"
 ---
 # Новые возможности Windows 10 (версия 1703 для Microsoft Surface Hub)
 
@@ -65,7 +65,7 @@ Windows 10 версии 1703 (также называемая Creators Update) �
     
 ## Завершить сеанс
 
-**Готово** теперь заменено на **Завершить сеанс**. [Узнайте, как использовать функцию "Завершить сеанс".](i-am-done-finishing-your-surface-hub-meeting.md) 
+**Готово** теперь заменено на **Завершить сеанс**. [Узнайте, как использовать функцию "Завершить сеанс".](finishing-your-surface-hub-meeting.md) 
 
 ![завершить сеанс](images/end-session.png)
 

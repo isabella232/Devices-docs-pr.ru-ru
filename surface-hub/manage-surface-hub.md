@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 01/17/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 04eb2b08ebc8fc7034ab5d27a038c5d517a2eda3
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 935f67e88af8b784230becb1cd89f7360b8a0857
+ms.sourcegitcommit: 8e809e8481023fe4421abcdaa1e055a6f2f74f5f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10837010"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924965"
 ---
 # Управление Microsoft Surface Hub
 
@@ -40,7 +40,7 @@ ms.locfileid: "10837010"
 | [Установка приложений на устройстве Surface Hub]( https://technet.microsoft.com/itpro/surface-hub/install-apps-on-surface-hub) | Администраторы могут устанавливать приложения из Microsoft Store и Microsoft Store для бизнеса.|
 [Настройка меню "Пуск" Surface Hub](surface-hub-start-menu.md) | Используйте MDM для настройки меню "Пуск" устройства Surface Hub.
 | [Настройка и использование Доски (Майкрософт)](whiteboard-collaboration.md)  | Последнее обновление приложения Доска (Майкрософт) включает возможность совместной работы двух устройств Surface Hub в режиме реального времени на одной доске.   |
-| [Завершение собрания с помощью кнопки "Завершить сеанс"](https://technet.microsoft.com/itpro/surface-hub/i-am-done-finishing-your-surface-hub-meeting) | В конце собрания пользователи могут коснуться кнопки **Завершить сеанс**, чтобы удалить конфиденциальные данные и подготовить устройство к следующему собранию.|
+| [Завершение собрания с помощью кнопки "Завершить сеанс"](https://technet.microsoft.com/itpro/surface-hub/finishing-your-surface-hub-meeting) | В конце собрания пользователи могут коснуться кнопки **Завершить сеанс**, чтобы удалить конфиденциальные данные и подготовить устройство к следующему собранию.|
 | [Вход в Surface Hub с помощью проверки Microsoft Authenticator](surface-hub-authenticator-app.md) | Выполнить вход в систему на Surface Hub без ввода пароля можно с помощью приложения Microsoft Authenticator, доступного для iOS и Android.   |
 | [Сохранение ключа BitLocker](https://technet.microsoft.com/itpro/surface-hub/save-bitlocker-key-surface-hub) | На каждом устройстве Surface Hub автоматически устанавливается программное обеспечение для шифрования дисков BitLocker. Корпорация Майкрософт настоятельно рекомендует создавать резервные копии ключей восстановления BitLocker.|
 | [Подключение других устройств и отображение их содержимого с помощью Surface Hub](https://technet.microsoft.com/itpro/surface-hub/connect-and-display-with-surface-hub) | Вы можете подключить к Surface Hub другое устройство и отобразить его содержимое.|
