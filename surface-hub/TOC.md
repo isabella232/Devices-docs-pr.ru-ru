@@ -112,7 +112,7 @@
 ### [Установка приложений на устройстве Surface Hub](install-apps-on-surface-hub.md)
 ### [Настройка меню "Пуск" Surface Hub](surface-hub-start-menu.md)
 ### [Настройка и использование Доски (Майкрософт)](whiteboard-collaboration.md) 
-### [Завершение собрания Surface Hub с помощью кнопки "Завершить сеанс"](i-am-done-finishing-your-surface-hub-meeting.md)
+### [Завершение собрания Surface Hub с помощью кнопки "Завершить сеанс"](finishing-your-surface-hub-meeting.md)
 ### [Подключение других устройств и отображение их содержимого с помощью Surface Hub](connect-and-display-with-surface-hub.md)
 ### [Использование Miracast в существующей беспроводной или локальной сети](miracast-over-infrastructure.md)
 ### [Включение проверки подлинности по стандарту безопасности 802.1X в проводной сети](enable-8021x-wired-authentication.md)
