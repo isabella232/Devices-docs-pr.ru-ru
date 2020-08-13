@@ -5,16 +5,16 @@ ms.assetid: aee90a0c-fb05-466e-a2b1-92de89d0f2b7
 keywords: поверхность, центр, проблемы
 ms.prod: surface-hub
 ms.sitesec: library
-author: todmccoy
+author: greg-lindsay
 ms.author: v-todmc
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: ec6746098203b5e91e2aaf3b044d21b81c31c897
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: f9b658daa4b398fda442976b7bce2f560a1b39f6
+ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835432"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926271"
 ---
 # Известные проблемы и дополнительные сведения о Microsoft Surface Hub
 
