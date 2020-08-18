@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 05279a54b51113ca96c4c939e8d64e51c4eca543
-ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
+ms.openlocfilehash: 389db218d06f9f8d3f510e711b03487daf4e06f9
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10893118"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934869"
 ---
 # Управление Surface Hub 2S с помощью Intune
 
@@ -35,7 +35,7 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 
 В процессе начальной настройки, когда выполняется связывание Surface Hub с клиентом Azure AD с включенной автоматической регистрацией в Intune, устройство автоматически регистрируется в Intune. Дополнительные сведения см. в статье [Способы регистрации в Intune для устройств Windows](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods). Связывание с Azure AD и автоматическая регистрация в Intune требуются для того, чтобы Surface Hub было "соответствующим требованиям устройством" в Intune. 
 
-## Управление параметрами Windows 10 Team Edition с помощью Intune
+## Управление параметрами Teams в Windows 10 с помощью Intune
 
 1. Войдите в **Microsoft Endpoint Manager**, выберите **Devices**  >  **профили конфигурации**устройств  >  **Создание профиля**. 
 2. В разделе **платформа**выберите ограничения на устройства с **Windows 10 и более поздними версиями**  >  **(Windows 10 Team)** и нажмите кнопку **создать**. 
@@ -63,7 +63,7 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 
 ### Параметры качества обслуживания Microsoft Teams 
 
-|**Имя**|**Описание**|**OMA-URI**|**Тип**|**Значение**|
+| Имя | Описание | OMA-URI | Тип | Значение |
 |:------ |:------------- |:--------- |:------ |:------- |
 |**Звуковые порты**| Диапазон звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DestinationPortMatchCondition | Строка  | 3478-3479 |
 |**DSCP звука**| Маркировка звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | целое число | 46 |
@@ -101,7 +101,7 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 
 Чтобы настроить режимы, добавьте следующие параметры в пользовательский профиль конфигурации устройства.
 
-|**Имя**|**Описание**|**OMA-URI**|**Тип**|**Значение**|
+| Имя | Описание | OMA-URI | Тип | Значение |
 |:--- |:--- |:--- |:--- |:--- |
 |**ИД приложения Teams**|Имя приложения|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|Строка| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Режим приложения Teams**|Режим Teams|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|целое число| 0 или 1 или 2|

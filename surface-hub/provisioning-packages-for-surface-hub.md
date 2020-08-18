@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/16/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ce77122aecfc9a30ac9dc52dfea7e0b0ccf7e1f
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9158bec3d2285e5e8d4f9f56e582ff2320a34024
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836507"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934879"
 ---
 # Создание пакетов подготовки (Surface Hub)
 
@@ -107,7 +107,7 @@ ms.locfileid: "10836507"
 
 Используйте Microsoft Excel или другой редактор CSV для создания CSV-файла с именем `SurfaceHubConfiguration.csv`. В файле введите список учетных записей устройства и понятные имена в следующем формате:
 
-```
+```console
 <DeviceAccountName>,<DeviceAccountPassword>,<FriendlyName>
 ```
 >[!IMPORTANT]
@@ -116,7 +116,7 @@ ms.locfileid: "10836507"
 
 Ниже приведен пример `SurfaceHubConfiguration.csv`. 
 
-```
+```console
 Rainier@contoso.com,password,Rainier Surface Hub
 Adams@contoso.com,password,Adams Surface Hub
 Baker@contoso.com,password,Baker Surface Hub
@@ -156,11 +156,11 @@ Rushmore@contoso.com,password,Rushmore Surface Hub
    
 3. Назначьте имя проекту и нажмите кнопку **Далее**.
 
-4. Выберите **Общие для выпуска Windows10 для совместной работы**, нажмите кнопку **Далее**, а затем— **Готово**.
+4. Выберите **Общая для команды Windows 10**, нажмите кнопку **Далее**, а затем — **Готово**.
 
     ![Новый проект ICD](images/icd-new-project.png)
 
-5. В проекте в разделе **Доступные настройки**выберите **Общие параметры выпуска для совместной работы**.
+5. В проекте в разделе **Доступные настройки**выберите пункт **Общие параметры группы**.
 
     ![Общие параметры ICD](images/icd-common-settings.png)
 
