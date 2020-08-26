@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7d79fab22b62e6ef29832be6241c484e9caf72e0
-ms.sourcegitcommit: 537fa38bdd21fcd679af0764e734f4b8efb6a03f
+ms.openlocfilehash: e3b1e380f9776fc56e99b8d4e35f708aa952759c
+ms.sourcegitcommit: e075b46f14b730464d66246b0280ef2cfa16b3fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "10959951"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963578"
 ---
 # Сброс и восстановление Surface Hub 2S
 
@@ -60,9 +60,9 @@ ms.locfileid: "10959951"
 
 1. Отключите устройство:
 
-   1. Нажав кнопку "увеличить громкость", нажмите кнопку Power.
+   1. Нажав кнопку "Громкость", нажмите кнопку Power.
    1. Продолжайте нажимать обе кнопки, пока не увидите логотип Windows.
-   1. Отпустите кнопку Power (выключить), но продолжайте удержание кнопки вверх, пока не начнется установка пользовательского интерфейса.
+   1. Отпустите кнопку Power, но продолжайте удерживать нажатой кнопку вниз, пока не начнется установка пользовательского интерфейса.
 
    ![* Начало восстановления с помощью кнопок "уменьшить громкость" и "включить" *](images/sh2-keypad.png) <br>
    **Рисунок 2. Громкость и кнопки управления электропереключателем**
