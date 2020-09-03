@@ -14,12 +14,12 @@ manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
 ms.date: 09/01/2020
-ms.openlocfilehash: a6ea1742ab767a99e7b4868e56d081bf0016785b
-ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
+ms.openlocfilehash: 239b5e4659ff48e6c0fd9d2fca03341eadb9a27d
+ms.sourcegitcommit: 78694f3958117a339a28d3a5854908181f1b65d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986331"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993669"
 ---
 # Режим корпоративного управления Surface (Майкрософт)
 
@@ -209,10 +209,10 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 1.  На диске C: Создайте папку, в которой вы хотите сохранить сценарий; Например, C:\SEMM.
 2.  Скопируйте пример сценария в Блокнот или эквивалентный текстовый редактор и сохраните файл как сценарий PowerShell (PS1).
 3.  Войдите в систему на компьютере с учетными данными администратора и откройте сеанс PowerShell с повышенными привилегиями.
-4.  Убедитесь в том, что для разрешений задано разрешение запуска сценариев. По умолчанию выполнение сценариев блокируется, если не изменить политику выполнения. Дополнительные сведения можно найти в разделе о политиках выполнения.
+4.  Убедитесь в том, что для разрешений задано разрешение запуска сценариев. По умолчанию выполнение сценариев блокируется, если не изменить политику выполнения. Дополнительные сведения можно найти в разделе [о политиках выполнения](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 5.  В командной строке введите полный путь к сценарию, а затем нажмите клавишу ВВОД. Сценарий создает демонстрационный сертификат с именем TempOwner. pfx.
 
-Кроме того, вы можете создать собственный самозаверенный сертификат с помощью PowerShell. Дополнительные сведения можно найти в приведенной ниже документации по PowerShell: [New-SelfSignedCertificate] (https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate)
+Кроме того, вы можете создать собственный самозаверенный сертификат с помощью PowerShell. Дополнительные сведения можно найти в следующей документации по PowerShell: [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).
 
 
 
