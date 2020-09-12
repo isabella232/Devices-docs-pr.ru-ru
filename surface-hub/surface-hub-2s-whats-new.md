@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 09/11/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 2da6daf2bb32e9209f33d5eb19d76221db28c0ed
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a552434846c14a5f612b3743ea42819999aa8553
+ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836048"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "11013419"
 ---
 # Новые возможности Surface Hub 2S для ИТ-администраторов
 
@@ -24,6 +24,7 @@ Surface Hub 2 — это холст для совместной работы, р
 
 |**Возможность**|**Краткий обзор**|**Подробнее**|
 |:-------|:------|:----|
+|**Переход на Windows 10 Pro или Enterprise**| Surface Hub 2S предварительно установлен в Windows 10 Team, настроенный выпуск Windows 10, разработанный для упрощения совместной работы в средах для собраний. Теперь у вас есть возможность работать с Windows 10 Pro или Enterprise, чтобы использовать Surface Hub 2, как и любые другие компьютеры.| [Объявление о доступности Windows 10 Pro и Enterprise на Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107) <br> <br> [Переход на Windows 10 Pro или Корпоративная в Surface Hub 2](surface-hub-2s-migrate-os.md) |
 |**Управление мобильными устройствами и UEFI**| Управление параметрами и политиками с помощью поставщика управления мобильными устройствами (MDM). <br> <br> Полная интеграция с корпоративным режимом управления Surface Management (SEMM) позволяет управлять аппаратными компонентами и микропрограммами. | [Управление Surface Hub 2S с помощью Microsoft Intune](surface-hub-2s-manage-intune.md) <br> <br> [Surface Enterprise Management Mode](https://docs.microsoft.com/surface/surface-enterprise-management-mode) |
 |**Сосуществование в облаке и локальном сосуществовании**| Поддержка локальных, гибридных и онлайновых служб. | [Подготовка среды для Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md) |
 |**Сброс и восстановление**| Восстановление из облака или USB-накопителя. | [Восстановление и сброс Surface Hub 2S](surface-hub-2s-recover-reset.md) |

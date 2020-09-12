@@ -1,5 +1,5 @@
 ---
-title: Основы операционной системы (Surface HUB)
+title: Основы операционной системы (Surface Hub)
 description: В этой статье описаны уникальные аспекты операционной системы Windows 10 Team и их отличия от Windows 10 корпоративный.
 keywords: журнал изменений
 ms.prod: surface-hub
@@ -7,20 +7,26 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 09/11/2020
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 92a634e897d3e0c9163fe092aaf7992f625de991
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: cae09fa3a21fe497d021f38621085b639b15c4da
+ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835504"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "11013409"
 ---
-# Основы операционной системы (Surface HUB)
+# Основы операционной системы (Surface Hub)
 
 Операционная система Surface Hub, Windows 10 для совместной работы, основана на Windows 10 Корпоративная и обеспечивает мощную поддержку корпоративного управления, механизмов безопасности и других функций. Однако между ними имеются существенные различия. Выпуск "Корпоративная" предназначен для ПК, а Windows 10 для совместной работы специально разработан для больших экранов и конференц-залов. Оценивая требования безопасности и управления для Surface Hub, целесообразно рассматривать ее как новую операционную систему. В этой статье перечислены основные различия между Windows 10 для совместной работы на Surface Hub и Windows 10 Корпоративная, а также значение этих различий для вашей организации.
+
+Начиная с сентября 2020, у пользователей есть возможность перехода на Windows 10 Pro или Enterprise на Surface Hub 2S. Подробнее см. в следующих разделах:
+
+- [Объявление о доступности Windows 10 Pro и Enterprise на Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).
+
+- [Переход на Windows 10 Pro или Корпоративная в Surface Hub 2](surface-hub-2s-migrate-os.md)
 
 ## Пользовательский интерфейс
 
