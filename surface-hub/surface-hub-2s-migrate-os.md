@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/11/2020
+ms.date: 09/15/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 44e7ca08ca4b8c077d430cba2a8cb4b674b68631
-ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+ms.openlocfilehash: d36f42485107dd84be08c20291b36540662503da
+ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "11013439"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016458"
 ---
 # Переход на Windows 10 Pro или Корпоративная в Surface Hub 2
 
@@ -26,6 +26,11 @@ Surface Hub 2S предварительно установлен в Windows 10 T
 
 > [!IMPORTANT]
 >В отличие от обычного обновления или миграции, этот процесс требует подписаться на предварительное описание процедуры, как описано на этой странице. Прежде чем продолжить, прочтите [компоненты решения](#solution-components) и [процесс миграции и установки](#migration-and-installation-workflow-summary) .
+
+
+> [!NOTE]
+> После установки Windows 10 Pro или Enterprise вам потребуется новая лицензия, которая будет отделена от имеющейся лицензии на Windows 10 Team. 
+
 
 Вы запускаете миграцию из Windows 10 с помощью отдельного компьютера и средства для загрузки, а также средство для настройки **UEFI** — для создания пакета, содержащего новый параметр UEFI, применяемый к Surface Hub 2.  Конфигуратор UEFI Surface выступает в качестве интерфейса в режиме корпоративного управления Surface (SEMM), предназначенного для централизованного управления параметрами микропрограмм на устройствах Surface в корпоративной среде. Чтобы узнать больше о SEMM, ознакомьтесь с [документацией по режиму корпоративного управления Surface (Майкрософт](https://docs.microsoft.com/surface/surface-enterprise-management-mode)).
  
@@ -93,7 +98,7 @@ Surface Hub 2S предварительно установлен в Windows 10 T
 
 - Компании среднего размера и другие пользователи могут получить сертификат от сторонних поставщиков. Это рекомендуемый вариант для организаций, у которых нет достаточных экспертов или специальных групп ИТ – безопасности.
 
-- Кроме того, вы можете создать самозаверенный сертификат с помощью сценария PowerShell в следующей документации: Surface Management в соответствии с [требованиями сертификата в режиме управления предприятием](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). Вы также можете использовать PowerShell для создания собственного сертификата в соответствии с приведенной ниже документацией: [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps).
+- Кроме того, вы можете создать самозаверенный сертификат с помощью сценария PowerShell в следующей документации: Surface Management в соответствии с [требованиями сертификата в режиме управления предприятием](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). Вы также можете использовать PowerShell для создания собственного сертификата в соответствии с приведенной ниже документацией: [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).
 
 Для проверки подписи файлов конфигурации перед применением параметров UEFI необходимо обеспечить защиту пакета SEMM с помощью сертификата. Дополнительные сведения можно найти в статье Руководство по [режиму управления предприятием в Surface](https://docs.microsoft.com/surface/surface-enterprise-management-mode) .
  
@@ -274,3 +279,9 @@ Surface Hub 2S предварительно установлен в Windows 10 T
 
 Если вы хотите восстановить устройство в рамках команды Windows 10, ознакомьтесь со [сведениями сброс и восстановление Surface Hub 2S](surface-hub-2s-recover-reset.md)
 
+## Журнал версий
+
+| Версия | Дата               | Описание                                                                                           |
+| ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| v. 1,1  | 15 сентября 2020 г. | Помещено дополнительное примечание в разделе Введение в требования к лицензированию для установки новой ОС. |
+| v. 1.0  | 1 сентября 2020 г.  | Новая статья                                                                                           |
