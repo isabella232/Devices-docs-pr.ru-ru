@@ -30,6 +30,7 @@
 
 ### [Развертывание устройств Surface](deploy.md)
 ### [Windows Autopilot и устройства Surface](windows-autopilot-and-surface-devices.md)
+### [Поддержка регистрации Surface для Windows Autopilot](surface-autopilot-registration-support.md)
 ### [Виртуальный рабочий стол Windows на Surface](windows-virtual-desktop-surface.md)
 ### [Развертывание, управление и обслуживание Surface Pro X](surface-pro-arm-app-management.md)
 ### [Совместимость приложений с Surface Pro X](surface-pro-arm-app-performance.md)
