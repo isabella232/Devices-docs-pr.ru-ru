@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 312da1d432abce125161febfd7bca3eb82e22074
-  ms.sourcegitcommit: 83530906c7e34c92bbee90b723321acd61e77669
+  ms.openlocfilehash: 5cbfeee6dee7dcb921b5cbecaaeca7b4461073dc
+  ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 08/08/2020
-  ms.locfileid: "10918909"
+  ms.lasthandoff: 09/16/2020
+  ms.locfileid: "11016408"
 landingContent:
 - title: Устройства Surface
   linkLists:
@@ -42,10 +42,10 @@ landingContent:
   linkLists:
   - linkListType: deploy
     links:
-    - text: Инструмент "ускоритель развертывания Surface"
-      url: microsoft-surface-deployment-accelerator.md
     - text: Служба Autopilot и устройства Surface
       url: windows-autopilot-and-surface-devices.md
+    - text: Поддержка регистрации Surface для Windows автопилота
+      url: surface-autopilot-registration-support.md
     - text: Виртуальный рабочий стол Windows на Surface
       url: windows-virtual-desktop-surface.md
 - title: Сравнение устройств Surface
@@ -76,15 +76,15 @@ landingContent:
       url: surface-diagnostic-toolkit-for-business-intro.md
     - text: SEMM и UEFI
       url: surface-enterprise-management-mode.md
-    - text: Параметр ограничения батареи
-      url: battery-limit.md
+    - text: Инструмент "ускоритель развертывания Surface"
+      url: microsoft-surface-deployment-accelerator.md
 - title: Устранение неполадок
   linkLists:
   - linkListType: learn
     links:
     - text: Основные решения поддержки
       url: support-solutions-surface.md
-    - text: Рекомендации по удалению SSD на совместимых устройствах Surface
+    - text: Рекомендации по извлечению SSD на совместимых устройствах Surface
       url: surface-ssd-removal-guide.md
     - text: Блог по Surface для ИТ-специалистов
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro
