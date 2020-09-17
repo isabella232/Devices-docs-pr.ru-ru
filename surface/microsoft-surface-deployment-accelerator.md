@@ -15,12 +15,12 @@ ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ms.date: 5/08/2020
-ms.openlocfilehash: 0e136bd0a69db7a4c4e5cea7d2c065727dcc8fcc
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 3ede7311289dc4bc720735c0142ff3a46fbb69e7
+ms.sourcegitcommit: 582c5a79881c58c4f1aa66cfcab46db966ca9f24
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016446"
+ms.locfileid: "11016560"
 ---
 # Microsoft Surface Deployment Accelerator
 
@@ -36,6 +36,9 @@ ms.locfileid: "11016446"
 
 1. Съемный USB-диск с размером не менее 16 ГБ. USB-накопитель будет отформатирован.
 2. ISO-файл в Windows 10 Pro или Windows 10 Корпоративная. Средство создания мультимедиа можно использовать для загрузки Windows 10 и создания ISO-файла. Дополнительные сведения можно найти в разделе [Загрузка Windows 10](https://www.microsoft.com/software-download/windows10).
+3. Устройство под управлением Windows 10 версии 2004 или более поздней с доступом к Интернету.
+
+Подробный список требований вы найдете в разделе [необходимые условия](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) в документе Readme.
 
 ## Как запустить SDA
 
@@ -52,17 +55,20 @@ ms.locfileid: "11016446"
     ```powershell
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
     ```
-8. Запустите сценарий SDA, указав параметры для своей среды. Например, следующая команда создаст загрузочный USB-накопитель, который можно использовать для установки Windows 10 на Surface Hub 2:
+8. Запустите сценарий SDA, указав параметры для своей среды. Этот сценарий можно использовать для создания изображений для установки Windows 10 на различных устройствах Surface. Полный список поддерживаемых устройств можно найти в [описании параметров устройства](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#full-parameter-documentation) в статье readme по sda. 
+
+    Например, следующая команда создаст загрузочный USB-накопитель, который можно использовать для [установки Windows 10 на Surface Hub 2](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os):
 
     ```powershell
     .\CreateSurfaceWindowsImage.ps1 -ISO C:\SDA\enterprise_client.iso -OSSKU Enterprise -DestinationFolder C:\Output -Device SurfaceHub2 -CreateUSB $True
     ```
+    Ниже приведен пример выходных данных сценария.
 
    ![Запуск средства акселератора для развертывания Surface](images/sda1.png)
 
     Для выполнения сценария потребуется около 45 минут, но это может занять больше времени в зависимости от доступности ресурсов ЦП и дискового пространства. 
 
-    После создания образа Windows сценарий попросит подтвердить букву диска USB. USB-диск будет отформатирован, настроен как загрузочный и скопированы файлы, чтобы включить установку настраиваемого образа Windows 10 для устройств Surface.
+    После создания образа Windows сценарий предложит вам вставить и подтвердить букву USB-накопителя. USB-диск будет отформатирован, настроен как загрузочный и скопированы файлы, чтобы включить установку настраиваемого образа Windows 10 для устройств Surface.
 
 9. Вставьте USB-накопитель на устройство, на котором вы хотите установить Windows 10, и перезагрузите компьютер, чтобы начать установку Windows 10. Загрузка с USB-порта должна быть включена в BIOS, при этом может потребоваться временно отключить безопасную загрузку.
 
@@ -72,5 +78,4 @@ ms.locfileid: "11016446"
 ## Дополнительные ссылки
 
  - [Средство развертывания исходного образа, выпущенное в GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
-
  - [Скачивание и установка Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
