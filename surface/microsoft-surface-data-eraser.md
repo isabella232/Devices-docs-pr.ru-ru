@@ -14,13 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 05/11/2020
-ms.openlocfilehash: da3624d5eb271e999334b4859cfb6123eeabfa46
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 09/18/2020
+ms.openlocfilehash: dc1a9b4480f37af6d74699a2e693ef8d5318da76
+ms.sourcegitcommit: 8bd03770279d5e53446436781226ffd51eeec916
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834443"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "11029233"
 ---
 # Microsoft Surface Data Eraser
 
@@ -34,26 +34,13 @@ ms.locfileid: "10834443"
 
 В число совместимых устройств Surface входят:
 
-* Surface Book 3
-* Surface Go 2
-* Surface Pro 7
-* Surface Pro X
-* Surface ноутбук 3
-* Surface Pro 6
-* Surface Laptop 2
-* Surface Go
-* Surface Book 2
-* Surface Pro с функцией LTE Advanced (модель 1807)
-* Surface Pro (модель 1796)
-* Surface Laptop
-* Surface Studio
-* Surface Studio 2
-* Surface Book
-* Surface Pro 4
-* Surface 3 LTE
-* Surface 3
-* Surface Pro 3
-* Surface Pro 2
+- Surface Book (все выпуски)
+- Surface Go (все выпуски)
+- Surface Pro X (все выпуски)
+- Surface ноутбук (все выпуски)
+- Surface Studio (все выпуски)
+- Surface Pro 2 и более поздних версий
+- Windows 10 Pro и Enterprise на Surface Hub 2
 
 Используйте Microsoft Surface Data Eraser при:
 
@@ -97,7 +84,7 @@ ms.locfileid: "10834443"
    ![Запуск средства Microsoft Surface Data Eraser](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
 
    *Рис. 1. Запуск средства Microsoft Surface Data Eraser*
-4.  Выберите **x64** для большинства Surface Devices или **ARM64** для Surface Pro X на странице **архитектура выборки** , как показано на рисунке 2. Выберите пункт **Продолжить**.
+4.  Выберите **x64** для большинства Surface Devices или  **ARM64** для Surface Pro X на странице **архитектура выборки** , как показано на рисунке 2. Выберите пункт **Продолжить**.
 
     ![Выбор архитектуры](images/dataeraser-arch.png "Architecture Selection")<br>
        *Рисунок 2. Выбор архитектуры устройства*
@@ -171,6 +158,17 @@ ms.locfileid: "10834443"
 ## Изменения и обновления
 
 Корпорация Майкрософт периодически обновляет Microsoft Surface Data Eraser. Далее представлены сведения об изменениях в каждой версии.
+
+### 3.33.139
+*Дата выпуска: 9 сентября 2020 г.*
+
+Эта версия ластика для данных Surface включает исправления ошибок и поддерживает следующие возможности: 
+
+- Архитектура, позволяющая уменьшить необходимость обновления с помощью новых выпусков продуктов
+- Уведомление, доступное для новых обновлений средства
+- Добавления телеметрии
+- Windows 10 Pro и Enterprise на Surface Hub 2
+
 
 ### 3.30.139
 *Дата выпуска: 11 мая 2020*

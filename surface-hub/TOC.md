@@ -37,6 +37,7 @@
 ## Управление
 ### [Переход на Windows 10 Pro или Корпоративная в Surface Hub 2](surface-hub-2s-migrate-os.md)
 ### [Настройка Windows 10 Pro или Корпоративная на Surface Hub 2](surface-hub-2-post-install.md)
+### [Основные надстройки для Windows 10 Pro и Корпоративная в Surface Hub 2](surface-hub-2-essential-add-ons.md)
 ### [Установка предварительной сборки обновления Windows 10 для совместной работы 2020](surface-hub-install-2020preview.md)  
 ### [Известные проблемы: обновление для Windows 10 для совместной работы 2020](surface-hub-2020-team-update-known-issues.md)
 ### [Установка и настройка нового браузера Microsoft Edge на Surface Hub](surface-hub-install-chromium-edge.md)        

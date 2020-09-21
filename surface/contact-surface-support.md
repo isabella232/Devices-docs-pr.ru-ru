@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Информация о поддержке продуктов Microsoft Surface и Surface Hub.
-ms.openlocfilehash: 52be75fdec27e1ccf4d68be36afab19c77db540a
-ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
+ms.openlocfilehash: f423bdcc5bc4890861614e6213e9281b22925b42
+ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926301"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "11030416"
 ---
 # Поддержка Surface
 
@@ -39,7 +39,7 @@ ms.locfileid: "10926301"
 > [!NOTE]
 > Вам потребуется войти на портал отправки через Интернет с помощью учетной записи Майкрософт или учетной записи Azure Active Directory.  
 
-Для бизнес-клиентов: [отправьте запрос на обслуживание](https://support.microsoft.com/supportforbusiness/productselection?sapid=d383b26c-f150-6220-8f1b-e8aa325d9727). 
+Для бизнес-клиентов: [отправьте запрос на обслуживание](https://support.microsoft.com/supportforbusiness/productselection). 
 
 Для пользователей премьер-поддержки Майкрософт: [отправьте запрос на обслуживание в центре служб](https://serviceshub.microsoft.com/support/contactsupport). 
 
