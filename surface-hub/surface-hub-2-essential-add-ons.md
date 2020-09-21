@@ -1,5 +1,5 @@
 ---
-title: Важные надстройки для Windows 10 Pro и Enterprise на Surface Hub 2
+title: Основные надстройки для Windows 10 Pro и Корпоративная в Surface Hub 2
 description: В этой статье приводятся сведения о опциональных аксессуарах, которые можно использовать в Windows 10 Pro или Enterprise на Surface Hub 2.
 keywords: Surface Hub, Windows 10, Настольный компьютер, средство чтения отпечатков пальцев, Windows Hello
 ms.prod: surface-hub
@@ -12,17 +12,17 @@ manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
 ms.author: greglin
-ms.date: 09/16/2020
+ms.date: 09/18/2020
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: d908c937c331e36f6b82f4c3c5ee213abf8a0176
-ms.sourcegitcommit: 2ac88d30b7d104d86b3bec657941457c916a116c
+ms.openlocfilehash: 24998848f16803585bc414d50e2099745943dcc7
+ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11027010"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "11030426"
 ---
-# Важные надстройки для Windows 10 Pro и Enterprise на Surface Hub 2
+# Основные надстройки для Windows 10 Pro и Корпоративная в Surface Hub 2
 
 Если вы перешли с Windows 10 на Windows 10 Pro или Enterprise на Surface Hub 2, вы можете выбрать один из разнообразных аксессуаров, которые подключаются через USB-C, USB-A, HDMI или Bluetooth. 
 
@@ -54,6 +54,7 @@ ms.locfileid: "11027010"
 | **Требования к системе**          | Windows 10 Pro, Windows 10 корпоративный.                                                                                               |
 | **Сертификация Windows**       | Windows 10;                                                                                                                           |
 | **Ложная ставка принятия (FAR)** | 1/1,5 миллион. FAR показывает вероятность неправильного приема попытки доступа неавторизованными пользователями в биометрической системе безопасности. |
+| **Ставка отказа от ложных (FRR)** | 4,9%. FRR показывает вероятность неправильной отклонения попытки доступа уполномоченными пользователями с помощью биометрической системы безопасности. |
 
 
 > [!NOTE]
