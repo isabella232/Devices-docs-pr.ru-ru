@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 389db218d06f9f8d3f510e711b03487daf4e06f9
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: a031fd7fd861e5d45194ec1a8c391621a2bcb71a
+ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934869"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078749"
 ---
 # Управление Surface Hub 2S с помощью Intune
 
@@ -26,10 +26,13 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 
 ### Регистрация вручную
 
-1. Войдите в качестве локального администратора в Surface Hub 2S и откройте приложение **Параметры**. Откройте **Surface Hub** > **Управление устройством** и выберите **+** для добавления.
-2. После проверки подлинности устройство будет автоматически зарегистрировано в Intune.
+1. Откройте приложение " **Параметры** " на Surface Hub 2 и войдите в систему под учетной записью локального администратора. Откройте **Surface Hub** > **Управление устройством** и выберите **+** для добавления.
+2. Вам будет предложено выполнить вход с учетной записью, которую вы хотите использовать для Intune. После проверки подлинности устройство будет автоматически зарегистрировано в Intune.
 
    ![Регистрация Surface Hub 2S в Intune](images/sh2-set-intune1.png)<br>
+   
+> [!NOTE]
+> Учетная запись, используемая для проверки подлинности, будет являться учетной записью для регистрации Intune и должна быть лицензирована для Intune.
 
 ### Автоматическая регистрация — связь с Azure Active Directory
 

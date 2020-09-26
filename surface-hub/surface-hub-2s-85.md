@@ -1,5 +1,5 @@
 ---
-title: Surface Hub 2S 85 (дюйм)
+title: Surface Hub 2S — 85 дюймов
 description: В этой статье рассказывается о Surface Hub 2S 85 (дюйм).
 keywords: Surface Hub 2S 85, технические характеристики
 ms.prod: surface-hub
@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/25/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 40c16aa783e0880a3d28178ed936a68d7dc49c1a
-ms.sourcegitcommit: d7fe059a823b7e5f1daec447d92dac60bdd2a26e
+ms.openlocfilehash: 149e3498b2d976b5ab090db1726d56eb2357ffc5
+ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072834"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078739"
 ---
 # Surface Hub 2S 85 "Общие сведения & технические характеристики
 
@@ -35,7 +35,7 @@ ms.locfileid: "11072834"
 
 | Компонент    | Описание                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Кодов        | 44,5 "x 62,8" x 3,4 "<br>(1130mm x 1595mm x 85.6 мм)                                                                                                                                                                                                        |
+| Кодов        | 44,5 "x 77,1" x 3,4 "<br>(1130mm x 1959mm x 85.6 мм)                                                                                                                                                                                                        |
 | Насыщенность            | 185 фунта (84kg)                                                                                                                                                                                                                                            |
 | Разрешение        | 3840 x 2160                                                                                                                                                                                                                                               |
 | Монитор           | PixelSense™, 30.5 пропорции, 10-разрядный цвет, ширина толщины 16:9 мм, не под, ЖК-экран с контактами с 20 одновременными точками касания                                                                                                           |
