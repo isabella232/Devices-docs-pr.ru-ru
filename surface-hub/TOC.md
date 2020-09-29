@@ -5,7 +5,7 @@
 ## Обзор
 ### [Новые возможности Surface Hub 2S для ИТ-администраторов](surface-hub-2s-whats-new.md)
 ### [Технические характеристики Surface Hub 2S — 50 дюймов](surface-hub-2s-techspecs.md) 
-### [Surface Hub 2S — 85 дюймов](surface-hub-2s-85.md)
+### [Технические характеристики Surface Hub 2S — 85 дюймов](surface-hub-2s-85.md)
 ### [Основы операционной системы (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
 ### [Настройка яркости, громкости и ввода Surface Hub 2S](surface-hub-2s-onscreen-display.md)
 ### [Использование приложения "Доска Майкрософт" на Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
