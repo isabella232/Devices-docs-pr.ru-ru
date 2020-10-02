@@ -1,7 +1,7 @@
 ---
-title: Настройка Windows 10 Pro или Корпоративная на Surface Hub 2
-description: В этой статье приводятся рекомендации по обеспечению оптимальной работы при использовании персональных экранных касаний и компьютеров с перьевым интерфейсом.
-keywords: Surface Hub, Windows 10, классическое приложение, установка, Настройка
+title: Configure Windows 10 Pro or Enterprise on Surface Hub 2
+description: This article includes recommendations to ensure the best experience when using a personalized large screen touch and pen computer.
+keywords: Surface Hub, Windows 10, desktop, install, configuration
 ms.prod: surface-hub
 ms.mktglfcycl: deploy
 ms.localizationpriority: low
@@ -14,325 +14,336 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 10/01/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: dd580a3b67ffa7c46ce823765d589fec47fadb44
-ms.sourcegitcommit: d7fe059a823b7e5f1daec447d92dac60bdd2a26e
+ms.openlocfilehash: 68f3fe1eb2fba0673444510fc77d3f41e09144af
+ms.sourcegitcommit: e0047f07c42b1e3cbd074b66a4704ea72e9d7bae
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072846"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "11093899"
 ---
-# Настройка Windows 10 Pro или Корпоративная на Surface Hub 2
+# Configure Windows 10 Pro or Enterprise on Surface Hub 2
 
-После того как вы завершите процесс установки на Windows 10 Pro или Enterprise, вы можете выполнить указанные ниже действия, чтобы настроить приложения и параметры на Surface Hub 2. Эти действия рекомендуются для обеспечения оптимальной работы при использовании такого персонального сенсорного экрана и компьютера с перьевым интерфейсом.
+After you have completed the installation process of migrating to Windows 10 Pro or Enterprise, you can perform the following steps to configure apps and settings on your Surface Hub 2. These steps are recommended to ensure the best experience when using this personalized large screen touch and pen computer.
 
-При выполнении этих действий может оказаться полезным использование проводной или беспроводной клавиатуры и мыши.
+When performing these steps, you might find it useful to use a wired or wireless keyboard and mouse.
 
-## Настройка параметров системы
+## Configure system settings
 
-1. Войдите в систему с помощью учетной записи, обладающей правами локального администратора на устройстве.  
-    - На устройствах, подключенных к Azure AD, пользователь, выполняющий присоединение к Azure AD, автоматически добавляется в локальную группу администраторов. Глобальные администраторы Azure Active Directory и Администраторы устройств Azure Active Directory [также являются локальными администраторами](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin). 
-    - Чтобы получить список учетных записей с правами локального администратора, введите в командной строке команду **net localgroup Administrators** .
-2. Переименуйте устройство, используя понятное имя, например: **username-SHub-Desktop**.
-3. Выберите **Start**  >  **Параметры**запуска  >  **учетные записи**  >  **синхронизируйте параметры** и отключите **Параметры синхронизации** . 
-    - Используемые здесь параметры предназначены для обеспечения наилучшего сенсорного ввода, поэтому вам может потребоваться синхронизация других устройств.
-4. Перезагрузите устройство.
+1. Sign in with an account that has local administrator privileges on the device.  
+    - On Azure AD joined devices, the user that performs the Azure AD join is automatically added to the local administrator group. Azure AD global administrators and Azure AD devices administrators are [also local administrators](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin). 
+    - You can type **net localgroup administrators** at a command prompt to list the accounts that have local administrator rights.
+2. Rename the device using a friendly name, for example: **username-SHub-Desktop**.
+3. Select **Start** > **Settings** > **Accounts** > **Sync your settings** and turn **Sync settings** off. 
+    - The settings used here are intended to enable the best large-screen touch experience, and therefore you may not want to sync other devices.
+4. Reboot the device.
 
-## Включение сенсорной клавиатуры и сенсорной панели
+## Enable the touch keyboard and touchpad
 
-1. Нажмите и удерживайте или щелкните правой кнопкой мыши панель задач и выберите пункт **Показать сенсорную клавиатуру** и **Показать кнопку сенсорной панели**. 
-    - Сенсорная клавиатура удобна для ввода данных пользователем, а виртуальная сенсорная панель — для точного выбора, наведения всплывающих подсказок или в качестве альтернативы нажатию и удержанию щелчка правой кнопкой мыши. 
-    - См. следующий пример.
+1. Tap and hold or right-click the taskbar and then select **Show touch keyboard button** and **Show touchpad button**. 
+    - The touch keyboard is helpful for direct user input, and the virtual touchpad helps with precise selections, hovering screen tips, or as an alternative to tap and hold for right-click. 
+    - See the following example.
 
-     ![Параметры сенсорного ввода](images/touch.png)
+     ![Touch settings](images/touch.png)
 
-2. Настройте сенсорную клавиатуру на QWERTY и плавающую.
-    1. Щелкните значок клавиатуры на панели задач, чтобы показать сенсорную клавиатуру.
-    2. На сенсорной клавиатуре щелкните значок клавиатуры в левом верхнем углу, чтобы открыть меню Параметры клавиатуры.
-    3. Выберите в верхней строке рядом с параметром последний тип клавиатуры, чтобы включить функцию QWERTY, а последний вариант во второй строке — для включения режима с плавающей точкой, что очень полезно для этого большого экрана. См. следующие примеры.
+2. Configure the touch keyboard to QWERTY and floating.
+    1. Select the keyboard icon on the taskbar to show the touch keyboard.
+    2. On the touch keyboard, select the keyboard icon in the upper left corner to open keyboard settings.
+    3. Select the next to last keyboard type on the top row to enable QWERTY, and the last option on the second row to enable floating, which is very helpful on this large screen. See the following examples.
 
-     ![Параметры клавиатуры](images/kbd.png)
+     ![Keyboard settings](images/kbd.png)
 
-3. Настройка параметров экранной клавиатуры.
-    1. Поиск и открытие **параметров ввода** 
-    2. Включите все параметры в разделе Орфография, ввод и сенсорная клавиатура.
+3. Configure the soft keyboard settings.
+    1. Search for and open **Typing settings** 
+    2. Enable all the options under Spelling, Typing, and Touch keyboard.
 
 
-В следующем примере показан элемент сенсорной панели, который полезен для навигации и выбора параметров. Экранная клавиатура используется для поиска в Microsoft Store.
+The following example shows the trackpad, which is useful to navigate and select options. The onscreen keyboard is being used to search the Microsoft Store:
 
-![Использование сенсорной панели](images/store.png)
+![Using the trackpad](images/store.png)
 
-## Настройка клавиатуры и мыши Bluetooth (опционально)
+## Configure bluetooth keyboard and mouse (optional)
 
-Подключите клавиатуру и мышь, если вы используете устройство в качестве основного устройства Windows, или часто используете его для ввода или точности.
+Connect a keyboard and mouse if you are using the device as your primary Windows device, or you use it often for typing or precision work.
 
-Если устройство Surface Hub находится рядом с компьютером, вы можете использовать [мышь без границ](https://aka.ms/mm) для эффективного перемещения между Surface HUB и компьютером. Дополнительные сведения можно найти в [статье Загрузка Microsoft из области "некоторая мышь без границ](https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/)".
+If your Surface Hub device is near to a PC, you can use [Mouse without Borders](https://aka.ms/mm) to move seamlessly between the Surface Hub and the PC. For more information, see [Microsoft download from The Garage: Mouse without Borders](https://blogs.microsoft.com/ai/microsoft-download-from-the-garage-mouse-without-borders/).
 
-## OneDrive для бизнеса
+## OneDrive for Business
 
-С помощью [OneDrive для бизнеса](https://docs.microsoft.com/onedrive/onedrive) можно легко предоставлять общий доступ к средствам, журналам и другим файлам между всеми рабочими устройствами.
+Use [OneDrive for Business](https://docs.microsoft.com/onedrive/onedrive) to easily share tools, logs, and other files between all your work devices.
 
-- OneDrive предоставляет доступ к рабочим файлам между ноутбуками, рабочим столом Surface HUB и мобильными устройствами, управляемыми с помощью Intune. Файлы можно редактировать на любом устройстве, при этом все подключенные к ним устройства будут обновлены с учетом изменений.
-- Учитывая размер SSD Surface Hub (128 ГБ), если вы настроили OneDrive на настольном устройстве Surface Hub, убедитесь, что в качестве конфигурации по умолчанию сохраняются файлы в Интернете и они загружаются по мере использования.
+- OneDrive enables you to share your work files between your laptops, Surface Hub Desktop, and your Intune-managed mobile devices. Files can be edited on any device, and all network connected devices will be updated with the changes.
+- Considering the size of the Surface Hub SSD (128GB), if you configure OneDrive on your Surface Hub Desktop device, make sure the default configuration is to keep the files online and download files as you use them.
 
-Чтобы настроить OneDrive для загрузки файлов только при необходимости, установите параметр " **файлы по запросу** ", чтобы **сэкономить место и загрузить файлы по мере их использования**. Дополнительные сведения можно найти [в разделе запросы и Настройка состояний файлов по запросу в Windows](https://docs.microsoft.com/onedrive/files-on-demand-windows).
+To configure OneDrive to download files only when needed, set the **Files On-Demand** setting to **Save space and download files as you use them**. For more information, see [Query and set Files On-Demand states in Windows](https://docs.microsoft.com/onedrive/files-on-demand-windows).
 
-![Параметры OneDrive](images/onedrive.png)
+![OneDrive settings](images/onedrive.png)
 
 > [!NOTE]
-> Вы также можете повторить эти действия, чтобы настроить личное хранилище OneDrive, но не забудьте сэкономить место на диске и загружать только нужные файлы.
+> You can also repeat these steps to configure a personal OneDrive but be sure to conserve drive space and only download files as you need them.
 
-## SharePoint и Teams
+## SharePoint and Teams
 
-Файлы канала SharePoint и Teams также могут синхронизироваться локально с настольными устройствами, такими как ноутбуки и Surface Hub, с помощью подсистемы синхронизации OneDrive.
+SharePoint and Teams Channel files can also sync locally to your desktop devices, such as laptops and Surface Hubs, using the OneDrive sync engine.
 
-Синхронизация внутренних корпоративных файлов с локальным диском с помощью приложения синхронизации OneDrive:
+To sync internal corporate files to your local drive with the OneDrive sync app:
 
-1. Перейдите на сайт SharePoint и перейдите к каталогу документов верхнего уровня для файлов, которые вы хотите просмотреть или изменить на локальном устройстве.
-2. Нажмите кнопку " **синхронизировать** " в верхней части ленты SharePoint.
-3. Нажмите кнопку " **Открыть** " в контекстном меню. **этот сайт пытается открыть Microsoft OneDrive**.
-4. Убедитесь, что файлы SharePoint синхронизируются с локальным диском, щелкнув значок OneDrive в правом нижнем углу панели задач.
-5. Убедитесь в том, что в конфигурации хранить файлы в Интернете и загружать файлы только по мере использования.
-    1. Откройте проводник.
-    2. Перейдите к разделу "и щелкните его правой кнопкой мыши в **Microsoft \<SharePoint Document Folder Name\> **.
-    3. Нажмите кнопку **освободить место**.
-    4. В столбце Status (состояние) будет отображаться состояние файлов и папок. Дополнительные сведения можно найти в разделе [Синхронизация файлов SharePoint с клиентом синхронизации OneDrive](https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd).
-6. Файлы канала Teams хранятся на сайтах SharePoint, с одинаковыми функциями документов SharePoint, включая журнал версий и синхронизируя их с вашими локальными настольными устройствами. Чтобы синхронизировать файлы канала группы, выполните указанные ниже действия.
-    1. Перейдите к нужному каналу Teams и откройте вкладку **файлы** в верхней части экрана. Нажмите кнопку **синхронизировать**. Начнется синхронизация файлов, и они будут видны в проводнике на **рабочем столе \ Microsoft \<name of the Teams Channel\> \ **.
-    2. Выполните те же действия, что и при синхронизации сайтов SharePoint, чтобы сохранить файлы в облаке и загрузить их только при использовании, нажав и удерживая ее, щелкнув правой кнопкой мыши в проводнике и выбрав в контекстном меню команду **освободить место**.
+1. Go to a SharePoint site and navigate to the top-level document directory for files that you are interested in viewing or editing from your local device.
+2. Select on the **Sync** button on the top of the SharePoint ribbon.
+3. Select on **Open** on the popup **This site is trying to open Microsoft OneDrive**.
+4. Verify that the SharePoint files are synchronizing to your local drive by selecting on the OneDrive icon at the bottom right of the taskbar.
+5. Verify the configuration is set to keep the files online and download the files only as you use them:
+    1. Open file explorer.
+    2. Navigate to and right select on the **Microsoft \ \<SharePoint Document Folder Name\>**.
+    3. Select **Free up space**.
+    4. The Status column will display the status of files and folders. For more information, see [Sync SharePoint files with the OneDrive sync client](https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd).
+6. Teams Channel files are stored in SharePoint sites, with all of the same SharePoint document functionality, including version history and synchronizing to your local desktop devices. To sync Teams Channel files:
+    1. Navigate to the Teams Channel of interest and select on the **Files** tab at the top. Then select **Sync**. The files will start synchronizing and will be visible in File Explorer at **Desktop \ Microsoft \ \<name of the Teams Channel\>**.
+    2. Use the same procedure that you used for synchronizing SharePoint sites to keep the files in the cloud and only download them when you use them, by tap and hold or right-click in File Explorer on the Teams Channel name, and then selecting **Free up space**.
 
-## Связывание пера Surface HUB
+## Surface Hub pen settings
 
-Чтобы связать устройство пера, сделайте следующее:
+**Pair the Bluetooth Surface Hub Pen**
 
-1. Нажмите **Start**кнопку  >  **Параметры**запуска  >  **устройств**.
-2. Нажмите кнопку **Добавить Bluetooth или другое устройство**.
-3. Выберите **Bluetooth**.
-4. Удалите кнопку с хвостовиком пера и стабилизации видеоизображения, чтобы отключить соединение с батареей.
-5. Установите ограничение и удерживайте ее, пока не мигает индикатор связывания.
-6. На вкладке Surface Hub (параметры Bluetooth) выберите пункт **перо Surface Hub 2**.
-7. Завершите операцию связывания. 
-8. Если связывание не прошло успешно, повторите попытку связывания пера. При необходимости перезагрузите устройство и попробуйте еще раз.
+Pair the pen to keep the pen firmware up to date and get battery charge information on the Bluetooth device settings page, or in the Surface app:
 
-## Настройка камеры
+1. Select **Start** > **Settings** > **Devices**.
+2. Select **Add Bluetooth or other device**.
+3. Choose **Bluetooth**.
+4. Remove the pen tail button and shake to disconnect the battery connection.
+5. Put the cap back on and press and hold the cap until the pairing LED flashes.
+6. On the Surface Hub Bluetooth settings, choose **Surface Hub 2 Pen**.
+7. Complete the pairing operation. 
+8. If the pairing is not successful, attempt to pair the pen again. If necessary, reboot the device and then try again.
 
-Вы можете подключить камеру в верхней или на обеих сторонах устройства. Размещайте камеру в нужном месте, чтобы оптимизировать угол камеры, если вы используете концентратор с настольным компьютером, а не с тележкой, или близко к концентратору. Камера не выполняет автоматический поворот, поэтому для поворота камеры вручную необходимо иметь 2mm шестнадцатеричный ключ. 
+## Camera configuration
 
-Дополнительные сведения о том, как подключить камеру и повернуть камеру вручную, можно найти в разделе [Surface Hub 2S ориентация камеры](https://support.microsoft.com/help/4509729/surface-hub-2s-camera-lens-orientation).
+You can mount the camera on the top or on either side of the device. Mount the camera in a position to optimize the camera angle if you are using the Hub with a desktop stand instead of a cart, or are in close proximity to the Hub. The camera does not auto-rotate, so you need to have a 2mm hex key to manually rotate the camera. 
 
-## Конфигурация Windows Hello
+For more information on how to side-mount the camera and rotate the camera manually, see [Surface Hub 2S camera lens orientation](https://support.microsoft.com/help/4509729/surface-hub-2s-camera-lens-orientation).
 
-Surface Hub 2 с Windows 10 Корпоративная поддерживает полный набор классических приложений Win32 и параметров биометрического Windows Hello. Программа для чтения отпечатков пальцев (Surface Hub 2) может быть подключена к любому порту USB-C на устройстве. 
+## Windows Hello configuration
 
-> <i>В ближайшее время средство чтения отпечатков пальцев (Surface Hub 2) будет доступно для приобретения. Чтобы получить дополнительные сведения, в том числе о том, как приобрести, вернитесь на эту страницу.</i>
+Surface Hub 2S running Windows 10 Enterprise allows the full suite of Win32 desktop applications as well as biometric Windows Hello options. The Surface Hub 2 Fingerprint Reader accessory can be plugged into any USB-C port on the device. 
 
-После вставки средства чтения отпечатков пальцев **нажмите кнопку**  >  **Параметры**  >  входа для**учетных записей**,  >  **Sign-in options**  >  чтобы зарегистрировать отпечаток пальца, в**Windows Hello** .
+To order a Surface Hub 2 Fingerprint Reader or view technical specs, see [Essential add-ons for Windows 10 Pro and Enterprise on Surface Hub 2](surface-hub-2-essential-add-ons.md). 
 
-Использовать сертифицированное устройство Windows Hello для распознавания лицом. Камера Surface Hub 2 не поддерживает распознавание лиц в Windows Hello.
+After inserting the fingerprint reader, select **Start** > **Settings** > **Accounts** > **Sign-in options** > **Windows Hello Fingerprint** to enroll your fingerprint.
 
-## Включение значка сочетания клавиш на экране блокировки на панели задач
+Use a Windows Hello certified device for face recognition. The Surface Hub 2S camera does not support Windows Hello face recognition.
 
-Чтобы добавить на панель задач значок, включающий режим односенсорной блокировки экрана, аналогичный сочетанию клавиш Windows-L: 
+## Enable a Lock Screen shortcut icon on the taskbar
 
-1.  Нажмите и удерживайте или щелкните правой кнопкой мыши на рабочем столе и выберите команду **создать**  >  **ярлык**для  >  **Browse**  >  **настольного компьютера**, затем кнопку  >  **ОК**  >  **Next**.
+To add an icon to the taskbar that enables one-touch screen lock similar to the Windows-L keyboard shortcut: 
 
-1.  Введите имя для ярлыка, например " **заблокировать мой компьютер**", а затем нажмите кнопку **"Готово"**.
+1.  Tap and hold or right-click on the desktop, select **New** > **Shortcut** > **Browse** > **Desktop** > **OK** > **Next**.
 
-1.  Щелкните правой кнопкой мыши или нажмите и удерживайте созданный ярлык на рабочем столе и выберите пункт **Свойства**. На вкладке **ярлык** введите в поле **Target** следующее: **Rundll32.exe User32.dll, LockWorkStation**
+1.  Provide a name for the shortcut such as **Lock my PC**, and then select **Finish**.
 
-1.  Нажмите кнопку **изменить значок** и перейдите к **C:\Windows\System32\imageres.dll** и выберите нужный значок. 
+1.  Right-click or tap and hold the newly created shortcut on the desktop, and select **Properties**. On the **Shortcut** tab, enter the following in the **Target** field: **Rundll32.exe User32.dll,LockWorkStation**
 
-    См. приведенный ниже пример.
+1.  Select the **Change Icon** button and browse to **C:\Windows\System32\imageres.dll** and select an icon to use. 
 
-    ![Выбор значка](images/lock.png)
+    See the following example:
+
+    ![Choose an icon](images/lock.png)
     
-1.  Нажмите кнопку **ОК** , чтобы сохранить ярлык.
+1.  Select **OK** to save the shortcut.
 
-1.  Щелкните правой кнопкой мыши или коснитесь и удерживайте ярлык и выберите **закрепить на панели задач**.
+1.  Right-click or tap and hold the shortcut and select **Pin to taskbar**.
 
-## Приложения
+1. After you have pinned the lock shortcut to the taskbar, you can delete it from the desktop.
 
-### Обновление установленных приложений
+## Applications
 
-Чтобы обновить все установленные приложения из магазина, выполните указанные ниже действия.
+### Update installed apps
 
-1. Откройте приложение Microsoft Store и выберите пункт **другие** многоточия в правом верхнем углу.
-2. Выберите **Загрузки и обновления**.
-2. Нажмите **Получить обновления**.
+To update all installed Store apps:
 
-### Доска (Майкрософт)
+1. Open Microsoft Store app and select the **See more** ellipsis in the top-right corner.
+2. Select **Downloads and updates**.
+2. Select **Get updates**.
 
-Чтобы установить доску Microsoft, выполните указанные ниже действия.
+### Microsoft Whiteboard
 
- - Щелкните значок " **Рабочая область Windows Ink** " в правом правом углу панели задач и скачайте **доску**.
+To install the Microsoft Whiteboard:
+
+ - Select the **Windows Ink Workspace** icon on the lower right of the taskbar and download **Whiteboard**.
  
-   ![Рабочая область для рукописного ввода](images/ink.png) 
+   ![Ink workspace](images/ink.png) 
 
-Кроме того, вы можете установить доску из Microsoft Store.
+Alternatively, you can install Whiteboard from the Microsoft Store:
 
-1. Откройте приложение Microsoft Store и найдите **доску**.
-2. Выберите **нет, спасибо** , чтобы войти и использовать на разных устройствах.
-3. Закрепите доску на панели задач.
+1. Open Microsoft Store app and search for **Whiteboard**.
+2. Choose **No thanks** to sign in and use across devices.
+3. Pin Whiteboard to the taskbar.
 
-### Приложение Surface
+### Surface app
 
-1. В Microsoft Store выполните поиск по **поверхности**.
-2. Настройте фильтр " **доступно** для всех" на **всех устройствах**.
-3. Установите приложение **Surface** . Это первое приложение, указанное в списке. Для установки приложения может потребоваться связать MSA с магазином.
-4. Закрепите приложение **Surface** на панели задач.
+1. In the Microsoft Store, search for **Surface**.
+2. Set the **Available on** filter to **All devices**.
+3. Install the **Surface** app. This should be the first app listed. You might need to associate your MSA to the Store in order to install the app.
+4. Pin the **Surface** app to taskbar.
 
-### Набросок на фрагменте экрана
+### Snip & Sketch
 
-1. Откройте приложение **фрагмент & наброска** и закрепите его на панели задач.
-2. Щелкните многоточие в правом верхнем углу и выберите пункт **Параметры**.
-3. В меню " **Параметры**" включите параметр " **автоматически копировать в буфер обмена**", " **сохранять фрагменты**" и " **несколько окон** " (необязательно).
+1. Open the **Snip & Sketch** app and pin it to the taskbar.
+2. Select the ellipsis in the upper right corner and then select **Settings**.
+3. In **Settings**, turn on **Auto copy to clipboard**, **Save snips**, and **Multiple windows** (optional).
 
 ### Microsoft Office
 
-1. Откройте [портал Office](https://portal.office.com/account#installs) и установите нужные приложения.
-2. Закрепите нужные приложения Office на панели задач.
-3. Если на компьютере установлено приложение Outlook, убедитесь, что в качестве OST-файла Outlook сохраняется только Последнее два кэша недель. Это значительно сокращает время использования диска и настройку.
-    - Нажмите **кнопку**  >  **Параметры учетной записи** и выберите свою учетную запись.
-    - Нажмите кнопку **изменить** и установите ползунок **использовать режим кэширования Exchange** равным 14 дням.
+1. Open the [Office Portal](https://portal.office.com/account#installs) and install your desired applications.
+2. Pin desired Office applications to the taskbar.
+3. If Outlook is installed, be sure to set the Outlook OST to only save last two weeks cache. This will vastly reduce disk usage and setup time.
+    - Select **File** > **Account Settings** and select your account.
+    - Select **Change** and set the slider for **Use Cached Exchange Mode** to 14 days.
 
 ### Microsoft Teams
 
-1. Скачайте и установите [Microsoft Teams](https://teams.microsoft.com/downloads).
-2. Настройте параметры для автоматически запускаемого приложения (необязательно).
-3. Закрепите команды на панели задач.
-4. Рекомендуется уменьшить количество уведомлений групп на устройстве, чтобы избежать отвлекающих (необязательных).
+1. Download and install [Microsoft Teams](https://teams.microsoft.com/downloads).
+2. Configure settings to Auto-start application (optional).
+3. Pin Teams to the taskbar.
+4. Consider reducing Teams notifications on the device to avoid distractions (optional).
 
-  ![Уведомления Teams](images/teams.png)
+  ![Teams notifications](images/teams.png)
 
-### Подключить приложение
+### Connect app
 
 > [!IMPORTANT]
-> В Windows 10 версии 2004 и более поздних версий приложение Connect for Wireless для беспроводной связи по протоколу Miracast не устанавливается по умолчанию, но доступно для использования в качестве дополнительной функции. Чтобы установить приложение, выберите пункт **Параметры**  >  **приложения**  >  **Дополнительные возможности**  >  **добавьте функцию** , а затем установите приложение для **беспроводного дисплея** .
+> In Windows 10, version 2004 and later, the Connect app for wireless projection using Miracast is not installed by default, but is available as an optional feature. To install the app, select on **Settings** > **Apps** > **Optional features** > **Add a feature** and then install the **Wireless Display** app.
 
-1. Найдите **Подключение**.
-2. Откройте приложение и закройте его (приложение**Project для этого компьютера** может не работать, если оно не было запущено хотя бы один раз).
-3. Нажмите и удерживайте или щелкните правой кнопкой мыши, чтобы закрепить его на панели задач.
-4. Найдите **параметры проекции**.
-5. **На некоторых устройствах с Windows и Android можно выполнить проецирование на этот компьютер после того, как вы скажите ОК**, выберите вариант **доступно везде** , если устройство не подключено к корпоративной сети. В противном случае вы можете выбрать вариант **доступно везде в защищенных сетях**.
-6. В разделе **запрашивать проект для этого компьютера**выбирайте **только первый раз**.
-7. В разделе **требовать ПИН-код для связывания**выберите пункт **никогда**.
+1. Search for **Connect**.
+2. Open the app and then close it (**Project to this PC** might not work unless the app has been run at least once).
+3. Tap and hold or right-click to pin to taskbar.
+4. Search for **Projection settings**.
+5. Under **Some Windows and Android devices can project to this PC when you say it's OK**, choose **Available everywhere** if the device is not on a corporate network. Otherwise, you can choose **Available everywhere on secure networks**.
+6. Under **Ask to project to this PC**, choose **First time only**.
+7. Under **Require PIN for pairing**, choose **Never**.
 
-Рекомендуемая конфигурация, если она не включена в корпоративную сеть:
+Recommended configuration when not on the corporate network:
 
-  ![Параметры на домашней странице](images/project1.png)
+  ![Settings at home](images/project1.png)
 
-Рекомендуемая конфигурация в корпоративной сети:
+Recommended configuration on the corporate network:
 
-  ![Параметры на рабочем процессе](images/project2.png)
+  ![Settings at work](images/project2.png)
 
-### Ваш телефон
+### Your Phone
 
-Ваше приложение для **телефона** установлено по умолчанию в Windows 10. Если он отсутствует, вы также можете установить его из Магазина Windows.
+The **Your Phone** app is installed by default on Windows 10. If it is not present, you can also install it from the Windows Store.
 
-Сведения о настройке приложения можно найти в разделе [Настройка телефона в Windows 10 и синхронизация данных между компьютером и телефоном](https://www.windowscentral.com/how-set-your-phone-windows-10). Кроме того [, вы узнаете, как устранить распространенные проблемы с приложением для телефонов в Windows 10](https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10).
+For information about setting up the app, see [How to set up Your Phone on Windows 10 and sync data between your PC and phone](https://www.windowscentral.com/how-set-your-phone-windows-10). Also see [How to fix common problems with Your Phone app on Windows 10](https://www.windowscentral.com/how-fix-common-problems-your-phone-app-windows-10).
 
-### Зоны с суперным узором
+### Super Fancy Zones
 
-С помощью **супер зоны** пользователи смогут расположить окна для максимального свободного места. Теперь она включена в средства [PowerToy](https://github.com/microsoft/PowerToys/releases) на GitHub.
+**Super Fancy Zones** helps users arrange windows to maximize screen real estate. It is now included in [PowerToys](https://github.com/microsoft/PowerToys/releases) on GitHub.
 
-### Браузер EDGE Chromium
+### Edge Chromium browser
 
-Скачайте и установите новый [Обозреватель Edge Chromium](https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL).
+Download and install the new [Edge Chromium browser](https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL).
 
-## Дополнительные параметры
+## Additional settings
 
-### Щелкните стрелку, чтобы запустить доску
+### Pen tail select to launch Whiteboard
 
-1. Найдите **перо** и выберите пункт **перо & параметры Windows Ink**.
-2. В нижней части страницы в разделе **сочетания клавиш** **выберите один раз** в Microsoft " **доска**". 
+1. Search for **Pen** and select **Pen & Windows Ink settings**.
+2. Near the bottom of the page, under **Pen shortcuts** set **Select once** to **Microsoft Whiteboard**. 
 
-### Параметры электросети и спящего режима
+### Power management
 
-1. Выберите **Start**  >  **Параметры**запуска  >  **система**  >  **Power & спящего режима**.
-2. Установите для ползунка режима электросети значение **наилучшее быстродействие**.
-3. Настраивайте значения экрана и спящего режима, а также пропуски обнаружение обнаружения присутствия допплеровского, которое выводит устройство из спящего режима при обнаружении перемещения. Таким образом, рекомендуется установить отключение экрана **через 2 часа** , после чего компьютер будет выключен **через 4 часа.**
-### Экранная заставка.
+There are several power settings available to get the best experience using Windows 10 Pro or Enterprise on Surface Hub 2. This includes screen and pc timeouts and how they interact with the built-in human presence detection (Doppler), the screen saver and password protection, and then if appropriate how to by-pass group policy power settings intended for laptop / desktop users.
 
-1. Найдите **экран блокировки** и откройте **Параметры экрана блокировки**.
-2. Настройте **Параметры времени ожидания экрана** и **Параметры экранной заставки** .
+Windows 10 Pro or Enterprise on Surface Hub 2 keeps the screen from going to sleep by touch, mouse, and keyboard actions, as well as the built-in human occupancy detection (Doppler). Human occupancy detection is enabled by default, but if desired it can be disabled in UEFI by toggling the device option in the Surface UEFI Configurator tool either as part of the initial migration, or by building and applying a later UEFI configuration package. 
 
-### Контроль памяти
+**Power Management: Screen and PC sleep settings**
 
-Surface Hub 2 имеет твердотельный накопитель емкостью 128 ГБ для локального хранилища, поэтому необходимо продумать использование мер хранения для сохранения во время использования в обычном режиме.  Чтобы настроить контроль хранилища, выполните указанные ниже действия.
+1. Select **Start** > **Settings** > **System** > **Power & sleep**.
+2. Set the power mode slider to **Best performance**.
+3. Configure screen and sleep values to your preference while also accounting for Doppler presence detection that wakes up the device when movement is detected. Accordingly, as a best practice, it's recommended to set Screen to **Turn off after 2 hours** and the PC to **Turn off after 4 hours.**
 
-1.  Найдите **Параметры хранилища**, которые находятся в разделе **Параметры системы**.
-2.  В разделе **Параметры**выберите **включить контроль хранилища** , чтобы открыть страницу параметры **хранилища** .
-3.  Включите функцию хранения данных **.**
-4.  Выберите команду **настроить контроль хранилища или запустите его сейчас** и настройте параметры для сохранения файлов в оперативном режиме (из-за ограничения места на диске).
+**Power Management: Screen saver**
 
-Рекомендуемые параметры:
-- Запустите контроль хранилища = каждый день.
-- Удаление временных файлов, которые не используют мои приложения = каждые 14 дней (по крайней мере).
-- Удаление файлов из папки "загрузок" в течение более 30 дней.
-- OneDrive: контент станет доступен только в том случае, если он не открыт дольше, чем 30 дней.
+1. Search for **Lock Screen** and open **Lock screen settings**.
+2. Configure **Screen timeout settings** and **Screen saver settings** to your preference.
 
-### Режим планшета
+### Storage Sense
 
-Включите режим планшета, если это требуется для специальных возможностей.
+The Surface Hub 2 has a 128GB SSD for local storage, so it is necessary to consider the use of storage saving measures during normal usage.  To configure Storage Sense:
 
-### Управление питанием
+1.  Search for **storage settings**, which is found under **System settings**.
+2.  Under **Settings**, select **Turn on storage sense** to open the **Storage** settings page.
+3.  Turn Storage Sense to **On**.
+4.  Select **Configure Storage Sense or run it now** and configure settings to keep files online as much as possible (due to limited drive space).
+
+Recommended settings:
+- Run Storage Sense = Every Day.
+- Delete temporary files that my apps aren't using = Every 14 days (at least).
+- Delete files in my Downloads folder if they have been there for over = 30 days.
+- OneDrive: Content will become online-only if not opened for more than = 30 days.
+
+### Tablet mode
+
+Turn on Tablet mode if desired for accessibility needs.
+
+### Power management
 
 > [!NOTE]
-> Перед выполнением описанной ниже процедуры проверяйте свой ИТ-отдел на утверждение, чтобы исключить из глобальной политики управления питанием устройство Surface Hub 2S. Некоторые параметры управления электропитанием могут отключить функцию обнаружения присутствия.
+> Before performing the following procedure, check with your IT department for approval to exclude a Surface Hub 2S device from global power management policy. Some power management settings can disable the presence detection function.
 
-1. Найдите **центр программного обеспечения** и откройте его.
-2. В области навигации выберите пункт **Параметры** .
-3. Разверните раздел **Управление электропитанием** и выберите **не применять параметры электроуправления ПИТАНИЕм из ИТ-отдела на этот компьютер**.
+1. Search for **Software Center** and open it.
+2. Select **Options** in the navigation pane.
+3. Expand the **Power management** section and select **Do not apply power settings from my IT department to this computer**.
 
-   ![Параметры программного обеспечения](images/soft-cntr.png)
+   ![Software settings](images/soft-cntr.png)
 
-### Параметры звука
+### Sound settings
 
-1. Найдите **Параметры звуковых файлов** и откройте страницу.
-2. Выберите **Панель управления звуком** справа и откройте вкладку **звуки** .
-3. В разделе **Программные события** настройте **Подключение устройства** и **Отключение устройства** от " **нет**".
+1. Search for **Sounds settings** and open this page.
+2. Select **Sound Control Panel** on the right and select the **Sounds** tab.
+3. Under **Program Events** set **Device Connect** and **Device Disconnect** to **None**.
 
-### Уведомления о тишине
+### Silence notifications
 
-1. Найдите **помощь по фокусу** и откройте эту страницу.
-2. Выберите **только будильники**. Всплывающие окна уведомлений не будут постоянными.
+1. Search for **Focus assist** and open this page.
+2. Select **Alarms Only**. This will avoid constant notification flyouts.
 
-### Очистка диска
+### Disk Cleanup
 
-1. Выполните поиск по запросу **очистки диска** и откройте это приложение.
-2. В разделе **файлы для удаления**выберите файлы, которые вы хотите удалить. 
-3. Также выберите команду **Очистить системные файлы**.
+1. Search for **Disk Cleanup** and open this app.
+2. Under **Files to delete**, select the files you wish to delete. 
+3. Also select **Clean up system files**.
 
-## Завершение и проверка
+## Complete and verify
 
-1. Проверяйте и установите все обновления для Windows.
-2. Обновление групповой политики
-    1. В командной строке с повышенными привилегиями введите **gpupdate/Force/Boot/Wait: 0**.
-3. Перезагрузите устройство.
-4. Проверка приложений панели задач.
-    - Подключить приложение
-    - Значок замка
-    - Набросок на фрагменте экрана
-    - Teams (если применимо)
-    - Приложения Office (если применимо)
-    - Приложение Surface
-    - Доска
-5. Проверка обнаружения присутствия.
-    - На панели задач выводится зеленый значок обнаружения присутствия.
-6. Убедитесь в том, что для этого компьютера включена поддержка проецирования на этот компьютер (приложение не требуется для работы с ним).
-7. Проверьте параметры электросети и режима сна.
-    - Экранная заставка: 15 минут, значение (нет), пояснение или пустой; флажок для обязательной проверки пароля
-    - Экран: отключение **через 2 часа.**
-    - ПК: отключение  **через 4 часа.**
-8. Проверка работоспособности Windows Hello.
-9. Убедитесь, что параметры синхронизации отключены.
-10. Проверка загрузочных приложений.
+1. Scan for and install all Windows Updates.
+2. Update Group Policy
+    1. At an elevated command prompt, enter **gpupdate /force /boot /wait:0**.
+3. Reboot the device.
+4. Verify taskbar apps.
+    - Connect App
+    - Lock Icon
+    - Snip & Sketch
+    - Teams (if applicable)
+    - Office Apps (if applicable)
+    - Surface App
+    - Whiteboard
+5. Verify presence detection.
+    - Presence detection will be a green icon in the system tray
+6. Verify projecting to this PC is enabled with the Connect App (the application does not need to be running before connecting).
+7. Verify power and sleep settings.
+    - Screen Saver: 15 minutes, set to (none), Mystify or Blank; check box for requiring password is checked
+    - Screen: **Turn off after 2 hours.**
+    - PC:  **Turn off after 4 hours.**
+8. Verify Windows Hello is working.
+9. Verify sync your settings is disabled.
+10. Verify startup apps.
 
 > [!TIP]
-> После установки и настройки Windows 10 Surface Hub 2 можно управлять точно так же, как и любое другое устройство с Windows 10.
+> After installing and configuring Windows 10, the Surface Hub 2S can be managed just like any other Windows 10 device.
 
-## Статьи по теме
+## Related topics
 
-[Переход на Windows 10 Pro или Корпоративная в Surface Hub 2](surface-hub-2s-migrate-os.md)
+[Migrate to Windows 10 Pro or Enterprise on Surface Hub 2](surface-hub-2s-migrate-os.md)

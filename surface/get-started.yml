@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Документация по устройствам Surface
-summary: Используйте возможности Surface, Windows и Office, которые объединяет облако.
+title: Surface devices documentation
+summary: Harness the power of Surface, Windows, and Office connected together through the cloud.
 metadata:
-  title: Документация по устройствам Surface
-  description: Начало работы с устройствами Microsoft Surface
+  title: Surface devices documentation
+  description: Get started with Microsoft Surface devices
   ms.service: product-insights
   ms.topic: landing-page
   manager: laurawi
@@ -11,112 +11,112 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 6d3d6f4c3e9ed468f91cccf68ac3532afa3d2266
-  ms.sourcegitcommit: 3b1bc3682d0dee24149ec26cdc78d3148b8d7808
+  ms.openlocfilehash: 1a54d40faf9c3738bd07595b57a1c2d5a86373b4
+  ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "11077744"
+  ms.lasthandoff: 10/01/2020
+  ms.locfileid: "11093102"
 landingContent:
-- title: Устройства Surface
+- title: Surface devices
   linkLists:
-  - linkListType: overview
+  - linkListType: whats-new
     links:
-    - text: Surface Go 2 для бизнеса
-      url: https://www.microsoft.com/surface/business/surface-go-2
-    - text: Surface Book 3 для бизнеса
-      url: https://www.microsoft.com/surface/business/surface-book-3
-    - text: Все продукты семейства Surface
+    - text: Surface Laptop Go  for Business
+      url: https://www.microsoft.com/surface/business/surface-laptop-go
+    - text: Surface Pro X for Business
+      url: https://www.microsoft.com/surface/business/surface-pro-x
+    - text: Explore all Surface family products
       url: https://www.microsoft.com/surface/business
 - title: Get started
   linkLists:
   - linkListType: get-started
     links:
-    - text: Технический обзор Surface Book 3 GPU
+    - text: Surface Book 3 GPU technical overview
       url: surface-book-gpu-overview.md
-    - text: Технический обзор Surface Book 3 Quadro RTX 3000
+    - text: Surface Book 3 Quadro RTX 3000 technical overview
       url: surface-book-quadro.md
-    - text: Новые возможности дока на док-плоскости 2
+    - text: What’s new in Surface Dock 2
       url: surface-dock-whats-new.md
 - title: Microsoft Ignite
   linkLists:
   - linkListType: video
     links:
-    - text: Автоматическое развертывание с помощью Surface & автопилот
+    - text: Zero Touch Deployment with Surface & AutoPilot
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: Surface Pro X и Windows в ARM в удаленном мире
+    - text: Surface Pro X and Windows on ARM in a remote world
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Защита Surface — микросхема для облачной современной защиты конечных точек от Майкрософт
+    - text: Surface Security – Chip to Cloud Modern Endpoint Protection from Microsoft
       url: https://youtu.be/uadAecDbqf4
-- title: Развертывание устройств Surface
+- title: Deploy Surface devices
   linkLists:
   - linkListType: deploy
     links:
-    - text: Служба Autopilot и устройства Surface
+    - text: Autopilot and Surface devices
       url: windows-autopilot-and-surface-devices.md
-    - text: Поддержка регистрации Surface для Windows Autopilot
+    - text: Surface Registration Support for Windows Autopilot
       url: surface-autopilot-registration-support.md
-    - text: Виртуальный рабочий стол Windows на Surface
+    - text: Windows Virtual Desktop on Surface
       url: windows-virtual-desktop-surface.md
-- title: Сравнение устройств Surface
+- title: Manage Surface devices
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Управление обновлениями драйверов и встроенного ПО Surface, а также их развертывание
+    - text: Manage and deploy Surface driver and firmware updates
       url: manage-surface-driver-and-firmware-updates.md
-    - text: Рекомендуемые параметры питания для устройств Surface
+    - text: Best practice power settings for Surface devices
       url: maintain-optimal-power-settings-on-Surface-devices.md
-    - text: Оптимизация соединения с Wi-Fi для устройств Surface
+    - text: Optimize Wi-Fi connectivity for Surface devices
       url: surface-wireless-connect.md
-- title: Изучение руководства по безопасности
+- title: Explore security guidance
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Защищенные порты Surface Dock 2 с корпоративным режимом управления Surface Management (SEMM)
+    - text: Secure Surface Dock 2 ports with Surface Enterprise Management Mode (SEMM)
       url: secure-surface-dock-ports-semm.md
-    - text: Управление параметрами UEFI Surface в Intune
+    - text: Intune management of Surface UEFI settings
       url: surface-manage-dfci-guide.md
-    - text: Средство Surface Data Eraser
+    - text: Surface Data Eraser tool
       url: microsoft-surface-data-eraser.md
-- title: Изучите средства Surface
+- title: Discover Surface tools
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Набор средств диагностики Surface для бизнеса
+    - text: Surface Diagnostic Toolkit for Business
       url: surface-diagnostic-toolkit-for-business-intro.md
-    - text: SEMM и UEFI
+    - text: SEMM and UEFI
       url: surface-enterprise-management-mode.md
-    - text: Инструмент "ускоритель развертывания Surface"
+    - text: Surface Deployment Accelerator tool
       url: microsoft-surface-deployment-accelerator.md
-- title: Устранение неполадок
+- title: Troubleshoot
   linkLists:
   - linkListType: learn
     links:
-    - text: Основные решения поддержки
+    - text: Top support solutions
       url: support-solutions-surface.md
-    - text: Рекомендации по извлечению SSD на совместимых устройствах Surface
+    - text: Best practices for SSD removal in compatible Surface devices
       url: surface-ssd-removal-guide.md
-    - text: Блог по Surface для ИТ-специалистов
+    - text: Surface IT Pro Blog
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro
-    - text: Защита данных во время восстановления или обслуживания поверхности
+    - text: Protecting your data during Surface repair or service
       url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
-    - text: Устранение неполадок с Surface Dock и стыковочными узлами Surface
+    - text: Troubleshoot Surface Dock and docking stations
       url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
-- title: Участие в сообществе Surface
+- title: Participate in Surface Community
   linkLists:
   - linkListType: learn
     links:
-    - text: Блог о Surface для ИТ-специалистов
+    - text: Surface IT Pro blog
       url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
     - text: Сообщество Surface Devices Tech Community
       url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
     - text: Видео Microsoft Mechanics Surface
       url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
-- title: Нужна помощь?
+- title: Need help?
   linkLists:
   - linkListType: learn
     links:
-    - text: Обратитесь в службу поддержки Surface
+    - text: Contact Surface Support
       url: contact-surface-support.md
-    - text: Гарантия и расширенные планы обслуживания Surface для бизнеса
+    - text: Surface for Business warranty and extended service plans
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
