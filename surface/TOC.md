@@ -4,7 +4,8 @@
 
 ## Обзор
 
-### [Новые возможности Surface Dock 2](surface-dock-whats-new.md)
+### [Повышение рентабельности (ROI) с помощью Microsoft Surface](forrester-tei-study.md)
+### [Новые возможности Surface Dock](surface-dock-whats-new.md)
 ### [Технический обзор Surface Book 3 GPU](surface-book-GPU-overview.md)
 ### [Технический обзор Surface Book 3 Quadro RTX 3000](surface-book-quadro.md)
 ### [Surface Book 3 для бизнеса](https://www.microsoft.com/surface/business/surface-book-3)
