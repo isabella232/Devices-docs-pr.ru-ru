@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 4/15/2020
+ms.date: 10/01/2020
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: d1e7aa41f8219f0ae6ccd81a36fa0fc142dd1c3c
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 758cde12ea79e42630dad55b06eb50d0ab9dda12
+ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835579"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "11093132"
 ---
 # Развертывание, управление и обслуживание Surface Pro X
 
@@ -92,9 +92,8 @@ Surface Pro X был спроектирован с учетом использо
 - Собственные приложения ARM64 и приложения UWP Microsoft Store обеспечивают удобство взаимодействия с пользователем благодаря полной скорости работы процессора на базе ARM при оптимизации времени работы от батареи.
 - Приложения, использующие драйверы, предназначенные для ПК с Windows 10, работают на процессоре на базе ARM.
 
-### Не поддерживается.
-
-- Приложения x64 не работают на ПК с Windows 10 на процессоре на базе ARM.
+> [!NOTE]
+> В ближайшее время ожидается выпуск предварительной версии 64-разрядной эмуляции в рамках программы предварительной оценки Windows, которая позволит запускать 64-разрядные (x64) приложения на Surface Pro X.
 
 Дополнительные сведения о запуске приложений на Surface Pro X см. в разделе:
 
