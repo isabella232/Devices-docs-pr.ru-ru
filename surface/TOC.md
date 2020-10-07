@@ -5,6 +5,7 @@
 ## Обзор
 
 ### [Повышение рентабельности (ROI) с помощью Microsoft Surface](forrester-tei-study.md)
+### [Общий экономический эффект Microsoft Surface для образования](forrester-tei-edu-study.md)
 ### [Новые возможности Surface Dock](surface-dock-whats-new.md)
 ### [Технический обзор Surface Book 3 GPU](surface-book-GPU-overview.md)
 ### [Технический обзор Surface Book 3 Quadro RTX 3000](surface-book-quadro.md)
