@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/16/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 9158bec3d2285e5e8d4f9f56e582ff2320a34024
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: ecbeca9f0910f1fa1ff2721bcf1b745195552ca2
+ms.sourcegitcommit: f74253629aaf073b35b1af69439f76e63392c5aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934879"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11103803"
 ---
 # Создание пакетов подготовки (Surface Hub)
 
@@ -87,19 +87,19 @@ ms.locfileid: "10934879"
 
 3. Назначьте имя проекту и нажмите кнопку **Далее**.
 
-### Настройка параметров
+### Configure settings
 
 <table>
-<tr><td style="width:45%" valign="top"><img src="images/one.png" alt="step one"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Для подготовки устройства с сертификатом щелкните <strong>Добавление сертификата</strong>. Введите имя сертификата, а затем найдите и выберите сертификат для использования.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><img src="images/two.png" alt="step two"/>  <img src="images/proxy.png" alt="configure proxy settings"/></br></br>Выберите <strong>Да</strong> или <strong>Нет</strong> для параметров прокси-сервера. Surface Hub по умолчанию настроен на автоматическое определение параметров прокси-сервера, поэтому выберите <strong>Нет</strong>, если вам необходим этот параметр. Тем не менее, если ранее инфраструктура требовала использование прокси-сервера, но теперь этого не требует, можно восстановить параметры по умолчанию для устройств Surface Hub с помощью пакета подготовки. Для этого выберите <strong>Да</strong> и <strong>Автоматически определять параметры</strong>. </br></br>Для автоматического определения параметров прокси-сервера необходимо выбрать <strong>Да</strong>. Чтобы настроить параметры вручную, введите URL-адрес в сценарий настройки или адрес статического прокси-сервера. Можно также определить, нужно ли использовать прокси-сервер для локальных адресов, и указать исключения (адреса, к которым Surface Hub должен подключаться непосредственно без использования прокси-сервера).  </td><td><img src="images/proxy-details.png" alt="configure proxy settings"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/set-up-device-admins.png" alt="device admins"/></br></br>Можно зарегистрировать устройство в Active Directory и указать группу безопасности, чтобы использовать приложение «Параметры», зарегистрироваться в Azure Active Directory, чтобы разрешить глобальным администраторам использовать приложение «Параметры», или создать учетную запись локального администратора на устройстве.</br></br>Для регистрации устройства в Active Directory введите учетные данные для учетной записи пользователя с минимальными правами, чтобы подключить устройство к домену, и укажите группу безопасности, чтобы использовать учетные данные администратора на Surface Hub. Если пакет подготовки, регистрирующий устройство в Active Directory, будет применяться к Surface Hub, который был сброшен, учетная запись домена может использоваться, только если она принадлежит администратору домена или если это учетная запись, с помощью которой был изначально установлен Surface Hub. В противном случае необходимо использовать другую учетную запись домена в пакете подготовки.</br></br>Прежде чем использовать мастер конструктора конфигураций Windows для настройки массовой регистрации в Azure AD, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">настройте присоединение к Azure AD в вашей организации</a>. Параметр <strong>Максимальное количество устройств на одного пользователя</strong> в клиенте Azure AD определяет, сколько раз можно использовать массовый маркер, полученный в мастере. Для регистрации устройства в Azure AD, выберите соответствующий вариант и введите понятное имя для массового маркера, полученного с помощью мастера. Задайте дату окончания срока действия маркера (максимальное значение — 30 дней с даты получения маркера). Нажмите кнопку <strong>Получить массовый маркер</strong>. В <strong> окне Let&#39;s Войдите в систему </strong> , введите учетную запись с разрешениями присоединиться к устройству для Azure AD, а затем пароль. Нажмите кнопку <strong>Принять</strong> для предоставления конструктору конфигураций Windows необходимых разрешений.</br></br>Чтобы создать учетную запись локального администратора, выберите соответствующий параметр и введите имя пользователя и пароль. </br></br><strong>Важно!</strong> Если вы создаете локальную учетную запись в пакете подготовки, необходимо изменять пароль с помощью приложения <strong>Параметры</strong> один раз в каждые 42 дня. Если пароль не меняется в течение этого периода, учетная запись может быть заблокирована и стать недоступной для входа.  </td><td><img src="images/set-up-device-admins-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/four.png" alt="step four"/> <img src="images/enroll-mdm.png" alt="enroll in device management"/></br></br>Выберите <strong>Да</strong> или <strong>Нет</strong> для регистрации в MDM. </br></br>Если вы выбрали <strong>Да</strong>, необходимо предоставить учетную запись и пароль службы или отпечаток сертификата с правом на регистрацию устройства, а также указать тип проверки подлинности. По требованию поставщика MDM также введите URL-адреса службы обнаружения, службы регистрации сертификатов и службы политики. <a href="manage-settings-with-mdm-for-surface-hub.md" data-raw-source="[Learn more about managing Surface Hub with MDM.](manage-settings-with-mdm-for-surface-hub.md)">Дополнительные сведения об управлении Surface Hub с помощью MDM.</a></td><td><img src="images/enroll-mdm-details.png" alt="enroll in mobile device management"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-applications.png" alt="add applications"/></br></br>В пакете подготовки можно установить несколько приложений универсальной платформы Windows (UWP). Для получения справочных сведений по параметрам см.раздел <a href="https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps" data-raw-source="[Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps)">Подготовка компьютеров с приложениями</a>. </br></br><strong>Внимание! несмотря на то, </strong> что интерфейс мастера позволяет выбрать классическое приложение Win32, включите в пакет подготовки только приложения UWP, которые будут применяться к Surface Hub. Если включить классическое приложение Win32, подготовка завершится ошибкой. </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>На этом этапе вы не&#39;настраивать параметры. В нем приведены инструкции по включению файла конфигурации, который содержит список учетных записей устройства. Файл конфигурации не должен содержать заголовки столбцов. Если файл конфигурации Surface Hub имеется на USB-накопителе, то при применении пакета подготовки к Surface Hub можно выбрать учетную запись и понятное имя для устройства из файла. В качестве примера см.<a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">Образец файла конфигурации</a>.</br></br><strong>Внимание! </strong> файл конфигурации можно применять только при использовании встроенного интерфейса настройки (OOBE), и его можно использовать только с пакетами подготовки, созданными с помощью конструктора конфигурации Windows, выпущенного в Windows 10 версии 1703.  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
-<tr><td style="width:45%" valign="top">  <img src="images/finish.png" alt="finish"/></br></br>Можно задать пароль для защиты пакета подготовки. Необходимо ввести этот пароль при применении пакета подготовки на устройстве.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/one.png" alt="step one"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>To provision the device with a certificate, click <strong>Add a certificate</strong>. Enter a name for the certificate, and then browse to and select the certificate to be used.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
+<tr><td style="width:45%" valign="top"><img src="images/two.png" alt="step two"/>  <img src="images/proxy.png" alt="configure proxy settings"/></br></br>Toggle <strong>Yes</strong> or <strong>No</strong> for proxy settings. Surface Hub по умолчанию настроен на автоматическое определение параметров прокси-сервера, поэтому выберите <strong>Нет</strong>, если вам необходим этот параметр. Тем не менее, если ранее инфраструктура требовала использование прокси-сервера, но теперь этого не требует, можно восстановить параметры по умолчанию для устройств Surface Hub с помощью пакета подготовки. Для этого выберите <strong>Да</strong> и <strong>Автоматически определять параметры</strong>. </br></br>Для автоматического определения параметров прокси-сервера необходимо выбрать <strong>Да</strong>. Чтобы настроить параметры вручную, введите URL-адрес в сценарий настройки или адрес статического прокси-сервера. Можно также определить, нужно ли использовать прокси-сервер для локальных адресов, и указать исключения (адреса, к которым Surface Hub должен подключаться непосредственно без использования прокси-сервера).  </td><td><img src="images/proxy-details.png" alt="configure proxy settings"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/set-up-device-admins.png" alt="device admins"/></br></br>Можно зарегистрировать устройство в Active Directory и указать группу безопасности, чтобы использовать приложение «Параметры», зарегистрироваться в Azure Active Directory, чтобы разрешить глобальным администраторам использовать приложение «Параметры», или создать учетную запись локального администратора на устройстве.</br></br>Для регистрации устройства в Active Directory введите учетные данные для учетной записи пользователя с минимальными правами, чтобы подключить устройство к домену, и укажите группу безопасности, чтобы использовать учетные данные администратора на Surface Hub. Если пакет подготовки, регистрирующий устройство в Active Directory, будет применяться к Surface Hub, который был сброшен, учетная запись домена может использоваться, только если она принадлежит администратору домена или если это учетная запись, с помощью которой был изначально установлен Surface Hub. Otherwise, a different domain account must be used in the provisioning package.</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">set up Azure AD join in your organization</a>. Параметр <strong>Максимальное количество устройств на одного пользователя</strong> в клиенте Azure AD определяет, сколько раз можно использовать массовый маркер, полученный в мастере. Для регистрации устройства в Azure AD, выберите соответствующий вариант и введите понятное имя для массового маркера, полученного с помощью мастера. Set an expiration date for the token (maximum is 30 days from the date you get the token). Click <strong>Get bulk token</strong>. In the <strong>Let&#39;s get you signed in</strong> window, enter an account that has permissions to join a device to Azure AD, and then the password. Click <strong>Accept</strong> to give Windows Configuration Designer the necessary permissions.</br></br>To create a local administrator account, select that option and enter a user name and password. </br></br><strong>Important:</strong> If you create a local account in the provisioning package, you must change the password using the <strong>Settings</strong> app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.  </td><td><img src="images/set-up-device-admins-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/four.png" alt="step four"/> <img src="images/enroll-mdm.png" alt="enroll in device management"/></br></br>Toggle <strong>Yes</strong> or <strong>No</strong> for enrollment in MDM. </br></br>Если вы выбрали <strong>Да</strong>, необходимо предоставить учетную запись и пароль службы или отпечаток сертификата с правом на регистрацию устройства, а также указать тип проверки подлинности. If required by your MDM provider, also enter the URLs for the discovery service, enrollment service, and policy service. <a href="manage-settings-with-mdm-for-surface-hub.md" data-raw-source="[Learn more about managing Surface Hub with MDM.](manage-settings-with-mdm-for-surface-hub.md)">Learn more about managing Surface Hub with MDM.</a></td><td><img src="images/enroll-mdm-details.png" alt="enroll in mobile device management"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-applications.png" alt="add applications"/></br></br>You can install multiple Universal Windows Platform (UWP) apps in a provisioning package. For help with the settings, see <a href="https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps" data-raw-source="[Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps)">Provision PCs with apps</a>. </br></br><strong>Important:</strong> Although the wizard interface allows you to select a Classic Win32 app, only include UWP apps in a provisioning package that will be applied to Surface Hub. If you include a Classic Win32 app, provisioning will fail. </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>You don&#39;t configure any settings in this step. It provides instructions for including a configuration file that contains a list of device accounts. Файл конфигурации не должен содержать заголовки столбцов. Если файл конфигурации Surface Hub имеется на USB-накопителе, то при применении пакета подготовки к Surface Hub можно выбрать учетную запись и понятное имя для устройства из файла. See <a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">Sample configuration file</a> for an example.</br></br><strong>Important:</strong> The configuration file can only be applied during the out-of-box setup experience (OOBE) and can only be used with provisioning packages created using the Windows Configuration Designer released with Windows 10, version 1703.  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
+<tr><td style="width:45%" valign="top">  <img src="images/finish.png" alt="finish"/></br></br>You can set a password to protect your provisioning package. You must enter this password when you apply the provisioning package to a device.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
-Завершив настройку, нажмите кнопку **Создать**. Это займет несколько секунд. После построения пакета расположение, в котором хранится пакет, отображается как гиперссылка в нижней части страницы.
+After you're done, click **Create**. Это займет несколько секунд. После построения пакета расположение, в котором хранится пакет, отображается как гиперссылка в нижней части страницы.
 
 ## Пример файла конфигурации
 
@@ -154,15 +154,15 @@ Rushmore@contoso.com,password,Rushmore Surface Hub
 
 2. Щелкните **Расширенная подготовка**.
    
-3. Назначьте имя проекту и нажмите кнопку **Далее**.
+3. Name your project and click **Next**.
 
-4. Выберите **Общая для команды Windows 10**, нажмите кнопку **Далее**, а затем — **Готово**.
+4. Select **Common to Windows 10 Team**, click **Next**, and then click **Finish**.
 
-    ![Новый проект ICD](images/icd-new-project.png)
+    ![ICD new project](images/icd-new-project.png)
 
-5. В проекте в разделе **Доступные настройки**выберите пункт **Общие параметры группы**.
+5. In the project, under **Available customizations**, select **Common Team settings**.
 
-    ![Общие параметры ICD](images/icd-common-settings.png)
+    ![ICD common settings](images/icd-common-settings.png)
 
 
 ### Добавление сертификата в пакет
@@ -189,9 +189,9 @@ Rushmore@contoso.com,password,Rushmore Surface Hub
 
 1. На панели **Доступные настройки** перейдите в раздел **Параметры среды выполнения** > **UniversalAppInstall** > **DeviceContextApp**.
 
-2. Введите **PackageFamilyName** для приложения, а затем нажмите кнопку **Добавить**. Для согласованности используйте имя семейства пакетов приложения. Если вы приобрели приложение в Microsoft Store для бизнеса, найти имя семейства пакетов можно в лицензии на приложение. Откройте файл лицензии в текстовом редакторе и используйте значение между тегами.. \<PFM\> . \</PFM\>
+2. Введите **PackageFamilyName** для приложения, а затем нажмите кнопку **Добавить**. Для согласованности используйте имя семейства пакетов приложения. If you acquired the app from the Microsoft Store for Business, you can find the package family name in the app license. Open the license file using a text editor, and use the value between the \<PFM\>...\</PFM\> tags.
 
-3. В **ApplicationFile** щелкните **Обзор**, чтобы найти и выбрать целевое приложение (\*.appx или \*.appxbundle).
+3. For **ApplicationFile**, click **Browse** to find and select the target app (either an \*.appx or \*.appxbundle).
 
 4. В разделе **DependencyAppxFiles** щелкните **Обзор**, чтобы найти и добавить любые зависимости для этого приложения. Для Surface Hub потребуются только версии x64 этих зависимостей.
 
@@ -201,9 +201,9 @@ Rushmore@contoso.com,password,Rushmore Surface Hub
 
 2. В ICD в области **Доступные настройки** перейдите в раздел **Параметры среды выполнения** > **UniversalAppInstall** > **DeviceContextAppLicense**.
 
-3. Введите **LicenseProductId**, затем щелкните **Добавить**. Для согласованности используйте идентификатор лицензии приложения из лицензии на приложение. Откройте файл лицензии в текстовом редакторе. Затем в \<License\> теге используйте значение в атрибуте **LicenseID** .
+3. Введите **LicenseProductId**, затем щелкните **Добавить**. Для согласованности используйте идентификатор лицензии приложения из лицензии на приложение. Open the license file using a text editor. Then, in the \<License\> tag, use the value in the **LicenseID** attribute.
 
-4. Выберите новый узел **LicenseProductId**. В **LicenseInstall** щелкните **Обзор**, чтобы найти и выбрать файл лицензии, переименованный в шаге 1.
+4. Select the new **LicenseProductId** node. В **LicenseInstall** щелкните **Обзор**, чтобы найти и выбрать файл лицензии, переименованный в шаге 1.
 
 
 ### Добавление политики в пакет
@@ -218,11 +218,11 @@ Surface Hub поддерживает подмножество политик в 
 
 ### Добавление параметров Surface Hub в пакет 
 
-В пакет подготовки можно добавить параметры из раздела [Поставщик служб конфигурации SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). 
+You can add settings from the [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx) to your provisioning package. 
 
-1. На панели **Доступные настройки** перейдите в раздел **Параметры среды выполнения** > **WindowsTeamSettings**.
+1. In the **Available customizations** pane, go to **Runtime settings** > **SurfaceHub**.
 
-2. Выберите одну из доступных областей параметров.
+2. Select one of the available setting areas.
 
 3. Выберите и настройте параметр, который требуется добавить в пакет подготовки. 
 
@@ -274,13 +274,13 @@ Surface Hub поддерживает подмножество политик в 
 
 ## Применение пакета подготовки на устройстве Surface Hub
 
-Существует два варианта развертывания пакетов подготовки на Surface Hub. В [мастере первого запуска](#apply-a-provisioning-package-during-first-run)вы можете применить пакет подготовки, который устанавливает сертификаты, или после завершения программы первого запуска, вы можете применить пакет подготовки для настройки параметров, приложений и сертификатов с помощью [параметров](#apply-a-package-using-settings). 
+There are two options for deploying provisioning packages to a Surface Hub. [During the first run wizard](#apply-a-provisioning-package-during-first-run), you can apply a provisioning package that installs certificates, or after the first-run program is complete, you can apply a provisioning package that configures settings, apps, and certificates by using [Settings](#apply-a-package-using-settings). 
 
 
-### Применение пакета подготовки при первом запуске
+### Apply a provisioning package during first run
 
 > [!IMPORTANT]
-> Во время первого запуска приложения можно использовать только пакеты подготовки для установки сертификатов. Используйте приложение **Параметры**, чтобы установить приложения и применить другие параметры.
+> During the first-run program, you can only use provisioning packages to install certificates. Use the **Settings** app to install apps and apply other settings.
 
 1. При первом включении Surface Hub в программе первого запуска отображается [**страница приветствия**](first-run-program-surface-hub.md#first-page). Перед продолжением убедитесь, что параметры настроены правильно.
 
