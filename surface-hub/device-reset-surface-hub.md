@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/31/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: c5cf643d0f4a68344bb098916a909dd66e1dac9b
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 1c8d8b6d89ec1a20550b7aa13c82c73a239c3965
+ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836283"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104821"
 ---
 # Сброс и восстановление Surface HUB
 
@@ -73,7 +73,7 @@ ms.locfileid: "10836283"
 - [Surface Hub заблокирован](#recover-a-locked-surface-hub)
 
 >[!IMPORTANT]
->Для **восстановления из облачного** процесса требуется открытое подключение к Интернету (без прокси-сервера или других проверок подлинности). Рекомендуется использовать Ethernet-подключение.
+>Для **восстановления из облачного** процесса требуется проводное подключение, обеспечивающее доступ к Интернету (без прокси-сервера или других запросов на проверку подлинности).
 
 ### Восстановление Surface Hub в плохом состоянии
 
@@ -122,7 +122,7 @@ ms.locfileid: "10836283"
    Когда загрузка завершится, процесс восстановления восстановит Surface Hub в соответствии с выбранными параметрами.
    
 
-## Обратиться в службу поддержки
+## обратитесь в службу поддержки
 
 Если у вас возникли вопросы или вам нужна помощь, вы можете [создать запрос в службу поддержки](https://support.microsoft.com/supportforbusiness/productselection).
 

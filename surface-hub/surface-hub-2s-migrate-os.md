@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/29/2020
+ms.date: 10/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 0c6a52d1023377f51ae6a63879e54b86db16cb9a
-ms.sourcegitcommit: 35f64110ce8e0c0b019b02023d746f648f554c1c
+ms.openlocfilehash: 0a74a082d1afe48c938fcc4780407d56cfdd121e
+ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088633"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11105280"
 ---
 # Переход на Windows 10 Pro или Корпоративная в Surface Hub 2
 
@@ -87,7 +87,7 @@ Surface Hub 2S предварительно установлен в Windows 10 T
 
 На отдельном компьютере:
 
-- Скачайте [Конфигуратор Microsoft Surface UEFI](https://www.microsoft.com/download/details.aspx?id=46703) из инструментальных средств Surface. Конфигуратор UEFI Surface нельзя запустить на Surface Hub 2, пока установлена Windows 10 Teams.
+- Нажмите кнопку скачать на [странице Surface Tools для ИТ](https://www.microsoft.com/download/details.aspx?id=46703), выберите и скачайте конфигуратор UEFI Surface. MSI-файл и установить его на отдельном компьютере. Инструмент конфигуратора UEFI Surface невозможно запустить на Surface Hub 2, пока установлен Windows 10 Team Edition.
 
 - Загрузите [драйвер Surface Hub 2 драйверы и микропрограммное обеспечение Windows Installer. MSI-файл](https://www.microsoft.com/download/details.aspx?id=101974) , который будет применяться при установке новой операционной системы.
 
@@ -107,6 +107,7 @@ Surface Hub 2S предварительно установлен в Windows 10 T
 ### Создание пакета SEMM
 
 1. Установите инструмент **конфигуратора UEFI Surface** , загруженный ранее, на отдельный компьютер. 
+
 2. Откройте **Конфигуратор UEFI Surface** и нажмите кнопку **начать**.
 
    ![Открытие конфигуратора UEFI Surface](images/shm-fig2.png)
@@ -137,14 +138,14 @@ Surface Hub 2S предварительно установлен в Windows 10 T
    
 9. Задайте **пароль UEFI** и нажмите кнопку **ОК**.
 
- > [!IMPORTANT]
+   > [!IMPORTANT]
    > Сохраните пароль в безопасном расположении, доступном для ИТ-администраторов в вашей организации, ответственных за управление Surface Hub. В случае утери пароля процесс восстановления не выполняется. 
 
    ![Введите пароль UEFI](images/shm-fig9.png)
 
-10. Выберите **Surface Hub 2** и нажмите кнопку **Далее**.
+10. Выберите **Surface Hub 2**и нажмите кнопку **Далее**.
 
-   ![Выберите Surface Hub 2S](images/shm-fig10.png)
+    ![Выберите Surface Hub 2S](images/shm-fig10.png)
    
 11. Выберите **Далее**.
 
@@ -159,7 +160,7 @@ Surface Hub 2S предварительно установлен в Windows 10 T
     ![Установите флажок Включить миграцию ОС на включен](images/shm-fig12.png)
 
 > [!NOTE]
-> После применения пакета SEMM все параметры UEFI выводятся серым цветом (заблокировано) в меню UEFI на устройстве. Сюда входят значения по умолчанию для других параметров, например IPv6 для загрузки PXE. Чтобы изменить параметры UEFI, необходимо применить другой пакет SEMM или отменить регистрацию устройства в SEMM.
+> После применения пакета SEMM все параметры UEFI выводятся серым цветом (заблокировано) в меню UEFI на устройстве. Сюда входят значения по умолчанию для других параметров, например IPv6 для загрузки PXE. Чтобы изменить параметры UEFI после завершения миграции, необходимо применить другой пакет SEMM или отменить регистрацию устройства в SEMM. Если вы примените другой пакет SEMM для изменения параметров UEFI, необходимо использовать исходный сертификат при создании нового пакета SEMM с помощью средства конфигуратора UEFI. 
 
 #### Сохранение пакета SEMM на USB-накопитель
 
@@ -213,10 +214,12 @@ Surface Hub 2S предварительно установлен в Windows 10 T
 6. Скопируйте файлы пакета SEMM и драйверы и встроенное по для Windows 10 Pro и Enterprise на Surface Hub 2 (. MSI) в корневой каталог USB-накопителя (**BOOTME**) с изображением Windows 10. USB-накопитель BOOTME включает:
 
     - Загрузочный образ Windows 10
+    
     - Файлы пакета SEMM (скопированы в корневой каталог USB-накопителя)
-        - DfciUpdate.dfi
-        - Текстовый файл с отпечатком SEMM. (В этом примере: SurfaceUEFI_2020Aug25_1058.txt. Автоматически созданная метка времени соответствует дате создания файла с помощью конфигуратора UEFI Surface.
-    - Драйверы и встроенное по для Windows 10 Pro и Enterprise на Surface Hub 2 (SurfaceHub2S_Win10_18362_20.082.25682.0.msi)
+    
+      - DfciUpdate.dfi
+      - Текстовый файл с отпечатком SEMM. (В этом примере: SurfaceUEFI_2020Aug25_1058.txt. Автоматически созданная метка времени соответствует дате создания файла с помощью конфигуратора UEFI Surface.
+      - Драйверы и встроенное по для Windows 10 Pro и Enterprise на Surface Hub 2 (SurfaceHub2S_Win10_18362_20.082.25682.0.msi)
 
 ### Обновление UEFI на Surface Hub 2S для включения миграции ОС
 
