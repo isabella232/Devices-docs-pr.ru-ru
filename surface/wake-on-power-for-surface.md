@@ -58,13 +58,13 @@ ms.locfileid: "10903398"
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
 3.  <span data-ttu-id="38ff9-121">Нажмите кнопку **Пуск**и выберите команду **создать** в разделе **пакет конфигурации**.</span><span class="sxs-lookup"><span data-stu-id="38ff9-121">Select **Start**, and then select **Create** under **Configuration Package**.</span></span>
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите команду Создать пакет конфигурации.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
 4.  <span data-ttu-id="38ff9-123">Выберите **Защита сертификата**и добавьте PFX-файл сертификата.</span><span class="sxs-lookup"><span data-stu-id="38ff9-123">Select **Certificate Protection**, and add your certificate .pfx file.</span></span> 
 5. <span data-ttu-id="38ff9-124">Введите пароль, нажмите кнопку **Далее**, добавьте **защиту паролем**, а затем нажмите кнопку **Далее**.</span><span class="sxs-lookup"><span data-stu-id="38ff9-124">Enter your password, select **Next**, add **Password Protection**, as appropriate, and then select **Next**.</span></span>
 6.  <span data-ttu-id="38ff9-125">На странице **выберите тип поверхности, на которую вы хотите сделать это** , выберите нужные оконечные устройства.</span><span class="sxs-lookup"><span data-stu-id="38ff9-125">On the **Choose which Surface type you want to target** page, select your target devices as appropriate.</span></span> <span data-ttu-id="38ff9-126">Например, выберите **Surface Pro 7**.</span><span class="sxs-lookup"><span data-stu-id="38ff9-126">For example, select **Surface Pro 7**.</span></span>
 7.  <span data-ttu-id="38ff9-127">На странице **Дополнительные функции** выберите пункт **пробуждение по питанию**, установите для параметра значение **вкл**., а затем нажмите кнопку **Далее**.</span><span class="sxs-lookup"><span data-stu-id="38ff9-127">On the **Advanced Features** page, select **Wake on Power**, set the feature to **On**, and then select **Next**.</span></span>
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Выберите параметр "вкл." на вкладке "вкл."."::: 
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее."::: 
 8.  <span data-ttu-id="38ff9-129">На странице **успешно** нажмите кнопку **завершить**.</span><span class="sxs-lookup"><span data-stu-id="38ff9-129">On the **Successful** page, select **End**.</span></span>
 
     > [!NOTE]
@@ -83,10 +83,10 @@ ms.locfileid: "10903398"
 
 2.  <span data-ttu-id="38ff9-136">В диалоговом окне **предупреждение** нажмите кнопку **ОК** или отключите BitLocker, если это необходимо.</span><span class="sxs-lookup"><span data-stu-id="38ff9-136">In the **Warning** dialog box, select **OK** or disable BitLocker, as appropriate.</span></span>
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Нажмите кнопку ОК или отключите BitLocker в нужном виде.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
 3.  <span data-ttu-id="38ff9-138">На странице приветствия нажмите кнопку **Далее** , чтобы запустить пакет и применить только что настроенный параметр UEFI.</span><span class="sxs-lookup"><span data-stu-id="38ff9-138">On the Welcome page, select **Next** to run the package and apply the newly configured UEFI setting.</span></span>
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="На одной странице приветствия нажмите кнопку Далее.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
 4.  <span data-ttu-id="38ff9-140">Перезапустите устройство.</span><span class="sxs-lookup"><span data-stu-id="38ff9-140">Restart your device.</span></span> 
 
 <span data-ttu-id="38ff9-141">Теперь вы настроили функцию пробуждения на Power On.</span><span class="sxs-lookup"><span data-stu-id="38ff9-141">Wake on Power is now configured.</span></span> <span data-ttu-id="38ff9-142">Чтобы проверить параметры, отключите устройство, отключите электроэнергию и подключитесь к электросети.</span><span class="sxs-lookup"><span data-stu-id="38ff9-142">To test the settings, turn off your device, disconnect the power, and then reconnect the power.</span></span> <span data-ttu-id="38ff9-143">Устройство должно запускаться автоматически.</span><span class="sxs-lookup"><span data-stu-id="38ff9-143">The device should start automatically.</span></span> 
