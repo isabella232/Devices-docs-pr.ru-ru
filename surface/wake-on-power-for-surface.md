@@ -58,13 +58,13 @@ ms.locfileid: "10903398"
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
 3.  Нажмите кнопку **Пуск**и выберите команду **создать** в разделе **пакет конфигурации**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите команду Создать пакет конфигурации.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
 4.  Выберите **Защита сертификата**и добавьте PFX-файл сертификата. 
 5. Введите пароль, нажмите кнопку **Далее**, добавьте **защиту паролем**, а затем нажмите кнопку **Далее**.
 6.  На странице **выберите тип поверхности, на которую вы хотите сделать это** , выберите нужные оконечные устройства. Например, выберите **Surface Pro 7**.
 7.  На странице **Дополнительные функции** выберите пункт **пробуждение по питанию**, установите для параметра значение **вкл**., а затем нажмите кнопку **Далее**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Выберите параметр "вкл." на вкладке "вкл."."::: 
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее."::: 
 8.  На странице **успешно** нажмите кнопку **завершить**.
 
     > [!NOTE]
@@ -83,10 +83,10 @@ ms.locfileid: "10903398"
 
 2.  В диалоговом окне **предупреждение** нажмите кнопку **ОК** или отключите BitLocker, если это необходимо.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Нажмите кнопку ОК или отключите BitLocker в нужном виде.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
 3.  На странице приветствия нажмите кнопку **Далее** , чтобы запустить пакет и применить только что настроенный параметр UEFI.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="На одной странице приветствия нажмите кнопку Далее.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
 4.  Перезапустите устройство. 
 
 Теперь вы настроили функцию пробуждения на Power On. Чтобы проверить параметры, отключите устройство, отключите электроэнергию и подключитесь к электросети. Устройство должно запускаться автоматически. 

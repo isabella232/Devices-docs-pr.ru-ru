@@ -1,10 +1,10 @@
 ---
-title: Manage Windows updates on Surface Hub
-description: You can manage Windows updates on your Microsoft Surface Hub or Surface Hub 2S by setting the maintenance window, deferring updates, or using Windows Server Update Services (WSUS).
+title: Обновления Windows на Surface Hub
+description: Вы можете управлять обновлениями Windows на устройстве Surface Hub (Майкрософт) или Surface Hub 2, настроив окно обслуживания, откладывая обновления или используя службы Windows Server Update Services (WSUS).
 ms.assetid: A737BD50-2D36-4DE5-A604-55053D549045
 ms.reviewer: ''
 manager: laurawi
-keywords: manage Windows updates, Surface Hub, Windows Server Update Services, WSUS
+keywords: управление обновлениями Windows, Surface Hub, службы обновления Windows Server, WSUS
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -18,9 +18,9 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 10/07/2020
 ms.locfileid: "11103793"
 ---
-# Manage Windows updates on Surface Hub
+# Обновления Windows на Surface Hub
 
-New releases of the Surface Hub operating system are published through Windows Update, just like releases of Windows 10. Существует несколько способов управления установкой обновлений на устройствах Surface Hub и временем установки таких обновлений.
+Новые выпуски операционной системы Surface Hub публикуются через Центр обновления Windows, как и выпуски Windows 10. Существует несколько способов управления установкой обновлений на устройствах Surface Hub и временем установки таких обновлений.
 - **Центр обновления Windows для бизнеса**: новый компонент Windows 10, Центр обновления Windows Update для бизнеса,— это набор компонентов, призванных предоставить предприятиям дополнительный контроль над тем, когда и как Центр обновления Windows устанавливает выпуски, и сократить расходы на управление устройствами. С помощью этого метода устройства Surface Hub непосредственно подключаются к службе Microsoft "Центр обновления Windows".
 - **Службы обновления Windows Server (WSUS)**— это набор служб, которые позволяют ИТ-администраторам получать обновления, которые считаются Центром обновления Windows подходящими для организации, осуществлять дополнительное тестирование и оценку обновлений и выбирать обновления для установки. Используя этот метод, устройства Surface Hub получают обновления от службы WSUS, а не из Центра обновления Windows.
 
@@ -45,12 +45,12 @@ New releases of the Surface Hub operating system are published through Windows U
 Surface Hub использует модель обслуживания Windows 10, которую также называют [Windows как услуга (WaaS)](https://docs.microsoft.com/windows/deployment/update/waas-overview). Традиционно новые возможности добавлялись только в новых версиях Windows, которые выпускались каждые несколько лет. Развертывание каждой новой версии в организации представляло собой длительный и дорогостоящий процесс. В результате конечные пользователи и сама организация нечасто пользовались преимуществами новых инноваций. Цель модели обслуживания "Windows как услуга" — постоянно предоставлять новые возможности, сохраняя высокий уровень качества.
 
 Корпорация Майкрософт регулярно публикует два типа выпусков Surface Hub:
-- **Feature updates** - Updates that install the latest new features, experiences, and capabilities. Microsoft expects to publish two new feature updates per year.
-- **Quality updates** - Updates that focus on the installation of security fixes, drivers, and other servicing updates. Корпорация Майкрософт планирует публиковать одно накопительное исправление в месяц.
+- **Обновления компонентов**— обновления, устанавливающие актуальные новые компоненты, элементы пользовательского интерфейса и возможности. Корпорация Майкрософт ожидает публикации двух новых функций за год.
+- **Исправления**— обновления, целью которых является установка исправлений безопасности, драйверов и других служебных обновлений. Корпорация Майкрософт планирует публиковать одно накопительное исправление в месяц.
 
 С целью улучшения качества выпусков и упрощения процесса их развертывания все новые выпуски, публикуемые Майкрософт для Windows 10, включая Surface Hub, будут накопительными. Это означает, что новые обновления компонентов и исправления включают в себя содержимое всех предыдущих выпусков (в оптимизированном формате, чтобы уменьшить требования к объему хранимых и передаваемых по сети данных), и после установки выпуска на устройство оно будет полностью обновлено. Кроме того, в отличие от предыдущих версий Windows, вы не сможете установить часть содержимого исправления для Windows 10. Например, если исправление содержит исправления для трех уязвимостей системы безопасности и одной проблемы надежности, при развертывании этого обновления будут установлены все четыре исправления.
 
-The Surface Hub operating system receives updates on the [Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes). Like other editions of Windows 10, the servicing lifetime is finite. You must install new feature updates on machines running these branches in order to continue receiving quality updates.
+Операционная система Surface Hub получает обновления по каналу [Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes). Как и в других выпусках Windows 10, время обслуживания ограничено. Вам необходимо установить обновления компонентов на компьютерах с этими типами обслуживания, чтобы продолжать получать ежемесячные исправления.
 
 Дополнительные сведения о Windows как услуге см. в разделе [Обзор Windows как услуги](https://technet.microsoft.com/itpro/windows/manage/waas-overview).
 
@@ -60,10 +60,10 @@ The Surface Hub operating system receives updates on the [Semi-Annual Channel](h
 
 **Настройка Центра обновления Windows для бизнеса**
 1. [Объединение устройств Surface Hub в циклы развертывания](#group-surface-hub-into-deployment-rings)
-2. [Configure when Surface Hub receives updates](#configure-when-surface-hub-receives-updates).
+2. [Настройка времени получения обновлений Surface Hub](#configure-when-surface-hub-receives-updates).
 
 > [!NOTE]
-> You can use Microsoft Intune, Microsoft Endpoint Configuration Manager, or a supported third-party MDM provider to set up WUfB. [Walkthrough: use Microsoft Intune to configure Windows Update for Business.](https://docs.microsoft.com/windows/deployment/update/waas-wufb-intune)
+> Для настройки WUfB можно использовать Microsoft Intune, диспетчер настройки конечных точек Майкрософт или поддерживаемый сторонний поставщик MDM. [Пошаговое руководство: использование Microsoft Intune для настройки Центра обновления Windows для бизнеса.](https://docs.microsoft.com/windows/deployment/update/waas-wufb-intune)
 
 
 ### Объединение устройств Surface Hub в циклы развертывания
@@ -73,7 +73,7 @@ The Surface Hub operating system receives updates on the [Semi-Annual Channel](h
 
 | Цикл развертывания | Размер цикла | Ветвь обслуживания | Отсрочка обновлений компонентов | Отсрочка исправлений (исправления безопасности, драйверы и другие обновления) | Шаг проверки |
 | --------- | --------- | --------- | --------- | --------- | --------- |
-| Оценка (например, некритический или проверка устройств) | Small | Windows Insider Preview | None.  | Нет.  | Протестируйте и оцените новую функциональность вручную. Приостановите обновления, если возникают проблемы. |
+| Оценка (например, некритический или проверка устройств) | Небольшой | Предварительный просмотр для предварительной оценки Windows | Нет.  | Нет.  | Протестируйте и оцените новую функциональность вручную. Приостановите обновления, если возникают проблемы. |
 | Пилотный проект (например, устройства, используемые избранными рабочими группами) | Средний | Semi-annual channel  | Нет. | Нет.  | Отслеживание использования устройств и отзывов пользователей. Приостановите обновления, если возникают проблемы. |
 | Крупномасштабное развертывание (например, на большинстве устройств в вашей организации) | Крупный | Semi-annual channel |  120 дней после выпуска. | 7-14 дней после выпуска. | Отслеживание использования устройств и отзывов пользователей. Приостановите обновления, если возникают проблемы. |
 | Критически важное (например, устройства в залах заседания исполнительного руководства) | Небольшой | Semi-annual channel |  180 дней после выпуска (максимальная отсрочка обновлений компонентов). | 30 дней после выпуска (максимальная отсрочка исправлений). | Отслеживание использования устройств и отзывов пользователей. |
@@ -114,35 +114,35 @@ The Surface Hub operating system receives updates on the [Semi-Annual Channel](h
 
 ## Период обслуживания
 
-To ensure the device is always available for use during business hours, Surface Hub performs its administrative functions during a specified maintenance window. During the maintenance window, the Surface Hub automatically installs updates through Windows Update or WSUS, and reboots the device 20 minutes before the end of the window.
+Чтобы убедиться, что устройство всегда доступно для использования в рабочее время, Surface Hub выполняет свои административные функции во время заданных периодов обслуживания. В окне обслуживания Surface Hub автоматически устанавливает обновления через центр обновления Windows или WSUS и перезапускает устройство на 20 минут до конца окна.
 
-Surface Hub follows these guidelines to apply updates:
+Surface Hub применяет обновления, следуя нижеперечисленным принципам:
 - Установка обновления в следующий период обслуживания. Если собрание запланировано на период обслуживания или датчики Surface Hub обнаружат, что устройство используется, обновление будет отложено до следующего периода обслуживания.
 - Если следующий период обслуживания наступит только после предписанной отсрочки для установки обновления, устройство вычислит следующий доступный период в рабочее время. Для этого будет использовано приблизительное время установки из метаданных обновления. Система продолжит откладывать обновление, если запланировано собрание или датчики Surface Hub обнаружат, что устройство используется.
-- If the next maintenance window is **not** past the update's grace period, the Surface Hub will continue to postpone the update.
-- If a reboot is needed, the Surface Hub will automatically reboot during the next maintenance window.
+- Если окно следующего обслуживания **не** прошло льготный период обновления, Surface Hub по-прежнему будет откладывать обновление.
+- Если требуется перезагрузка, Surface Hub автоматически выполнит ее в следующий период обслуживания.
 
 > [!NOTE]
 > При первой настройке Surface Hub необходимо отвести определенное время для обновлений. Например, может появиться журнал невыполненных работ по определениям вирусов, который следует установить немедленно.
 
-A default maintenance window is set for all new Surface Hubs:
--   **Start time:** 2:00 AM
--   **Duration:** 2 hours
+Период обслуживания по умолчанию установлен для всех новых устройств Surface Hub.
+-   **Время начала:** 2:00 AM
+-   **Продолжительность:** 2 часа
 
-**To manually change the maintenance window:**
+**Чтобы изменить период обслуживания вручную, выполните следующие действия:**
 1.  Откройте **Параметры** на своем устройстве Surface Hub.
 2.  Перейдите в раздел **Обновление и безопасность** > **Центр обновления Windows** > **Дополнительные параметры**.
 3.  В разделе **Часы обслуживания**нажмите кнопку **Изменить**.
 
-Чтобы изменить период обслуживания с помощью MDM, настройте узел **MOMAgent** в разделе [Поставщик служб конфигурации SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). See [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md) for more details.
+Чтобы изменить период обслуживания с помощью MDM, настройте узел **MOMAgent** в разделе [Поставщик служб конфигурации SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). См. дополнительные сведения в разделе [Управление параметрами с помощью поставщика MDM](manage-settings-with-mdm-for-surface-hub.md).
 
 
-## More information
+## Дополнительные сведения
 
-- [Blog post: Servicing, Flighting, and Managing updates for Surface Hub (With Intune, of course!)](https://blogs.technet.microsoft.com/y0av/2018/05/31/7-3/)
+- [Запись в блоге: обслуживание, тестирование и управление обновлениями Surface Hub (с помощью Intune, конечно же!)](https://blogs.technet.microsoft.com/y0av/2018/05/31/7-3/)
 
 
-## Related topics
+## Статьи по теме
 
 [Управление Microsoft Surface Hub](manage-surface-hub.md)
 
