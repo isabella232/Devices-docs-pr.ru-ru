@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: a031fd7fd861e5d45194ec1a8c391621a2bcb71a
-ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
+ms.openlocfilehash: 2fafca4a8f19da72d1584c02cbebe1ce3c03adde
+ms.sourcegitcommit: a16c75f4e81c48e2d0e3ec45430af0939e4feaa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078749"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "11105945"
 ---
 # Управление Surface Hub 2S с помощью Intune
 
@@ -92,19 +92,25 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 > [!NOTE]
 > Обе таблицы содержат диапазоны портов, используемые по умолчанию. Администраторы могут изменить диапазоны портов в панели управления Skype для бизнеса и Teams.
 
-## Параметры режима Microsoft Teams
+## Параметры Microsoft Teams
 
-Вы можете настроить приложение Microsoft Teams с помощью Intune. Surface Hub 2 поставляется с установленным Microsoft Teams в режиме 0, поддерживающем Microsoft Teams и Skype для бизнеса. Вы можете настроить режимы, как показано ниже.
+Вы можете настроить различные параметры Microsoft Teams с помощью Intune.
 
-### Режимы:
+### /Diff
+
+Surface Hub 2 поставляется с установленным Microsoft Teams в режиме 0, поддерживающем Microsoft Teams и Skype для бизнеса. Функция режимы, как описано ниже.
 
 - Режим 0 — Skype для бизнеса с функциональностью Microsoft Teams для запланированных собраний.
 - Режим 1 — Microsoft Teams с функциональностью Skype для бизнеса для запланированных собраний.
 - Режим 2 — только Microsoft Teams.
 
-Чтобы настроить режимы, добавьте следующие параметры в пользовательский профиль конфигурации устройства.
+Чтобы настроить режим, добавьте следующие параметры в [Настраиваемый профиль конфигурации устройства](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
 
 | Имя | Описание | OMA-URI | Тип | Значение |
 |:--- |:--- |:--- |:--- |:--- |
 |**ИД приложения Teams**|Имя приложения|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|Строка| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Режим приложения Teams**|Режим Teams|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|целое число| 0 или 1 или 2|
+
+### Согласованные собрания и соединение близкого взаимодействия
+
+Коллективное собрание и функции соединения близкого взаимодействия можно [настроить с помощью XML-файла](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure) , развернутого с помощью профиля Intune.
