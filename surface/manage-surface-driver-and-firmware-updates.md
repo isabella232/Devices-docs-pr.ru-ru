@@ -14,12 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: f41974193d62e4c0cbc1e286976105c20534d906
-ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
+ms.date: 10/12/2020
+ms.openlocfilehash: 39022ca631e35f4328d3c353b7b0d1e2ebaee6a7
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10897067"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114637"
 ---
 # Управление обновлениями драйверов и встроенного ПО Surface, а также их развертывание
 
@@ -68,7 +69,7 @@ ms.locfileid: "10897067"
 
 ## Поддерживаемые устройства
 
-Загружаемые MSI-файлы доступны для устройств Surface Pro 2 и более поздних версий. Сведения о файлах MSI для новых устройств Surface, таких как Surface Pro 7 и Surface 3, будут доступны на этой странице при выпуске.
+Загружаемые MSI-файлы доступны для устройств Surface Pro 2 и более поздних версий (за исключением Surface Pro X, работающего под управлением Windows 10 на ARM).
 
 ## Встроенное по управления с помощью DFCI
 

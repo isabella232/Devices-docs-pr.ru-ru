@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/01/2020
+ms.date: 10/12/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 19aba3e88afd7b17de5b391d1bfe6eaf77db38e9
-ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
+ms.openlocfilehash: e96242ab9cef127238bda3ee3ea797c943479798
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093142"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114687"
 ---
 # Новые возможности док-панели Surface 
 
@@ -45,6 +45,7 @@ Surface Dock 2 предназначен для упрощения управле
   - Surface ноутбук 3
   - Surface Book 3
   - Surface Go 2
+  - Ноутбук Surface Go
 
 ## Компоненты Surface Dock 2
 
@@ -115,7 +116,7 @@ Surface Dock 2 предназначен для упрощения управле
 
 
 
-1. *Устройства должны быть настроены для пробуждения через локальную сеть через корпоративную конфигурацию Surface Mode (SEMM) или интерфейс управления встроенным по устройства (DFCI), чтобы выходить из спящего или ждущего режима. Выход из спящего или выключенного режима поддерживается на Surface Pro 7, Surface 3, Surface Pro X, Surface Book 3 и Surface Go 2.  Для некоторых функций требуется лицензия на программное обеспечение. Продавались отдельно.*
+1. *Для пробуждения из спящего режима или Power-Offных состояний устройства должны быть настроены для пробуждения через локальную сеть через корпоративную конфигурацию Surface Management (SEMM) или интерфейс управления встроенным по устройства (DFCI). Пробуждение из спящего режима или Power-Off поддерживается на Surface Pro 7, Surface 3, Surface Pro X, Surface Book 3 и Surface Go 2.  Для некоторых функций требуется лицензия на программное обеспечение. Продавались отдельно.*
 
 2. *Для некоторых функций требуется лицензия на программное обеспечение. Продавались отдельно.*
 

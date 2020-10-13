@@ -10,18 +10,29 @@ ms.pagetype: devices, surface
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: ''
+ms.reviewer: hachidan
 manager: laurawi
-ms.openlocfilehash: ce857260c3f4b42ae560a7dba51d47d0e20233bd
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/12/2020
+ms.openlocfilehash: 218f98b23adcb7bae2af92655d85144c6e5665e6
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835856"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114727"
 ---
 # Управление параметрами UEFI Surface
 
 Во всех текущих и будущих поколениях Surface Devices используется уникальный унифицированный интерфейс микропрограмм (UEFI), разработанный корпорацией Майкрософт для этих устройств. Параметры UEFI Surface предоставляют возможность включать или отключать встроенные устройства и компоненты, защищать параметры UEFI от изменения и настраивать параметры загрузки устройства Surface. 
+
+## Поддерживаемые продукты
+
+Управление UEFI поддерживается в следующих случаях: 
+
+- Surface Pro 4, Surface Pro (5-го поколения), Surface Pro 6, Surface Pro 7, Surface Pro X
+- Surface ноутбук (1-го), Surface (поверхность 2, ноутбук 3, поверхность для портативного компьютера)
+- Surface Studio (1-го поколения), Surface Studio 2
+- Surface Book, Surface Book 2, Surface Book 3
+- Surface Go, Surface Go 2
 
 ## Поддержка управления на основе облака
 
@@ -91,7 +102,7 @@ ms.locfileid: "10835856"
 
 *Рисунок 4. Настройка безопасной загрузки*
 
-В зависимости от устройства вы также можете проверить, включен ли доверенный платформенный модуль. Если вы не видите параметр **включить доверенный платформенный модуль** , откройте TPM. msc в Windows, чтобы проверить состояние, как показано на рисунке 5. TPM используется для проверки подлинности при шифровании данных устройства с помощью BitLocker. Дополнительные сведения можно найти в разделе [Общие сведения о BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview). 
+В зависимости от устройства вы также можете проверить, включен ли доверенный платформенный модуль. Если вы не видите параметр **включить доверенный платформенный модуль**  , откройте TPM. msc в Windows, чтобы проверить состояние, как показано на рисунке 5. TPM используется для проверки подлинности при шифровании данных устройства с помощью BitLocker. Дополнительные сведения можно найти в разделе [Общие сведения о BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview). 
 
 ![Консоль TPM](images/manage-surface-uefi-fig5-a.png "TPM console")
 

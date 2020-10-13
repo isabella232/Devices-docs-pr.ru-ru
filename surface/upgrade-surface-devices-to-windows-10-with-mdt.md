@@ -13,35 +13,25 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
-ms.date: 04/24/2020
-ms.openlocfilehash: e1a1d34c4d32c5e6f95c985e335e405c0d9e59e4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/12/2020
+ms.openlocfilehash: d9bc720c846b2bb158241a55e1759c841f1d7b3a
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835536"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114527"
 ---
 # Обновление Surface Devices до Windows 10 с помощью набора средств развертывания Microsoft
 
 #### Относится к:
-- Surface Pro 6
-- Surface Laptop 2
-- Surface Go
-- Surface Go с LTE
-- Surface Book 2
-- Surface Pro с функцией LTE Advanced (модель 1807)
-- Surface Pro (модель 1796)
-- Surface Laptop
-- Surface Studio
-- Surface Studio 2
-- Surface Book
-- Surface Pro 4
-- Surface 3 LTE
-- Surface 3
-- Surface Pro 3
-- Surface Pro 2
-- Surface Pro
-- Windows 10;
+
+- Surface Book (все выпуски)
+- Surface Go (все выпуски)
+- Surface Pro X (все выпуски)
+- Surface ноутбук (все выпуски)
+- Ноутбук Surface Go
+- Surface Studio (все выпуски)
+- Surface Pro 2 и более поздних версий
 
 В дополнение к традиционным методам развертывания reimaging устройств, администраторы, которые хотят обновить Surface Devices под управлением Windows 8,1 или Windows 10, имеют возможность развертывания обновлений. Выполнив развертывание обновления, можно применить к устройствам Windows 10, не удаляя пользователей, приложения или конфигурацию. Пользователи развернутых устройств могут просто продолжать использовать устройства с теми же приложениями и параметрами, которые использовались перед обновлением. 
 

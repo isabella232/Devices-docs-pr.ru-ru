@@ -12,9 +12,10 @@ appliesto:
 - Surface Pro 7
 - Surface Laptop 3
 - Surface Pro X
+- Surface Laptop Go
 ms.custom:
 - CI 121602
-ms.reviewer: johnk@cadencepreferred.com
+ms.reviewer: hachidan
 description: В этой статье описано, как включать и отключать пробуждение Power On для устройств Surface.
 keywords: обновление, развертывание, драйвер, WOL, пробуждение по сети
 ms.prod: w10
@@ -25,12 +26,12 @@ ms.localizationpriority: medium
 ms.topic: article
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 272c19baedb295abac08e90012246e453b88f42f
-ms.sourcegitcommit: 6fd7008992503db9ae1f56654aa80110348924d3
+ms.openlocfilehash: dee2a2962cf6b70a1bf11cf597b4d41f4b5568e4
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "10903398"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114577"
 ---
 # Пробуждение при подаче питания для устройств Surface
 
@@ -41,7 +42,9 @@ ms.locfileid: "10903398"
 - Surface Book 3
 - Surface Pro 7
 - Surface ноутбук 3
+- Ноутбук Surface Go
 - Surface Pro X 
+
 
 ## Общие сведения и требования
 

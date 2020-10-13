@@ -8,20 +8,20 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 8/05/2020
+ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 2c7e4ac00eea798613335a320b21ce6fcb9f9f2d
-ms.sourcegitcommit: 97e19fdcd074647bedec9efdfd3ce28e900ae2ea
+ms.openlocfilehash: 06933d49e99862fb19d0f6a09c9680a127b755cd
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10916511"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114657"
 ---
 # Управление Surface Dock 2 с помощью WMI
 
-Поддержка инструментария управления Windows (WMI) предоставляет широкий набор диагностических данных, позволяющий администраторам удаленно отслеживать и управлять последними микропрограммами, состоянием политики и связанными данными на устройствах Surface Dock 2. Вы можете использовать WMI в Windows PowerShell, System Center Operations Manager и других средствах. Дополнительные сведения об инструментарии WMI: [в разделе Работа с WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-5.1). 
+Поддержка инструментария управления Windows (WMI) предоставляет широкий набор диагностических данных, позволяющий администраторам удаленно отслеживать и управлять последними микропрограммами, состоянием политики и связанными данными на устройствах Surface Dock 2. Вы можете использовать WMI в Windows PowerShell, System Center Operations Manager и других средствах. Дополнительные сведения об инструментарии WMI: [в разделе Работа с WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?&preserve-view=true). 
 
 Чтобы включить поддержку WMI, перейдите в раздел [драйверы и микропрограммы Surface Dock 2](https://www.microsoft.com/download/details.aspx?id=101317) и загрузите соответствующий пакет:
 
@@ -31,6 +31,7 @@ ms.locfileid: "10916511"
 - Surface Book (вторая Gen и более поздние версии)
 - Surface Go (все поколения)
 - Surface ноутбук (все поколения)
+- Ноутбук Surface Go
 
  **SurfaceDock2_WmiInstanceProvider_Win10_17763_&#60;версии # C1_arm64.msi:** <br>
 
@@ -77,4 +78,4 @@ ms.locfileid: "10916511"
 - [Обеспечение безопасности портов Surface Dock 2 с помощью SEMM](secure-surface-dock-ports-semm.md)
 - [Новые возможности Surface Dock 2](surface-dock-whats-new.md)
 - [Коды ошибок диспетчера устройств](https://docs.microsoft.com/windows-hardware/drivers/install/device-manager-error-messages)
-- [Работа с WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?view=powershell-5.1)
+- [Работа с WMI](https://docs.microsoft.com/powershell/scripting/learn/ps101/07-working-with-wmi?&preserve-view=true)

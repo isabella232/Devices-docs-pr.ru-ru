@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 07/31/2020
+ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9c250cef63b760f3faab9172aa950c305e4e47e5
-ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
+ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902987"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114667"
 ---
 # Развертывание набора средств диагностики Surface для бизнеса
 
@@ -46,6 +46,7 @@ ms.locfileid: "10902987"
 
 SDT для бизнеса поддерживается на устройствах Surface 3 и более поздних версий, в том числе:
 
+- Ноутбук Surface Go
 - Surface Book 3
 - Surface Go 2
 - Surface Pro X
@@ -180,6 +181,17 @@ SDT для бизнеса поддерживается на устройства
 
 ## Изменения и обновления
 
+### Версия 2.124.139.0
+
+В этой версии набора средств диагностики Surface для бизнеса добавлена поддержка следующих возможностей:
+
+- Единая интегрированная поддержка
+- Сохранение всех результатов теста
+- Убедитесь, что изображение создано пользователем.
+- Включение предупреждений из диспетчера устройств
+- Версия встроенного по Dock
+- Пометка дисков как потенциальных отказов в тестировании хранилища
+- Удалить ссылку на магазин 
 
 ### Версия 2.121.139
 *Дата выпуска: 31 2020 июля*<br>

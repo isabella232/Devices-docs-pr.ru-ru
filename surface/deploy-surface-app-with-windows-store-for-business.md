@@ -13,17 +13,18 @@ ms.localizationpriority: medium
 ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: e25e146de49110dca1fea797f9630d9fa2d953e3
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 811feff1f0643ab0ba5d624c5f7d561ba5b0cd4d
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835123"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114717"
 ---
 # Развертывание приложения Surface с помощью Microsoft Store для бизнеса и образовательных учреждений
 
 **Относится к:**
 
+- Ноутбук Surface Go
 - Surface Pro 7
 - Surface ноутбук 3
 - Surface Pro 6
@@ -76,40 +77,55 @@ ms.locfileid: "10835123"
 
 2. Войдите на портал. 
 
-3. Включить автономное лицензирование: выберите **управление >параметры магазина**, а затем установите флажок **Показывать лицензируемые приложения для покупок в магазине** , как показано на рисунке 1. Дополнительные сведения о моделях лицензирования приложений Microsoft Store для бизнеса можно найти в статьях [приложения в Microsoft Store для бизнеса и образовательных учреждений](https://docs.microsoft.com/microsoft-store/).<br/> <br/>
-   ![Флажок "показывать автономные приложения лицензий"](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
+3. Включить автономное лицензирование: выберите **управление >параметры магазина**, а затем установите флажок **Показывать лицензируемые приложения для покупок в магазине** , как показано на рисунке 1. Дополнительные сведения о моделях лицензирования приложений Microsoft Store для бизнеса можно найти в статьях [приложения в Microsoft Store для бизнеса и образовательных учреждений](https://docs.microsoft.com/microsoft-store/).
+
+   > [!div class="mx-imgBorder"]
+   > ![Флажок "показывать автономные приложения лицензий"](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
    *Рисунок 1. Включение приложений для автономного использования*
 
 4. Добавьте приложение Surface в учетную запись Microsoft Store для бизнеса, выполнив указанные ниже действия.
+
     * Откройте меню " **произ** .
+    
     * В поле поиска введите **Surface приложение**и щелкните значок Поиск.
+    
     * После того как приложение Surface появится в результатах поиска, щелкните значок приложения.
-    * Вы увидите вариант выбора (выберите в **Интернете** или в **автономном режиме**), как показано на рисунке 2.<br/><br/>
     
-    ![Выбор режима лицензирования в автономном режиме и Добавление приложения в список дел](images/deploysurfapp-fig2-selectingofflinelicense.png "Select the Offline licensing mode and add the app to your inventory")
+    * Вы увидите вариант выбора (выберите в **Интернете** или в **автономном режиме**), как показано на рисунке 2.
     
-    *Рисунок 2. Выбор режима лицензирования в автономном режиме и Добавление приложения в список дел*
+      > [!div class="mx-imgBorder"]
+      > ![Выбор режима лицензирования в автономном режиме и Добавление приложения в список дел](images/deploysurfapp-fig2-selectingofflinelicense.png "Select the Offline licensing mode and add the app to your inventory")   
+      *Рисунок 2. Выбор режима лицензирования в автономном режиме и Добавление приложения в список дел*
     
     * Щелкните **автономно** , чтобы выбрать режим лицензирования в автономном режиме.
+    
     * Нажмите кнопку **получить приложение** , чтобы добавить приложение в инвентаризацию Microsoft Store для бизнеса. Как показано на рис. 3, появится диалоговое окно с запросом о том, что автономные приложения можно развертывать с помощью средства управления или загрузить с инвентарной страницы компании в частном магазине.
     
-    ![Окно подтверждения приложения, лицензированное в автономном режиме](images/deploysurfapp-fig3-acknowledge.png "Offline-licensed app acknowledgement window")
-    
-    *Рисунок 3. Подтверждение приложения, лицензированное в автономном режиме*
+      > [!div class="mx-imgBorder"]
+      > ![Окно подтверждения приложения, лицензированное в автономном режиме ](images/deploysurfapp-fig3-acknowledge.png "Offline-licensed app acknowledgement window")
+       *, рисунок 3. Подтверждение приложения, лицензированное в автономном режиме*
+      
     * Нажмите кнопку **ОК**.
 
 ## Скачать приложение Surface из учетной записи Майкрософт магазина для бизнеса
 После того как вы добавите приложение в учетную запись Microsoft Store для бизнеса в автономном режиме, вы можете скачать и добавить приложение в качестве AppxBundle в общий доступ к развертыванию.
+
 1. Войдите в учетную запись Microsoft Store для бизнеса по адресу https://businessstore.microsoft.com .
+
 2. Выберите **>приложения & программное обеспечение**. Откроется список всех приложений вашей компании, включая приложение Surface, которое вы добавили в [приложение добавить Surface в раздел учетной записи Microsoft Store для бизнеса](#add-surface-app-to-a-microsoft-store-for-business-account) в этой статье.
+
 3. В разделе **действия**нажмите кнопку с многоточием (**...**), а затем выберите команду **скачать для автономного использования** для приложения Surface.
+
 4. Выберите нужные параметры **платформы** и **архитектуры** из доступных вариантов выбора для выбранного приложения, как показано на рисунке 4.
 
-    ![Пример пакета AppxBundle](images/deploysurfapp-fig4-downloadappxbundle.png "Example of the AppxBundle package")
-
+    > [!div class="mx-imgBorder"]
+    > ![Пример пакета AppxBundle](images/deploysurfapp-fig4-downloadappxbundle.png "Example of the AppxBundle package")<br/>
     *Рисунок 4. Загрузка пакета AppxBundle для приложения*
+    
 5. Нажмите кнопку **загрузить**. Будет загружен пакет AppxBundle. Убедитесь, что путь к скачанному файлу указан, так как это потребуется позже в этой статье.
+
 6. Выберите " **зашифрованная лицензия** " или " **нешифрованная лицензия** ". Используйте закодированную лицензию с помощью средств управления, таких как диспетчер конфигурации конечных точек Майкрософт, или с помощью конструктора конфигураций Windows для создания пакета подготовки. Выберите параметр нешифрованная лицензия при использовании системы обслуживания образов развертывания и управления ими (DISM) и решений для развертывания на основе обработки изображений, включая Microsoft Deployment Toolkit (MDT).
+
 7. Нажмите кнопку " **создать** ", чтобы создать и скачать лицензию для приложения. Убедитесь, что вы запомните путь к файлу лицензии, так как это потребуется позже в этой статье.
 
 >[!NOTE]
@@ -117,78 +133,101 @@ ms.locfileid: "10835123"
 
 На рисунке 5 показаны необходимые платформы для приложения Surface.
 
-![Необходимые платформы для приложения Surface](images/deploysurfapp-fig5-requiredframework.png "Required frameworks for the Surface app")
-
+> [!div class="mx-imgBorder"]
+> ![Необходимые платформы для приложения Surface](images/deploysurfapp-fig5-requiredframework.png "Required frameworks for the Surface app")<br/>
 *Рисунок 5. Необходимые платформы для приложения Surface*
 
 >[!NOTE]
 >Номера версий приложения Surface и требуемой платформы будут изменяться по мере обновления приложений. Проверьте наличие последней версии приложения Surface и каждой платформы в Microsoft Store для бизнеса. Всегда используйте приложение Surface и рекомендуемые версии платформы, предоставленные Microsoft Store для бизнеса. Использование устаревших платформ или неправильных версий может привести к ошибкам или сбою приложения.
 
 Чтобы скачать необходимые платформы для приложения Surface, выполните указанные ниже действия.
-1. Нажмите кнопку **загрузить** в разделе **Microsoft. VCLibs. 140.00 _ 14.0.23816.0_x64__8wekyb3d8bbwe**. Загрузи Microsoft. VCLibs. 140.00 _ 14.0.23816.0_x64__8wekyb3d8bbwe. Appx-файл в указанную папку.
-2. Нажмите кнопку **загрузить** в разделе **Microsoft. NET. Native. Runtime. 1.1 _ 1.1.23406.0_x64__8wekyb3d8bbwe**. В указанную папку будет загружен файл Microsoft. NET. Native. Runtime. 1.1 _ 1.1.23406.0_x64__8wekyb3d8bbwe. appx.
+
+1. Нажмите кнопку **загрузить** в разделе **Microsoft. VCLibs. 140.00 _14.0.23816.0 _x64__8wekyb3d8bbwe**. Загрузи Microsoft. VCLibs. 140.00 _14.0.23816.0 _x64__8wekyb3d8bbwe. Appx-файл в указанную папку.
+
+2. Нажмите кнопку **загрузить** в разделе **Microsoft. NET. Native. Runtime. 1.1 _1.1.23406.0 _x64__8wekyb3d8bbwe**. Это загрузит файл Microsoft. NET. Native. Runtime. 1.1 _1.1.23406.0 _x64__8wekyb3d8bbwe. appx в указанную папку.
 
 >[!NOTE]
 >Для устройств Surface требуется только 64-разрядная (x64) версия каждой платформы. Устройства Surface — это машинные 64-битовые устройства UEFI, несовместимые с 32-разрядной (x86) версиями Windows, для которых требуется 32-разрядные платформы. 
 
 ## Установка Surface App на компьютере с помощью PowerShell
 Описанная ниже процедура позволяет получить приложение Surface на компьютере и сделать ее доступной для всех учетных записей пользователей, созданных на компьютере.
+
 1. С помощью процедуры, описанной в разделе [Загрузка приложения Surface из раздела учетной записи Microsoft Store для бизнеса](#download-surface-app-from-a-microsoft-store-for-business-account) в этой статье, скачайте файл AppxBundle приложения Surface и License File. 
+
 2. Запустите сеанс Windows PowerShell с повышенными правами.
 
     >[!NOTE]
     >Если вы не запускаете PowerShell в качестве администратора, сеанс не будет обладать необходимыми разрешениями для установки приложения.
     
 3. В сеансе Windows PowerShell с повышенными правами скопируйте и вставьте следующую команду: 
-    ```
+
+    ```powershell
     Add-AppxProvisionedPackage –Online –PackagePath <DownloadPath>\ Microsoft.SurfaceHub_10.0.342.0_neutral_~_8wekyb3d8bbwe.AppxBundle –LicensePath <DownloadPath>\ Microsoft.SurfaceHub_8wekyb3d8bbwe_a53ef8ab-9dbd-dec1-46c5-7b664d4dd003.xml
     ```
 
     Где `<DownloadPath>` находится папка, в которой загружен файл AppxBundle и License, из учетной записи Microsoft Store для бизнеса.
 
     Например, если вы загрузили файлы в c:\Temp, вы можете использовать следующие команды:
-    ````
+    
+    ```powershell
     Add-AppxProvisionedPackage –Online –PackagePath c:\Temp\ Microsoft.SurfaceHub_10.0.342.0_neutral_~_8wekyb3d8bbwe.AppxBundle –LicensePath c:\Temp\ Microsoft.SurfaceHub_8wekyb3d8bbwe_a53ef8ab-9dbd-dec1-46c5-7b664d4dd003.xml
     ```
 
-4. The Surface app will now be available on your current Windows computer. 
+4. Приложение Surface теперь доступно на этом компьютере под управлением Windows. 
 
-Before the Surface app is functional on the computer where it has been provisioned, you must also provision the frameworks described earlier in this article. To provision these frameworks, use the following procedure in the elevated PowerShell session you used to provision the Surface app.
+   Перед тем как приложение Surface будет работать на компьютере, на котором оно было подготовлено, необходимо также подготовить платформы, описанные выше в этой статье. Чтобы подготовить эти платформы, выполните описанные ниже действия в сеансе PowerShell с повышенными привилегиями, который вы использовали для подготовки приложения Surface.
 
-5. In the elevated PowerShell session, copy and paste the following command:
-   ```
+5. В сеансе Windows PowerShell с повышенными правами скопируйте и вставьте следующую команду: 
+
+   ```powershell
    Add-AppxProvisionedPackage –Online –SkipLicense –PackagePath <DownloadPath>\Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe.Appx
    ```
-6. In the elevated PowerShell session, copy and paste the following command:
-   ```
+   
+6. В сеансе Windows PowerShell с повышенными правами скопируйте и вставьте следующую команду: 
+
+   ```powershell
    Add-AppxProvisionedPackage –Online –SkipLicense –PackagePath <DownloadPath>\Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe.Appx
    ```
 
-## Install Surface app with MDT
-The following procedure uses MDT to automate installation of the Surface app at the time of deployment. The application is provisioned automatically by MDT during deployment and thus you can use this process with existing images. This is the recommended process to deploy the Surface app as part of a Windows deployment to Surface devices because it does not reduce the cross platform compatibility of the Windows image.
-1. Using the procedure described [earlier in this article](#download-surface-app-from-a-microsoft-store-for-business-account), download the Surface app AppxBundle and license file. 
-2. Using the New Application Wizard in the MDT Deployment Workbench, import the downloaded files as a new **Application with source files**.
-3. On the **Command Details** page of the New Application Wizard, specify the default **Working Directory** and for the **Command** specify the file name of the AppxBundle, as follows:
+## Установка Surface App с MDT
+В описанной ниже процедуре используется MDT для автоматизации установки приложения Surface во время развертывания. MDT автоматически предоставляет приложение во время развертывания и, таким образом, этот процесс можно применять к существующим образам. Это рекомендуемый процесс развертывания приложения Surface в рамках развертывания Windows для устройств Surface, так как он не уменьшает межплатформенную совместимость образа Windows.
 
-   * Command:
-     ```
+1. В описанной [ниже](#download-surface-app-from-a-microsoft-store-for-business-account)процедуре Скачайте файл AppxBundle приложения Surface и License File. 
+
+2. С помощью мастера создания приложений в средстве развертывания MDT импортируйте Скачанные файлы в новое **приложение с исходными файлами**.
+
+3. На странице **сведения о команде** мастера создания приложений укажите **Рабочий каталог** по умолчанию, а для **команды** укажите имя файла AppxBundle, как показано ниже.
+
+   * Команда
+   
+     ```console
      Microsoft.SurfaceHub_10.0.342.0_neutral_~_8wekyb3d8bbwe.AppxBundle
      ```
-   * Working Directory: %DEPLOYROOT%\Applications\SurfaceApp
+     
+   * Рабочий каталог:%DEPLOYROOT%\Applications\SurfaceApp
 
-For the Surface app to function on the target computer, it will also require the frameworks described earlier in this article. Use the following procedure to import the frameworks required for the Surface app into MDT and to configure them as dependencies.
-1. Using the procedure described earlier in this article, download the framework files. Store each framework in a separate folder.
-2. Using the New Application Wizard in the MDT Deployment Workbench, import the downloaded files as a new **Application with source files**.
-3. On the **Command Details** page, type the file name of each application you downloaded in the **Command** field and the default Working Directory.
+Для использования приложения Surface на целевом компьютере необходимы также платформы, описанные ранее в этой статье. Выполните описанные ниже действия, чтобы импортировать платформы, необходимые для приложения Surface, на MDT и настроить их в качестве зависимостей.
 
-To configure the frameworks as dependencies of the Surface app, use this process:
-1. Open the properties of the Surface app in the MDT Deployment Workbench.
-2. Click the **Dependencies** tab, and then click **Add**.
-3. Select the check box for each framework using the name you provided in the New Application Wizard.
+1. В описанной выше процедуре загрузите файлы .NET Framework. Храните каждую платформу в отдельной папке.
 
-After import, the Surface app will be available for selection in the **Applications** step of the Windows Deployment Wizard. You can also install the application automatically by specifying the application in the deployment task sequence by following this process:
-1. Open your deployment task sequence in the MDT Deployment Workbench.
-2. Add a new **Install Application** task in the **State Restore** section of deployment.
-3. Select **Install a single application** and specify the **Surface App** as the **Application to be installed**.
+2. С помощью мастера создания приложений в средстве развертывания MDT импортируйте Скачанные файлы в новое **приложение с исходными файлами**.
 
-For more information about including apps into your Windows deployments, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit).
+3. На странице **сведения о команде** введите имя каждого приложения, которое вы загрузили, в поле **команда** и рабочий каталог по умолчанию.
+
+Чтобы настроить платформы в качестве зависимостей приложения Surface, используйте следующий процесс:
+
+1. Откройте свойства приложения Surface в Workbench для развертывания MDT.
+
+2. Откройте вкладку **зависимости** и нажмите кнопку **Добавить**.
+
+3. Установите флажок для каждой платформы, используя имя, указанное в мастере создания приложений.
+
+После импорта приложение Surface будет доступно для выбора на этапе **приложений** мастера развертывания Windows. Можно также устанавливать приложение автоматически путем добавления его в последовательность задач развертывания следующим образом.
+
+1. Откройте свою последовательность задач развертывания в MDT Deployment Workbench.
+
+2. Добавьте новую задачу **Установить приложение** в разделе развертывания **Восстановление состояния**.
+
+3. Выберите **установить одно приложение** и укажите **приложение Surface** в качестве приложения, **которое необходимо установить**.
+
+Дополнительные сведения о том, как включить приложения в развертывание Windows, приведены в разделе [развертывание Windows 10 с помощью набора средств развертывания Microsoft](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit).
