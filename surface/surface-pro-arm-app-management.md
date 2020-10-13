@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/09/2020
+ms.date: 10/12/2020
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 202818488f19c82ba9d08cfcbfcd091e3e8b7bf6
-ms.sourcegitcommit: 7d5b0a7948eb540d6849a0e2c70a1058584cc5f8
+ms.openlocfilehash: 7d82a24126798c20f11c51074f6099e1363c257f
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105844"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114627"
 ---
 # Развертывание, управление и обслуживание Surface Pro X
 
@@ -96,8 +96,7 @@ Surface Pro X был спроектирован с учетом использо
 
 ### Приложение FastTrack Assure 
 
-Программа App Assure доступна коммерческим клиентам для их бизнес-приложений, приложений независимых поставщиков ПО и собственных приложений Microsoft, предназначенных для Windows 10 на ARM. Если компания столкнется с проблемой совместимости приложений с использованием Windows 10 на ARM, Microsoft предоставит ресурсы для разработчиков для устранения неполадок и помощи в исправлении приложений без дополнительных затрат. Дополнительные сведения см. на сайте aka.ms/AppAssure.
-
+Программа App Assure доступна коммерческим клиентам для их бизнес-приложений, приложений независимых поставщиков ПО и собственных приложений Microsoft, предназначенных для Windows 10 на ARM. Если коммерческие клиенты сталкиваются с проблемой совместимости приложений с использованием Windows 10 на ARM, то корпорация Майкрософт предоставит ресурсы для разработчиков для устранения неполадок и помощи в исправлении приложений без дополнительных затрат. Дополнительные сведения см. на сайте [aka.ms/AppAssure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure).
 
 Дополнительные сведения о запуске приложений на Surface Pro X см. в разделе:
 
