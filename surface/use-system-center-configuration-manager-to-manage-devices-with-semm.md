@@ -9,18 +9,19 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: ''
+ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: bba99d202d5d0dc5085c454202ae9a95df56109c
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/13/2020
+ms.openlocfilehash: bfd10df3bb7a7dd031c1719d4191ffc46418c4e3
+ms.sourcegitcommit: 30c1eb469610dfd2ad9169c154ca07e565240fdb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835523"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117855"
 ---
-# Использование диспетчера конфигураций конечных точек Microsoft для управления устройствами с помощью SEMM
+# Используйте Microsoft Endpoint Configuration Manager для управления устройствами с помощью SEMM
 
 Функция режима корпоративного управления Surface (SEMM) для устройств UEFI Surface позволяет администраторам управлять конфигурацией параметров UEFI Surface и помогать им в защите. Для большинства организаций этот процесс выполняется путем создания пакетов установщика Windows (MSI) с помощью средства конфигуратора UEFI Microsoft Surface. Эти пакеты затем выполняются или развертываются на клиентских устройствах Surface для регистрации устройств в SEMM и обновления конфигурации параметров UEFI Surface.
 
@@ -391,7 +392,7 @@ ms.locfileid: "10835523"
 
 Имена параметров и идентификаторы для всех устройств можно просмотреть в сценарии ConfigureSEMM.ps1.
 
-В сценариях ConfigureSEMM-. ps1 можно просматривать имена параметров и идентификаторов для определенных устройств <device name> . Например, параметры names и ID для Surface Pro X можно найти в сценарии ConfigureSEMM – ProX.ps1.
+В сценариях ConfigureSEMM-. ps1 можно просматривать имена параметров и идентификаторов для определенных устройств <device name> . 
 
 ## Развертывание сценариев Configuration Manager SEMM
 
