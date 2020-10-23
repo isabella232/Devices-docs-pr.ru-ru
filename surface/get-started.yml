@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 1a54d40faf9c3738bd07595b57a1c2d5a86373b4
-  ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
+  ms.openlocfilehash: 01c1cc2ea75e79825c80cc6f02970a755ae35b75
+  ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/01/2020
-  ms.locfileid: "11093102"
+  ms.lasthandoff: 10/23/2020
+  ms.locfileid: "11134387"
 landingContent:
 - title: Устройства Surface
   linkLists:
@@ -28,14 +28,14 @@ landingContent:
       url: https://www.microsoft.com/surface/business/surface-pro-x
     - text: Все продукты семейства Surface
       url: https://www.microsoft.com/surface/business
-- title: Get started
+- title: Начало работы
   linkLists:
   - linkListType: get-started
     links:
-    - text: Технический обзор Surface Book 3 GPU
-      url: surface-book-gpu-overview.md
-    - text: Технический обзор Surface Book 3 Quadro RTX 3000
-      url: surface-book-quadro.md
+    - text: Повышение рентабельности (ROI) с помощью Microsoft Surface
+      url: forrester-tei-study.md
+    - text: Виртуальный рабочий стол Windows на Surface
+      url: windows-virtual-desktop-surface.md
     - text: Новые возможности дока на док-плоскости 2
       url: surface-dock-whats-new.md
 - title: Microsoft Ignite
@@ -56,52 +56,52 @@ landingContent:
       url: windows-autopilot-and-surface-devices.md
     - text: Поддержка регистрации Surface для Windows Autopilot
       url: surface-autopilot-registration-support.md
-    - text: Виртуальный рабочий стол Windows на Surface
-      url: windows-virtual-desktop-surface.md
+    - text: Инструмент "ускоритель развертывания Surface"
+      url: microsoft-surface-deployment-accelerator.md
 - title: Сравнение устройств Surface
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Управление обновлениями драйверов и встроенного ПО Surface, а также их развертывание
       url: manage-surface-driver-and-firmware-updates.md
-    - text: Рекомендуемые параметры питания для устройств Surface
-      url: maintain-optimal-power-settings-on-Surface-devices.md
-    - text: Оптимизация соединения с Wi-Fi для устройств Surface
-      url: surface-wireless-connect.md
+    - text: Управление параметрами UEFI Surface в Intune
+      url: surface-manage-dfci-guide.md
+    - text: Развертывание, управление и обслуживание Surface Pro X
+      url: surface-pro-arm-app-management.md
+- title: Устранение неполадок
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Развертывание набора средств диагностики Surface для бизнеса
+      url: surface-diagnostic-toolkit-business.md
+    - text: Основные решения поддержки
+      url: support-solutions-surface.md
+    - text: Рекомендации по извлечению SSD на совместимых устройствах Surface
+      url: surface-ssd-removal-guide.md
+    - text: Защита данных во время восстановления или обслуживания поверхности
+      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
+    - text: Устранение неполадок с Surface Dock и стыковочными узлами Surface
+      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
 - title: Изучение руководства по безопасности
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Защита DMA на Surface Devices
+      url: dma-protect.md
     - text: Защищенные порты Surface Dock 2 с корпоративным режимом управления Surface Management (SEMM)
       url: secure-surface-dock-ports-semm.md
-    - text: Управление параметрами UEFI Surface в Intune
-      url: surface-manage-dfci-guide.md
     - text: Средство Surface Data Eraser
       url: microsoft-surface-data-eraser.md
 - title: Изучите средства Surface
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Набор средств диагностики Surface для бизнеса
-      url: surface-diagnostic-toolkit-for-business-intro.md
+    - text: Развертывание набора средств диагностики Surface для бизнеса
+      url: surface-diagnostic-toolkit-business.md
     - text: SEMM и UEFI
       url: surface-enterprise-management-mode.md
-    - text: Инструмент "ускоритель развертывания Surface"
-      url: microsoft-surface-deployment-accelerator.md
-- title: Устранение неполадок
-  linkLists:
-  - linkListType: learn
-    links:
-    - text: Основные решения поддержки
-      url: support-solutions-surface.md
-    - text: Рекомендации по извлечению SSD на совместимых устройствах Surface
-      url: surface-ssd-removal-guide.md
-    - text: Блог по Surface для ИТ-специалистов
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro
-    - text: Защита данных во время восстановления или обслуживания поверхности
-      url: https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service
-    - text: Устранение неполадок с Surface Dock и стыковочными узлами Surface
-      url: https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations
+    - text: Параметр ограничения батареи
+      url: battery-limit.md
 - title: Участие в сообществе Surface
   linkLists:
   - linkListType: learn
