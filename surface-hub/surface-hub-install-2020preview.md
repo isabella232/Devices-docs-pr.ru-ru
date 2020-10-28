@@ -9,22 +9,25 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 08/13/2020
+ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 51d6b9169b0074eb474ddc89b6fe9b43a921bb07
-ms.sourcegitcommit: feb81137d009d9b7c743aabd7d02615e89842200
+ms.openlocfilehash: 6d370db0232ae1f93d1ba6b8ff15b5ff2cfa9f10
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929773"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142908"
 ---
 # Установка предварительной сборки обновления Windows 10 для совместной работы 2020 
 
-Последнее обновление операционной системы Surface Hub, **Обновление для Windows 10 Team 2020**, теперь доступно не на дополнительных платах surface Hub 50-дюймов и surface Hub 55 2S для предоплаты устройств из [программы предварительной оценки Windows](https://insider.windows.com). Модель Surface Hub 84 дюйма будет поддерживаться в окончательном выпуске обновления для Windows 10 Team 2020.
+Предварительная версия сборки Surface Hub операционной системы **Windows 10 Team 2020 Update Preview**доступна не в [программе предварительной оценки Windows](https://insider.windows.com). 
 
-Обновление для Windows 10 Team 2020 предлагает основные улучшения в развертывании и управлении устройствами, а также последние возможности Windows 10. Дополнительные сведения о новых возможностях можно найти в следующей записи блога: [обновление ОС нового Surface Hub выпущено для общедоступной предварительной версии.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823) Сведения об известных проблемах можно найти в разделе "известные проблемы" ниже.
+> [!NOTE] 
+> Теперь доступна окончательная общедоступная версия обновления для Windows 10 Team 2020. Дополнительные сведения можно найти в [статье обновление для Windows 10 Team 2020](surface-hub-2020-update.md).
+
+Обновление для Windows 10 Team 2020 предлагает основные улучшения в развертывании и управлении устройствами, а также последние возможности Windows 10. Дополнительные сведения о новых возможностях можно найти в следующей записи блога: [обновление ОС нового Surface Hub выпущено для общедоступной предварительной версии.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823) Сведения об известных проблемах можно найти в статье [Известные проблемы: Обновление для Windows 10 Team 2020](surface-hub-2020-team-update-known-issues.md)
  
-## Предварительные требования
+## Предварительные условия
 
 - Регистрация в [программе предварительной оценки Windows](https://insider.windows.com/).
 - Загрузите предварительную версию обновления Windows 10 Team 2020 с помощью быстрого канала программы предварительной оценки Windows.
