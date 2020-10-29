@@ -3,6 +3,7 @@
 # Surface Hub 2S
 
 ## Обзор
+### [Новые возможности обновления Windows 10 для совместной работы 2020](surface-hub-2020-update-whats-new.md)
 ### [Новые возможности Surface Hub 2S для ИТ-администраторов](surface-hub-2s-whats-new.md)
 ### [Технические характеристики Surface Hub 2S — 50 дюймов](surface-hub-2s-techspecs.md) 
 ### [Технические характеристики Surface Hub 2S — 85 дюймов](surface-hub-2s-85.md)

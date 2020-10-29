@@ -1,5 +1,5 @@
 ---
-title: Установка обновления для Windows 10 Team 2020
+title: Установка обновления Windows 10 для совместной работы 2020
 description: Загрузите Последнее обновление операционной системы Surface Hub, обновление Windows 10 Team 2020.
 keywords: Разделяйте значения запятыми
 ms.prod: surface-hub
@@ -11,14 +11,14 @@ audience: Admin
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 3e376a740aa16333cbbabc812b0c0193ab90d585
-ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
+ms.openlocfilehash: 68eee89ac1b93501c73eccd3e5f9eecf514a8132
+ms.sourcegitcommit: b4cfb718274fd632661f9112e9fd086a2ad45640
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11142952"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "11143644"
 ---
-# Установка обновления для Windows 10 Team 2020 
+# Установка обновления Windows 10 для совместной работы 2020 
 
 Новая операционная система Surface Hub в **Windows 10 Team 2020**, основанная на Windows 10 версии 20H2, теперь доступна для всех устройств Surface Hub 2s.  
 
@@ -48,7 +48,7 @@ ms.locfileid: "11142952"
  
 ## Перед началом работы
 
-Перед установкой обновления Windows 10 Team 2020 убедитесь, что вы сохранили ключ BitLocker, связанный с вашим устройством.
+Перед установкой обновления Windows 10 Team 2020 убедитесь, что вы сохранили ключ BitLocker, связанный с вашим устройством. Дополнительные сведения можно найти в [статье новые возможности надстройку обновления для Windows 10 Team 2020](surface-hub-2020-update-whats-new.md)
 
 **Сохранение ключа BitLocker вручную**
 
