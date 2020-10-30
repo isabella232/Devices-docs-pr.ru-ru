@@ -13,13 +13,13 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/13/2020
-ms.openlocfilehash: bfd10df3bb7a7dd031c1719d4191ffc46418c4e3
-ms.sourcegitcommit: 30c1eb469610dfd2ad9169c154ca07e565240fdb
+ms.date: 10/28/2020
+ms.openlocfilehash: 2d31f520d8c4da54f47b2b89b58b43e2cb983f1a
+ms.sourcegitcommit: 7f5b97275fe301ef700f9c77954a1054e2e8d046
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117855"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145620"
 ---
 # Используйте Microsoft Endpoint Configuration Manager для управления устройствами с помощью SEMM
 
@@ -388,11 +388,6 @@ ms.locfileid: "11117855"
 
 На компьютере, на котором запущен ShowSettingsOptions.ps1, должен быть установлен диспетчер Microsoft Surface UEFI Manager, но для этого сценария не требуется устройство Surface.
 
-Лучший способ просмотреть наиболее актуальные имена параметров и идентификаторов для устройств — использовать сценарий ConfigureSEMM.ps1 или ConfigureSEMM- <device name> . ps1 из SEMM_Powershell.zip в разделе [средства для загрузки для загрузок](https://www.microsoft.com/download/details.aspx?id=46703).
-
-Имена параметров и идентификаторы для всех устройств можно просмотреть в сценарии ConfigureSEMM.ps1.
-
-В сценариях ConfigureSEMM-. ps1 можно просматривать имена параметров и идентификаторов для определенных устройств <device name> . 
 
 ## Развертывание сценариев Configuration Manager SEMM
 
