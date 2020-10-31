@@ -12,12 +12,12 @@ ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114667"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145964"
 ---
 # Развертывание набора средств диагностики Surface для бизнеса
 
@@ -25,7 +25,7 @@ ms.locfileid: "11114667"
 
 В частности, SDT для бизнеса позволяет:
 
-- [Настройте пакет.](#create-custom-sdt)
+- [Настройте пакет.](#preparing-the-sdt-package-for-distribution)
 - [Запустите приложение с помощью команд.](surface-diagnostic-toolkit-command-line.md)
 - [Запустите несколько тестов оборудования, чтобы устранить неполадки.](surface-diagnostic-toolkit-desktop-mode.md#multiple)
 - [Создание журналов для анализа проблем.](surface-diagnostic-toolkit-desktop-mode.md#logs)
@@ -123,8 +123,6 @@ SDT для бизнеса поддерживается на устройства
 ![список установленных файлов SDT в проводнике](images/sdt-2.png)
 
 *Рисунок 2. Файлы, установленные SDT*
-
-<span id="create-custom-sdt" />
 
 ## Подготовка пакета SDT для распространения
 

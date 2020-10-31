@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 68eee89ac1b93501c73eccd3e5f9eecf514a8132
-ms.sourcegitcommit: b4cfb718274fd632661f9112e9fd086a2ad45640
+ms.openlocfilehash: 90bd5714b7427880f6e73c7031c26894d55ac500
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "11143644"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145954"
 ---
 # Установка обновления Windows 10 для совместной работы 2020 
 
@@ -48,7 +48,7 @@ ms.locfileid: "11143644"
  
 ## Перед началом работы
 
-Перед установкой обновления Windows 10 Team 2020 убедитесь, что вы сохранили ключ BitLocker, связанный с вашим устройством. Дополнительные сведения можно найти в [статье новые возможности надстройку обновления для Windows 10 Team 2020](surface-hub-2020-update-whats-new.md)
+Перед установкой обновления Windows 10 Team 2020 убедитесь, что вы сохранили ключ BitLocker, связанный с вашим устройством. Дополнительные сведения о новых возможностях можно найти [в статье новые возможности обновления для Windows 10 Team 2020](surface-hub-2020-update-whats-new.md).
 
 **Сохранение ключа BitLocker вручную**
 
