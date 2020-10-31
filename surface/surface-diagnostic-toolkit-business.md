@@ -12,12 +12,12 @@ ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114667"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145964"
 ---
 # <span data-ttu-id="7b2ed-103">Развертывание набора средств диагностики Surface для бизнеса</span><span class="sxs-lookup"><span data-stu-id="7b2ed-103">Deploy Surface Diagnostic Toolkit for Business</span></span>
 
@@ -25,7 +25,7 @@ ms.locfileid: "11114667"
 
 <span data-ttu-id="7b2ed-106">В частности, SDT для бизнеса позволяет:</span><span class="sxs-lookup"><span data-stu-id="7b2ed-106">Specifically, SDT for Business enables you to:</span></span>
 
-- [<span data-ttu-id="7b2ed-107">Настройте пакет.</span><span class="sxs-lookup"><span data-stu-id="7b2ed-107">Customize the package.</span></span>](#create-custom-sdt)
+- [<span data-ttu-id="7b2ed-107">Настройте пакет.</span><span class="sxs-lookup"><span data-stu-id="7b2ed-107">Customize the package.</span></span>](#preparing-the-sdt-package-for-distribution)
 - [<span data-ttu-id="7b2ed-108">Запустите приложение с помощью команд.</span><span class="sxs-lookup"><span data-stu-id="7b2ed-108">Run the app using commands.</span></span>](surface-diagnostic-toolkit-command-line.md)
 - [<span data-ttu-id="7b2ed-109">Запустите несколько тестов оборудования, чтобы устранить неполадки.</span><span class="sxs-lookup"><span data-stu-id="7b2ed-109">Run multiple hardware tests to troubleshoot issues.</span></span>](surface-diagnostic-toolkit-desktop-mode.md#multiple)
 - [<span data-ttu-id="7b2ed-110">Создание журналов для анализа проблем.</span><span class="sxs-lookup"><span data-stu-id="7b2ed-110">Generate logs for analyzing issues.</span></span>](surface-diagnostic-toolkit-desktop-mode.md#logs)
@@ -123,8 +123,6 @@ ms.locfileid: "11114667"
 ![список установленных файлов SDT в проводнике](images/sdt-2.png)
 
 *<span data-ttu-id="7b2ed-191">Рисунок 2.</span><span class="sxs-lookup"><span data-stu-id="7b2ed-191">Figure 2.</span></span> <span data-ttu-id="7b2ed-192">Файлы, установленные SDT</span><span class="sxs-lookup"><span data-stu-id="7b2ed-192">Files installed by SDT</span></span>*
-
-<span id="create-custom-sdt" />
 
 ## <span data-ttu-id="7b2ed-193">Подготовка пакета SDT для распространения</span><span class="sxs-lookup"><span data-stu-id="7b2ed-193">Preparing the SDT package for distribution</span></span>
 
