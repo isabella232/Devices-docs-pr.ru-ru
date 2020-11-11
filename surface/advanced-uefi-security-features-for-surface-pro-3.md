@@ -13,12 +13,12 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.openlocfilehash: 9460b4a5e8b44cbf4b6af57d01aab3b09afb49de
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 6a5c53c3e161bd4c49069a0665896762ce587618
+ms.sourcegitcommit: e9190a6fe68b8a7cd9b024aea4be9f885f0de388
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834752"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163187"
 ---
 # Расширенные функции безопасности UEFI для Surface Pro 3
 
@@ -54,7 +54,7 @@ ms.locfileid: "10834752"
 | Wi-Fi           | Включает и отключает встроенный передатчик Wi-Fi устройства Surface. Это также отключает функцию Bluetooth.                                                                              | **Включен**, "Отключен"                       |
 | Bluetooth      | Включает и отключает встроенный передатчик Bluetooth устройства Surface.                                                                                                        | **Включен**, "Отключен"                       |
 
- 
+ 
 
 ## Автоматическая настройка дополнительных параметров безопасности
 
@@ -69,12 +69,13 @@ ms.locfileid: "10834752"
 
 **Образцы сценариев**
 
->**Примечание**.&nbsp;&nbsp;В примерах сценариев ниже используется открытый пароль UEFI. Настоятельно рекомендуется сохранить сценарии в защищенном расположении и выполнять их в контролируемом окружении.
+> [!NOTE]
+> Пароль UEFI, используемый в образцах сценариев ниже, приведен в открытом тексте. Настоятельно рекомендуется сохранить сценарии в защищенном расположении и выполнять их в контролируемом окружении.
 
 
 Показать все настраиваемые параметры:
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -99,7 +100,7 @@ foreach ($uefiOption in $uefiOptions)
 
 Установить или изменить пароль UEFI:
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -115,7 +116,7 @@ $Password.ProposedValue = "12345"
 
 Проверить состояние предлагаемых изменений:
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -141,7 +142,7 @@ if ($details.Count -gt 0)
 
 Вернуть значения по умолчанию для UEFI:
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -166,11 +167,4 @@ foreach ($uefiOption in $uefiOptions)
 -   03 — Установлено предлагаемое значение, которое не распознано.
 -   0F — Пароль снятия блокировки не соответствует заданному сейчас паролю
 
- 
-
- 
-
-
-
-
-
+ 
