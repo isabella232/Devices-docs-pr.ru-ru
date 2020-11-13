@@ -80,6 +80,7 @@
 #### [Использование набора средств диагностики Surface для бизнеса в режиме настольного компьютера](surface-diagnostic-toolkit-desktop-mode.md)
 #### [Запуск набора средств диагностики Surface для бизнеса с помощью команд](surface-diagnostic-toolkit-command-line.md)
 ### [Справка для конечных пользователей](https://support.microsoft.com/products/surface-devices)
+### [Жизненный цикл драйвера Surface и встроенного ПО для устройств под управлением Windows](surface-driver-firmware-lifecycle-support.md)
 
 ## Гарантия и расширенные планы обслуживания
 ### [Гарантия и расширенные планы обслуживания Surface для бизнеса](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
