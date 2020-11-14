@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 10/08/2020
+ms.date: 10/13/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 713bd2e76f144b4dca7c0fad5c584b06ea12b0b5
-ms.sourcegitcommit: 3ca1d1bc77452acca914d0af03e252ee260ebf1a
+ms.openlocfilehash: d1099da397e47ad1ea44645623dce48498259eaa
+ms.sourcegitcommit: 5c396f37ed90f81373b9fdf8464cb9163f2797d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154134"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "11168578"
 ---
 # Переход на Windows 10 Pro или Корпоративная в Surface Hub 2
 
@@ -32,7 +32,7 @@ Surface Hub 2 предустановлен с помощью команды Wind
 
 Начните миграцию с сайта Windows 10 с помощью отдельного компьютера и *конфигуратора UEFI поверхности*для средства для загрузки. С помощью этого средства вы можете создать пакет, содержащий новый параметр UEFI, применяемый к Surface Hub 2.  
 
-Конфигуратор UEFI Surface работает в качестве интерфейса в режиме корпоративного управления Surface (SEMM). Оно предназначено для централизованного управления параметрами встроенного по на устройствах Surface в корпоративной среде. Дополнительные сведения можно найти в [документации по Microsoft SEMM](https://docs.microsoft.com/surface/surface-enterprise-management-mode).
+Конфигуратор UEFI Surface работает в качестве интерфейса в режиме корпоративного управления Surface (SEMM). Оно предназначено для централизованного управления параметрами встроенного по на устройствах Surface в корпоративной среде. Дополнительные сведения можно найти в <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> документации по Microsoft SEMM</a>
  
 
 ## Компоненты решения
@@ -52,13 +52,13 @@ Surface Hub 2 предустановлен с помощью команды Wind
 | Шаг  | Действие                                                                                                 | Краткий обзор                                                                                                                                                                                                                                                                                                                                                                                                  |
 | - | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1,1 | [Убедитесь, что версия UEFI на Surface Hub 2 соответствует минимальным требованиям.](#verify-uefi-version-on-surface-hub-2s-meets-minimum-requirements)                                  | Убедитесь в том, что версия UEFI — 694.2938.768.0 или более поздней.                                                                                                                                                                                                                                                                                                                                                      |
-| 2 | [Загрузите драйверы и микропрограммы конфигуратора UEFI Surface 2 и основного микрокода.](#download-surface-uefi-configurator-and-surface-hub-2-drivers-and-firmware)                             | На странице [**Surface Tool for IT**](https://www.microsoft.com/download/details.aspx?id=46703) выберите Download ( **скачать**). Затем выберите и скачайте **Конфигуратор UEFI Surface. MSI-файл** и установить его на отдельном компьютере. Скачайте [драйверы и встроенное по для Windows 10 Pro и Enterprise OS на MSI-файле Surface Hub 2](https://www.microsoft.com/download/details.aspx?id=101974). Сохраните его для использования в действии 5. |
+| 2 | [Загрузите драйверы и микропрограммы конфигуратора UEFI Surface 2 и основного микрокода.](#download-surface-uefi-configurator-and-surface-hub-2-drivers-and-firmware)                             | На странице <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> **Surface Tool for IT** </a> выберите Download ( **скачать**). Затем выберите и скачайте **Конфигуратор UEFI Surface. MSI-файл** и установить его на отдельном компьютере. Скачайте <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> драйверы и встроенное по для Windows 10 Pro и Enterprise OS на MSI-файле Surface Hub 2.</a> Сохраните его для использования в действии 5. |
 | Трехконтактный | [Подготовка SEMM сертификата.](#prepare-the-semm-certificate)                                                                          | Подготовьте сертификат, необходимый для запуска конфигуратора UEFI Surface. Или воспользуйтесь текущим сертификатом.                                                                                                                                                                                                                                                                                                      |
 | четырехпроцессорном | [Создать пакет SEMM.](#create-a-semm-package)                                                                               | Запустите конфигуратор UEFI Surface для создания пакета SEMM на USB-накопителе, который будет содержать файлы конфигурации, необходимые для применения в Surface Hub 2S. Скопируйте эти файлы пакета SEMM в папку на компьютере.                                                                                                                                                                                          |
 | 5 | [Подготовьте USB-накопитель, содержащий образ Windows 10, пакет SEMM и драйверы и встроенное по для Windows 10 Pro и Enterprise OS на Surface Hub 2.](#prepare-a-usb-flash-drive-that-contains-a-windows-10-image-semm-package-and-surface-hub-2-drivers-and-firmware) | Создавайте один USB-накопитель, содержащий образ Windows 10. В этом примере диск называется *BOOTME*. Добавьте драйверы и встроенное по для Windows 10 Pro и Enterprise OS на Surface Hub 2 (шаг 2) и SEMM файлы пакета (шаг 4) на диск *BOOTME* .                                                                                                                                                                                                  |
 | 152 | [Обновите UEFI на Surface Hub 2S для включения миграции ОС.](#update-uefi-on-surface-hub-2s-to-enable-os-migration)                                              | Используйте диск *BOOTME* для загрузки Surface Hub 2 в меню UEFI и установите пакет SEMM.|
 | 5-7 | [Установите Windows 10 Pro или Enterprise версии 1903 или более поздней.](#install-windows-10-pro-or-enterprise)                                        | Используйте диск *BOOTME* для установки Windows 10 Pro или Enterprise версии 1903 или более поздней.                                                                                                                                                                                                                                                                                 |
-| No8 | [Установка драйверов и встроенного по для Windows 10 Pro и Enterprise OS на Surface Hub 2.](#install-surface-hub-2-drivers-and-firmware)                                        | Чтобы убедиться в том, что на вашем устройстве установлены последние обновления и драйверы, установите [драйверы и встроенное по для Windows 10 Pro и Enterprise OS в файле MSI Surface Hub 2](https://www.microsoft.com/download/details.aspx?id=101974).                                                                                                                                                                                                                                                                                  |
+| No8 | [Установка драйверов и встроенного по для Windows 10 Pro и Enterprise OS на Surface Hub 2.](#install-surface-hub-2-drivers-and-firmware)                                        | Чтобы убедиться в том, что на вашем устройстве установлены последние обновления и драйверы, установите <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> драйверы и встроенное по для Windows 10 Pro и Enterprise OS в файле MSI Surface Hub 2.</a>                                                                                                                                                                                                                                                                                  |
 | @ | [Полностью настройте Surface Hub 2S в качестве персонального устройства для повышения производительности.](#configure-recommended-settings)                                        |  Включите Рекомендуемые параметры и приложения, чтобы оптимизировать Surface Hub 2S в качестве персонального устройства для повышения производительности.                                                                                                                                                                                                                                                                    |
 
 ### Проверка версии UEFI на Surface Hub 2 соответствует минимальным требованиям
@@ -80,7 +80,7 @@ Surface Hub 2 предустановлен с помощью команды Wind
 
 1. На Surface Hub 2 Войдите в систему как **Администратор**. 
     >[!Note]
-    > Если вы не знаете имя пользователя или пароль администратора, вам нужно сбросить устройство. Дополнительные сведения можно найти в разделе [Сброс и восстановление Surface Hub 2S](https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset).
+    > Если вы не знаете имя пользователя или пароль администратора, вам нужно сбросить устройство. Дополнительные сведения можно найти в разделе <a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset" target="_blank"> Сброс и восстановление Surface Hub 2s.</a>
 
 1. Перейдите на странице " **все**  >  **Параметры**приложений"  >  **и обновите**ее, а затем установите обновления для системы безопасности  >  **Windows**. 
 1. Перезагрузите устройство. 
@@ -92,10 +92,10 @@ Surface Hub 2 предустановлен с помощью команды Wind
 
 На отдельном компьютере:
 
-1. На [странице Surface Tool for IT](https://www.microsoft.com/download/details.aspx?id=46703)выберите Download ( **скачать**).  
+1. На <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> странице Surface Tool for IT </a> выберите Download ( **скачать**).  
 1. Выберите и скачайте MSI-файл конфигуратора поверхности UEFI и установите его на отдельном компьютере. Средство конфигуратора UEFI Surface невозможно запустить на Surface Hub 2, пока установлено приложение Windows 10 Team Edition.
 
-1. Загрузите [MSI-файл для драйверов Surface Hub 2 и встроенного по Windows Installer](https://www.microsoft.com/download/details.aspx?id=101974). Этот файл будет использоваться при установке новой операционной системы.
+1. Загрузите <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> MSI-файл для драйверов Surface Hub 2 и встроенного по Windows Installer </a> . Этот файл будет использоваться при установке новой операционной системы.
 
 ### Подготовка сертификата SEMM
 
@@ -107,9 +107,9 @@ Surface Hub 2 предустановлен с помощью команды Wind
 
 - Компании среднего размера и другие могут получать сертификаты от поставщиков партнеров. Этот вариант рекомендуется использовать в организациях, у которых нет достаточных ИТ-специалистов или специальных групп безопасности ИТ.
 
-- Кроме того, вы можете создать самозаверяющий сертификат с помощью сценария PowerShell. Дополнительные сведения можно найти в разделе [требования к сертификату для корпоративного режима управления Surface](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). Кроме того, вы можете использовать PowerShell для создания собственного сертификата. Дополнительные сведения можно найти в документации, посвященной [новым SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate) .
+- Кроме того, вы можете создать самозаверяющий сертификат с помощью сценария PowerShell. Дополнительные сведения можно найти в разделе <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements" target="_blank"> требования к сертификату для корпоративного режима управления Surface </a> . Кроме того, вы можете использовать PowerShell для создания собственного сертификата. Дополнительные сведения можно найти в <a href="https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate" target="_blank"> </a> документации, посвященной новым SelfSignedCertificate.
 
-Пакет SEMM, создаваемый конфигуратором UEFI Surface, должен быть защищен с помощью сертификата. Сертификат проверяет подпись файлов конфигурации перед применением параметров UEFI. Дополнительные сведения можно найти в [документации по SEMM](https://docs.microsoft.com/surface/surface-enterprise-management-mode).
+Пакет SEMM, создаваемый конфигуратором UEFI Surface, должен быть защищен с помощью сертификата. Сертификат проверяет подпись файлов конфигурации перед применением параметров UEFI. Дополнительные сведения можно найти в <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> документации по SEMM </a> .
  
  
 ### Создание пакета SEMM
@@ -196,16 +196,16 @@ Surface Hub 2 предустановлен с помощью команды Wind
 
 - Текущее решение для обработки изображений.
 
-- [Ускоритель развертывания Surface](https://docs.microsoft.com/surface/microsoft-surface-deployment-accelerator). С помощью этого средства вы можете создать загружаемый образ Windows 10. Изображение может включать все текущие обновления для Windows 10, Office, другие приложения, которые вы выбрали, и необходимые драйверы и микропрограммы. 
+- <a href="https://docs.microsoft.com/surface/microsoft-surface-deployment-accelerator" target="_blank"> Ускоритель развертывания Surface </a> . С помощью этого средства вы можете создать загружаемый образ Windows 10. Изображение может включать все текущие обновления для Windows 10, Office, другие приложения, которые вы выбрали, и необходимые драйверы и микропрограммы. 
 
-- USB-накопитель, который включает в себя образ Windows 10 Pro или Enterprise. Затем установите [драйверы и встроенное по для Windows 10 Pro и Enterprise OS на Surface Hub 2](https://www.microsoft.com/download/details.aspx?id=101974).
+- USB-накопитель, который включает в себя образ Windows 10 Pro или Enterprise. Затем установите <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> драйверы и встроенное по для Windows 10 Pro и Enterprise OS на Surface Hub 2 </a> .
  
 Ниже описано, как создать USB-накопитель с помощью установочного носителя, а затем добавить файлы пакета SEMM, драйверы и микропрограммы для Windows 10 Pro и Enterprise OS на MSI-файле Surface Hub 2. Если вы используете другие способы развертывания, перейдите на [UEFI обновлений на Surface Hub 2S, чтобы включить раздел миграции операционной системы](#update-uefi-on-surface-hub-2s-to-enable-os-migration) в этой статье.
 
 > [!NOTE]
 > После завершения установки вам понадобится действующая лицензия для Windows 10 Pro или Windows 10 Enterprise, отделенная от существующей лицензии на Windows 10 Team.
 
-1. Для создания установки Windows 10 Pro на странице [**загрузить Windows 10**](https://www.microsoft.com/software-download/windows10) следуйте инструкциям, чтобы скачать средство создания мультимедиа. Чтобы скачать Windows 10 корпоративную, перейдите в [центр обслуживания для корпоративного лицензирования Майкрософт](https://www.microsoft.com/licensing/servicecenter/default.aspx).
+1. Для создания установки Windows 10 Pro на <a href="https://www.microsoft.com/software-download/windows10" target="_blank"> странице загрузить Windows 10 </a> следуйте инструкциям, чтобы скачать средство создания мультимедиа. Чтобы скачать Windows 10 корпоративную, перейдите в <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" target="_blank"> центр обслуживания для корпоративного лицензирования Майкрософт </a> .
 
 2. Вставьте новый USB-накопитель. 
 1. Откройте средство создания мультимедиа, выберите пункт **Создание установочного носителя**и нажмите кнопку **Далее**.
@@ -286,18 +286,18 @@ Surface Hub 2 предустановлен с помощью команды Wind
 
 ### Установка драйверов и микропрограммного обеспечения Surface Hub 2
 
-Чтобы убедиться в том, что на вашем устройстве установлены последние обновления и драйверы, установите [драйверы и встроенное по для Windows 10 Pro и Enterprise OS на Surface Hub 2](https://www.microsoft.com/download/details.aspx?id=101974).
+Чтобы убедиться в том, что на вашем устройстве установлены последние обновления и драйверы, установите <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> драйверы и встроенное по для Windows 10 Pro и Enterprise OS на Surface Hub 2 </a> .
  
 ## Настройка рекомендуемых параметров
 
-Чтобы полностью настроить Surface Hub 2S в качестве персонального устройства для повышения производительности, ознакомьтесь с [Разстройкой Windows 10 Pro или Enterprise на Surface Hub 2](surface-hub-2-post-install.md).
+Чтобы полностью настроить Surface Hub 2S в качестве персонального устройства для повышения производительности, ознакомьтесь с <a href="surface-hub-2-post-install.md" target="_blank"> разстройкой Windows 10 Pro или Enterprise на Surface Hub 2 </a> .
 
 > [!NOTE]
->Если действия, описанные в этой статье, не были успешно перенесены на Windows 10 Pro или Enterprise для Surface Hub 2, обратитесь в [службу поддержки Surface Hub](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support).
+>Если действия, описанные в этой статье, не были успешно перенесены на Windows 10 Pro или Enterprise для Surface Hub 2, обратитесь в <a href="https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support" target="_blank"> службу поддержки Surface Hub </a> .
 
 ## Откат к команде Windows 10
 
-Если вы хотите восстановить устройство в группе Windows 10, ознакомьтесь с разделами [Сброс и восстановление Surface Hub 2S](surface-hub-2s-recover-reset.md).
+Если вы хотите восстановить устройство в группе Windows 10, ознакомьтесь с разделами <a href="surface-hub-2s-recover-reset.md" target="_blank"> Сброс и восстановление Surface Hub 2S </a> .
 
 ## Журнал версий
 
