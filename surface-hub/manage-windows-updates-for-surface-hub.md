@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: d6b95ac565132c4e4f1632c2abaffa13ddb2c54c
-ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
+ms.openlocfilehash: e5ffefa44560d01135b3ac656d9357f1115110ba
+ms.sourcegitcommit: d60f82d9d22fe118f9c8dc24458d2c144b138eb8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11142898"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "11174729"
 ---
 # Обновления Windows на Surface Hub
 
@@ -120,7 +120,7 @@ Surface Hub применяет обновления, следуя нижепер
 2.  Перейдите в раздел **Обновление и безопасность** > **Центр обновления Windows** > **Дополнительные параметры**.
 3.  В разделе **Часы обслуживания**нажмите кнопку **Изменить**.
 
-Чтобы изменить период обслуживания с помощью MDM, настройте узел **MOMAgent** в разделе [Поставщик служб конфигурации SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). См. дополнительные сведения в разделе [Управление параметрами с помощью поставщика MDM](manage-settings-with-mdm-for-surface-hub.md).
+Чтобы изменить окно обслуживания с помощью MDM, задайте узел **MaintenanceHoursSimple** в [поставщике службы настройки SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). См. дополнительные сведения в разделе [Управление параметрами с помощью поставщика MDM](manage-settings-with-mdm-for-surface-hub.md).
 
 
 ## Дополнительные сведения
