@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 12/07/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 6d8c41872481d86316d8985871fe74823e005ed8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e171d7c2db8a0d69594ca8d5f3a54f33ecebc9ae
+ms.sourcegitcommit: dc08a2096a1fe955eb67e736e2a4453f75e926be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836379"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "11196732"
 ---
 # Создание учетной записи устройства Surface Hub 2S
 
@@ -53,8 +53,6 @@ ms.locfileid: "10836379"
 
 ### Завершение настройки с помощью PowerShell
 
-- **Skype для бизнеса:** Если вы используете Skype для бизнеса только (локально или в сети), вы можете включить объект Skype для бизнеса, выполнив команду **Enable-CsMeetingRoom** , чтобы включить такие функции, как комната для собраний, для звука и помещения на удержание.
-
 - **Календарь Microsoft Teams и Skype для бизнеса:** Настройка [**автоматической обработки календаря**](https://docs.microsoft.com/surface-hub/surface-hub-2s-account?source=docs#set-calendar-auto-processing) для этой учетной записи.
 
 ## Создание учетной записи с помощью PowerShell
@@ -64,42 +62,54 @@ ms.locfileid: "10836379"
 ### Подключение к Exchange Online PowerShell
 
 ```powershell
-$365Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential (Get-Credential) -Authentication Basic –AllowRedirection
-$ImportResults = Import-PSSession $365Session
+Install-Module -Name ExchangeOnlineManagement
+Import-Module ExchangeOnlineManagement
+Connect-ExchangeOnline -UserPrincipalName admin@contoso.com -ShowProgress $true
 ```
 
-### Создание почтового ящика помещения
+### Создание почтового ящика
 
 ```powershell
-New-Mailbox -MicrosoftOnlineServicesID account@YourDomain.com -Alias SurfaceHub2S -Name SurfaceHub2S -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString  -String "<Enter Strong Password>" -AsPlainText -Force)
+New-Mailbox -MicrosoftOnlineServicesID 'SurfaceHub01@contoso.com' -Alias SurfaceHub01 -Name "Surface Hub 01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String 'Pass@word1' -AsPlainText -Force)
 ```
 
 ### Настройка автоматической обработки календаря
 
 ```powershell
-Set-CalendarProcessing -Identity "account@YourDomain.com" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This room is equipped with a Surface Hub"
+Set-CalendarProcessing -Identity 'SurfaceHub01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+Set-CalendarProcessing -Identity 'SurfaceHub01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Microsoft Surface Hub. Please make sure this meeting is a Microsoft Teams meeting!"
+```
+
+### Включить ActiveSync, если требуется использование почтового приложения
+
+ Политика ActiveSync по умолчанию будет работать, если unchnaged. В противном случае создайте новую политику и назначьте ее.
+
+```powershell
+New-MobileDeviceMailboxPolicy -Name:"SurfaceHub" -PasswordEnabled:$false
+#Assign Policy to Hub:
+Set-CASMailbox -Identity SurfaceHub01@contoso.com -ActiveSyncMailboxPolicy "SurfaceHub"
+```
+### Подключение к Azure AD
+
+```powershell
+Connect-AzureAD
 ```
 
 ### Назначение лицензии
 
 ```powershell
-Connect-MsolService
-Set-Msoluser -UserPrincipalName account@YourDomain.com -UsageLocation IE
-Set-MsolUserLicense -UserPrincipalName "account@YourDomain.com" -AddLicenses "contoso:MEETING_ROOM"
+Set-AzureADUser -ObjectId 'SurfaceHub01@contoso.com' -UsageLocation US
+$License = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense 
+$License.SkuId = "c7df2760-2c81-4ef7-b578-5b5392b571df" 
+$Licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses 
+$Licenses.AddLicenses = $License 
+Set-AzureADUserLicense -ObjectId 'SurfaceHub01@contoso.com' -AssignedLicenses $Licenses
 ```
 
-## Подключение к Skype для бизнеса Online с помощью PowerShell
-
-### Установка предварительных требований
-
-- [Распространяемый пакет Visual C++ 2017](https://aka.ms/vs/15/release/vc_redist.x64.exe)
-- [Модуль PowerShell Skype для бизнеса Online](https://www.microsoft.com/download/confirmation.aspx?id=39366)
+### Проверка наличия доступных лицензий
 
 ```powershell
-Import-Module LyncOnlineConnector
-$SfBSession = New-CsOnlineSession -Credential (Get-Credential)
-Import-PSSession $SfBSession -AllowClobber
-
-# Enable the Skype for Business meeting room
-Enable-CsMeetingRoom -Identity account@YourDomain.com -RegistrarPool(Get-CsTenant).Registrarpool -SipAddressType EmailAddress
+Get-AzureADUser -Filter "userPrincipalName eq 'SurfaceHub01@contoso.com'" |fl *
+#Meeting Room Standard SKU:
+6070a4c8-34c6-4937-8dfb-39bbc6397a60
 ```
