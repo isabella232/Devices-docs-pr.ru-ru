@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 10/27/2020
+ms.date: 12/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 90bd5714b7427880f6e73c7031c26894d55ac500
-ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
+ms.openlocfilehash: 7035d4c89e2ef5937d0480cf2d77db2e7e829488
+ms.sourcegitcommit: e126b8ac66a781ebe42cdd677af3fe6a2eb5e72c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "11145954"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203541"
 ---
 # Установка обновления Windows 10 для совместной работы 2020 
 
@@ -34,8 +34,12 @@ ms.locfileid: "11145954"
 | ----- | -------------------------------------- | ----------------- |
 | 1,1     | NZ, Австралия, Канада, Бельгия, Мексика | 27 октября 2020 г.  |
 | 2     | Великобритания, Япония, Швейцарии, Италия          | 10 ноября 2020 г. |
-| Трехконтактный     | US, Германия                            | 30 ноября 2020 г. |
-| четырехпроцессорном     | Глобализаци                                 | 7 декабря 2020 г.  |
+| Трехконтактный     | US, Германия                            | TBD |
+| четырехпроцессорном     | Глобализаци                                 | TBD  |
+
+## Центр обслуживания Surface Hub 2S с Windows 10 Team Edition v1703 
+
+Пользователи во всех регионах могут продолжать обновлять устройства Surface Hub 2S с помощью центра обновления Windows для бизнеса или с помощью образа восстановления исходного состояния (BMR), как описано в разделах [Сброс и восстановление Surface Hub 2S](surface-hub-2s-recover-reset.md). Поддержка полного обслуживания для Windows 10 Team Edition версии 1703 запланирована на продолжение до 16 марта 2021 г.
 
 
 ## Поддержка устройств v1 
@@ -44,11 +48,11 @@ ms.locfileid: "11145954"
  
 ## Новые возможности
 
-Обновление для Windows 10 Team 2020 предлагает основные улучшения в развертывании и управлении устройствами, а также последние возможности Windows 10. 
+Обновление для Windows 10 Team 2020 предлагает основные улучшения в развертывании и управлении устройствами, а также последние возможности Windows 10. Дополнительные сведения о новых возможностях можно найти [в статье новые возможности обновления для Windows 10 Team 2020](surface-hub-2020-update-whats-new.md).
  
 ## Перед началом работы
 
-Перед установкой обновления Windows 10 Team 2020 убедитесь, что вы сохранили ключ BitLocker, связанный с вашим устройством. Дополнительные сведения о новых возможностях можно найти [в статье новые возможности обновления для Windows 10 Team 2020](surface-hub-2020-update-whats-new.md).
+Перед установкой обновления Windows 10 Team 2020 убедитесь, что вы сохранили ключ BitLocker, связанный с вашим устройством. 
 
 **Сохранение ключа BitLocker вручную**
 
@@ -59,9 +63,6 @@ ms.locfileid: "11145954"
 
 Дополнительные сведения можно найти в статье [Сохранение ключа BitLocker](save-bitlocker-key-surface-hub.md).
 
-
 ## Подробнее
 
-
-- [Для общедоступной предварительной версии на новом устройстве Surface Hub выпущено обновление ОС.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823)
-
+- [Важные обновления в центре Surface Hub обновление для Windows 10 Team 2020](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
