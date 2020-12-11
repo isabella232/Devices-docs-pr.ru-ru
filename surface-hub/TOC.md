@@ -26,7 +26,6 @@
 ## Развертывание
 ### [Внедрение Surface Hub 2S и обучение](surface-hub-2s-adoption-kit.md)
 ### [Видео о внедрении Surface Hub 2S](surface-hub-2s-adoption-videos.md)
-
 ### [Первая настройка Surface Hub 2S](surface-hub-2s-setup.md)
 ### [Подключение устройств к Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Контрольный список развертывания Surface Hub 2S](surface-hub-2s-deploy-checklist.md)
@@ -40,7 +39,7 @@
 ### [Переход на Windows 10 Pro или Корпоративная в Surface Hub 2](surface-hub-2s-migrate-os.md)
 ### [Настройка Windows 10 Pro или Корпоративная на Surface Hub 2](surface-hub-2-post-install.md)
 ### [Основные надстройки для Windows 10 Pro и Корпоративная в Surface Hub 2](surface-hub-2-essential-add-ons.md)
-### [Установка предварительной сборки обновления Windows 10 для совместной работы 2020](surface-hub-install-2020preview.md)  
+### [Установка обновления Windows 10 для совместной работы 2020](surface-hub-2020-update.md)  
 ### [Известные проблемы: обновление Windows 10 для совместной работы 2020](surface-hub-2020-team-update-known-issues.md)
 ### [Настройка учетных записей администраторов, не являющихся глобальными, на Surface Hub 2S](surface-hub-2s-nonglobal-admin.md)
 ### [Установка и настройка нового браузера Microsoft Edge на Surface Hub](surface-hub-install-chromium-edge.md)        
@@ -99,8 +98,7 @@
 #### [Программа первого запуска](first-run-program-surface-hub.md)
 
 ## Управление
-### [Управление Microsoft Surface Hub](manage-surface-hub.md)
-### [Установка предварительной сборки обновления Windows 10 для совместной работы 2020](surface-hub-install-2020preview.md)  
+### [Управление Microsoft Surface Hub](manage-surface-hub.md) 
 ### [Установка и настройка нового браузера Microsoft Edge на Surface Hub](surface-hub-install-chromium-edge.md)    
 ### [PowerShell для Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md)
 ### [Удаленное управление Surface Hub](remote-surface-hub-management.md)
