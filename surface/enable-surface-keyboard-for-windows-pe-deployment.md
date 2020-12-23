@@ -1,7 +1,7 @@
 ---
-title: Включение клавиатуры Surface ноутбука в развертывание MDT
-description: При использовании MDT для развертывания Windows 10 на компьютерах с контактными портативными компьютерами необходимо импортировать драйверы клавиатуры для использования в среде Windows PE.
-keywords: поверхность Windows 10, Автоматизация, Настройка, MDT
+title: Как включить клавиатуру Surface Laptop во время развертывания MDT
+description: При использовании MDT для развертывания Windows 10 на ноутбуках Surface необходимо импортировать драйверы клавиатуры для использования в среде Windows PE.
+keywords: поверхность Windows 10, автоматизация, настройка, mdt
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface
@@ -17,61 +17,59 @@ appliesto:
 - Surface Laptop (1st Gen)
 - Surface Laptop 2
 - Surface Laptop 3
-ms.openlocfilehash: 5d4e4b46c109d9fe24fe75151c9eb1e0a8b702c0
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: d7ae6fc434f77cad86e73f111243968493de4ff2
+ms.sourcegitcommit: e6224f81f8efb6ac862afec0e60e3ddb182e9e6f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834715"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "11247311"
 ---
-# Включение клавиатуры Surface ноутбука в развертывание MDT
+# Как включить клавиатуру Surface Laptop во время развертывания MDT
 
-В этой статье рассматривается подход к развертыванию, в котором используется Microsoft Deployment Toolkit (MDT). Эти сведения также можно применить к другим методологиям развертывания. На большинстве типов устройств Surface клавиатура должна работать во время установки с помощью облегченного сенсорного ввода (LTI). Тем не менее, для портативного компьютера Surface требуется наличие некоторых дополнительных драйверов для использования клавиатуры. Для устройств Surface (1-го и Surface) необходимо подготовить структуру папок и профили выбора, позволяющие указывать драйверы клавиатуры для использования на этапе среды предустановки Windows (Windows PE) LTI. Дополнительные сведения об этой структуре папок можно найти в [статье Развертывание образа Windows 10 с помощью MDT: шаг 5: подготовка репозитория драйверов](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository).
+В этой статье посвящен подход к развертыванию, использующий Microsoft Deployment набор средств (MDT). Эти сведения также можно применить к другим методологиям развертывания. На большинстве типов устройств Surface клавиатура должна работать во время установки Lite Touch (LTI). Тем не менее, surface Laptop требует некоторых дополнительных драйверов, чтобы включить клавиатуру. Для устройств Surface Laptop (1-е поколения) и Surface Laptop 2 необходимо подготовить структуру папок и профили выбора, позволяющие указать драйверы клавиатуры для использования на этапе среды предустановки Windows (Windows PE) LTI. Дополнительные сведения об этой структуре папок см. в подстроке "Развертывание образа Windows 10 с помощью [MDT: шаг 5. Подготовка](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository)репозитория драйверов".
 
-> [!NOTE]
-> В настоящее время вы не можете добавить драйверы клавиатуры для ноутбука Surface 2 и Surface 3 в одном экземпляре загрузки Windows PE из-за конфликта драйверов. Вместо этого используйте отдельные экземпляры.
 
 > [!IMPORTANT]
-> При развертывании образа Windows 10 на ноутбуке Surface с предварительно установленной операционной системой Windows 10 ознакомьтесь со статьей KB [4032347, возникающими при развертывании Windows на Surface Devices с предварительно установленной операционной системой Windows 10 в режиме s](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues).
+> Если вы развертываете образ Windows 10 на ноутбуке Surface с предустановленным режимом Windows 10 в S-режиме, см. KB [4032347.](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues)Проблемы при развертывании Windows на устройства Surface с предустановленной Windows 10 в S-режиме.
 
-Чтобы добавить драйверы клавиатуры в профиль выбора, выполните указанные ниже действия.
+Чтобы добавить драйверы клавиатуры в профиль выбора, выполните следующие действия:
 
-1. Скачайте MSI-файл для портативного компьютера Surface из соответствующих местоположений:
-    - [Драйверы и встроенное по для ноутбука Surface (1-го поколения)](https://www.microsoft.com/download/details.aspx?id=55489)
-    - [Драйверы и встроенное по для ноутбука Surface 2](https://www.microsoft.com/download/details.aspx?id=57515)
-    - [ПК Surface 3 с драйверами и встроенным по для процессора Intel](https://www.microsoft.com/download/details.aspx?id=100429)
+1. Скачайте последний MSI-файл Surface Laptop из соответствующих мест:
+    - [Драйверы и микропрограммы ноутбука Surface (1-е поколения)](https://www.microsoft.com/download/details.aspx?id=55489)
+    - [Драйверы и микропрограммы Surface Laptop 2](https://www.microsoft.com/download/details.aspx?id=57515)
+    - [Surface Laptop 3 с процессорными драйверами и микропрограммами Intel](https://www.microsoft.com/download/details.aspx?id=100429)
 
-2. Извлеките содержимое MSI-файла Surface, в папку, которую можно легко найти (например, c:\ surface_laptop_drivers). Чтобы извлечь содержимое, откройте окно командной строки с повышенными привилегиями и выполните команду из следующего примера:
+2. Извлеките содержимое MSI-файла Surface Laptop в папку, которую можно легко найти (например, c:\surface_laptop_drivers). Чтобы извлечь содержимое, откройте окно командной подсказки с повышенными повышенными уровнями и запустите команду из следующего примера:
 
    ```cmd
    Msiexec.exe /a SurfaceLaptop_Win10_15063_1703008_1.msi targetdir=c:\surface_laptop_drivers /qn
    ```
 
-3. Откройте средство развертывания и разверните узел **Общие ресурсы развертывания** и общий доступ к развертыванию, а затем перейдите в папку **WindowsPEX64** .
+3. Откройте Deployment Workbench и разкройте узел **"Папки** развертывания" и обную папку развертывания, а затем перейдите в папку **WindowsPEX64.**
 
-   ![Изображение, которое показывает расположение папки WindowsPEX64 в Workbench для развертывания](./images/surface-laptop-keyboard-1.png)
+   ![Изображение расположения папки WindowsPEX64 в Deployment Workbench](./images/surface-laptop-keyboard-1.png)
 
-4. Щелкните правой кнопкой мыши папку **WindowsPEX64** и выберите команду **Импорт драйверов**.
-5. Следуйте инструкциям мастера импорта драйверов, чтобы импортировать папки Drivers в папку WindowsPEX64.  
+4. Щелкните правой кнопкой **мыши папку WindowsPEX64** и выберите **"Импорт драйверов".**
+5. Следуйте инструкциям мастера импорта драйверов, чтобы импортировать папки драйверов в папку WindowsPEX64.  
 
 > [!NOTE]
->  Проверьте скачанный пакет MSI, чтобы определить формат и структуру каталогов.  Структура каталогов будет начинаться с SurfacePlatformInstaller (устаревших MSI-файлов) или SurfaceUpdate (более поздних MSI-файлов) в зависимости от того, когда был освобожден пакет MSI. 
+>  Проверьте загруженный пакет MSI, чтобы определить формат и структуру каталогов.  Структура каталогов будет начинаться с SurfacePlatformInstaller (старые MSI-файлы) или SurfaceUpdate (новые MSI-файлы) в зависимости от того, когда MSI был выпущен. 
 
-Чтобы обеспечить поддержку ноутбука Surface (1-го поколения), импортируйте следующие папки:
+Чтобы поддерживать ноутбук Surface (1-е поколения), импортировать следующие папки:
 
  - SurfacePlatformInstaller\Drivers\System\GPIO
  - SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver
  - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
  - SurfacePlatformInstaller\Drivers\System\PreciseTouch
 
-Либо для более новых MSI-файлов, начинающихся с "SurfaceUpdate", используйте:
+Или для более новых MSI-файлов, начиная с SurfaceUpdate, используйте:
 
 - SurfaceUpdate\SerialIOGPIO
 - SurfaceUpdate\SurfaceHidMiniDriver
 - SurfaceUpdate\SurfaceSerialHubDriver
 - SurfaceUpdate\Itouch
 
-Для поддержки портативного компьютера Surface 2 импортируйте следующие папки:
+Для поддержки Surface Laptop 2 импортировать следующие папки:
 
  - SurfacePlatformInstaller\Drivers\System\GPIO
  - SurfacePlatformInstaller\Drivers\System\SurfaceHIDMiniDriver
@@ -81,7 +79,7 @@ ms.locfileid: "10834715"
  - SurfacePlatformInstaller\Drivers\System\UART
  - SurfacePlatformInstaller\Drivers\System\PreciseTouch
 
-Либо для более новых MSI-файлов, начинающихся с "SurfaceUpdate", используйте:
+Или для более новых MSI-файлов, начиная с SurfaceUpdate, используйте:
 
 - SurfaceUpdate\SerialIOGPIO
 - SurfaceUpdate\IclSerialIOI2C
@@ -92,7 +90,7 @@ ms.locfileid: "10834715"
 - SurfaceUpdate\Itouch
 
  
-Для поддержки портативного компьютера Surface 3 с помощью процессора Intel импортируйте следующие папки:
+Чтобы поддерживать Surface Laptop 3 с процессором Intel, импортировать следующие папки:
 
 - SurfaceUpdate\IclSerialIOGPIO
 - SurfaceUpdate\IclSerialIOI2C
@@ -103,7 +101,7 @@ ms.locfileid: "10834715"
 - SurfaceUpdate\SurfaceHotPlug
 - SurfaceUpdate\Itouch
 
-Импорт следующих папок включает функцию полной клавиатуры, сенсорной панели и сенсорного ввода в PE для ноутбука Surface 3.
+Импорт следующих папок позволит использовать полную клавиатуру, trackpad и сенсорные функции в PE для Surface Laptop 3.
 
 - IclSerialIOGPIO
 - IclSerialIOI2C
@@ -126,23 +124,23 @@ ms.locfileid: "10834715"
 
 
     > [!NOTE]
-    >  Проверьте скачанный пакет MSI, чтобы определить формат и структуру каталогов.  Структура каталогов будет начинаться с SurfacePlatformInstaller (устаревших MSI-файлов) или SurfaceUpdate (более поздних MSI-файлов) в зависимости от того, когда был освобожден пакет MSI. 
+    >  Проверьте загруженный пакет MSI, чтобы определить формат и структуру каталогов.  Структура каталогов будет начинаться с SurfacePlatformInstaller (старые MSI-файлы) или SurfaceUpdate (новые MSI-файлы) в зависимости от того, когда MSI был выпущен. 
 
-    Чтобы обеспечить поддержку ноутбука Surface (1-го поколения), импортируйте следующие папки:
+    Чтобы поддерживать ноутбук Surface (1-е поколения), импортировать следующие папки:
 
      - SurfacePlatformInstaller\Drivers\System\GPIO
      - SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver
      - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
      - SurfacePlatformInstaller\Drivers\System\PreciseTouch
 
-    Либо для более новых MSI-файлов, начинающихся с "SurfaceUpdate", используйте:
+    Или для более новых MSI-файлов, начиная с SurfaceUpdate, используйте:
 
     - SurfaceUpdate\SerialIOGPIO
     - SurfaceUpdate\SurfaceHidMiniDriver
     - SurfaceUpdate\SurfaceSerialHubDriver
     - SurfaceUpdate\Itouch
 
-    Для поддержки портативного компьютера Surface 2 импортируйте следующие папки:
+    Для поддержки Surface Laptop 2 импортировать следующие папки:
 
      - SurfacePlatformInstaller\Drivers\System\GPIO
      - SurfacePlatformInstaller\Drivers\System\SurfaceHIDMiniDriver
@@ -152,7 +150,7 @@ ms.locfileid: "10834715"
      - SurfacePlatformInstaller\Drivers\System\UART
      - SurfacePlatformInstaller\Drivers\System\PreciseTouch
 
-    Либо для более новых MSI-файлов, начинающихся с "SurfaceUpdate", используйте:
+    Или для более новых MSI-файлов, начиная с SurfaceUpdate, используйте:
 
     - SurfaceUpdate\SerialIOGPIO
     - SurfaceUpdate\IclSerialIOI2C
@@ -162,7 +160,7 @@ ms.locfileid: "10834715"
     - SurfaceUpdate\SurfaceSerialHub
     - SurfaceUpdate\Itouch
 
-    Для поддержки портативного компьютера Surface 3 с помощью процессора Intel импортируйте следующие папки:
+    Чтобы поддерживать Surface Laptop 3 с процессором Intel, импортировать следующие папки:
 
     - SurfaceUpdate\IclSerialIOGPIO
     - SurfaceUpdate\IclSerialIOI2C
@@ -174,29 +172,29 @@ ms.locfileid: "10834715"
     - SurfaceUpdate\Itouch
 
     > [!NOTE]
-    > Для портативного компьютера Surface 3 с процессором Intel модель — Surface ноутбука 3. Оставшиеся драйверы для портативного компьютера Surface находятся в папке \MDT развертывание Share\Out-of-Box Drivers\Windows10\X64\Surface ноутбука 3.
+    > Для Surface Laptop 3 с процессором Intel моделью является Surface Laptop 3. Остальные драйверы Surface Laptop расположены в папке \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 3.
 
-6. Убедитесь, что в папке WindowsPEX64 есть импортированные драйверы. Папка должна выглядеть следующим образом:  
+6. Убедитесь, что папка WindowsPEX64 теперь содержит импортируемые драйверы. Папка должна быть похожа на следующую:  
 
-   ![Изображение, в котором показаны только что импортированные драйверы в папке WindowsPEX64 в Workbench для развертывания.](./images/surface-laptop-keyboard-2.png)
+   ![Изображение новых импортируемых драйверов в папке WindowsPEX64 deployment Workbench](./images/surface-laptop-keyboard-2.png)
 
-7. Настройте профиль выделения, использующий папку WindowsPEX64. Профиль выделения должен выглядеть следующим образом:  
+7. Настройте профиль выбора, использующий папку WindowsPEX64. Профиль выбора должен иметь следующий сходство:  
 
-   ![Рисунок, на котором показана папка WindowsPEX64, выбранная в составе профиля выбора](./images/surface-laptop-keyboard-3.png)
+   ![Изображение папки WindowsPEX64, выбранной в составе профиля выбора](./images/surface-laptop-keyboard-3.png)
 
-8. Настройте свойства Windows PE для общего доступа к развертыванию MDT, чтобы использовать новый профиль выделения, как описано ниже.  
+8. Настройте свойства Windows PE для share развертывания MDT, чтобы использовать новый профиль выбора следующим образом:  
 
-   - На вкладке **платформа**выберите **x64**.
-   - Для **профиля выбора**выберите новый профиль.
-   - Выберите **включить все драйверы из профиля выбора**.
+   - Для **платформы**выберите **x64**.
+   - Для **профиля Selection**выберите новый профиль.
+   - Выберите **"Включить все драйверы" из профиля выбора.**
    
-   ![Изображение, показывающее свойства общего доступа развертывания MDT для Windows PE](./images/surface-laptop-keyboard-4.png)
+   ![Изображение свойств Windows PE из обоймы развертывания MDT](./images/surface-laptop-keyboard-4.png)
 
-9. Убедитесь, что вы настроили оставшиеся драйверы портативного компьютера Surface, используя либо профиль выделения, либо переменную **DriverGroup001** .  
-   - Для Surface ноутбука (1-го поколения) модель — это **ноутбук Surface**. Оставшиеся драйверы для ноутбука на компьютере Surface должны находиться в папке \MDT развертывание Share\Out-of-Box Drivers\Windows10\X64\Surface ноутбука, как показано на рисунке ниже.
-   - Для ноутбука Surface 2 модель — **Surface ноутбука 2**. Оставшиеся драйверы для ноутбука на компьютере Surface должны находиться в папке \MDT развертывание Share\Out-of-Box Drivers\Windows10\X64\Surface ноутбука 2. 
-   - Для портативного компьютера Surface 3 с процессором Intel модель — Surface ноутбука 3. Оставшиеся драйверы для портативного компьютера Surface находятся в папке \MDT развертывание Share\Out-of-Box Drivers\Windows10\X64\Surface ноутбука 3.
+9. Убедитесь, что вы настроили оставшиеся драйверы Surface Laptop с помощью профиля выбора или переменной **DriverGroup001.**  
+   - Для ноутбуков Surface (1-е поколения) **моделью является Surface Laptop.** Оставшиеся драйверы Surface Laptop должны находиться в папке \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop, как показано на рисунке, который следует за этим списком.
+   - Для Surface Laptop 2 **моделью является Surface Laptop 2.** Остальные драйверы Surface Laptop должны находиться в папке \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 2. 
+   - Для Surface Laptop 3 с процессором Intel моделью является Surface Laptop 3. Остальные драйверы Surface Laptop расположены в папке \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 3.
 
-   ![Изображение стандартных драйверов ноутбука Surface (1-го поколения) в папке "ноутбук Surface" в Workbench для развертывания](./images/surface-laptop-keyboard-5.png)
+   ![Изображение обычных драйверов Surface Laptop (1-го поколения) в папке Surface Laptop deployment Workbench](./images/surface-laptop-keyboard-5.png)
 
-После того как вы настраиваете общий доступ к развертыванию MDT для использования нового профиля выбора и связанных параметров, продолжайте процесс развертывания, как описано в разделе [развертывание образа Windows 10 с помощью MDT: Step 6: Создание последовательности задач развертывания](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence).
+Настроив обную долю развертывания MDT для использования нового профиля выбора и связанных параметров, продолжите процесс развертывания, как описано в описании развертывания образа Windows 10 с помощью [MDT: шаг 6. Создание](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence)последовательности задач развертывания.
