@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: b3f1f0884273728abc8b4f6e8662190dacdaf2b2
-ms.sourcegitcommit: 8c75e57dc32eaf7c11cb9badea74809fd3877ffc
+ms.openlocfilehash: c89063765462a76ae48d17e1480bbff29f48ebdc
+ms.sourcegitcommit: 8bca7edea5401dfc97614e18a058a023aa9497c4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "11253968"
+ms.locfileid: "11254208"
 ---
 # Установка обновления Windows 10 для совместной работы 2020 
 
@@ -28,8 +28,8 @@ ms.locfileid: "11253968"
 
 Получить Обновление Windows 2020 можно одним из следующих способов:
 
-- **Windows Update for Business**.
-- **Образ восстановления без системы (BMR).** Рекомендуемый вариант для клиентов, которые присоединяются к Azure Active Directory на своих устройствах или не могут получать обновления из Интернета. Чтобы при начать работу, [скачайте образ восстановления для Surface.](https://support.microsoft.com/surfacerecoveryimage)
+- **Windows Update для бизнеса.**
+- Образ восстановления системы без восстановления **(BMR).** Рекомендуемый вариант для клиентов, которые присоединяются к Azure Active Directory на своих устройствах или не могут получать обновления из Интернета. Чтобы при начать работу, скачайте [образ восстановления для surface.](https://support.microsoft.com/surfacerecoveryimage)
 - **Центр обновления Windows.** Доступность зависит от региона или страны, как отмечено в следующей таблице:
 
 | Этап | Страна или регион                         | Запуск          |
@@ -53,7 +53,7 @@ ms.locfileid: "11253968"
  
 ## Новые возможности
 
-Обновление Windows 10 для совместной работы 2020 позволяет существенно улучшить развертывание устройств и возможность управления ими, а также новейшие функции Windows 10. Чтобы узнать больше, см. новые [возможности Обновления Windows 10 для группы 2020.](surface-hub-2020-update-whats-new.md)
+Обновление Windows 10 для совместной работы 2020 обеспечивает существенное улучшение развертывания устройств и управляемости наряду с последними возможностями Windows 10. Чтобы узнать больше, см. новые [возможности Обновления Windows 10 для группы 2020.](surface-hub-2020-update-whats-new.md)
  
 ## Перед началом работы
 
@@ -66,9 +66,9 @@ ms.locfileid: "11253968"
 3. Перейдите к **обновлению &**  >  **безопасности.**
 4. В **bitLocker выберите** **"Сохранить".** Ключ BitLocker сохранен в текстовый файл на USB-накопителе.
 
-Дополнительные узнать [см. в под ключе Save your BitLocker.](save-bitlocker-key-surface-hub.md)
+Дополнительные узнать [см. в окнах "Сохранение ключа BitLocker".](save-bitlocker-key-surface-hub.md)
 
 ## Подробнее
 
-- [Известные проблемы: Обновление Windows 10 для группы 2020](surface-hub-2020-update.md)
-- [Важные обновления для Surface Hub с обновлением Windows 10 Для группы 2020](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
+- [Известные проблемы: Обновление Windows 10 для группы 2020](surface-hub-2020-team-update-known-issues.md)
+- [Важные обновления в Обновлении Windows 10 Для группы 2020 Surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
