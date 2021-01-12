@@ -11,18 +11,20 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: c356595e058c45cc95631d2ebd12ee2e5cc75c1d
-  ms.sourcegitcommit: b1c630dcf12530cf7034478bfe66ad3bb11b59c9
+  ms.openlocfilehash: aa883bb614b3d0230e00b4b8254e673182d60751
+  ms.sourcegitcommit: 00b6b59bd110633b6ae46345a592b72d68cc5121
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "11166651"
+  ms.lasthandoff: 01/11/2021
+  ms.locfileid: "11255690"
 landingContent:
 - title: Устройства Surface
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Поверхность для бизнеса "портативный компьютер"
+    - text: Surface Pro 7+ для бизнеса
+      url: https://www.microsoft.com/surface/business/surface-pro-7-plus
+    - text: Surface Laptop Go для бизнеса
       url: https://www.microsoft.com/surface/business/surface-laptop-go
     - text: Surface Pro X для бизнеса
       url: https://www.microsoft.com/surface/business/surface-pro-x
@@ -32,21 +34,21 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Повышение рентабельности (ROI) с помощью Microsoft Surface
-      url: forrester-tei-study.md
+    - text: Новые возможности Surface Pro 7+ для бизнеса
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-pro-7-brings-next-level-performance-and-versatility-to/ba-p/1928797
     - text: Виртуальный рабочий стол Windows на Surface
       url: windows-virtual-desktop-surface.md
-    - text: Новые возможности дока на док-плоскости 2
+    - text: Новые возможности док-станции Surface 2
       url: surface-dock-whats-new.md
 - title: Microsoft Ignite
   linkLists:
   - linkListType: video
     links:
-    - text: Автоматическое развертывание с помощью Surface & автопилот
+    - text: Нулевое развертывание касания с surface & AutoPilot
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: Surface Pro X и Windows в ARM в удаленном мире
+    - text: Surface Pro X и Windows ARM в удаленном мире
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Защита Surface — микросхема для облачной современной защиты конечных точек от Майкрософт
+    - text: Surface Security — от Майкрософт от микросхемы к современной облачной защите конечных точек
       url: https://youtu.be/uadAecDbqf4
 - title: Развертывание устройств Surface
   linkLists:
@@ -56,7 +58,7 @@ landingContent:
       url: windows-autopilot-and-surface-devices.md
     - text: Поддержка регистрации Surface для Windows Autopilot
       url: surface-autopilot-registration-support.md
-    - text: Инструмент "ускоритель развертывания Surface"
+    - text: Средство Surface Deployment Accelerator
       url: microsoft-surface-deployment-accelerator.md
 - title: Сравнение устройств Surface
   linkLists:
@@ -76,15 +78,15 @@ landingContent:
       url: surface-diagnostic-toolkit-business.md
     - text: Основные решения поддержки
       url: support-solutions-surface.md
-    - text: Жизненный цикл драйвера поверхности и микропрограммного обеспечения для устройств под управлением Windows
+    - text: Жизненный цикл драйвера Surface и встроенного ПО для устройств под управлением Windows
       url: surface-driver-firmware-lifecycle-support.md
 - title: Изучение руководства по безопасности
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Защита DMA на Surface Devices
+    - text: Защита DMA на устройствах Surface
       url: dma-protect.md
-    - text: Защищенные порты Surface Dock 2 с корпоративным режимом управления Surface Management (SEMM)
+    - text: Безопасные порты док-станции Surface 2 с помощью режима управления Surface Enterprise (SEMM)
       url: secure-surface-dock-ports-semm.md
     - text: Средство Surface Data Eraser
       url: microsoft-surface-data-eraser.md
