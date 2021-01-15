@@ -16,6 +16,7 @@
 #### [Планирование среды для Surface Hub 2S](surface-hub-2s-site-planning.md)
 #### [Краткое руководство по Surface Hub 2S](surface-hub-2s-quick-start.md)
 #### [Установка и подключение Surface Hub 2S](surface-hub-2s-install-mount.md)
+#### [Установка и подключение Surface Hub 2S 85](surface-hub-2s-85-install-mount.md)
 #### [Настройка настенного крепления для Surface Hub 2S](surface-hub-2s-custom-install.md)
 #### [Рабочий план настройки](setup-worksheet-surface-hub.md)
 #### [Обзор портов и клавиатуры Surface Hub 2S](surface-hub-2s-port-keypad-overview.md)

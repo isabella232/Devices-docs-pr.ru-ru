@@ -4,18 +4,17 @@
 
 ## Обзор
 
+### [Surface Pro 7+ для бизнеса](https://www.microsoft.com/surface/business/surface-pro-7-plus)
+### [Surface Go 2 для бизнеса](https://www.microsoft.com/surface/business/surface-go-2)
+### [Surface Pro X для бизнеса](https://www.microsoft.com/surface/business/surface-pro-x)
+### [Surface Laptop 3 для бизнеса](https://www.microsoft.com/surface/business/surface-laptop-3)
+### [Surface Studio 2 для бизнеса](https://www.microsoft.com/surface/business/surface-studio-2)
+### [Surface Book 3 для бизнеса](https://www.microsoft.com/surface/business/surface-book-3)
 ### [Повышение рентабельности (ROI) с помощью Microsoft Surface](forrester-tei-study.md)
 ### [Общий экономический эффект Microsoft Surface для образования](forrester-tei-edu-study.md)
 ### [Новые возможности Surface Dock](surface-dock-whats-new.md)
 ### [Технический обзор Surface Book 3 GPU](surface-book-GPU-overview.md)
 ### [Технический обзор Surface Book 3 Quadro RTX 3000](surface-book-quadro.md)
-### [Surface Book 3 для бизнеса](https://www.microsoft.com/surface/business/surface-book-3)
-### [Surface Go 2 для бизнеса](https://www.microsoft.com/surface/business/surface-go-2)
-### [Surface Pro 7 для бизнеса](https://www.microsoft.com/surface/business/surface-pro-7)
-### [Surface Pro X для бизнеса](https://www.microsoft.com/surface/business/surface-pro-x)
-### [Surface Laptop 3 для бизнеса](https://www.microsoft.com/surface/business/surface-laptop-3)
-### [Surface Studio 2 для бизнеса](https://www.microsoft.com/surface/business/surface-studio-2)
-
 ### [Безопасная работа в любом месте с помощью LTE Advanced](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
 
 ## План
