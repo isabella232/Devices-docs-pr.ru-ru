@@ -18,49 +18,49 @@ ms.custom:
 - CI 118876
 - CSSTroubleshoot
 ms.reviewer: mablaik
-description: Информация о поддержке продуктов Microsoft Surface и Surface Hub.
-ms.openlocfilehash: fa86756c122814e7f90351782fc8f6f34227ae42
-ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
+description: Сведения о поддержке продуктов Microsoft Surface и Surface Hub.
+ms.openlocfilehash: 41ed1cf624317234fb8786bb2c8615e6eed58551
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105260"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271543"
 ---
 # Поддержка Surface
 
 ### Перед тем как связаться с нами:  
 
-Запустите [набор средств диагностики Surface для бизнеса](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT). SDT позволяет ИТ – быстро находить, устранять неполадки и устранять проблемы оборудования, программного обеспечения и микропрограмм с помощью устройств Surface. Вы можете выполнять диапазон диагностических тестов и восстановление программного обеспечения в дополнение к получению сведений о работоспособности устройств и руководство по устранению проблем. 
+Запустите [surface Diagnostic набор средств for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business) (SDT). SDT позволяет ИТ-администраторам быстро изучить, устранить неполадки оборудования, программного обеспечения и микропрограмм на устройствах Surface, а также устранить их. Вы можете выполнить ряд диагностических тестов и средств восстановления программного обеспечения в дополнение к получению анализа состояния устройства и инструкций по устранению проблем. 
 
-Если после запуска набора средств по-прежнему возникают проблемы, выберите вариант поддержки с помощью вкладок ниже.
+Если у вас по-прежнему возникает проблема после запуска наборов средств, воспользуйтесь вкладками ниже, чтобы выбрать вариант поддержки.
 
-## [Техническая поддержка](#tab/online)
+## [Поддержка в Интернете](#tab/online)
 
 > [!NOTE]
 > Вам потребуется войти на портал отправки через Интернет с помощью учетной записи Майкрософт или учетной записи Azure Active Directory.  
 
-Просрочные гарантийные обязательства и запросы на обслуживание с помощью [формы гарантий и заявки на обслуживание](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx). Сведения о том, как использовать форму, можно найти в статьях [рекомендации и формы заявки на обслуживание](warranty-and-service-claim-form.md) , а также прикрепление ее к отправке вашего дела.
+Ускорите запросы на обслуживание и гарантии с помощью формы заявки ["Гарантии и услуги".](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx) Сведения о том, как использовать [](warranty-and-service-claim-form.md) форму, см. в инструкциях формы заявки "Гарантии" и "Служба" и ее присоединении к отправке дела.
 
-Для бизнес-клиентов: [отправьте запрос на обслуживание](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727). 
+Для бизнес-клиентов: [отправьте запрос на обслуживание.](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727&hidden=false) 
 
-Для пользователей премьер-поддержки Майкрософт: [отправьте запрос на обслуживание в центре служб](https://serviceshub.microsoft.com/support/contactsupport). 
+Для клиентов Microsoft Premier: [отправьте запрос на обслуживание в Services Hub.](https://serviceshub.microsoft.com/support/contactsupport) 
 
  
-## [Техническая поддержка по телефону](#tab/phone)
+## [Поддержка по телефону](#tab/phone)
 
-[Позвоните нам, чтобы начать запрос на обслуживание](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers). Подготовьте серийный номер устройства при звонке. 
+[Позвоните нам, чтобы запустить запрос на обслуживание.](https://support.microsoft.com/help/4051701/global-customer-service-phone-numbers) Подготовьтесь к порядковому номеру устройства при вызове. 
 
 ## [Поддержка в магазине](#tab/instore)
 
 ## Китай, Индия
 
-Сделайте встречу в центре Walk-In Surface, чтобы помочь вам устранить проблему.
+Задайте встречу в Центре Walk-In Surface, чтобы решить проблему:
 
-1. Перейдите на страницу [сведения о контакте в центре Walk-In Surface](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) . 
-2. Выберите свое местоположение, чтобы найти наиболее подходящую Walk-In центре.  
-3. Выберите свой центр Walk-In и свяжитесь с ними, чтобы запланировать встречу.
+1. Перейдите на [страницу контактной Walk-In Центра контактов](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) Surface. 
+2. Выберите свое расположение, чтобы найти центр Walk-In ближайший к вам.  
+3. Выберите центр Walk-In и свяжитесь с ними, чтобы запланировать встречу.
 
 
 ---
 
-Все еще нужна помощь? Перейдите в [сообщество Майкрософт](https://answers.microsoft.com/).
+Все еще нужна помощь? Перейдите в [Сообщество Майкрософт.](https://answers.microsoft.com/)

@@ -1,14 +1,14 @@
 ---
-title: Включение функции пробуждения Power On для Surface
+title: How to enable Wake on Power for Surface
 ms.author: v-todmc
 author: mccoybot
-ms.date: 7/30/2020
 audience: ITPro
 search.appverid:
 - SPO160
 - MET150
 appliesto:
 - Surface Book 3
+- Surface Pro 7+
 - Surface Pro 7
 - Surface Laptop 3
 - Surface Pro X
@@ -16,8 +16,8 @@ appliesto:
 ms.custom:
 - CI 121602
 ms.reviewer: hachidan
-description: В этой статье описано, как включать и отключать пробуждение Power On для устройств Surface.
-keywords: обновление, развертывание, драйвер, WOL, пробуждение по сети
+description: В этой статье описывается, как включить и отключить wake on Power для устройств Surface.
+keywords: обновление, развертывание, драйвер, wol, wake-on-lan
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
@@ -26,79 +26,81 @@ ms.localizationpriority: medium
 ms.topic: article
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: dee2a2962cf6b70a1bf11cf597b4d41f4b5568e4
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: 6ad359861f6af29c567bf0fbf26878ec15c7c642
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114577"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271563"
 ---
 # Пробуждение при подаче питания для устройств Surface
 
-Устройства Surface можно отключить, не выходя из него, или настроить режим гибернации, чтобы сэкономить время работы от аккумулятора. Чтобы улучшить управляемость этих устройств, функция Wake on Power позволяет автоматически запускать совместимые устройства Surface при повторном подключении к Power. Чтобы настроить функцию пробуждения Power On, вы можете использовать режим корпоративного управления Surface (SEMM) в качестве конфигуратора UEFI Surface или диспетчера UEFI.
+Устройства Surface можно отключить, пока вы не на рабочем месте, или настроить режим гибернации для экономии заряда батареи. Чтобы повысить управляемость этих устройств, с помощью Wake on Power можно автоматически запускать совместимые устройства Surface при повторном под подключением к электросети. Чтобы настроить режим восстановления после питания, можно использовать режим управления Surface Enterprise (SEMM) с помощью настройщика UEFI Surface или диспетчера UEFI.
 
-Функция Wake on Power On поддерживается на следующих устройствах:
+Функция Wake on Power доступна на следующих устройствах:
 
+- Surface Pro 7 и более
 - Surface Book 3
 - Surface Pro 7
-- Surface ноутбук 3
-- Ноутбук Surface Go
+- Surface Laptop 3
+- Surface Laptop Go
 - Surface Pro X 
 
 
-## Общие сведения и требования
+## Обзор и предварительные условия
 
-Конфигуратор UEFI Surface позволяет сохранить индивидуальные параметры UEFI в пакете установщика Windows Installer. msi для распространения на целевые устройства. 
+Настройщик UEFI Surface позволяет сохранять отдельные параметры UEFI в MSI-пакете установщика Windows для распространения на целевые устройства. 
 
 > [!NOTE]
-> В этой статье предполагается, что вы знаете, как использовать SEMM. Дополнительные сведения можно найти в разделе Документация по [режиму управления предприятием в Surface (SEMM)](surface-enterprise-management-mode.md) .
+> В этой статье предполагается, что вы знаете, как использовать SEMM. Дополнительные сведения см. в [документации по режиму управления Surface Enterprise (SEMM).](surface-enterprise-management-mode.md)
 
-## Включение функции пробуждения на Power On
+## Чтобы включить wake on Power
 
-1.  Скачайте последнюю версию [конфигуратора UEFI Surface](https://www.microsoft.com/download/confirmation.aspx?id=46703).
-2.  Войдите на устройство Surface с помощью учетной записи администратора, откройте **Конфигуратор UEFI Surface**, выберите **Surface Devices**и нажмите кнопку **Далее**.
+1.  Скачайте последнюю версию [настройщика UEFI Surface.](https://www.microsoft.com/download/confirmation.aspx?id=46703)
+2.  Во sign in to your Surface device as an administrator, open **Surface UEFI Configurator,** select **Surface Devices,** and then select **Next**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
-3.  Нажмите кнопку **Пуск**и выберите команду **создать** в разделе **пакет конфигурации**.
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Выберите устройства Surface и выберите "Далее".":::
+3.  Выберите **"Начните"** и выберите **"Создать** в **пакете конфигурации".**
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
-4.  Выберите **Защита сертификата**и добавьте PFX-файл сертификата. 
-5. Введите пароль, нажмите кнопку **Далее**, добавьте **защиту паролем**, а затем нажмите кнопку **Далее**.
-6.  На странице **выберите тип поверхности, на которую вы хотите сделать это** , выберите нужные оконечные устройства. Например, выберите **Surface Pro 7**.
-7.  На странице **Дополнительные функции** выберите пункт **пробуждение по питанию**, установите для параметра значение **вкл**., а затем нажмите кнопку **Далее**.
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите "Создать пакет конфигурации".":::
+4.  Выберите **"Защита сертификатов"** и добавьте PFX-файл сертификата. 
+5. Введите пароль, выберите **"Далее",** **"Добавить защиту**паролем" и затем **"Далее".**
+6.  На странице **"Выбор типа Surface", на которую** вы хотите нацелить, выберите нужные целевые устройства. Например, выберите **Surface Pro 7.**
+7.  На странице **"Дополнительные функции"** выберите **"Будить на питание",** установите для функции "В сети" и выберите **"Далее".** ****
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее."::: 
-8.  На странице **успешно** нажмите кнопку **завершить**.
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Select Wake on Power and set to On."::: 
+8.  На странице **"Успешно"** выберите **"Конец".**
 
     > [!NOTE]
-    > Если вы используете параметры устройства в первый раз, вам будет предложено также предоставить два последних символа отпечатка сертификата. 
-9.  Сохраните пакет MSI. 
+    > Если вы в первый раз предоставляете параметры на устройстве, вам также будет предложено предоставить два последних символа отпечатка сертификата. 
+9.  Сохраните MSI-пакет. 
 
-## Применение MSI-пакета 
+## Применение пакета MSI 
 
-Пакет MSI можно применить к устройствам в сети с помощью таких средств распространения программного обеспечения, как Microsoft Endpoint Configuration Manager. Ниже приведены инструкции по установке пакета на локальном компьютере. 
+Пакет MSI можно применить к устройствам в сети с помощью таких средств распространения программного обеспечения, как Microsoft Endpoint Configuration Manager. Эта процедура включает действия по установке пакета на локальном компьютере. 
 
-1.  В командной строке с повышенными привилегиями введите полный путь к MSI-файлу, чтобы запустить пакет MSI. 
+1.  В командной подсказке с повышенными повышенными уровнями введите полный путь к MSI-файлу, чтобы запустить MSI-пакет. 
 
     ```
     C:\SEMM\wake-on-power.msi 
     ```
 
-2.  В диалоговом окне **предупреждение** нажмите кнопку **ОК** или отключите BitLocker, если это необходимо.
+2.  В **диалоговом** окне предупреждения выберите "ОК" или отключите BitLocker, если это необходимо. ****
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
-3.  На странице приветствия нажмите кнопку **Далее** , чтобы запустить пакет и применить только что настроенный параметр UEFI.
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Выберите "ОК" или отключите BitLocker соответствующим образом.":::
+3.  На странице приветствия выберите **"Далее",** чтобы запустить пакет, и примените только что настроенный параметр UEFI.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Выберите пункт устройства Surface и нажмите кнопку Далее.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="На странице приветствия выберите "Далее".":::
 4.  Перезапустите устройство. 
 
-Теперь вы настроили функцию пробуждения на Power On. Чтобы проверить параметры, отключите устройство, отключите электроэнергию и подключитесь к электросети. Устройство должно запускаться автоматически. 
+Теперь настроено питание от питания. Чтобы проверить параметры, отключите устройство, отключите питание и снова подключите его. Устройство должно запускаться автоматически. 
 
 ## Ссылок
 
-Дополнительные сведения можно найти в следующих статьях. 
+Дополнительные сведения см. в следующих статьях. 
 
 - [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
-- [Пробуждение по локальной сети для устройств Surface](wake-on-lan-for-surface-devices.md)
+- [Будить в локальной сети для устройств Surface](wake-on-lan-for-surface-devices.md)
 
-Все еще нужна помощь? Перейдите в [сообщество Майкрософт](https://answers.microsoft.com/).
+Все еще нужна помощь? Перейдите в [Сообщество Майкрософт.](https://answers.microsoft.com/)
