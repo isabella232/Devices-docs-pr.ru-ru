@@ -1,7 +1,7 @@
 ---
-title: Справочник по системным SKU (Surface)
-description: См. ссылку на имена системной модели и SKU системы.
-keywords: uefi, configure, firmware, secure, semm
+title: Справочник по номерам SKU системы Surface
+description: См. ссылку на имена системной модели и системного SKU для всех устройств Surface.
+keywords: uefi, configure, firmware, secure, semm, Autopilot
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
@@ -9,21 +9,21 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 1/15/2021
+ms.date: 01/27/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 2140faf346229842bffc4f9348041f4667b94686
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.openlocfilehash: 0fe13750e7e8c8188b52726c114a6b3668434d39
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271373"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304832"
 ---
-# Справочник по системным SKU
+# Справочник по номерам SKU системы Surface
 
-В этом документе содержится ссылка на имена системной модели и SKU системы, которые можно использовать для быстрого определения состояния компьютера конкретного устройства с помощью PowerShell или WMI.
+В этом документе содержится ссылка, которую можно использовать для различных ИТ-задач, таких как регистрация устройств Surface в Windows Autopilot или проверка состояния компьютера конкретного устройства с помощью PowerShell или WMI.
 
 Системная модель и системный SKU — это переменные, которые хранятся в таблицах SYSTEM Management BIOS (SMBIOS) на уровне UEFI устройств Surface. Используйте имя system SKU всякий раз, когда нужно различать устройства с одинаковым именем системной модели, например Surface Pro и Surface Pro с LTE Advanced.
 
@@ -69,7 +69,7 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
 ```
 
 **Искомый SKU с помощью сведений о системе**  
-Системную SKU и системную модель для устройства также можно найти в **сведениях о системе.** Для этого выполните следующие действия:
+Системную SKU и системную модель для устройства также можно найти в **сведениях о системе.** Для этого выполните указанные ниже действия.
 
 1. Выберите **"Начните"** и введите **MSInfo32** в поле поиска.  
 1. Выберите **сведения о системе.**
@@ -81,3 +81,8 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
  ``` 
+
+## Подробнее
+
+- [Справочник по WMI](https://docs.microsoft.com/windows/win32/wmisdk/wmi-reference)
+- [Поддержка регистрации Surface для Windows Autopilot](surface-autopilot-registration-support.md)
