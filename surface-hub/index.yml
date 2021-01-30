@@ -14,17 +14,19 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: b4161e3e041b8c6838ad7a498bb0c50784485fea
-  ms.sourcegitcommit: 9bf5c4367b471f77949482390fddf8ff137f60b5
+  ms.openlocfilehash: 655b10e575d1a7057e829c0312b586c2980462f4
+  ms.sourcegitcommit: 046623bfcc01a2daa3eacd229a6c5e70365d25b6
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 01/25/2021
-  ms.locfileid: "11297902"
+  ms.lasthandoff: 01/29/2021
+  ms.locfileid: "11306089"
 landingContent:
 - title: Подготовьтесь к внедрению Surface Hub 2S
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Сертифицированные для Microsoft Teams аудио и видео аксессуары для Surface Hub 2S
+      url: surface-hub-2s-certifications.md
     - text: Обновление до выпуска Windows 10 для совместной работы
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655
     - text: Установка и подключение Surface Hub 2S размером 85 дюймов (руководство по подготовке)
