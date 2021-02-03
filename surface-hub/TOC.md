@@ -4,9 +4,9 @@
 
 ## Обзор
 ### [Новые возможности обновления Windows 10 для совместной работы 2020](surface-hub-2020-update-whats-new.md)
-### [Новые возможности Surface Hub 2S для ИТ-администраторов](surface-hub-2s-whats-new.md)
-### [Технические характеристики Surface Hub 2S — 50 дюймов](surface-hub-2s-techspecs.md) 
-### [Технические характеристики Surface Hub 2S — 85 дюймов](surface-hub-2s-85.md)
+### [Что нового в Surface Hub 2S для ИТ-администраторов](surface-hub-2s-whats-new.md)
+### [Технические характеристики Surface Hub 2S 50"](surface-hub-2s-techspecs.md) 
+### [Технические характеристики Surface Hub 2S 85"](surface-hub-2s-85.md)
 ### [Основы операционной системы (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
 ### [Настройка яркости, громкости и ввода Surface Hub 2S](surface-hub-2s-onscreen-display.md)
 ### [Использование приложения "Доска Майкрософт" на Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
@@ -16,8 +16,8 @@
 #### [Планирование среды для Surface Hub 2S](surface-hub-2s-site-planning.md)
 #### [Краткое руководство по Surface Hub 2S](surface-hub-2s-quick-start.md)
 #### [Установка и подключение Surface Hub 2S](surface-hub-2s-install-mount.md)
-#### [Перемещение и обращение с Surface Hub 2S 85](hub-move.md)
-#### [Установка и подключение Surface Hub 2S 85](surface-hub-2s-85-install-mount.md)
+#### [Перемещение и работа с Surface Hub 2S 85"](hub-move.md)
+#### [Установка и установка Surface Hub 2S 85"](surface-hub-2s-85-install-mount.md)
 #### [Настройка настенного крепления для Surface Hub 2S](surface-hub-2s-custom-install.md)
 #### [Рабочий план настройки](setup-worksheet-surface-hub.md)
 #### [Обзор портов и клавиатуры Surface Hub 2S](surface-hub-2s-port-keypad-overview.md)
