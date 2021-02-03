@@ -1,6 +1,6 @@
 ---
-title: PowerShell для Surface Hub (Surface Hub)
-description: Сценарии PowerShell для настройки Microsoft Surface Hub и управления этим устройством.
+title: PowerShell для Surface Hub (v1)
+description: На этой странице содержатся сценарии PowerShell, предназначенные для исходного Surface Hub (версия 1)
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -10,18 +10,19 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 01/10/2018
+ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 92b42139020db13251fa6c5f8439d7084a61a132
-ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
+ms.openlocfilehash: c0fa06153dc5597827f2973ecc9f728e35d79e85
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195384"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312005"
 ---
-# PowerShell для Surface Hub
+# PowerShell для Surface Hub (v1)
 
-Сценарии PowerShell для настройки Microsoft Surface Hub и управления этим устройством.
+> [!NOTE]
+ >На этой странице содержатся сценарии PowerShell, предназначенные для исходного Surface Hub (версия 1). Последние сценарии создания учетной записи для Surface Hub 2S см. в записи создания учетной записи устройства [Surface Hub 2S.](surface-hub-2s-account.md)
 
 -   [Сценарии PowerShell для администраторов Surface Hub](#scripts-for-admins)
     -   [Создание локальной учетной записи](#create-on-premises-ps-scripts)
@@ -30,12 +31,12 @@ ms.locfileid: "11195384"
     -   [Включение Skype для бизнеса (EnableSfb.ps1)](#enable-sfb-ps-scripts)
 -   [Полезные командлеты](#useful-cmdlets)
     -   [Создание политики Exchange ActiveSync, совместимой с Surface Hub](#create-compatible-as-policy)
-    -   [Разрешение идентификаторов устройств для ActiveSync](#whitelisting-device-ids-cmdlet)
+    -   [Разрешение идентификаторов устройств для ActiveSync](#allowing-device-ids-for-activesync)
     -   [Автоматический прием и отклонение приглашений на собрание](#auto-accept-meetings-cmdlet)
     -   [Прием внешних приглашений на собрание](#accept-ext-meetings-cmdlet)
     
  > [!NOTE]
- > Дополнительные [сценарии для проверки подлинности и автоматического выполнения в Exchange Online PowerShell v2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
+ > См. [также современные сценарии auth и unattended в Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
 
 ## Что вам понадобится
 
@@ -993,7 +994,7 @@ else
 
 ## <a href="" id="acct-verification-ps-scripts"></a>Сценарий проверки учетной записи
 
-Этот сценарий проверяет ранее созданную учетную запись устройства Surface Hub независимо от того, какой метод использовался для ее создания. Этот сценарий предоставляет оценку типа "успешно/ошибка". Если появляется одна из ошибок, отображается подробное сообщение об ошибке, но если все тесты пройдены успешно, конечным результатом будет сводный отчет. Например:
+Этот сценарий проверяет ранее созданную учетную запись устройства на Surface Hub и Surface Hub 2S независимо от того, какой метод использовался для ее создания. Этот сценарий предоставляет оценку типа "успешно/ошибка". Если появляется одна из ошибок, отображается подробное сообщение об ошибке, но если все тесты пройдены успешно, конечным результатом будет сводный отчет. Например:
 
 ``` syntax
 15 tests executed
@@ -1642,7 +1643,7 @@ Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### <a href="" id="whitelisting-device-ids-cmdlet"></a>Разрешение идентификаторов устройств для ActiveSync
+### Разрешение идентификаторов устройств для ActiveSync
 
 Чтобы разрешить учетную запись `$strRoomUpn`, выполните следующую команду:
 
@@ -1671,7 +1672,7 @@ Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 Чтобы учетная запись устройства принимала внешние приглашения на собрание (приглашения от учетных записей из другого клиента или домена), необходимо разрешить ей обработку внешних приглашений на собрание. После этого учетная запись будет автоматически принимать или отклонять приглашения на собрание от внешних и локальных учетных записей.
 
 > [!Note]
-> Если для атрибута **AutomateProcessing** не задано значение **"** автоназначение", то установка этого параметра не будет оказывать никакого воздействия.
+> Если атрибут **AutomateProcessing** не имеет значения **AutoAccept,** то установка этого параметра не будет действовать.
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true
