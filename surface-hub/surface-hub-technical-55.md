@@ -1,8 +1,8 @@
 ---
-title: Технические сведения для 55-метрового Surface Hub
+title: Технические сведения для 55-метрового Surface Hub (v1)
 ms.reviewer: ''
 manager: laurawi
-description: Спецификации для 55-метрового Surface Hub
+description: Спецификации для 55-метрового Surface Hub (v1)
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -10,14 +10,16 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/21/2020
-ms.openlocfilehash: e321b64ebbbc62da70cfdc1979053ee8facb7235
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 5d0c88b1e0b7fdd0f144a7ee641dcab7599c68a1
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238094"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314452"
 ---
-# Технические сведения для 55-метрового Surface Hub
+# Технические сведения для 55-метрового Surface Hub (v1)
 
 |
 --- | ---
@@ -30,12 +32,12 @@ Size |  31,75" x 59,62" x 3,38" (806,4 мм x 1514,3 мм x 85,8 мм)
 Датчики |   (2) Пассивные инфракрасные датчики присутствия, датчики внешнего освещения 
 Динамики |  (2) Стереофоны с передней линией 
 Микрофон |    Высокоскоростной четырехэлементный массив 
-Камера |    (2) Широкоуголные камеры HD 1080p @ 30fps 
-Перо  | (2) Питание, активная точность субпикселя 
+Camera |    (2) Широкоугольный hd-камер 1080p @ 30fps 
+Перо  | (2) Питание, активная точность подпикселя 
 Физические кнопки на стороне | Питание, выбор входных данных, громкость, яркость 
 Программное обеспечение |  Windows 10 + Office (Word, PowerPoint, Excel) 
-Что в этом поле | • Surface Hub 55"<br>• (2) Ручки Surface Hub<br>• Power Cable<br>• Руководство по настройке<br>• Руководство по началу<br>• Документы по безопасности и гарантии<br>• Беспроводная клавиатура "Все в одном"
-Функции крепления   | 4X стандартНАЯ VESA, 400mm x 400mm плюс 1150mm x 400mm pattern, 8X M6 X 1.0 места для потоковой установки
+Что в этом поле | • Surface Hub 55"<br>• (2) Ручки Surface Hub<br>• Кабель питания<br>• Руководство по настройке<br>• Руководство по началу<br>• Документы по безопасности и гарантии<br>• Беспроводная все в одной клавиатуре
+Функции крепления   | 4X стандартНАЯ VESA, 400mm x 400mm плюс шаблон 1150mm x 400mm, 8X M6 X 1.0 места для потоковой установки
 Высота экрана с этажа   | Рекомендуемая высота экрана — 55 дюймов (139,7 см)
 Вес продукта |    Approx. 105 lb. (47.6lb) without accessories
 Вес доставки продуктов  | Approx. 150 lb. (68lb)
@@ -103,56 +105,56 @@ RJ11, нижний I/O | ![](images/rj11.png) | Подключается к си
 
 ## Схемы портов и разрешений
 
-**_Верхнее представление 55-метрового Surface Hub_*_
+***Верхнее представление 55-метрового Surface Hub***
 
 ![](images/sh-55-top.png)
 
 ---
 
 
-_*_Переднее представление 55-метрового Surface Hub_*_
+***Переднее представление 55-метрового Surface Hub***
 
 ![](images/sh-55-front.png)
 
 
 ---
 
-_*_Нижнее представление 55-метрового Surface Hub_*_
+***Нижнее представление 55-метрового Surface Hub***
 
 ![](images/sh-55-bottom.png)
 
 
 ---
 
-_*_Порты для компьютера на замену на 55-дюймовом устройстве Surface Hub_*_
+***Порты для компьютера на замену на 55-дюймовом устройстве Surface Hub***
 
 ![](images/sh-55-rpc-ports.png)
 
 
 ---
 
-_*_Клавиатура справа от 55-метрового Устройства Surface Hub_*_
+***Клавиатура справа от 55-метрового Устройства Surface Hub***
 
 ![](images/key-55.png)
 
 
 ---
 
-_*_Заднее представление 55-метрового Surface Hub_*_
+***Заднее представление 55-метрового Surface Hub***
 
 ![](images/sh-55-rear.png)
 
 
 ---
 
-_*_Разрешения для 55-метрового Surface Hub_*_
+***Разрешения для 55-метрового Surface Hub***
 
 ![](images/sh-55-clearance.png)
 
 ---
 
 
-_*_Front and bottom handholds and clearances for 55" Surface Hub_*_
+***Front and bottom handholds and clearances for 55" Surface Hub***
 
 ![](images/sh-55-hand.png)
 
@@ -160,7 +162,7 @@ _*_Front and bottom handholds and clearances for 55" Surface Hub_*_
 ---
 
 
-_*_Задние вехи и разрешения для 55-метрового Surface Hub_**
+***Задние опорные узлы и разрешения для 55-метрового Surface Hub***
 
 ![](images/sh-55-hand-rear.png)
 

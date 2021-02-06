@@ -12,17 +12,20 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 06/20/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: b5f828ee6757c150b1287e8210c81592e970b74a
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: 4db5066c62f4e0e324a5cc3ddad027e00a2e18c9
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311965"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314412"
 ---
 # Применение политик ActiveSync к учетным записям устройств (Surface Hub)
 
 
-Для синхронизации почты и календаря в учетной записи устройства Microsoft Surface Hub используется протокол ActiveSync. Это позволяет пользователям присоединяться к запланированным собраниям и начинать их с устройства Surface Hub, а также отправлять доски по почте.
+Учетная запись устройства во всех версиях Microsoft Surface Hub использует ActiveSync для синхронизации почты и календаря. Это позволяет пользователям присоединяться к запланированным собраниям и начинать их с устройства Surface Hub, а также отправлять доски по почте.
 
 Чтобы эти компоненты можно было использовать, политики ActiveSync вашей организации необходимо настроить следующим образом.
 
