@@ -70,12 +70,12 @@
 ### [Упаковка и отправка Surface Hub 2S для обслуживания](surface-hub-2s-pack-components.md)
 ### [Журнал изменений](surface-hub-2s-change-history.md)
 
-# Surface Hub
+# Surface Hub (v1)
 ## Обзор
 ### [Что нового в Windows 10 (версия 1703 для Surface Hub)](surfacehub-whats-new-1703.md)
 ### [Основы операционной системы (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
-### [Технические сведения для 55-дюймового устройства Microsoft Surface Hub](surface-hub-technical-55.md)
-### [Технические сведения для 84-дюймового устройства Microsoft Surface Hub](surface-hub-technical-84.md)
+### [Технические сведения для 55-дюймового Microsoft Surface Hub (v1)](surface-hub-technical-55.md)
+### [Технические сведения для 84-дюймового Microsoft Surface Hub (v1)](surface-hub-technical-84.md)
 ### [Использование приложения "Доска Майкрософт" на Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
 
 ## Планирование
