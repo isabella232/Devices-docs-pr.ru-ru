@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 05/04/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 9e6d72dc2b36bb149ee09c2edab885c80e60ac14
-ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
+ms.openlocfilehash: dd19e2fd2417acd29e71c7555e94ee849fbc1bec
+ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "11318013"
 ---
 # Создание учетной записи устройства с помощью пользовательского интерфейса (Surface Hub 1)
 
@@ -37,18 +37,22 @@ ms.locfileid: "11314472"
 
 ### <a href="" id="create-device-acct-o365-admin-ctr"></a>Создание учетной записи в Центре администрирования
 
-1.  Во sign in to Office 365 by visiting https://portal.office.com
+1.  Во sign in to Office 365 by visiting [https://portal.office.com](https://portal.office.com) .
+
 2.  Введите учетные данные администратора своего клиента Office 365. После этого вы будете перенаться в Центр администрирования Microsoft 365.
 
-    ![Центр администрирования Microsoft 365.](images/setupdeviceaccto365-02.png)
+    > [!div class="mx-imgBorder"]
+    > ![Центр администрирования Microsoft 365.](images/setupdeviceaccto365-02.png)
 
-3. В Центре администрирования **** перейдите в "Ресурсы" на левой панели, а затем щелкните "Комнаты **& оборудование".**
+3. В Центре администрирования **** перейдите в "Ресурсы" на левой панели, а затем щелкните **"Комнаты & оборудование".**
 
-    ![Параметр & помещения в Центре администрирования](images/room-equipment.png)
+    > [!div class="mx-imgBorder"]
+    > ![Параметр & помещения в Центре администрирования](images/room-equipment.png)
 
 4. Нажмите кнопку **Добавить** для создания новой учетной записи помещения. Введите отображаемое и адрес электронной почты для учетной записи, а затем нажмите кнопку **Добавить**.
 
-    ![Окно создания новой учетной записи помещения](images/room-add.png)
+    > [!div class="mx-imgBorder"]
+    > ![Окно создания новой учетной записи помещения](images/room-add.png)
 
 5. Выберите созданную учетную запись помещения из списка "Активные пользователи". В правой панели отображаются свойства учетной записи и несколько дополнительных действий. Нажмите кнопку **Сброс пароля**, чтобы изменить пароль, и снимите флажок **Обязать этого пользователя изменить пароль при первом входе**, так как изменить пароль при входе в систему на Surface Hub невозможно.
 
@@ -58,15 +62,18 @@ ms.locfileid: "11314472"
 
 1.  На левой панели Центра администрирования щелкните **"АДМИНИСТРАТОР",** а затем щелкните **Exchange.**
 
-    ![Центр администрирования, где показаны активные пользователи Exchange.](images/setupdeviceaccto365-08.png)
+    > [!div class="mx-imgBorder"]
+    > ![Центр администрирования, где показаны активные пользователи Exchange.](images/setupdeviceaccto365-08.png)
 
 2.  В другой вкладке браузера откроется Центр администрирования Exchange, где вы можете создать и настроить почтовый ящик для Surface Hub.
 
-    ![Центр администрирования Exchange.](images/setupdeviceaccto365-09.png)
+    > [!div class="mx-imgBorder"]
+    > ![Центр администрирования Exchange.](images/setupdeviceaccto365-09.png)
 
 3.  Для создания политики почтового ящика мобильного устройства щелкните **Мобильный** на панели слева, а затем щелкните **Политики почтового ящика мобильного устройства**. Для устройств Surface Hub необходима учетная запись с политикой почтового ящика мобильного устройства, которая не требует пароля, поэтому если у вас уже есть политика, соответствующая этому требованию, вы можете применить эту политику к данной учетной записи. В противном случае выполните следующие действия, чтобы создать новую политику, которая будет использоваться только для учетных записей устройства Surface Hub.
 
-    ![Центр администрирования Exchange — создание политики почтового ящика мобильного устройства.](images/setupdeviceaccto365-10.png)
+    > [!div class="mx-imgBorder"]
+    > ![Центр администрирования Exchange — создание политики почтового ящика мобильного устройства.](images/setupdeviceaccto365-10.png)
 
 4.  Чтобы создать новую политику почтового ящика мобильного устройства Surface Hub, нажмите кнопку **+** над списком политик. Введите имя, которое поможет отличить эту политику от других учетных записей устройства (например, *SurfaceHubDeviceMobilePolicy*). Убедитесь, что политика не требует пароля для устройств, назначенных ей — флажок **Требовать пароль** должен быть снят. Затем нажмите кнопку **Сохранить**.
 
@@ -74,7 +81,8 @@ ms.locfileid: "11314472"
 
 5.  После создания политики почтовых ящиков для мобильных устройств вернитесь в **Центр администрирования Exchange**, где вы увидите новую политику.
 
-    ![Изображение с новой политикой почтового ящика мобильного устройства в Центре администрирования Exchange.](images/setupdeviceaccto365-12.png)
+    > [!div class="mx-imgBorder"]
+    > ![Изображение с новой политикой почтового ящика мобильного устройства в Центре администрирования Exchange.](images/setupdeviceaccto365-12.png)
 
 
 
@@ -88,17 +96,19 @@ ms.locfileid: "11314472"
 -   [модуль Microsoft Azure Active Directory для Windows PowerShell;](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids)
 -   [Skype для бизнеса Online, модуль Windows PowerShell.](https://www.microsoft.com/download/details.aspx?id=39366)
 
-Установка следующего модуля в Powershell
-``` syntax
-    install-module AzureAD
-    Install-module MsOnline
+Установите следующий модуль в PowerShell.
+
+```powershell
+install-module AzureAD
+Install-module MsOnline
 ```
 
 ### Подключение к мобильным службам
 
 1.  Запустите Windows PowerShell от имени администратора.
 
-    ![Изображение запуска Windows PowerShell от имени администратора.](images/setupdeviceaccto365-17.png)
+    > [!div class="mx-imgBorder"]
+    > ![Изображение запуска Windows PowerShell от имени администратора.](images/setupdeviceaccto365-17.png)
 
 2.  Создайте объект учетных данных, затем создайте сеанс, который подключается к Skype для бизнеса Online, введите данные глобальной учетной записи администратора клиента, а затем нажмите кнопку **ОК**.
 
@@ -106,7 +116,7 @@ ms.locfileid: "11314472"
 
 3.  Для подключения к Microsoft Online Services выполните команду:
 
-    ``` syntax
+    ```powershell
     Connect-MsolService -Credential $Cred
     ```
 
@@ -114,7 +124,7 @@ ms.locfileid: "11314472"
 
 4.  Теперь для подключения к Skype для бизнеса Online выполните команду:
 
-    ``` syntax
+    ```powershell
     $sfbsession = New-CsOnlineSession -Credential $cred
     ```
 
@@ -122,7 +132,7 @@ ms.locfileid: "11314472"
 
 5.  Наконец, для подключения к службам Exchange Online выполните команду:
 
-    ``` syntax
+    ```powershell
     $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $cred -Authentication "Basic" –AllowRedirection
     ```
 
@@ -130,7 +140,7 @@ ms.locfileid: "11314472"
 
 6.  Теперь необходимо импортировать созданные сеансы Skype для бизнеса Online и Exchange Online, чтобы импортировать команды для Exchange и Skype и использовать их локально.
 
-    ``` syntax
+    ```powershell
     Import-PSSession $exchangesession -AllowClobber -WarningAction SilentlyContinue
     Import-PSSession $sfbsession -AllowClobber -WarningAction SilentlyContinue
     ```
@@ -180,7 +190,7 @@ ms.locfileid: "11314472"
 
 4.  В учетной записи устройство можно настроить различные свойства Exchange, чтобы расширить возможности собрания. Свойства, которые можно настроить, см. в разделе [Свойства Exchange](exchange-properties-for-surface-hub-device-accounts.md).
 
-    ``` syntax
+    ```powershell
     Set-CalendarProcessing -Identity $strEmail -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
     Set-CalendarProcessing -Identity $strEmail -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
@@ -189,7 +199,7 @@ ms.locfileid: "11314472"
 
 5.  Если вы хотите, чтобы срок действия пароля не истекал, это также можно сделать с помощью командлетов PowerShell. См. раздел [Управление паролями](password-management-for-surface-hub-device-accounts.md).
 
-    ``` syntax
+    ```powershell
     Set-MsolUser -UserPrincipalName $strEmail -PasswordNeverExpires $True
     ```
 
@@ -214,13 +224,13 @@ ms.locfileid: "11314472"
 
 2.  Чтобы включить учетную запись Surface Hub в Skype для бизнеса Server, выполните этот командлет:
 
-    ```PowerShell
+    ```powershell
     Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
     ```
 
-    Если вы не знаете, какое значение использовать для параметра `RegistrarPool` в вашей среде, можно получить значение от существующего пользователя Skype для бизнеса с помощью следующего командлета:
+     Если вы не знаете, какое значение использовать для параметра `RegistrarPool` в вашей среде, можно получить значение от существующего пользователя Skype для бизнеса с помощью следующего командлета:
 
-    ```PowerShell
+    ```powershell
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
     ```
 
@@ -298,19 +308,19 @@ ms.locfileid: "11314472"
 
 1.  Вам потребуется ввести электронный адрес учетной записи и создать переменную с этим значением:
 
-    ``` syntax
+    ```powershell
     $mailbox = (Get-Mailbox <your device account’s alias>)
     ```
 
     Для сохранения значения получите его из почтового ящика:
 
-    ``` syntax
+    ```powershell
     $strEmail = $mailbox.WindowsEmailAddress
     ```
 
     Покажите значение, выполнив следующую команду:
 
-    ``` syntax
+    ```powershell
     $strEmail
     ```
 
@@ -318,38 +328,38 @@ ms.locfileid: "11314472"
 
 2.  Необходимо преобразовать учетную запись в почтовый ящик помещения, поэтому запустите 3:
 
-    ``` syntax
+    ```powershell
     Set-Mailbox $strEmail -Type Room
     ```
 
 3.  Чтобы учетная запись устройства прошла проверку подлинности на Surface Hub, нужно включить учетную запись почтового ящика помещения и задать пароль. Тогда устройство сможет использовать учетную запись для получения данных собрания с помощью ActiveSync и входа в Skype для бизнеса.
 
-    ``` syntax
+    ```powershell
     Set-Mailbox $strEmail -RoomMailboxPassword (ConvertTo-SecureString  -String "<your password>" -AsPlainText -Force) -EnableRoomMailboxAccount $true
     ```
 
 4.  В учетной записи устройство можно настроить различные свойства Exchange, чтобы расширить возможности собрания. Свойства, которые можно настроить, см. в разделе [Свойства Exchange](exchange-properties-for-surface-hub-device-accounts.md).
 
-    ``` syntax
+    ```powershell
     Set-CalendarProcessing -Identity $strEmail -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
     Set-CalendarProcessing -Identity $strEmail -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
 5.  Теперь мы должны настроить некоторые свойства в AD. Для этого нужен псевдоним учетной записи (это часть имени участника-пользователя до "@").
 
-    ``` syntax
+    ```powershell
     $strAlias = “<your device account’s alias>”
     ```
 
 6.  Пользователь должен быть включен в AD для проверки подлинности на устройстве Surface Hub. Запустите следующую команду:
 
-    ``` syntax
+    ```powershell
     Set-ADUser $strAlias -Enabled $True
     ```
 
 7.  Если вы хотите, чтобы срок действия пароля не истекал, это также можно сделать с помощью командлетов PowerShell. См. раздел [Управление паролями](password-management-for-surface-hub-device-accounts.md).
 
-    ``` syntax
+    ```powershell
     Set-ADUser $strAlias -PasswordNeverExpires $True
     ```
 
@@ -360,7 +370,7 @@ ms.locfileid: "11314472"
 Для включения Skype для бизнеса ваша среда должна соответствовать следующим требованиям:
 
 - В плане O365 вам потребуется автономный план 2 или более высокий план Skype для бизнеса Online. план должен поддерживать возможности проведения конференций;
-- Если вам Корпоративная голосовая связь (телефонии PSTN) с помощью поставщиков услуг телефонии для Surface Hub, вам потребуется автономный план 3 для Skype для бизнеса Online.
+- Если вам Корпоративная голосовая связь (телефонии PSTN) с использованием поставщиков услуг телефонии для Surface Hub, вам потребуется автономный план 3 для Skype для бизнеса Online.
 - у пользователей клиента должны быть почтовые ящики Exchange.
 - Для учетной записи Surface Hub требуется лицензия на автономный план 2 или автономный план 3 для Skype для бизнеса Online, но лицензия Exchange Online не требуется.
 
@@ -372,13 +382,13 @@ ms.locfileid: "11314472"
     Import-PSSession $cssess -AllowClobber
     ```
 
-2. Извлечение пула регистратора учетных записей Surface Hub
+2. Извлеките пул регистратора учетной записи Surface Hub.
 
-Если вы не знаете, какое значение использовать для параметра `RegistrarPool` в вашей среде, можно получить значение от существующего пользователя Skype для бизнеса с помощью следующего командлета:
+   Если вы не знаете, какое значение использовать для параметра `RegistrarPool` в вашей среде, можно получить значение от существующего пользователя Skype для бизнеса с помощью следующего командлета:
 
- ```PowerShell
-    Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
- ```
+   ```PowerShell
+   Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
+   ```
 
 3. Чтобы включить учетную запись Surface Hub в Skype для бизнеса Server, выполните этот командлет:
 

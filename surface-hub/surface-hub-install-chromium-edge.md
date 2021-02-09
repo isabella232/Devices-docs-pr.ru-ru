@@ -1,6 +1,6 @@
 ---
 title: Установка и настройка нового браузера Microsoft Edge на Surface Hub
-description: Установка и настройка нового приложения Microsoft EDGE на Surface Hub.
+description: Установите и настройте новый Microsoft Edge на Surface Hub.
 keywords: Разделяйте значения запятыми
 ms.prod: surface-hub
 ms.sitesec: library
@@ -9,125 +9,112 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/11/2020
+ms.date: 02/08/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 6de949c7341f9d9bee60f808dab77770377acefc
-ms.sourcegitcommit: a64f5f375ebc0611e5735c63afd9540db0f807c4
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: 74ae47e80447f89753110c52a49daf649478dd50
+ms.sourcegitcommit: 7029e80d9ca1a3de5c336cf662e566ed4b6b3e7a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "11013700"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319173"
 ---
 # Установка и настройка нового браузера Microsoft Edge на Surface Hub
 
-Обновление для Windows 10 Team 2020 поддерживает новый Microsoft EDGE на основе Chromium (версии 85 и выше) в качестве рекомендуемого браузера для Surface Hub. Вы можете установить Microsoft Edge вручную, используя пакет подготовки, удаленно с помощью Microsoft Intune или вашего основного поставщика услуг управления мобильными устройствами (MDM).
+Центр обновления Windows 10 для группы 2020 поддерживает новый Microsoft Edge на основе Chromium (версии 85 и выше) в качестве рекомендованного браузера для Surface Hub 2S и Surface Hub (версия 1). В этой статье объясняется, как установить браузер с помощью одного из трех методов: пакета предоставления, Microsoft Intune или стороне поставщика управления мобильными устройствами (MDM).
 
-По умолчанию устройства Surface Hub предварительно устанавливаются с Microsoft Edge Legacy (версия 44).
- 
-> [!NOTE]
-> Если вы уже установили EDGE, выполните указанные ниже действия.
->
->1. Если вы не знаете версию или хотите подтвердить, откройте браузер EDGE и перейдите в edge://version.
->2. Перейдите на **Surface Hub > Управление устройствами**. В разделе **подготовка пакетов**выберите команду **Добавить или удалить пакет подготовки.**
->3. Если вы использовали более раннюю версию программы для закрепления Microsoft Edge dev в меню Пуск, выберите в списке пункт **Настраиваемое меню Пуск** и нажмите кнопку **Удалить.**
->4. Если вы использовали специальную политику начальных макетов, вам нужно будет изменить ее с помощью последнего пути, как описано в разделе ниже показано, как [отобразить Microsoft EDGE в меню "Пуск" Surface Hub](#display-microsoft-edge-in-the-surface-hub-start-menu).
->5. Теперь вы можете подготовить MicrosoftEdgeDevUninstaller. ppkg.
->6. После того как приложение Edge будет удалено из **всех приложений**, сначала удалите "MicrosoftEdgeDevInstaller", а затем удалите "MicrosoftEdgeDevUninstaller".
->7. Это действие успешно удалено на стороне Microsoft Edge dev. Теперь вы можете установить стандартную версию.
+> [!IMPORTANT]
+> По умолчанию устройства Surface Hub предустановлены с помощью Microsoft Edge Legacy (версия 44). После установки обновления [2020](surface-hub-2020-update.md)рекомендуется переключиться на новый браузер Microsoft Edge; Поддержка [Microsoft Edge Legacy](https://support.microsoft.com/microsoft-edge/what-is-microsoft-edge-legacy-3e779e55-4c55-08e6-ecc8-2333768c0fb0) завершится 9 марта 2021 г.
 
- 
- 
-## Установка Microsoft Edge
+## Установка Microsoft Edge с помощью пакета предоставления
 
-### Установка Microsoft Edge с помощью пакета подготовки
-
-1. С компьютера Скачайте [пакет подготовки Microsoft Edge](https://aka.ms/HubEdge) (MicrosoftEdgeInstaller. ppkg) в корневую папку USB-накопителя.
-2. Вставьте USB-накопитель на Surface Hub.
-3. Из Surface Hub откройте **Параметры** и введите свои учетные данные администратора при появлении соответствующего запроса.
+1. На компьютере скачайте пакет предоставления [Microsoft Edge](https://aka.ms/HubEdge) (MicrosoftEdgeInstaller.ppkg) в корневую папку USB-накопителя.
+2. Вставьте USB-накопитель в Surface Hub.
+3. В Surface Hub откройте **"Параметры"** и введите учетные данные администратора при запросе.
 4. Перейдите к **Surface Hub** > **Управление устройствами**. В разделе **Пакеты подготовки** выберите **Добавить или удалить пакет подготовки**.
 5. Выберите **Добавить пакет**.
-6. Выберите пакет подготовки Microsoft EDGE и нажмите кнопку **Добавить**.
-7. Вы увидите сводку изменений, которые применяют пакет подготовки. Выберите **Да, добавить**.
-8. Дождитесь завершения установки Microsoft Edge. После установки откройте меню Пуск Surface Hub, чтобы получить доступ к новому Microsoft Edge.              
+6. Выберите пакет предоставления Microsoft Edge и выберите **"Добавить".**
+7. Вы увидите сводку изменений, которые применяются к пакету подготовка. Выберите **Да, добавить**.
+8. Дождись завершения установки Microsoft Edge. После установки перейдите в меню "Пуск" Surface Hub, чтобы получить доступ к новому Microsoft Edge.              
 
 > [!NOTE]
-> Если доступна более новая версия Microsoft EDGE, она будет автоматически обновлена.
+> Если доступна более новая версия Microsoft Edge, она будет автоматически обновлена.
  
-### Установка Microsoft Edge с помощью Intune
+## Установка Microsoft Edge с помощью Intune
  
 > [!NOTE]
-> Устройство Surface Hub должно быть зарегистрировано и управляться с помощью Intune. Дополнительные сведения можно найти [в разделе Управление Surface Hub 2S с помощью Microsoft Intune](https://docs.microsoft.com/surface-hub/surface-hub-2s-manage-intune).
+> Устройство Surface Hub должно быть зарегистрироваться в Intune и управлять им. Дополнительные сведения см. в под [управлением Surface Hub 2S с помощью Microsoft Intune.](https://docs.microsoft.com/surface-hub/surface-hub-2s-manage-intune)
  
 
-1. [Скачайте установщик Microsoft Edge из Microsoft](https://www.microsoft.com/edge/business/download).
-    - Использовать текущую версию из [стабильного канала](https://docs.microsoft.com/deployedge/microsoft-edge-channels) **(версия 85)**
-    - Выберите **Windows 64-bit**
-2. [Добавьте установщик Microsoft EDGE в Microsoft Intune в качестве бизнес-приложения](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows).
-    - Если вы решили использовать обновление Microsoft Edge для обработки автоматических обновлений Microsoft EDGE, настройте параметр " **игнорировать версию приложения** " в области **сведений о приложении** . При переключении этого параметра на **Да**Microsoft Intune не будет применять версию приложения, установленную на устройстве Surface Hub.
+1. [Скачайте установщик Microsoft Edge.](https://www.microsoft.com/edge/business/download)
+    - Использование текущей версии канала [Stable](https://docs.microsoft.com/deployedge/microsoft-edge-channels) **(версия 85)**
+    - Выбор **64-битной версии Windows**
+2. Добавьте установщик Microsoft Edge в качестве [бизнес-приложения в Microsoft Intune.](https://docs.microsoft.com/mem/intune/apps/lob-apps-windows)
+    - Если вы решили использовать Microsoft Edge Update для обработки автоматических обновлений Microsoft Edge, настройте параметр "Игнорировать версию приложения" в области сведений **о** приложении. **** Если вы переключите этот параметр на **"Да",** Microsoft Intune не будет применять версию приложения, установленную на устройстве Surface Hub.
 
- 
-### Установка Microsoft Edge с помощью управления мобильными устройствами
+## Установка Microsoft Edge с помощью сторонного поставщика MDM
 
-1. [Скачайте установщик Microsoft Edge из Microsoft](https://www.microsoft.com/edge/business/download).
-    - Использовать текущую версию из [стабильного канала](https://docs.microsoft.com/deployedge/microsoft-edge-channels) **(версия 85)**
-    - Выберите **Windows 64-bit**
-2. Поэтапное использование установщика Microsoft EDGE в размещенном расположении, например в локальной папке (\\server\share\MicrosoftEdgeEnterpriseX64.msi). Устройство Surface Hub должно иметь разрешение на доступ к расположению размещения.
-3. Чтобы установить Microsoft EDGE, используйте поставщик [службы настройки (CSP)](https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp) для поставщика служб MDM.
-
- 
+1. [Скачайте установщик Microsoft Edge от Майкрософт.](https://www.microsoft.com/edge/business/download)
+    - Использование текущей версии канала [Stable](https://docs.microsoft.com/deployedge/microsoft-edge-channels) **(версия 85)**
+    - Выбор **64-битной версии Windows**
+2. Разустановка установщика Microsoft Edge в расположении, например в локальном файловом \\server\share\MicrosoftEdgeEnterpriseX64.msi. Устройство Surface Hub должно иметь разрешение на доступ к расположению.
+3. Используйте [поставщик служб конфигурации (CSP) EnterpriseDesktopAppManagement](https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp) через поставщика MDM для установки Microsoft Edge.
 
 ## Настройка Microsoft Edge
 
-### Политики Microsoft Edge для Surface Hub по умолчанию
-Microsoft Edge имеет следующие политики для обеспечения оптимальной работы Surface Hub.
+### Политики Microsoft Edge по умолчанию для Surface Hub
+
+В Microsoft Edge предварительно настроены следующие наборы политик, которые обеспечивают оптимизированный процесс для Surface Hub.
  
-> [!NOTE]
->  Рекомендуется сохранить значения по умолчанию для этих политик.
+> [!TIP]
+> Рекомендуется сохранить значение по умолчанию для этих параметров политики.
  
 
-| Политики Microsoft Edge                                                                                                    | Рекомендуемый опыт                                                                                                                                                                                                                                               | Значение по умолчанию |
+| Параметр политики                                                                                                   | Рекомендуемый опыт                                                                                                                                                                                                                                               | Значение по умолчанию |
 | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
-| [AutoImportAtFirstRun](https://docs.microsoft.com/deployedge/microsoft-edge-policies#autoimportatfirstrun)             | Не автоматически импортируйте типы и параметры типов и параметров из Microsoft Edge Legacy. Это позволит избежать изменения профилей пользователей, которые вошли в систему, с общими параметрами из Surface Hub.                                                                                                 | четырехпроцессорном                 |
-| [BackgroundModeEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#backgroundmodeenabled)           | Разрешите, чтобы процесс Microsoft Edge оставался на фоне даже после закрытия последнего окна браузера, что позволяет быстрее получать доступ к веб-приложениям во время сеанса.                                                                                                      | 1,1                 |
-| [BrowserAddProfileEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browseraddprofileenabled)     | Не разрешать пользователям создавать новые профили в Microsoft Edge. Это упрощает просмотр и работу со входом.                                                                                                                                                      | до                 |
-| [BrowserGuestModeEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browserguestmodeenabled)       | Позволяет одному пользователю входить в Microsoft Edge. Это упрощает просмотр и работу со входом.                                                                                                                                                                | до                 |
-| [BrowserSignin](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browsersignin)                           | Позволяет пользователям работать с единым входом (SSO) в Microsoft Edge. При входе пользователя в Surface Hub их учетные данные могут перетекать на поддерживаемые веб-сайты, не требуя повторной проверки подлинности.  | 1,1                 |
-| [ExtensionInstallBlockList](https://docs.microsoft.com/deployedge/microsoft-edge-policies#extensioninstallblocklist)   | Запрещает пользователям, не являющимся администраторами, устанавливать новые расширения в Microsoft Edge. Чтобы настроить список расширений, которые должны быть установлены по умолчанию, используйте [ExtensionInstallForcelist](https://docs.microsoft.com/deployedge/microsoft-edge-policies#extensioninstallforcelist). | *                 |
-| [HideFirstRunExperience](https://docs.microsoft.com/deployedge/microsoft-edge-policies#hidefirstrunexperience)         | Скрывает первый интерфейс и экран-заставку, обычно отображаемые при первом запуске Microsoft Edge пользователем. Поскольку Surface Hub — это общее устройство, это упрощает взаимодействие с пользователем.                                                                      | 1,1                 |
-| [InPrivateModeAvailability](https://docs.microsoft.com/deployedge/microsoft-edge-policies#inprivatemodeavailability)   | Отключение режима InPrivate. Поскольку конечный сеанс уже очищает данные для просмотра, это упрощает просмотр и вход.                                                                                                                                          | 1,1                 |
-| [NewTabPageSetFeedType](https://docs.microsoft.com/deployedge/microsoft-edge-policies#newtabpagesetfeedtype)           | На новых вкладках показана работа с веб-каналами Office 365. При входе пользователя в Surface Hub это обеспечивает быстрый доступ к своим файлам и контенту в Office 365.                                                                                                        | 1,1                 |
-| [NonRemovableProfileEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#nonremovableprofileenabled) | При входе пользователя в Surface Hub создается несъемный профиль с помощью своей учетной записи организации. Это упрощает процесс единого входа (SSO).                                                                                                 | 1,1                 |
-| [PrintingEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#printingenabled)                       | Отключение печати в Microsoft Edge. Surface Hub не поддерживает печать.                                                                                                                                                                                              | до                 |
-| [ProActiveAuthEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#proactiveauthenabled)             | Включает Microsoft Edge для упреждающего проверки подлинности пользователей, которые вошли в службы Майкрософт. Это упрощает процесс единого входа (SSO).                                                                                                                         | 1,1                 |
-| [PromptForDownloadLocation](https://docs.microsoft.com/deployedge/microsoft-edge-policies#promptfordownloadlocation)   | Автоматическое сохранение файлов в папку downloads, а не запрос пользователей на сохранение файла. Это упрощает работу с обозревателем.                                                                                                                             | до                 |
+| [AutoImportAtFirstRun](https://docs.microsoft.com/deployedge/microsoft-edge-policies#autoimportatfirstrun)             | Не импортировать автоматически тип данных и параметры из Microsoft Edge Legacy. Это позволяет избежать изменения профилей во время входящего пользователя с помощью общих параметров Surface Hub.                                                                                                 | 4                 |
+| [BackgroundModeEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#backgroundmodeenabled)           | Разрешить процессам Microsoft Edge продолжать работу в фоновом режиме даже после закрытия последнего окна браузера, что обеспечивает более быстрый доступ к веб-приложениям во время сеанса.                                                                                                      | 1                 |
+| [BrowserAddProfileEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browseraddprofileenabled)     | Не разрешайте пользователям создавать новые профили в Microsoft Edge. Это упрощает просмотр и во время его работы.                                                                                                                                                      | 0                 |
+| [BrowserGuestModeEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browserguestmodeenabled)       | Позволяет только одному пользователю войти в Microsoft Edge. Это упрощает просмотр и во время его работы                                                                                                                                                                | 0                 |
+| [BrowserSignin](https://docs.microsoft.com/deployedge/microsoft-edge-policies#browsersignin)                           | Позволяет пользователям пользоваться единым Sign-On (SSO) в Microsoft Edge. После входа пользователя в Surface Hub его учетные данные могут поступать на поддерживаемые веб-сайты без необходимости повторной проверки подлинности.  | 1                 |
+| [ExtensionInstallBlockList](https://docs.microsoft.com/deployedge/microsoft-edge-policies#extensioninstallblocklist)   | Не позволяет пользователям без администрирования устанавливать новые расширения в Microsoft Edge. Чтобы настроить список расширений, устанавливаемых по умолчанию, используйте [ExtensionInstallForcelist.](https://docs.microsoft.com/deployedge/microsoft-edge-policies#extensioninstallforcelist) | *                 |
+| [HideFirstRunExperience](https://docs.microsoft.com/deployedge/microsoft-edge-policies#hidefirstrunexperience)         | Скрывает первый запуск и экран-заставки, который обычно отображается при первом запуске Microsoft Edge. Так как Surface Hub является общим устройством, это упрощает пользовательский интерфейс.                                                                      | 1                 |
+| [InPrivateModeAvailability](https://docs.microsoft.com/deployedge/microsoft-edge-policies#inprivatemodeavailability)   | Отключает режим InPrivate. Так как в конце сеанса уже очищаются данные браузера, это упрощает просмотр и во время сеанса.                                                                                                                                          | 1                 |
+| [NewTabPageSetFeedType](https://docs.microsoft.com/deployedge/microsoft-edge-policies#newtabpagesetfeedtype)           | Показывает веб-канал Office 365 на новых страницах вкладок. При входе пользователя в Surface Hub это обеспечивает быстрый доступ к его файлам и содержимому в Office 365.                                                                                                        | 1                 |
+| [NonRemovableProfileEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#nonremovableprofileenabled) | Когда пользователь въехал в Surface Hub, с помощью учетной записи организации создается не съемный профиль. Это упрощает единый Sign-On (SSO).                                                                                                 | 1                 |
+| [PrintingEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#printingenabled)                       | Отключает печать в Microsoft Edge. Surface Hub не поддерживает печать.                                                                                                                                                                                              | 0                 |
+| [ProActiveAuthEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#proactiveauthenabled)             | Позволяет Microsoft Edge заблаговременно аутентификация во время проверки подлинности пользователей, во время работы с ними, с помощью служб Майкрософт. Это упрощает единый Sign-On (SSO).                                                                                                                         | 1                 |
+| [PromptForDownloadLocation](https://docs.microsoft.com/deployedge/microsoft-edge-policies#promptfordownloadlocation)   | Автоматически сохраняет файлы в папку "Загрузки", а не запрашивает у пользователей место сохранения файла. Это упрощает просмотр.                                                                                                                             | 0                 |
 
 > [!IMPORTANT]
-> Развертываемые прогрессивные веб-приложения (PWAs) в настоящее время не поддерживаются в операционной системе Windows 10 Team.  Кроме того, обратите внимание на то, что параметр Microsoft Edge [WebAppInstallForceList](https://docs.microsoft.com/deployedge/microsoft-edge-policies#webappinstallforcelist) не поддерживается в Surface Hub. 
+> Развертываемые последовательные веб-приложения (PWAs) в настоящее время не поддерживаются в операционной системе Windows 10 Team.  Обратите внимание, что параметр политики Microsoft Edge [WebAppInstallForceList](https://docs.microsoft.com/deployedge/microsoft-edge-policies#webappinstallforcelist) не поддерживается на Surface Hub. 
 
 ### Настройка параметров политики Microsoft Edge
 
-Используйте [политики браузера Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policies) для настройки параметров браузера в Microsoft Edge. Эти политики можно применять в следующих случаях:
+Используйте [политики браузера Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policies) для настройки параметров браузера в Microsoft Edge. Эти политики можно применять с помощью:
 
 - [Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune),
-- [Ваш предпочтительный поставщик управления мобильными устройствами (MDM), поддерживающий](https://docs.microsoft.com/deployedge/configure-edge-with-mdm)прием файлов ADMX, или
-- [Подготовка пакетов, использующих прием файлов ADMX в конструкторе конфигураций Windows](https://docs.microsoft.com/windows/configuration/wcd/wcd-admxingestion).
+- [Предпочитаемый поставщик управления мобильными устройствами (MDM), который поддерживает ADMX Ingestion,](https://docs.microsoft.com/deployedge/configure-edge-with-mdm)или
+- [Подготовка пакетов с использованием ADMX Ingestion в конструкторе конфигураций Windows.](https://docs.microsoft.com/windows/configuration/wcd/wcd-admxingestion)
 
  
 ### Настройка обновлений Microsoft Edge
 
-По умолчанию Microsoft Edge обновляется автоматически. Настройте параметры обновления Microsoft Edge с помощью [политик обновления Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies) .
-Обратите внимание, что Surface Hub не поддерживает следующие политики обновления Microsoft Edge.
+По умолчанию Microsoft Edge обновляется автоматически. Используйте [политики обновления Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies) для настройки параметров обновления Microsoft Edge.
+Обратите внимание, что Surface Hub не поддерживает следующие политики обновления Microsoft Edge:
 
-- **Allowsxs** — на Surface Hub, стабильный канал Microsoft Edge всегда заменяет Microsoft Edge Legacy.
-- **CreateDesktopShortcut** — Surface Hub не использует сочетания клавиш на рабочем столе.
+- **Allowsxs** — на Surface Hub канал Microsoft Edge Stable всегда заменяет Microsoft Edge Legacy.
+- **CreateDesktopShortcut** — Surface Hub не использует ярлыки рабочего стола.
 
 > [!NOTE]
->  Для работы этих функций в Microsoft Edge требуется подключение к Интернету. Убедитесь в том, что [необходимые URL-адреса домена](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints) добавлены в список разрешений для обеспечения взаимодействия через брандмауэры и другие механизмы обеспечения безопасности.
+>  Для работы этих функций в Microsoft Edge требуется подключение к Интернету. Убедитесь, что в список "Разрешить" добавлены [необходимые URL-адреса](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints) доменов, чтобы обеспечить связь через брандмауэры и другие механизмы безопасности.
  
-### Отображение Microsoft EDGE в меню "Пуск" Surface HUB
+### Отображение Microsoft Edge в меню "Пуск" Surface Hub
 
-Если вы используете макет меню "Пуск" по умолчанию, вы можете установить меню "Пуск" с пакетом подготовки Microsoft Edge для добавления Microsoft EDGE в качестве закрепленного приложения.
-Если вы хотите применить настраиваемый макет меню "Пуск", используйте следующий XML-код, чтобы добавить закрепленную плитку для Microsoft Edge.
+Если вы используете макет меню "Пуск" по умолчанию, вы можете установить меню "Пуск" с пакетом подготовка Microsoft Edge, чтобы добавить Microsoft Edge в качестве закрепленного приложения.
+Если вы хотите применить настраиваемый макет меню "Пуск", добавьте закрепленную плитку для Microsoft Edge с помощью следующего XML-кода.
 
 ```xml
 
@@ -142,12 +129,12 @@ Row="0"
 Column="0"/>
 ```
 
-Дополнительные сведения можно найти в разделе [Настройка меню Пуск Surface Hub](https://docs.microsoft.com/surface-hub/surface-hub-start-menu).
+Дополнительные сведения см. в меню ["Настройка меню "Пуск" Surface Hub.](https://docs.microsoft.com/surface-hub/surface-hub-start-menu)
  
 > [!NOTE]
-> Новая Microsoft EDGE не поддерживает закрепленные веб-сайты и ссылки с помощью SecondaryTiles.
+> Новый Microsoft Edge не поддерживает закрепленные веб-сайты.
 
 ## Дополнительные ссылки
 
-- [Документация по Microsoft Edge](https://docs.microsoft.com/microsoft-edge/).
+- [Документация по Microsoft Edge.](https://docs.microsoft.com/microsoft-edge/)
 
