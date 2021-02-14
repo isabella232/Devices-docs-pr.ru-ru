@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/10/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 6b5dac9f418207293e3b9b386d59fd26762feb72
-ms.sourcegitcommit: 4b1cfcac090910a3ea634929942063eb51fc54f9
+ms.openlocfilehash: 3b3b5ed47e3a34369c6890aac051436db1f42347
+ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "11206303"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328213"
 ---
 # Управление Surface Hub 2S с помощью Intune
 
@@ -26,7 +26,7 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 
 ### Регистрация вручную
 
-1. Откройте приложение **"Параметры"** на Surface Hub 2S и вопишитесь в качестве локального администратора. Откройте **Surface Hub** > **Управление устройством** и выберите **+** для добавления.
+1. Откройте приложение **"Параметры"** на Surface Hub 2S и во sign in as a local administrator. Откройте **Surface Hub** > **Управление устройством** и выберите **+** для добавления.
 2. Вам будет предложено войти с использованием учетной записи для Intune. После проверки подлинности устройство будет автоматически зарегистрировано в Intune.
 
    ![Регистрация Surface Hub 2S в Intune](images/sh2-set-intune1.png)<br>
@@ -42,7 +42,7 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 
 1. Во sign into **Microsoft Endpoint Manager**, select **Devices**  >  **Configuration profiles**  >  **Create profile**. 
 2. В **группе "Платформа"** выберите **ограничения для Windows 10**и более поздних устройств  >  **(Windows 10 Team)** и выберите команду **"Создать".** 
-3. Теперь вы можете просматривать и выбирать предустановленные параметры ограничения устройств для Surface Hub и Surface Hub 2S.
+3. Теперь вы можете просматривать и выбирать предустановленные параметры ограничений устройств для Surface Hub и Surface Hub 2S.
 
  ![Настройка ограничений устройства для Surface Hub 2.](images/sh2-set-intune3.png) <br>
 
@@ -54,7 +54,7 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 
 Корпорация Майкрософт обычно предоставляет новые CSP с каждой новой версией операционной системы Windows 10. Обновление [Windows 10 для группы 2020](surface-hub-2020-update.md) включает более 20 новых и обновленных политик управления устройствами для Surface Hub и Surface Hub 2S. Эти политики MDM дают ИТ-администраторам улучшенный контроль над обновлениями приложений из Microsoft Store, параметры беспроводной проекции, такие как Miracast по инфраструктуре, сетевые параметры, такие как качество обслуживания и проводная проверка подлинности 802.1x, а также новые параметры конфиденциальности и GDPR.
 
-Подробнее: 
+Для получения дополнительных сведений см. следующие ресурсы. 
 
 - [Справочник по поставщикам служб конфигурации](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) 
 - [Поставщик служб конфигурации SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
@@ -73,22 +73,29 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 |**DSCP звука**| Маркировка звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | целое число | 46 |
 |**Видеопорт**| Диапазон видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DestinationPortMatchCondition | Строка  | 3480 |
 |**DSCP видео**| Маркировка видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DSCPAction | целое число | 34 |
+|**Общий порт**| Диапазон портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DestinationPortMatchCondition | Строка  | 3481 |
+|**Общий доступ к DSCP**| Маркировка общего доступа к портам | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DSCPAction | целое число | 18 |
 |**Звуковые порты P2P**| Диапазон звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DestinationPortMatchCondition | Строка  | 50000-50019 |
 |**DSCP звука P2P**| Маркировка звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DSCPAction | целое число | 46 |
 |**Видеопорты P2P**| Диапазон видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DestinationPortMatchCondition | Строка  | 50020-50039 |
 |**DSCP видео P2P**| Маркировка видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DSCPAction | целое число | 34 |
+|**Порты общего доступа P2P**| Диапазон портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DestinationPortMatchCondition | Строка  | 50040-50059 |
+|**P2P Sharing DSCP**| Маркировка общего доступа к портам | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DSCPAction | целое число | 18 |
 
 
 ### Параметры качества обслуживания Skype для бизнеса
 
-| Имя               | Описание         | OMA-URI                                                                  | Тип    | Значение                          |
-| ------------------ | ------------------- | ------------------------------------------------------------------------ | ------- | ------------------------------ |
-| Звуковые порты        | Диапазон звуковых портов    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/SourcePortMatchCondition  | Строка  | 50000-50019                    |
-| DSCP звука         | Маркировка звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/DSCPAction                | целое число | 46                             |
-| Источник звука | Имя приложения Skype      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/AppPathNameMatchCondition | Строка  | Microsoft.PPISkype.Windows.exe |
-| Видеопорты        | Диапазон видеопортов    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition  | Строка  | 50020-50039                    |
-| DSCP видео         | Маркировка видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/DSCPAction                | целое число | 34                             |
-| Источник видео | Имя приложения Skype      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/AppPathNameMatchCondition | Строка  | Microsoft.PPISkype.Windows.exe |
+| Имя                 | Описание           | OMA-URI                                                                    | Тип    | Значение                          |
+| -------------------- | --------------------- | -------------------------------------------------------------------------- | ------- | ------------------------------ |
+| Звуковые порты          | Диапазон звуковых портов      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/SourcePortMatchCondition    | Строка  | 50000-50019                    |
+| DSCP звука           | Маркировка звуковых портов   | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/DSCPAction                  | целое число | 46                             |
+| Источник звука   | Имя приложения Skype        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/AppPathNameMatchCondition   | Строка  | Microsoft.PPISkype.Windows.exe |
+| Видеопорты          | Диапазон видеопортов      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition    | Строка  | 50020-50039                    |
+| DSCP видео           | Маркировка видеопортов   | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/DSCPAction                  | целое число | 34                             |
+| Источник видео   | Имя приложения Skype        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/AppPathNameMatchCondition   | Строка  | Microsoft.PPISkype.Windows.exe |
+| Общий доступ к портам        | Диапазон портов общего доступа    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/SourcePortMatchCondition  | Строка  | 50040-50059                    |
+| Общий доступ к DSCP         | Маркировка общего доступа к портам | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/DSCPAction                | целое число | 18                             |
+| Общий доступ к источнику мультимедиа | Имя приложения Skype        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/AppPathNameMatchCondition | Строка  | Microsoft.PPISkype.Windows.exe |
 
 > [!NOTE]
 > Обе таблицы содержат диапазоны портов, используемые по умолчанию. Администраторы могут изменить диапазоны портов в панели управления Skype для бизнеса и Teams.
