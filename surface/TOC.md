@@ -81,8 +81,8 @@
 ### [Справка для конечных пользователей](https://support.microsoft.com/products/surface-devices)
 ### [Жизненный цикл драйвера Surface и встроенного ПО для устройств под управлением Windows](surface-driver-firmware-lifecycle-support.md)
 
-## Гарантия и расширенные планы обслуживания
-### [Гарантия и расширенные планы обслуживания Surface для бизнеса](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
+## Планы гарантий и защиты
+### [Планы гарантий и защиты Surface для бизнеса](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
 ### [Условия](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
 ### [Проверка состояния гарантии устройства](https://mybusinessservice.surface.com/)
 ### [Защита данных при отправке Surface для обслуживания](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
