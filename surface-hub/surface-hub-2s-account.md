@@ -1,6 +1,6 @@
 ---
 title: Создание учетной записи устройства Surface Hub 2S
-description: На этой странице описана процедура создания учетной записи устройства Surface Hub 2S.
+description: На этой странице описывается процедура создания учетной записи устройства Surface Hub 2S.
 keywords: Разделяйте значения запятыми
 ms.prod: surface-hub
 ms.sitesec: library
@@ -9,67 +9,67 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/01/2021
+ms.date: 02/18/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 76ac960be2ab30a30b4e29618f350a13a284f52a
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+ms.openlocfilehash: 3afd4115ff4bd22a84f9a5fb86ceb6805c347f8a
+ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312025"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "11385227"
 ---
-# Создание учетной записи устройства Surface Hub 2S
+# <a name="create-surface-hub-2s-device-account"></a>Создание учетной записи устройства Surface Hub 2S
 
-Создание учетной записи устройства Surface Hub (также известной как почтовый ящик помещения) позволяет Surface Hub 2S принимать, утверждать или отклоницать запросы на собрания и присоединяться к собраниям. Настройте учетную запись устройства во время настройки при в режиме приостановки (OOBE). При необходимости вы можете изменить его позже (без необходимости настройки при OOBE).
+Создание учетной записи устройства Surface Hub (также известной как почтовый ящик Room) позволяет Surface Hub 2S получать, утверждать или отклоницать запросы на собрания и присоединяться к собраниям. Настройка учетной записи устройства во время установки out-of-Box Experience (OOBE). При необходимости вы можете изменить его позже (не проходить через установку OOBE).
 
-Вы можете создать учетную запись в Центре администрирования Microsoft 365 в сочетании с Windows PowerShell: 
+Учетную запись можно создать из центра администрирования Microsoft 365 в сочетании с Windows PowerShell: 
 
-- **Создание учетной записи через Центр администрирования.** Для удовлетворения минимальных требований можно настроить все необходимое для учетной записи непосредственно в Центре администрирования [Microsoft 365.](https://admin.microsoft.com/AdminPortal) Некоторые функции, такие как общий доступ к доскам непосредственно из приложения доски, требуют использования PowerShell для настройки ActiveSync; См. ["Включить ActiveSync",](#enable-activesync-if-use-of-email-app-is-required) если на этой странице необходимо использовать почтовое приложение.
+- **Создание учетной записи через центр администрирования.** Чтобы соответствовать минимальным требованиям, вы можете настроить все необходимое для учетной записи непосредственно из центра [администрирования Microsoft 365.](https://admin.microsoft.com/AdminPortal) Некоторые функции, такие как совместное использование доски непосредственно из приложения доски, требуют использования PowerShell для настройки ActiveSync; см. [на странице Включить ActiveSync,](#enable-activesync-if-use-of-email-app-is-required) если на этой странице требуется использование приложения электронной почты.
 
-- **Создайте учетную запись с помощью PowerShell.** Сценарии PowerShell можно использовать для упрощения создания нескольких учетных записей устройств и быстрой настройки определенных функций, в том числе:
+- **Создание учетной записи с помощью PowerShell**. Скрипты PowerShell можно использовать для облегчения создания нескольких учетных записей устройств и быстрой настройки определенных функций, включая:
     - Обработка календаря для каждой учетной записи устройства Surface Hub.
     - Настраиваемые автоматические ответы на запросы планирования.
-    - Если политика почтовых ящиков ActiveSync по умолчанию уже была изменена другими или другими процессами, скорее всего, вам придется создать и назначить новую политику почтовых ящиков ActiveSync.
+    - Если политика почтовых ящиков ActiveSync по умолчанию уже изменена кем-то другим или другим процессом, вам, скорее всего, придется создать и назначить новую политику почтовых ящиков ActiveSync.
 
 > [!TIP]
-> Вы можете проверить настройку учетной записи, заверив [сценарий проверки учетной записи ниже.](#account-verification-script)
+> Вы можете проверить настройку учетной записи, запуская ниже [сценарий проверки учетной записи.](#account-verification-script)
 
 > [!NOTE]  
-> Учетная запись устройства Surface Hub не поддерживает сторонних федеративных поставщиков удостоверений (FIP) и должна быть стандартной учетной записью Active Directory или Azure Active Directory.
+> Учетная запись устройства Surface Hub не поддерживает сторонних поставщиков удостоверений (FIPs) и должна быть стандартной учетной записью Active Directory или Azure Active Directory.
 
-## Создание учетной записи через Центр администрирования
+## <a name="create-account-via-admin-center"></a>Создание учетной записи с помощью центра администрирования
 
-1. В Центре администрирования Microsoft 365 перейдите в "Ресурсы" и выберите "Помещения **& Оборудование",** а затем выберите **"+ Добавить ресурс".** ****
+1. В центре администрирования Microsoft 365 перейдите в **Службы** ресурсов и выберите номера & **оборудования,** а затем **выберите + Добавить ресурс**.
 
-2. В качестве имени и адреса электронной почты для учетной записи устройства. Оставьте оставшиеся параметры без изменений в состоянии по умолчанию.
+2. Укай имя и адрес электронной почты для учетной записи устройства. Оставьте оставшиеся параметры без изменений в состоянии по умолчанию.
 
    ![Предоставление имени и адреса электронной почты](images/sh2-account2.png)
 
    ![Оставьте оставшиеся параметры без изменений в состоянии по умолчанию](images/sh2-account3.png)
 
-3. Установите пароль для учетной записи устройства. Чтобы установить пароль, выберите **"Пользователи",** а затем выберите **"Активные пользователи".** Теперь найщите только что созданного пользователя, чтобы установить пароль. Убедитесь, **что не выбран** параметр "Сделать так, чтобы пользователь изменил свой пароль при первом **входе".**
+3. Установите пароль для учетной записи устройства. Чтобы установить пароль, выберите **Пользователи,** а затем выберите **активных пользователей.** Теперь поиск для вновь созданного пользователя, чтобы установить пароль. Убедитесь, **что при первом** входе не выберите параметр Make this user change their **password.**
 
-   ![Настройка пароля для учетной записи устройства](images/sh2-account4.png)
+   ![Установите пароль для учетной записи устройства](images/sh2-account4.png)
 
-4. Назначьте комнате лицензию на Office 365. Рекомендуется назначить лицензию на комнату для **** собраний Office 365, которая автоматически включает учетную запись для Microsoft Teams и Skype для бизнеса.
+4. Назначьте номер с лицензией Office 365. Рекомендуется назначить лицензию На собраний **** Office 365, которая автоматически включает учетную запись для Microsoft Teams и Skype для бизнеса.
 
-   ![Назначение лицензии на Office 365](images/sh2-account5.png)
+   ![Назначение лицензии Office 365](images/sh2-account5.png)
 
 
 > [!NOTE]  
-> Если вы используете Skype для бизнеса, вам необходимо будет завершать настройку [](#set-calendar-auto-processing-skype-for-business-only) с помощью PowerShell — календаря Skype для бизнеса: настройка автоматической установки календаря для этой учетной записи. 
+> Если вы используете Skype для бизнеса, вам потребуется окончательное решение о настройке с помощью PowerShell -- Skype for Business Calendar: Set [Calendar Autoprocessing](#set-calendar-auto-processing-skype-for-business-only) для этой учетной записи. 
 
-## Создание учетной записи с помощью PowerShell
+## <a name="create-account-via-powershell"></a>Создание учетной записи с помощью PowerShell
 
- Использование PowerShell для быстрой автоматизации задач на Surface Hub не обязательно требует навыков PowerShell. Перед использованием соответствующих сценариев на этой странице убедитесь, что выполнены необходимые условия установки.
+ Использование PowerShell для быстрой автоматизации задач в Surface Hub необязательно требует экспертизы PowerShell. Убедитесь, что вы выполнили необходимые условия установки перед использованием соответствующих скриптов на этой странице.
 
-### Необходимые условия для использования PowerShell для управления Surface Hub 
+### <a name="prerequisites-for-using-powershell-to-manage-surface-hub"></a>Необходимые условия для использования PowerShell для управления Surface Hub 
 
-1. Запустите PowerShell с повышенными привилегиями**учетной**записи (запуск от прав администратора) и убедитесь, что система настроена на запуск сценариев PowerShell. Чтобы узнать больше, обратитесь к [политике выполнения.](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?) 
+1. Запустите PowerShell с повышенными привилегиями учетной записи **(Запустите**в качестве администратора) и убедитесь, что ваша система настроена для запуска сценариев PowerShell. Чтобы узнать больше, обратитесь [к политике выполнения](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?). 
 2. [Установка модуля Azure PowerShell.](https://docs.microsoft.com/powershell/azure/install-az-ps)
 
 
-### Подключение к Exchange Online PowerShell
+### <a name="connect-to-exchange-online-powershell"></a>Подключение к Exchange Online PowerShell
 
 ```powershell
 Install-Module -Name ExchangeOnlineManagement
@@ -77,22 +77,22 @@ Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName admin@contoso.com -ShowProgress $true
 ```
 
-### Создание почтового ящика
+### <a name="create-mailbox"></a>Создание почтового ящика
 
 ```powershell
 New-Mailbox -MicrosoftOnlineServicesID 'SurfaceHub01@contoso.com' -Alias SurfaceHub01 -Name "Surface Hub 01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String 'Pass@word1' -AsPlainText -Force)
 ```
 
-### Настройка автоматической обработки календаря (только в Skype для бизнеса)
+### <a name="set-calendar-auto-processing-skype-for-business-only"></a>Настройка автоматической обработки календаря (только skype для бизнеса)
 
 ```powershell
 Set-CalendarProcessing -Identity 'SurfaceHub01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
 Set-CalendarProcessing -Identity 'SurfaceHub01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Microsoft Surface Hub. Please make sure this meeting is a Microsoft Teams meeting!"
 ```
 
-### Включить ActiveSync, если требуется использование почтового приложения
+### <a name="enable-activesync-if-use-of-email-app-is-required"></a>Включить ActiveSync, если требуется использование приложения электронной почты
 
- Политика ActiveSync по умолчанию будет работать, если она не изменилась. В противном случае создайтеStupid новую политику и назначьте ее.
+ Политика ActiveSync по умолчанию будет работать, если она не изменится. В противном случае создайте новую политику и назначьте.
 
 ```powershell
 New-MobileDeviceMailboxPolicy -Name:"SurfaceHub" -PasswordEnabled:$false
@@ -100,13 +100,13 @@ New-MobileDeviceMailboxPolicy -Name:"SurfaceHub" -PasswordEnabled:$false
 Set-CASMailbox -Identity SurfaceHub01@contoso.com -ActiveSyncMailboxPolicy "SurfaceHub"
 ```
 
-### Подключение к Azure AD
+### <a name="connect-to-azure-ad"></a>Подключение к Azure AD
 
 ```powershell
 Connect-AzureAD
 ```
 
-### Назначение лицензии
+### <a name="assign-a-license"></a>Назначение лицензии
 
 ```powershell
 Set-AzureADUser -ObjectId 'SurfaceHub01@contoso.com' -UsageLocation US
@@ -117,7 +117,7 @@ $Licenses.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId 'SurfaceHub01@contoso.com' -AssignedLicenses $Licenses
 ```
 
-### Проверка на наличии доступных лицензий
+### <a name="check-for-available-licenses"></a>Проверка доступных лицензий
 
 ```powershell
 Get-AzureADUser -Filter "userPrincipalName eq 'SurfaceHub01@contoso.com'" |fl *
@@ -125,9 +125,9 @@ Get-AzureADUser -Filter "userPrincipalName eq 'SurfaceHub01@contoso.com'" |fl *
 6070a4c8-34c6-4937-8dfb-39bbc6397a60
 ```
 
-## Сценарий проверки учетной записи
+## <a name="account-verification-script"></a>Сценарий проверки учетной записи
 
-После создания учетной записи устройства можно запустить следующий сценарий проверки. Этот сценарий проверяет ранее созданную учетную запись устройства и создает сводный отчет. Например:
+После создания учетной записи устройства можно запустить следующий сценарий проверки. Этот скрипт проверяет ранее созданную учетную запись устройства и создает сводный отчет. Пример
 
 ``` syntax
 15 tests executed
@@ -432,6 +432,6 @@ function Validate()
 }
 ```
 
-## Подробнее
+## <a name="learn-more"></a>Подробнее
 
 - [Создание локальных учетных записей Surface Hub 2S с помощью PowerShell](surface-hub-2s-onprem-powershell.md)
