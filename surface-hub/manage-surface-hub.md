@@ -12,24 +12,24 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 01/17/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 935f67e88af8b784230becb1cd89f7360b8a0857
-ms.sourcegitcommit: 8e809e8481023fe4421abcdaa1e055a6f2f74f5f
+ms.openlocfilehash: 5e7fca007549d8804a756ef2a042f092f0acb1c3
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924965"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387433"
 ---
-# Управление Microsoft Surface Hub
+# <a name="manage-microsoft-surface-hub"></a>Управление Microsoft Surface Hub
 
-После начальной настройки Microsoft Surface Hub параметры и конфигурацию устройства можно изменить несколькими способами.
+После начальной установки Microsoft Surface Hub параметры и конфигурация устройств могут изменяться или изменяться несколькими способами:
 
 - **Локальное управление**— каждое устройство Surface Hub можно настроить локально с помощью приложения **Параметры** на устройстве. Во избежание несанкционированного изменения параметров для открытия приложения «Параметры» требуются учетные данные администратора. Дополнительные сведения см. в разделе [Локальное управление параметрами Surface Hub](local-management-surface-hub-settings.md).
-- **Удаленное управление** — Surface Hub позволяют ИТ-администраторам управлять параметрами и политиками с помощью поставщика управления мобильными устройствами (MDM), такого как Microsoft Intune, Диспетчер конфигураций конечных точек Microsoft и других сторонних поставщиков. Кроме того, администраторы могут отслеживать устройства Surface Hub с помощью набора инструментов Microsoft Operations Management Suite (OMS). Дополнительные сведения см. в разделе [Управление параметрами с помощью поставщика MDM](manage-settings-with-mdm-for-surface-hub.md) и [Отслеживание Microsoft Surface Hub](monitor-surface-hub.md). 
+- Удаленное управление **—** Surface Hub позволяет ИТ-администраторам управлять настройками и политиками с помощью поставщика управления мобильными устройствами (MDM), например Microsoft Intune, Microsoft Endpoint Configuration Manager и других сторонних поставщиков. Кроме того, администраторы могут отслеживать surface Hubs с помощью Azure Monitor.  Дополнительные сведения см. в статью Управление настройками с помощью [поставщика MDM](manage-settings-with-mdm-for-surface-hub.md)и [monitor Surface Hubs с Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/insights/surface-hubs)для отслеживания их состояния. 
 
 > [!NOTE]
-> Эти методы управления не являются взаимоисключающими. Устройствами можно управлять локально и удаленно по вашему выбору. Однако политики и параметры MDM переопределяют любые локальные изменения при синхронизации Surface Hub с сервером управления. 
+> Эти методы управления не являются взаимоисключающими. Устройствами можно управлять локально и удаленно по вашему выбору. Однако политики и параметры MDM переоценят локальные изменения при синхронизации Surface Hub с сервером управления. 
 
-## В этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 Узнайте об управлении и обновлении Surface Hub.
 
@@ -47,9 +47,9 @@ ms.locfileid: "10924965"
 | [Использование Miracast в существующей беспроводной или локальной сети](miracast-over-infrastructure.md) | Вы можете использовать Miracast в беспроводной или локальной сети для подключения к Surface Hub. |
  [Включение проверки подлинности по стандарту безопасности 802.1X в проводной сети](enable-8021x-wired-authentication.md) | Политики MDM для проверки подлинности по стандарту безопасности 802.1X в проводной сети были включены на устройствах Surface Hub. 
 | [Использование системы управления помещением](https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | Вы можете использовать системы управления помещением вместе с устройством Microsoft Surface Hub.|
-[Использование средства восстановления Surface Hub](surface-hub-recovery-tool.md) | Используйте средство восстановления Surface Hub, чтобы заново прообразировать твердотельный SSD Surface Hub.
-[Замена SSD-диска Surface Hub](surface-hub-ssd-replacement.md) | Сведения о том, как удалить и заменить твердотельный диск в Surface Hub.
+[Использование средства восстановления Surface Hub](surface-hub-recovery-tool.md) | Используйте средство восстановления surface Hub для повторного изображения SSD Surface Hub.
+[Замена SSD-диска Surface Hub](surface-hub-ssd-replacement.md) | Узнайте, как удалить и заменить накопитель твердого состояния в surface Hub.
 
-## Статьи по теме
+## <a name="related-topics"></a>Статьи по теме
 
 - [Просмотр режима презентации Power BI в Surface Hub в Windows 10](https://powerbi.microsoft.com/documentation/powerbi-mobile-win10-app-presentation-mode/)

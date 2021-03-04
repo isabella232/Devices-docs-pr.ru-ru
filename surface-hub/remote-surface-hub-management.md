@@ -7,23 +7,23 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 03/03/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 01454e680c674380b5f746be0a04241336fe5dbb
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: b78c6fff81642700a554655ea02aa437a025fc72
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836475"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387420"
 ---
-# Удаленное управление Surface Hub
+# <a name="remote-surface-hub-management"></a>Удаленное управление Surface Hub
 
-## В этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 |Статья | Описание|
 | ------ | --------------- |
 | [Управление параметрами с помощью поставщика MDM]( https://technet.microsoft.com/itpro/surface-hub/manage-settings-with-mdm-for-surface-hub) | Surface Hub предоставляет корпоративное решение управления, упрощающее ИТ-администраторам контроль над политиками и бизнес-приложениями на этих устройствах с помощью решения для управления мобильными устройствами (MDM).|
-| [Отслеживание устройства Surface Hub]( https://technet.microsoft.com/itpro/surface-hub/monitor-surface-hub) | Мониторинг устройств Surface Hub можно включить в Microsoft Operations Management Suite.|
-| [Обновления Windows](https://technet.microsoft.com/itpro/surface-hub/manage-windows-updates-for-surface-hub) | Вы можете управлять обновлениями Windows на устройстве Surface Hub, указывая период обслуживания, откладывая обновления или используя службы WSUS.|
+| [Отслеживание устройства Surface Hub](monitor-surface-hub.md) | Мониторинг устройств Surface Hub включен через Azure Monitor.|
+| [Обновления Windows](manage-windows-updates-for-surface-hub.md) | Вы можете управлять обновлениями Windows на устройстве Surface Hub, указывая период обслуживания, откладывая обновления или используя службы WSUS.|

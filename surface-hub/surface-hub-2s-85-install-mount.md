@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/01/2020
+ms.date: 03/02/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 28278827aeba20f46d5fd79b7a1de6c54bfce1e8
-ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
+ms.openlocfilehash: 1fab09ef21dbddbb2b4f292acd716c6e6cbaff7e
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "11385257"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387492"
 ---
 # <a name="install-and-mount-surface-hub-2s-85"></a>Установка и установка Surface Hub 2S 85"
 
@@ -24,7 +24,11 @@ ms.locfileid: "11385257"
 
 ## <a name="unboxing-video"></a>Unboxing video
 
-Теперь доступен компаньон по видео для перемещения и установки Surface Hub 2S 85. Перед началом работы просмотрите [Microsoft Surface Hub 2S 85 "Unboxing and Set Up".](https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV)  
+- Перед началом просмотра просмотрите видео "Microsoft Surface Hub 2S 85" и "Настройка":
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwwgL]
+
+- Китайская версия этого видео доступна в приложении [B](#appendix-b-unboxing-video) ниже. 
 
 ## <a name="follow-all-safety-precautions"></a>Соблюдайте все меры предосторожности 
 
@@ -37,7 +41,7 @@ ms.locfileid: "11385257"
 >- Чтобы избежать опасных отключений, держите область сборки в стороне от упаковочных материалов.
 
 > [!IMPORTANT]
->Перед началом рассмотрения просмотрите дополнительные сведения о безопасности, указанные в [приложении ниже.](#appendix)
+>Перед началом рассмотрения просмотрите дополнительные сведения о безопасности, указанные в [приложении A](#appendix-a-additional-safety-information) ниже.
 
 ## <a name="1-remove-outer-packaging-materials"></a>1. Удаление внешних упаковочных материалов
 
@@ -151,9 +155,7 @@ ms.locfileid: "11385257"
 
 Дополнительный набор материалов для внутренней упаковки можно найти в комплекте с задней частью в правом нижнем окне.
 
-## <a name="appendix"></a>Приложение 
-
-### <a name="additional-safety-information"></a>Дополнительные сведения о безопасности
+## <a name="appendix-a-additional-safety-information"></a>Приложение A. Дополнительные сведения о безопасности
 
 > [!WARNING]
 > **Тяжелый объект/эргономический подъем**<br>
@@ -203,6 +205,14 @@ ms.locfileid: "11385257"
 > [!WARNING]
 >  **Правильная установка**<br>
 Чтобы избежать опасностей, связанных с неправильной установкой устройства, установка должна выполняться людьми, которые читали и понимали инструкцию по установке перед началом работы. Если у вас нет необходимого оборудования или опыта, или если вы не уверены, поверхность монтажа может надлежащим образом поддерживать консультации с профессиональным установщиком.
+
+
+## <a name="appendix-b-unboxing-video"></a>Приложение B. Unboxing video
+
+
+### <a name="microsoft-surface-hub-2s-85-unboxing-and-set-up-video-chinese"></a>Microsoft Surface Hub 2S 85" Unboxing and Set Up video (Chinese)
+
+> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV]
 
 
 ## <a name="more-information"></a>Дополнительные сведения
