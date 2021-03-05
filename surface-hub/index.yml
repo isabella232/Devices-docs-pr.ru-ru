@@ -14,21 +14,21 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 1e52e6d73116fe7ab84d0cb2e787995eb7ac6119
-  ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
+  ms.openlocfilehash: 9be85d412a96351e8cb92013eb6ca0afe9b7c304
+  ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "11328193"
+  ms.lasthandoff: 03/03/2021
+  ms.locfileid: "11385137"
 landingContent:
 - title: Подготовьтесь к внедрению Surface Hub 2S
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Сертифицированные для Microsoft Teams аудио и видео аксессуары для Surface Hub 2S
-      url: surface-hub-2s-certifications.md
-    - text: Обновление до выпуска Windows 10 для совместной работы
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655
+    - text: Обновление Surface Hub Windows 10 для совместной работы 2020 — Состояние на февраль
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-february-status/ba-p/2118369
+    - text: Обновление 2020 для Surface Hub v1, доступное через Центр обновления Windows
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/2020-update-for-surface-hub-v1-available-via-windows-update/ba-p/2118370
     - text: Установка и подключение Surface Hub 2S размером 85 дюймов (руководство по подготовке)
       url: surface-hub-2s-85-install-mount.md
     - text: Новые возможности обновления Windows 10 для совместной работы 2020
