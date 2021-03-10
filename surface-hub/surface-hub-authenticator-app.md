@@ -10,18 +10,18 @@ ms.date: 08/28/2017
 ms.reviewer: ''
 manager: laurawi
 localizationpriority: medium
-ms.openlocfilehash: 11768488d2ef7509af6a592b9e4ac945a7e35650
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: f8a2bf8ddb75ca6dd3ff89e16fe0d37e099be29d
+ms.sourcegitcommit: 85f5a2e67b34fe073ec588ed441ebee239ab0ac6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835256"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400740"
 ---
-# Вход в Surface Hub с помощью проверки Microsoft Authenticator
+# <a name="sign-in-to-surface-hub-with-microsoft-authenticator"></a>Вход в Surface Hub с помощью проверки Microsoft Authenticator
 
 Сотрудники вашей организации могут выполнить вход в систему на Surface Hub без ввода пароля с помощью приложения Microsoft Authenticator, доступного для iOS и Android.
 
-## Необходимые условия для организации
+## <a name="organization-prerequisites"></a>Необходимые условия для организации
 
 Чтобы разрешить сотрудникам организации выполнять вход в Surface Hub с помощью телефонов и других устройствах вместо использования пароля, необходимо убедиться, что организация соответствует следующим требованиям. 
 
@@ -33,15 +33,13 @@ ms.locfileid: "10835256"
 
     ![параметры многофакторной идентификации](images/mfa-options.png)
 
-- Включение размещения контента в службах Azure AD, таких как Office, SharePoint и т. д. 
+- Включить размещение контента в службах Azure AD, таких как Office, SharePoint и т.д. 
 
 - Устройство Surface Hub должно работать под управлением Windows 10 версии 1703 или более поздней версии.
 
 - Устройство Surface Hub должно быть настроено с помощью локальной учетной записи или учетной записи домена.
 
-В настоящее время Microsoft Authenticator нельзя использовать для входа на устройства Surface Hub, которые присоединены к Azure AD.
-
-## Необходимые условия для отдельных устройств
+## <a name="individual-prerequisites"></a>Необходимые условия для отдельных устройств
 
 - Телефона под управлением Android версии 6.0 или более поздней или iPhone либо iPad под управлением iOS 9 или более поздней версии 
 
@@ -54,9 +52,7 @@ ms.locfileid: "10835256"
 
 - На устройстве включен секретный код или экран блокировки
 
-- Стандартный адрес электронной почты SMTP (пример: joe@contoso.com). Нестандартные адреса электронной почты SMTP (пример: firstname.lastname@contoso.com) в настоящее время не поддерживаются.
-
-## Настройка приложения Microsoft Authenticator
+## <a name="how-to-set-up-the-microsoft-authenticator-app"></a>Настройка приложения Microsoft Authenticator
 
 >[!NOTE]
 >Если на устройстве Android установлен корпоративный портал, удалите его перед установкой Microsoft Authenticator. После установки приложения вы сможете переустановить корпоративный портал.
@@ -67,7 +63,7 @@ ms.locfileid: "10835256"
 2. Перейдите в раздел **Параметры** и зарегистрируйте свое устройство.
 3. Вернитесь на страницу учетных записей и выберите **Разрешение входа на телефоне** из раскрывающегося меню учетной записи.
 
-## Выполнение входа в Surface Hub во время собрания
+## <a name="how-to-sign-in-to-surface-hub-during-a-meeting"></a>Выполнение входа в Surface Hub во время собрания
 
 1. После настройки собрания перейдите в Surface Hub и выберите пункт **Войдите, чтобы просмотреть свои собрания и файлы**.
 
