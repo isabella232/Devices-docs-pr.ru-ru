@@ -11,48 +11,48 @@ audience: Admin
 ms.topic: article
 ms.date: 12/10/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 3b3b5ed47e3a34369c6890aac051436db1f42347
-ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
+ms.openlocfilehash: 406fcc58bdb09d7fd47966cd17123d55faec2b65
+ms.sourcegitcommit: ea853f2dba67e63e6df33538670fd581e17facab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "11328213"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "11408794"
 ---
-# Управление Surface Hub 2S с помощью Intune
+# <a name="manage-surface-hub-2s-with-intune"></a>Управление Surface Hub 2S с помощью Intune
 
-## Регистрация Surface Hub 2S в Intune
+## <a name="register-surface-hub-2s-with-intune"></a>Регистрация Surface Hub 2S в Intune
 
 Surface Hub 2S позволяет ИТ-администраторам управлять параметрами и политиками с помощью службы управления мобильными устройствами (MDM). Surface Hub 2S содержит встроенный компонент управления для взаимодействия с сервером управления, поэтому нет необходимости устанавливать на устройстве дополнительные клиенты.
 
-### Регистрация вручную
+### <a name="manual-registration"></a>Регистрация вручную
 
-1. Откройте приложение **"Параметры"** на Surface Hub 2S и во sign in as a local administrator. Откройте **Surface Hub** > **Управление устройством** и выберите **+** для добавления.
-2. Вам будет предложено войти с использованием учетной записи для Intune. После проверки подлинности устройство будет автоматически зарегистрировано в Intune.
+1. Откройте приложение **Параметры** на Surface Hub 2S и вопишитесь в качестве локального администратора. Откройте **Surface Hub** > **Управление устройством** и выберите **+** для добавления.
+2. Вам будет предложено войти в учетную запись, чтобы использовать для Intune. После проверки подлинности устройство будет автоматически зарегистрировано в Intune.
 
    ![Регистрация Surface Hub 2S в Intune](images/sh2-set-intune1.png)<br>
    
 > [!NOTE]
 > Учетная запись, используемая для проверки подлинности, будет учетной записью регистрации Intune и должна быть лицензирована для Intune.
 
-### Автоматическая регистрация — связь с Azure Active Directory
+### <a name="auto-registration--azure-active-directory-affiliated"></a>Автоматическая регистрация — связь с Azure Active Directory
 
 В процессе начальной настройки, когда выполняется связывание Surface Hub с клиентом Azure AD с включенной автоматической регистрацией в Intune, устройство автоматически регистрируется в Intune. Дополнительные сведения см. в статье [Способы регистрации в Intune для устройств Windows](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods). Связывание с Azure AD и автоматическая регистрация в Intune требуются для того, чтобы Surface Hub было "соответствующим требованиям устройством" в Intune. 
 
-## Управление настройками Windows 10 Team с помощью Intune
+## <a name="managing-windows-10-team-settings-with-intune"></a>Управление настройками команды Windows 10 с помощью Intune
 
-1. Во sign into **Microsoft Endpoint Manager**, select **Devices**  >  **Configuration profiles**  >  **Create profile**. 
-2. В **группе "Платформа"** выберите **ограничения для Windows 10**и более поздних устройств  >  **(Windows 10 Team)** и выберите команду **"Создать".** 
-3. Теперь вы можете просматривать и выбирать предустановленные параметры ограничений устройств для Surface Hub и Surface Hub 2S.
+1. Впишитесь **в Microsoft Endpoint Manager**, выберите **профили конфигурации устройств**Создать  >  ****  >  **профиль**. 
+2. В **платформе**выберите **ограничения устройств Windows 10**и более поздних шаблонов  >  ****  >  **(Windows 10 Team),** а затем выберите **Create**. 
+3. Теперь можно просмотреть и выбрать параметры предустановленного ограничения устройств для Surface Hub и Surface Hub 2S.
 
  ![Настройка ограничений устройства для Surface Hub 2.](images/sh2-set-intune3.png) <br>
 
-Эти параметры охватывают следующие категории: приложения и возможности, операционные данные Azure, обслуживание, сеанс и беспроводная проекция.  
+Эти параметры охватывают следующие категории: приложения и опыт, оперативные сведения Azure, обслуживание, сеанс и беспроводная проекция.  
 
-## Поддерживаемые поставщики служб конфигурации (CPS)
+## <a name="supported-configuration-service-providers-csps"></a>Поддерживаемые поставщики служб конфигурации (CSPs)
 
-Помимо политик, доступных непосредственно через консоль Intune, существует множество поставщиков служб конфигурации (CPS), которые соединуют с ключами реестра или файлами. 
+Помимо политик, доступных непосредственно через консоль Intune, существуют многочисленные поставщики служб конфигурации (CSPs), которые соеди- 
 
-Корпорация Майкрософт обычно предоставляет новые CSP с каждой новой версией операционной системы Windows 10. Обновление [Windows 10 для группы 2020](surface-hub-2020-update.md) включает более 20 новых и обновленных политик управления устройствами для Surface Hub и Surface Hub 2S. Эти политики MDM дают ИТ-администраторам улучшенный контроль над обновлениями приложений из Microsoft Store, параметры беспроводной проекции, такие как Miracast по инфраструктуре, сетевые параметры, такие как качество обслуживания и проводная проверка подлинности 802.1x, а также новые параметры конфиденциальности и GDPR.
+Microsoft обычно предоставляет новые CSP с каждой новой версией операционной системы Windows 10. Обновление [Windows 10 Team 2020](surface-hub-2020-update.md) включает более 20 новых и обновленных политик управления устройствами для Surface Hub и Surface Hub 2S. Эти политики MDM дают ИТ-администраторам улучшенный контроль над обновлениями приложений из Microsoft Store, настройками беспроводных проекций, такими как Miracast над инфраструктурой, сетевыми настройками, такими как Quality-Of-Service и проводной проверкой подлинности 802.1x, а также новыми настройками конфиденциальности и GDPR.
 
 Для получения дополнительных сведений см. следующие ресурсы. 
 
@@ -61,11 +61,11 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 - [Политика поставщиков служб конфигурации (CSP), поддерживаемая Microsoft Surface Hub](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
 - [Новые возможности обновления Surface Hub Team 2020](surface-hub-2020-update-whats-new.md)
 
-## Параметры качества обслуживания (QoS)
+## <a name="quality-of-service-qos-settings"></a>Параметры качества обслуживания (QoS)
 
 Чтобы обеспечить оптимальное качество видео и звука на Surface Hub 2, добавьте следующие параметры качества обслуживания в устройстве. 
 
-### Параметры качества обслуживания Microsoft Teams 
+### <a name="microsoft-teams-qos-settings"></a>Параметры качества обслуживания Microsoft Teams 
 
 | Имя | Описание | OMA-URI | Тип | Значение |
 |:------ |:------------- |:--------- |:------ |:------- |
@@ -73,17 +73,17 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 |**DSCP звука**| Маркировка звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | целое число | 46 |
 |**Видеопорт**| Диапазон видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DestinationPortMatchCondition | Строка  | 3480 |
 |**DSCP видео**| Маркировка видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DSCPAction | целое число | 34 |
-|**Общий порт**| Диапазон портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DestinationPortMatchCondition | Строка  | 3481 |
-|**Общий доступ к DSCP**| Маркировка общего доступа к портам | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DSCPAction | целое число | 18 |
+|**Общий порт**| Диапазон общего доступа к порту | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DestinationPortMatchCondition | Строка  | 3481 |
+|**Совместное использование DSCP**| Разметка портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DSCPAction | целое число | 18 |
 |**Звуковые порты P2P**| Диапазон звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DestinationPortMatchCondition | Строка  | 50000-50019 |
 |**DSCP звука P2P**| Маркировка звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DSCPAction | целое число | 46 |
 |**Видеопорты P2P**| Диапазон видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DestinationPortMatchCondition | Строка  | 50020-50039 |
 |**DSCP видео P2P**| Маркировка видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DSCPAction | целое число | 34 |
-|**Порты общего доступа P2P**| Диапазон портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DestinationPortMatchCondition | Строка  | 50040-50059 |
-|**P2P Sharing DSCP**| Маркировка общего доступа к портам | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DSCPAction | целое число | 18 |
+|**P2P Sharing Ports**| Диапазон общего доступа к порту | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DestinationPortMatchCondition | Строка  | 50040-50059 |
+|**P2P Sharing DSCP**| Разметка портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DSCPAction | целое число | 18 |
 
 
-### Параметры качества обслуживания Skype для бизнеса
+### <a name="skype-for-business-qos-settings"></a>Параметры качества обслуживания Skype для бизнеса
 
 | Имя                 | Описание           | OMA-URI                                                                    | Тип    | Значение                          |
 | -------------------- | --------------------- | -------------------------------------------------------------------------- | ------- | ------------------------------ |
@@ -93,32 +93,32 @@ Surface Hub 2S позволяет ИТ-администраторам управ
 | Видеопорты          | Диапазон видеопортов      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition    | Строка  | 50020-50039                    |
 | DSCP видео           | Маркировка видеопортов   | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/DSCPAction                  | целое число | 34                             |
 | Источник видео   | Имя приложения Skype        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/AppPathNameMatchCondition   | Строка  | Microsoft.PPISkype.Windows.exe |
-| Общий доступ к портам        | Диапазон портов общего доступа    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/SourcePortMatchCondition  | Строка  | 50040-50059                    |
-| Общий доступ к DSCP         | Маркировка общего доступа к портам | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/DSCPAction                | целое число | 18                             |
+| Общий доступ к портам        | Диапазон общего доступа к порту    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/SourcePortMatchCondition  | Строка  | 50040-50059                    |
+| Совместное использование DSCP         | Разметка портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/DSCPAction                | целое число | 18                             |
 | Общий доступ к источнику мультимедиа | Имя приложения Skype        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/AppPathNameMatchCondition | Строка  | Microsoft.PPISkype.Windows.exe |
 
 > [!NOTE]
 > Обе таблицы содержат диапазоны портов, используемые по умолчанию. Администраторы могут изменить диапазоны портов в панели управления Skype для бизнеса и Teams.
 
-## Параметры Microsoft Teams
+## <a name="microsoft-teams-settings"></a>Параметры Microsoft Teams
 
 Вы можете настроить различные параметры Microsoft Teams с помощью Intune.
 
-### Режимы
+### <a name="modes"></a>Режимы
 
-Surface Hub 2 поставляется с установленным Microsoft Teams в режиме 0, поддерживающем Microsoft Teams и Skype для бизнеса. Режимы работают, как описано ниже:
+Surface Hub 2 поставляется с установленным Microsoft Teams в режиме 0, поддерживающем Microsoft Teams и Skype для бизнеса. Режимы функционируют, как описано ниже:
 
 - Режим 0 — Skype для бизнеса с функциональностью Microsoft Teams для запланированных собраний.
 - Режим 1 — Microsoft Teams с функциональностью Skype для бизнеса для запланированных собраний.
 - Режим 2 — только Microsoft Teams.
 
-Чтобы настроить режим, добавьте следующие параметры в [пользовательский профиль конфигурации устройства.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
+Чтобы настроить режим, добавьте следующие параметры в настраиваемый [профиль конфигурации устройства.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
 
 | Имя | Описание | OMA-URI | Тип | Значение |
 |:--- |:--- |:--- |:--- |:--- |
 |**ИД приложения Teams**|Имя приложения|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|Строка| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
 |**Режим приложения Teams**|Режим Teams|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|целое число| 0 или 1 или 2|
 
-### Координированные собрания и бесконтактное участие
+### <a name="coordinated-meetings-and-proximity-join"></a>Координированные собрания и регистрация близости
 
-Функции координации собраний и близкого join в Teams можно настроить с помощью [XML-файла,](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure) развернутых с помощью профиля Intune.
+Функции команд координируемых собраний и близости можно настроить через [XML-файл,](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure) развернутый с помощью профиля Intune.
