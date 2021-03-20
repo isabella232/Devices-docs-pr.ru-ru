@@ -1,6 +1,6 @@
 ---
-title: Новые возможности Surface Hub 2S для ИТ-администраторов
-description: Узнайте больше о новых возможностях в Surface Hub 2S.
+title: Что нового в Surface Hub 2S для ИТ-администраторов
+description: Дополнительные возможности в Surface Hub 2S.
 keywords: Разделяйте значения запятыми
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,61 +11,61 @@ audience: Admin
 ms.topic: article
 ms.date: 09/11/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: a552434846c14a5f612b3743ea42819999aa8553
-ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+ms.openlocfilehash: adcf3eaf415f2e4be8f6c6871a5595c34e41b548
+ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "11013419"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "11442107"
 ---
-# Новые возможности Surface Hub 2S для ИТ-администраторов
+# <a name="whats-new-in-surface-hub-2s-for-it-admins"></a>Что нового в Surface Hub 2S для ИТ-администраторов
 
-Surface Hub 2 — это холст для совместной работы, разработанный для взаимодействия с цифровой доской, платформой для собраний и интерфейсом Windows 10 на одном устройстве.
+Surface Hub 2S — это полотно для совместной работы, построенное для совместной работы с цифровой доской, платформой собраний и вычислительной возможностью Windows 10 на одном устройстве.
 
-|**Возможность**|**Краткий обзор**|**Подробнее**|
+| Возможность | Сводка | Подробнее |
 |:-------|:------|:----|
-|**Переход на Windows 10 Pro или Enterprise**| Surface Hub 2S предварительно установлен в Windows 10 Team, настроенный выпуск Windows 10, разработанный для упрощения совместной работы в средах для собраний. Теперь у вас есть возможность работать с Windows 10 Pro или Enterprise, чтобы использовать Surface Hub 2, как и любые другие компьютеры.| [Объявление о доступности Windows 10 Pro и Enterprise на Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107) <br> <br> [Переход на Windows 10 Pro или Корпоративная в Surface Hub 2](surface-hub-2s-migrate-os.md) |
-|**Управление мобильными устройствами и UEFI**| Управление параметрами и политиками с помощью поставщика управления мобильными устройствами (MDM). <br> <br> Полная интеграция с корпоративным режимом управления Surface Management (SEMM) позволяет управлять аппаратными компонентами и микропрограммами. | [Управление Surface Hub 2S с помощью Microsoft Intune](surface-hub-2s-manage-intune.md) <br> <br> [Surface Enterprise Management Mode](https://docs.microsoft.com/surface/surface-enterprise-management-mode) |
-|**Сосуществование в облаке и локальном сосуществовании**| Поддержка локальных, гибридных и онлайновых служб. | [Подготовка среды для Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md) |
-|**Сброс и восстановление**| Восстановление из облака или USB-накопителя. | [Восстановление и сброс Surface Hub 2S](surface-hub-2s-recover-reset.md) |
-|**Доска (Майкрософт)**| Интеграция с Office 365, интеллектуальный рукописный ввод и поиск Bing обеспечивают широкие возможности, позволяя использовать устойчивый цифровой холст для большинства браузеров, Windows и устройств с iOS. | [Новая доска для Surface HUB](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-a-new-Whiteboard-for-your-Surface-Hub/ba-p/637050) |
-|**Лицензия Microsoft Teams в конференциях**| Расширяет возможности лицензирования Office 365 в Skype для бизнеса, Microsoft Teams и Intune. | [Обновление лицензий для собрания Teams](https://docs.microsoft.com/MicrosoftTeams/room-systems/skype-room-systems-v2-0) |
-|**Экран на экране**| Настройка громкости, яркости и элемента управления вводом непосредственно на экране. |  |
-|**Режим ожидания с подключением, активированный датчиком**| Датчик допплеровского активирует режим ожидания с подключением после 1 минуты бездействия.<br> <br> Управлять этим параметром удаленно с помощью Intune или непосредственно на устройстве из приложения "Параметры". | [Технические характеристики Surface Hub 2S](surface-hub-2s-techspecs.md) |
-|**Перо Surface HUB**| Простота и легкое связывание на сторонах устройства.  |  |
-|**Приложение Surface для Surface Hub 2S**| Изменение параметров звука и Просмотр сведений об устройстве из приложения Surface |  |
-|**Готово к завтра**| Съемный картридж способствует обновлению новых функций. |  |
+|**Миграция в Windows 10 Профессиональный или корпоративный**| Surface Hub 2S предустроен в Windows 10 Team , настраиваемом выпуске Windows 10, предназначенном для облегчения совместной работы в средах комнат собраний. Теперь у вас есть возможность запуска Windows 10 Профессиональный или Корпоративный, чтобы использовать Surface Hub 2S так же, как и любой другой компьютер.| [Доступны Windows 10 Pro и Enterprise на Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107) <br> <br> [Переход на Windows 10 Pro или Корпоративная в Surface Hub 2](surface-hub-2s-migrate-os.md) |
+|**Управление мобильными устройствами и управляемость UEFI**| Управление настройками и политиками с помощью поставщика управления мобильными устройствами (MDM). <br> <br> Полная интеграция с режимом управления surface enterprise (SEMM) позволяет управлять компонентами оборудования и программным обеспечением. | [Управление Surface Hub 2S с помощью Microsoft Intune](surface-hub-2s-manage-intune.md) <br> <br> [Surface Enterprise Management Mode](https://docs.microsoft.com/surface/surface-enterprise-management-mode) |
+|**Сосуществование облачных и локально**| Поддерживает локальное, гибридное или сетевое. | [Подготовка среды для Microsoft Surface Hub 2S](prepare-your-environment-for-surface-hub.md) |
+|**Сброс и восстановление**| Восстановление с облачного или USB-диска. | [Восстановление и сброс Surface Hub 2S](surface-hub-2s-recover-reset.md) |
+|**Доска (Майкрософт)**| Интеграция Office 365, интеллектуальный поиск и поиск Bing приносят новые мощные возможности, что позволяет постоянное использование цифрового холста для большинства браузеров, устройств Windows и iOS. | [Объявление новой доски для surface Hub](https://techcommunity.microsoft.com/t5/Office-365-Blog/Announcing-a-new-Whiteboard-for-your-Surface-Hub/ba-p/637050) |
+|**Лицензия зала собраний Microsoft Teams**| Расширяет возможности лицензирования Office 365 в Skype для бизнеса, Microsoft Teams и Intune. | [Обновление лицензирования комнат собраний teams](https://docs.microsoft.com/MicrosoftTeams/room-systems/skype-room-systems-v2-0) |
+|**Экранный дисплей**| Настройка громкости, яркости и управления входом непосредственно на дисплее. |  |
+|**Подключение в режиме ожидания с активированным датчиком**| Датчик Doppler активирует подключенное режим ожидания после 1 минуты бездействия.<br> <br> Управление этим параметром удаленно с помощью Intune или непосредственно на устройстве из приложения Параметры. | [Технические характеристики Surface Hub 2S](surface-hub-2s-techspecs.md) |
+|**Ручка Surface Hub**| Эргономично переработано и легко прикрепляется по бокам устройства.  |  |
+|**Приложение Surface для Surface Hub 2S**| Изменение параметров звука и просмотр сведений об устройстве из приложения Surface |  |
+|**Готов к завтрашнему дню**| Съемный картридж облегчает обновление до новых функций. |  |
 
-Для получения дополнительных сведений о новых возможностях Surface Hub 2 ознакомьтесь со статьей:
+Дополнительные сведения о новинках Surface Hub 2S см. в этой информации:
 
-- [Сайт Surface Hub 2S](https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab)
-- [За Surface Hub конструирования — 2](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099)
+- [Сайт продукта Surface Hub 2S](https://www.microsoft.com/p/surface-hub-2S/8P62MW6BN9G4?activetab=pivot:overviewtab)
+- [За дизайном Surface Hub 2S](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099)
 
-## Surface Hub 2S по сравнению с Surface HUB
+## <a name="surface-hub-2s-compared-with-surface-hub"></a>Surface Hub 2S по сравнению с Surface Hub
 
-В таблице ниже описаны различия между Surface HUB и Surface Hub 2.
+В следующей таблице подробно огосят различия между Surface Hub и Surface Hub 2S:
 
-|**Компонент**| **Surface Hub 55 "**|**Surface Hub 84 "**| **Surface Hub 2S**|
+| Компонент | Surface Hub 55" | Surface Hub 84" | Surface Hub 2S |
 |:----- |:---- |:---- |:----- |
-|**Конструктивный фактор**| 55 " | 84 " | 50 " |
-|**Размер**| 31,75 "x 59,62" x 3,38 " <br> (806,4 мм x 1514,3 мм x 85,8 мм) | 46,12 "x 86,7" x 4,15 " <br> (1171,5 мм x 2202,9 мм x 105,4 мм) | 29,2 "x 43,2" x 3,0 " <br> (741 мм x 1097 мм x 76 мм) |
-|**Насыщенность**| 105 фунта. (48 кг) | 280 фунта. (127 кг) | 61,6 фунта. (28 кг) |
-|**Монитор**| Высоким <br> 1920 x 1080 @ 120 Гц  <br> Степень контрастности: <br> 1300:1 <br> Редактирование <br> 100-точка с несколькими сенсорными экранами <br> Сенсорно зарезервированный датчик емкостной нагрузки | Высоким <br> 3840 x 2160 @ 120 Гц  <br> Степень контрастности: <br> 1400:1 <br> Редактирование <br> 100-точка с несколькими сенсорными экранами <br> Сенсорно зарезервированный датчик емкостной нагрузки | Высоким <br> 3840 x 2560 @ 60 Гц |
-|**Пропорции**| 16:9 | 16:9 | 3:2 |
-|**Хранилище**| SSD 128 ГБ | SSD 128 ГБ | SSD 128 ГБ |
-|**ОЗУ**| 8 ГБ ОЗУ | 8 ГБ ОЗУ | 8 ГБ ОЗУ |
-|**Процессор**| 4-го поколения Intel® Core i5 | 4-го поколения Intel Core i7 | Четырехъядерный Двухъядерный процессор Intel для i5 |
+|**Фактор форм**| 55" | 84" | 50" |
+|**Dimension**| 31.75 "x 59.62" x 3.38" <br> (806,4 мм x 1514,3 мм x 85,8 мм) | 46.12 " x 86.7 " x 4.15" <br> (1171,5 мм x 2202,9 мм x 105,4 мм) | 29.2 "x 43.2" x 3.0" <br> (741 мм x 1097 мм x 76 мм) |
+|**Насыщенность**| 105 фунтов. (48 кг) | 280 фунтов. (127 кг) | 61,6 фунта. (28 кг) |
+|**Display**| Разрешение: <br> 1920 x 1080 @ 120 Гц  <br> Коэффициент контрастности: <br> 1300:1 <br> Touch: <br> 100-точеный мульти касание <br> Датчик с оптическим склейки Projective Capacitance | Разрешение: <br> 3840 x 2160 @ 120 Гц  <br> Коэффициент контрастности: <br> 1400:1 <br> Touch: <br> 100-точеный мульти касание <br> Датчик с оптическим склейки Projective Capacitance | Разрешение: <br> 3840 x 2560 @ 60 Гц |
+|**Отношение аспектов**| 16:9 | 16:9 | 3:2 |
+|**Storage**| SSD 128 ГБ | SSD 128 ГБ | SSD 128 ГБ |
+|**ОЗУ**| 8 ГБ оперативной памяти | 8 ГБ оперативной памяти | 8 ГБ оперативной памяти |
+|**Процессор**| Intel 4-го поколения® Core i5 | 4-е поколение Intel Core i7 | Четырехъядерный процессор Intel Core i5 8-го поколения |
 |**Графика**| Intel HD 4600 | NVIDIA Quadro K2200 | Intel UHD Graphics 620 |
-|**Network**| Wi-Fi (802,11 a/b/g/n/AC) <br> Ethernet 1 Гбит/с <br> Bluetooth 4,0 низкая энергия <br> Поддержка Miracast включена | Wi-Fi (802,11 a/b/g/n/AC) <br> Ethernet 1 Гбит/с <br> Bluetooth 4,0 низкая энергия <br> Поддержка Miracast включена | Wi-Fi 5 (IEEE 802,11 a/b/g/n/AC) <br> Ethernet 1 Гбит/с <br> Беспроводная технология Bluetooth 4,1 <br> Дисплей Miracast |
-|**Порты**| (1) USB 3,0 (снизу) + (1) USB 3,0 (доступ к данным на полях)  <br> (2) USB 2,0 <br> DisplayPort видео <br> 3,5 мм (стерео) <br> Соединитель RJ11 для элемента управления системного уровня <br> <br> DisplayPort видеовход <br> Ввод видео HDMI <br> Видеоввод с экрана VGA <br> 3,5 мм стерео вход <br> (1) USB 2,0 Type B touchback Output | (1) USB 3,0 (снизу) + (1) USB 3,0 (доступ к данным на полях) <br> (4) USB 2,0 <br> DisplayPort видео <br> 3,5 мм (стерео) <br> Соединитель RJ11 для элемента управления системного уровня <br> <br> DisplayPort видеовход <br> Ввод видео HDMI <br> Видеоввод с экрана VGA <br> 3,5 мм стерео вход <br> (1) USB 2,0 Type B touchback Output | (1) USB-A <br> Мини-DisplayPort видео <br> Ввод видео HDMI <br> USB-C с DisplayPort вводом <br> (4) USB-C (на дисплее) <br> Гигабитный сетевой адаптер RJ45 |
-|**Датчики**| (2) пассивные ИК-датчики присутствия, датчики света внешней сети | (2) пассивные ИК-датчики присутствия, датчики света внешней сети | Датчик допплеровскогоа, <br> Акселерометра <br> Гироскоп  |
-|**NFC**| NFC – сканер | NFC – сканер | Н/Д |
-|**Динамики**| (2) передние динамики стерео | (2) передние динамики стерео | Полный диапазон экранов с 3-двусторонними стерео динамиками |
-|**Микрофон**| Высокопроизводительный массив из 4 элементов | Высокопроизводительный массив из 4 элементов | Блок с 8-элементным набором микрофонов MEMS |
-|**Камера**| (2) высококачественные высококачественные камеры 1080p @ 30/с | (2) высококачественные высококачественные камеры 1080p @ 30/с | (1) Microsoft Surface Hub 2, Камера, 4-е-подключение, USB – C, 90 — горизонтальное поле представления                                                           |
-|**Перо**| (2) на питание, активная, точность в подпикселях | (2) на питание, активная, точность в подпикселях | (1) Microsoft Surface Hub 2 (активна) |
-|**Физические кнопки**| Power, INPUT SELECT, Volume, яркость | Power, INPUT SELECT, Volume, яркость | Power, Volume, Source |
+|**Network**| Wi-Fi (802.11 a/b/g/n/ac) <br> Ethernet 1 Гбит/с <br> Bluetooth 4.0 с низкой энергией <br> Включена Miracast | Wi-Fi (802.11 a/b/g/n/ac) <br> Ethernet 1 Гбит/с <br> Bluetooth 4.0 с низкой энергией <br> Включена Miracast | Wi-Fi 5 (IEEE 802.11 a/b/g/n/ac) <br> Ethernet 1 Гбит/с <br> Bluetooth Беспроводная технология 4.1 <br> Miracast Display |
+|**Порты**| (1) USB 3.0 (внизу) + (1) USB 3.0 (боковой доступ)  <br> (2) USB 2.0 <br> Выход видео DisplayPort <br> 3,5 мм Stereo Out <br> Соединителей RJ11 для системного управления <br> <br> Ввод видео DisplayPort <br> Ввод видео HDMI <br> Ввод видео VGA <br> 3,5 мм стерео ввода <br> (1) Вывод сенсорного интерфейса USB 2.0 типа B | (1) USB 3.0 (внизу) + (1) USB 3.0 (боковой доступ) <br> (4) USB 2.0 <br> Выход видео DisplayPort <br> 3,5 мм Stereo Out <br> Соединителей RJ11 для системного управления <br> <br> Ввод видео DisplayPort <br> Ввод видео HDMI <br> Ввод видео VGA <br> 3,5 мм стерео ввода <br> (1) Вывод сенсорного интерфейса USB 2.0 типа B | (1) USB-A <br> Mini-DisplayPort вывода видео <br> Ввод видео HDMI <br> USB-C с вводом DisplayPort <br> (4) USB-C (на дисплее) <br> RJ45 Gigabit Ethernet |
+|**Датчики**| (2) Пассивные инфракрасные датчики присутствия, датчики окружающего света | (2) Пассивные инфракрасные датчики присутствия, датчики окружающего света | Датчик заполняемости Doppler, <br> Акселерометр, <br> Гироскоп  |
+|**NFC**| Читатель NFC | Читатель NFC | Н/Д |
+|**Динамики**| (2) фронтальная стереодинамика | (2) фронтальная стереодинамика | Передняя часть полного диапазона, облицовка 3-х способов стереодинамики |
+|**Микрофон**| Высокой производительности, 4-элементный массив | Высокой производительности, 4-элементный массив | Полный массив микрофона MEMS с 8 элементами группы |
+|**Camera**| (2) Широкоугольный HD-камер 1080p @ 30 fps | (2) Широкоугольный HD-камер 1080p @ 30 fps | (1) Камера Microsoft Surface Hub 2, 4K, подключение USB-C, 90-градусное горизонтальное поле зрения                                                           |
+|**Перо**| (2) Powered, active, subpixel accuracy | (2) Powered, active, subpixel accuracy | (1) Microsoft Surface Hub 2 Pen (active) |
+|**Физические кнопки**| Power, Input Select, Volume, Brightness | Power, Input Select, Volume, Brightness | Power, Volume, Source |
 |**Программное обеспечение**| Windows 10 + Office (Word, PowerPoint, Excel) | Windows 10 + Office (Word, PowerPoint, Excel) | Windows 10 + Office (Word, PowerPoint, Excel) |
 
 > [!NOTE]
-> Средство NFC-сканеров, доступное в исходном Surface Hub, прекращается в Surface Hub 2 и больше не доступно.
+> Считыватель NFC, доступный в исходном surface Hub, прекращается в Surface Hub 2S и больше не доступен.
