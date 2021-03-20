@@ -22,7 +22,7 @@
 #### [Рабочий план настройки](setup-worksheet-surface-hub.md)
 #### [Обзор портов и клавиатуры Surface Hub 2S](surface-hub-2s-port-keypad-overview.md)
 #### [Подключение устройств к Surface Hub 2S](surface-hub-2s-connect.md)
-### [Подготовка среды для Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)
+### [Подготовка среды для использования Microsoft Surface Hub](prepare-your-environment-for-surface-hub.md)
 
 
 ## Развертывание
