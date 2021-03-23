@@ -14,12 +14,12 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 3/19/2021
-ms.openlocfilehash: 1fbbf899876d154469d48fa75a179196697205c1
-ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
+ms.openlocfilehash: 9c3302616de97cf60b7d750948fed653456a7cba
+ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "11442173"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442893"
 ---
 # <a name="wake-on-lan-for-surface-devices"></a><span data-ttu-id="d90c1-104">Пробуждение по локальной сети для устройств Surface</span><span class="sxs-lookup"><span data-stu-id="d90c1-104">Wake On LAN for Surface devices</span></span>
 
@@ -44,7 +44,7 @@ ms.locfileid: "11442173"
 <span data-ttu-id="d90c1-120">Многие решения управления, такие как Microsoft Endpoint Configuration Manager и сторонние приложения Microsoft Store, предоставляют встроенную поддержку WOL.</span><span class="sxs-lookup"><span data-stu-id="d90c1-120">Many management solutions, such as Microsoft Endpoint Configuration Manager and third party Microsoft Store apps provide built-in support for WOL.</span></span> <span data-ttu-id="d90c1-121">Обратите внимание, что устройства должны быть в режиме подключенного режима ожидания (sleep) и подключаться к власти переменного тока.</span><span class="sxs-lookup"><span data-stu-id="d90c1-121">Note that devices need to be in Connected Standby (Sleep) mode and connected to AC power.</span></span> <span data-ttu-id="d90c1-122">Дополнительные информацию о бодрствования устройствах с помощью диспетчера конфигурации конечной точки см. в этой ссылке [Configure Wake on LAN - Configuration Manager.](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan)</span><span class="sxs-lookup"><span data-stu-id="d90c1-122">To learn more about waking devices with Endpoint Configuration Manager, see [Configure Wake on LAN - Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan).</span></span>
 
 
-## <a name="to-check-wol-is-enabled-on-your-device"></a><span data-ttu-id="d90c1-123">Проверка включения WOL на устройстве</span><span class="sxs-lookup"><span data-stu-id="d90c1-123">To check WOL is enabled on your device</span></span>
+### <a name="to-check-wol-is-enabled-on-your-device"></a><span data-ttu-id="d90c1-123">Проверка включения WOL на устройстве</span><span class="sxs-lookup"><span data-stu-id="d90c1-123">To check WOL is enabled on your device</span></span>
 
 1. <span data-ttu-id="d90c1-124">На подключенной к Ethernet устройстве выберите сетевой адаптер и выберите **свойства.**</span><span class="sxs-lookup"><span data-stu-id="d90c1-124">On your Ethernet connected device, select your network adapter, and then select **Properties**.</span></span>
 

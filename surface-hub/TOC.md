@@ -44,7 +44,7 @@
 ### [Основные надстройки для Windows 10 Pro и Корпоративная в Surface Hub 2](surface-hub-2-essential-add-ons.md)
 ### [Установка обновления Windows 10 для совместной работы 2020](surface-hub-2020-update.md)  
 ### [Известные проблемы: обновление Windows 10 для совместной работы 2020](surface-hub-2020-team-update-known-issues.md)
-### [Настройка учетных записей администраторов, не являющихся глобальными, на Surface Hub 2S](surface-hub-2s-nonglobal-admin.md)
+### [Настройка учетных записей администраторов, не являющихся глобальными, на Surface Hub](surface-hub-2s-nonglobal-admin.md)
 ### [Установка и настройка нового браузера Microsoft Edge на Surface Hub](surface-hub-install-chromium-edge.md)        
 ### [Управление Surface Hub 2S с помощью Microsoft Intune](surface-hub-2s-manage-intune.md)
 ### [Локальное управление параметрами Surface Hub 2S](local-management-surface-hub-settings.md)
