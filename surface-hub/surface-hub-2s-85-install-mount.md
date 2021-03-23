@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/02/2020
+ms.date: 03/22/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 1fab09ef21dbddbb2b4f292acd716c6e6cbaff7e
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
+ms.openlocfilehash: 6224f9aa3abed85d5aff7e7e58fccbb6df41d283
+ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387492"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442913"
 ---
 # <a name="install-and-mount-surface-hub-2s-85"></a>Установка и установка Surface Hub 2S 85"
 
@@ -27,8 +27,6 @@ ms.locfileid: "11387492"
 - Перед началом просмотра просмотрите видео "Microsoft Surface Hub 2S 85" и "Настройка":
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwwgL]
-
-- Китайская версия этого видео доступна в приложении [B](#appendix-b-unboxing-video) ниже. 
 
 ## <a name="follow-all-safety-precautions"></a>Соблюдайте все меры предосторожности 
 
@@ -205,15 +203,6 @@ ms.locfileid: "11387492"
 > [!WARNING]
 >  **Правильная установка**<br>
 Чтобы избежать опасностей, связанных с неправильной установкой устройства, установка должна выполняться людьми, которые читали и понимали инструкцию по установке перед началом работы. Если у вас нет необходимого оборудования или опыта, или если вы не уверены, поверхность монтажа может надлежащим образом поддерживать консультации с профессиональным установщиком.
-
-
-## <a name="appendix-b-unboxing-video"></a>Приложение B. Unboxing video
-
-
-### <a name="microsoft-surface-hub-2s-85-unboxing-and-set-up-video-chinese"></a>Microsoft Surface Hub 2S 85" Unboxing and Set Up video (Chinese)
-
-> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV]
-
 
 ## <a name="more-information"></a>Дополнительные сведения
 
