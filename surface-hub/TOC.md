@@ -48,7 +48,7 @@
 ### [Установка и настройка нового браузера Microsoft Edge на Surface Hub](surface-hub-install-chromium-edge.md)        
 ### [Управление Surface Hub 2S с помощью Microsoft Intune](surface-hub-2s-manage-intune.md)
 ### [Локальное управление параметрами Surface Hub 2S](local-management-surface-hub-settings.md)
-### [Управление ротацией пароля учетной записи устройства](surface-hub-2s-manage-passwords.md)
+### [Управление ротацией пароля учетной записи устройства](password-management-for-surface-hub-device-accounts.md)
 ### [Управление обновлениями Windows](manage-windows-updates-for-surface-hub.md)
 ### [Использование Miracast в существующей беспроводной или локальной сети](miracast-over-infrastructure.md)
 ### [Сохранение ключа BitLocker](save-bitlocker-key-surface-hub.md)
