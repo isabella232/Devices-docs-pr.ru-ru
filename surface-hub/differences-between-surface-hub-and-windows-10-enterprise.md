@@ -7,16 +7,16 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 03/23/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: f3ffcc46912fba3313e4489f5713b6ffcacf2d8a
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
+ms.openlocfilehash: 9c76f9405146c5cda4afe6b46ce7e1cce0062682
+ms.sourcegitcommit: 88ce9e77afdc3d09984edc05286cd0f1eb054223
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387482"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "11448303"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>Основы операционной системы (Surface Hub)
 
@@ -71,26 +71,26 @@ ms.locfileid: "11387482"
 С некоторыми исключениями приложения универсальной платформы Windows (UWP) по умолчанию на Surface Hub также доступны на компьютерах с Windows 10.
 
 Предварительно установленные на Surface Hub приложения UWP:
+
 - Будильники и часы
 - Калькулятор
 - Connect
 - Excel Mobile
 - Центр отзывов
-- Проводник*
+- Проводник
 - Начало работы
 - Карты
 - Microsoft Edge
 - Microsoft Power BI
+- Microsoft Teams
+- Доска (Майкрософт)
 - OneDrive
 - Фотографии
 - PowerPoint Mobile
-- Параметры*
-- Skype для бизнеса*
+- Параметры
 - Магазин
-- Доска*
+- Советы
 - Word Mobile
-
-*Приложения, помеченные звездочкой (&ast;), являются уникальными для Surface Hub*
 
 *Это может повлиять на следующие политики организации:* <br> Используйте рекомендации для Windows 10 Корпоративная, чтобы определить компоненты и требования к сети для приложений по умолчанию на Surface Hub.
 
@@ -106,11 +106,11 @@ ms.locfileid: "11387482"
 
 Surface Hub реализует следующие функции безопасности Windows 10:
 - [Безопасная загрузка UEFI](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview)
-- [Целостность кода пользовательского режима (UMCI) с Device Guard](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
+- [Управление приложениями в Защитнике Windows и защита целостности кода на основе виртуализации](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
 - [Политики ограниченного использования приложений с AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview)
 - [Шифрование диска BitLocker](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview)
 - [Доверенный платформенный модуль (TPM)](https://technet.microsoft.com/itpro/windows/keep-secure/trusted-platform-module-overview)
-- [Защитник Windows](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10)
+- [Защитник Майкрософт](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10)
 - [Контроль учетных записей (UAC)](https://technet.microsoft.com/itpro/windows/keep-secure/user-account-control-overview) для доступа к приложению "Параметры"
 
 Дополнительную безопасность обеспечивают следующие функции Surface Hub:
@@ -121,6 +121,8 @@ Surface Hub реализует следующие функции безопас�
 - Загрузка расширенных драйверов Plug and Play отключена
 
 *Это может повлиять на следующие политики организации:* <br> Оценивая безопасность Surface Hub, примите во внимание следующие функции.
+
+Дополнительные сведения см. в [обзоре безопасности Surface Hub](surface-hub-security.md)
 
 ## <a name="management"></a>Управление
 
