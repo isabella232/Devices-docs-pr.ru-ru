@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: 19d3941e9fd13df437770bd75588d87eddcd30ac
-  ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
+  ms.openlocfilehash: 3eb4acb7d169a725cab3a5c1b70056495c0419b1
+  ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/01/2021
-  ms.locfileid: "11470437"
+  ms.lasthandoff: 04/02/2021
+  ms.locfileid: "11474796"
 landingContent:
 - title: Подготовьтесь к внедрению Surface Hub 2S
   linkLists:
@@ -73,8 +73,8 @@ landingContent:
       text: Настройка координированных собраний с помощью комнат Microsoft Teams и Surface Hub
     - url: surface-hub-2s-adoption-kit.md
       text: Внедрение Surface Hub 2S и обучение
-    - url: surface-hub-2s-account.md
-      text: Создание учетной записи устройства
+    - url: create-and-test-a-device-account-surface-hub.md
+      text: Создание и тестирование учетной записи устройства
 - title: Управление
   linkLists:
   - linkListType: learn

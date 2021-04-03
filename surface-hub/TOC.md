@@ -30,10 +30,10 @@
 ### [Первая настройка Surface Hub 2S](surface-hub-2s-setup.md)
 ### [Подключение устройств к Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Контрольный список развертывания Surface Hub 2S](surface-hub-2s-deploy-checklist.md)
-### [Создание учетной записи устройства Surface Hub 2S](surface-hub-2s-account.md)
+### [Создание и тестирование учетной записи устройства](create-and-test-a-device-account-surface-hub.md)
 ### [Создание пакетов подготовки для Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Развертывание приложений на Surface Hub 2S с помощью Intune](surface-hub-2s-deploy-apps-intune.md)
-### [Создание локальных учетных записей Surface Hub 2S с помощью PowerShell](surface-hub-2s-onprem-powershell.md)
+### [Создание локальных учетных записей Surface Hub 2S с помощью PowerShell](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
 ### [Приложение Surface Hub Teams](hub-teams-app.md)
 ### [Сертифицированные для Teams аксессуары для Surface Hub 2S](surface-hub-2s-certifications.md)
 
@@ -84,12 +84,10 @@
 
 ## Развертывание
 ### [Создание и тестирование учетной записи устройства](create-and-test-a-device-account-surface-hub.md)
-#### [Развертывание в сети](online-deployment-surface-hub-device-accounts.md)
-#### [Локальное развертывание (с одним лесом)](on-premises-deployment-surface-hub-device-accounts.md)
-#### [Локальное развертывание (с несколькими лесами)](on-premises-deployment-surface-hub-multi-forest.md)
+#### [Развертывание в сети](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+#### [Локальное развертывание (с одним лесом)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+#### [Локальное развертывание (с несколькими лесами)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments
 #### [Гибридное развертывание](hybrid-deployment-surface-hub-device-accounts.md)
-#### [Развертывание в сети или гибридное развертывание с помощью среды гибридной голосовой связи Skype](skype-hybrid-voice.md)
-#### [Создание учетной записи устройства с помощью пользовательского интерфейса](create-a-device-account-using-office-365.md)
 #### [Свойства Microsoft Exchange](exchange-properties-for-surface-hub-device-accounts.md)
 #### [Применение политик ActiveSync к учетным записям устройств](apply-activesync-policies-for-surface-hub-device-accounts.md)
 #### [Управление паролями](password-management-for-surface-hub-device-accounts.md)
