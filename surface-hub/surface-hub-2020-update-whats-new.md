@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/01/2021
+ms.date: 03/25/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 96452885e19adc9784bb8d14be8ac6f2f86e883d
-ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
+ms.openlocfilehash: 14e08cf099ac441f7b2b3b76366406868ac6c056
+ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "11442873"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470427"
 ---
 # <a name="whats-new-in-windows-10-team-2020-update"></a>Новые возможности обновления Windows 10 для совместной работы 2020
 
@@ -25,9 +25,18 @@ ms.locfileid: "11442873"
 ##  <a name="deployment-and-manageability"></a>Развертывание и управляемость
 
 - **Современная проверка подлинности для учетных записей облачных устройств.** Surface Hub поддерживает проверку подлинности на основе Exchange Web Services (EWS) и Active Directory Authentication Library (ADAL), чтобы подключиться к Exchange, что позволяет клиентам ухудшить использование базовой проверки подлинности. Дополнительные дополнительные информации см. в [сайте Modern authentication on Surface Hub.](https://docs.microsoft.com/surface-hub/surface-hub-modern-auth)
-- **Более 20 новых и обновленных**политик управления мобильными устройствами .      Эти политики дают ИТ-администраторам улучшенный контроль над несколькими настройками устройств, в том числе: обновлениями приложений из Microsoft Store, настройками беспроводных проекций, такими как Miracast над инфраструктурой, сетевыми настройками, такими как Quality-Of-Service и проводной проверкой подлинности 802.1x, а также новыми настройками конфиденциальности и GDPR. Дополнительные дополнительные информации см. в. 
-- [Управление Surface Hub с помощью Microsoft Intune.](surface-hub-2s-manage-intune.md)
-- [Политика поставщиков служб конфигурации (CSP), поддерживаемая Microsoft Surface Hub](https://docs.microsoft.com//windows/client-management/mdm/policy-csps-supported-by-surface-hub)
+- Более 20 новых и обновленных параметров политики управления мобильными **устройствами (MDM).**  Эти параметры политики дают ИТ-администраторам улучшенный контроль над несколькими настройками устройств, включая обновления приложений из Microsoft Store, параметры беспроводной проекции, такие как Miracast над инфраструктурой, сетевые параметры, такие как Quality-Of-Service и 802.1x проводной проверки подлинности, а также новые параметры конфиденциальности и GDPR. Новые поставщики служб конфигурации (CSP) включают: 
+
+  - [Поставщик служб конфигурации учетных записей](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) 
+  - [Брандмауэр-CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) 
+  - [Поставщик служб конфигурации RemoteWipe](https://docs.microsoft.com/windows/client-management/mdm/remotewipe-csp) 
+  - [Wifi-CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp) 
+  - [Wirednetwork-CSP](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) 
+
+Дополнительные дополнительные информации см. в. 
+- [CSPs, поддерживаемые в Microsoft Surface Hub](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)
+- [Управление surface Hub с поставщиком MDM](manage-settings-with-mdm-for-surface-hub.md)
+
 
 ##  <a name="azure-active-directory-joined-devices"></a>Устройства Azure Active Directory
 
@@ -51,7 +60,7 @@ ms.locfileid: "11442873"
 
 - **Поддержка согласованных собраний с Microsoft Teams.** В залах собраний с устройством Surface Hub и устройством Microsoft Teams Room или пространствами с двумя устройствами Surface Hub скоординированные собрания позволяют пользователям легко использовать оба устройства во время собрания Microsoft Teams. С помощью одного касания пользователи могут присоединяться к собранию с любого устройства и максимизировать экранную недвижимость, показывая видео-каналы на одном устройстве, а цифровую доску или контент на другом. Windows 10 Team 2020 Update добавляет поддержку управления мобильными устройствами (MDM) для настройки скоординированных собраний, и эта функция будет впоследствии выпущена в качестве обновления Microsoft Teams через Microsoft Store.To подробнее см. в статью Настройка скоординированных собраний с [Microsoft Teams Rooms и Surface Hub](https://docs.microsoft.com/microsoftteams/rooms/coordinated-meetings).
 
-## <a name="security"></a>Security
+## <a name="security"></a>Безопасность
 
 - **Вход без паролей с помощью ключей безопасности FIDO2**     С помощью ключей безопасности FIDO2 клиенты могут быстро и легко войти в Surface Hub без необходимости вводить имена пользователей и пароли. В сочетании с Sign-On (SSO) эта функция обеспечивает быструю и бесшовную проверку подлинности файлов, приложений и веб-сайтов во время собрания. Дополнительные дополнительные информации см. в [документе Configure Passwordless sign-in on Surface Hub.](https://docs.microsoft.com/surface-hub/surface-hub-2s-phone-authenticate)
 - **Улучшения для входов без паролей с помощью Microsoft Authenticator**.  Для организаций, которые используют Azure AD, пользователи могут использовать приложение Microsoft Authenticator для регистрации без необходимости вводить имена пользователей и пароли. Кроме того, пользователи могут войти с помощью предпочитаемых псевдонимов электронной почты в Azure AD в дополнение к основному имени пользователя (UPN). Дополнительные дополнительные ссылки см. [в документе Вход в Surface Hub с Помощью Microsoft Authenticator.](https://docs.microsoft.com/surface-hub/surface-hub-authenticator-app)

@@ -1,6 +1,6 @@
 ---
 title: Устранение распространенных проблем с Surface с помощью набора средств диагностики Surface для бизнеса
-description: На этой странице представлены общие сведения о средстве диагностики Surface для бизнеса, предназначенном для использования в коммерческих средах.
+description: На этой странице приводится введение в surface Diagnostic набор средств для бизнеса для использования в коммерческих средах.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -9,40 +9,40 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: cottmca
 manager: laurawi
+ms.date: 04/02/2021
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: a1a7d6fa2cb8bad676f0a65a933a4596ef918e7a
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: d5b593100f6c361ebd122ecdc4c9738624dd7272
+ms.sourcegitcommit: 879e80200aea26f6705c887fa392db5db35b99ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834264"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "11475083"
 ---
-# Устранение распространенных проблем с Surface с помощью набора средств диагностики Surface для бизнеса
+# <a name="fix-common-surface-problems-using-the-surface-diagnostic-toolkit-for-business"></a>Устранение распространенных проблем с Surface с помощью набора средств диагностики Surface для бизнеса
 
-Если ваша поверхность не работает должным образом, средство Microsoft Surface Diagnostic Toolkit для бизнеса поможет вам или администратору найти и решить проблемы.
-
-> [!NOTE]
-> Набор средств диагностики Surface для бизнеса создан для коммерческих устройств. Если устройство является персональным и не управляется вашей работой или учебным заведением, вместо этого запустите [набор средств диагностики Surface](https://support.microsoft.com/en-us/help/4037239/surface-fix-common-surface-problems-using-surface-diagnostic-toolkit) .
-
-## Запуск набора средств диагностики Surface для бизнеса
-
-Перед запуском диагностического средства убедитесь в том, что у вас установлены последние обновления для Windows. Дополнительные сведения можно найти в подразделе [Установка обновлений Surface и Windows 10](https://support.microsoft.com/en-us/help/4023505/surface-install-surface-and-windows-updates) . Если это не помогло устранить проблему, необходимо запустить средство диагностики.
+Если surface не работает должным образом, служба диагностики поверхности Майкрософт набор средств для бизнеса может помочь вам или администратору найти и решить проблемы.
 
 > [!NOTE]
-> Набор средств диагностики Surface для бизнеса работает только на устройствах Surface, работающих под управлением Windows 10. Она не работает на устройствах Surface Pro, Surface Pro 2 и Surface, настроенных в режиме S.
+> Surface Diagnostic набор средств для бизнеса создан для коммерческих устройств. Если ваше устройство является личным устройством и не управляется вашей работой или школой, запустите surface [Diagnostic набор средств.](https://support.microsoft.com/en-us/help/4037239/surface-fix-common-surface-problems-using-surface-diagnostic-toolkit)
 
-**Чтобы запустить средство диагностики Surface для бизнеса, выполните указанные ниже действия.**
+## <a name="run-the-surface-diagnostic-toolkit-for-business"></a>Запуск surface Diagnostic набор средств для бизнеса
 
-1. Скачайте набор средств диагностики Surface для бизнеса. Для этого перейдите на [страницу Загрузка **средств Surface для ИТ** ](https://www.microsoft.com/download/details.aspx?id=46703), нажмите кнопку **скачать**, выберите **набор средств диагностики Surface для бизнеса** из предоставленного списка и нажмите кнопку **Далее**.
-2. Нажмите кнопку выполнить и следуйте инструкциям на экране. Подробные сведения можно найти в статье [Развертывание набора средств диагностики Surface для бизнеса](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business).
+Перед запуском средства диагностики убедитесь, что у вас есть последние обновления Windows. Дополнительные сведения можно получить в обновлении Surface и [Windows 10.](https://support.microsoft.com/en-us/help/4023505/surface-install-surface-and-windows-updates) Если это не решит проблему, необходимо запустить средство диагностики.
 
-Среднее время диагностики и восстановления, выраженное в течение 15 минут, но может занять не более часа (в зависимости от скорости Интернет-соединения и количество обновлений или необходимых исправлений). 
+> [!NOTE]
+> Surface Diagnostic набор средств для бизнеса работает только на устройствах Surface под управлением Windows 10. Он не работает на устройствах Surface Pro, Surface Pro 2 или Surface, настроенных в режиме S.
 
-## Если вам по-прежнему нужна помощь
+**Для запуска surface Diagnostic набор средств для бизнеса:**
 
-Если средство диагностики Surface для бизнеса не устранило проблему, вы также можете выполнить указанные ниже действия.
+1. Скачайте surface Diagnostic набор средств для бизнеса. Для этого перейдите на страницу [ **Surface Tools для** ](https://www.microsoft.com/download/details.aspx?id=46703)скачивания ИТ,выберите скачать, выберите Surface Diagnostic **набор средств** для бизнеса из предоставленного списка и выберите **** **Далее**.
+2. Выберите выполнить и следуйте инструкциям на экране. Дополнительные сведения со ссылкой на [Deploy Surface Diagnostic набор средств для бизнеса.](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business)
 
-- Сделайте встречу в магазине: мы можем устранить проблему или предоставить замену в местном магазине Майкрософт. [Найдите Microsoft Store рядом с вами](https://www.microsoft.com/store/locations/find-a-store?WT.mc_id=MSC_Solutions_en_us_scheduleappt).
-- Обратитесь в службу поддержки пользователей: Если вы хотите поговорить с кем-то о том, как устранить проблему, [обратитесь к нам](https://support.microsoft.com/en-us/help/4037645/contact-surface-warranty-and-software-support-for-business).
-- Служба Surface Service: Если вашей Surface требуется услуга, [запросите ее в сети](https://mybusinessservice.surface.com/). 
+Время диагностики и ремонта в среднем составляет 15 минут, но может занять час или больше, в зависимости от скорости подключения к Интернету и количества обновлений или требуемого ремонта. 
+
+## <a name="if-you-still-need-help"></a>Если вам по-прежнему нужна помощь
+
+Если surface Diagnostic набор средств для бизнеса не исправит проблему, вы также можете:
+
+- Обратитесь в службу поддержки клиентов. Если вы хотите поговорить с кем-либо о том, как устранить проблему, свяжитесь [с нами.](https://support.microsoft.com/en-us/help/4037645/contact-surface-warranty-and-software-support-for-business)
+- Получите службу Surface. Если вашему продукту Surface нужна служба, [задайте запрос в Интернете.](https://mybusinessservice.surface.com/) 

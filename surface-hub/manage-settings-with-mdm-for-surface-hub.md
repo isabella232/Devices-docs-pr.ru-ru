@@ -10,269 +10,177 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 03/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: d09a95d25b4f4ae86d64acd7d7f16f004f991ce3
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
+ms.openlocfilehash: 1afa4d63dde793e61e30d1c4dd54f552b5581a81
+ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387494"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470465"
 ---
-# <a name="manage-settings-with-an-mdm-provider-surface-hub"></a>Управление параметрами с помощью поставщика MDM (Surface Hub)
+# <a name="manage-surface-hub-with-an-mdm-provider"></a>Управление surface Hub с поставщиком MDM
 
-Surface Hub и другие устройства с Windows 10 позволяют ИТ-администраторам управлять параметрами и политиками с помощью службы управления мобильными устройствами (MDM). Встроенный компонент управления взаимодействует с сервером управления, поэтому нет необходимости устанавливать на устройстве дополнительные клиенты. Дополнительные сведения см. в разделе [Управление мобильными устройствами с Windows 10](https://msdn.microsoft.com/library/windows/hardware/dn914769.aspx).
+Surface Hub позволяет ИТ-администраторам управлять настройками и политиками с помощью поставщика управления мобильными устройствами (MDM), например Microsoft Intune. Surface Hub имеет встроенный компонент управления для связи с сервером управления. Нет необходимости устанавливать дополнительные клиенты на устройстве.
 
-Surface Hub была проверена у поставщиков MDM майкрософт:
-- Исключительно Microsoft Intune
-- Локальное управление MDM с Microsoft Endpoint Configuration Manager
+## <a name="enrolling-surface-hub-into-mdm-management"></a>Регистрация Surface Hub в управлении MDM 
 
-Также можно управлять устройствами Surface Hub с помощью сторонних служб MDM, которые могут взаимодействовать с Windows 10 по протоколу MDM.
-
-## <a name="enroll-a-surface-hub-into-mdm"></a><a href="" id="enroll-into-mdm"></a>Регистрация Surface Hub в MDM
-Вы можете записать свои концентраторы Surface с помощью массовой, ручной или автоматической регистрации.
-
-### <a name="bulk-enrollment"></a>Массовая регистрация
-**Настройка массовой регистрации**
-- Surface Hub поддерживает [поставщик служб конфигурации подготовки](https://msdn.microsoft.com/library/windows/hardware/mt203665.aspx) для массовой регистрации в службе MDM. Дополнительные сведения см. в разделе [Массовая регистрация Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt613115.aspx).<br>
---ИЛИ--
-- Если у вас есть локальной инфраструктуры Microsoft [Endpoint Configuration Manager,](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)см. в примере Как массово зарегистрировать устройства с помощью локального управления мобильными устройствами в Microsoft Endpoint Configuration Manager.
+Вы можете зарегистрироваться Surface в Microsoft Intune или другом поставщике MDM с помощью ручной или автоматической регистрации.
 
 ### <a name="manual-enrollment"></a>Регистрация вручную
-**Настройка регистрации вручную**
-1. На Surface Hub откройте приложение **Параметры**.
-2. Введите учетные данные администратора устройства.
-3. Выберите **Это устройство** и перейдите в раздел **Управление устройствами**.
-4. В разделе **Управление устройствами** выберите **+ Управление устройствами**.
-5. Выполните инструкции в диалоговом окне, чтобы подключиться к службе MDM.
 
-### <a name="automatic-enrollment-via-azure-active-directory-join"></a>Автоматическая регистрация с помощью присоединиться к Azure Active Directory
+1. Откройте приложение **Параметры** и вопишитесь в качестве локального администратора. Выберите **управление устройствами Surface**  >  **Hub,** а затем **выберите управление устройствами**.
+2. Вам будет предложено войти в учетную запись для использования для поставщика MDM. После проверки подлинности устройство автоматически регистрируется у поставщика MDM.
 
-Surface Hub теперь поддерживает возможность автоматической регистрации в Intune, присоединив устройство к Azure Active Directory. 
+> [!TIP]
+> Если вы используете Intune и адрес сервера не обнаружен, введите **manage.microsoft.com.**
+   
+> [!NOTE]
+>  Регистрация MDM использует сведения учетной записи, предоставленные для проверки подлинности. Учетная запись должна иметь разрешения на регистрацию устройства Windows, а также лицензии Intune (или эквивалентные промиссии регистрации, настроенные в стороном поставщике MDM).
 
-Первым шагом является настройка автоматической регистрации MDM. См. [функцию Включить автоматическую регистрацию в Windows 10.](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
+### <a name="auto-enrollment--azure-ad-affiliated"></a>Автозачисление — филиал Azure AD
 
-Затем, когда устройства настроены во время первого запуска, выберите параметр присоединиться к Azure Active Directory, см. в странице Настройка администраторов [для этой страницы устройства.](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub#set-up-admins-for-this-device-page)
+Во время начального процесса настройки при подстройке Surface Hub с клиентом Azure Active Directory (AD) с включенной автоматической регистрацией Intune устройство автоматически зарегистрируется в Intune. Чтобы узнать больше, обратитесь к методам регистрации [Intune для устройств Windows.](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods) Связывание с Azure AD и автоматическая регистрация в Intune требуются для того, чтобы Surface Hub было "соответствующим требованиям устройством" в Intune. 
 
-## <a name="manage-surface-hub-settings-with-mdm"></a>Управление параметрами Surface Hub с помощью MDM
+## <a name="manage-surface-hub-windows-10-team-settings-with-intune"></a>Управление настройками команды Surface Hub Windows 10 с помощью Intune
 
-Можно использовать MDM для управления некоторыми [параметрами поставщика служб конфигурации Surface Hub](#supported-surface-hub-csp-settings) и некоторыми [параметрами Windows 10](#supported-windows-10-settings). В зависимости от используемой службы MDM можно настроить эти параметры с использованием встроенного пользовательского интерфейса или развернув пользовательский SyncML. Microsoft Intune и Microsoft Endpoint Configuration Manager предоставляют встроенные возможности для создания шаблонов политики для Surface Hub. Обратитесь к документации поставщика MDM, чтобы узнать, как создавать и развертывать SyncML.
-
-### <a name="supported-surface-hub-csp-settings"></a>Поддерживаемые параметры поставщика служб конфигурации Surface Hub
-
-С помощью MDM можно настроить параметры Surface Hub в следующей таблице. В таблице определяется, поддерживается ли параметр с помощью Microsoft Intune, Microsoft Endpoint Configuration Manager или SyncML.
-
-Дополнительные сведения см. в разделе [Поставщик служб конфигурации SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323). 
+Основой управления настройками политик в Intune и других поставщиков MDM является протокол open Mobile Alliance-Device (OMA-DM) на основе XML. Windows 10 реализует XML OMA-DM с помощью одного из многих доступных поставщиков служб конфигурации (CSPs) с именами, как AccountManagement CSP, DeviceStatus CSP, Wirednetwork-CSP и так далее. Для полного списка обратитесь к [CSP, поддерживаемые в Microsoft Surface Hub.](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)
 
 
-|                                     Параметр                                      |                                                    Узел в поставщике служб конфигурации SurfaceHub                                                    |            Поддержка<br>Intune?             |    Поддержка<br>Configuration Manager?     | Поддержка<br>SyncML\*? |
-|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-|                                Часы обслуживания                                 |                        MaintenanceHoursSimple/Hours/StartTime <br> MaintenanceHoursSimple/Hours/Duration                         |                       Да                        |                       Да                       |             Да             |
-|              Автоматическое включение экрана с помощью датчиков движения               |                                                 InBoxApps/Welcome/AutoWakeScreen                                                 |                       Да                        |                       Да                       |             Да             |
-|                      Требовать PIN-код для беспроводной проекции                       |                                             InBoxApps/WirelessProjection/PINRequired                                             |                       Да                        |                       Да                       |             Да             |
-|                            Включение беспроводной проекции                            |                                               InBoxApps/WirelessProjection/Enabled                                               |                       Да                        | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                 Канал Miracast для использования беспроводной проекции                  |                                               InBoxApps/WirelessProjection/Channel                                               |                       Да                        | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|              Подключение к рабочей области Operations Management Suite               |                                         MOMAgent/WorkspaceID <br> MOMAgent/WorkspaceKey                                          |                       Да                        | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                         Фоновое изображение экрана приветствия                          |                                             InBoxApps/Welcome/CurrentBackgroundPath                                              |                       Да                        | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|               Сведения о собрании, отображаемые на приветственном экране                |                                               InBoxApps/Welcome/MeetingInfoOption                                                |                       Да                        | Да.<br> [Используйте настраиваемый параметр.] (#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager |             Да             |
-|                      Понятное имя для беспроводной проекции                       |                                                     Properties/FriendlyName                                                      | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                   Учетная запись устройства                                                 | DeviceAccount/*`<name_of_policy>`* <br> См. раздел [Поставщик служб конфигурации SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). |                        Нет                        |                       Нет                        |             Да             |
-|                               Укажите домен Skype                               |                                              InBoxApps/SkypeForBusiness/DomainName                                               |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|               Автоматический запуск приложения Connect при инициировании проекции               |                                                   InBoxApps/Connect/AutoLaunch                                                   |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                                Задайте громкость по умолчанию                                |                                                     Properties/DefaultVolume                                                     |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                                Задайте время ожидания для экрана                                |                                                     Properties/ScreenTimeout                                                     |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                               Установите время ожидания для сеанса                                |                                                    Properties/SessionTimeout                                                     |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                                Время ожидания перехода в режим сна                                 |                                                     Properties/SleepTimeout                                                      |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                   Разрешите возобновление сеанса после перехода экрана в неактивное состояние                   |                                                  Properties/AllowSessionResume                                                   |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|             Разрешите использование учетной записи устройства для проверки подлинности прокси-сервера             |                                                  Properties/AllowAutoProxyAuth                                                   |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-| Отключите автоматическое заполнение данных о приглашенных из запланированных собраний в диалоговом окне входа |                                               Properties/DisableSignInSuggestions                                                |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|              Отключите функцию "Мои собрания и файлы" в меню "Пуск"               |                                              Properties/DoNotShowMyMeetingsAndFiles                                              |                    Да </br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                     Установка LanProfile для проверки подлинности по стандарту безопасности 802.1x в проводной сети                     |                                                         Dot3/LanProfile                                                          | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                    Установка EapUserData для проверки подлинности по стандарту безопасности 802.1x в проводной сети                     |                                                         Dot3/EapUserData                                                         | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
+Microsoft Intune и другие поставщики MDM используют CSPs для доставки пользовательского интерфейса, который позволяет настраивать параметры политики в профилях конфигурации. Intune использует CSP Surface Hub для встроенного в профиль — ограничения устройств  **(Windows 10 Team)** — позволяя настраивать основные параметры, такие как предотвращение "пробуждения" Surface Hub всякий раз, когда кто-либо перемещается поблизости в пределах его близости. Чтобы управлять настройками и функциями концентратора вне встроенного профиля Intune, необходимо использовать настраиваемый профиль, как показано [ниже.](#create-custom-configuration-profile) 
 
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-### <a name="supported-windows-10-settings"></a>Поддерживаемые параметры Windows 10
-
-Помимо характерных для Surface Hub параметров существует множество параметров, характерных для всех устройств Windows10. Эти параметры определены в [Справочнике по поставщикам служб конфигурации](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference). 
-
-В следующих таблицах представлены сведения о параметрах Windows 10, которые были проверены для Surface Hub. Составлена таблица с параметрами для следующих областей: безопасность, браузер, обновления Windows, Защитник Windows, удаленная перезагрузка, сертификаты и журналы. Каждая таблица определяет, поддерживается ли параметр с помощью Microsoft Intune, Microsoft Endpoint Configuration Manager или SyncML.
-
-#### <a name="security-settings"></a>Параметры безопасности
-
-|      Параметр       |                                            Подробности                                             |                                                                          Справочник по CSP                                                                           |            Поддержка<br>Intune?             |    Поддержка<br>Configuration Manager?     | Поддержка<br>SyncML\*? |
-|--------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-|  Разрешить Bluetooth   |                      Оставьте этот параметр включенным для поддержки периферийных устройств Bluetooth.                       |                   [Connectivity/AllowBluetooth](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Connectivity_AllowBluetooth)                   |                    Да. <br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-| Политики Bluetooth | Используйте, чтобы задать имя устройства Bluetooth и заблокировать рекламу, обнаружение и автоматическое связывание. |                     Bluetooth/*`<name of policy>`* <br> См. раздел [Поставщик служб конфигурации политики](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx)                      |                    Да. <br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|    Разрешите использование камеры    |                           Оставьте этот параметр включенным для Skype для бизнеса.                            |                            [Camera/AllowCamera](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Camera_AllowCamera)                            |                    Да. <br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|   Разрешить расположение   |                        Оставьте этот параметр включенным для поддержки приложений, таких как "Карты".                         |                          [System/AllowLocation](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowLocation)                          |                   Да. <br> .                    | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|  Разрешить телеметрию   |                    Оставьте этот параметр включенным, чтобы помочь Майкрософт в совершенствовании Surface Hub.                    |                         [System/AllowTelemetry](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#System_AllowTelemetry)                         |                    Да. <br>                     | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|  Разрешите USB-устройства  |                     Оставьте этот параметр включенным, чтобы поддерживать USB-устройства на Surface Hub                     | [System/AllowStorageCard](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#system-allowstoragecard) | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows. 
-
-#### <a name="browser-settings"></a>Параметры обозревателя
-
-|                          Параметр                          |                                                                        Подробности                                                                        |                                                                             Справочник по CSP                                                                              |            Поддержка<br>Intune?             |    Поддержка<br>Configuration Manager?     | Поддержка<br>SyncML\*? |
-|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-|                         Домашние страницы                         |                                               Используется для настройки домашних страниц по умолчанию в Microsoft Edge.                                               |                                [Browser/Homepages](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_Homepages)                                | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                       Разрешить файлы cookie                       |                    Surface Hub автоматически удаляет файлы cookie в конце сеанса. Используйте это для блокирования cookie во время сеанса.                     |                             [Browser/AllowCookies](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowCookies)                             | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                   Разрешить средства разработчика                   |                                                   Используйте, чтобы заблокировать использование средств разработчика F12 пользователями.                                                   |                      [Browser/AllowDeveloperTools](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowDeveloperTools)                      | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                    Allow Do Not Track                     |                                                          Используйте для включения функции неотслеживания заголовков.                                                          |                          [Browser/AllowDoNotTrack](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowDoNotTrack)                          | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                       Разрешить всплывающие окна                       |                                                         Используйте для блокирования всплывающих окон в браузере.                                                          |                              [Browser/AllowPopups](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowPopups)                              | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                 Разрешить варианты поиска                  |                                                  Используйте для блокирования вариантов поиска в адресной строке.                                                  |       [Browser/AllowSearchSuggestionsinAddressBar](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSearchSuggestionsinAddressBar)       | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|                     Разрешить Защитник Windows SmartScreen                     |                                                       Чтобы включить эту возможность, Защитник Windows SmartScreen.                                                       |                         [Browser/AllowSmartScreen](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSmartScreen)                         | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-| Предотвращение игнорирования Защитник Windows SmartScreen для веб-сайтов |     Чтобы получить дополнительную безопасность, используйте для того, чтобы пользователи не Защитник Windows smartScreen и не получили доступ к потенциально вредоносным веб-сайтам.     |         [Browser/PreventSmartScreenPromptOverride](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverride)         | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|  Предотвращение игнорирования Защитник Windows SmartScreen для файлов   | Для дополнительной безопасности используйте для того, чтобы пользователи не Защитник Windows smartScreen и не загружали непроверенные файлы из Microsoft Edge. | [Browser/PreventSmartScreenPromptOverrideForFiles](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverrideForFiles) | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-#### <a name="windows-update-settings"></a>Параметры Центра обновления Windows
-
-|                      Параметр                      |                                                                                                           Подробности                                                                                                            |                                                                    Справочник по CSP                                                                    |            Поддержка<br>Intune?             |    Поддержка<br>Configuration Manager?     | Поддержка<br>SyncML\*? |
-|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-| Использование Current Branch и Current Branch for Business |                                                       Используйте для настройки Центра обновления Windows для бизнеса— см. раздел [Обновления Windows](manage-windows-updates-for-surface-hub.md).                                                       |            [Update/BranchReadinessLevel](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_BranchReadinessLevel)             | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|               Отсрочка обновлений компонентов               |                                                                                                          См. выше.                                                                                                          | [Update/ DeferFeatureUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferFeatureUpdatesPeriodInDays) | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|               Отсрочка исправлений               |                                                                                                          См. выше.                                                                                                          | [Update/DeferQualityUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferQualityUpdatesPeriodInDays)  | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|               Приостановка обновлений компонентов               |                                                                                                          См. выше.                                                                                                          |             [Update/PauseFeatureUpdates](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_PauseFeatureUpdates)              | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|               Приостановка исправлений               |                                                                                                          См. выше.                                                                                                          |             [Update/PauseQualityUpdates](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_PauseQualityUpdates)              | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|           Настройка устройства для использования служб WSUS            |                                            Используйте для подключения устройства Surface Hub к WSUS вместо Центра обновления Windows— см. раздел [Обновления Windows](manage-windows-updates-for-surface-hub.md).                                             |                [Update/UpdateServiceUrl](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_UpdateServiceUrl)                 | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|               Оптимизация доставки               | Используйте одноранговый обмен содержимым, чтобы свести к минимуму проблемы с пропускной способностью во время обновлений. См. подробные сведения в разделе [Настройка оптимизации доставки для Windows 10](https://technet.microsoft.com/itpro/windows/manage/waas-delivery-optimization). |         DeliveryOptimization/*`<name of policy>`* <br> См. раздел [Поставщик служб конфигурации политики](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx)          | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-#### <a name="windows-defender-settings"></a>Параметры Защитника Windows
-
-|      Параметр      |                                              Подробности                                               |                                                     Справочник по CSP                                                      |            Поддержка<br>Intune?             |    Поддержка<br>Configuration Manager?     | Поддержка<br>SyncML\*? |
-|-------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-| Политики Защитника |            Используйте для настройки различных параметров Защитника, включая время запланированного сканирования.            | Defender/*`<name of policy>`* <br> См. раздел [Поставщик служб конфигурации политики](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-|  Состояние Защитника  | Используйте для инициалов проверки Defender, принудительного обновления сведении безопасности, запроса любых обнаруженных угроз. |                   [Поставщик служб конфигурации Defender](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx)                    |                       Да                        |                       Да                       |             Да             |
-
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-#### <a name="remote-reboot"></a>Удаленная перезагрузка
-
-|                       Параметр                        |                                                          Подробности                                                          |                                                             Справочник по CSP                                                             |            Поддержка<br>Intune?             |    Поддержка<br>Configuration Manager?     | Поддержка<br>SyncML\*? |
-|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-|            Перезагрузите устройство немедленно.             | Используйте совместно с Azure Monitor, чтобы свести к минимуму затраты на поддержку — см. в видеоролике [Monitor your Microsoft Surface Hub.](monitor-surface-hub.md) |        ./Vendor/MSFT/Reboot/RebootNow <br> См. раздел [Перезагрузка поставщика служб конфигурации](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx)        |                       Да                        |                       Нет                        |             Да             |
-|    Перезагрузите устройство в запланированную дату и время    |                                                        См. выше.                                                         |     ./Vendor/MSFT/Reboot/Schedule/Single <br> См. раздел [Перезагрузка поставщика служб конфигурации](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx)     | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-| Перезагружайте устройство ежедневно в запланированную дату и время |                                                        См. выше.                                                         | ./Vendor/MSFT/Reboot/Schedule/DailyRecurrent <br> См. раздел [Перезагрузка поставщика служб конфигурации](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-#### <a name="install-certificates"></a>Установка сертификатов
-
-|             Параметр             |                           Подробности                            |                                           Справочник по CSP                                            |                                                         Поддержка<br>Intune?                                                          |                                                                  Поддержка<br>Configuration Manager?                                                                  | Поддержка<br>SyncML\*? |
-|---------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| Установка сертификатов доверенного ЦС | Используйте для развертывания сертификатов доверенных корневых и промежуточных ЦС. | [Поставщик служб конфигурации RootCATrustedCertificates](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | Да. <br> См. раздел [Настройка профилей сертификата Intune](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles). | Да. <br> Узнайте, [как создать профили сертификатов в Microsoft Endpoint Configuration Manager.](https://docs.microsoft.com/configmgr/protect/deploy-use/create-certificate-profiles) |             Да             |
-
-<!--
-| Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
--->
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-#### <a name="collect-logs"></a>Собирать журналы
-
-|     Параметр      |                      Подробности                       |                                     Справочник по CSP                                      | Поддержка<br>Intune? | Поддержка<br>Configuration Manager? | Поддержка<br>SyncML\*? |
-|------------------|----------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------|------------------------------------------|-----------------------------|
-| Сбор журналов трассировки событий Windows | Используйте для удаленного сбора журналов трассировки событий Windows из Surface Hub. | [Поставщик служб конфигурации DiagnosticLog](https://msdn.microsoft.com/library/windows/hardware/mt219118.aspx) |            Нет             |                    Нет                    |             Да             |
-
-<!--
-| Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-#### <a name="set-network-quality-of-service-qos-policy"></a>Настройка политики качества обслуживания сети (QoS)
-
-|        Параметр         |                                                            Подробности                                                             |                                                    Справочник по CSP                                                     |            Поддержка<br>Intune?             |    Поддержка<br>Configuration Manager?     | Поддержка<br>SyncML\*? |
-|------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-| Настройка политики качества обслуживания сети | Используйте этот параметр, чтобы настроить политику качества обслуживания сети для выполнения набора действий с сетевым трафиком. Это полезно для определения приоритета сетевых пакетов Skype. | [NetworkQoSPolicy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-#### <a name="set-network-proxy"></a>Установка прокси-сервера сети
-
-|      Параметр      |                               Подробности                               |                                                Справочник по CSP                                                 |            Поддержка<br>Intune?             |    Поддержка<br>Configuration Manager?     | Поддержка<br>SyncML\*? |
-|-------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-| Установка прокси-сервера сети | NetworkProxy CSP позволяет настраивать прокси-сервер для соединений Wi-Fi и Ethernet. | [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp) | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-#### <a name="configure-start-menu"></a>Настройка меню "Пуск"
-
-|       Параметр        |                                                                       Подробности                                                                        |                                                        Справочник по CSP                                                         |            Поддержка<br>Intune?             |    Поддержка<br>Configuration Manager?     | Поддержка<br>SyncML\*? |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-| Настройка меню "Пуск" | Используется для настройки приложений, отображаемых в меню "Пуск". Дополнительные сведения см. в разделе [Настройка меню "Пуск" Surface Hub](surface-hub-start-menu.md) | [CSP политики: Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout) | Да <br> [Используйте пользовательскую политику.](#example-manage-surface-hub-settings-with-microsoft-intune) | Да.<br> [Используйте пользовательский параметр.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Да             |
-
-\*Параметры, поддерживаемые SyncML, также можно настроить в пакете подготовки конструктора конфигураций Windows.
-
-### <a name="generate-oma-uris-for-settings"></a>Создание универсальных кодов ресурса OMA для параметров 
-Для создания настраиваемой политики в Intune или настраиваемого параметра в Microsoft Endpoint Configuration Manager необходимо использовать OMA URI параметра параметра.
-
-**Создание универсального кода ресурса OMA для любого параметра в документации поставщика служб конфигурации**
-1. В документации поставщика служб конфигурации идентифицируйте корневой узел CSP. Как правило, он выглядит следующим образом: `./Vendor/MSFT/<name of CSP>` <br>
-*Например, корневой узел [поставщика служб конфигурации SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx) — `./Vendor/MSFT/SurfaceHub`.*
-2. Определите путь к узлу для нужного параметра. <br>
-*Например, путь к узлу для параметра, позволяющего включить беспроводную проекцию, — `InBoxApps/WirelessProjection/Enabled`.*
-3. Добавьте путь к узлу в корневой узел, чтобы создать универсальный код ресурса OMA. <br>
-*Например, универсальный код ресурса OMA для параметра, включающего беспроводную проекцию,— это `./Vendor/MSFT/SurfaceHub/InBoxApps/WirelessProjection/Enabled`.*
-
-Этот тип данных также указан в документации поставщика служб конфигурации. Самые распространенные типы данных:
-- char (строка)
-- int (целое)
-- bool (логическое)
+Чтобы резюмировать, параметры настройки и управления настройками политики в Intune включают следующие: 
+ 
+- **Создайте профиль ограничений устройства.** Используйте встроенный intune в профиле и настраивать параметры непосредственно в пользовательском интерфейсе Intune. См. [в странице Создание профиля ограничения устройств.](#create-device-restriction-profile)
+- **Создание профиля конфигурации устройства.**  Выберите шаблон, ориентированный на определенные функции или технологии, такие как Microsoft Defender или сертификаты безопасности. См. [профиль конфигурации устройства](#create-device-configuration-profile).
+- **Создание настраиваемой конфигурации профиля.**  Расширяйте область управления с помощью единого идентификатора ресурсов OMA (OMA URI) из любого центра [CSP,](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)поддерживаемого в Microsoft Surface Hub. См. [создание настраиваемой конфигурации](#create-custom-configuration-profile)профиля .
 
 
-## <a name="example-manage-surface-hub-settings-with-microsoft-intune"></a>Пример: управление параметрами Surface Hub с использованием Microsoft Intune
+## <a name="create-device-restriction-profile"></a>Создание профиля ограничения устройств
 
-Microsoft Intune можно использовать для управления параметрами Surface Hub. Для пользовательских параметров следуйте инструкциям в разделе [Настройка пользовательских параметров устройства в Microsoft Intune](https://docs.microsoft.com/intune/custom-settings-configure). В поле **Платформа** выберите **Windows 10 и более поздние версии**, а в поле **Тип профиля** выберите **Ограничения устройств (Windows 10 для совместной работы)**.
+1. Во входе [**в центр администрирования Microsoft Endpoint Manager**](https://endpoint.microsoft.com/)выберите профили **конфигурации**устройств  >  ****  >  **+** **Создать профиль**.
+2. В **платформе**выберите **Windows 10 и более поздние версии** >
+3. В соответствии с типом *****Profile**выберите** **Шаблоны,** а затем выберите ограничения устройства **(Windows 10 Team)**
+4. Выберите **Создание,** добавьте имя и выберите **Далее.**
+6. Теперь вы можете просматривать и выбирать из заранее заданной параметров ограничения устройств для Surface Hub в следующих категориях: Приложения и опыт, оперативные сведения Azure, обслуживание, сеанс и беспроводная проекция. В примере, показанном на следующем рисунке, указывается 4-часовое окно обслуживания и 15-минутное время для возобновления работы экрана, сна и сеанса.
+
+     ![Настройка параметров Surface Hub с профилем ограничения устройств Intune](images/sh-device-restrictions.png)
+
+Дополнительные сведения о создании и управлении профилями см. в странице Ограничение возможностей устройств [с помощью политики в Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-configure#create-the-profile)
+ 
+Дополнительные сведения об управлении функциями и настройками Surface Hub см. в сведениях об ограничениях устройств [Surface Hub Windows 10 Team в Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10-teams)
+ 
+
+## <a name="create-device-configuration-profile"></a>Создание профиля конфигурации устройства
+
+1. Во входе [**в центр администрирования Microsoft Endpoint Manager**](https://endpoint.microsoft.com/)выберите профили конфигурации устройств + ****  >  ****  >  **Создайте профиль**.
+2. В **платформе**выберите **Windows 10 и более поздние версии** >
+3. В **типе Profile**выберите **Шаблоны** и выберите следующие шаблоны, поддерживаемые в Surface Hub:
+
+    - Ограничения устройств (Windows 10 Team), как описано в предыдущем [разделе.](#create-device-restriction-profile)
+    - Защитник Microsoft для конечной точки (Windows 10 Desktop)
+    - Сертификат PKCS
+    - Импортируемый сертификат PKCS
+    - Сертификат SCEP
+    - Доверенный сертификат
+
+## <a name="create-custom-configuration-profile"></a>Создание настраиваемой конфигурации профиля
+
+Можно расширить область управления, [](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure) создав настраиваемый профиль с помощью URI OMA из любого из [CSP,](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)поддерживаемых в Microsoft Surface Hub. Каждый параметр в CSP имеет соответствующий OMA-URI, который можно установить с помощью пользовательских профилей конфигурации в Intune. Дополнительные сведения о CSP, поддерживаемых Surface Hub, можно ссылаться на следующие ресурсы: 
+
+- [Справочник по поставщикам служб конфигурации](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)
+- [Политика поставщиков служб конфигурации (CSP), поддерживаемая Microsoft Surface Hub](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
+- [Поставщик служб конфигурации SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+> [!NOTE]
+> Управление учетной записью устройства с помощью параметров [службы CSP SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp) в настоящее время невозможно с помощью Intune и требует использования стороннего поставщика MDM.
+
+Чтобы реализовать параметры политики на основе CSP, начните с создания URI OMA, а затем добавьте его в настраиваемый профиль конфигурации в Intune.
+
+### <a name="generate-oma-uri-for-target-setting"></a>Создание URI OMA для целевого параметра
+ 
+Для создания URI OMA для любого параметра:
+
+1. В [документации CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)определите корневой узел CSP. Как правило, это выглядит **как ./Vendor/MSFT/ <name of CSP> **. 
+    - **Пример:** Корневой узел [CSP SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp) **— ./Vendor/MSFT/SurfaceHub.**
+2. Определите путь к узлу для нужного параметра. 
+    - **Пример:** Путь узла для параметра для включения беспроводной проекции **— InBoxApps/WirelessProjection/Enabled.**
+3. Добавьте путь к узлу в корневой узел, чтобы создать универсальный код ресурса OMA. 
+    - **Пример:** URI OMA для параметра для включения беспроводной проекции **является ./Vendor/MSFT/SurfaceHub/InBoxApps/WirelessProjection/Enabled.**
+4. Этот тип данных также указан в документации поставщика служб конфигурации. Самые распространенные типы данных:
+    - char (строка)
+    - int (целое)
+    - bool (логическое)
+
+### <a name="add-oma-uri-to-custom-configuration-profile"></a>Добавление URI OMA в настраиваемый профиль конфигурации
+
+1. В Endpoint Manager выберите **профили**  >  **конфигурации устройств**  >  **Создание профиля**.
+2. Под платформой выберите **Windows 10 и более поздний.** В профиле выберите **Настраиваемый,** а затем выберите **Создать.**
+3. Добавьте имя и необязательное описание, а затем выберите **Далее.**
+4. В **параметрах Конфигурация**  >  **OMA-URI Параметры**выберите **Добавить**.
+
+  
+## <a name="manage-specific-surface-hub-features"></a>Управление определенными функциями Surface Hub
+
+В этом разделе освещаются сведения о функциях, которые можно управлять с помощью Intune или другого поставщика MDM. К ним относятся:
+
+- [Качество обслуживания (QoS)](#quality-of-service-settings)
+- [Microsoft Teams и Skype для бизнеса](#microsoft-teams-and-skype-for-business-settings)
+
+### <a name="quality-of-service-settings"></a>Качество параметров службы
+
+Чтобы обеспечить оптимальное качество видео и звука на Surface Hub, добавьте на устройство следующие параметры QoS. 
+
+| Имя | Описание | OMA-URI | Тип | Значение |
+|:------ |:------------- |:--------- |:------ |:------- |
+|**Звуковые порты**| Диапазон звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DestinationPortMatchCondition | Строка  | 3478-3479 |
+|**DSCP звука**| Маркировка звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | целое число | 46 |
+|**Видеопорт**| Диапазон видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DestinationPortMatchCondition | Строка  | 3480 |
+|**DSCP видео**| Маркировка видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DSCPAction | целое число | 34 |
+|**Общий порт**| Диапазон общего доступа к порту | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DestinationPortMatchCondition | Строка  | 3481 |
+|**Совместное использование DSCP**| Разметка портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsSharing/DSCPAction | целое число | 18 |
+|**Звуковые порты P2P**| Диапазон звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DestinationPortMatchCondition | Строка  | 50000-50019 |
+|**DSCP звука P2P**| Маркировка звуковых портов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DSCPAction | целое число | 46 |
+|**Видеопорты P2P**| Диапазон видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DestinationPortMatchCondition | Строка  | 50020-50039 |
+|**DSCP видео P2P**| Маркировка видеопортов | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DSCPAction | целое число | 34 |
+|**P2P Sharing Ports**| Диапазон общего доступа к порту | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DestinationPortMatchCondition | Строка  | 50040-50059 |
+|**P2P Sharing DSCP**| Разметка портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PSharing/DSCPAction | целое число | 18 |
 
 
+#### <a name="skype-for-business-qos-settings"></a>Параметры качества обслуживания Skype для бизнеса
 
-## <a name="example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager"></a>Пример: управление настройками Surface Hub с помощью Microsoft Endpoint Configuration Manager
-Configuration Manager поддерживает управление современными устройствами, для управления ими которых не требуется клиент Configuration Manager, в том числе Surface Hub. Если вы уже используете Диспетчер конфигурации для управления другими устройствами в организации, вы можете продолжать использовать консоль Configuration Manager в качестве единого расположения для управления концентраторами Surface.
+| Имя                 | Описание           | OMA-URI                                                                    | Тип    | Значение                          |
+| -------------------- | --------------------- | -------------------------------------------------------------------------- | ------- | ------------------------------ |
+| Звуковые порты          | Диапазон звуковых портов      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/SourcePortMatchCondition    | Строка  | 50000-50019                    |
+| DSCP звука           | Маркировка звуковых портов   | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/DSCPAction                  | целое число | 46                             |
+| Источник звука   | Имя приложения Skype        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/AppPathNameMatchCondition   | Строка  | Microsoft.PPISkype.Windows.exe |
+| Видеопорты          | Диапазон видеопортов      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition    | Строка  | 50020-50039                    |
+| DSCP видео           | Маркировка видеопортов   | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/DSCPAction                  | целое число | 34                             |
+| Источник видео   | Имя приложения Skype        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/AppPathNameMatchCondition   | Строка  | Microsoft.PPISkype.Windows.exe |
+| Общий доступ к портам        | Диапазон общего доступа к порту    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/SourcePortMatchCondition  | Строка  | 50040-50059                    |
+| Совместное использование DSCP         | Разметка портов общего доступа | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/DSCPAction                | целое число | 18                             |
+| Общий доступ к источнику мультимедиа | Имя приложения Skype        | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBSharing/AppPathNameMatchCondition | Строка  | Microsoft.PPISkype.Windows.exe |
 
 > [!NOTE]
-> Эти инструкции основаны на текущей ветви диспетчера конфигурации.
+> Обе таблицы содержат диапазоны портов, используемые по умолчанию. Администраторы могут изменить диапазоны портов в панели управления Skype для бизнеса и Teams.
 
-**Создание элемента конфигурации для параметров Surface Hub**
+### <a name="microsoft-teams-and-skype-for-business-settings"></a>Параметры Microsoft Teams и Skype для бизнеса
 
-1. В рабочей области **Активы и соответствие** консоли Configuration Manager щелкните **Обзор** > **Параметры соответствия** > **Элементы конфигурации**.
-2. На вкладке **Домашняя** в группе **Создание** щелкните **Создать элемент конфигурации**.
-3. На странице **Общие** мастера создания элементов конфигурации укажите имя и необязательное описание элемента конфигурации.
-4. В разделе **Параметры для устройств, управляемых без использования клиента Configuration Manager** выберите **Windows 8.1 и Windows 10**, а затем нажмите кнопку **Далее**.
+Вы можете создать настраиваемый профиль конфигурации для управления согласованными собраниями teams, proximity Join и другими функциями. Дополнительные дополнительные информации см. в [веб-сайте Управление конфигурацией Microsoft Teams в Surface Hub.](https://docs.microsoft.com/microsoftteams/rooms/surface-hub-manage-config)
 
-    ![пример пользовательского интерфейса](images/configmgr-create.png)
-5. На странице **Поддерживаемые платформы** разверните **Windows 10** и выберите **Все Windows 10 для совместной работы и выше**. Отмените выбор других платформ Windows и нажмите кнопку **Далее**.
+#### <a name="changing-default-business-communications-platform"></a>Изменение платформы бизнес-коммуникаций по умолчанию
 
-    ![выбор платформы](images/configmgr-platform.png)
-7. На странице **Параметры устройства** в разделе **Группы параметров устройств** выберите **Windows 10 для совместной работы**.
+Платформа бизнес-коммуникаций по умолчанию в Surface Hub варьируется в зависимости от установки обновления Windows 10 Team 2020 (она же Windows 10 20H2). При повторном изображении Surface Hub в Windows 10 20H2 Microsoft Teams будет назначена по умолчанию, а функциональные возможности Skype для бизнеса доступны (режим 1). Если вы обновите концентратор из более ранней версии ОС, Skype для бизнеса останется по умолчанию, а функции Teams доступны (Режим 0), если только вы не настроили Teams в качестве по умолчанию. 
 
+Чтобы изменить установку по умолчанию, используйте [настраиваемый профиль,](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure) установив режим командного приложения следующим образом:  
 
-8. На странице **Windows 10 для совместной работы** настройте требуемые параметры.
+- Режим 0 — Skype для бизнеса с функциональностью Microsoft Teams для запланированных собраний.
+- Режим 1 — Microsoft Teams с функциональностью Skype для бизнеса для запланированных собраний.
+- Режим 2 — только Microsoft Teams.
 
-    ![Windows 10 для совместной работы](images/configmgr-team.png)
-9. Для управления параметрами, которые недоступны на странице Windows 10 для рабочих групп, потребуется создать пользовательские параметры. На странице **Параметры устройства** установите флажок **Настроить дополнительные параметры, которые не входят в группы параметров по умолчанию**.
-
-    ![дополнительные параметры](images/configmgr-additional.png)
-10. На странице **Дополнительные параметры** щелкните **Добавить**.
-11. В диалоговом окне **Обзор параметров** щелкните **Создать параметр**.
-12. В диалоговом окне **Создание параметра** на вкладке **Общие** укажите имя и необязательное описание пользовательского параметра.
-13. В разделе **Тип параметра**выберите **Универсальный код ресурса OMA**.
-14. Заполните форму, чтобы создать новый параметр, а затем нажмите кнопку **ОК**.
-
-    ![параметр OMA URI](images/configmgr-oma-uri.png)
-15. В диалоговом окне **Обзор параметров** в разделе **Доступные параметры** выберите новый созданный параметр и нажмите **Выбрать**.
-16. В диалоговом окне **Создание правила** заполните форму, чтобы указать правил для параметра, а затем нажмите кнопку **ОК**.
-17. Повторите шаги с 9 по 15 для каждого пользовательского параметра, который требуется добавить в элемент конфигурации.
-18. Когда все будет готово, в диалоговом окне **Обзор параметров** щелкните **Закрыть**.
-19. Завершите работу мастера. <br> Новый элемент конфигурации можно просмотреть в узле **Элементы конфигурации** рабочей области **Активы и соответствие**.
-
-Дополнительные сведения см. в статьи Создание элементов конфигурации [для устройств Windows 8.1 и Windows 10,](https://docs.microsoft.com/configmgr/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)управляемых без клиента Microsoft Endpoint Configuration Manager.
-
-## <a name="related-topics"></a>Статьи по теме
-
-[Управление Microsoft Surface Hub](manage-surface-hub.md)
-
+| Имя | Описание | OMA-URI | Тип | Значение |
+|:--- |:--- |:--- |:--- |:--- |
+|**ИД приложения Teams**|Имя приложения|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|Строка| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
+|**Режим приложения Teams**|Режим Teams|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|целое число| 0 или 1 или 2|
 
 
 

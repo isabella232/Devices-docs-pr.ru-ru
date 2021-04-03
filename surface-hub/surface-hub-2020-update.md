@@ -1,6 +1,6 @@
 ---
 title: Установка обновления Windows 10 для совместной работы 2020
-description: Получите последнее обновление операционной системы Surface Hub, Windows 10 Для команды 2020.
+description: Получите последнее обновление операционной системы Surface Hub , Windows 10 Team 2020 Update.
 keywords: Разделяйте значения запятыми
 ms.prod: surface-hub
 ms.sitesec: library
@@ -14,64 +14,64 @@ ms.localizationpriority: Medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 291a2eda0c1fa6e5e2fd2240861c8570d00054df
-ms.sourcegitcommit: 7029e80d9ca1a3de5c336cf662e566ed4b6b3e7a
+ms.openlocfilehash: 4d68f751bd15ef6529bcd16a6305d8c682970747
+ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "11319183"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470417"
 ---
-# Установка обновления Windows 10 для совместной работы 2020 
+# <a name="install-windows-10-team-2020-update"></a>Установка обновления Windows 10 для совместной работы 2020 
 
-Новая операционная система Surface Hub , **Windows 10 Team 2020 Update**, основанная на Windows 10 версии 20H2, теперь доступна для Surface Hub 2S и исходного Surface Hub (v1). 
+Новая операционная система Surface **Hub, Windows 10 Team 2020 Update,** основанная на Windows 10 версии 20H2, теперь доступна для Surface Hub 2S и исходного Surface Hub (v1). 
 
-- См. также: [известные проблемы: Windows 10 Для команды 2020 с обновлением](surface-hub-2020-team-update-known-issues.md)
+- См. также: [Известные проблемы: Обновление Windows 10 Team 2020](surface-hub-2020-team-update-known-issues.md)
 
-## Распространение
+## <a name="distribution"></a>Распределение
 
-Получить Обновление Windows 2020 можно одним из следующих способов:
+Обновление Windows 2020 можно получить с помощью одного из следующих методов:
 
-- **Windows Update for Business**.
-- **Образ восстановления без системы (BMR).** Рекомендуемый вариант для клиентов, которые присоединяются к Azure Active Directory на своих устройствах или не могут получать обновления из Интернета. Чтобы при начать работу, скачайте [образ восстановления для surface.](https://support.microsoft.com/surfacerecoveryimage)
+- **Обновление Windows для бизнеса**.
+- **Изображение восстановления голого металла (BMR).** Рекомендуемый вариант для клиентов, присоединивших свои устройства к Azure Active Directory или не позволяющих их устройствам получать обновления из Интернета. Чтобы начать работу, [см. в рисунке Download a recovery image for your Surface.](https://support.microsoft.com/surfacerecoveryimage)
 - **Центр обновления Windows.** Доступность зависит от региона или страны, как отмечено в следующей таблице:
 
-| Этап | Страна или регион                         | Запуск          |
+| Этап | Страна или регион                         | Начало          |
 | ----- | -------------------------------------- | ----------------- |
 | 1     | NZ, Австралия, Канада, Бельгия, Мексика | Октябрь 2020 г.  |
-| 2     | Соединенное Королевство, Япония, Швейцария, Италия          | Ноябрь 2020 г. |
-| 3     | США, Германия                            | Конец февраля 2021 г. |
-| 4     | Глобальный                                 | Конец февраля 2021 г. |
+| 2     | Великобритания, Япония, Швейцария, Италия          | Ноябрь 2020 г. |
+| 3     | Германия, Нидерланды                   | Конец февраля 2021 г. |
+| 4     | Глобальный                                 | Начало марта 2021 г. |
 
-## Обслуживание Surface Hub с Windows 10 Team Edition версии 1703 
+## <a name="servicing-surface-hubs-with-windows-10-team-edition-version-1703"></a>Обслуживание концентраторов Surface с Windows 10 Team Edition версии 1703 
 
-Полная поддержка обслуживания [Windows 10 Team Edition версии 1703](https://support.microsoft.com/topic/november-12-2019-kb4525245-os-build-15063-2172-dfc81b85-11a6-54ef-4370-11408193419f) запланирована на 16 марта 2021 г.
+Полная поддержка обслуживания [Windows 10 Team Edition версии 1703](https://support.microsoft.com/topic/november-12-2019-kb4525245-os-build-15063-2172-dfc81b85-11a6-54ef-4370-11408193419f) будет продолжаться до 16 марта 2021 г.
 
-### Устройства 2S 
+### <a name="2s-devices"></a>Устройства 2S 
 
-Клиенты во всех регионах могут по-прежнему обновлять свои устройства Surface Hub 2S до обновления 2020 с помощью Центра обновления Windows для бизнеса или образа восстановления системы (BMR), как поясняется в процедуре сброса и восстановления [для Surface Hub 2S.](surface-hub-2s-recover-reset.md)
+Клиенты во всех регионах могут обновить свои устройства Surface Hub 2S до обновления 2020 г. с помощью обновления Windows, обновления Windows для бизнеса или с помощью изображения восстановления голого металла (BMR), как это объясняется в сбросе и восстановлении [surface Hub 2S.](surface-hub-2s-recover-reset.md)
 
-### Устройства V1 
+### <a name="v1-devices"></a>Устройства V1 
 
-Клиенты во всех регионах теперь могут обновить свои устройства Surface Hub версии 1 до версии 2020 с помощью средства [восстановления Surface Hub.](surface-hub-recovery-tool.md) Другие методы обновления этих устройств до Обновления Windows 10 для группы 2020 скоро станут доступны. Дополнительные узнать см. в блоге [Для ИТ-профессионалов Surface.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655)
+Клиенты во всех регионах могут обновить свои устройства Surface Hub v1 до обновления 2020 г. с помощью обновления Windows, обновления Windows для бизнеса или с помощью средства восстановления [surface Hub.](surface-hub-recovery-tool.md) Для получения обновления необходимо установить KB5000749. Дополнительные дополнительные сообщения см. в [блоге Surface IT Pro.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-hub-v1-status/ba-p/2118371)
  
-## Новые возможности
+## <a name="whats-new"></a>Новые возможности
 
-Обновление Windows 10 для совместной работы 2020 позволяет существенно улучшить развертывание устройств и возможность управления ими, а также новейшие функции Windows 10. Чтобы узнать больше, см. новые [возможности Обновления Windows 10 для группы 2020.](surface-hub-2020-update-whats-new.md)
+Обновление Windows 10 Team 2020 позволяет существенно улучшить развертывание и управляемость устройств наряду с последними функциями Windows 10. Дополнительные новости см. [в новой версии обновления Windows 10 Team 2020.](surface-hub-2020-update-whats-new.md)
  
-## Перед началом работы
+## <a name="before-you-begin"></a>Перед началом работы
 
-Перед установкой Обновления Windows 10 для группы 2020 необходимо сохранить ключ BitLocker, связанный с устройством. 
+Перед установкой обновления Windows 10 Team 2020 убедитесь, что вы сохраните ключ BitLocker, связанный с устройством. 
 
-**Сохранение ключа BitLocker вручную**
+**Вручную сохранить ключ BitLocker**
 
 1. Вставьте USB-накопитель в Surface Hub.
-2. На Surface Hub откройте **"Параметры"** и введите учетные данные администратора при запросе.
-3. Перейдите к **обновлению &**  >  **безопасности.**
-4. В **bitLocker выберите** **"Сохранить".** Ключ BitLocker сохранен в текстовый файл на USB-накопителе.
+2. В Surface Hub откройте **параметры** и введите учетные данные администратора при запросе.
+3. Перейдите к **обновлению &**  >  **восстановления безопасности.**
+4. В **BitLocker выберите** **Сохранить**. Ключ BitLocker сохранен в текстовом файле на USB-диске.
 
-Дополнительные узнать [см. в под ключе Save your BitLocker.](save-bitlocker-key-surface-hub.md)
+Дополнительные дополнительные информации [см. в см. в ленте Сохранить ключ BitLocker.](save-bitlocker-key-surface-hub.md)
 
-## Подробнее
+## <a name="learn-more"></a>Подробнее
 
 - [Новые возможности обновления Windows 10 для совместной работы 2020](surface-hub-2020-update-whats-new.md)
-- [Обновление до выпуска Windows 10 для совместной работы](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655)
+- [Обновление до выпуска Windows 10 для совместной работы](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-february-status/ba-p/2118369)

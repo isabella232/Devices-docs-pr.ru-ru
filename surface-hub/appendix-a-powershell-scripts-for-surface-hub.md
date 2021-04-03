@@ -1,6 +1,6 @@
 ---
 title: PowerShell для Surface Hub (v1)
-description: На этой странице содержатся сценарии PowerShell, предназначенные для исходного Surface Hub (версия 1)
+description: На этой странице содержатся скрипты PowerShell, предназначенные для исходного концентратора Surface Hub (v1)
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -14,17 +14,17 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
-ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
+ms.openlocfilehash: bf130c2707de4507a76f0c0d6f711af3082a7647
+ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "11317983"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474756"
 ---
-# PowerShell для Surface Hub (v1)
+# <a name="powershell-for-surface-hub-v1"></a>PowerShell для Surface Hub (v1)
 
 > [!NOTE]
- >На этой странице содержатся сценарии PowerShell, предназначенные для исходного Surface Hub (версия 1). Последние сценарии создания учетных записей для Surface Hub 2S см. в записи создания учетной записи устройства [Surface Hub 2S.](surface-hub-2s-account.md)
+ >На этой странице содержатся скрипты PowerShell, предназначенные для исходного концентратора Surface Hub (v1). Последние сценарии создания учетных записей для Surface Hub 2S см. в руб. Создание и тестирование [учетной записи устройства.](create-and-test-a-device-account-surface-hub.md)
 
 -   [Сценарии PowerShell для администраторов Surface Hub](#scripts-for-admins)
     -   [Создание локальной учетной записи](#create-on-premises-ps-scripts)
@@ -38,9 +38,9 @@ ms.locfileid: "11317983"
     -   [Прием внешних приглашений на собрание](#accept-ext-meetings-cmdlet)
     
  > [!NOTE]
- > См. [также современные сценарии auth и unattended в Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
+ > См. [также современные сценарии Auth и Unattended в Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
 
-## Что вам понадобится
+## <a name="prerequisites"></a>Что вам понадобится
 
 Для успешного выполнения этих сценариев PowerShell необходимо установить следующие компоненты:
 
@@ -48,7 +48,7 @@ ms.locfileid: "11317983"
 - [модуль Microsoft Azure Active Directory для Windows PowerShell (64-разрядная версия);](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
 - [модуль Windows PowerShell для Skype для бизнеса Online.](https://www.microsoft.com/download/details.aspx?id=39366)
 
-## <a href="" id="scripts-for-admins"></a>Сценарии PowerShell для администраторов Surface Hub
+## <a name="powershell-scripts-for-surface-hub-administrators"></a><a href="" id="scripts-for-admins"></a>Сценарии PowerShell для администраторов Surface Hub
 
 Что делают сценарии?
 
@@ -64,15 +64,15 @@ ms.locfileid: "11317983"
 > [!NOTE]
 > При создании новой или изменении существующей учетной записи сценарий проверки позволит убедиться, что учетная запись устройства настроена правильно. Всегда запускайте сценарий проверки, прежде чем добавлять учетную запись устройства на Surface Hub.
 
-## Запуск сценариев
+## <a name="running-the-scripts"></a>Запуск сценариев
 
 Сценарии создания учетной записи выполняют следующие действия:
 
 -   Запрос учетных данных администратора.
--   Создайте учетные записи устройств в домене или клиенте.
--   Создайте или назначьте политику ActiveSync, совместимую с Surface Hub, учетным записям устройств.
+-   Создание учетных записей устройств в домене или клиенте.
+-   Создайте или назначьте на учетную запись устройства политику ActiveSync, совместимую с Surface Hub.
 -   настраивают различные атрибуты для созданных учетных записей в Exchange и Skype для бизнеса;
--   Назначьте лицензии и разрешения созданным учетным записям.
+-   Назначение лицензий и разрешений созданной учетной записи(ы).
 
 Сценарии задают следующие атрибуты:
 
@@ -183,15 +183,14 @@ ms.locfileid: "11317983"
 </tbody>
 </table>
 
-## Сценарии создания учетной записи
+## <a name="account-creation-scripts"></a>Сценарии создания учетной записи
 
 Эти сценарии создают учетную запись устройства. Вы можете использовать [сценарий проверки учетной записи](#acct-verification-ps-scripts), чтобы убедиться, что сценарий был выполнен успешно.
 
 Сценарии создания учетной записи не могут изменить уже существующую учетную запись, но позволяют понять, какие командлеты нужно выполнить, чтобы правильно настроить существующую учетную запись.
 
-### <a href="" id="create-on-premises-ps-scripts"></a>Создание локальной учетной записи
+### <a name="create-an-on-premises-account"></a><a href="" id="create-on-premises-ps-scripts"></a>Создание локальной учетной записи
 
-Создает учетную запись, как описано в разделе [Локальное развертывание](on-premises-deployment-surface-hub-device-accounts.md).
 
 ```PowerShell
 # SHAccountCreateOnPrem.ps1
@@ -549,9 +548,9 @@ else
 }
 ```
 
-### <a href="" id="create-os356-ps-scripts"></a>Создание учетной записи устройства с помощью Office 365
+### <a name="create-a-device-account-using-office-365"></a><a href="" id="create-os356-ps-scripts"></a>Создание учетной записи устройства с помощью Office 365
 
-Создает учетную запись, как описано в [описании создания учетной записи устройства с помощью Office 365.](create-a-device-account-using-office-365.md)
+Создает учетную запись, описанную в ["Создание учетной записи устройства" с помощью Office 365.](create-and-test-a-device-account-surface-hub.md)
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -994,9 +993,9 @@ else
 }
 ```
 
-## <a href="" id="acct-verification-ps-scripts"></a>Сценарий проверки учетной записи
+## <a name="account-verification-script"></a><a href="" id="acct-verification-ps-scripts"></a>Сценарий проверки учетной записи
 
-Этот сценарий проверяет ранее созданную учетную запись устройства на Surface Hub и Surface Hub 2S независимо от того, какой метод использовался для ее создания. Этот сценарий предоставляет оценку типа "успешно/ошибка". Если появляется одна из ошибок, отображается подробное сообщение об ошибке, но если все тесты пройдены успешно, конечным результатом будет сводный отчет. Например:
+Этот скрипт проверяет ранее созданную учетную запись устройства в Surface Hub и Surface Hub 2S, независимо от того, какой метод был использован для ее создания. Этот сценарий предоставляет оценку типа "успешно/ошибка". Если появляется одна из ошибок, отображается подробное сообщение об ошибке, но если все тесты пройдены успешно, конечным результатом будет сводный отчет. Например:
 
 ```console
 15 tests executed
@@ -1445,7 +1444,7 @@ Write-Host -ForegroundColor Green $Global:iTotalPasses "passes "
 Cleanup
 ```
 
-## <a href="" id="enable-sfb-ps-scripts"></a>Включение Skype для бизнеса
+## <a name="enable-skype-for-business"></a><a href="" id="enable-sfb-ps-scripts"></a>Включение Skype для бизнеса
 
 Этот сценарий включает Skype для бизнеса для учетной записи устройства. Используйте его, только если Skype для бизнеса не был включен ранее при создании учетной записи.
 
@@ -1605,9 +1604,9 @@ PrintSuccess "Successfully enabled $strRoomUri as a Skype for Business meeting r
 Cleanup
 ```
 
-## Полезные командлеты
+## <a name="useful-cmdlets"></a>Полезные командлеты
 
-### <a href="" id="create-compatible-as-policy"></a>Создание политики ActiveSync, совместимой с Surface Hub
+### <a name="creating-a-surface-hub-compatible-activesync-policy"></a><a href="" id="create-compatible-as-policy"></a>Создание политики ActiveSync, совместимой с Surface Hub
 
 Чтобы устройство Surface Hub могло использовать службы Exchange, необходимо подготовить на нем учетную запись устройства с совместимой политикой ActiveSync. Эта политика применяет следующие требования:
 
@@ -1645,7 +1644,7 @@ Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### Разрешение идентификаторов устройств для ActiveSync
+### <a name="allowing-device-ids-for-activesync"></a>Разрешение идентификаторов устройств для ActiveSync
 
 Чтобы разрешить учетную запись `$strRoomUpn`, выполните следующую команду:
 
@@ -1661,7 +1660,7 @@ Get-ActiveSyncDevice -Mailbox $strRoomUpn
 
 При этом будут получены сведения для каждого устройства, на котором была подготовлена эта учетная запись, в том числе свойство `DeviceId`.
 
-### <a href="" id="auto-accept-meetings-cmdlet"></a>Автоматический прием и отклонение приглашений на собрание
+### <a name="auto-accepting-and-declining-meeting-requests"></a><a href="" id="auto-accept-meetings-cmdlet"></a>Автоматический прием и отклонение приглашений на собрание
 
 Чтобы учетная запись устройства автоматически принимала или отклоняла приглашения на собрания в зависимости от доступности, для атрибута **AutomateProcessing** следует задать значение **AutoAccept**. Это рекомендуется для предотвращения пересекающихся собраний.
 
@@ -1669,12 +1668,12 @@ Get-ActiveSyncDevice -Mailbox $strRoomUpn
 Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 ```
 
-### <a href="" id="accept-ext-meetings-cmdlet"></a>Прием внешних приглашений на собрание
+### <a name="accepting-external-meeting-requests"></a><a href="" id="accept-ext-meetings-cmdlet"></a>Прием внешних приглашений на собрание
 
 Чтобы учетная запись устройства принимала внешние приглашения на собрание (приглашения от учетных записей из другого клиента или домена), необходимо разрешить ей обработку внешних приглашений на собрание. После этого учетная запись будет автоматически принимать или отклонять приглашения на собрание от внешних и локальных учетных записей.
 
 > [!Note]
-> Если атрибут **AutomateProcessing** не имеет значения **AutoAccept,** то установка этого параметра не будет действовать.
+> Если атрибут **AutomateProcessing** не настроен на **AutoAccept,** то установка этого не будет иметь эффекта.
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true
