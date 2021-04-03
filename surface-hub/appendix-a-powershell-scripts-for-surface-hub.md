@@ -1,6 +1,6 @@
 ---
 title: PowerShell для Surface Hub (v1)
-description: На этой странице содержатся сценарии PowerShell, предназначенные для исходного Surface Hub (версия 1)
+description: На этой странице содержатся скрипты PowerShell, предназначенные для исходного концентратора Surface Hub (v1)
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -14,67 +14,67 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
-ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
+ms.openlocfilehash: bf130c2707de4507a76f0c0d6f711af3082a7647
+ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "11317983"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474756"
 ---
-# <span data-ttu-id="2fd74-104">PowerShell для Surface Hub (v1)</span><span class="sxs-lookup"><span data-stu-id="2fd74-104">PowerShell for Surface Hub (v1)</span></span>
+# <a name="powershell-for-surface-hub-v1"></a><span data-ttu-id="7f359-104">PowerShell для Surface Hub (v1)</span><span class="sxs-lookup"><span data-stu-id="7f359-104">PowerShell for Surface Hub (v1)</span></span>
 
 > [!NOTE]
- ><span data-ttu-id="2fd74-105">На этой странице содержатся сценарии PowerShell, предназначенные для исходного Surface Hub (версия 1).</span><span class="sxs-lookup"><span data-stu-id="2fd74-105">This page includes PowerShell scripts intended for the original Surface Hub (v1).</span></span> <span data-ttu-id="2fd74-106">Последние сценарии создания учетных записей для Surface Hub 2S см. в записи создания учетной записи устройства [Surface Hub 2S.](surface-hub-2s-account.md)</span><span class="sxs-lookup"><span data-stu-id="2fd74-106">For the latest account creation scripts for Surface Hub 2S, see [Create Surface Hub 2S device account](surface-hub-2s-account.md).</span></span>
+ ><span data-ttu-id="7f359-105">На этой странице содержатся скрипты PowerShell, предназначенные для исходного концентратора Surface Hub (v1).</span><span class="sxs-lookup"><span data-stu-id="7f359-105">This page includes PowerShell scripts intended for the original Surface Hub (v1).</span></span> <span data-ttu-id="7f359-106">Последние сценарии создания учетных записей для Surface Hub 2S см. в руб. Создание и тестирование [учетной записи устройства.](create-and-test-a-device-account-surface-hub.md)</span><span class="sxs-lookup"><span data-stu-id="7f359-106">For the latest account creation scripts for Surface Hub 2S, see [Create and test a device account](create-and-test-a-device-account-surface-hub.md).</span></span>
 
--   [<span data-ttu-id="2fd74-107">Сценарии PowerShell для администраторов Surface Hub</span><span class="sxs-lookup"><span data-stu-id="2fd74-107">PowerShell scripts for Surface Hub admins</span></span>](#scripts-for-admins)
-    -   [<span data-ttu-id="2fd74-108">Создание локальной учетной записи</span><span class="sxs-lookup"><span data-stu-id="2fd74-108">Create an on-premises account</span></span>](#create-on-premises-ps-scripts)
-    -   [<span data-ttu-id="2fd74-109">Создание учетной записи устройства с помощью Office 365</span><span class="sxs-lookup"><span data-stu-id="2fd74-109">Create a device account using Office 365</span></span>](#create-os356-ps-scripts)
-    -   [<span data-ttu-id="2fd74-110">Сценарий проверки учетной записи</span><span class="sxs-lookup"><span data-stu-id="2fd74-110">Account verification script</span></span>](#acct-verification-ps-scripts)
-    -   [<span data-ttu-id="2fd74-111">Включение Skype для бизнеса (EnableSfb.ps1)</span><span class="sxs-lookup"><span data-stu-id="2fd74-111">Enable Skype for Business (EnableSfb.ps1)</span></span>](#enable-sfb-ps-scripts)
--   [<span data-ttu-id="2fd74-112">Полезные командлеты</span><span class="sxs-lookup"><span data-stu-id="2fd74-112">Useful cmdlets</span></span>](#useful-cmdlets)
-    -   [<span data-ttu-id="2fd74-113">Создание политики Exchange ActiveSync, совместимой с Surface Hub</span><span class="sxs-lookup"><span data-stu-id="2fd74-113">Creating a Surface Hub-compatible Exchange ActiveSync policy</span></span>](#create-compatible-as-policy)
-    -   [<span data-ttu-id="2fd74-114">Разрешение идентификаторов устройств для ActiveSync</span><span class="sxs-lookup"><span data-stu-id="2fd74-114">Allowing device IDs for ActiveSync</span></span>](#allowing-device-ids-for-activesync)
-    -   [<span data-ttu-id="2fd74-115">Автоматический прием и отклонение приглашений на собрание</span><span class="sxs-lookup"><span data-stu-id="2fd74-115">Auto-accepting and declining meeting requests</span></span>](#auto-accept-meetings-cmdlet)
-    -   [<span data-ttu-id="2fd74-116">Прием внешних приглашений на собрание</span><span class="sxs-lookup"><span data-stu-id="2fd74-116">Accepting external meeting requests</span></span>](#accept-ext-meetings-cmdlet)
+-   [<span data-ttu-id="7f359-107">Сценарии PowerShell для администраторов Surface Hub</span><span class="sxs-lookup"><span data-stu-id="7f359-107">PowerShell scripts for Surface Hub admins</span></span>](#scripts-for-admins)
+    -   [<span data-ttu-id="7f359-108">Создание локальной учетной записи</span><span class="sxs-lookup"><span data-stu-id="7f359-108">Create an on-premises account</span></span>](#create-on-premises-ps-scripts)
+    -   [<span data-ttu-id="7f359-109">Создание учетной записи устройства с помощью Office 365</span><span class="sxs-lookup"><span data-stu-id="7f359-109">Create a device account using Office 365</span></span>](#create-os356-ps-scripts)
+    -   [<span data-ttu-id="7f359-110">Сценарий проверки учетной записи</span><span class="sxs-lookup"><span data-stu-id="7f359-110">Account verification script</span></span>](#acct-verification-ps-scripts)
+    -   [<span data-ttu-id="7f359-111">Включение Skype для бизнеса (EnableSfb.ps1)</span><span class="sxs-lookup"><span data-stu-id="7f359-111">Enable Skype for Business (EnableSfb.ps1)</span></span>](#enable-sfb-ps-scripts)
+-   [<span data-ttu-id="7f359-112">Полезные командлеты</span><span class="sxs-lookup"><span data-stu-id="7f359-112">Useful cmdlets</span></span>](#useful-cmdlets)
+    -   [<span data-ttu-id="7f359-113">Создание политики Exchange ActiveSync, совместимой с Surface Hub</span><span class="sxs-lookup"><span data-stu-id="7f359-113">Creating a Surface Hub-compatible Exchange ActiveSync policy</span></span>](#create-compatible-as-policy)
+    -   [<span data-ttu-id="7f359-114">Разрешение идентификаторов устройств для ActiveSync</span><span class="sxs-lookup"><span data-stu-id="7f359-114">Allowing device IDs for ActiveSync</span></span>](#allowing-device-ids-for-activesync)
+    -   [<span data-ttu-id="7f359-115">Автоматический прием и отклонение приглашений на собрание</span><span class="sxs-lookup"><span data-stu-id="7f359-115">Auto-accepting and declining meeting requests</span></span>](#auto-accept-meetings-cmdlet)
+    -   [<span data-ttu-id="7f359-116">Прием внешних приглашений на собрание</span><span class="sxs-lookup"><span data-stu-id="7f359-116">Accepting external meeting requests</span></span>](#accept-ext-meetings-cmdlet)
     
  > [!NOTE]
- > <span data-ttu-id="2fd74-117">См. [также современные сценарии auth и unattended в Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)</span><span class="sxs-lookup"><span data-stu-id="2fd74-117">See also [Modern Auth and Unattended Scripts in Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)</span></span>
+ > <span data-ttu-id="7f359-117">См. [также современные сценарии Auth и Unattended в Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)</span><span class="sxs-lookup"><span data-stu-id="7f359-117">See also [Modern Auth and Unattended Scripts in Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)</span></span>
 
-## <span data-ttu-id="2fd74-118">Что вам понадобится</span><span class="sxs-lookup"><span data-stu-id="2fd74-118">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7f359-118">Что вам понадобится</span><span class="sxs-lookup"><span data-stu-id="7f359-118">Prerequisites</span></span>
 
-<span data-ttu-id="2fd74-119">Для успешного выполнения этих сценариев PowerShell необходимо установить следующие компоненты:</span><span class="sxs-lookup"><span data-stu-id="2fd74-119">To successfully execute these PowerShell scripts, you will need to install the following prerequisites:</span></span>
+<span data-ttu-id="7f359-119">Для успешного выполнения этих сценариев PowerShell необходимо установить следующие компоненты:</span><span class="sxs-lookup"><span data-stu-id="7f359-119">To successfully execute these PowerShell scripts, you will need to install the following prerequisites:</span></span>
 
-- [<span data-ttu-id="2fd74-120">помощник по входу в Microsoft Online Services для ИТ-специалистов (бета-версия);</span><span class="sxs-lookup"><span data-stu-id="2fd74-120">Microsoft Online Services Sign-in Assistant for IT Professionals RTW</span></span>](https://www.microsoft.com/download/details.aspx?id=41950)
-- [<span data-ttu-id="2fd74-121">модуль Microsoft Azure Active Directory для Windows PowerShell (64-разрядная версия);</span><span class="sxs-lookup"><span data-stu-id="2fd74-121">Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)</span></span>](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
-- [<span data-ttu-id="2fd74-122">модуль Windows PowerShell для Skype для бизнеса Online.</span><span class="sxs-lookup"><span data-stu-id="2fd74-122">Windows PowerShell Module for Skype for Business Online</span></span>](https://www.microsoft.com/download/details.aspx?id=39366)
+- [<span data-ttu-id="7f359-120">помощник по входу в Microsoft Online Services для ИТ-специалистов (бета-версия);</span><span class="sxs-lookup"><span data-stu-id="7f359-120">Microsoft Online Services Sign-in Assistant for IT Professionals RTW</span></span>](https://www.microsoft.com/download/details.aspx?id=41950)
+- [<span data-ttu-id="7f359-121">модуль Microsoft Azure Active Directory для Windows PowerShell (64-разрядная версия);</span><span class="sxs-lookup"><span data-stu-id="7f359-121">Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)</span></span>](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
+- [<span data-ttu-id="7f359-122">модуль Windows PowerShell для Skype для бизнеса Online.</span><span class="sxs-lookup"><span data-stu-id="7f359-122">Windows PowerShell Module for Skype for Business Online</span></span>](https://www.microsoft.com/download/details.aspx?id=39366)
 
-## <a href="" id="scripts-for-admins"></a><span data-ttu-id="2fd74-123">Сценарии PowerShell для администраторов Surface Hub</span><span class="sxs-lookup"><span data-stu-id="2fd74-123">PowerShell scripts for Surface Hub administrators</span></span>
+## <a name="powershell-scripts-for-surface-hub-administrators"></a><a href="" id="scripts-for-admins"></a><span data-ttu-id="7f359-123">Сценарии PowerShell для администраторов Surface Hub</span><span class="sxs-lookup"><span data-stu-id="7f359-123">PowerShell scripts for Surface Hub administrators</span></span>
 
-<span data-ttu-id="2fd74-124">Что делают сценарии?</span><span class="sxs-lookup"><span data-stu-id="2fd74-124">What do the scripts do?</span></span>
+<span data-ttu-id="7f359-124">Что делают сценарии?</span><span class="sxs-lookup"><span data-stu-id="7f359-124">What do the scripts do?</span></span>
 
--   <span data-ttu-id="2fd74-125">Создают учетные записи устройств для конфигураций, использующих чистое локальное решение в одном лесу (только Microsoft Exchange и Skype 2013 и более поздних версий) или размещенное решение (Microsoft Office 365), которые правильно настроены для устройства Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="2fd74-125">Create device accounts for setups using pure single-forest on-premises (Microsoft Exchange and Skype 2013 and later only) or online (Microsoft Office 365), that are configured correctly for your Surface Hub.</span></span>
--   <span data-ttu-id="2fd74-126">Проверяют существующие учетные записи устройств независимо от конфигурации (локальная или сетевая) на совместимость с Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="2fd74-126">Validate existing device accounts for any setup (on-premises or online) to make sure they're compatible with Surface Hub.</span></span>
--   <span data-ttu-id="2fd74-127">Предоставляют базовый шаблон для всех, кто хочет создать собственные сценарии создания или проверки учетной записи устройства.</span><span class="sxs-lookup"><span data-stu-id="2fd74-127">Provide a base template for anyone wanting to create their own device account creation or validation scripts.</span></span>
+-   <span data-ttu-id="7f359-125">Создают учетные записи устройств для конфигураций, использующих чистое локальное решение в одном лесу (только Microsoft Exchange и Skype 2013 и более поздних версий) или размещенное решение (Microsoft Office 365), которые правильно настроены для устройства Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="7f359-125">Create device accounts for setups using pure single-forest on-premises (Microsoft Exchange and Skype 2013 and later only) or online (Microsoft Office 365), that are configured correctly for your Surface Hub.</span></span>
+-   <span data-ttu-id="7f359-126">Проверяют существующие учетные записи устройств независимо от конфигурации (локальная или сетевая) на совместимость с Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="7f359-126">Validate existing device accounts for any setup (on-premises or online) to make sure they're compatible with Surface Hub.</span></span>
+-   <span data-ttu-id="7f359-127">Предоставляют базовый шаблон для всех, кто хочет создать собственные сценарии создания или проверки учетной записи устройства.</span><span class="sxs-lookup"><span data-stu-id="7f359-127">Provide a base template for anyone wanting to create their own device account creation or validation scripts.</span></span>
 
-<span data-ttu-id="2fd74-128">Что необходимо для выполнения сценариев?</span><span class="sxs-lookup"><span data-stu-id="2fd74-128">What do you need in order to run the scripts?</span></span>
+<span data-ttu-id="7f359-128">Что необходимо для выполнения сценариев?</span><span class="sxs-lookup"><span data-stu-id="7f359-128">What do you need in order to run the scripts?</span></span>
 
--   <span data-ttu-id="2fd74-129">Удаленный доступ PowerShell к домену или клиенту организации, серверы Exchange Server и Skype для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="2fd74-129">Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
--   <span data-ttu-id="2fd74-130">Учетные данные администратора для домена или клиента организации, серверов Exchange Server и Skype для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="2fd74-130">Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
+-   <span data-ttu-id="7f359-129">Удаленный доступ PowerShell к домену или клиенту организации, серверы Exchange Server и Skype для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="7f359-129">Remote PowerShell access to your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
+-   <span data-ttu-id="7f359-130">Учетные данные администратора для домена или клиента организации, серверов Exchange Server и Skype для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="7f359-130">Admin credentials for your organization's domain or tenant, Exchange servers, and Skype for Business servers.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2fd74-131">При создании новой или изменении существующей учетной записи сценарий проверки позволит убедиться, что учетная запись устройства настроена правильно.</span><span class="sxs-lookup"><span data-stu-id="2fd74-131">Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly.</span></span> <span data-ttu-id="2fd74-132">Всегда запускайте сценарий проверки, прежде чем добавлять учетную запись устройства на Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="2fd74-132">You should always run the validation script before adding a device account to Surface Hub.</span></span>
+> <span data-ttu-id="7f359-131">При создании новой или изменении существующей учетной записи сценарий проверки позволит убедиться, что учетная запись устройства настроена правильно.</span><span class="sxs-lookup"><span data-stu-id="7f359-131">Whether you’re creating a new account or modifying an already-existing account, the validation script will verify that your device account is configured correctly.</span></span> <span data-ttu-id="7f359-132">Всегда запускайте сценарий проверки, прежде чем добавлять учетную запись устройства на Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="7f359-132">You should always run the validation script before adding a device account to Surface Hub.</span></span>
 
-## <span data-ttu-id="2fd74-133">Запуск сценариев</span><span class="sxs-lookup"><span data-stu-id="2fd74-133">Running the scripts</span></span>
+## <a name="running-the-scripts"></a><span data-ttu-id="7f359-133">Запуск сценариев</span><span class="sxs-lookup"><span data-stu-id="7f359-133">Running the scripts</span></span>
 
-<span data-ttu-id="2fd74-134">Сценарии создания учетной записи выполняют следующие действия:</span><span class="sxs-lookup"><span data-stu-id="2fd74-134">The account creation scripts will:</span></span>
+<span data-ttu-id="7f359-134">Сценарии создания учетной записи выполняют следующие действия:</span><span class="sxs-lookup"><span data-stu-id="7f359-134">The account creation scripts will:</span></span>
 
--   <span data-ttu-id="2fd74-135">Запрос учетных данных администратора.</span><span class="sxs-lookup"><span data-stu-id="2fd74-135">Ask for administrator credentials.</span></span>
--   <span data-ttu-id="2fd74-136">Создайте учетные записи устройств в домене или клиенте.</span><span class="sxs-lookup"><span data-stu-id="2fd74-136">Create device accounts in your domain/tenant.</span></span>
--   <span data-ttu-id="2fd74-137">Создайте или назначьте политику ActiveSync, совместимую с Surface Hub, учетным записям устройств.</span><span class="sxs-lookup"><span data-stu-id="2fd74-137">Create or assign a Surface Hub-compatible ActiveSync policy to the device account(s).</span></span>
--   <span data-ttu-id="2fd74-138">настраивают различные атрибуты для созданных учетных записей в Exchange и Skype для бизнеса;</span><span class="sxs-lookup"><span data-stu-id="2fd74-138">Set various attributes for the created account(s) in Exchange and Skype for Business.</span></span>
--   <span data-ttu-id="2fd74-139">Назначьте лицензии и разрешения созданным учетным записям.</span><span class="sxs-lookup"><span data-stu-id="2fd74-139">Assign licenses and permissions to the created account(s).</span></span>
+-   <span data-ttu-id="7f359-135">Запрос учетных данных администратора.</span><span class="sxs-lookup"><span data-stu-id="7f359-135">Ask for administrator credentials.</span></span>
+-   <span data-ttu-id="7f359-136">Создание учетных записей устройств в домене или клиенте.</span><span class="sxs-lookup"><span data-stu-id="7f359-136">Create device accounts in your domain/tenant.</span></span>
+-   <span data-ttu-id="7f359-137">Создайте или назначьте на учетную запись устройства политику ActiveSync, совместимую с Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="7f359-137">Create or assign a Surface Hub-compatible ActiveSync policy to the device account(s).</span></span>
+-   <span data-ttu-id="7f359-138">настраивают различные атрибуты для созданных учетных записей в Exchange и Skype для бизнеса;</span><span class="sxs-lookup"><span data-stu-id="7f359-138">Set various attributes for the created account(s) in Exchange and Skype for Business.</span></span>
+-   <span data-ttu-id="7f359-139">Назначение лицензий и разрешений созданной учетной записи(ы).</span><span class="sxs-lookup"><span data-stu-id="7f359-139">Assign licenses and permissions to the created account(s).</span></span>
 
-<span data-ttu-id="2fd74-140">Сценарии задают следующие атрибуты:</span><span class="sxs-lookup"><span data-stu-id="2fd74-140">These are the attributes that are set by the scripts:</span></span>
+<span data-ttu-id="7f359-140">Сценарии задают следующие атрибуты:</span><span class="sxs-lookup"><span data-stu-id="7f359-140">These are the attributes that are set by the scripts:</span></span>
 
 <table>
 <colgroup>
@@ -84,114 +84,113 @@ ms.locfileid: "11317983"
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="2fd74-141">Командлет</span><span class="sxs-lookup"><span data-stu-id="2fd74-141">Cmdlet</span></span></th>
-<th align="left"><span data-ttu-id="2fd74-142">Атрибут</span><span class="sxs-lookup"><span data-stu-id="2fd74-142">Attribute</span></span></th>
-<th align="left"><span data-ttu-id="2fd74-143">Значение</span><span class="sxs-lookup"><span data-stu-id="2fd74-143">Value</span></span></th>
+<th align="left"><span data-ttu-id="7f359-141">Командлет</span><span class="sxs-lookup"><span data-stu-id="7f359-141">Cmdlet</span></span></th>
+<th align="left"><span data-ttu-id="7f359-142">Атрибут</span><span class="sxs-lookup"><span data-stu-id="7f359-142">Attribute</span></span></th>
+<th align="left"><span data-ttu-id="7f359-143">Значение</span><span class="sxs-lookup"><span data-stu-id="7f359-143">Value</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="2fd74-144">Set-Mailbox</span><span class="sxs-lookup"><span data-stu-id="2fd74-144">Set-Mailbox</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-145">RoomMailboxPassword</span><span class="sxs-lookup"><span data-stu-id="2fd74-145">RoomMailboxPassword</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-146">Предоставляется пользователем</span><span class="sxs-lookup"><span data-stu-id="2fd74-146">User-provided</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-144">Set-Mailbox</span><span class="sxs-lookup"><span data-stu-id="7f359-144">Set-Mailbox</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-145">RoomMailboxPassword</span><span class="sxs-lookup"><span data-stu-id="7f359-145">RoomMailboxPassword</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-146">Предоставляется пользователем</span><span class="sxs-lookup"><span data-stu-id="7f359-146">User-provided</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-147">EnableRoomMailboxAccount</span><span class="sxs-lookup"><span data-stu-id="2fd74-147">EnableRoomMailboxAccount</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-148">True</span><span class="sxs-lookup"><span data-stu-id="2fd74-148">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-147">EnableRoomMailboxAccount</span><span class="sxs-lookup"><span data-stu-id="7f359-147">EnableRoomMailboxAccount</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-148">True</span><span class="sxs-lookup"><span data-stu-id="7f359-148">True</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-149">Type</span><span class="sxs-lookup"><span data-stu-id="2fd74-149">Type</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-150">Room</span><span class="sxs-lookup"><span data-stu-id="2fd74-150">Room</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-149">Type</span><span class="sxs-lookup"><span data-stu-id="7f359-149">Type</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-150">Room</span><span class="sxs-lookup"><span data-stu-id="7f359-150">Room</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="2fd74-151">Set-CalendarProcessing</span><span class="sxs-lookup"><span data-stu-id="2fd74-151">Set-CalendarProcessing</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-152">AutomateProcessing</span><span class="sxs-lookup"><span data-stu-id="2fd74-152">AutomateProcessing</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-153">AutoAccept</span><span class="sxs-lookup"><span data-stu-id="2fd74-153">AutoAccept</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-151">Set-CalendarProcessing</span><span class="sxs-lookup"><span data-stu-id="7f359-151">Set-CalendarProcessing</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-152">AutomateProcessing</span><span class="sxs-lookup"><span data-stu-id="7f359-152">AutomateProcessing</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-153">AutoAccept</span><span class="sxs-lookup"><span data-stu-id="7f359-153">AutoAccept</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-154">RemovePrivateProperty</span><span class="sxs-lookup"><span data-stu-id="2fd74-154">RemovePrivateProperty</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-155">False</span><span class="sxs-lookup"><span data-stu-id="2fd74-155">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-154">RemovePrivateProperty</span><span class="sxs-lookup"><span data-stu-id="7f359-154">RemovePrivateProperty</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-155">False</span><span class="sxs-lookup"><span data-stu-id="7f359-155">False</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-156">DeleteSubject</span><span class="sxs-lookup"><span data-stu-id="2fd74-156">DeleteSubject</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-157">False</span><span class="sxs-lookup"><span data-stu-id="2fd74-157">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-156">DeleteSubject</span><span class="sxs-lookup"><span data-stu-id="7f359-156">DeleteSubject</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-157">False</span><span class="sxs-lookup"><span data-stu-id="7f359-157">False</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-158">DeleteComments</span><span class="sxs-lookup"><span data-stu-id="2fd74-158">DeleteComments</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-159">False</span><span class="sxs-lookup"><span data-stu-id="2fd74-159">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-158">DeleteComments</span><span class="sxs-lookup"><span data-stu-id="7f359-158">DeleteComments</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-159">False</span><span class="sxs-lookup"><span data-stu-id="7f359-159">False</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-160">AddOrganizerToSubject</span><span class="sxs-lookup"><span data-stu-id="2fd74-160">AddOrganizerToSubject</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-161">False</span><span class="sxs-lookup"><span data-stu-id="2fd74-161">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-160">AddOrganizerToSubject</span><span class="sxs-lookup"><span data-stu-id="7f359-160">AddOrganizerToSubject</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-161">False</span><span class="sxs-lookup"><span data-stu-id="7f359-161">False</span></span></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-162">AddAdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="2fd74-162">AddAdditionalResponse</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-163">True</span><span class="sxs-lookup"><span data-stu-id="2fd74-163">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-162">AddAdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="7f359-162">AddAdditionalResponse</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-163">True</span><span class="sxs-lookup"><span data-stu-id="7f359-163">True</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-164">AdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="2fd74-164">AdditionalResponse</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-165">&quot;Это помещение с Surface Hub.&quot;</span><span class="sxs-lookup"><span data-stu-id="2fd74-165">&quot;This is a Surface Hub room!&quot;</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-164">AdditionalResponse</span><span class="sxs-lookup"><span data-stu-id="7f359-164">AdditionalResponse</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-165">&quot;Это помещение с Surface Hub.&quot;</span><span class="sxs-lookup"><span data-stu-id="7f359-165">&quot;This is a Surface Hub room!&quot;</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="2fd74-166">New-MobileDeviceMailboxPolicy</span><span class="sxs-lookup"><span data-stu-id="2fd74-166">New-MobileDeviceMailboxPolicy</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-167">PasswordEnabled</span><span class="sxs-lookup"><span data-stu-id="2fd74-167">PasswordEnabled</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-168">False</span><span class="sxs-lookup"><span data-stu-id="2fd74-168">False</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-166">New-MobileDeviceMailboxPolicy</span><span class="sxs-lookup"><span data-stu-id="7f359-166">New-MobileDeviceMailboxPolicy</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-167">PasswordEnabled</span><span class="sxs-lookup"><span data-stu-id="7f359-167">PasswordEnabled</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-168">False</span><span class="sxs-lookup"><span data-stu-id="7f359-168">False</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-169">AllowNonProvisionableDevices</span><span class="sxs-lookup"><span data-stu-id="2fd74-169">AllowNonProvisionableDevices</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-170">True</span><span class="sxs-lookup"><span data-stu-id="2fd74-170">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-169">AllowNonProvisionableDevices</span><span class="sxs-lookup"><span data-stu-id="7f359-169">AllowNonProvisionableDevices</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-170">True</span><span class="sxs-lookup"><span data-stu-id="7f359-170">True</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="2fd74-171">Enable-CSMeetingRoom</span><span class="sxs-lookup"><span data-stu-id="2fd74-171">Enable-CSMeetingRoom</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-172">RegistrarPool</span><span class="sxs-lookup"><span data-stu-id="2fd74-172">RegistrarPool</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-173">Предоставляется пользователем</span><span class="sxs-lookup"><span data-stu-id="2fd74-173">User-provided</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-171">Enable-CSMeetingRoom</span><span class="sxs-lookup"><span data-stu-id="7f359-171">Enable-CSMeetingRoom</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-172">RegistrarPool</span><span class="sxs-lookup"><span data-stu-id="7f359-172">RegistrarPool</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-173">Предоставляется пользователем</span><span class="sxs-lookup"><span data-stu-id="7f359-173">User-provided</span></span></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-174">SipAddress</span><span class="sxs-lookup"><span data-stu-id="2fd74-174">SipAddress</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-175">Имя участника-пользователя (UPN) учетной записи устройства</span><span class="sxs-lookup"><span data-stu-id="2fd74-175">Set to the User Principal Name (UPN) of the device account</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-174">SipAddress</span><span class="sxs-lookup"><span data-stu-id="7f359-174">SipAddress</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-175">Имя участника-пользователя (UPN) учетной записи устройства</span><span class="sxs-lookup"><span data-stu-id="7f359-175">Set to the User Principal Name (UPN) of the device account</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="2fd74-176">Set-MsolUserLicense (только O365)</span><span class="sxs-lookup"><span data-stu-id="2fd74-176">Set-MsolUserLicense (O365 only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-177">AddLicenses</span><span class="sxs-lookup"><span data-stu-id="2fd74-177">AddLicenses</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-178">Предоставляется пользователем</span><span class="sxs-lookup"><span data-stu-id="2fd74-178">User-provided</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-176">Set-MsolUserLicense (только O365)</span><span class="sxs-lookup"><span data-stu-id="7f359-176">Set-MsolUserLicense (O365 only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-177">AddLicenses</span><span class="sxs-lookup"><span data-stu-id="7f359-177">AddLicenses</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-178">Предоставляется пользователем</span><span class="sxs-lookup"><span data-stu-id="7f359-178">User-provided</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="2fd74-179">Set-MsolUser (только O365)</span><span class="sxs-lookup"><span data-stu-id="2fd74-179">Set-MsolUser (O365 only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-180">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="2fd74-180">PasswordNeverExpires</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-181">True</span><span class="sxs-lookup"><span data-stu-id="2fd74-181">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-179">Set-MsolUser (только O365)</span><span class="sxs-lookup"><span data-stu-id="7f359-179">Set-MsolUser (O365 only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-180">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="7f359-180">PasswordNeverExpires</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-181">True</span><span class="sxs-lookup"><span data-stu-id="7f359-181">True</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="2fd74-182">Set-AdUser (только локальное решение)</span><span class="sxs-lookup"><span data-stu-id="2fd74-182">Set-AdUser (On-prem only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-183">Enabled</span><span class="sxs-lookup"><span data-stu-id="2fd74-183">Enabled</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-184">True</span><span class="sxs-lookup"><span data-stu-id="2fd74-184">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-182">Set-AdUser (только локальное решение)</span><span class="sxs-lookup"><span data-stu-id="7f359-182">Set-AdUser (On-prem only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-183">Enabled</span><span class="sxs-lookup"><span data-stu-id="7f359-183">Enabled</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-184">True</span><span class="sxs-lookup"><span data-stu-id="7f359-184">True</span></span></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="2fd74-185">Set-AdUser (только локальное решение)</span><span class="sxs-lookup"><span data-stu-id="2fd74-185">Set-AdUser (On-prem only)</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-186">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="2fd74-186">PasswordNeverExpires</span></span></p></td>
-<td align="left"><p><span data-ttu-id="2fd74-187">True</span><span class="sxs-lookup"><span data-stu-id="2fd74-187">True</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-185">Set-AdUser (только локальное решение)</span><span class="sxs-lookup"><span data-stu-id="7f359-185">Set-AdUser (On-prem only)</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-186">PasswordNeverExpires</span><span class="sxs-lookup"><span data-stu-id="7f359-186">PasswordNeverExpires</span></span></p></td>
+<td align="left"><p><span data-ttu-id="7f359-187">True</span><span class="sxs-lookup"><span data-stu-id="7f359-187">True</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-## <span data-ttu-id="2fd74-188">Сценарии создания учетной записи</span><span class="sxs-lookup"><span data-stu-id="2fd74-188">Account creation scripts</span></span>
+## <a name="account-creation-scripts"></a><span data-ttu-id="7f359-188">Сценарии создания учетной записи</span><span class="sxs-lookup"><span data-stu-id="7f359-188">Account creation scripts</span></span>
 
-<span data-ttu-id="2fd74-189">Эти сценарии создают учетную запись устройства.</span><span class="sxs-lookup"><span data-stu-id="2fd74-189">These scripts will create a device account for you.</span></span> <span data-ttu-id="2fd74-190">Вы можете использовать [сценарий проверки учетной записи](#acct-verification-ps-scripts), чтобы убедиться, что сценарий был выполнен успешно.</span><span class="sxs-lookup"><span data-stu-id="2fd74-190">You can use the [Account verification script](#acct-verification-ps-scripts) to make sure they ran correctly.</span></span>
+<span data-ttu-id="7f359-189">Эти сценарии создают учетную запись устройства.</span><span class="sxs-lookup"><span data-stu-id="7f359-189">These scripts will create a device account for you.</span></span> <span data-ttu-id="7f359-190">Вы можете использовать [сценарий проверки учетной записи](#acct-verification-ps-scripts), чтобы убедиться, что сценарий был выполнен успешно.</span><span class="sxs-lookup"><span data-stu-id="7f359-190">You can use the [Account verification script](#acct-verification-ps-scripts) to make sure they ran correctly.</span></span>
 
-<span data-ttu-id="2fd74-191">Сценарии создания учетной записи не могут изменить уже существующую учетную запись, но позволяют понять, какие командлеты нужно выполнить, чтобы правильно настроить существующую учетную запись.</span><span class="sxs-lookup"><span data-stu-id="2fd74-191">The account creation scripts cannot modify an already existing account, but can be used to help you understand which cmdlets need to be run to configure the existing account correctly.</span></span>
+<span data-ttu-id="7f359-191">Сценарии создания учетной записи не могут изменить уже существующую учетную запись, но позволяют понять, какие командлеты нужно выполнить, чтобы правильно настроить существующую учетную запись.</span><span class="sxs-lookup"><span data-stu-id="7f359-191">The account creation scripts cannot modify an already existing account, but can be used to help you understand which cmdlets need to be run to configure the existing account correctly.</span></span>
 
-### <a href="" id="create-on-premises-ps-scripts"></a><span data-ttu-id="2fd74-192">Создание локальной учетной записи</span><span class="sxs-lookup"><span data-stu-id="2fd74-192">Create an on-premises account</span></span>
+### <a name="create-an-on-premises-account"></a><a href="" id="create-on-premises-ps-scripts"></a><span data-ttu-id="7f359-192">Создание локальной учетной записи</span><span class="sxs-lookup"><span data-stu-id="7f359-192">Create an on-premises account</span></span>
 
-<span data-ttu-id="2fd74-193">Создает учетную запись, как описано в разделе [Локальное развертывание](on-premises-deployment-surface-hub-device-accounts.md).</span><span class="sxs-lookup"><span data-stu-id="2fd74-193">Creates an account as described in [On-premises deployment](on-premises-deployment-surface-hub-device-accounts.md).</span></span>
 
 ```PowerShell
 # SHAccountCreateOnPrem.ps1
@@ -549,9 +548,9 @@ else
 }
 ```
 
-### <a href="" id="create-os356-ps-scripts"></a><span data-ttu-id="2fd74-194">Создание учетной записи устройства с помощью Office 365</span><span class="sxs-lookup"><span data-stu-id="2fd74-194">Create a device account using Office 365</span></span>
+### <a name="create-a-device-account-using-office-365"></a><a href="" id="create-os356-ps-scripts"></a><span data-ttu-id="7f359-193">Создание учетной записи устройства с помощью Office 365</span><span class="sxs-lookup"><span data-stu-id="7f359-193">Create a device account using Office 365</span></span>
 
-<span data-ttu-id="2fd74-195">Создает учетную запись, как описано в [описании создания учетной записи устройства с помощью Office 365.](create-a-device-account-using-office-365.md)</span><span class="sxs-lookup"><span data-stu-id="2fd74-195">Creates an account as described in [Create a device account using Office 365](create-a-device-account-using-office-365.md).</span></span>
+<span data-ttu-id="7f359-194">Создает учетную запись, описанную в ["Создание учетной записи устройства" с помощью Office 365.](create-and-test-a-device-account-surface-hub.md)</span><span class="sxs-lookup"><span data-stu-id="7f359-194">Creates an account as described in [Create a device account using Office 365](create-and-test-a-device-account-surface-hub.md).</span></span>
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -994,9 +993,9 @@ else
 }
 ```
 
-## <a href="" id="acct-verification-ps-scripts"></a><span data-ttu-id="2fd74-196">Сценарий проверки учетной записи</span><span class="sxs-lookup"><span data-stu-id="2fd74-196">Account verification script</span></span>
+## <a name="account-verification-script"></a><a href="" id="acct-verification-ps-scripts"></a><span data-ttu-id="7f359-195">Сценарий проверки учетной записи</span><span class="sxs-lookup"><span data-stu-id="7f359-195">Account verification script</span></span>
 
-<span data-ttu-id="2fd74-197">Этот сценарий проверяет ранее созданную учетную запись устройства на Surface Hub и Surface Hub 2S независимо от того, какой метод использовался для ее создания.</span><span class="sxs-lookup"><span data-stu-id="2fd74-197">This script validates the previously-created device account on Surface Hub and Surface Hub 2S, no matter which method was used to create it.</span></span> <span data-ttu-id="2fd74-198">Этот сценарий предоставляет оценку типа "успешно/ошибка".</span><span class="sxs-lookup"><span data-stu-id="2fd74-198">This script is basically pass/fail.</span></span> <span data-ttu-id="2fd74-199">Если появляется одна из ошибок, отображается подробное сообщение об ошибке, но если все тесты пройдены успешно, конечным результатом будет сводный отчет.</span><span class="sxs-lookup"><span data-stu-id="2fd74-199">If one of the test errors out, it will show a detailed error message, but if all tests pass, the end result will be a summary report.</span></span> <span data-ttu-id="2fd74-200">Например:</span><span class="sxs-lookup"><span data-stu-id="2fd74-200">For example, you might see:</span></span>
+<span data-ttu-id="7f359-196">Этот скрипт проверяет ранее созданную учетную запись устройства в Surface Hub и Surface Hub 2S, независимо от того, какой метод был использован для ее создания.</span><span class="sxs-lookup"><span data-stu-id="7f359-196">This script validates the previously-created device account on Surface Hub and Surface Hub 2S, no matter which method was used to create it.</span></span> <span data-ttu-id="7f359-197">Этот сценарий предоставляет оценку типа "успешно/ошибка".</span><span class="sxs-lookup"><span data-stu-id="7f359-197">This script is basically pass/fail.</span></span> <span data-ttu-id="7f359-198">Если появляется одна из ошибок, отображается подробное сообщение об ошибке, но если все тесты пройдены успешно, конечным результатом будет сводный отчет.</span><span class="sxs-lookup"><span data-stu-id="7f359-198">If one of the test errors out, it will show a detailed error message, but if all tests pass, the end result will be a summary report.</span></span> <span data-ttu-id="7f359-199">Например:</span><span class="sxs-lookup"><span data-stu-id="7f359-199">For example, you might see:</span></span>
 
 ```console
 15 tests executed
@@ -1005,7 +1004,7 @@ else
 15 passed
 ```
 
-<span data-ttu-id="2fd74-201">Сведения о конкретных параметрах не отображаются.</span><span class="sxs-lookup"><span data-stu-id="2fd74-201">Details of specific settings will not be shown.</span></span>
+<span data-ttu-id="7f359-200">Сведения о конкретных параметрах не отображаются.</span><span class="sxs-lookup"><span data-stu-id="7f359-200">Details of specific settings will not be shown.</span></span>
 
 ```PowerShell
 # SHAccountValidate.ps1
@@ -1445,9 +1444,9 @@ Write-Host -ForegroundColor Green $Global:iTotalPasses "passes "
 Cleanup
 ```
 
-## <a href="" id="enable-sfb-ps-scripts"></a><span data-ttu-id="2fd74-202">Включение Skype для бизнеса</span><span class="sxs-lookup"><span data-stu-id="2fd74-202">Enable Skype for Business</span></span>
+## <a name="enable-skype-for-business"></a><a href="" id="enable-sfb-ps-scripts"></a><span data-ttu-id="7f359-201">Включение Skype для бизнеса</span><span class="sxs-lookup"><span data-stu-id="7f359-201">Enable Skype for Business</span></span>
 
-<span data-ttu-id="2fd74-203">Этот сценарий включает Skype для бизнеса для учетной записи устройства.</span><span class="sxs-lookup"><span data-stu-id="2fd74-203">This script will enable Skype for Business on a device account.</span></span> <span data-ttu-id="2fd74-204">Используйте его, только если Skype для бизнеса не был включен ранее при создании учетной записи.</span><span class="sxs-lookup"><span data-stu-id="2fd74-204">Use it only if Skype for Business wasn't previously enabled during account creation.</span></span>
+<span data-ttu-id="7f359-202">Этот сценарий включает Skype для бизнеса для учетной записи устройства.</span><span class="sxs-lookup"><span data-stu-id="7f359-202">This script will enable Skype for Business on a device account.</span></span> <span data-ttu-id="7f359-203">Используйте его, только если Skype для бизнеса не был включен ранее при создании учетной записи.</span><span class="sxs-lookup"><span data-stu-id="7f359-203">Use it only if Skype for Business wasn't previously enabled during account creation.</span></span>
 
 ```PowerShell
 ## This script performs only the Enable for Skype for Business step on an account. It should only be run if this step failed in SHAccountCreate and the other steps have been completed ##
@@ -1605,31 +1604,31 @@ PrintSuccess "Successfully enabled $strRoomUri as a Skype for Business meeting r
 Cleanup
 ```
 
-## <span data-ttu-id="2fd74-205">Полезные командлеты</span><span class="sxs-lookup"><span data-stu-id="2fd74-205">Useful cmdlets</span></span>
+## <a name="useful-cmdlets"></a><span data-ttu-id="7f359-204">Полезные командлеты</span><span class="sxs-lookup"><span data-stu-id="7f359-204">Useful cmdlets</span></span>
 
-### <a href="" id="create-compatible-as-policy"></a><span data-ttu-id="2fd74-206">Создание политики ActiveSync, совместимой с Surface Hub</span><span class="sxs-lookup"><span data-stu-id="2fd74-206">Creating a Surface Hub-compatible ActiveSync policy</span></span>
+### <a name="creating-a-surface-hub-compatible-activesync-policy"></a><a href="" id="create-compatible-as-policy"></a><span data-ttu-id="7f359-205">Создание политики ActiveSync, совместимой с Surface Hub</span><span class="sxs-lookup"><span data-stu-id="7f359-205">Creating a Surface Hub-compatible ActiveSync policy</span></span>
 
-<span data-ttu-id="2fd74-207">Чтобы устройство Surface Hub могло использовать службы Exchange, необходимо подготовить на нем учетную запись устройства с совместимой политикой ActiveSync.</span><span class="sxs-lookup"><span data-stu-id="2fd74-207">For Surface Hub to use Exchange services, a device account configured with a compatible ActiveSync policy must be provisioned on the device.</span></span> <span data-ttu-id="2fd74-208">Эта политика применяет следующие требования:</span><span class="sxs-lookup"><span data-stu-id="2fd74-208">This policy has the following requirements:</span></span>
+<span data-ttu-id="7f359-206">Чтобы устройство Surface Hub могло использовать службы Exchange, необходимо подготовить на нем учетную запись устройства с совместимой политикой ActiveSync.</span><span class="sxs-lookup"><span data-stu-id="7f359-206">For Surface Hub to use Exchange services, a device account configured with a compatible ActiveSync policy must be provisioned on the device.</span></span> <span data-ttu-id="7f359-207">Эта политика применяет следующие требования:</span><span class="sxs-lookup"><span data-stu-id="7f359-207">This policy has the following requirements:</span></span>
 
 ``` syntax
 PasswordEnabled == 0
 ```
 
-<span data-ttu-id="2fd74-209">В следующих командлетах `$strPolicy` — это имя политики ActiveSync, `$strRoomUpn` — имя участника-пользователя учетной записи устройства, к которой вы хотите применить политику.</span><span class="sxs-lookup"><span data-stu-id="2fd74-209">In the following cmdlets, `$strPolicy` is the name of the ActiveSync policy, and `$strRoomUpn` is the UPN of the device account you want to apply the policy to.</span></span>
+<span data-ttu-id="7f359-208">В следующих командлетах `$strPolicy` — это имя политики ActiveSync, `$strRoomUpn` — имя участника-пользователя учетной записи устройства, к которой вы хотите применить политику.</span><span class="sxs-lookup"><span data-stu-id="7f359-208">In the following cmdlets, `$strPolicy` is the name of the ActiveSync policy, and `$strRoomUpn` is the UPN of the device account you want to apply the policy to.</span></span>
 
-<span data-ttu-id="2fd74-210">Обратите внимание, что для запуска командлетов необходимо настроить удаленный сеанс PowerShell. Также должны выполняться следующие требования.</span><span class="sxs-lookup"><span data-stu-id="2fd74-210">Note that in order to run the cmdlets, you need to set up a remote PowerShell session and:</span></span>
+<span data-ttu-id="7f359-209">Обратите внимание, что для запуска командлетов необходимо настроить удаленный сеанс PowerShell. Также должны выполняться следующие требования.</span><span class="sxs-lookup"><span data-stu-id="7f359-209">Note that in order to run the cmdlets, you need to set up a remote PowerShell session and:</span></span>
 
--   <span data-ttu-id="2fd74-211">Учетная запись администратора должна поддерживать удаленный сеанс PowerShell.</span><span class="sxs-lookup"><span data-stu-id="2fd74-211">Your admin account must be remote-PowerShell-enabled.</span></span> <span data-ttu-id="2fd74-212">Это позволит администратору использовать командлеты PowerShell, необходимые сценарию.</span><span class="sxs-lookup"><span data-stu-id="2fd74-212">This allows the admin to use the PowerShell cmdlets that are needed by the script.</span></span> <span data-ttu-id="2fd74-213">(Это разрешение можно задать, используя командлет `set-user $admin -RemotePowerShellEnabled $true`.)</span><span class="sxs-lookup"><span data-stu-id="2fd74-213">(This permission can be set using `set-user $admin -RemotePowerShellEnabled $true`)</span></span>
--   <span data-ttu-id="2fd74-214">Учетной записи администратора должна быть назначена роль "Сброс пароля", если вы планируете запускать сценарии создания.</span><span class="sxs-lookup"><span data-stu-id="2fd74-214">Your admin account must have the "Reset Password" role if you plan to run the creation scripts.</span></span> <span data-ttu-id="2fd74-215">Это позволит администратору изменить пароль учетной записи, что необходимо для сценария.</span><span class="sxs-lookup"><span data-stu-id="2fd74-215">This allows the admin to change the password of the account, which is needed for the script.</span></span> <span data-ttu-id="2fd74-216">Роль "Сброс пароля" можно включить с помощью Центра администрирования Exchange.</span><span class="sxs-lookup"><span data-stu-id="2fd74-216">The Reset Password Role can be enabled using the Exchange Admin Center.</span></span>
+-   <span data-ttu-id="7f359-210">Учетная запись администратора должна поддерживать удаленный сеанс PowerShell.</span><span class="sxs-lookup"><span data-stu-id="7f359-210">Your admin account must be remote-PowerShell-enabled.</span></span> <span data-ttu-id="7f359-211">Это позволит администратору использовать командлеты PowerShell, необходимые сценарию.</span><span class="sxs-lookup"><span data-stu-id="7f359-211">This allows the admin to use the PowerShell cmdlets that are needed by the script.</span></span> <span data-ttu-id="7f359-212">(Это разрешение можно задать, используя командлет `set-user $admin -RemotePowerShellEnabled $true`.)</span><span class="sxs-lookup"><span data-stu-id="7f359-212">(This permission can be set using `set-user $admin -RemotePowerShellEnabled $true`)</span></span>
+-   <span data-ttu-id="7f359-213">Учетной записи администратора должна быть назначена роль "Сброс пароля", если вы планируете запускать сценарии создания.</span><span class="sxs-lookup"><span data-stu-id="7f359-213">Your admin account must have the "Reset Password" role if you plan to run the creation scripts.</span></span> <span data-ttu-id="7f359-214">Это позволит администратору изменить пароль учетной записи, что необходимо для сценария.</span><span class="sxs-lookup"><span data-stu-id="7f359-214">This allows the admin to change the password of the account, which is needed for the script.</span></span> <span data-ttu-id="7f359-215">Роль "Сброс пароля" можно включить с помощью Центра администрирования Exchange.</span><span class="sxs-lookup"><span data-stu-id="7f359-215">The Reset Password Role can be enabled using the Exchange Admin Center.</span></span>
 
-<span data-ttu-id="2fd74-217">Создайте политику.</span><span class="sxs-lookup"><span data-stu-id="2fd74-217">Create the policy.</span></span>
+<span data-ttu-id="7f359-216">Создайте политику.</span><span class="sxs-lookup"><span data-stu-id="7f359-216">Create the policy.</span></span>
 
 ```PowerShell
 # Create new policy with PasswordEnabled == false
 New-MobileDeviceMailboxPolicy -Name $strPolicy -PasswordEnabled $false –AllowNonProvisionableDevices $true
 ```
 
-<span data-ttu-id="2fd74-218">Чтобы применить политику, почтовый ящик не может быть почтовым ящиком помещения, поэтому сначала его нужно преобразовать в пользовательский почтовый ящик.</span><span class="sxs-lookup"><span data-stu-id="2fd74-218">To apply the policy, the mailbox cannot be a room type, so it has to be converted into a user first.</span></span>
+<span data-ttu-id="7f359-217">Чтобы применить политику, почтовый ящик не может быть почтовым ящиком помещения, поэтому сначала его нужно преобразовать в пользовательский почтовый ящик.</span><span class="sxs-lookup"><span data-stu-id="7f359-217">To apply the policy, the mailbox cannot be a room type, so it has to be converted into a user first.</span></span>
 
 ```PowerShell
 # Convert user to regular type
@@ -1638,43 +1637,43 @@ Set-Mailbox $strRoomUpn -Type Regular
 Set-CASMailbox $strRoomUpn -ActiveSyncMailboxPolicy $strPolicy
 ```
 
-<span data-ttu-id="2fd74-219">Теперь учетную запись устройства нужно преобразовать обратно в учетную запись для помещения.</span><span class="sxs-lookup"><span data-stu-id="2fd74-219">Now the device account just needs to be converted back into a room type.</span></span>
+<span data-ttu-id="7f359-218">Теперь учетную запись устройства нужно преобразовать обратно в учетную запись для помещения.</span><span class="sxs-lookup"><span data-stu-id="7f359-218">Now the device account just needs to be converted back into a room type.</span></span>
 
 ```PowerShell
 # Convert back to room mailbox
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### <span data-ttu-id="2fd74-220">Разрешение идентификаторов устройств для ActiveSync</span><span class="sxs-lookup"><span data-stu-id="2fd74-220">Allowing device IDs for ActiveSync</span></span>
+### <a name="allowing-device-ids-for-activesync"></a><span data-ttu-id="7f359-219">Разрешение идентификаторов устройств для ActiveSync</span><span class="sxs-lookup"><span data-stu-id="7f359-219">Allowing device IDs for ActiveSync</span></span>
 
-<span data-ttu-id="2fd74-221">Чтобы разрешить учетную запись `$strRoomUpn`, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="2fd74-221">To allow an account `$strRoomUpn`, run the following command:</span></span>
+<span data-ttu-id="7f359-220">Чтобы разрешить учетную запись `$strRoomUpn`, выполните следующую команду:</span><span class="sxs-lookup"><span data-stu-id="7f359-220">To allow an account `$strRoomUpn`, run the following command:</span></span>
 
 ```PowerShell
 Set-CASMailbox –Identity $strRoomUpn –ActiveSyncAllowedDeviceIDs “<ID>”
 ```
 
-<span data-ttu-id="2fd74-222">Чтобы найти идентификатор устройства, выполните команду:</span><span class="sxs-lookup"><span data-stu-id="2fd74-222">To find a device's ID, run:</span></span>
+<span data-ttu-id="7f359-221">Чтобы найти идентификатор устройства, выполните команду:</span><span class="sxs-lookup"><span data-stu-id="7f359-221">To find a device's ID, run:</span></span>
 
 ```PowerShell
 Get-ActiveSyncDevice -Mailbox $strRoomUpn
 ```
 
-<span data-ttu-id="2fd74-223">При этом будут получены сведения для каждого устройства, на котором была подготовлена эта учетная запись, в том числе свойство `DeviceId`.</span><span class="sxs-lookup"><span data-stu-id="2fd74-223">This retrieves device information for every device that the account has been provisioned on, Including the `DeviceId` property.</span></span>
+<span data-ttu-id="7f359-222">При этом будут получены сведения для каждого устройства, на котором была подготовлена эта учетная запись, в том числе свойство `DeviceId`.</span><span class="sxs-lookup"><span data-stu-id="7f359-222">This retrieves device information for every device that the account has been provisioned on, Including the `DeviceId` property.</span></span>
 
-### <a href="" id="auto-accept-meetings-cmdlet"></a><span data-ttu-id="2fd74-224">Автоматический прием и отклонение приглашений на собрание</span><span class="sxs-lookup"><span data-stu-id="2fd74-224">Auto-accepting and declining meeting requests</span></span>
+### <a name="auto-accepting-and-declining-meeting-requests"></a><a href="" id="auto-accept-meetings-cmdlet"></a><span data-ttu-id="7f359-223">Автоматический прием и отклонение приглашений на собрание</span><span class="sxs-lookup"><span data-stu-id="7f359-223">Auto-accepting and declining meeting requests</span></span>
 
-<span data-ttu-id="2fd74-225">Чтобы учетная запись устройства автоматически принимала или отклоняла приглашения на собрания в зависимости от доступности, для атрибута **AutomateProcessing** следует задать значение **AutoAccept**.</span><span class="sxs-lookup"><span data-stu-id="2fd74-225">For a device account to automatically accept or decline meeting requests based on its availability, the **AutomateProcessing** attribute must be set to **AutoAccept**.</span></span> <span data-ttu-id="2fd74-226">Это рекомендуется для предотвращения пересекающихся собраний.</span><span class="sxs-lookup"><span data-stu-id="2fd74-226">This is recommended as to prevent overlapping meetings.</span></span>
+<span data-ttu-id="7f359-224">Чтобы учетная запись устройства автоматически принимала или отклоняла приглашения на собрания в зависимости от доступности, для атрибута **AutomateProcessing** следует задать значение **AutoAccept**.</span><span class="sxs-lookup"><span data-stu-id="7f359-224">For a device account to automatically accept or decline meeting requests based on its availability, the **AutomateProcessing** attribute must be set to **AutoAccept**.</span></span> <span data-ttu-id="7f359-225">Это рекомендуется для предотвращения пересекающихся собраний.</span><span class="sxs-lookup"><span data-stu-id="7f359-225">This is recommended as to prevent overlapping meetings.</span></span>
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 ```
 
-### <a href="" id="accept-ext-meetings-cmdlet"></a><span data-ttu-id="2fd74-227">Прием внешних приглашений на собрание</span><span class="sxs-lookup"><span data-stu-id="2fd74-227">Accepting external meeting requests</span></span>
+### <a name="accepting-external-meeting-requests"></a><a href="" id="accept-ext-meetings-cmdlet"></a><span data-ttu-id="7f359-226">Прием внешних приглашений на собрание</span><span class="sxs-lookup"><span data-stu-id="7f359-226">Accepting external meeting requests</span></span>
 
-<span data-ttu-id="2fd74-228">Чтобы учетная запись устройства принимала внешние приглашения на собрание (приглашения от учетных записей из другого клиента или домена), необходимо разрешить ей обработку внешних приглашений на собрание.</span><span class="sxs-lookup"><span data-stu-id="2fd74-228">For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests.</span></span> <span data-ttu-id="2fd74-229">После этого учетная запись будет автоматически принимать или отклонять приглашения на собрание от внешних и локальных учетных записей.</span><span class="sxs-lookup"><span data-stu-id="2fd74-229">Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.</span></span>
+<span data-ttu-id="7f359-227">Чтобы учетная запись устройства принимала внешние приглашения на собрание (приглашения от учетных записей из другого клиента или домена), необходимо разрешить ей обработку внешних приглашений на собрание.</span><span class="sxs-lookup"><span data-stu-id="7f359-227">For a device account to accept external meeting requests (a meeting request from an account not in the same tenant/domain), the device account must be set to allow processing of external meeting requests.</span></span> <span data-ttu-id="7f359-228">После этого учетная запись будет автоматически принимать или отклонять приглашения на собрание от внешних и локальных учетных записей.</span><span class="sxs-lookup"><span data-stu-id="7f359-228">Once set, the device account will automatically accept or decline meeting requests from external accounts as well as local accounts.</span></span>
 
 > [!Note]
-> <span data-ttu-id="2fd74-230">Если атрибут **AutomateProcessing** не имеет значения **AutoAccept,** то установка этого параметра не будет действовать.</span><span class="sxs-lookup"><span data-stu-id="2fd74-230">If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.</span></span>
+> <span data-ttu-id="7f359-229">Если атрибут **AutomateProcessing** не настроен на **AutoAccept,** то установка этого не будет иметь эффекта.</span><span class="sxs-lookup"><span data-stu-id="7f359-229">If the **AutomateProcessing** attribute is not set to **AutoAccept**, then setting this will have no effect.</span></span>
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true
