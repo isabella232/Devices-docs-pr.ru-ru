@@ -60,10 +60,10 @@ ms.locfileid: "11271563"
 1.  <span data-ttu-id="a7b0f-120">Скачайте последнюю версию [настройщика UEFI Surface.](https://www.microsoft.com/download/confirmation.aspx?id=46703)</span><span class="sxs-lookup"><span data-stu-id="a7b0f-120">Download the latest version of [Surface UEFI Configurator](https://www.microsoft.com/download/confirmation.aspx?id=46703).</span></span>
 2.  <span data-ttu-id="a7b0f-121">Во sign in to your Surface device as an administrator, open **Surface UEFI Configurator,** select **Surface Devices,** and then select **Next**.</span><span class="sxs-lookup"><span data-stu-id="a7b0f-121">Sign in to your Surface device as an administrator, open **Surface UEFI Configurator**, select **Surface Devices**, and then select **Next**.</span></span>
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Выберите устройства Surface и выберите "Далее".":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Выберите устройства Surface и выберите Далее.":::
 3.  <span data-ttu-id="a7b0f-123">Выберите **"Начните"** и выберите **"Создать** в **пакете конфигурации".**</span><span class="sxs-lookup"><span data-stu-id="a7b0f-123">Select **Start**, and then select **Create** under **Configuration Package**.</span></span>
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите "Создать пакет конфигурации".":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите Создать пакет конфигурации.":::
 4.  <span data-ttu-id="a7b0f-125">Выберите **"Защита сертификатов"** и добавьте PFX-файл сертификата.</span><span class="sxs-lookup"><span data-stu-id="a7b0f-125">Select **Certificate Protection**, and add your certificate .pfx file.</span></span> 
 5. <span data-ttu-id="a7b0f-126">Введите пароль, выберите **"Далее",** **"Добавить защиту**паролем" и затем **"Далее".**</span><span class="sxs-lookup"><span data-stu-id="a7b0f-126">Enter your password, select **Next**, add **Password Protection**, as appropriate, and then select **Next**.</span></span>
 6.  <span data-ttu-id="a7b0f-127">На странице **"Выбор типа Surface", на которую** вы хотите нацелить, выберите нужные целевые устройства.</span><span class="sxs-lookup"><span data-stu-id="a7b0f-127">On the **Choose which Surface type you want to target** page, select your target devices as appropriate.</span></span> <span data-ttu-id="a7b0f-128">Например, выберите **Surface Pro 7.**</span><span class="sxs-lookup"><span data-stu-id="a7b0f-128">For example, select **Surface Pro 7**.</span></span>
@@ -86,12 +86,12 @@ ms.locfileid: "11271563"
     C:\SEMM\wake-on-power.msi 
     ```
 
-2.  <span data-ttu-id="a7b0f-138">В **диалоговом** окне предупреждения выберите "ОК" или отключите BitLocker, если это необходимо. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="a7b0f-138">In the **Warning** dialog box, select **OK** or disable BitLocker, as appropriate.</span></span>
+2.  <span data-ttu-id="a7b0f-138">В **диалоговом** окне предупреждения выберите **ОК"** или отключите BitLocker, если это необходимо.</span><span class="sxs-lookup"><span data-stu-id="a7b0f-138">In the **Warning** dialog box, select **OK** or disable BitLocker, as appropriate.</span></span>
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Выберите "ОК" или отключите BitLocker соответствующим образом.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Выберите ОК или отключите BitLocker соответствующим образом.":::
 3.  <span data-ttu-id="a7b0f-140">На странице приветствия выберите **"Далее",** чтобы запустить пакет, и примените только что настроенный параметр UEFI.</span><span class="sxs-lookup"><span data-stu-id="a7b0f-140">On the Welcome page, select **Next** to run the package and apply the newly configured UEFI setting.</span></span>
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="На странице приветствия выберите "Далее".":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="На странице приветствия выберите Далее.":::
 4.  <span data-ttu-id="a7b0f-142">Перезапустите устройство.</span><span class="sxs-lookup"><span data-stu-id="a7b0f-142">Restart your device.</span></span> 
 
 <span data-ttu-id="a7b0f-143">Теперь настроено питание от питания.</span><span class="sxs-lookup"><span data-stu-id="a7b0f-143">Wake on Power is now configured.</span></span> <span data-ttu-id="a7b0f-144">Чтобы проверить параметры, отключите устройство, отключите питание и снова подключите его.</span><span class="sxs-lookup"><span data-stu-id="a7b0f-144">To test the settings, turn off your device, disconnect the power, and then reconnect the power.</span></span> <span data-ttu-id="a7b0f-145">Устройство должно запускаться автоматически.</span><span class="sxs-lookup"><span data-stu-id="a7b0f-145">The device should start automatically.</span></span> 
