@@ -1,7 +1,7 @@
 ---
 title: Справочник по номерам SKU системы Surface
-description: См. ссылку на имена системной модели и системного SKU для всех устройств Surface.
-keywords: uefi, configure, firmware, secure, semm, Autopilot
+description: См. ссылку на имена системной модели и SKU системы для всех устройств Surface.
+keywords: uefi, настройка, прошивка, безопасность, semm, Автопилот
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
@@ -9,30 +9,30 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 01/27/2021
+ms.date: 04/19/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 0fe13750e7e8c8188b52726c114a6b3668434d39
-ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
+ms.openlocfilehash: bf3fb926c5e66f5f02f921f1c0d4fbe5f016f02d
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304832"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11577049"
 ---
-# Справочник по номерам SKU системы Surface
+# <a name="surface-system-sku-reference"></a>Справочник по номерам SKU системы Surface
 
-В этом документе содержится ссылка, которую можно использовать для различных ИТ-задач, таких как регистрация устройств Surface в Windows Autopilot или проверка состояния компьютера конкретного устройства с помощью PowerShell или WMI.
+В этом документе содержится ссылка, которая может использоваться для различных ИТ-задач, таких как регистрация устройств Surface с помощью Windows автопилота или проверка состояния машины определенного устройства с помощью PowerShell или WMI.
 
-Системная модель и системный SKU — это переменные, которые хранятся в таблицах SYSTEM Management BIOS (SMBIOS) на уровне UEFI устройств Surface. Используйте имя system SKU всякий раз, когда нужно различать устройства с одинаковым именем системной модели, например Surface Pro и Surface Pro с LTE Advanced.
+System Model и System SKU — это переменные, которые хранятся в таблицах System Management BIOS (SMBIOS) в уровне UEFI устройств Surface. Используйте имя SKU system всякий раз, когда необходимо различать устройства с одинаковым именем system Model, такие как Surface Pro и Surface Pro с LTE Advanced.
 
-| Устройство   | Системная модель | Системный SKU       |
+| Устройство   | Модель системы | System SKU       |
 | ---------- | ----------- | -------------- |
 | Surface 3 WiFI                                               | Surface 3        | Surface_3                        |
 | Surface 3 LTE AT&T                                           | Surface 3        | Surface_3_US1                    |
 | Surface 3 LTE Verizon                                        | Surface 3        | Surface_3_US2                    |
-| Surface 3 LTE North America                                  | Surface 3        | Surface_3_NAG                    |
+| Surface 3 LTE Северная Америка                                  | Surface 3        | Surface_3_NAG                    |
 | Surface 3 LTE за пределами Северной Америки и Y!mobile в Японии | Surface 3        | Surface_3_ROW                    |
 | Surface Pro                                                  | Surface Pro      | Surface_Pro_1796                 |
 | Surface Pro с функцией LTE Advanced                                | Surface Pro      | Surface_Pro_1807                 |
@@ -45,12 +45,12 @@ ms.locfileid: "11304832"
 | Surface Go Commercial                                        | Surface Go       | Surface_Go_1824_Commercial       |
 | Surface Go 2                                                 | Surface Go 2     | Surface_Go_2_1927                |
 | Surface Pro 6 Consumer                                       | Surface Pro 6    | Surface_Pro_6_1796_Consumer      |
-| Surface Pro 6 Commercial                                     | Surface Pro 6    | Surface_Pro_6_1796_Commercial    |
+| Surface Pro 6 Коммерческий                                     | Surface Pro 6    | Surface_Pro_6_1796_Commercial    |
 | Surface Laptop                                               | Surface Laptop   | Surface_Laptop                   |
-| Surface Laptop 2 Consumer                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
-| Surface Laptop 2 Commercial                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
-| Surface Pro 7 и более                                               | Surface Pro 7 и более | Surface_Pro_7+_1960|
-| Surface Pro 7+ LTE                                           | Surface Pro 7 и более | Surface_Pro_7+_with_LTE_Advanced_1961|
+| Surface Laptop 2 Потребительский                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
+| Surface Laptop 2 Коммерческий                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
+| Surface Pro 7+                                               | Surface Pro 7+ | Surface_Pro_7+_1960|
+| Surface Pro 7+ LTE                                           | Surface Pro 7+ | Surface_Pro_7+_with_LTE_Advanced_1961|
 | Surface Pro 7                 | Surface Pro 7    | Surface_Pro_7_1866         |
 | Surface Pro X                 | Surface Pro X    | Surface_Pro_X_1876         |
 | Surface Pro X с процессором SQ2                | Surface Pro X    | Surface_Pro_X_H_1876        |
@@ -58,31 +58,37 @@ ms.locfileid: "11304832"
 | Surface Laptop 3 15" Intel | Surface Laptop 3 | Surface_Laptop_3_1872      |
 | Surface Laptop 3 15" AMD   | Surface Laptop 3 | Surface_Laptop_3_1873      | 
 | Surface Laptop Go  | Surface Laptop Go | Surface_Laptop_Go_1943      | 
+| Surface Laptop 4 13" Intel | Surface Laptop 4 | Surface_Laptop_4_1950:1951 |
+| Surface Laptop 4 15" Intel | Surface Laptop 4 | Surface_Laptop_4_1978:1979     |
+| Surface Laptop 4 15" AMD   | Surface Laptop 4 | Surface_Laptop_4_1952:1953     | 
+| Surface Laptop 4 13"AMD   | Surface Laptop 4 | Surface_Laptop_4_1958:1959    | 
+| Surface Hub 2S 50"  | Surface Hub 2S | Surface Hub 2S   | 
+| Surface Hub 2S 85"  | Surface Hub 2S | Surface Hub 2S 85   | 
 
-## Примеры: 
+## <a name="examples"></a>Примеры: 
 
-**Искомый SKU с помощью PowerShell**  
-Чтобы получить сведения о системном SKU, используйте следующую команду PowerShell:
+**Ирисовка SKU с помощью PowerShell**  
+Используйте следующую команду PowerShell для получения сведений о SKU system:
 
  ``` powershell  
 gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU 
 ```
 
-**Искомый SKU с помощью сведений о системе**  
-Системную SKU и системную модель для устройства также можно найти в **сведениях о системе.** Для этого выполните указанные ниже действия.
+**Ирисовка SKU с помощью Сведения о системе**  
+Вы также можете найти системную SKU и system Model для устройства в **Сведения о системе.** Для этого выполните следующие действия:
 
-1. Выберите **"Начните"** и введите **MSInfo32** в поле поиска.  
-1. Выберите **сведения о системе.**
+1. Выберите **Начните,** а затем введите **MSInfo32** в поле поиска.  
+1. Выберите **Сведения о системе**.
 
-**Использование SKU в условии WMI последовательности задач**  
-Сведения о системном SKU можно использовать в microsoft Deployment набор средств (MDT) или Microsoft Endpoint Configuration Manager как часть условия WMI последовательности задач.
+**Использование SKU в состоянии WMI последовательности задач**  
+Сведения о SKU system можно использовать в microsoft Deployment набор средств (MDT) или Microsoft Endpoint Configuration Manager как часть состояния WMI последовательности задач.
 
  ``` powershell  
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
  ``` 
 
-## Подробнее
+## <a name="learn-more"></a>Подробнее
 
-- [Справочник по WMI](https://docs.microsoft.com/windows/win32/wmisdk/wmi-reference)
+- [Справка по WMI](https://docs.microsoft.com/windows/win32/wmisdk/wmi-reference)
 - [Поддержка регистрации Surface для Windows Autopilot](surface-autopilot-registration-support.md)

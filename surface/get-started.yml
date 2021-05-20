@@ -11,20 +11,22 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 9360df030e5a562dfeb3ad471c228408122c3471
-  ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
+  ms.openlocfilehash: 301a4b733ee477c1e9999dba84cd58283c02844f
+  ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "11328183"
+  ms.lasthandoff: 05/20/2021
+  ms.locfileid: "11576829"
 landingContent:
 - title: Устройства Surface
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Surface Laptop 4 + для бизнеса
+      url: https://www.microsoft.com/surface/business/surface-laptop-4
     - text: Surface Pro 7+ для бизнеса
       url: https://www.microsoft.com/surface/business/surface-pro-7-plus
-    - text: Surface Laptop Go для бизнеса
+    - text: Surface Laptop Перейти к бизнесу
       url: https://www.microsoft.com/surface/business/surface-laptop-go
     - text: Surface Pro X для бизнеса
       url: https://www.microsoft.com/surface/business/surface-pro-x
@@ -34,21 +36,21 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Новые возможности Surface Pro 7+ для бизнеса
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-pro-7-brings-next-level-performance-and-versatility-to/ba-p/1928797
+    - text: Surface Laptop 4 процессора технического обзора
+      url: surface-laptop-processors.md
+    - text: Surface Headphones 2+ технический обзор
+      url: surface-headphones.md
     - text: Виртуальный рабочий стол Windows на Surface
       url: windows-virtual-desktop-surface.md
-    - text: Новые возможности док-станции Surface 2
-      url: surface-dock-whats-new.md
 - title: Microsoft Ignite
   linkLists:
   - linkListType: video
     links:
-    - text: Нулевое развертывание касания с Surface & AutoPilot
+    - text: Нулевое развертывание касания с помощью & AutoPilot
       url: https://youtu.be/WQ-wg8fRzN0
     - text: Surface Pro X и Windows ARM в удаленном мире
       url: https://youtu.be/bDw77ZQNPPw
-    - text: Surface Security — от Майкрософт от микросхемы к современной облачной защите конечных точек
+    - text: Surface Security — от чипа до облачной современной Endpoint Protection microsoft
       url: https://youtu.be/uadAecDbqf4
 - title: Развертывание устройств Surface
   linkLists:
@@ -58,18 +60,18 @@ landingContent:
       url: windows-autopilot-and-surface-devices.md
     - text: Поддержка регистрации Surface для Windows Autopilot
       url: surface-autopilot-registration-support.md
-    - text: Средство Surface Deployment Accelerator
+    - text: Средство Ускоритель развертывания Surface
       url: microsoft-surface-deployment-accelerator.md
 - title: Сравнение устройств Surface
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Surface Enterprise Management Mode
+      url: surface-enterprise-management-mode.md
     - text: Управление обновлениями драйверов и встроенного ПО Surface, а также их развертывание
       url: manage-surface-driver-and-firmware-updates.md
-    - text: Управление параметрами UEFI Surface в Intune
+    - text: Управление DFCI на устройствах Surface
       url: surface-manage-dfci-guide.md
-    - text: Развертывание, управление и обслуживание Surface Pro X
-      url: surface-pro-arm-app-management.md
 - title: Устранение неполадок
   linkLists:
   - linkListType: learn
@@ -86,7 +88,7 @@ landingContent:
     links:
     - text: Защита DMA на устройствах Surface
       url: dma-protect.md
-    - text: Безопасные порты док-станции Surface 2 с помощью режима управления Surface Enterprise (SEMM)
+    - text: Безопасные порты surface Dock 2 с режимом Enterprise Surface (SEMM)
       url: secure-surface-dock-ports-semm.md
     - text: Средство Surface Data Eraser
       url: microsoft-surface-data-eraser.md

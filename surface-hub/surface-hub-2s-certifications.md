@@ -1,6 +1,6 @@
 ---
-title: Сертифицированные для Microsoft Teams аксессуары для Surface Hub 2S
-description: См. сертифицированные для Teams аудио- и видеоавъемки для моделей Surface Hub 2S 50- и 85-дюймовых.
+title: Microsoft Teams сертифицированных аксессуаров для Surface Hub 2S
+description: Дополнительные Teams аудио- и видео аксессуары для Surface Hub 2S 50-дюймовых и 85-дюймовых моделей.
 keywords: Разделяйте значения запятыми
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,36 +11,35 @@ audience: Admin
 ms.topic: article
 ms.date: 01/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: a7eb064786d313d94d6b41c41542cd3a5cbfe453
-ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
+ms.openlocfilehash: 2c4e6c5a20bac85429e7e464bbf4d19788be2af7
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304870"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576889"
 ---
-# Сертифицированные аудио- и видеосъемки Microsoft Teams для Surface Hub 2S
+# <a name="microsoft-teams-certified-audio-and-video-accessories-for-surface-hub-2s"></a>Сертифицированные для Microsoft Teams аудио и видео аксессуары для Surface Hub 2S
 
-Модели Surface Hub 2S 50" и 85" сертифицированы для [Microsoft Teams](https://www.microsoft.com/microsoft-teams/across-devices/devices/product?deviceid=31) на 2,3 метров как одно устройство в лужах и пространствах для совместной работы. Семейство Surface Hub 2S можно расширить до более крупных помещений с помощью следующих протестированных и утвержденных сертифицированных периферийных устройств Microsoft Teams, которые в сочетании с Surface Hub 2S 50" и 85".
+Surface Hub модели 2S 50 и 85 [](https://www.microsoft.com/microsoft-teams/across-devices/devices/product?deviceid=31) " сертифицированы для Microsoft Teams 2,3 м в качестве устройства all-in-one в пространствах лужи и совместной работы. Семейство Surface Hub 2S можно распространить на более крупные комнаты со следующими тестированными и утвержденными Microsoft Teams сертифицированными периферийными устройствами, которые в сочетании с Surface Hub 2S 50 и 85".
 
-## Сертифицированные аудиосхемы Microsoft Teams 
+## <a name="microsoft-teams-certified-audio-accessories"></a>Microsoft Teams аудио аксессуары 
 
 | Модель                                | Описание                                                                                                                                                                                                                                                                                              |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **EPOS EXPAND 80T**<br>         | До семи участников. Microsoft Teams сертифицирован.<br><br>- Присоединить одну сертификацию EXPAND 80 Mic для Microsoft Teams в комнатах для собраний среднего размера для до 11 участников.<br>- Присоединить два сертификата EXPAND 80 Mics для Microsoft Teams в больших комнатах для собраний до 18 участников. |
-| **Yamaha YVC-1000MS**<br>        | До шести участников.<br><br>- Используйте от одного до пяти микрофонов расширения для сертификации Microsoft Teams в комнатах с числом участников до 40.                                                                                                                                                               |
-| **Sennheiser EXPAND SP 20**<br> | До шести участников. Microsoft Teams сертифицирован.                                                                                                                                                                                                                                                   |
-| **Yealink CP900**<br>           | До шести участников. Microsoft Teams сертифицирован.                                                                                                                                                                                                                                                   |
+| **Yamaha YVC-1000MS**<br>        | До шести участников.<br><br>- Используйте от одного до пяти микрофонов расширения для Microsoft Teams сертификации в комнатах с до 40 участниками.                                                                                                                                                               |
+| **Sennheiser EXPAND SP 20**<br> | До шести участников. Microsoft Teams сертифицирована.                                                                                                                                                                                                                                                   |
+| **Yealink CP900**<br>           | До шести участников. Microsoft Teams сертифицирована.                                                                                                                                                                                                                                                   |
 
  
-## Сертифицированные видеоавъемки Microsoft Teams
+## <a name="microsoft-teams-certified-video-accessories"></a>Microsoft Teams аксессуары для видео
 
 | Модель                                       | Описание                                                                    |
 | ------------------------------------------- | ------------------------------------------------------------------------------ |
-| **Jabra PanaCast**<br>                  | 4K, 180 градусов.<br>До 3 метров для тем видео                          |
-| **Poly Studio — USB-видеокаль комнаты Huddle** | 4K, 120 градусов<br>До 3,7 метров для аудио и видео тем                 |
-| **Polycom EagleEye Director II**<br>    | 1080p, 65 градусов<br>10+ участников средних комнат                             |
-| **Logitech Ведомости**                      | 4K, 90 градусов, PTZ, ручное/цифровое управление, USB 3.0 Type-C, контроль конфиденциальности |
+| **Jabra PanaCast**<br>                  | 4K, 180 градусов.<br>До 3 метров для субъектов видео                          |
+| **Poly Studio — USB-видео-бар Huddle Room** | 4K, 120 градусов<br>До 3,7 метров для аудио и видео субъектов                 |
+| **Директор Polycom EagleEye II**<br>    | 1080p, 65 градусов<br>Средние комнаты для участников 10+                             |
+| **Ралли-бар Logitech**                      | 4K, 90 градусов, PTZ, ручное или цифровое управление, USB 3.0 Type-C, гарантия конфиденциальности |
 
-## Подробнее
+## <a name="learn-more"></a>Подробнее
 
-- [Системы комнат для собраний, телефоны VoIP, гарнитуры | Microsoft Teams](https://www.microsoft.com/microsoft-teams/across-devices/)
+- [Конференц-зал Системы, VoIP-телефоны, гарнитуры | Microsoft Teams](https://www.microsoft.com/microsoft-teams/across-devices/)

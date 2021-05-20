@@ -10,20 +10,20 @@ ms.date: 08/15/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: c5b6a083d543649eab899d2fea36327d08f8bc29
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: cf9649b8d1f747722064793fbbde70116bc7f424
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834515"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576849"
 ---
-# Настройка меню "Пуск" Surface Hub
+# <a name="configure-surface-hub-start-menu"></a>Настройка меню "Пуск" Surface Hub
 
 [Обновление Windows 10 от 17 января 2018 г.](https://support.microsoft.com/help/4057144) (сборка 15063.877) позволяет настраивать меню "Пуск" на устройствах Surface Hub. Вы применяете настраиваемый макет меню "Пуск" с помощью службы управления мобильными устройствами (MDM).
 
 В этом случае пользователи не смогут закреплять приложения в меню "Пуск", а также откреплять или удалять их. 
 
-## Применение настраиваемого меню "Пуск" для Surface Hub
+## <a name="how-to-apply-a-customized-start-menu-to-surface-hub"></a>Применение настраиваемого меню "Пуск" для Surface Hub
 
 Настраиваемое меню "Пуск" определяется в XML-файла макета меню "Пуск". Создать XML-файл макета меню "Пуск" можно двумя способами:
 
@@ -41,19 +41,23 @@ ms.locfileid: "10834515"
 После создания XML-файла макета меню "Пуск" [создайте политику MDM для применения макета.](https://docs.microsoft.com/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)
 
 <span id="differences" />
-## Отличия между меню "Пуск" на устройстве Surface Hub и настольном компьютере
+
+## <a name="differences-between-surface-hub-and-desktop-start-menu"></a>Отличия между меню "Пуск" на устройстве Surface Hub и настольном компьютере
 
 Существует несколько основных различий между меню "Пуск" для Surface Hub и компьютера Windows 10.
 
-- Нельзя использовать **DesktopApplicationTile** ( https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) в XML-файле макета для начала работы, поскольку классическое приложение Windows (Win32) не поддерживается на Surface Hub.
+- Вы не можете использовать **DesktopApplicationTile** (в XML макета начните, так как Windows настольные приложения (Win32) не поддерживаются https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) Surface Hub.
 - Нельзя использовать XML-файл макета меню "Пуск" для настройки панели задач или экрана приветствия для Surface Hub.  
+- Политика макета "Начните" должна быть назначена только устройствам, а не пользователям.
+- Параметр OMA-URI, который используется в политике, `./Device/Vendor/MSFT/Policy/Config/Start/StartLayout`
 - Surface Hub поддерживает не более 6столбцов (6плиток 1x1), однако вам **необходимо** определить `GroupCellWidth=8`столбцов, хотя Surface Hub будет отображать только плитки в столбцах 0–5, но не в столбцах 6 и 7.
 - Surface Hub поддерживает максимум 6строк (6 плиток 1x1)
 - `SecondaryTile`, который используется для ссылок, открывают ссылку в Microsoft Edge.
 
 
 <span id="default" />
-## Пример: макет меню "Пуск" Surface Hub по умолчанию
+
+## <a name="example-default-surface-hub-start-layout"></a>Пример: макет меню "Пуск" Surface Hub по умолчанию
 
 ```xml
 <LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
@@ -110,9 +114,10 @@ ms.locfileid: "10834515"
 ```
 
 <span id="edge" />
-## Пример: макет меню "Пуск", содержащий ссылку Microsoft Edge
 
-В этом примере показана ссылка на веб-сайт и ссылка на PDF-файл. Вспомогательная плитка для Microsoft Edge использует значок 150 x 150 пикселей.
+## <a name="example-start-layout-that-includes-a-microsoft-edge-link"></a>Пример: макет меню "Пуск", содержащий ссылку Microsoft Edge
+
+В этом примере показана ссылка на веб-сайт и ссылка на PDF-файл. На вторичной плитке для Microsoft Edge используется значок 150 x 150 пикселей.
 
 ```xml
 <LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
@@ -186,4 +191,4 @@ ms.locfileid: "10834515"
 ```
 
 >[!NOTE]
->Значение по умолчанию `ForegroundText` — Light; вам не нужно включать `ForegroundText` данные в формате XML, если только вы не измените значение на "темная".
+>Значение по умолчанию для светлое; вам не нужно включать в XML, если вы не меняете значение `ForegroundText` `ForegroundText` на темное.
