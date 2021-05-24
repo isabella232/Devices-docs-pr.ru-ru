@@ -14,10 +14,10 @@
 ### [Руководство по подготовке узла Surface Hub 2S](surface-hub-2s-site-readiness-guide.md) 
 #### [Планирование среды для Surface Hub 2S](surface-hub-2s-site-planning.md)
 #### [Краткое руководство по Surface Hub 2S](surface-hub-2s-quick-start.md)
-#### [Установка и подключение Surface Hub 2S](surface-hub-2s-install-mount.md)
-#### [Перемещение и работа с Surface Hub 2S 85"](hub-move.md)
-#### [Установка и установка Surface Hub 2S 85"](surface-hub-2s-85-install-mount.md)
-#### [Настройка настенного крепления для Surface Hub 2S](surface-hub-2s-custom-install.md)
+#### [Установка и подключение Surface Hub 2S 50"](surface-hub-2s-install-mount.md)
+#### [Перемещение и обращение с Surface Hub 2S 85"](hub-move.md)
+#### [Установка и подключение Surface Hub 2S 85"](surface-hub-2s-85-install-mount.md)
+#### [Настраиваемая настенная установка Surface Hub 2S 50"](surface-hub-2s-custom-install.md)
 #### [Рабочий план настройки](setup-worksheet-surface-hub.md)
 #### [Обзор портов и клавиатуры Surface Hub 2S](surface-hub-2s-port-keypad-overview.md)
 #### [Подключение устройств к Surface Hub 2S](surface-hub-2s-connect.md)
@@ -29,7 +29,6 @@
 ### [Видео о внедрении Surface Hub 2S](surface-hub-2s-adoption-videos.md)
 ### [Первая настройка Surface Hub 2S](surface-hub-2s-setup.md)
 ### [Подключение устройств к Surface Hub 2S](surface-hub-2s-connect.md)
-### [Контрольный список развертывания Surface Hub 2S](surface-hub-2s-deploy-checklist.md)
 ### [Создание и тестирование учетной записи устройства](create-and-test-a-device-account-surface-hub.md)
 ### [Создание пакетов подготовки для Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Развертывание приложений на Surface Hub 2S с помощью Intune](surface-hub-2s-deploy-apps-intune.md)
@@ -85,8 +84,10 @@
 ## Развертывание
 ### [Создание и тестирование учетной записи устройства](create-and-test-a-device-account-surface-hub.md)
 #### [Развертывание в сети](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+
 #### [Локальное развертывание (с одним лесом)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
-#### [Локальное развертывание (с несколькими лесами)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments
+
+#### [Локальное развертывание (с несколькими лесами)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments)
 #### [Гибридное развертывание](hybrid-deployment-surface-hub-device-accounts.md)
 #### [Свойства Microsoft Exchange](exchange-properties-for-surface-hub-device-accounts.md)
 #### [Применение политик ActiveSync к учетным записям устройств](apply-activesync-policies-for-surface-hub-device-accounts.md)
@@ -135,7 +136,7 @@
 ### [Основные решения поддержки для Surface Hub](support-solutions-surface-hub.md)
 ### [Устранение неполадок с Microsoft Surface Hub](troubleshoot-surface-hub.md)
 ### [Журнал обновлений Surface Hub](surface-hub-update-history.md)
-### [Известные проблемы и дополнительные сведения о Microsoft Surface Hub](known-issues-and-additional-info-about-surface-hub.md)
+### [Известные проблемы: ОС Windows 10 для совместной работы](surface-hub-2020-team-update-known-issues.md)
 ### [Использование облачного восстановления для BitLocker на Surface Hub](use-cloud-recovery-for-bitlocker-on-surfacehub.md)
 ### [Использование средства диагностики оборудования Surface Hub для проверки учетной записи устройства](use-surface-hub-diagnostic-test-device-account.md)
 ### [Устранение неполадок с Miracast на Surface Hub](miracast-troubleshooting.md)
