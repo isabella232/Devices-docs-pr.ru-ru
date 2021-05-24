@@ -1,0 +1,93 @@
+items:
+  - name: Inclusive Tech Lab
+    href: index.md
+    items:
+      - name: Знакомство с функциями разработки для людей с ограниченными возможностями
+        href: understanding-function-to-design-for-disabilities.md
+        items:
+          - name: Барьеры доступности могут накладываться друг на друга
+            href: barriers-to-accessibility-can-co-occur.md
+          - name: Что такое познавательная способность?
+            href: cognition.md
+            items:
+              - name: Внимание
+                href: cognition-attention.md
+              - name: Память
+                href: cognition-memory.md
+              - name: Суждение
+                href: cognition-judgment.md
+              - name: Обработка (скорость)
+                href: cognition-processing-speed.md
+              - name: Обработка (понимание)
+                href: cognition-processing-comprehension.md
+          - name: Что такое мобильность?
+            href: mobility.md
+            items:
+              - name: Восприятие
+                href: mobility-grasp.md
+              - name: Мелкая моторика
+                href: mobility-fine-motor-skills.md
+              - name: Координация
+                href: mobility-coordination.md
+              - name: Управление (произвольное и непроизвольное движение)
+                href: mobility-control.md
+              - name: Скорость
+                href: mobility-speed.md
+              - name: Мышечный тонус
+                href: mobility-muscle-tone.md
+              - name: Выносливость
+                href: mobility-endurance.md
+              - name: Поза
+                href: mobility-posture.md
+          - name: Что такое зрение?
+            href: vision.md
+            items:
+              - name: Слепота
+                href: vision-blindness-sightlessness.md
+              - name: Слабое зрение (частичная потеря зрения)
+                href: vision-low-vision-partially-sighted.md
+              - name: Снижение остроты
+                href: vision-decreased-acuity.md
+              - name: Потеря поля зрения
+                href: vision-visual-field-loss.md
+              - name: Дальтонизм
+                href: vision-color-blindness.md
+              - name: Светобоязнь (чувствительность к свету)
+                href: vision-photophobia-light-sensitivity.md
+          - name: Что такое слух?
+            href: hearing.md
+            items:
+              - name: Потеря слуха (умеренная)
+                href: hearing-mild.md
+              - name: Потеря слуха (умеренная/серьезная)
+                href: hearing-moderate-severe.md
+              - name: Потеря слуха (значительная)
+                href: hearing-profound.md
+              - name: Потеря слуха (асимметричная)
+                href: hearing-asymmetrical.md
+          - name: 'Что такое голос, речь и коммуникация?'
+            href: voice-speech-communication.md
+            items:
+              - name: Афазия (рецептивная)
+                href: voice-speech-communication-aphasia-receptive.md
+              - name: Афазия (экспрессивная)
+                href: voice-speech-communication-aphasia-expressive.md
+              - name: Качество речи
+                href: voice-speech-communication-speech-quality.md
+              - name: Социализация
+                href: voice-speech-communication-social-participation.md
+              - name: Невербальная коммуникация
+                href: voice-speech-communication-non-verbal.md
+          - name: Что такое чувствительность и восприятие?
+            href: sensation-perception.md
+            items:
+              - name: Вестибулярный аппарат
+                href: sensation-perception-vestibular.md
+              - name: Хроническая боль
+                href: sensation-perception-chronic-pain.md
+              - name: Целостность кожи
+                href: sensation-perception-skin-integrity.md
+              - name: Чувствительность (повышенная и пониженная чувствительность)
+                href: sensation-perception-sensation.md
+              - name: Проприоцепция
+                href: sensation-perception-proprioception.md

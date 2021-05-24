@@ -4,10 +4,11 @@
 
 ## Обзор
 
+### [Surface Laptop 4 для бизнеса](https://www.microsoft.com/surface/business/surface-laptop-4)
+### [Технический обзор процессоров Surface Laptop 4](surface-laptop-processors.md)
 ### [Surface Pro 7+ для бизнеса](https://www.microsoft.com/surface/business/surface-pro-7-plus)
 ### [Surface Go 2 для бизнеса](https://www.microsoft.com/surface/business/surface-go-2)
 ### [Surface Pro X для бизнеса](https://www.microsoft.com/surface/business/surface-pro-x)
-### [Surface Laptop 3 для бизнеса](https://www.microsoft.com/surface/business/surface-laptop-3)
 ### [Surface Studio 2 для бизнеса](https://www.microsoft.com/surface/business/surface-studio-2)
 ### [Surface Book 3 для бизнеса](https://www.microsoft.com/surface/business/surface-book-3)
 ### [Повышение рентабельности (ROI) с помощью Microsoft Surface](forrester-tei-study.md)
@@ -16,8 +17,10 @@
 ### [Технический обзор Surface Book 3 GPU](surface-book-GPU-overview.md)
 ### [Технический обзор Surface Book 3 Quadro RTX 3000](surface-book-quadro.md)
 ### [Безопасная работа в любом месте с помощью LTE Advanced](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
+### [Технический обзор Surface Headphones 2+](surface-headphones.md)
 
-## План
+
+## Планирование
 
 ### [Совместимость устройств Surface с Windows 10 с долгосрочным обслуживанием (Long-Term Servicing Branch)](surface-device-compatibility-with-windows-10-ltsc.md)
 ### [Long-Term Servicing Branch для устройств Surface](ltsb-for-surface.md)
