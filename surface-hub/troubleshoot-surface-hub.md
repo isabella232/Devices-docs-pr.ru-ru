@@ -31,12 +31,12 @@ ms.locfileid: "10834891"
 
 
 
-## <span data-ttu-id="acb5a-113">Устранение неполадок с настройкой</span><span class="sxs-lookup"><span data-stu-id="acb5a-113">Setup troubleshooting</span></span>
+## <a name="setup-troubleshooting"></a><span data-ttu-id="acb5a-113">Устранение неполадок с настройкой</span><span class="sxs-lookup"><span data-stu-id="acb5a-113">Setup troubleshooting</span></span>
 
 
 <span data-ttu-id="acb5a-114">В этом разделе перечислены причины неполадок, с которыми вы можете столкнуться при настройке Microsoft Surface Hub, и способы их устранения.</span><span class="sxs-lookup"><span data-stu-id="acb5a-114">This section lists causes, and possible fixes to help troubleshoot issues you might find when you set up your Microsoft Surface Hub.</span></span>
 
-### <span data-ttu-id="acb5a-115">На устройстве</span><span class="sxs-lookup"><span data-stu-id="acb5a-115">On-device</span></span>
+### <a name="on-device"></a><span data-ttu-id="acb5a-115">На устройстве</span><span class="sxs-lookup"><span data-stu-id="acb5a-115">On-device</span></span>
 
 <span data-ttu-id="acb5a-116">Возможные способы устранения проблем с Surface Hub, которые могут возникнуть после процедуры первого запуска.</span><span class="sxs-lookup"><span data-stu-id="acb5a-116">Possible fixes for issues on the Surface Hub after you've completed the first-run program.</span></span>
 
@@ -143,7 +143,7 @@ ms.locfileid: "10834891"
 </table>
  
 
-### <span data-ttu-id="acb5a-150">Первый запуск</span><span class="sxs-lookup"><span data-stu-id="acb5a-150">First run</span></span>
+### <a name="first-run"></a><span data-ttu-id="acb5a-150">Первый запуск</span><span class="sxs-lookup"><span data-stu-id="acb5a-150">First run</span></span>
 
 <span data-ttu-id="acb5a-151">Возможные способы устранения проблем с программой первого запуска Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="acb5a-151">Possible fixes for issues with Surface Hub first-run program.</span></span>
 
@@ -212,7 +212,7 @@ ms.locfileid: "10834891"
 
  
 
-### <span data-ttu-id="acb5a-178">Страница учетной записи устройства, проблемы с параметрами существующей учетной записи</span><span class="sxs-lookup"><span data-stu-id="acb5a-178">Device account page, issues for existing account settings</span></span>
+### <a name="device-account-page,-issues-for-existing-account-settings"></a><span data-ttu-id="acb5a-178">Страница учетной записи устройства, проблемы с параметрами существующей учетной записи</span><span class="sxs-lookup"><span data-stu-id="acb5a-178">Device account page, issues for existing account settings</span></span>
 
 <table>
 <tr>
@@ -372,7 +372,7 @@ ms.locfileid: "10834891"
 
  
 
-### <span data-ttu-id="acb5a-227">Первый запуск, страница Exchange Server</span><span class="sxs-lookup"><span data-stu-id="acb5a-227">First run, Exchange server page</span></span>
+### <a name="first-run,-exchange-server-page"></a><span data-ttu-id="acb5a-227">Первый запуск, страница Exchange Server</span><span class="sxs-lookup"><span data-stu-id="acb5a-227">First run, Exchange server page</span></span>
 
 <table>
 <colgroup>
@@ -431,7 +431,7 @@ ms.locfileid: "10834891"
 
  
 
-## <span data-ttu-id="acb5a-243">Ошибки Exchange ActiveSync</span><span class="sxs-lookup"><span data-stu-id="acb5a-243">Exchange ActiveSync errors</span></span>
+## <a name="exchange-activesync-errors"></a><span data-ttu-id="acb5a-243">Ошибки Exchange ActiveSync</span><span class="sxs-lookup"><span data-stu-id="acb5a-243">Exchange ActiveSync errors</span></span>
 
 
 <span data-ttu-id="acb5a-244">В этом разделе перечислены коды этого состояния, сопоставления, сообщения для пользователей, а также действия, которые администратор может выполнить, чтобы исправить ошибки Exchange ActiveSync.</span><span class="sxs-lookup"><span data-stu-id="acb5a-244">This section lists status codes, mapping, user messages, and actions an admin can take to solve Exchange ActiveSync errors.</span></span>
@@ -607,13 +607,13 @@ ms.locfileid: "10834891"
 </tbody>
 </table>
 
-## <span data-ttu-id="acb5a-372">Обратиться в службу поддержки</span><span class="sxs-lookup"><span data-stu-id="acb5a-372">Contact Support</span></span>
+## <a name="contact-support"></a><span data-ttu-id="acb5a-372">Обратиться в службу поддержки</span><span class="sxs-lookup"><span data-stu-id="acb5a-372">Contact Support</span></span>
 
 <span data-ttu-id="acb5a-373">Если у вас возникли вопросы или вам нужна помощь, вы можете [создать запрос в службу поддержки](https://support.microsoft.com/supportforbusiness/productselection).</span><span class="sxs-lookup"><span data-stu-id="acb5a-373">If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).</span></span>
 
 
  
-## <span data-ttu-id="acb5a-374">Связанное содержимое</span><span class="sxs-lookup"><span data-stu-id="acb5a-374">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="acb5a-374">Связанное содержимое</span><span class="sxs-lookup"><span data-stu-id="acb5a-374">Related content</span></span>
 
 - [<span data-ttu-id="acb5a-375">Устранение неполадок подключения Miracast к Surface Hub</span><span class="sxs-lookup"><span data-stu-id="acb5a-375">Troubleshooting Miracast connection to the Surface Hub</span></span>](https://docs.microsoft.com/surface-hub/miracast-troubleshooting)
  

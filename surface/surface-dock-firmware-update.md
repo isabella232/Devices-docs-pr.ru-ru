@@ -31,7 +31,7 @@ ms.locfileid: "11319213"
 
 <span data-ttu-id="a2cdc-112">Это средство перемежает предыдущее средство Microsoft Surface Dock Updater, ранее доступное для скачивания в составе средств Surface для ИТ-служб.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-112">This tool supersedes the earlier Microsoft Surface Dock Updater tool, previously available for download as part of Surface Tools for IT.</span></span> <span data-ttu-id="a2cdc-113">Предыдущее средство называлось Surface_Dock_Updater_vx.xx.xxx.x.msi (где x указывает номер версии) и больше не доступно для скачивания и не должно использоваться.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-113">The earlier tool was named Surface_Dock_Updater_vx.xx.xxx.x.msi (where x indicates the version number) and is no longer available for download and should not be used.</span></span>
 
-## <span data-ttu-id="a2cdc-114">Установка обновления микропрограмм док-станции Surface</span><span class="sxs-lookup"><span data-stu-id="a2cdc-114">Install the Surface Dock Firmware Update</span></span>
+## <a name="install-the-surface-dock-firmware-update"></a><span data-ttu-id="a2cdc-114">Установка обновления микропрограмм док-станции Surface</span><span class="sxs-lookup"><span data-stu-id="a2cdc-114">Install the Surface Dock Firmware Update</span></span>
 
 <span data-ttu-id="a2cdc-115">В этом разделе описано, как вручную установить обновление микропрограмм.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-115">This section describes how to manually install the firmware update.</span></span>
 
@@ -44,7 +44,7 @@ ms.locfileid: "11319213"
 
 2. <span data-ttu-id="a2cdc-123">Отсоедините устройство Surface от док-станции Surface, подождите около 5 секунд и снова подключите устройство.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-123">Disconnect your Surface device from the Surface Dock, wait ~5 seconds, and then reconnect.</span></span> <span data-ttu-id="a2cdc-124">Обновление микропрограмм док-станции Surface автоматически обновляет док-станцию в фоновом режиме.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-124">The Surface Dock Firmware Update will update the dock silently in background.</span></span> <span data-ttu-id="a2cdc-125">Процесс может занять несколько минут и будет продолжен, даже если его прерывать.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-125">The process can take a few minutes to complete and will continue even if interrupted.</span></span> 
 
-## <span data-ttu-id="a2cdc-126">Мониторинг обновления микропрограмм док-станции Surface</span><span class="sxs-lookup"><span data-stu-id="a2cdc-126">Monitor the Surface Dock Firmware Update</span></span>
+## <a name="monitor-the-surface-dock-firmware-update"></a><span data-ttu-id="a2cdc-126">Мониторинг обновления микропрограмм док-станции Surface</span><span class="sxs-lookup"><span data-stu-id="a2cdc-126">Monitor the Surface Dock Firmware Update</span></span>
 
 <span data-ttu-id="a2cdc-127">Этот раздел является необязательным и содержит обзор отслеживания установки обновления микропрограмм.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-127">This section is optional and provides an overview of how to monitor installation of the firmware update.</span></span> 
 
@@ -77,7 +77,7 @@ ms.locfileid: "11319213"
   - [<span data-ttu-id="a2cdc-144">Советы по устранению неполадок</span><span class="sxs-lookup"><span data-stu-id="a2cdc-144">Troubleshooting tips</span></span>](#troubleshooting-tips)
   - [<span data-ttu-id="a2cdc-145">Справочник по версиям</span><span class="sxs-lookup"><span data-stu-id="a2cdc-145">Versions reference</span></span>](#versions-reference)
 
-## <span data-ttu-id="a2cdc-146">Сетевое развертывание</span><span class="sxs-lookup"><span data-stu-id="a2cdc-146">Network deployment</span></span>
+## <a name="network-deployment"></a><span data-ttu-id="a2cdc-146">Сетевое развертывание</span><span class="sxs-lookup"><span data-stu-id="a2cdc-146">Network deployment</span></span>
 
 <span data-ttu-id="a2cdc-147">Команды установщика Windows (Msiexec.exe) можно использовать для развертывания обновления микропрограмм док-станции Surface на нескольких устройствах в сети.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-147">You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firmware Update to multiple devices across your network.</span></span> <span data-ttu-id="a2cdc-148">При использовании Microsoft Endpoint Configuration Manager или другого средства развертывания введите следующий синтаксис, чтобы убедиться, что установка происходит в тихом режиме:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-148">When using Microsoft Endpoint Configuration Manager or other deployment tool, enter the following syntax to ensure the installation is silent:</span></span>
 
@@ -97,14 +97,14 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 > [!IMPORTANT]
 > <span data-ttu-id="a2cdc-154">Если вы хотите обновить док-станцию Surface любым другим способом, обратитесь к сведениям об обновлении док-станции [Surface.](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock)</span><span class="sxs-lookup"><span data-stu-id="a2cdc-154">If you want to keep your Surface Dock updated using any other method, refer to [Update your Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) for details.</span></span>
 
-## <span data-ttu-id="a2cdc-155">Развертывание Intune</span><span class="sxs-lookup"><span data-stu-id="a2cdc-155">Intune deployment</span></span>
+## <a name="intune-deployment"></a><span data-ttu-id="a2cdc-155">Развертывание Intune</span><span class="sxs-lookup"><span data-stu-id="a2cdc-155">Intune deployment</span></span>
 
 <span data-ttu-id="a2cdc-156">Вы можете использовать Intune для распространения обновления микропрограмм док-станции Surface на устройства.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-156">You can use Intune to distribute Surface Dock Firmware Update to your devices.</span></span> <span data-ttu-id="a2cdc-157">Сначала необходимо преобразовать MSI-файл в формат .intunewin, как описано в следующей документации: [intune Standalone —](https://docs.microsoft.com/intune/apps/apps-win32-app-management)управление приложениями Win32.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-157">First you will need to convert the MSI file to the .intunewin format, as described in the following documentation: [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps/apps-win32-app-management).</span></span>
 
 <span data-ttu-id="a2cdc-158">Используйте следующую команду:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-158">Use the following command:</span></span>
   - **<span data-ttu-id="a2cdc-159">msiexec /i \<path to msi file\> /quiet /q</span><span class="sxs-lookup"><span data-stu-id="a2cdc-159">msiexec /i \<path to msi file\> /quiet /q</span></span>**
 
-## <span data-ttu-id="a2cdc-160">Проверка завершения обновления микропрограммы</span><span class="sxs-lookup"><span data-stu-id="a2cdc-160">How to verify completion of the firmware update</span></span>
+## <a name="how-to-verify-completion-of-the-firmware-update"></a><span data-ttu-id="a2cdc-160">Проверка завершения обновления микропрограммы</span><span class="sxs-lookup"><span data-stu-id="a2cdc-160">How to verify completion of the firmware update</span></span>
 
 <span data-ttu-id="a2cdc-161">Микропрограмма док-станции Surface состоит из двух компонентов:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-161">Surface dock firmware consists of two components:</span></span>
 
@@ -127,7 +127,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 
 4. <span data-ttu-id="a2cdc-172">Если не удается проверить, просмотрите советы по регистрации событий и устранению неполадок в следующем разделе.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-172">If unable to verify, review Event logging and Troubleshooting tips in the next section.</span></span>
 
-## <span data-ttu-id="a2cdc-173">Ведение журнала событий</span><span class="sxs-lookup"><span data-stu-id="a2cdc-173">Event logging</span></span>
+## <a name="event-logging"></a><span data-ttu-id="a2cdc-173">Ведение журнала событий</span><span class="sxs-lookup"><span data-stu-id="a2cdc-173">Event logging</span></span>
 
 **<span data-ttu-id="a2cdc-174">Таблица1.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-174">Table 1.</span></span> <span data-ttu-id="a2cdc-175">Файлы журнала для обновления микропрограмм док-станции Surface</span><span class="sxs-lookup"><span data-stu-id="a2cdc-175">Log files for Surface Dock Firmware Update</span></span>**
 
@@ -152,7 +152,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 | <span data-ttu-id="a2cdc-205">2008</span><span class="sxs-lookup"><span data-stu-id="a2cdc-205">2008</span></span>     | <span data-ttu-id="a2cdc-206">Телеметрия док-станции BEGIN.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-206">BEGIN dock telemetry.</span></span>                                                |
 | <span data-ttu-id="a2cdc-207">2011</span><span class="sxs-lookup"><span data-stu-id="a2cdc-207">2011</span></span>     | <span data-ttu-id="a2cdc-208">Телеметрия док-станции END.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-208">END dock telemetry.</span></span>                                                  |
 
-## <span data-ttu-id="a2cdc-209">Советы по устранению неполадок</span><span class="sxs-lookup"><span data-stu-id="a2cdc-209">Troubleshooting tips</span></span>
+## <a name="troubleshooting-tips"></a><span data-ttu-id="a2cdc-209">Советы по устранению неполадок</span><span class="sxs-lookup"><span data-stu-id="a2cdc-209">Troubleshooting tips</span></span>
 
 - <span data-ttu-id="a2cdc-210">Полностью отключите питание док-станции Surface от питания переменного тока, чтобы сбросить док-станцию Surface.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-210">Completely disconnect power for Surface dock from the AC power to reset the Surface Dock.</span></span>
 - <span data-ttu-id="a2cdc-211">Отключите все периферийные устройства, кроме док-станции Surface.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-211">Disconnect all peripherals except for the Surface Dock.</span></span>
@@ -160,12 +160,12 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 - <span data-ttu-id="a2cdc-213">Убедитесь, что док-станция Surface отключена, а затем предопустите достаточно времени для завершения обновления, отслеживаемого с помощью led-монитора в порте Ethernet док-станции.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-213">Ensure that the Surface Dock is disconnected, and then allow enough time for the update to complete as monitored via an LED in the Ethernet port of the dock.</span></span> <span data-ttu-id="a2cdc-214">Подождите, пока led не перестанет мигать, прежде чем отключать док-станцию Surface от питания.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-214">Wait until the LED stops blinking before you unplug Surface Dock from power.</span></span>
 - <span data-ttu-id="a2cdc-215">Подключите док-станцию Surface к другому устройству, чтобы узнать, может ли она обновить док-станцию.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-215">Connect the Surface Dock to a different device to see if it is able to update the dock.</span></span>
 
-## <span data-ttu-id="a2cdc-216">Справочник по версиям</span><span class="sxs-lookup"><span data-stu-id="a2cdc-216">Versions reference</span></span>
+## <a name="versions-reference"></a><span data-ttu-id="a2cdc-216">Справочник по версиям</span><span class="sxs-lookup"><span data-stu-id="a2cdc-216">Versions reference</span></span>
 
 >[!NOTE]
 ><span data-ttu-id="a2cdc-217">Файл установки выпущен в следующем формате \*\* именования: \*\*Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI(например, Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) и устанавливается по умолчанию в папку C:\Program Files\SurfaceUpdate.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-217">The installation file is released with the following naming format: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (ex: Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) and installs by default to C:\Program Files\SurfaceUpdate.</span></span>
 
-### <span data-ttu-id="a2cdc-218">Версия 1.53.139.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-218">Version 1.53.139.0</span></span>
+### <a name="version-1.53.139.0"></a><span data-ttu-id="a2cdc-218">Версия 1.53.139.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-218">Version 1.53.139.0</span></span>
 *<span data-ttu-id="a2cdc-219">Дата выпуска: 4 августа 2020 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-219">Release Date: August 4, 2020</span></span>*
 
 <span data-ttu-id="a2cdc-220">Эта версия обновления микропрограммы док-станции Surface включает исправления ошибок и поддержку:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-220">This version of Surface Dock Firmware Update includes bug fixes and support for:</span></span>
@@ -180,7 +180,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 - <span data-ttu-id="a2cdc-226">Component10CurrentFwVersion обновлен до **версии 4ac3970.**</span><span class="sxs-lookup"><span data-stu-id="a2cdc-226">Component10CurrentFwVersion updated to **4ac3970**.</span></span>
 - <span data-ttu-id="a2cdc-227">Component20CurrentFwVersion обновлен до **версии 4a1d570.**</span><span class="sxs-lookup"><span data-stu-id="a2cdc-227">Component20CurrentFwVersion updated to **4a1d570**.</span></span>
  
-### <span data-ttu-id="a2cdc-228">Версия 1.42.139</span><span class="sxs-lookup"><span data-stu-id="a2cdc-228">Version 1.42.139</span></span> 
+### <a name="version-1.42.139"></a><span data-ttu-id="a2cdc-228">Версия 1.42.139</span><span class="sxs-lookup"><span data-stu-id="a2cdc-228">Version 1.42.139</span></span> 
 *<span data-ttu-id="a2cdc-229">Дата выпуска: 18 сентября 2019 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-229">Release Date: September 18 2019</span></span>*
 
 <span data-ttu-id="a2cdc-230">Эта версия, в Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI, обновляет микропрограммы в фоновом режиме.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-230">This version, contained in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI, updates firmware in the background.</span></span> 
@@ -192,9 +192,9 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 
 <span data-ttu-id="a2cdc-234">Он добавляет поддержку Surface Pro 7 и Surface Laptop 3.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-234">It adds support for Surface Pro 7 and Surface Laptop 3.</span></span>
 
-## <span data-ttu-id="a2cdc-235">Устаревшие версии</span><span class="sxs-lookup"><span data-stu-id="a2cdc-235">Legacy versions</span></span>
+## <a name="legacy-versions"></a><span data-ttu-id="a2cdc-235">Устаревшие версии</span><span class="sxs-lookup"><span data-stu-id="a2cdc-235">Legacy versions</span></span>
 
-### <span data-ttu-id="a2cdc-236">Версия 2.23.139.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-236">Version 2.23.139.0</span></span>
+### <a name="version-2.23.139.0"></a><span data-ttu-id="a2cdc-236">Версия 2.23.139.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-236">Version 2.23.139.0</span></span>
 *<span data-ttu-id="a2cdc-237">Дата выпуска: 10 октября 2018 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-237">Release Date: 10 October 2018</span></span>*
 
 <span data-ttu-id="a2cdc-238">В этой версии Surface Dock Updater добавлена поддержка следующих возможностей:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-238">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -203,7 +203,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 - <span data-ttu-id="a2cdc-240">Добавление поддержки surface Laptop 2</span><span class="sxs-lookup"><span data-stu-id="a2cdc-240">Add support for Surface Laptop 2</span></span>
 
 
-### <span data-ttu-id="a2cdc-241">Версия 2.22.139.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-241">Version 2.22.139.0</span></span>
+### <a name="version-2.22.139.0"></a><span data-ttu-id="a2cdc-241">Версия 2.22.139.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-241">Version 2.22.139.0</span></span>
 *<span data-ttu-id="a2cdc-242">Дата выпуска: 26 июля 2018 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-242">Release Date: 26 July 2018</span></span>*
 
 <span data-ttu-id="a2cdc-243">В этой версии Surface Dock Updater добавлена поддержка следующих возможностей:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-243">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -211,7 +211,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 - <span data-ttu-id="a2cdc-244">Повышение надежности обновления</span><span class="sxs-lookup"><span data-stu-id="a2cdc-244">Increase update reliability</span></span>
 - <span data-ttu-id="a2cdc-245">Добавление поддержки Surface Go</span><span class="sxs-lookup"><span data-stu-id="a2cdc-245">Add support for Surface Go</span></span>
 
-### <span data-ttu-id="a2cdc-246">Версия 2.12.136.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-246">Version 2.12.136.0</span></span>
+### <a name="version-2.12.136.0"></a><span data-ttu-id="a2cdc-246">Версия 2.12.136.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-246">Version 2.12.136.0</span></span>
 *<span data-ttu-id="a2cdc-247">Дата выпуска: 29 января 2018 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-247">Release Date: 29 January 2018</span></span>*
 
 <span data-ttu-id="a2cdc-248">В этой версии Surface Dock Updater добавлена поддержка следующих устройств:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-248">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -224,7 +224,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="a2cdc-254">поддержка обновления встроенного ПО док-станции Surface с улучшениями, предназначенными для устройств Surface Book.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-254">Added support for Surface Dock firmware updates with improvements targeted to Surface Book devices</span></span>
 
 
-### <span data-ttu-id="a2cdc-255">Версия 2.9.136.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-255">Version 2.9.136.0</span></span>
+### <a name="version-2.9.136.0"></a><span data-ttu-id="a2cdc-255">Версия 2.9.136.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-255">Version 2.9.136.0</span></span>
 *<span data-ttu-id="a2cdc-256">Дата выпуска: 3 ноября 2017 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-256">Release date: November 3, 2017</span></span>*
 
 <span data-ttu-id="a2cdc-257">В этой версии Surface Dock Updater добавлена поддержка следующих устройств:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-257">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -232,7 +232,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="a2cdc-258">обновление встроенного ПО порта дисплея док-станции Surface</span><span class="sxs-lookup"><span data-stu-id="a2cdc-258">Update for Surface Dock DisplayPort Firmware</span></span>
 * <span data-ttu-id="a2cdc-259">Устраняет проблему передачи звука через пассивные адаптеры порта дисплея</span><span class="sxs-lookup"><span data-stu-id="a2cdc-259">Resolves an issue with audio over passive display port adapters</span></span>
 
-### <span data-ttu-id="a2cdc-260">Версия 2.1.15.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-260">Version 2.1.15.0</span></span>
+### <a name="version-2.1.15.0"></a><span data-ttu-id="a2cdc-260">Версия 2.1.15.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-260">Version 2.1.15.0</span></span>
 *<span data-ttu-id="a2cdc-261">Дата выпуска: 19 июня 2017 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-261">Release date: June 19, 2017</span></span>*
 
 <span data-ttu-id="a2cdc-262">В этой версии Surface Dock Updater добавлена поддержка следующих возможностей:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-262">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -240,7 +240,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="a2cdc-263">ноутбук Surface</span><span class="sxs-lookup"><span data-stu-id="a2cdc-263">Surface Laptop</span></span>
 * <span data-ttu-id="a2cdc-264">Surface Pro</span><span class="sxs-lookup"><span data-stu-id="a2cdc-264">Surface Pro</span></span>
 
-### <span data-ttu-id="a2cdc-265">Версия 2.1.6.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-265">Version 2.1.6.0</span></span>
+### <a name="version-2.1.6.0"></a><span data-ttu-id="a2cdc-265">Версия 2.1.6.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-265">Version 2.1.6.0</span></span>
 *<span data-ttu-id="a2cdc-266">Дата выпуска: 7 апреля 2017 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-266">Release date: April 7, 2017</span></span>*
 
 <span data-ttu-id="a2cdc-267">В этой версии Surface Dock Updater добавлена поддержка следующих возможностей:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-267">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -248,7 +248,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="a2cdc-268">обновление встроенного ПО порта дисплея док-станции Surface;</span><span class="sxs-lookup"><span data-stu-id="a2cdc-268">Update for Surface Dock DisplayPort firmware</span></span>
 * <span data-ttu-id="a2cdc-269">требуется Windows 10.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-269">Requires Windows 10</span></span>
 
-### <span data-ttu-id="a2cdc-270">Версия 2.0.22.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-270">Version 2.0.22.0</span></span>
+### <a name="version-2.0.22.0"></a><span data-ttu-id="a2cdc-270">Версия 2.0.22.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-270">Version 2.0.22.0</span></span>
 *<span data-ttu-id="a2cdc-271">Дата выпуска: 21 октября 2016 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-271">Release date: October 21, 2016</span></span>*
 
 <span data-ttu-id="a2cdc-272">В этой версии Surface Dock Updater добавлена поддержка следующих возможностей:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-272">This version of Surface Dock Updater adds support for the following:</span></span>
@@ -256,7 +256,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 * <span data-ttu-id="a2cdc-273">обновление для встроенного ПО USB док-станции Surface;</span><span class="sxs-lookup"><span data-stu-id="a2cdc-273">Update for Surface Dock USB firmware</span></span>
 * <span data-ttu-id="a2cdc-274">повышенная надежность порта Ethernet, звукового и USB-портов.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-274">Improved reliability of Ethernet, audio, and USB ports</span></span>
 
-### <span data-ttu-id="a2cdc-275">Версия 1.0.8.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-275">Version 1.0.8.0</span></span>
+### <a name="version-1.0.8.0"></a><span data-ttu-id="a2cdc-275">Версия 1.0.8.0</span><span class="sxs-lookup"><span data-stu-id="a2cdc-275">Version 1.0.8.0</span></span>
 *<span data-ttu-id="a2cdc-276">Дата выпуска: 26 апреля 2016 г.</span><span class="sxs-lookup"><span data-stu-id="a2cdc-276">Release date: April 26, 2016</span></span>*
 
 <span data-ttu-id="a2cdc-277">В этой версии Surface Dock Updater добавлена поддержка следующих возможностей:</span><span class="sxs-lookup"><span data-stu-id="a2cdc-277">This version of Surface Dock Updater adds support for the following:</span></span>

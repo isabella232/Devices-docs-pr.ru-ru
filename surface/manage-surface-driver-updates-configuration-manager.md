@@ -23,11 +23,11 @@ ms.locfileid: "10897077"
 ---
 # <span data-ttu-id="04482-104">Управление обновлениями драйверов в Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="04482-104">Manage Surface driver updates in Configuration Manager</span></span>
 
-## <span data-ttu-id="04482-105">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="04482-105">Summary</span></span>
+## <a name="summary"></a><span data-ttu-id="04482-105">Краткий обзор</span><span class="sxs-lookup"><span data-stu-id="04482-105">Summary</span></span>
 
 <span data-ttu-id="04482-106">Начиная с [Microsoft System Center Configuration Manager версии 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates), вы можете выполнять синхронизацию и развертывание встроенного по и обновлений для Surface (Майкрософт) прямо через клиент Configuration Manager.</span><span class="sxs-lookup"><span data-stu-id="04482-106">Starting in [Microsoft System Center Configuration Manager version 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates), you can synchronize and deploy Microsoft Surface firmware and driver updates directly through the Configuration Manager client.</span></span> <span data-ttu-id="04482-107">Процесс напоминает развертывание регулярных обновлений.</span><span class="sxs-lookup"><span data-stu-id="04482-107">The process resembles deploying regular updates.</span></span> <span data-ttu-id="04482-108">Однако некоторые дополнительные конфигурации необходимы для получения обновлений драйвера Surface в каталог.</span><span class="sxs-lookup"><span data-stu-id="04482-108">However, some additional configurations are required to get the Surface driver updates into your catalog.</span></span>
 
-## <span data-ttu-id="04482-109">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="04482-109">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="04482-109">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="04482-109">Prerequisites</span></span>
 
 <span data-ttu-id="04482-110">Для управления обновлениями драйверов Surface должны выполняться следующие требования:</span><span class="sxs-lookup"><span data-stu-id="04482-110">To manage Surface driver updates, the following prerequisites must be met:</span></span>
 
@@ -37,7 +37,7 @@ ms.locfileid: "10897077"
 > [!NOTE]
 > <span data-ttu-id="04482-114">Если ваша среда не отвечает требованиям, ознакомьтесь с [альтернативными методами](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1) для развертывания драйверов Surface и обновлений микропрограмм в разделе " [вопросы и ответы](#frequently-asked-questions-faq) ".</span><span class="sxs-lookup"><span data-stu-id="04482-114">If your environment doesn’t meet the prerequisites, refer to the [alternative methods](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1) to deploy Surface driver and firmware updates in the [FAQ](#frequently-asked-questions-faq) section.</span></span>
 
-## <span data-ttu-id="04482-115">Полезные файлы журнала</span><span class="sxs-lookup"><span data-stu-id="04482-115">Useful log files</span></span>
+## <a name="useful-log-files"></a><span data-ttu-id="04482-115">Полезные файлы журнала</span><span class="sxs-lookup"><span data-stu-id="04482-115">Useful log files</span></span>
 
 <span data-ttu-id="04482-116">Следующие журналы особенно полезны при управлении обновлениями драйверов Surface.</span><span class="sxs-lookup"><span data-stu-id="04482-116">The following logs are especially useful when you manage Surface driver updates.</span></span>
 
@@ -49,7 +49,7 @@ ms.locfileid: "10897077"
 <span data-ttu-id="04482-123">Эти журналы находятся на сервере сайта, который управляет SUPм, или на самом SUP, если он установлен непосредственно на сервере сайта.</span><span class="sxs-lookup"><span data-stu-id="04482-123">These logs are located on the site server that manages the SUP, or on the SUP itself if it's installed directly on a site server.</span></span>
 <span data-ttu-id="04482-124">Полный список журналов Configuration Manager можно найти [в разделе файлы журнала в System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files).</span><span class="sxs-lookup"><span data-stu-id="04482-124">For a complete list of Configuration Manager logs, see [Log files in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files).</span></span>
 
-## <span data-ttu-id="04482-125">Включение управления обновлениями драйверов Surface</span><span class="sxs-lookup"><span data-stu-id="04482-125">Enabling Surface driver updates management</span></span>
+## <a name="enabling-surface-driver-updates-management"></a><span data-ttu-id="04482-125">Включение управления обновлениями драйверов Surface</span><span class="sxs-lookup"><span data-stu-id="04482-125">Enabling Surface driver updates management</span></span>
 
 <span data-ttu-id="04482-126">Чтобы включить управление обновлениями драйверов Surface в диспетчере конфигураций, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="04482-126">To enable Surface driver updates management in Configuration Manager, follow these steps:</span></span>
 
@@ -83,7 +83,7 @@ ms.locfileid: "10897077"
    > [!NOTE]
    > <span data-ttu-id="04482-148">Большинство драйверов Surface относятся к нескольким группам продуктов Windows 10.</span><span class="sxs-lookup"><span data-stu-id="04482-148">Most Surface drivers belong to multiple Windows 10 product groups.</span></span> <span data-ttu-id="04482-149">Возможно, вам не придется выделять все продукты, которые перечислены здесь.</span><span class="sxs-lookup"><span data-stu-id="04482-149">You may not have to select all the products that are listed here.</span></span> <span data-ttu-id="04482-150">Чтобы уменьшить количество продуктов, которые заполняют каталог обновлений, мы рекомендуем выбирать только те продукты, которые необходимы вашей среде для синхронизации.</span><span class="sxs-lookup"><span data-stu-id="04482-150">To help reduce the number of products that populate your Update Catalog, we recommend that you select only the products that are required by your environment for synchronization.</span></span>
 
-## <span data-ttu-id="04482-151">Проверка конфигурации</span><span class="sxs-lookup"><span data-stu-id="04482-151">Verifying the configuration</span></span>
+## <a name="verifying-the-configuration"></a><span data-ttu-id="04482-151">Проверка конфигурации</span><span class="sxs-lookup"><span data-stu-id="04482-151">Verifying the configuration</span></span>
 
 <span data-ttu-id="04482-152">Чтобы убедиться в правильности настройки SUP, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="04482-152">To verify that the SUP is configured correctly, follow these steps:</span></span>
 
@@ -123,7 +123,7 @@ ms.locfileid: "10897077"
 
    ![Все результаты поиска обновлений программного обеспечения](images/manage-surface-driver-updates-4.png)
 
-## <span data-ttu-id="04482-163">Синхронизация вручную</span><span class="sxs-lookup"><span data-stu-id="04482-163">Manual synchronization</span></span>
+## <a name="manual-synchronization"></a><span data-ttu-id="04482-163">Синхронизация вручную</span><span class="sxs-lookup"><span data-stu-id="04482-163">Manual synchronization</span></span>
 
 <span data-ttu-id="04482-164">Если вы не хотите ждать следующей синхронизации, выполните указанные ниже действия, чтобы начать синхронизацию.</span><span class="sxs-lookup"><span data-stu-id="04482-164">If you don't want to wait until the next synchronization, follow these steps to start a synchronization:</span></span>
 
@@ -150,13 +150,13 @@ ms.locfileid: "10897077"
    Synchronizing update 74102899-0a49-48cf-97e6-05bde18a27ff - Microsoft driver update for Surface UEFI
    ```
 
-## <span data-ttu-id="04482-169">Развертывание микропрограммы и обновлений драйверов Surface</span><span class="sxs-lookup"><span data-stu-id="04482-169">Deploying Surface firmware and driver updates</span></span>
+## <a name="deploying-surface-firmware-and-driver-updates"></a><span data-ttu-id="04482-169">Развертывание микропрограммы и обновлений драйверов Surface</span><span class="sxs-lookup"><span data-stu-id="04482-169">Deploying Surface firmware and driver updates</span></span>
 
 <span data-ttu-id="04482-170">Встроенное по и обновления драйверов можно развертывать так же, как и при развертывании других обновлений.</span><span class="sxs-lookup"><span data-stu-id="04482-170">You can deploy Surface firmware and driver updates in the same manner as you deploy other updates.</span></span>
 
 <span data-ttu-id="04482-171">Дополнительные сведения о развертывании можно найти в статье [System Center 2012 Configuration Manager – part7: Software Updates (Deploy)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).</span><span class="sxs-lookup"><span data-stu-id="04482-171">For more information about deployment, see [System Center 2012 Configuration Manager–Part7: Software Updates (Deploy)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).</span></span>
 
-## <span data-ttu-id="04482-172">Вопросы и ответы</span><span class="sxs-lookup"><span data-stu-id="04482-172">Frequently asked questions (FAQ)</span></span>
+## <a name="frequently-asked-questions-faq"></a><span data-ttu-id="04482-172">Вопросы и ответы</span><span class="sxs-lookup"><span data-stu-id="04482-172">Frequently asked questions (FAQ)</span></span>
 
 **<span data-ttu-id="04482-173">После выполнения действий, описанных в этой статье, видеодрайверы Surfaces по-прежнему не синхронизируются.</span><span class="sxs-lookup"><span data-stu-id="04482-173">After I follow the steps in this article, my Surface drivers are still not synchronized.</span></span> <span data-ttu-id="04482-174">Почему?</span><span class="sxs-lookup"><span data-stu-id="04482-174">Why?</span></span>**
 
@@ -176,7 +176,7 @@ ms.locfileid: "10897077"
 
 <span data-ttu-id="04482-193">Сведения о том, как развертывать драйверы Surface и обновления встроенного по с помощью альтернативных каналов, можно найти в разделе [Управление обновлениями Surface Driver и микропрограмм](manage-surface-driver-and-firmware-updates.md).</span><span class="sxs-lookup"><span data-stu-id="04482-193">For information about how to deploy Surface driver and firmware updates through alternative channels, see [Manage Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md).</span></span> <span data-ttu-id="04482-194">Если вы хотите скачать MSI-или exe-файл, а затем развернуть его через традиционные каналы развертывания программного обеспечения, ознакомьтесь со сведениями о том, как [обновить встроенное по в Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).</span><span class="sxs-lookup"><span data-stu-id="04482-194">If you want to download the .msi or .exe file, and then deploy through traditional software deployment channels, see [Keeping Surface Firmware Updated with Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).</span></span>
 
-## <span data-ttu-id="04482-195">Дополнительные сведения</span><span class="sxs-lookup"><span data-stu-id="04482-195">Additional Information</span></span>
+## <a name="additional-information"></a><span data-ttu-id="04482-195">Дополнительные сведения</span><span class="sxs-lookup"><span data-stu-id="04482-195">Additional Information</span></span>
 
 <span data-ttu-id="04482-196">Дополнительные сведения об обновлениях драйверов и микропрограмм Surface можно найти в следующих статьях:</span><span class="sxs-lookup"><span data-stu-id="04482-196">For more information about Surface driver and firmware updates, see the following articles:</span></span>
 

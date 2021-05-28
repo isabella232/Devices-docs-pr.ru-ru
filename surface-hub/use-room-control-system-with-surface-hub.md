@@ -26,7 +26,7 @@ ms.locfileid: "10834848"
 
 <span data-ttu-id="94929-106">Для этого необходимо подключить оборудование системы управления к Surface Hub, обычно через последовательный порт RJ11 в нижней части Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="94929-106">Using a room control system with your Surface Hub involves connecting room control hardware to the Surface Hub, usually through the RJ11 serial port on the bottom of the Surface Hub.</span></span>
 
-## <span data-ttu-id="94929-107">Параметры терминала</span><span class="sxs-lookup"><span data-stu-id="94929-107">Terminal settings</span></span>
+## <a name="terminal-settings"></a><span data-ttu-id="94929-107">Параметры терминала</span><span class="sxs-lookup"><span data-stu-id="94929-107">Terminal settings</span></span>
 
 <span data-ttu-id="94929-108">Для подключения к панели системы управления помещением не нужно настраивать параметры терминала.</span><span class="sxs-lookup"><span data-stu-id="94929-108">To connect to a room control system control panel, you don't need to configure any terminal settings on the Surface Hub.</span></span> <span data-ttu-id="94929-109">Если вы хотите подключить ПК или ноутбук к Surface Hub и отправлять последовательные команды из Surface Hub, вы можете использовать программу эмулятора терминала, например Tera Term или PuTTY.</span><span class="sxs-lookup"><span data-stu-id="94929-109">If you want to connect a PC or laptop to your Surface Hub and send serial commands from the Surface Hub, you can use a terminal emulator program like Tera Term or PuTTY.</span></span> 
 
@@ -40,7 +40,7 @@ ms.locfileid: "10834848"
 | <span data-ttu-id="94929-122">Перевод строки</span><span class="sxs-lookup"><span data-stu-id="94929-122">Line feed</span></span> | <span data-ttu-id="94929-123">каждый возврат каретки</span><span class="sxs-lookup"><span data-stu-id="94929-123">every carriage return</span></span> |
  
 
-## <span data-ttu-id="94929-124">Схема подключения</span><span class="sxs-lookup"><span data-stu-id="94929-124">Wiring diagram</span></span>
+## <a name="wiring-diagram"></a><span data-ttu-id="94929-124">Схема подключения</span><span class="sxs-lookup"><span data-stu-id="94929-124">Wiring diagram</span></span>
 
 <span data-ttu-id="94929-125">Вы можете использовать стандартный разъем RJ-11 (6P6C) для подключения последовательного порта Surface Hub к системе управления помещением.</span><span class="sxs-lookup"><span data-stu-id="94929-125">You can use a standard RJ-11 (6P6C) connector to connect the Surface Hub serial port to a room control system.</span></span> <span data-ttu-id="94929-126">Это рекомендуемый метод.</span><span class="sxs-lookup"><span data-stu-id="94929-126">This is the recommended method.</span></span> <span data-ttu-id="94929-127">Вы также можете использовать 4-жильный кабель RJ-11, но это не рекомендуется.</span><span class="sxs-lookup"><span data-stu-id="94929-127">You can also use an RJ-11 4-conductor cable, but we do not recommend this method.</span></span>
 
@@ -48,7 +48,7 @@ ms.locfileid: "10834848"
 
 ![Изображение монтажной схемы.](images/room-control-wiring-diagram.png)
 
-## <span data-ttu-id="94929-130">Наборы команд</span><span class="sxs-lookup"><span data-stu-id="94929-130">Command sets</span></span>
+## <a name="command-sets"></a><span data-ttu-id="94929-130">Наборы команд</span><span class="sxs-lookup"><span data-stu-id="94929-130">Command sets</span></span>
 
 <span data-ttu-id="94929-131">Системы управления помещением используют общие сценарии конференц-зала для команд.</span><span class="sxs-lookup"><span data-stu-id="94929-131">Room control systems use common meeting-room scenarios for commands.</span></span> <span data-ttu-id="94929-132">Команды передаются из системы управления по последовательному подключению на устройство Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="94929-132">Commands originate from the room control system, and are communicated over a serial connection to a Surface Hub.</span></span> <span data-ttu-id="94929-133">Команды основаны на ASCII, при этом Surface Hub уведомляет пользователя при изменении состояния.</span><span class="sxs-lookup"><span data-stu-id="94929-133">Commands are ASCII based, and the Surface Hub will acknowledge when state changes occur.</span></span>
 
@@ -62,7 +62,7 @@ ms.locfileid: "10834848"
 | <span data-ttu-id="94929-142">?</span><span class="sxs-lookup"><span data-stu-id="94929-142">?</span></span> | <span data-ttu-id="94929-143">Запросы текущего значения</span><span class="sxs-lookup"><span data-stu-id="94929-143">Queries for a current value</span></span> |
  
 
-## <span data-ttu-id="94929-144">Питание</span><span class="sxs-lookup"><span data-stu-id="94929-144">Power</span></span>
+## <a name="power"></a><span data-ttu-id="94929-144">Питание</span><span class="sxs-lookup"><span data-stu-id="94929-144">Power</span></span>
 
 <span data-ttu-id="94929-145">Surface Hub может находиться в одном из следующих состояний питания.</span><span class="sxs-lookup"><span data-stu-id="94929-145">Surface Hub can be in one of these power states.</span></span>
 
@@ -91,7 +91,7 @@ ms.locfileid: "10834848"
 
 
 
-## <span data-ttu-id="94929-187">Яркость</span><span class="sxs-lookup"><span data-stu-id="94929-187">Brightness</span></span>
+## <a name="brightness"></a><span data-ttu-id="94929-187">Яркость</span><span class="sxs-lookup"><span data-stu-id="94929-187">Brightness</span></span>
 
 <span data-ttu-id="94929-188">Текущий уровень яркости находится в диапазоне от 0 до 100.</span><span class="sxs-lookup"><span data-stu-id="94929-188">The current brightness level is a range from 0 to 100.</span></span>
 
@@ -102,7 +102,7 @@ ms.locfileid: "10834848"
 | <span data-ttu-id="94929-193">Brightness+</span><span class="sxs-lookup"><span data-stu-id="94929-193">Brightness+</span></span> | <span data-ttu-id="94929-194">Контроллер управления системой (SMC) отправляет команду увеличения яркости.</span><span class="sxs-lookup"><span data-stu-id="94929-194">System management controller (SMC) sends the brightness up command.</span></span></br></br><span data-ttu-id="94929-195">Служба ПК в системе управления уведомляет SMC о новом уровне яркости.</span><span class="sxs-lookup"><span data-stu-id="94929-195">PC service on the room control system notifies SMC of new brightness level.</span></span> |  <span data-ttu-id="94929-196">Brightness = 51</span><span class="sxs-lookup"><span data-stu-id="94929-196">Brightness = 51</span></span> |
 | <span data-ttu-id="94929-197">Brightness-</span><span class="sxs-lookup"><span data-stu-id="94929-197">Brightness-</span></span> |  <span data-ttu-id="94929-198">SMC отправляет команду уменьшения яркости.</span><span class="sxs-lookup"><span data-stu-id="94929-198">SMC sends the brightness down command.</span></span></br></br><span data-ttu-id="94929-199">Служба на ПК уведомляет SMC о новом уровне яркости.</span><span class="sxs-lookup"><span data-stu-id="94929-199">PC service notifies SMC of new brightness level.</span></span> | <span data-ttu-id="94929-200">Brightness = 50</span><span class="sxs-lookup"><span data-stu-id="94929-200">Brightness = 50</span></span> |
 
-## <span data-ttu-id="94929-201">Volume</span><span class="sxs-lookup"><span data-stu-id="94929-201">Volume</span></span>
+## <a name="volume"></a><span data-ttu-id="94929-201">Volume</span><span class="sxs-lookup"><span data-stu-id="94929-201">Volume</span></span>
 
 <span data-ttu-id="94929-202">Текущий уровень громкости находится в диапазоне от 0 до 100.</span><span class="sxs-lookup"><span data-stu-id="94929-202">The current volume level is a range from 0 to 100.</span></span>
 
@@ -119,7 +119,7 @@ ms.locfileid: "10834848"
 
  
 
-## <span data-ttu-id="94929-217">Отключение звука</span><span class="sxs-lookup"><span data-stu-id="94929-217">Mute for audio</span></span>
+## <a name="mute-for-audio"></a><span data-ttu-id="94929-217">Отключение звука</span><span class="sxs-lookup"><span data-stu-id="94929-217">Mute for audio</span></span>
 
 <span data-ttu-id="94929-218">Звук можно отключить.</span><span class="sxs-lookup"><span data-stu-id="94929-218">Audio can be muted.</span></span>
 
@@ -130,7 +130,7 @@ ms.locfileid: "10834848"
 
  
 
-## <span data-ttu-id="94929-226">Источник видео</span><span class="sxs-lookup"><span data-stu-id="94929-226">Video source</span></span>
+## <a name="video-source"></a><span data-ttu-id="94929-226">Источник видео</span><span class="sxs-lookup"><span data-stu-id="94929-226">Video source</span></span>
 
 <span data-ttu-id="94929-227">Вы можете использовать несколько источников изображения.</span><span class="sxs-lookup"><span data-stu-id="94929-227">Several display sources can be used.</span></span>
 
@@ -153,7 +153,7 @@ ms.locfileid: "10834848"
 | <span data-ttu-id="94929-250">Source-</span><span class="sxs-lookup"><span data-stu-id="94929-250">Source-</span></span> | <span data-ttu-id="94929-251">SMC переходит к предыдущему активному источнику входных данных.</span><span class="sxs-lookup"><span data-stu-id="94929-251">SMC cycles to the previous active input source.</span></span></br></br><span data-ttu-id="94929-252">Служба на ПК уведомляет SMC о текущем источнике входных данных.</span><span class="sxs-lookup"><span data-stu-id="94929-252">PC service notifies SMC of the current input source.</span></span> |  <span data-ttu-id="94929-253">Source=&lt;#&gt;</span><span class="sxs-lookup"><span data-stu-id="94929-253">Source=&lt;#&gt;</span></span> |
 | <span data-ttu-id="94929-254">Source?</span><span class="sxs-lookup"><span data-stu-id="94929-254">Source?</span></span> |  <span data-ttu-id="94929-255">SMC запрашивает у службы на ПК активный источник входных данных.</span><span class="sxs-lookup"><span data-stu-id="94929-255">SMC queries PC service for the active input source.</span></span></br></br><span data-ttu-id="94929-256">Служба на ПК уведомляет SMC о текущем источнике входных данных.</span><span class="sxs-lookup"><span data-stu-id="94929-256">PC service notifies SMC of the current in;put source.</span></span> | <span data-ttu-id="94929-257">Source=&lt;#&gt;</span><span class="sxs-lookup"><span data-stu-id="94929-257">Source=&lt;#&gt;</span></span> |
 
-## <span data-ttu-id="94929-258">Ошибки</span><span class="sxs-lookup"><span data-stu-id="94929-258">Errors</span></span>
+## <a name="errors"></a><span data-ttu-id="94929-258">Ошибки</span><span class="sxs-lookup"><span data-stu-id="94929-258">Errors</span></span>
 
 <span data-ttu-id="94929-259">Ошибки возвращаются в формате, описанном в этой таблице.</span><span class="sxs-lookup"><span data-stu-id="94929-259">Errors are returned following the format in this table.</span></span>
 
@@ -167,7 +167,7 @@ ms.locfileid: "10834848"
 
  
 
-## <span data-ttu-id="94929-274">Еще по теме</span><span class="sxs-lookup"><span data-stu-id="94929-274">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="94929-274">Еще по теме</span><span class="sxs-lookup"><span data-stu-id="94929-274">Related topics</span></span>
 
 
 [<span data-ttu-id="94929-275">Управление Microsoft Surface Hub</span><span class="sxs-lookup"><span data-stu-id="94929-275">Manage Microsoft Surface Hub</span></span>](manage-surface-hub.md)

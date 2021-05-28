@@ -28,20 +28,20 @@ ms.locfileid: "10836411"
 
 <span data-ttu-id="ab90e-109">Это лучшие решения службы поддержки Майкрософт для распространенных проблем при использовании Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="ab90e-109">These are the top Microsoft Support solutions for common issues experienced when using Surface Hub.</span></span>
 
-## <span data-ttu-id="ab90e-110">Проблемы при настройке и установке</span><span class="sxs-lookup"><span data-stu-id="ab90e-110">Setup and install issues</span></span>
+## <a name="setup-and-install-issues"></a><span data-ttu-id="ab90e-110">Проблемы при настройке и установке</span><span class="sxs-lookup"><span data-stu-id="ab90e-110">Setup and install issues</span></span>
 
 - [<span data-ttu-id="ab90e-111">Устранение неполадок с настройкой</span><span class="sxs-lookup"><span data-stu-id="ab90e-111">Setup troubleshooting</span></span>](troubleshoot-surface-hub.md#setup-troubleshooting)
 - [<span data-ttu-id="ab90e-112">Ошибки Exchange ActiveSync</span><span class="sxs-lookup"><span data-stu-id="ab90e-112">Exchange ActiveSync errors</span></span>](troubleshoot-surface-hub.md#exchange-activesync-errors)
 
-## <span data-ttu-id="ab90e-113">Проблемы с Miracast</span><span class="sxs-lookup"><span data-stu-id="ab90e-113">Miracast issues</span></span>
+## <a name="miracast-issues"></a><span data-ttu-id="ab90e-113">Проблемы с Miracast</span><span class="sxs-lookup"><span data-stu-id="ab90e-113">Miracast issues</span></span>
 
 - [<span data-ttu-id="ab90e-114">Устранение неполадок с Miracast на Surface Hub</span><span class="sxs-lookup"><span data-stu-id="ab90e-114">Troubleshoot Miracast on Surface Hub</span></span>](miracast-troubleshooting.md)
  
-## <span data-ttu-id="ab90e-115">Проблемы со скачиванием обновлений</span><span class="sxs-lookup"><span data-stu-id="ab90e-115">Download updates issues</span></span>
+## <a name="download-updates-issues"></a><span data-ttu-id="ab90e-115">Проблемы со скачиванием обновлений</span><span class="sxs-lookup"><span data-stu-id="ab90e-115">Download updates issues</span></span>
 
 - [<span data-ttu-id="ab90e-116">Surface Hub не удается скачать обновления из Центра обновления Windows</span><span class="sxs-lookup"><span data-stu-id="ab90e-116">Surface Hub can't download updates from Windows Update</span></span>](https://support.microsoft.com/help/3191418/surface-hub-can-t-download-updates-from-windows-update)
 
-## <span data-ttu-id="ab90e-117">Проблемы с подключением приложений</span><span class="sxs-lookup"><span data-stu-id="ab90e-117">Connect app issues</span></span>
+## <a name="connect-app-issues"></a><span data-ttu-id="ab90e-117">Проблемы с подключением приложений</span><span class="sxs-lookup"><span data-stu-id="ab90e-117">Connect app issues</span></span>
 
 - [<span data-ttu-id="ab90e-118">Непредвиденный выход из приложения Connect в Surface Hub</span><span class="sxs-lookup"><span data-stu-id="ab90e-118">The Connect app in Surface Hub exits unexpectedly</span></span>](https://support.microsoft.com/help/3157417/the-connect-app-in-surface-hub-exits-unexpectedly)
 

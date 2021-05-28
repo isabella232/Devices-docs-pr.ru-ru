@@ -32,7 +32,7 @@ ms.locfileid: "11271583"
 - [<span data-ttu-id="217d6-111">Получите подробный отчет, сравнивающий устройство с оптимальной конфигурацией.</span><span class="sxs-lookup"><span data-stu-id="217d6-111">Obtain detailed report comparing device vs optimal configuration.</span></span>](surface-diagnostic-toolkit-desktop-mode.md#detailed-report)
 
 
-## <span data-ttu-id="217d6-112">Основные сценарии и ресурсы загрузки</span><span class="sxs-lookup"><span data-stu-id="217d6-112">Primary scenarios and download resources</span></span> 
+## <a name="primary-scenarios-and-download-resources"></a><span data-ttu-id="217d6-112">Основные сценарии и ресурсы загрузки</span><span class="sxs-lookup"><span data-stu-id="217d6-112">Primary scenarios and download resources</span></span> 
 
 <span data-ttu-id="217d6-113">Чтобы запустить SDT для бизнеса, скачайте компоненты, перечисленные в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="217d6-113">To run SDT for Business, download the components listed in the following table.</span></span>
 
@@ -42,7 +42,7 @@ ms.locfileid: "11271583"
 <span data-ttu-id="217d6-118">Режим рабочего стола</span><span class="sxs-lookup"><span data-stu-id="217d6-118">Desktop mode</span></span> |  <span data-ttu-id="217d6-119">Помощь пользователям в запуске SDT на устройствах Surface для устранения неполадок.</span><span class="sxs-lookup"><span data-stu-id="217d6-119">Assist users in running SDT on their Surface devices to troubleshoot issues.</span></span><br><span data-ttu-id="217d6-120">Создайте пользовательский пакет для развертывания на одном или более устройствах Surface, чтобы пользователи выбирали определенные журналы для сбора и анализа.</span><span class="sxs-lookup"><span data-stu-id="217d6-120">Create a custom package to deploy on one or more Surface devices allowing users to select specific logs to collect and analyze.</span></span> | <span data-ttu-id="217d6-121">Распространяемый пакет MSI SDT:</span><span class="sxs-lookup"><span data-stu-id="217d6-121">SDT distributable MSI package:</span></span><br><span data-ttu-id="217d6-122">Установщик microsoft Surface Diagnostic набор средств для бизнеса</span><span class="sxs-lookup"><span data-stu-id="217d6-122">Microsoft Surface Diagnostic Toolkit for Business Installer</span></span><br>[<span data-ttu-id="217d6-123">Поверхностные инструменты для ИТ</span><span class="sxs-lookup"><span data-stu-id="217d6-123">Surface Tools for IT</span></span>](https://www.microsoft.com/download/details.aspx?id=46703) | [<span data-ttu-id="217d6-124">Использование средства диагностики Surface набор средств в настольном режиме</span><span class="sxs-lookup"><span data-stu-id="217d6-124">Use Surface Diagnostic Toolkit in desktop mode</span></span>](surface-diagnostic-toolkit-desktop-mode.md)
 <span data-ttu-id="217d6-125">Командная строка</span><span class="sxs-lookup"><span data-stu-id="217d6-125">Command line</span></span> |  <span data-ttu-id="217d6-126">Напрямую устранять неполадки с устройствами Surface удаленно без участия пользователя с помощью стандартных средств, таких как Configuration Manager.</span><span class="sxs-lookup"><span data-stu-id="217d6-126">Directly troubleshoot Surface devices remotely without user interaction, using standard tools such as Configuration Manager.</span></span> <span data-ttu-id="217d6-127">Он включает следующие команды:</span><span class="sxs-lookup"><span data-stu-id="217d6-127">It includes the following commands:</span></span><br>`-DataCollector` <span data-ttu-id="217d6-128">собирает все файлы журнала</span><span class="sxs-lookup"><span data-stu-id="217d6-128">collects all log files</span></span><br>`-bpa` <span data-ttu-id="217d6-129">запускает диагностику состояния с помощью анализатора лучших практик.</span><span class="sxs-lookup"><span data-stu-id="217d6-129">runs health diagnostics using Best Practice Analyzer.</span></span><br>`-windowsupdate` <span data-ttu-id="217d6-130">проверяет Обновление Windows на наличие отсутствующих обновлений для микропрограмм или драйверов.</span><span class="sxs-lookup"><span data-stu-id="217d6-130">checks Windows Update for missing firmware or driver updates.</span></span><br>`-warranty` <span data-ttu-id="217d6-131">проверяет сведения о гарантии.</span><span class="sxs-lookup"><span data-stu-id="217d6-131">checks warranty information.</span></span> <br><br>| <span data-ttu-id="217d6-132">Консольное приложение SDT:</span><span class="sxs-lookup"><span data-stu-id="217d6-132">SDT console app:</span></span><br><span data-ttu-id="217d6-133">Консоль приложения диагностики Microsoft Surface</span><span class="sxs-lookup"><span data-stu-id="217d6-133">Microsoft Surface Diagnostics App Console</span></span><br>[<span data-ttu-id="217d6-134">Поверхностные инструменты для ИТ</span><span class="sxs-lookup"><span data-stu-id="217d6-134">Surface Tools for IT</span></span>](https://www.microsoft.com/download/details.aspx?id=46703) | [<span data-ttu-id="217d6-135">Запуск диагностики Surface набор средств с помощью команд</span><span class="sxs-lookup"><span data-stu-id="217d6-135">Run Surface Diagnostic Toolkit using commands</span></span>](surface-diagnostic-toolkit-command-line.md)
 
-## <span data-ttu-id="217d6-136">Поддерживаемые устройства</span><span class="sxs-lookup"><span data-stu-id="217d6-136">Supported devices</span></span> 
+## <a name="supported-devices-"></a><span data-ttu-id="217d6-136">Поддерживаемые устройства</span><span class="sxs-lookup"><span data-stu-id="217d6-136">Supported devices</span></span> 
 
 <span data-ttu-id="217d6-137">SDT для бизнеса поддерживается на устройствах Surface 3 и более поздних, в том числе:</span><span class="sxs-lookup"><span data-stu-id="217d6-137">SDT for Business is supported on Surface 3 and later devices, including:</span></span>
 
@@ -56,7 +56,7 @@ ms.locfileid: "11271583"
 - <span data-ttu-id="217d6-145">Surface 3</span><span class="sxs-lookup"><span data-stu-id="217d6-145">Surface 3</span></span>
 
 
-## <span data-ttu-id="217d6-146">Установка surface Diagnostic набор средств для бизнеса</span><span class="sxs-lookup"><span data-stu-id="217d6-146">Installing Surface Diagnostic Toolkit for Business</span></span>
+## <a name="installing-surface-diagnostic-toolkit-for-business"></a><span data-ttu-id="217d6-146">Установка surface Diagnostic набор средств для бизнеса</span><span class="sxs-lookup"><span data-stu-id="217d6-146">Installing Surface Diagnostic Toolkit for Business</span></span>
 
 <span data-ttu-id="217d6-147">Чтобы создать пакет SDT, который можно распространить среди пользователей в организации:</span><span class="sxs-lookup"><span data-stu-id="217d6-147">To create an SDT package that you can distribute to users in your organization:</span></span>
 
@@ -83,13 +83,13 @@ ms.locfileid: "11271583"
 
 7. <span data-ttu-id="217d6-161">Нажмите **кнопку** "Далее", а затем нажмите **кнопку "Установить".**</span><span class="sxs-lookup"><span data-stu-id="217d6-161">Click **Next** and then click **Install**.</span></span> 
 
-## <span data-ttu-id="217d6-162">Установка с помощью командной строки</span><span class="sxs-lookup"><span data-stu-id="217d6-162">Installing using the command line</span></span>
+## <a name="installing-using-the-command-line"></a><span data-ttu-id="217d6-162">Установка с помощью командной строки</span><span class="sxs-lookup"><span data-stu-id="217d6-162">Installing using the command line</span></span>
 <span data-ttu-id="217d6-163">При желании можно установить SDT в командной панели и установить настраиваемый флаг для установки средства в режиме администрирования.</span><span class="sxs-lookup"><span data-stu-id="217d6-163">If desired, you can install SDT at a command prompt and set a custom flag to install the tool in admin mode.</span></span> <span data-ttu-id="217d6-164">SDT содержит следующие флаги вариантов установки:</span><span class="sxs-lookup"><span data-stu-id="217d6-164">SDT contains the following install option flags:</span></span>
 
 - `SENDTELEMETRY` <span data-ttu-id="217d6-165">отправляет данные телеметрии в корпорацию Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="217d6-165">sends telemetry data to Microsoft.</span></span> <span data-ttu-id="217d6-166">Флаг принимается для `0` отключения или `1` включения.</span><span class="sxs-lookup"><span data-stu-id="217d6-166">The flag accepts `0` for disabled or `1` for enabled.</span></span> <span data-ttu-id="217d6-167">Значение по умолчанию — `1` отправка телеметрии.</span><span class="sxs-lookup"><span data-stu-id="217d6-167">The default value is `1` to send telemetry.</span></span>
 - `ADMINMODE` <span data-ttu-id="217d6-168">настраивает средство для установки в режиме администрирования.</span><span class="sxs-lookup"><span data-stu-id="217d6-168">configures the tool to be installed in admin mode.</span></span> <span data-ttu-id="217d6-169">Флаг принимается для `0` режима клиента или для `1` ИТ-администратора.</span><span class="sxs-lookup"><span data-stu-id="217d6-169">The flag accepts `0` for client mode or `1` for IT Administrator mode.</span></span> <span data-ttu-id="217d6-170">Значение по умолчанию— `0`.</span><span class="sxs-lookup"><span data-stu-id="217d6-170">The default value is `0`.</span></span>
 
-### <span data-ttu-id="217d6-171">Чтобы установить SDT из командной строки:</span><span class="sxs-lookup"><span data-stu-id="217d6-171">To install SDT from the command line:</span></span>
+### <a name="to-install-sdt-from-the-command-line"></a><span data-ttu-id="217d6-171">Чтобы установить SDT из командной строки:</span><span class="sxs-lookup"><span data-stu-id="217d6-171">To install SDT from the command line:</span></span>
 
 1. <span data-ttu-id="217d6-172">Откройте командную подсказку и введите:</span><span class="sxs-lookup"><span data-stu-id="217d6-172">Open a command prompt and enter:</span></span>
 
@@ -102,7 +102,7 @@ ms.locfileid: "11271583"
     C:\Users\Administrator> msiexec.exe/I"C:\Users\Administrator\Desktop\Microsoft_Surface_Diagnostic_Toolkit_for_Business_Installer.msi" ADMINMODE=1
     ```
 
-## <span data-ttu-id="217d6-174">Поиск SDT на устройстве Surface</span><span class="sxs-lookup"><span data-stu-id="217d6-174">Locating SDT on your Surface device</span></span>
+## <a name="locating-sdt-on-your-surface-device"></a><span data-ttu-id="217d6-174">Поиск SDT на устройстве Surface</span><span class="sxs-lookup"><span data-stu-id="217d6-174">Locating SDT on your Surface device</span></span>
 
 <span data-ttu-id="217d6-175">SDT и консоль приложения SDT установлены `C:\Program Files\Microsoft\Surface\Microsoft Surface Diagnostic Toolkit for Business` по</span><span class="sxs-lookup"><span data-stu-id="217d6-175">Both SDT and the SDT app console are installed at `C:\Program Files\Microsoft\Surface\Microsoft Surface Diagnostic Toolkit for Business`.</span></span>
 
@@ -112,7 +112,7 @@ ms.locfileid: "11271583"
 
 *<span data-ttu-id="217d6-178">Рисунок 2.</span><span class="sxs-lookup"><span data-stu-id="217d6-178">Figure 2.</span></span> <span data-ttu-id="217d6-179">Файлы, установленные SDT</span><span class="sxs-lookup"><span data-stu-id="217d6-179">Files installed by SDT</span></span>*
 
-## <span data-ttu-id="217d6-180">Подготовка пакета SDT к распространению</span><span class="sxs-lookup"><span data-stu-id="217d6-180">Preparing the SDT package for distribution</span></span>
+## <a name="preparing-the-sdt-package-for-distribution"></a><span data-ttu-id="217d6-180">Подготовка пакета SDT к распространению</span><span class="sxs-lookup"><span data-stu-id="217d6-180">Preparing the SDT package for distribution</span></span>
 
 <span data-ttu-id="217d6-181">Создание пользовательского пакета позволяет нацелить средство на определенные известные проблемы.</span><span class="sxs-lookup"><span data-stu-id="217d6-181">Creating a custom package allows you to target the tool to specific known issues.</span></span>
 
@@ -123,7 +123,7 @@ ms.locfileid: "11271583"
 
     *<span data-ttu-id="217d6-185">Рисунок 3.</span><span class="sxs-lookup"><span data-stu-id="217d6-185">Figure 3.</span></span> <span data-ttu-id="217d6-186">Создание пользовательского пакета</span><span class="sxs-lookup"><span data-stu-id="217d6-186">Create custom package</span></span>*
 
-### <span data-ttu-id="217d6-187">Языковые параметры и параметры телеметрии</span><span class="sxs-lookup"><span data-stu-id="217d6-187">Language and telemetry settings</span></span>
+### <a name="language-and-telemetry-settings"></a><span data-ttu-id="217d6-187">Языковые параметры и параметры телеметрии</span><span class="sxs-lookup"><span data-stu-id="217d6-187">Language and telemetry settings</span></span>
 
   <span data-ttu-id="217d6-188">При создании пакета можно выбрать языковые параметры или отказаться от отправки данных телеметрии в корпорацию Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="217d6-188">When creating a package, you can select language settings or opt out of sending telemetry information to Microsoft.</span></span> <span data-ttu-id="217d6-189">По умолчанию SDT отправляет телеметрию корпорации Майкрософт, которая используется для улучшения приложения в соответствии с заявлением [о конфиденциальности Корпорации Майкрософт.](https://privacy.microsoft.com/privacystatement)</span><span class="sxs-lookup"><span data-stu-id="217d6-189">By default, SDT sends telemetry to Microsoft that is used to improve the application in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).</span></span> <span data-ttu-id="217d6-190">Если вы хотите отклоировать, при создании пользовательского пакета необходимо сойтись с этого, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="217d6-190">If you wish to decline, clear the check box when creating a custom package, as shown below.</span></span> <span data-ttu-id="217d6-191">Или сняйте **параметры отправки** телеметрии в Корпорацию Майкрософт на странице **"Параметры** установки" во время установки SDT.</span><span class="sxs-lookup"><span data-stu-id="217d6-191">Or clear the **Send telemetry to Microsoft** check box on the **Install Options** page during SDT Setup.</span></span> 
 
@@ -136,7 +136,7 @@ ms.locfileid: "11271583"
 *<span data-ttu-id="217d6-194">Рисунок 4.</span><span class="sxs-lookup"><span data-stu-id="217d6-194">Figure 4.</span></span> <span data-ttu-id="217d6-195">Выбор языка и параметров телеметрии</span><span class="sxs-lookup"><span data-stu-id="217d6-195">Select language and telemetry settings</span></span>*
 
 
-### <span data-ttu-id="217d6-196">Страница "Обновление Windows"</span><span class="sxs-lookup"><span data-stu-id="217d6-196">Windows Update page</span></span>
+### <a name="windows-update-page"></a><span data-ttu-id="217d6-196">Страница "Обновление Windows"</span><span class="sxs-lookup"><span data-stu-id="217d6-196">Windows Update page</span></span>
 
 <span data-ttu-id="217d6-197">Выберите вариант, подходящий для вашей организации.</span><span class="sxs-lookup"><span data-stu-id="217d6-197">Select the option appropriate for your organization.</span></span> <span data-ttu-id="217d6-198">Большинство организаций с несколькими пользователями обычно выбирают получение обновлений через cлужбы Windows Server Update Services (WSUS), как показано на рисунке 5.</span><span class="sxs-lookup"><span data-stu-id="217d6-198">Most organizations with multiple users will typically select to receive updates via Windows Server Update Services (WSUS), as shown in figure 5.</span></span> <span data-ttu-id="217d6-199">При использовании локальных пакетов Обновления Windows или WSUS введите путь соответствующим образом.</span><span class="sxs-lookup"><span data-stu-id="217d6-199">If using local Windows Update packages or WSUS, enter the path as appropriate.</span></span> 
 
@@ -144,7 +144,7 @@ ms.locfileid: "11271583"
 
 *<span data-ttu-id="217d6-201">Рисунок 5.</span><span class="sxs-lookup"><span data-stu-id="217d6-201">Figure 5.</span></span> <span data-ttu-id="217d6-202">Параметр "Обновление Windows"</span><span class="sxs-lookup"><span data-stu-id="217d6-202">Windows Update option</span></span>*
 
-### <span data-ttu-id="217d6-203">Страница восстановления программного обеспечения</span><span class="sxs-lookup"><span data-stu-id="217d6-203">Software repair page</span></span>
+### <a name="software-repair-page"></a><span data-ttu-id="217d6-203">Страница восстановления программного обеспечения</span><span class="sxs-lookup"><span data-stu-id="217d6-203">Software repair page</span></span>
 
 <span data-ttu-id="217d6-204">Это позволяет выбрать или удалить параметр для запуска обновлений для восстановления программного обеспечения.</span><span class="sxs-lookup"><span data-stu-id="217d6-204">This allows you to select or remove the option to run software repair updates.</span></span> 
 
@@ -152,7 +152,7 @@ ms.locfileid: "11271583"
 
 *<span data-ttu-id="217d6-206">Рисунок 6.</span><span class="sxs-lookup"><span data-stu-id="217d6-206">Figure 6.</span></span> <span data-ttu-id="217d6-207">Вариант восстановления программного обеспечения</span><span class="sxs-lookup"><span data-stu-id="217d6-207">Software repair option</span></span>*
 
-### <span data-ttu-id="217d6-208">Сбор журналов и сохранение страницы пакета</span><span class="sxs-lookup"><span data-stu-id="217d6-208">Collecting logs and saving package page</span></span>
+### <a name="collecting-logs-and-saving-package-page"></a><span data-ttu-id="217d6-208">Сбор журналов и сохранение страницы пакета</span><span class="sxs-lookup"><span data-stu-id="217d6-208">Collecting logs and saving package page</span></span>
 
 <span data-ttu-id="217d6-209">Можно выбрать запуск широкого диапазона журналов в различных приложениях, драйверах, оборудовании и операционной системе.</span><span class="sxs-lookup"><span data-stu-id="217d6-209">You can select to run a wide range of logs across applications, drivers, hardware, and the operating system.</span></span> <span data-ttu-id="217d6-210">Щелкните соответствующую область и выберите в меню доступных журналов.</span><span class="sxs-lookup"><span data-stu-id="217d6-210">Click the appropriate area and select from the menu of available logs.</span></span> <span data-ttu-id="217d6-211">Затем можно сохранить пакет в точке распространения программного обеспечения или эквивалентной точке, к которую пользователи могут получить доступ.</span><span class="sxs-lookup"><span data-stu-id="217d6-211">You can then save the package to a software distribution point or equivalent location that users can access.</span></span> 
 
@@ -160,14 +160,14 @@ ms.locfileid: "11271583"
 
 *<span data-ttu-id="217d6-213">Рисунок 7.</span><span class="sxs-lookup"><span data-stu-id="217d6-213">Figure 7.</span></span> <span data-ttu-id="217d6-214">Параметр журнала и сохранение пакета</span><span class="sxs-lookup"><span data-stu-id="217d6-214">Log option and save package</span></span>*
 
-## <span data-ttu-id="217d6-215">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="217d6-215">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="217d6-215">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="217d6-215">Next steps</span></span>
 
 - [<span data-ttu-id="217d6-216">Использование набора средств диагностики Surface для бизнеса в режиме настольного компьютера</span><span class="sxs-lookup"><span data-stu-id="217d6-216">Use Surface Diagnostic Toolkit for Business in desktop mode</span></span>](surface-diagnostic-toolkit-desktop-mode.md)
 - [<span data-ttu-id="217d6-217">Использование средств диагностики Surface набор средств для бизнеса с помощью команд</span><span class="sxs-lookup"><span data-stu-id="217d6-217">Use Surface Diagnostic Toolkit for Business using commands</span></span>](surface-diagnostic-toolkit-command-line.md)
 
-## <span data-ttu-id="217d6-218">Изменения и обновления</span><span class="sxs-lookup"><span data-stu-id="217d6-218">Changes and updates</span></span>
+## <a name="changes-and-updates"></a><span data-ttu-id="217d6-218">Изменения и обновления</span><span class="sxs-lookup"><span data-stu-id="217d6-218">Changes and updates</span></span>
 
-### <span data-ttu-id="217d6-219">Версия 2.131.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-219">Version 2.131.139.0</span></span>
+### <a name="version-2.131.139.0"></a><span data-ttu-id="217d6-219">Версия 2.131.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-219">Version 2.131.139.0</span></span>
 
 <span data-ttu-id="217d6-220">Эта версия Surface Diagnostic набор средств для бизнеса добавляет поддержку следующих средств:</span><span class="sxs-lookup"><span data-stu-id="217d6-220">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
@@ -176,7 +176,7 @@ ms.locfileid: "11271583"
 - <span data-ttu-id="217d6-223">Улучшения безопасности</span><span class="sxs-lookup"><span data-stu-id="217d6-223">Security improvements</span></span>
 - <span data-ttu-id="217d6-224">Улучшения инклюзивного пользовательского интерфейса</span><span class="sxs-lookup"><span data-stu-id="217d6-224">Inclusive user experience improvements</span></span>
 
-### <span data-ttu-id="217d6-225">Версия 2.124.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-225">Version 2.124.139.0</span></span>
+### <a name="version-2.124.139.0"></a><span data-ttu-id="217d6-225">Версия 2.124.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-225">Version 2.124.139.0</span></span>
 
 <span data-ttu-id="217d6-226">Эта версия Surface Diagnostic набор средств для бизнеса добавляет поддержку следующих средств:</span><span class="sxs-lookup"><span data-stu-id="217d6-226">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
@@ -188,14 +188,14 @@ ms.locfileid: "11271583"
 - <span data-ttu-id="217d6-232">Пометка дисков как потенциальных сбоев в тесте хранилища</span><span class="sxs-lookup"><span data-stu-id="217d6-232">Flag drives as potential failures in storage test</span></span>
 - <span data-ttu-id="217d6-233">Удаление ссылки на магазин</span><span class="sxs-lookup"><span data-stu-id="217d6-233">Remove store link</span></span> 
 
-### <span data-ttu-id="217d6-234">Версия 2.121.139</span><span class="sxs-lookup"><span data-stu-id="217d6-234">Version 2.121.139</span></span>
+### <a name="version-2.121.139"></a><span data-ttu-id="217d6-234">Версия 2.121.139</span><span class="sxs-lookup"><span data-stu-id="217d6-234">Version 2.121.139</span></span>
 *<span data-ttu-id="217d6-235">Дата выпуска: 31 июля 2020 г.</span><span class="sxs-lookup"><span data-stu-id="217d6-235">Release date: July 31 2020</span></span>*<br>
 <span data-ttu-id="217d6-236">Эта версия Surface Diagnostic набор средств для бизнеса добавляет поддержку следующих средств:</span><span class="sxs-lookup"><span data-stu-id="217d6-236">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
 - <span data-ttu-id="217d6-237">Беспробумная поддержка</span><span class="sxs-lookup"><span data-stu-id="217d6-237">Seamless support experience</span></span>
 - <span data-ttu-id="217d6-238">Исправления ошибок</span><span class="sxs-lookup"><span data-stu-id="217d6-238">Bug fixes</span></span>
 
-### <span data-ttu-id="217d6-239">Версия 2.94.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-239">Version 2.94.139.0</span></span>
+### <a name="version-2.94.139.0"></a><span data-ttu-id="217d6-239">Версия 2.94.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-239">Version 2.94.139.0</span></span>
 *<span data-ttu-id="217d6-240">Дата выпуска: 11 мая 2020 г.</span><span class="sxs-lookup"><span data-stu-id="217d6-240">Release date: May 11, 2020</span></span>*<br>
 <span data-ttu-id="217d6-241">Эта версия Surface Diagnostic набор средств для бизнеса добавляет поддержку следующих средств:</span><span class="sxs-lookup"><span data-stu-id="217d6-241">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
@@ -206,27 +206,27 @@ ms.locfileid: "11271583"
 - <span data-ttu-id="217d6-246">Показать индикатор хода выполнения</span><span class="sxs-lookup"><span data-stu-id="217d6-246">Show progress indicator</span></span>
 
 
-### <span data-ttu-id="217d6-247">Версия 2.43.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-247">Version 2.43.139.0</span></span>
+### <a name="version-2.43.139.0"></a><span data-ttu-id="217d6-247">Версия 2.43.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-247">Version 2.43.139.0</span></span>
 *<span data-ttu-id="217d6-248">Дата выпуска: 21 октября 2019 г.</span><span class="sxs-lookup"><span data-stu-id="217d6-248">Release date: October 21, 2019</span></span>*<br>
 <span data-ttu-id="217d6-249">Эта версия Surface Diagnostic набор средств для бизнеса добавляет поддержку следующих средств:</span><span class="sxs-lookup"><span data-stu-id="217d6-249">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span>
 
 - <span data-ttu-id="217d6-250">Surface Pro 7</span><span class="sxs-lookup"><span data-stu-id="217d6-250">Surface Pro 7</span></span>
 - <span data-ttu-id="217d6-251">Surface Laptop 3</span><span class="sxs-lookup"><span data-stu-id="217d6-251">Surface Laptop 3</span></span>
 
-### <span data-ttu-id="217d6-252">Версия 2.42.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-252">Version 2.42.139.0</span></span>
+### <a name="version-2.42.139.0"></a><span data-ttu-id="217d6-252">Версия 2.42.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-252">Version 2.42.139.0</span></span>
 *<span data-ttu-id="217d6-253">Дата выпуска: 24 сентября 2019 г.</span><span class="sxs-lookup"><span data-stu-id="217d6-253">Release date: September 24, 2019</span></span>*<br>
 <span data-ttu-id="217d6-254">Эта версия Surface Diagnostic набор средств для бизнеса добавляет поддержку следующих средств:</span><span class="sxs-lookup"><span data-stu-id="217d6-254">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span> 
 - <span data-ttu-id="217d6-255">Возможность загрузки аппаратных отчетов.</span><span class="sxs-lookup"><span data-stu-id="217d6-255">Ability to download hardware reports.</span></span>
 - <span data-ttu-id="217d6-256">Возможность обращаться в службу поддержки Майкрософт непосредственно из средства.</span><span class="sxs-lookup"><span data-stu-id="217d6-256">Ability to contact Microsoft Support directly from the tool.</span></span> <br>
 
-### <span data-ttu-id="217d6-257">Версия 2.41.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-257">Version 2.41.139.0</span></span>
+### <a name="version-2.41.139.0"></a><span data-ttu-id="217d6-257">Версия 2.41.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-257">Version 2.41.139.0</span></span>
 *<span data-ttu-id="217d6-258">Дата выпуска: 24 июня 2019 г.</span><span class="sxs-lookup"><span data-stu-id="217d6-258">Release date: June 24, 2019</span></span>*<br>
 <span data-ttu-id="217d6-259">Эта версия Surface Diagnostic набор средств для бизнеса добавляет поддержку следующих средств:</span><span class="sxs-lookup"><span data-stu-id="217d6-259">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span> 
 - <span data-ttu-id="217d6-260">Сведения о версии драйвера, включенные в журналы и отчеты.</span><span class="sxs-lookup"><span data-stu-id="217d6-260">Driver version information included in logs and report.</span></span>
 - <span data-ttu-id="217d6-261">Возможность предоставлять отзывы о приложении.</span><span class="sxs-lookup"><span data-stu-id="217d6-261">Ability to provide feedback about the app.</span></span><br>
 
 
-### <span data-ttu-id="217d6-262">Версия 2.36.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-262">Version 2.36.139.0</span></span>
+### <a name="version-2.36.139.0"></a><span data-ttu-id="217d6-262">Версия 2.36.139.0</span><span class="sxs-lookup"><span data-stu-id="217d6-262">Version 2.36.139.0</span></span>
 *<span data-ttu-id="217d6-263">Дата выпуска: 26 апреля 2019 г.</span><span class="sxs-lookup"><span data-stu-id="217d6-263">Release date: April 26, 2019</span></span>*<br>
 <span data-ttu-id="217d6-264">Эта версия Surface Diagnostic набор средств для бизнеса добавляет поддержку следующих средств:</span><span class="sxs-lookup"><span data-stu-id="217d6-264">This version of Surface Diagnostic Toolkit for Business adds support for the following:</span></span> 
 - <span data-ttu-id="217d6-265">Дополнительный параметр установки для разблокировки возможностей администратора с помощью пользовательского интерфейса установщика без необходимости настройки командной строки.</span><span class="sxs-lookup"><span data-stu-id="217d6-265">Advanced Setup option to unlock admin capabilities through the installer UI, without requiring command line configuration.</span></span>

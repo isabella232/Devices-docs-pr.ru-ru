@@ -72,7 +72,7 @@ ms.locfileid: "11145944"
 
 <span id="multiple" />
 
-## <span data-ttu-id="d6b93-141">Выполнение нескольких тестов оборудования для устранения неполадок</span><span class="sxs-lookup"><span data-stu-id="d6b93-141">Running multiple hardware tests to troubleshoot issues</span></span>
+## <a name="running-multiple-hardware-tests-to-troubleshoot-issues"></a><span data-ttu-id="d6b93-141">Выполнение нескольких тестов оборудования для устранения неполадок</span><span class="sxs-lookup"><span data-stu-id="d6b93-141">Running multiple hardware tests to troubleshoot issues</span></span>
 
 <span data-ttu-id="d6b93-142">SDT разработан как интерактивный инструмент, выполняющий серию тестов.</span><span class="sxs-lookup"><span data-stu-id="d6b93-142">SDT is designed as an interactive tool that runs a series of tests.</span></span> <span data-ttu-id="d6b93-143">Для каждого теста SDT предоставляет инструкции, обобщаются сведения о природе теста и о том, какие пользователи должны ожидать или искать, чтобы тест был выполнен успешно.</span><span class="sxs-lookup"><span data-stu-id="d6b93-143">For each test, SDT provides instructions summarizing  the nature of the test and what users should expect or look for in order for the test to be successful.</span></span> <span data-ttu-id="d6b93-144">Например, чтобы диагностировать, правильно ли работает яркость экрана, SDT начинается с нуля и увеличивает яркость на 100 процентов, запрашивает у пользователя подтверждение (с ответом **Да** или **нет** ), что означает, что яркость работает должным образом, как показано на рисунке 4.</span><span class="sxs-lookup"><span data-stu-id="d6b93-144">For example, to diagnose if the display brightness is working properly, SDT starts at zero and increases the brightness to 100 percent, asking users to confirm – by answering **Yes** or **No** -- that brightness is functioning as expected, as shown in figure 4.</span></span> 
 
@@ -87,7 +87,7 @@ ms.locfileid: "11145944"
 3. <span data-ttu-id="d6b93-149">Пошаговое руководство пользователей по оставшимся тестам.</span><span class="sxs-lookup"><span data-stu-id="d6b93-149">Guide users through remaining tests as appropriate.</span></span> <span data-ttu-id="d6b93-150">После того как вы закончите, SDT автоматически предоставляет сводный отчет высокого уровня, в том числе возможные причины возникновения проблем с оборудованием, а также рекомендации по его устранению.</span><span class="sxs-lookup"><span data-stu-id="d6b93-150">When finished, SDT automatically provides a high-level summary of the report, including the possible causes of any hardware issues along with guidance for resolution.</span></span>
 
 
-### <span data-ttu-id="d6b93-151">Восстановление приложений</span><span class="sxs-lookup"><span data-stu-id="d6b93-151">Repairing applications</span></span>
+### <a name="repairing-applications"></a><span data-ttu-id="d6b93-151">Восстановление приложений</span><span class="sxs-lookup"><span data-stu-id="d6b93-151">Repairing applications</span></span>
 
 <span data-ttu-id="d6b93-152">SDT позволяет диагностировать и восстанавливать приложения, которые могут вызывать проблемы, как показано на рисунке 5.</span><span class="sxs-lookup"><span data-stu-id="d6b93-152">SDT enables you to diagnose and repair applications that may be causing issues, as shown in figure 5.</span></span>
 
@@ -96,7 +96,7 @@ ms.locfileid: "11145944"
 *Figure 5. Running repairs*</span></span>
 <span id="logs" />
 
-### <span data-ttu-id="d6b93-154">Создание журналов для анализа проблем</span><span class="sxs-lookup"><span data-stu-id="d6b93-154">Generating logs for analyzing issues</span></span> 
+### <a name="generating-logs-for-analyzing-issues"></a><span data-ttu-id="d6b93-154">Создание журналов для анализа проблем</span><span class="sxs-lookup"><span data-stu-id="d6b93-154">Generating logs for analyzing issues</span></span> 
 
 <span data-ttu-id="d6b93-155">SDT предоставляет широкие возможности диагностики, поддерживающие ведение журнала, для разных приложений, драйверов, аппаратных средств и проблем операционной системы, как показано на рисунке 6.</span><span class="sxs-lookup"><span data-stu-id="d6b93-155">SDT provides extensive log-enabled diagnosis support across applications, drivers, hardware, and operating system issues, as shown in figure 6.</span></span>
 
@@ -106,11 +106,11 @@ ms.locfileid: "11145944"
 
 <span id="detailed-report" />
 
-### <span data-ttu-id="d6b93-157">Создание подробного отчета с сравнением и оптимальной конфигурацией устройства</span><span class="sxs-lookup"><span data-stu-id="d6b93-157">Generating detailed report comparing device vs. optimal configuration</span></span>
+### <a name="generating-detailed-report-comparing-device-vs.-optimal-configuration"></a><span data-ttu-id="d6b93-157">Создание подробного отчета с сравнением и оптимальной конфигурацией устройства</span><span class="sxs-lookup"><span data-stu-id="d6b93-157">Generating detailed report comparing device vs. optimal configuration</span></span>
 
 <span data-ttu-id="d6b93-158">На основе журналов SDT создает отчет о проблемах, возникающих на базе программного обеспечения и микропрограмм, которые можно сохранить в предпочтительном расположении.</span><span class="sxs-lookup"><span data-stu-id="d6b93-158">Based on the logs, SDT generates a report for software- and firmware-based issues that you can save to a preferred location.</span></span>
 
-## <span data-ttu-id="d6b93-159">Статьи по теме</span><span class="sxs-lookup"><span data-stu-id="d6b93-159">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="d6b93-159">Статьи по теме</span><span class="sxs-lookup"><span data-stu-id="d6b93-159">Related topics</span></span>
 
 - [<span data-ttu-id="d6b93-160">Запуск набора средств диагностики Surface для бизнеса с помощью команд</span><span class="sxs-lookup"><span data-stu-id="d6b93-160">Run Surface Diagnostic Toolkit for Business using commands</span></span>](surface-diagnostic-toolkit-command-line.md)
 

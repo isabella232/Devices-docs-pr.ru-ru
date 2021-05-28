@@ -26,7 +26,7 @@ ms.locfileid: "10836704"
 >[!NOTE]
 ><span data-ttu-id="685b6-106">Surface Hub использует входные данные, которые вы выбрали, пока не будет установлено новое подключение, существующее подключение разорвано или закрыто приложение Connect.</span><span class="sxs-lookup"><span data-stu-id="685b6-106">Surface Hub will use the video input that you select until a new connection is made, the existing connection is disrupted, or the Connect App is closed.</span></span>
 
-## <span data-ttu-id="685b6-107">Какой метод следует выбрать?</span><span class="sxs-lookup"><span data-stu-id="685b6-107">Which method should I choose?</span></span>
+## <a name="which-method-should-i-choose"></a><span data-ttu-id="685b6-107">Какой метод следует выбрать?</span><span class="sxs-lookup"><span data-stu-id="685b6-107">Which method should I choose?</span></span>
 
 <span data-ttu-id="685b6-108">При подключении внешних устройств и дисплеев к Surface Hub существует несколько доступных вариантов.</span><span class="sxs-lookup"><span data-stu-id="685b6-108">When connecting external devices and displays to a Surface Hub, there are several available options.</span></span> <span data-ttu-id="685b6-109">Используемый метод зависит от сценария и ваших потребностей.</span><span class="sxs-lookup"><span data-stu-id="685b6-109">The method you use will depend upon your scenario and needs.</span></span> 
 
@@ -37,7 +37,7 @@ ms.locfileid: "10836704"
 | <span data-ttu-id="685b6-116">Обеспечить питание Surface Hub от внешнего ПК Windows 10, выключив встроенный компьютер Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="685b6-116">Power the Surface Hub from an external Windows 10 PC, turning off the embedded computer of the Surface Hub.</span></span> <span data-ttu-id="685b6-117">Камеры, микрофоны, динамики и другие периферийные устройства передаются на внешние ПК в дополнение к перу и сенсорному вводу.</span><span class="sxs-lookup"><span data-stu-id="685b6-117">Cameras, microphones, speakers, and other peripherals, are sent to the external PC, in addition to pen and touch.</span></span> | [<span data-ttu-id="685b6-118">Режим компьютера на замену</span><span class="sxs-lookup"><span data-stu-id="685b6-118">Replacement PC Mode</span></span>](#replacement-pc-mode) |
 
 
-## <span data-ttu-id="685b6-119">Гостевой режим</span><span class="sxs-lookup"><span data-stu-id="685b6-119">Guest Mode</span></span>
+## <a name="guest-mode"></a><span data-ttu-id="685b6-119">Гостевой режим</span><span class="sxs-lookup"><span data-stu-id="685b6-119">Guest Mode</span></span>
 
 
 <span data-ttu-id="685b6-120">В гостевом режиме используется проводное подключение, позволяющее отображать содержимое с устройств пользователей на Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="685b6-120">Guest Mode uses a wired connection, so people can display content from their devices to the Surface Hub.</span></span> <span data-ttu-id="685b6-121">Если в качестве исходного используется устройство под управлением Windows, оно также может обеспечивать функции Touchback и Inkback.</span><span class="sxs-lookup"><span data-stu-id="685b6-121">If the source device is Windows-based, that device can also provide Touchback and Inkback.</span></span> <span data-ttu-id="685b6-122">Внутренний компьютер Surface Hub принимает видео и аудио с подключенного устройства и демонстрирует их на Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="685b6-122">Surface Hub's internal PC takes video and audio from the connected device and presents them on the Surface Hub.</span></span> <span data-ttu-id="685b6-123">Если Surface Hub встречает сигнал защиты цифрового содержимого (HDCP) с высокой пропускной способностью, источник будет отображаться в виде черного изображения.</span><span class="sxs-lookup"><span data-stu-id="685b6-123">If Surface Hub encounters a High-Bandwidth Digital Content Protection (HDCP) signal, the source will be displayed as a black image.</span></span> <span data-ttu-id="685b6-124">Чтобы показать содержимое, не нарушая требований HDCP, выберите внешний источник с помощью клавиатуры в правой части Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="685b6-124">To display your content without violating HDCP requirements, use the keypad on the right side of the Surface Hub to directly choose the external source.</span></span>
@@ -45,7 +45,7 @@ ms.locfileid: "10836704"
 >[!NOTE]
 ><span data-ttu-id="685b6-125">Если источник HDCP подключен, используйте клавишную панель сбоку, чтобы изменить источник входных данных.</span><span class="sxs-lookup"><span data-stu-id="685b6-125">When an HDCP source is connected, use the side  keypad to change source inputs.</span></span>
 
-### <span data-ttu-id="685b6-126">Порты</span><span class="sxs-lookup"><span data-stu-id="685b6-126">Ports</span></span>
+### <a name="ports"></a><span data-ttu-id="685b6-126">Порты</span><span class="sxs-lookup"><span data-stu-id="685b6-126">Ports</span></span>
 
 <span data-ttu-id="685b6-127">Используйте эти порты на Surface Hub для гостевого режима.</span><span class="sxs-lookup"><span data-stu-id="685b6-127">Use these ports on the Surface Hub for Guest Mode.</span></span>
 
@@ -116,7 +116,7 @@ ms.locfileid: "10836704"
 
  
 
-### <span data-ttu-id="685b6-158">Расположение портов</span><span class="sxs-lookup"><span data-stu-id="685b6-158">Port locations</span></span>
+### <a name="port-locations"></a><span data-ttu-id="685b6-158">Расположение портов</span><span class="sxs-lookup"><span data-stu-id="685b6-158">Port locations</span></span>
 
 <span data-ttu-id="685b6-159">Это подключения портов, используемые для гостевого режима на 55- и 84-дюймовых устройствах Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="685b6-159">These are the port connections used for Guest Mode on the 55" and 84" Surface Hubs.</span></span>
 
@@ -128,7 +128,7 @@ ms.locfileid: "10836704"
 
 <span data-ttu-id="685b6-163">Проводные подключения портов на 84-дюймовом устройстве Surface Hub</span><span class="sxs-lookup"><span data-stu-id="685b6-163">Wired port connections on 84" Surface Hub</span></span>
 
-### <span data-ttu-id="685b6-164">Перечисление портов</span><span class="sxs-lookup"><span data-stu-id="685b6-164">Port enumeration</span></span>
+### <a name="port-enumeration"></a><span data-ttu-id="685b6-164">Перечисление портов</span><span class="sxs-lookup"><span data-stu-id="685b6-164">Port enumeration</span></span>
 
 <span data-ttu-id="685b6-165">При проводном подключении Surface Hub к гостевому компьютеру с помощью USB-порта обнаруживаются и настраиваются различные USB-устройства.</span><span class="sxs-lookup"><span data-stu-id="685b6-165">When a Surface hub is connected to a guest computer with the wired connect USB port, a number of USB devices are discovered and configured.</span></span> <span data-ttu-id="685b6-166">Эти периферийные устройства создаются для Touchback и Inkback.</span><span class="sxs-lookup"><span data-stu-id="685b6-166">These peripheral devices are created for Touchback and Inkback.</span></span> <span data-ttu-id="685b6-167">Периферийные устройства можно просмотреть в диспетчере устройств.</span><span class="sxs-lookup"><span data-stu-id="685b6-167">The peripheral devices can be viewed in Device Manager.</span></span> <span data-ttu-id="685b6-168">Диспетчер устройств дублирует имена для некоторых устройств.</span><span class="sxs-lookup"><span data-stu-id="685b6-168">Device Manager will show duplicate names for some devices.</span></span>
 
@@ -162,7 +162,7 @@ ms.locfileid: "10836704"
 
 -   <span data-ttu-id="685b6-183">Составное USB-устройство</span><span class="sxs-lookup"><span data-stu-id="685b6-183">USB composite device</span></span>
 
-### <span data-ttu-id="685b6-184">Подключения в гостевом режиме</span><span class="sxs-lookup"><span data-stu-id="685b6-184">Guest Mode connectivity</span></span>
+### <a name="guest-mode-connectivity"></a><span data-ttu-id="685b6-184">Подключения в гостевом режиме</span><span class="sxs-lookup"><span data-stu-id="685b6-184">Guest Mode connectivity</span></span>
 
 <span data-ttu-id="685b6-185">Выбор видеокабеля определяется тем, какие сигналы могут поступать с входа источника.</span><span class="sxs-lookup"><span data-stu-id="685b6-185">Your choice of video cable will be determined by what is available from your source input.</span></span> <span data-ttu-id="685b6-186">Для Surface Hub есть три варианта видеовхода: DisplayPort, HDMI и VGA.</span><span class="sxs-lookup"><span data-stu-id="685b6-186">The Surface Hub has three choices of video input: DisplayPort, HDMI, and VGA.</span></span> <span data-ttu-id="685b6-187">См. доступные разрешения в следующей диаграмме.</span><span class="sxs-lookup"><span data-stu-id="685b6-187">See the following chart for available resolutions.</span></span>
 
@@ -243,20 +243,20 @@ ms.locfileid: "10836704"
 
 <span data-ttu-id="685b6-231">Если компьютер, используемый для гостевого режима, не совместим с Touchback и Inkback, USB-кабель не понадобится.</span><span class="sxs-lookup"><span data-stu-id="685b6-231">If the computer you are using for Guest Mode is not compatible with Touchback and Inkback, then you won't need the USB cable.</span></span>
 
-## <span data-ttu-id="685b6-232">Режим компьютера на замену</span><span class="sxs-lookup"><span data-stu-id="685b6-232">Replacement PC Mode</span></span>
+## <a name="replacement-pc-mode"></a><span data-ttu-id="685b6-232">Режим компьютера на замену</span><span class="sxs-lookup"><span data-stu-id="685b6-232">Replacement PC Mode</span></span>
 
 
 <span data-ttu-id="685b6-233">В режиме компьютера на замену встроенный компьютер Surface Hub выключен, и к Surface Hub подключен внешний компьютер.</span><span class="sxs-lookup"><span data-stu-id="685b6-233">In Replacement PC Mode, the embedded computer of the Surface Hub is turned off and an external PC is connected to the Surface Hub.</span></span> <span data-ttu-id="685b6-234">С помощью подключений к портам для компьютера на замену можно получать доступ к ключевым периферийным устройствам в Surface Hub, включая экран, перо и сенсорные компоненты.</span><span class="sxs-lookup"><span data-stu-id="685b6-234">Connections to replacement PC ports give access to key peripherals on the Surface Hub, including the screen, pen, and touch features.</span></span> <span data-ttu-id="685b6-235">Это значит, что на Surface Hub будут отсутствовать преимущества Windows Team, однако благодаря предоставлению собственного компьютера с Windows и управлению им будет обеспечена значительная гибкость.</span><span class="sxs-lookup"><span data-stu-id="685b6-235">This does mean that your Surface Hub won’t have the benefit of the Windows Team experience, but you will have the flexibility offered by providing and managing your own Windows computer.</span></span>
 
-### <span data-ttu-id="685b6-236">Требования к программному обеспечению</span><span class="sxs-lookup"><span data-stu-id="685b6-236">Software requirements</span></span>
+### <a name="software-requirements"></a><span data-ttu-id="685b6-236">Требования к программному обеспечению</span><span class="sxs-lookup"><span data-stu-id="685b6-236">Software requirements</span></span>
 
 <span data-ttu-id="685b6-237">Surface Hub можно запускать в режиме компьютера на замену с 64-разрядными версиями Windows 10 Домашняя, Windows 10 Pro и Windows 10 Корпоративная.</span><span class="sxs-lookup"><span data-stu-id="685b6-237">You can run Surface Hub in Replacement PC Mode with 64-bit versions of Windows 10 Home, Windows 10 Pro, and Windows 10 Enterprise.</span></span> <span data-ttu-id="685b6-238">Вы можете скачать [пакет драйверов для режима компьютера на замену Surface Hub](https://www.microsoft.com/download/details.aspx?id=52210) из Центра загрузки Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="685b6-238">You can download the  [Surface Hub Replacement PC driver package](https://www.microsoft.com/download/details.aspx?id=52210) from the Microsoft Download Center.</span></span> <span data-ttu-id="685b6-239">Рекомендуем устанавливать эти драйверы на каждом компьютере, который вы собираетесь использовать в качестве замены.</span><span class="sxs-lookup"><span data-stu-id="685b6-239">We recommend that you install these drivers on any computer you plan to use as a replacement PC.</span></span>
 
-### <span data-ttu-id="685b6-240">Требования к оборудованию</span><span class="sxs-lookup"><span data-stu-id="685b6-240">Hardware requirements</span></span>
+### <a name="hardware-requirements"></a><span data-ttu-id="685b6-240">Требования к оборудованию</span><span class="sxs-lookup"><span data-stu-id="685b6-240">Hardware requirements</span></span>
 
 <span data-ttu-id="685b6-241">Устройство Surface Hub совместимо с широким спектром оборудования.</span><span class="sxs-lookup"><span data-stu-id="685b6-241">Surface Hub is compatible with a range of hardware.</span></span> <span data-ttu-id="685b6-242">Выберите соответствующие процессор и память для компьютера на замену, чтобы он поддерживал программы, которые вы будете использовать.</span><span class="sxs-lookup"><span data-stu-id="685b6-242">Choose the processor and memory confirmation for your replacement PC so that it supports the programs you'll be using.</span></span> <span data-ttu-id="685b6-243">Оборудование компьютера на замену должно поддерживать 64-разрядные версии Windows 10.</span><span class="sxs-lookup"><span data-stu-id="685b6-243">Your replacement PC hardware needs to support 64-bit versions of Windows 10.</span></span>
 
-### <span data-ttu-id="685b6-244">Графический адаптер</span><span class="sxs-lookup"><span data-stu-id="685b6-244">Graphics adapter</span></span>
+### <a name="graphics-adapter"></a><span data-ttu-id="685b6-244">Графический адаптер</span><span class="sxs-lookup"><span data-stu-id="685b6-244">Graphics adapter</span></span>
 
 <span data-ttu-id="685b6-245">В режиме компьютера на замену Surface Hub поддерживает любой графический адаптер, который может генерировать сигнал DisplayPort.</span><span class="sxs-lookup"><span data-stu-id="685b6-245">In Replacement PC Mode, Surface Hub supports any graphics adapter that can produce a DisplayPort signal.</span></span> <span data-ttu-id="685b6-246">Для наиболее комфортной работы используйте графический адаптер, который способен соответствовать разрешению и частоте обновления Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="685b6-246">You'll improve your experience with a graphics adapter that can match Surface Hub's resolution and refresh rate.</span></span> <span data-ttu-id="685b6-247">Например, самым лучшим и рекомендуемым режимом компьютера на замену на Surface Hub является режим с видеосигналом 120 Гц.</span><span class="sxs-lookup"><span data-stu-id="685b6-247">For example, the best and recommended replacement PC experience on the Surface Hub is with a 120Hz video signal.</span></span>
 
@@ -295,7 +295,7 @@ ms.locfileid: "10836704"
 
  
 
-### <span data-ttu-id="685b6-258">Порты</span><span class="sxs-lookup"><span data-stu-id="685b6-258">Ports</span></span>
+### <a name="ports"></a><span data-ttu-id="685b6-258">Порты</span><span class="sxs-lookup"><span data-stu-id="685b6-258">Ports</span></span>
 
 <span data-ttu-id="685b6-259">Порты для компьютера на замену на 55-дюймовом устройстве Surface Hub</span><span class="sxs-lookup"><span data-stu-id="685b6-259">Replacement PC ports on 55" Surface Hub</span></span>
 
@@ -411,7 +411,7 @@ ms.locfileid: "10836704"
 
  
 
-### <span data-ttu-id="685b6-311">Инструкции по настройке компьютера на замену</span><span class="sxs-lookup"><span data-stu-id="685b6-311">Replacement PC setup instructions</span></span>
+### <a name="replacement-pc-setup-instructions"></a><span data-ttu-id="685b6-311">Инструкции по настройке компьютера на замену</span><span class="sxs-lookup"><span data-stu-id="685b6-311">Replacement PC setup instructions</span></span>
 
 **<span data-ttu-id="685b6-312">Использование режима компьютера на замену</span><span class="sxs-lookup"><span data-stu-id="685b6-312">To use Replacement PC Mode</span></span>**
 
@@ -445,11 +445,11 @@ ms.locfileid: "10836704"
 3.  <span data-ttu-id="685b6-329">Включите Surface Hub с помощью кнопки питания, которая находится рядом с кабелем питания.</span><span class="sxs-lookup"><span data-stu-id="685b6-329">Turn on the Surface Hub using the power switch next to the power cable.</span></span>
 
  
-## <span data-ttu-id="685b6-330">Видеовыход</span><span class="sxs-lookup"><span data-stu-id="685b6-330">Video Out</span></span>
+## <a name="video-out"></a><span data-ttu-id="685b6-330">Видеовыход</span><span class="sxs-lookup"><span data-stu-id="685b6-330">Video Out</span></span>
  
 <span data-ttu-id="685b6-331">Surface Hub содержит порт видеовыхода для зеркального отображения визуального содержимого с Surface Hub на другой дисплей.</span><span class="sxs-lookup"><span data-stu-id="685b6-331">The Surface Hub includes a Video Out port for mirroring visual content from the Surface Hub to another display.</span></span>
 
-### <span data-ttu-id="685b6-332">Порты</span><span class="sxs-lookup"><span data-stu-id="685b6-332">Ports</span></span>
+### <a name="ports"></a><span data-ttu-id="685b6-332">Порты</span><span class="sxs-lookup"><span data-stu-id="685b6-332">Ports</span></span>
 
 <span data-ttu-id="685b6-333">Порт видеовыхода на 55-дюймовом Surface Hub</span><span class="sxs-lookup"><span data-stu-id="685b6-333">Video Out port on the 55" Surface Hub</span></span>
 
@@ -481,12 +481,12 @@ ms.locfileid: "10836704"
 </tbody>
 </table>
 
-## <span data-ttu-id="685b6-346">Кабели</span><span class="sxs-lookup"><span data-stu-id="685b6-346">Cables</span></span>
+## <a name="cables"></a><span data-ttu-id="685b6-346">Кабели</span><span class="sxs-lookup"><span data-stu-id="685b6-346">Cables</span></span>
 
 <span data-ttu-id="685b6-347">Устройства Surface Hub диагональю 55 дюймов и 84 дюйма проверены на исправность работы с использованием сертифицированного порта DisplayPort и кабелей HDMI.</span><span class="sxs-lookup"><span data-stu-id="685b6-347">Both the 55” and 84” Surface Hub devices have been tested to work with Certified DisplayPort and HDMI cables.</span></span>  <span data-ttu-id="685b6-348">Хотя поставщики продают и более длинные кабели, которые могут работать с Surface Hub, гарантируется работа только тех кабелей, которые сертифицированы испытательными лабораториями.</span><span class="sxs-lookup"><span data-stu-id="685b6-348">While vendors do sell longer cables that may work with the Surface Hub, only those cables that have been certified by testing labs are certain to work with the Hub.</span></span> <span data-ttu-id="685b6-349">Например, кабели DisplayPort сертифицированы только при длине до 3 метров, однако многие производители продают кабели длиной в 3 раза больше.</span><span class="sxs-lookup"><span data-stu-id="685b6-349">For example, DisplayPort cables are certified only up to 3 meters, however many vendors sell cables that are 3 times that length.</span></span> <span data-ttu-id="685b6-350">При необходимости использования длинного кабеля настоятельно рекомендуется использовать интерфейс HDMI.</span><span class="sxs-lookup"><span data-stu-id="685b6-350">If a long cable is necessary, we strongly suggest using HDMI.</span></span>  <span data-ttu-id="685b6-351">HDMI имеет много экономичных решений для применения длинных кабелей, включая использование усилителей.</span><span class="sxs-lookup"><span data-stu-id="685b6-351">HDMI has many cost-effective solutions for long-haul cables, including the use of repeaters.</span></span> <span data-ttu-id="685b6-352">Практически все источники сигнала DisplayPort автоматически переключаются на передачу сигналов HDMI при обнаружении приемника HDMI.</span><span class="sxs-lookup"><span data-stu-id="685b6-352">Nearly every DisplayPort source will automatically switch to HDMI signaling if a HDMI sink is detected.</span></span>
 
 
-## <span data-ttu-id="685b6-353">Устройства Bluetooth</span><span class="sxs-lookup"><span data-stu-id="685b6-353">Bluetooth accessories</span></span>
+## <a name="bluetooth-accessories"></a><span data-ttu-id="685b6-353">Устройства Bluetooth</span><span class="sxs-lookup"><span data-stu-id="685b6-353">Bluetooth accessories</span></span>
 
 <span data-ttu-id="685b6-354">С помощью Bluetooth к Surface Hub можно подключать следующие стандартные устройства.</span><span class="sxs-lookup"><span data-stu-id="685b6-354">You can connect the following accessories to Surface Hub using Bluetooth:</span></span>
 
