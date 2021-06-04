@@ -24,7 +24,7 @@ ms.locfileid: "11342979"
 
 Для начала во sign in to Surface Hub 2S with admin credentials, open the **Settings** app, select **Update & security**, and then select **Recovery**.
 
-## Сброс устройства
+##  <a name="reset-device"></a>Сброс устройства
 
    > [!IMPORTANT]
    > Убедитесь, что ключ BitLocker доступен перед сбросом устройства, так как он вам будет предложен позже. Дополнительные узнать [см. в окнах "Сохранение ключа BitLocker".](save-bitlocker-key-surface-hub.md)
@@ -44,11 +44,11 @@ ms.locfileid: "11342979"
    > ![*Reset and recovery for Surface Hub 2S*](images/sh2-reset.png)
    <br/>*Рисунок 1. Сброс и восстановление для Surface Hub 2S* 
 
-## Восстановление Surface Hub 2S с помощью USB-накопителя
+##  <a name="recover-surface-hub-2s-by-using-a-usb-recovery-drive"></a>Восстановление Surface Hub 2S с помощью USB-накопителя
 
 Новые возможности Surface Hub 2S теперь можно переустановить с помощью образа восстановления.
 
-### Восстановление с USB-накопителя
+###  <a name="recovery-from-a-usb-drive"></a>Восстановление с USB-накопителя
 
 С помощью Surface Hub 2S можно переустановить устройство с помощью образа восстановления. Это позволяет переустановить устройство до заводских настроек, если вы потеряли ключ BitLocker или у вас больше нет учетных данных администратора в приложении "Параметры".
 
@@ -90,6 +90,6 @@ ms.locfileid: "11342979"
 
 После первого экрана установки удалите USB-накопитель.
 
-## обратитесь в службу поддержки
+##  <a name="contact-support"></a>обратитесь в службу поддержки
 
 Если у вас возникли вопросы или вам нужна помощь, вы можете [создать запрос в службу поддержки.](https://support.microsoft.com/supportforbusiness/productselection)

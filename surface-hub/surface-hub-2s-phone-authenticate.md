@@ -29,7 +29,7 @@ ms.locfileid: "10893051"
 - [Включить вход в ключ безопасности без пароля](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 
 
-## Настройка входа с помощью приложения Microsoft Authenticator
+##  <a name="configure-sign-in-using-microsoft-authenticator-app"></a>Настройка входа с помощью приложения Microsoft Authenticator
 
 **Примечание.** Начиная с Windows 10 Team 2020, пользователи могут использовать свои предпочтительные псевдонимы электронной почты в Azure AD, а также их имя участника-пользователя (UPN) для входа в систему с помощью средства проверки подлинности Microsoft. Например, пользователь может использовать либо предпочтительный псевдоним (John.Doe@contoso.com), либо его UPN (jdoe@contoso.com) для входа.
  
@@ -43,7 +43,7 @@ ms.locfileid: "10893051"
 3. В приложении Microsoft Authenticator на мобильном устройстве [включите и воспользуйтесь входом на телефоне](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-sign-in#turn-on-and-use-phone-sign-in-for-your-work-or-school-account) для своей рабочей или учебной учетной записи.
 
  
-## Настройка входа с помощью ключей безопасности FIDO2
+##  <a name="configure-sign-in-using-fido2-security-keys"></a>Настройка входа с помощью ключей безопасности FIDO2
 
 > [!NOTE]
 >  Для входа без пароля на Surface Hub с помощью ключей безопасности FIDO2 требуется обновление Windows 10 Team 2020.
@@ -53,7 +53,7 @@ ms.locfileid: "10893051"
  
 Вы также можете войти на Surface Hub, используя ключ безопасности FIDO2, предоставленный вашей организацией. 
 
-### Чтобы настроить вход с помощью ключа безопасности, выполните указанные ниже действия.
+###  <a name="to-configure-sign-in-using-a-security-key"></a>Чтобы настроить вход с помощью ключа безопасности, выполните указанные ниже действия.
 
 
 1. На компьютере перейдите на свою [https://myprofile.microsoft.com/](https://myprofile.microsoft.com/) страницу и войдите в свою рабочую или учебную учетную запись.
@@ -65,7 +65,7 @@ ms.locfileid: "10893051"
 7. На странице **ключа контроля доступа** введите имя ключа безопасности и нажмите кнопку **Далее**.
 8. Нажмите кнопку **Готово** , чтобы завершить процесс.
 
-## Вход на Surface HUB
+##  <a name="sign-in-to-surface-hub"></a>Вход на Surface HUB
 
 После того как вы настроили вход без пароля, вы можете использовать его для более удобного доступа к приложениям, собраниям и файлам на Surface Hub.
 
@@ -75,7 +75,7 @@ ms.locfileid: "10893051"
 - Войдя в Surface Hub, вы можете использовать другие приложения, не входя в нее, пока не будет выбрано значение **завершить сеанс**. Нажмите кнопку **завершить сеанс** , чтобы удалить с устройства учетные данные, файлы и личные данные. Дополнительные сведения можно найти в разделе [Завершение сеанса](finishing-your-surface-hub-meeting.md).
 
 
-## Подробнее
+##  <a name="learn-more"></a>Подробнее
 
 - [Параметры проверки подлинности с учетом пароля для Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless)
 - [Вход без пароля с помощью приложения Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-phone)

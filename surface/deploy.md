@@ -23,7 +23,7 @@ ms.locfileid: "10835112"
 
 Узнайте больше о том, как развертываются устройства Surfaceing на базе ARM и Intel.
 
-## Развертывание устройств на базе ARM
+##  <a name="deploying-arm-based-devices"></a>Развертывание устройств на базе ARM
 
 | Статья | Описание |
 | --- | --- |
@@ -32,7 +32,7 @@ ms.locfileid: "10835112"
 | [Совместимость приложений для компьютеров на базе Windows 10 с ПОДЛОКОТНИКами](surface-pro-arm-app-performance.md) | Ознакомьтесь с рекомендациями по совместимости приложений для Surface Pro X. |
 
 
-## Развертывание устройств на базе процессора Intel 
+##  <a name="deploying-intel-based-devices"></a>Развертывание устройств на базе процессора Intel 
 
 | Статья | Описание |
 | --- | --- |
@@ -45,7 +45,7 @@ ms.locfileid: "10835112"
 | [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)| Узнайте о том, как ускоритель развертывания Microsoft Surface предлагает быстрый и простой механизм развертывания для организаций, переопределяющих устройства Surface. |
 [Параметр ограничения батареи](battery-limit.md) | Сведения о том, как использовать пределы батареи, параметр UEFI, который изменяет способ оплаты батареи устройства Surface и может продлить долговечность.
 
-## Статьи по теме
+##  <a name="related-topics"></a>Статьи по теме
 
 [Блог по Surface для ИТ-специалистов](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

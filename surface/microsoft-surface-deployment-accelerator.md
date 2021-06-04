@@ -32,7 +32,7 @@ ms.locfileid: "11016560"
 
 Полученное изображение точно соответствует конфигурации изображений восстановления исходного состояния системы (BMR), без предустановленных приложений, таких как Microsoft Office или приложение UWP Surface.
 
-## Требования
+##  <a name="requirements"></a>Требования
 
 1. Съемный USB-диск с размером не менее 16 ГБ. USB-накопитель будет отформатирован.
 2. ISO-файл в Windows 10 Pro или Windows 10 Корпоративная. Средство создания мультимедиа можно использовать для загрузки Windows 10 и создания ISO-файла. Дополнительные сведения можно найти в разделе [Загрузка Windows 10](https://www.microsoft.com/software-download/windows10).
@@ -40,7 +40,7 @@ ms.locfileid: "11016560"
 
 Подробный список требований вы найдете в разделе [необходимые условия](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) в документе Readme.
 
-## Как запустить SDA
+##  <a name="how-to-run-the-sda"></a>Как запустить SDA
 
 **Чтобы запустить SDA, выполните указанные ниже действия.**
 
@@ -75,7 +75,7 @@ ms.locfileid: "11016560"
 > [!IMPORTANT]
 > Загрузка с USB-накопителя начнется сразу же после установки Windows 10. Перед вставкой USB и перезапуском убедитесь, что устройство готово к работе. 
 
-## Дополнительные ссылки
+##  <a name="related-links"></a>Дополнительные ссылки
 
  - [Средство развертывания исходного образа, выпущенное в GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
  - [Скачивание и установка Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)

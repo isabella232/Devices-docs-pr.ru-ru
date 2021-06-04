@@ -25,7 +25,7 @@ ms.locfileid: "10836251"
 
 Основной конфигурацией, которую следует задать, является политика **LanProfile**. В зависимости от выбранного способа проверки подлинности могут потребоваться другие политики: политика **EapUserData** или политики MDM для добавления сертификатов компьютеров или пользователей (например, [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) для сертификатов пользователей/устройств или [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) для сертификатов устройств). 
 
-## Элемент политики LanProfile
+##  <a name="lanprofile-policy-element"></a>Элемент политики LanProfile
 
 Чтобы настроить Surface Hub для использования одного из поддерживаемых способов проверки подлинности по стандарту безопасности 802.1x, используйте следующий OMA-URI. 
 
@@ -49,7 +49,7 @@ Profile File Name: .\Ethernet.xml
 1 profile(s) were exported successfully.
 ```
 
-## Элемент политики EapUserData
+##  <a name="eapuserdata-policy-element"></a>Элемент политики EapUserData
 
 Если для выбранного способа проверки подлинности необходимо использовать имя пользователя и пароль вместо сертификата, можно использовать элемент **EapUserData**, чтобы задать учетные данные, которые устройство будет применять для выполнения проверки подлинности в сети. 
 
@@ -61,7 +61,7 @@ Profile File Name: .\Ethernet.xml
 
 
 
-## Добавление сертификатов
+##  <a name="adding-certificates"></a>Добавление сертификатов
 
 Если вы выбрали метод проверки подлинности на основе сертификата, вам потребуется [создать пакет подготовки](provisioning-packages-for-surface-hub.md), [использовать MDM](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp)или импортировать сертификат из параметров (обновление**параметров**  >  **и**  >  **Сертификаты**безопасности), чтобы развернуть эти сертификаты на устройстве Surface Hub в соответствующем хранилище сертификатов. При добавлении сертификатов каждый PFX-файл должен содержать только один сертификат (PFX-файл не может иметь несколько сертификатов).
 

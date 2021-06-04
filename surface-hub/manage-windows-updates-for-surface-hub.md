@@ -123,12 +123,12 @@ Surface Hub применяет обновления, следуя нижепер
 Чтобы изменить окно обслуживания с помощью MDM, задайте узел **MaintenanceHoursSimple** в [поставщике службы настройки SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). См. дополнительные сведения в разделе [Управление параметрами с помощью поставщика MDM](manage-settings-with-mdm-for-surface-hub.md).
 
 
-## Дополнительные сведения
+##  <a name="learn-more"></a>Дополнительные сведения
 
 - [Запись в блоге: обслуживание, тестирование и управление обновлениями Surface Hub (с помощью Intune, конечно же!)](https://blogs.technet.microsoft.com/y0av/2018/05/31/7-3/)
 
 
-## Статьи по теме
+##  <a name="related-topics"></a>Статьи по теме
 
 [Управление Microsoft Surface Hub](manage-surface-hub.md)
 

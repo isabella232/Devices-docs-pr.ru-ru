@@ -29,7 +29,7 @@ ms.locfileid: "10893081"
 
 Ниже приведены рекомендации по устранению распространенных проблем, возникающих при использовании устройств Surface на предприятии. Если в этой статье не указана ваша неполадка, [обратитесь в службу поддержки Surface](contact-surface-support.md?tabs=online).
 
-## Драйверы и микропрограммы Surface
+##  <a name="surface-drivers-and-firmware"></a>Драйверы и микропрограммы Surface
 
 Корпорация Майкрософт регулярно выпускает обновления и решения для устройств Surface. Необходимо вовремя обновлять устройства Surface, чтобы они могли получать будущие обновления, в том числе обновления безопасности.
 
@@ -40,34 +40,34 @@ ms.locfileid: "10893081"
 - [Управление обновлениями драйверов и встроенного ПО Surface](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
 - [Управление обновлениями драйвера Surface в Configuration Manager](https://support.microsoft.com/help/4098906)
 
-## Проблемы с подкреплением Surface
+##  <a name="surface-dock-issues"></a>Проблемы с подкреплением Surface
 
 - [Устранение неполадок с Surface Dock и стыковочными узлами Surface](https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations)
 - [Устранение неполадок с подключением к рабочей области на втором экране](https://support.microsoft.com/help/4023496)
 - [Обновление встроенного по Surface Dock (Майкрософт)](https://docs.microsoft.com/surface/surface-dock-updater)
 
-## Проблемы с обложкой или клавиатурой устройств
+##  <a name="device-cover-or-keyboard-issues"></a>Проблемы с обложкой или клавиатурой устройств
 
 - [Устранение неполадок с обложкой Type Cover или клавиатурой Surface](https://www.microsoft.com/surface/support/hardware-and-drivers/troubleshoot-surface-keyboards)
 
-## Трещины или царапины на экране
+##  <a name="screen-cracked-or-scratched-issues"></a>Трещины или царапины на экране
 
 - [Обратитесь в службу поддержки Surface](contact-surface-support.md?tabs=online)
 
-## Проблемы с питанием и батареей Surface
+##  <a name="surface-power-or-battery-issues"></a>Проблемы с питанием и батареей Surface
 
 - [Способ оплаты Surface (сведения о Surfaces)](https://support.microsoft.com/help/4023496)
 - [Батарея Surface не взимается или поверхность не работает на батарее](https://support.microsoft.com/help/4023536)
 - [Планшет Surface не включается или не выходит из спящего режима](https://support.microsoft.com/help/4023537)
 - [Оптимизация использования батареи Surface](https://support.microsoft.com/help/4483194)
 
-## Сброс устройства
+##  <a name="reset-device"></a>Сброс устройства
 
 - [Создание и использование диска восстановления USB для Surface](https://support.microsoft.com/help/4023512)
 - [Вопросы и ответы: защита данных при отправке рабочей области на обслуживание](https://support.microsoft.com/help/4023508)
 - [Microsoft Surface Data Eraser](https://docs.microsoft.com/surface/microsoft-surface-data-eraser)
 
-## Проблемы при развертывании
+##  <a name="deployment-issues"></a>Проблемы при развертывании
 
 - [DISK0 не найден при развертывании Windows на Surface Pro моделей 1796 или Surface.](https://support.microsoft.com/help/4046108)
 - [Модель Surface Pro 1796 и Surface (1 ТБАЙТ) отображаются два устройства](https://support.microsoft.com/help/4046105)

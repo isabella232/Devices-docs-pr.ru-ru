@@ -40,7 +40,7 @@ ms.locfileid: "11271066"
 >[!NOTE]
 >Microsoft Surface UEFI Configurator поддерживается только в Windows 10.
 
-## Создание пакета конфигурации UEFI Surface
+##  <a name="create-a-surface-uefi-configuration-package"></a>Создание пакета конфигурации UEFI Surface
 
 Пакет конфигурации UEFI Surface выполняет роль применения новой конфигурации параметров UEFI Surface к устройству Surface, управляемому с помощью SEMM, и роль регистрации устройств Surface в SEMM. Для создания пакета конфигурации необходимо, чтобы сертификат подписи использовался с SEMM для защиты конфигурации параметров UEFI на каждом устройстве Surface. Дополнительные сведения о требованиях к сертификату SEMM см. в [режиме управления Microsoft Surface Enterprise.](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode)
 
@@ -100,7 +100,7 @@ ms.locfileid: "11271066"
 >[!NOTE]
 >При создании пакета конфигурации UEFI Surface на рабочем столе создается файл журнала с подробными сведениями о параметрах и параметрах пакета конфигурации.
 
-## Регистрация устройства Surface в SEMM
+##  <a name="enroll-a-surface-device-in-semm"></a>Регистрация устройства Surface в SEMM
 При выполнении пакета конфигурации UEFI Surface сертификат SEMM и файлы конфигурации UEFI Surface находятся в хранилище микропрограмм устройства Surface. При перезагрузке устройства Surface UEFI обрабатывает эти файлы и начинает процесс применения конфигурации UEFI Surface или регистрации устройства Surface в SEMM, как показано на рисунке 7.
 
 ![Процесс SEMM для настройки UEFI Или регистрации Surface](images/surface-semm-enroll-fig7.png "SEMM process for configuration of Surface UEFI or enrollment")
@@ -143,7 +143,7 @@ ms.locfileid: "11271066"
 *Рисунок 11. Страница управления Surface UEFI Enterprise*
 
 
-## Настройка параметров UEFI Surface с помощью SEMM
+##  <a name="configure-surface-uefi-settings-with-semm"></a>Настройка параметров UEFI Surface с помощью SEMM
 
 После регистрации устройства в SEMM можно запустить пакеты конфигурации UEFI Surface, подписанные с помощью того же сертификата SEMM, чтобы применить новые параметры UEFI Surface. Эти параметры применяются автоматически при следующей загрузке устройства без участия пользователя. Вы можете использовать такие решения развертывания приложений, как Microsoft Endpoint Configuration Manager, для развертывания пакетов конфигурации UEFI Surface на устройствах Surface для изменения параметров в Surface UEFI или управления ими.
 

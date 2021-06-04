@@ -21,7 +21,7 @@ ms.locfileid: "10835768"
 
 На этой странице представлено подробное обучение для Surface Hub 2, которое предоставляется по требованию.
 
-## Глава 1: обзор обучения
+##  <a name="chapter-1---training-overview"></a>Глава 1: обзор обучения
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Jud] 
 
@@ -33,7 +33,7 @@ ms.locfileid: "10835768"
 - Общие сведения о службах обучения
 - Рекомендации по обучению
 
-## Глава 2 — Начало работы с Surface HUB
+##  <a name="chapter-2---getting-started-with-surface-hub"></a>Глава 2 — Начало работы с Surface HUB
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejt] 
 
@@ -44,7 +44,7 @@ ms.locfileid: "10835768"
 - Начало работы с Surface HUB
 - Идет сбор ожиданий
 
-## Глава 3: Навигация в Surface HUB
+##  <a name="chapter-3---navigating-surface-hub"></a>Глава 3: Навигация в Surface HUB
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFW] 
 
@@ -56,7 +56,7 @@ ms.locfileid: "10835768"
 - Teams/Skype
 - Завершить сеанс
 
-## Глава 4: доска и совместная работа
+##  <a name="chapter-4---whiteboarding-and-collaboration"></a>Глава 4: доска и совместная работа
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4v] 
 
@@ -68,7 +68,7 @@ ms.locfileid: "10835768"
 - Предоставление общего доступ к доске
 - Экспорт доски 
  
-## Глава 5: исследование приложений Surface HUB
+##  <a name="chapter-5---exploring-surface-hub-apps"></a>Глава 5: исследование приложений Surface HUB
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejz] 
 
@@ -78,7 +78,7 @@ ms.locfileid: "10835768"
 - Microsoft Excel
 - Microsoft Edge
 
-## Глава 6-дополнительные приложения и Office 365
+##  <a name="chapter-6---advanced-apps-and-office-365"></a>Глава 6-дополнительные приложения и Office 365
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46EjA] 
 
@@ -90,7 +90,7 @@ ms.locfileid: "10835768"
 - OneDrive
 - Совместное редактирование документов
 
-## Глава 7: подключение устройств
+##  <a name="chapter-7---connecting-devices"></a>Глава 7: подключение устройств
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4w] 
 
@@ -101,7 +101,7 @@ ms.locfileid: "10835768"
 - Рабочие процессы бизнес-приложения
 - Устранение неполадок Miracast и проводного подключения    
  
-## Глава 8 – собрания Skype для бизнеса
+##  <a name="chapter-8---skype-for-business-meetings"></a>Глава 8 – собрания Skype для бизнеса
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4x] 
 
@@ -112,7 +112,7 @@ ms.locfileid: "10835768"
 - Управление собранием Skype для бизнеса
 - Представление содержимого
     
-## Глава 9 – собрания Microsoft Teams
+##  <a name="chapter-9---microsoft-teams-meetings"></a>Глава 9 – собрания Microsoft Teams
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFZ] 
 
@@ -125,7 +125,7 @@ ms.locfileid: "10835768"
 - Представление содержимого
 - Заключение
 
-## Глава 10 — Основные способы устранения неполадок
+##  <a name="chapter-10---basic-troubleshooting"></a>Глава 10 — Основные способы устранения неполадок
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46z65] 
 

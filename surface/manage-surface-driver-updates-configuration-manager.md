@@ -23,11 +23,11 @@ ms.locfileid: "10897077"
 ---
 # Управление обновлениями драйверов в Configuration Manager
 
-## Краткий обзор
+##  <a name="summary"></a>Краткий обзор
 
 Начиная с [Microsoft System Center Configuration Manager версии 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates), вы можете выполнять синхронизацию и развертывание встроенного по и обновлений для Surface (Майкрософт) прямо через клиент Configuration Manager. Процесс напоминает развертывание регулярных обновлений. Однако некоторые дополнительные конфигурации необходимы для получения обновлений драйвера Surface в каталог.
 
-## Предварительные условия
+##  <a name="prerequisites"></a>Предварительные условия
 
 Для управления обновлениями драйверов Surface должны выполняться следующие требования:
 
@@ -156,7 +156,7 @@ ms.locfileid: "10897077"
 
 Дополнительные сведения о развертывании можно найти в статье [System Center 2012 Configuration Manager – part7: Software Updates (Deploy)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).
 
-## Вопросы и ответы
+##  <a name="faq"></a>Вопросы и ответы
 
 **После выполнения действий, описанных в этой статье, видеодрайверы Surfaces по-прежнему не синхронизируются. Почему?**
 
@@ -176,7 +176,7 @@ ms.locfileid: "10897077"
 
 Сведения о том, как развертывать драйверы Surface и обновления встроенного по с помощью альтернативных каналов, можно найти в разделе [Управление обновлениями Surface Driver и микропрограмм](manage-surface-driver-and-firmware-updates.md). Если вы хотите скачать MSI-или exe-файл, а затем развернуть его через традиционные каналы развертывания программного обеспечения, ознакомьтесь со сведениями о том, как [обновить встроенное по в Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).
 
-## Дополнительные сведения
+##  <a name="learn-more"></a>Дополнительные сведения
 
 Дополнительные сведения об обновлениях драйверов и микропрограмм Surface можно найти в следующих статьях:
 

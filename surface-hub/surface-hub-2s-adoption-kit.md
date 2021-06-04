@@ -22,15 +22,15 @@ ms.locfileid: "10835771"
 
 Независимо от того, используете ли вы малый или крупный бизнес, план внедрения Surface Hub очень важен для создания необходимых вариантов использования и для облегчения работы пользователей с устройством. Ознакомьтесь с этими загружаемыми материалами, которые помогут вам обеспечить обучение в Организации.
 
-## Обучение по запросу
+##  <a name="on-demand-training"></a>Обучение по запросу
 
 - [Учебные видеоролики 2 Surface HUB](surface-hub-2s-adoption-videos.md)
 
-## Набор средств внедрения
+##  <a name="adoption-toolkit"></a>Набор средств внедрения
 
 - [Набор средств внедрения Surface HUB](downloads/SurfaceHubAdoptionToolKit.pdf)
 
-## Обучающие руководства
+##  <a name="training-guides"></a>Обучающие руководства
 
 - [Руководство по обучению: конечный пользователь](downloads/TrainingGuide-SurfaceHub2S-EndUser.pdf)
 - [Руководство по обучению — пользователь Power User](downloads/TrainingGuide-SurfaceHub2S-PowerUser.pdf)
@@ -39,7 +39,7 @@ ms.locfileid: "10835771"
 
 [Скачать все учебные руководства](https://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
 
-## Руководства для конечных пользователей
+##  <a name="end-user-guides"></a>Руководства для конечных пользователей
 
 - [Руководство по переходу на Surface HUB](downloads/Guide-SurfaceHub2S-Navigation.pptx)
 - [Руководство по Office 365 на Surface HUB](downloads/Guide-SurfaceHub2S-Office365.pptx)
@@ -48,7 +48,7 @@ ms.locfileid: "10835771"
 
 [Загрузка всех руководств для конечных пользователей](https://download.microsoft.com/download/E/7/F/E7FC6611-BB55-43E1-AF36-7BD5CE6E0FE0/SurfaceHub2S-EndUserGuides-July2019.zip)
 
-## Краткий справочник по карточкам
+##  <a name="quick-reference-cards"></a>Краткий справочник по карточкам
 
 - [Подключение компьютера](downloads/QRCConnectYourPC.pdf) 
 - [Присоединение к собранию Teams](downloads/QRCJoinTeamsMeeting.pdf)

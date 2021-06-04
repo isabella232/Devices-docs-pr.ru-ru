@@ -41,13 +41,13 @@ ms.locfileid: "11304842"
 
  
 
-## Отправка запросов в службу поддержки
+##  <a name="submit-support-requests"></a>Отправка запросов в службу поддержки
 
   [![Get Autopilot Registration Support for Surface](images/autopilot-reg-support-surface.png)](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
  
  
  
-## Подробнее
+##  <a name="learn-more"></a>Подробнее
 
 - [Windows Autopilot и устройства Surface](windows-autopilot-and-surface-devices.md)
 - [Регистрация устройств с Windows в Intune с помощью Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)

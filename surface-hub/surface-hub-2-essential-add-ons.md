@@ -26,11 +26,11 @@ ms.locfileid: "11030426"
 
 Если вы перешли с Windows 10 на Windows 10 Pro или Enterprise на Surface Hub 2, вы можете выбрать один из разнообразных аксессуаров, которые подключаются через USB-C, USB-A, HDMI или Bluetooth. 
 
-## Surface Hub 2 средство чтения отпечатков пальцев
+##  <a name="surface-hub-2-fingerprint-reader"></a>Surface Hub 2 средство чтения отпечатков пальцев
 
 Если вы используете операционную систему Windows 10 Pro или Windows 10 Enterprise на Surface Hub 2, вы можете войти в систему с помощью опционального Surface Hub 2 Reader для проверки подлинности, использующей функцию [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello).
 
-### Становк
+###  <a name="ordering"></a>Становк
 
 Коммерческие клиенты могут размещайте заказы через торговых посредников устройства, уполномоченных на Surface.
 
@@ -45,7 +45,7 @@ ms.locfileid: "11030426"
 - [Биометрические данные Windows Hello в масштабах предприятия](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-biometrics-in-enterprise).
 
   
-### Таблица1. Surface Hub 2. технические характеристики сканера отпечатков пальцев
+###  <a name="surface-hub-2-fingerprint-reader-tech-specs"></a>Таблица1. Surface Hub 2. технические характеристики сканера отпечатков пальцев
 
 
 | Компонент                       | Описание                                                                                                                          |
@@ -60,12 +60,12 @@ ms.locfileid: "11030426"
 > [!NOTE]
 > Группа Windows 10, которая работает на Surface Hub 2, не поддерживает средство чтения отпечатков пальцев Surface Hub 3. Это связано с тем, что Windows 10 Team разработана для того, чтобы несколько пользователей могли взаимодействовать с устройством в среде Конференц-зал. 
  
-## Распознавание лиц Windows Hello
+##  <a name="windows-hello-face-recognition"></a>Распознавание лиц Windows Hello
 
 В Windows 10 Pro и Enterprise на Surface Hub 2 поддерживается Windows Hello для проверки подлинности и требуется периферия сертифицированной камеры Windows Hello. Обратите внимание, что встроенная камера для Surface Hub 2 не предназначена для проверки подлинности и не поддерживает Windows Hello. Дополнительные сведения можно найти в разделе [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
 
 
-## Аудио и видео аксессуары
+##  <a name="audio-and-video-accessories"></a>Аудио и видео аксессуары
 
 Вы можете расширять возможности аудио-и видеофайлов Surface Hub 2 с помощью звуковых и видеоустройств, использующих порты USB, C или USB-A.
 
@@ -76,7 +76,7 @@ ms.locfileid: "11030426"
 
 
 
-## Другие аксессуары
+##  <a name="other-accessories"></a>Другие аксессуары
 Surface Hub 2 включает следующие порты для подключения широкого спектра устройств. 
 
 - Порт 1 порта USB в вычислительном модуле (за экраном)
@@ -89,6 +89,6 @@ Surface Hub 2 включает следующие порты для подклю
 Дополнительные сведения можно найти в разделе [порты Surface Hub 2S и общие сведения о клавиатурах](surface-hub-2s-port-keypad-overview.md)
 
 
-## Подробнее
+##  <a name="learn-more"></a>Подробнее
 
 - [Настройка Windows 10 Pro или Enterprise на Surface Hub 2](surface-hub-2-post-install.md).
