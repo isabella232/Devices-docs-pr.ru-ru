@@ -60,14 +60,14 @@ ms.locfileid: "11271563"
 1.  Скачайте последнюю версию [настройщика UEFI Surface.](https://www.microsoft.com/download/confirmation.aspx?id=46703)
 2.  Во sign in to your Surface device as an administrator, open **Surface UEFI Configurator,** select **Surface Devices,** and then select **Next**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Выберите устройства Surface и выберите "Далее".":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Выберите устройства Surface и выберите Далее.":::
 3.  Выберите **"Начните"** и выберите **"Создать** в **пакете конфигурации".**
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите "Создать пакет конфигурации".":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Выберите Создать пакет конфигурации.":::
 4.  Выберите **"Защита сертификатов"** и добавьте PFX-файл сертификата. 
 5. Введите пароль, выберите **"Далее",** **"Добавить защиту**паролем" и затем **"Далее".**
 6.  На странице **"Выбор типа Surface", на которую** вы хотите нацелить, выберите нужные целевые устройства. Например, выберите **Surface Pro 7.**
-7.  На странице **"Дополнительные функции"** выберите **"Будить на питание",** установите для функции "В сети" и выберите **"Далее".** ****
+7.  На странице **"Дополнительные функции"** выберите **"Будить на питание",** установите для функции "В сети" и выберите **"Далее".**
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Select Wake on Power and set to On."::: 
 8.  На странице **"Успешно"** выберите **"Конец".**
@@ -88,10 +88,10 @@ ms.locfileid: "11271563"
 
 2.  В **диалоговом** окне предупреждения выберите "ОК" или отключите BitLocker, если это необходимо. ****
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Выберите "ОК" или отключите BitLocker соответствующим образом.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Выберите ОК или отключите BitLocker соответствующим образом.":::
 3.  На странице приветствия выберите **"Далее",** чтобы запустить пакет, и примените только что настроенный параметр UEFI.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="На странице приветствия выберите "Далее".":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="На странице приветствия выберите Далее.":::
 4.  Перезапустите устройство. 
 
 Теперь настроено питание от питания. Чтобы проверить параметры, отключите устройство, отключите питание и снова подключите его. Устройство должно запускаться автоматически. 
