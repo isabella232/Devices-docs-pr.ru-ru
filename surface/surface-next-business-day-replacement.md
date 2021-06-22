@@ -3,7 +3,7 @@ title: Сведения о замене на следующий рабочий �
 ms.author: v-kaij
 author: greg-lindsay
 manager: laurawi
-ms.date: 05/23/2021
+ms.date: 06/17/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
@@ -11,15 +11,14 @@ localization_priority: high
 ms.custom: references_regions
 appliesto:
 - Surface
-- Surface Hub
 ms.reviewer: irenewhite
 description: Сведения о замене на следующий рабочий день и зоны действия.
-ms.openlocfilehash: 2708890c864582cf638c48474f85ddc01ef36576
-ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
+ms.openlocfilehash: 4488d2f1cc8a3e6c240710d59f3465d05abae12b
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "11585930"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613848"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>Сведения о замене на следующий рабочий день и зоны действия
 
@@ -58,7 +57,8 @@ ms.locfileid: "11585930"
 - [Швеция](#sweden)
 - [Швейцария](#switzerland)
 - [Нидерланды](#the-netherlands)
-- [Соединенные Штаты Америки](#united-states)
+- [Соединенное Королевство](#united-kingdom)
+- [Соединенные Штаты](#united-states)
 
 
 #### <a name="australia"></a>Австралия
@@ -106,7 +106,8 @@ ms.locfileid: "11585930"
 
 #### <a name="hong-kong"></a>Гонконг
 
-- Время отсечения: 16:00 HKT (время в формате UTC+8) 
+- Заявка должна быть подана до: 16:00 HKT (UTC+8) 
+- Покрытие NBD доступно для всех почтовых кодов Гонконга (САР).
 
 #### <a name="ireland"></a>Ирландия
 
@@ -142,11 +143,12 @@ ms.locfileid: "11585930"
 #### <a name="singapore"></a>Сингапур
 
 - Заявка должна быть подана до: 13:00 SGT (UTC+8)
+- Покрытие NBD доступно для всех почтовых кодов в этой стране или регионе.
 
 #### <a name="spain"></a>Испания
 
 - Заявка должна быть подана до: 12:00 CET (UTC+1)
-- [Обслуживание в течение следующего рабочего дня](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coveragef-%20Spain%20Post%20Codes%20030321.xlsx)
+- [Обслуживание в течение следующего рабочего дня](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coverage-%20Spain%20Post%20Codes%20030321.xlsx)
 
 #### <a name="sweden"></a>Швеция
 
@@ -163,6 +165,10 @@ ms.locfileid: "11585930"
 - Заявка должна быть подана до: 12:00 CET (UTC+1)
 - [Обслуживание в течение следующего рабочего дня](https://download.microsoft.com/download/6/3/f/63f2ff4c-3b8f-465e-9498-0878f7ba70f3/NBD%20Coverage%20-%20Netherlands%20Post%20Codes%20042821.xlsx)
 
-#### <a name="united-states"></a>Соединенные Штаты Америки 
+### <a name="united-kingdom"></a>Соединенное Королевство
+
+- Заявка должна быть подана до: 12:00 CET (UTC+1)
+
+#### <a name="united-states"></a>Соединенные Штаты 
 
 - Заявка должна быть подана до: 14:00 CST (UTC-6)
