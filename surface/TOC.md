@@ -24,7 +24,6 @@
 
 ### [Совместимость устройств Surface с Windows 10 с долгосрочным обслуживанием (Long-Term Servicing Branch)](surface-device-compatibility-with-windows-10-ltsc.md)
 ### [Long-Term Servicing Branch для устройств Surface](ltsb-for-surface.md)
-### [Пробуждение по локальной сети для устройств Surface](wake-on-lan-for-surface-devices.md)
 ### [Рекомендации для Surface и Endpoint Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
 ### [Развертывание приложения Surface с помощью Microsoft Store для бизнеса](deploy-surface-app-with-windows-store-for-business.md)
 ### [Включение PEAP, EAP-FAST и Cisco LEAP на устройствах Surface](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
@@ -57,10 +56,13 @@
 ### [Параметр ограничения батареи](battery-limit.md)
 ### [Элемент управления яркостью устройств Surface](microsoft-surface-brightness-control.md)
 ### [Тег ресурса Surface](assettag.md)
+### [Пробуждение по локальной сети для устройств Surface](wake-on-lan-for-surface-devices.md)
+### [Пробуждение по локальной сети с использованием Surface Dock 2](wake-on-lan-surface-dock2.md)
 ### [Пробуждение при подаче питания для устройств Surface](wake-on-power-for-surface.md)
 
 ## Защита
 
+### [Обзор безопасности Surface](surface-security.md)
 ### [Управление параметрами UEFI Surface в Intune](surface-manage-dfci-guide.md)
 ### [Управление параметрами UEFI Surface](manage-surface-uefi-settings.md)
 ### [Расширенные функции безопасности UEFI для Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
@@ -73,7 +75,6 @@
 ### [Защита DMA для Surface](dma-protect.md)
 
 ## Устранение неполадок
-### [Обратитесь в службу поддержки Surface](contact-surface-support.md)
 ### [Основные решения поддержки для устройств Surface](support-solutions-surface.md)
 ### [Рекомендации по извлечению SSD на совместимых устройствах Surface](surface-ssd-removal-guide.md)
 ### [Блог по Surface для ИТ-специалистов](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro)
@@ -83,10 +84,12 @@
 #### [Запуск набора средств диагностики Surface для бизнеса с помощью команд](surface-diagnostic-toolkit-command-line.md)
 ### [Справка для конечных пользователей](https://support.microsoft.com/products/surface-devices)
 ### [Жизненный цикл драйвера Surface и встроенного ПО для устройств под управлением Windows](surface-driver-firmware-lifecycle-support.md)
+### [Обращение в службу поддержки Surface](contact-surface-support.md)
 
-## Планы гарантий и защиты
+## Гарантия и обслуживание  
 ### [Планы гарантий и защиты Surface для бизнеса](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
 ### [Условия](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
+### [Гарантия и услуги при самостоятельном обслуживании Surface](self-serve-warranty-service.md)
 ### [Замена на следующий рабочий день](surface-next-business-day-replacement.md)
 ### [Проверка состояния гарантии устройства](https://mybusinessservice.surface.com/)
 ### [Защита данных при отправке Surface для обслуживания](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
