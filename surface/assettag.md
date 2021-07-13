@@ -1,6 +1,6 @@
 ---
-title: Инструмент тега актива Surface
-description: В этой статье объясняется, как использовать инструмент тега актива Surface.
+title: Средство тегов surface Asset
+description: В этом разделе объясняется, как использовать средство тегов Surface Asset.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -8,105 +8,103 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: hachidan
+ms.reviewer: carlol
+ms.date: 06/29/2021
 manager: laurawi
-ms.openlocfilehash: ca6a71a6b864692953fcd96eb687c2752527c9f5
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: b130f6b0bf52dc1c3a28231a2330cae51a5ef44a
+ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834747"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "11643835"
 ---
-# Инструмент тега актива Surface
+# <a name="surface-asset-tag-tool"></a>Средство тегов surface Asset
 
-Тег актива Surface — это служебная программа интерфейса командной строки (CLI), позволяющая просматривать, назначать и изменять назначенные значения тегов ресурсов для устройств Surface. Она работает на Surface Pro 3 и всех современных устройствах Surface.
+Surface Asset Tag — это утилита интерфейса командной строки (CLI), которая позволяет просматривать, назначать и изменять назначенное значение тега активов для устройств Surface. Он работает на Surface Pro 3 и на всех более новых устройствах Surface.
 
-##  <a name="system-requirements"></a>Требования к системе
+## <a name="system-requirements"></a>Требования к системе
 
-- Surface Pro 3 или более поздней версии
+- Surface Pro 3 или более поздней
 
-- Встроенное по UEFI версии 3.9.150.0 или более поздней.
+- Прошивка UEFI версии 3.9.150.0 или более поздней версии
 
-##  <a name="using-surface-asset-tag-"></a>Использование тега актива Surface 
+## <a name="using-surface-asset-tag"></a>Использование тега Surface Asset
 
-Чтобы запустить тег актива Surface, сделайте следующее:
+Для запуска тега Surface Asset:
 
-1.  На устройстве Surface Скачайте **ресурс surface Tag.zip** из [центра загрузки Майкрософт](https://www.microsoft.com/download/details.aspx?id=46703), извлеките zip-файл и AssetTag.exe сохраните его в нужной папке (в этом примере — C:\\assets).
+1. На устройстве Surface скачайте **surface Asset Tag.zip** центра загрузки Майкрософт, извлеките почтовый файл и сохраните AssetTag.exe в нужной папке (в этом примере C:\\assets). [](https://www.microsoft.com/download/details.aspx?id=46703)
 
     > [!NOTE]
-    > Для Surface Pro X используйте приложение с именем **AssetTag_x86** в ZIP-файле. 
+    > Для Surface Pro X используйте приложение с именем **AssetTag_x86** в файле ZIP.
 
-2.  Откройте командную консоль от имени администратора и запустите AssetTag.exe, указав полный путь к инструменту.
+2. Откройте консоль команды в качестве администратора и запустите AssetTag.exe, введите полный путь к инструменту.
 
-3.  Перезапустите Surface.
+3. Перезапустите Surface.
 
-###  <a name="asset-tag-tool-commands"></a>Команды инструмента «тег актива»   
-В приведенных ниже примерах AssetTag.exe сохраняется в каталоге на локальном компьютере (C:\assets). 
+    > [!NOTE]
+    > После настройки тега актива требуется вторая перезагрузка, прежде чем он появится в WMI.
 
-Чтобы получить нужный тег актива, выполните AssetTag-g.
+### <a name="asset-tag-tool-commands"></a>Команды средств тегов активов
 
-**Пример.**
+В следующих примерах AssetTag.exe в каталоге локального компьютера (C:\assets).
 
-   ```
- C:\assets\AssetTag.exe -g
-  ```
- 
- Чтобы очистить предложенный тег актива, выполните AssetTag-s.
- 
- **Пример.**
- 
-   ```
+Чтобы получить предложенный тег активов, **запустите AssetTag -g:**
+
+```console
+C:\assets\AssetTag.exe -g
+```
+
+Чтобы очистить предложенный тег активов, **запустите AssetTag -s:**
+
+```console
 C:\assets\AssetTag.exe -s
-  ```
-Чтобы установить предложенный тег актива, выполните AssetTag-s testassettag12.
+```
 
-**Пример.**
+Чтобы установить предложенный тег активов, **запустите AssetTag -s testassettag12:**
 
 ```
 C:\assets\AssetTag.exe -s testassettag12
 ```
 
 >[!NOTE]
->Значение тега актива должно содержать от 1 до 36 символов. Допустимые символы включают A-Z, a-z, 0-9, точки (.) и дефис (-).
+>Значение тега актива должно содержать от 1 до 36 символов. Допустимые символы включают A-Z, a-z, 0-9, period (.) и hyphen (-).
 
+## <a name="managing-asset-tags"></a>Управление тегами активов
 
-##  <a name="managing-asset-tags"></a>Управление тегами ресурсов
+Вы можете просмотреть существующий тег актива в параметрах UEFI в статье Сведения об устройстве (панель управления >**восстановления > advanced startup > перезапуска**сейчас.)
 
-Вы можете просмотреть существующий тег актива в параметрах UEFI в разделе сведения об устройстве (**Панель управления > восстановление > Расширенная загрузка > перезапустить прямо сейчас**.)
+На рисунке ниже показаны результаты запуска средства тегов активов в Surface Go.
 
-На рисунке ниже показаны результаты выполнения инструмента "тег актива" на Surface go.
+![Результаты запуска средства Теги surface Asset на Surface Go.](images/assettag-fig1.png)
 
-![Результаты выполнения инструмента тега актива Surface на Surface go.
-](images/assettag-fig1.png)
+> **Рисунок 1.** Результаты запуска средства тегов surface Asset на Surface Go
 
-> **Рисунок 1.** Результаты выполнения инструмента тега актива Surface на Surface Go
+Поочередно можно использовать WMI для запроса существующего тега активов на устройстве:
 
-Кроме того, с помощью WMI можно запросить существующий тег актива на устройстве.
+(Get-WmiObject -query "Select * from Win32_SystemEnclosure")
 
-(Get-WmiObject-запрос "SELECT * FROM Win32_SystemEnclosure")
+### <a name="example"></a>Пример
 
-**Пример.**
-
-   ```
-C:\Windows\System32> (Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
-  ```
+```console
+C:\Windows\System32> (Get-WmiObject -query "Select * from Win32_SystemEnclosure")
+```
   
-###  <a name="using-powershell"></a>Использование PowerShell
+### <a name="using-powershell"></a>Использование PowerShell
 
-Ниже приведен сценарий, который можно использовать для того, чтобы вычислить предлагаемое значение и интерпретировать все ошибки.
+Сценарий ниже можно использовать для получения предлагаемого значения и интерпретации ошибок.
 
- ```
+```powershell
 AssetTag -g \> $asset\_tag 2\> $error\_message  
 $asset\_tag\_return\_code = $LASTEXITCODE  
-$asset\_tag = $asset\_tag.Trim(“\`r\`n”)
+$asset\_tag = $asset\_tag.Trim("\`r\`n")
 
 if ($asset\_tag\_return\_code -eq 0) {  
-Write-Output (“Good Tag = ” + $asset\_tag)  
+Write-Output ("Good Tag = " + $asset\_tag)  
 } else {  
 Write-Output (  
-“Failure: Code = ” + $asset\_tag\_return\_code +  
-“Tag = ” + $asset\_tag +  
-“Message = ” + $error\_message)
+"Failure: Code = " + $asset\_tag\_return\_code +  
+"Tag = " + $asset\_tag +  
+"Message = " + $error\_message)
 
 }
- ```
+```

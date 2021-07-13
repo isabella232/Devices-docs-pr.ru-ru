@@ -1,5 +1,5 @@
 ---
-title: Wake on LAN with Surface Dock 2
+title: Пробуждение по локальной сети с использованием Surface Dock 2
 description: Surface Dock 2 обеспечивает лучшую поддержку wake on LAN (WOL), позволяя администраторам удаленно разбудить устройства и автоматически выполнять задачи управления.
 keywords: обновление, развертывание, драйвер, wol, wake-on-lan
 ms.prod: w10
@@ -13,15 +13,15 @@ ms.topic: article
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 6/03/2021
-ms.openlocfilehash: 74b36b60cb58ecb9042b73b8cdba7271d0af8c80
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.date: 7/02/2021
+ms.openlocfilehash: 4a74efb8af776e9805ad3148ea656f0a65d5d09c
+ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11614134"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "11643855"
 ---
-# <a name="wake-on-lan-with-surface-dock-2"></a>Wake on LAN with Surface Dock 2
+# <a name="wake-on-lan-with-surface-dock-2"></a>Пробуждение по локальной сети с использованием Surface Dock 2
 
 Чтобы поддерживать устройства в полной мере в курсе, ИТ-администраторы должны иметь возможность управлять устройствами, когда они не используются, как правило, во время ночных окон обслуживания. Surface Dock 2 обеспечивает лучшую поддержку wake on LAN (WOL), позволяя администраторам удаленно разбудить устройства и автоматически выполнять задачи управления с помощью Microsoft Endpoint Manager или других сторонних решений.
 
@@ -48,7 +48,7 @@ Surface Dock 2 обеспечивает поддержку WOL для устро
 
 - Режим ожидания с подключением
 - Hibernation (состояние питания S4)
-- Hibernation (S5 "soft off" power state)
+- Отключение (состояние питания S5 "soft off")
 
 Дополнительные дополнительные информацию о состояниях власти [см.](/windows/win32/power/system-power-states)в этой информации.
 
