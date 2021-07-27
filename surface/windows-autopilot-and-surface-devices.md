@@ -2,8 +2,8 @@
 title: Windows Autopilot и устройства Surface
 ms.reviewer: ''
 manager: laurawi
-description: Узнайте о вариантах развертывания Windows Autopilot для устройств Surface.
-keywords: autopilot, windows 10, surface, развертывание
+description: Узнайте о Windows развертывания автопилота для устройств Surface.
+keywords: автопилот, Windows 10, поверхность, развертывание
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
@@ -14,77 +14,78 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 9/14/2020
-ms.openlocfilehash: 31f11db8c3ab12d1af754267022d9060d3a8c026
-ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
+ms.openlocfilehash: 6cf2996ab9348bcc778a4b334d82e52b2eebdcde
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271105"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676603"
 ---
-# Windows Autopilot и устройства Surface
+# <a name="windows-autopilot-and-surface-devices"></a>Windows Autopilot и устройства Surface
 
-Windows Autopilot — это облачная технология развертывания в Windows 10. Вы можете использовать Windows Autopilot для удаленного развертывания и настройки устройств в процессе нулевого касания сразу после этого.
+Windows Автопилот — это облачная технология развертывания в Windows 10. Вы можете использовать Windows автопилот для удаленного развертывания и настройки устройств в процессе нулевого касания прямо из окна.
 
-Традиционно ИТ-специалисты проводят много времени на создании и настройке образов, которые позже будут развернуты на устройствах, уже установленных на них с совершенно хорошей ОС. Windows Autopilot представляет новый подход к развертыванию без касания с использованием набора технологий для настройки и настройки устройств с Windows. Это позволяет ИТ-отделу настраивать и настраивать образы практически без инфраструктуры для управления и простой и простой процесс. С точки зрения пользователя, для того чтобы surface была эффективной, требуется всего несколько простых действий. На самом деле, единственное взаимодействие, необходимое пользователю, — подключение к сети и проверка его учетных данных. Все после этого полностью автоматизировано.
+Традиционно ИТ-специалисты тратят много времени на создание и настройку изображений, которые позже будут развернуты на устройствах, которые уже установлены с отличной ОС. Windows Автопилот представляет новый подход к развертыванию с нулевой касанием с помощью набора технологий для настройки Windows устройств. Это позволяет ИТ-отделу настраивать и настраивать изображения практически без инфраструктуры для управления, а процесс прост и прост. С точки зрения пользователя, для того чтобы получить Surface в продуктивное состояние, требуется всего несколько простых действий. На самом деле единственным взаимодействием, требуемом от конечных пользователей, является подключение к сети и проверка их учетных данных. Все после этого полностью автоматизировано.
 
-Windows Autopilot позволяет:
+Windows Автопилот позволяет:
 
-- Автоматически присоединять устройства к Azure Active Directory (Azure AD).
-- Автоматическая регистрация устройств в службах MDM, таких как Microsoft Intune (требуется подписка на Azure AD Premium).
-- Ограничивать создание учетной записи администратора. Autopilot — единственный способ, с которого первый пользователь, войдя в Windows, войдет в систему как обычный пользователь.
-- Создание и автоматическое назначение устройств группам конфигураций на основе профилей устройств.
-- Настройка содержимого и фирменности при OOBE в зависимости от организационных требований.
-- Включить полную конфигурацию устройств с помощью Intune.
-- Удаленное сброс или перезапуск устройств.
+- Автоматически присоединяются устройства к Azure Active Directory (Azure AD).
+- Автоматические устройства для регистрации в службы MDM, например Microsoft Intune (требуется подписка Azure AD Premium).
+- Ограничивать создание учетной записи администратора. Автопилот — это единственный способ ввести первого пользователя, который Windows в качестве стандартного пользователя.
+- Создание и автоматическое назначение устройств группам конфигурации на основе профилей устройств.
+- Настройка контента и фирменности OOBE (вне полей) в зависимости от организационных требований.
+- Включить полную конфигурацию устройства с помощью Intune.
+- Сбросить или перезапустить устройства удаленно.
 
-##  <a name="how-it-works"></a>Принцип работы
+## <a name="how-it-works"></a>Принцип работы
 
-Устройства, зарегистрированные в Windows Autopilot, идентифицированы через Интернет при первом запуске с помощью уникальной сигнатуры устройства, которая называется аппаратным *hashом.* Они автоматически регистрируются и настраиваются с помощью современных решений управления, таких как Azure Active Directory (Azure AD) и управления мобильными устройствами.
+Windows Устройства, зарегистрированные на автопилоте, идентифицированы через Интернет при первом запуске с помощью уникальной подписи устройства, которая называется *"аппаратный хаш".* Они автоматически регистрируются и настраиваются с помощью современных решений управления, таких как Azure Active Directory (Azure AD) и управления мобильными устройствами.
 
-Вы можете зарегистрировать устройства Surface во время покупки у партнера Surface, который включил Windows Autopilot. Эти партнеры могут погрузить новые устройства непосредственно вашим пользователям. Устройства будут автоматически зарегистрированы и настроены при первом включии. Этот процесс исключает переопределение во время развертывания, что позволяет реализовать новые гибкие методы управления устройствами и их распространения.
+Устройства Surface можно зарегистрировать во время покупки у партнера Surface, включенного для Windows автопилота. Эти партнеры могут напрямую отгрузки новых устройств пользователям. Устройства будут автоматически зарегистрированы и настроены при первом включе. Этот процесс устраняет переопределение во время развертывания, что позволяет внедрять новые гибкие методы управления и распространения устройств.
 
-##  <a name="modern-management"></a>Современные средства управления
+## <a name="modern-management"></a>Современные средства управления
 
-Autopilot — это рекомендуемый вариант развертывания для устройств Surface, включая Surface Pro 7+, Surface Laptop 3, Surface Pro 7 и Surface Pro X, специально разработанный для развертывания с помощью Autopilot.
+Автопилот — это рекомендуемый вариант развертывания для устройств Surface, в том числе Surface Pro 7+, Surface Laptop 3, Surface Pro 7 и Surface Pro X, который специально разработан для развертывания с помощью автопилота.
 
- Лучше всего зарегистрировать устройства Surface с помощью поставщика облачных решений Майкрософт. Этот шаг позволяет управлять настройками микропрограмм UEFI на Surface непосредственно из Intune. Это устраняет необходимость физического сенсорного управления сертификатами. Подробные сведения см. в управлении [Intune настройками UEFI Surface.](surface-manage-dfci-guide.md)
+ Лучше всего записать устройства Surface с помощью поставщик облачных решений (Майкрософт). Этот шаг позволяет управлять настройками прошивки UEFI на Surface непосредственно из Intune. Это устраняет необходимость физического касания устройств для управления сертификатами. Подробные сведения см. в руководстве [Intune параметров Surface UEFI.](surface-manage-dfci-guide.md)
 
-##  <a name="windows-version-considerations"></a>Вопросы, учитывая версию Windows
+## <a name="windows-version-considerations"></a>Windows версии
 
-Для широкого развертывания устройств Surface с помощью Windows Autopilot, включая регистрацию партнеров Surface на момент покупки, требуется Windows 10 версии 1709 (Fall Creators Update) или более поздней версии.
+Широкое развертывание устройств Surface Windows автопилотом, включая регистрацию партнерами Surface на момент покупки, требует Windows 10 версии 1709 (Fall Creators Update) или более поздней версии.
 
-Эти версии Windows поддерживают 4000-byte (4k) значение hash, которое уникальным образом идентифицирует устройства для Windows Autopilot, что необходимо для развертывания в масштабе. Все новые устройства Surface, включая Surface Pro 7+, Surface Pro X и Surface Laptop 3, погрузка с Windows 10 версии 1903 или более поздней версии.
+Эти Windows поддерживают значение 4000-byte (4k), которое уникально определяет устройства для Windows автопилота, которое необходимо для развертывания в масштабе. Все новые устройства Surface, включая Surface Pro 7+, Surface Pro X и Surface Laptop 3 с Windows 10 версии 1903 или более поздней версии.
 
-##  <a name="exchange-experience-on-surface-devices-in-need-of-repair-or-replacement"></a>Работа с Exchange на устройствах Surface, которые нуждаются в восстановлении или замене
+## <a name="exchange-experience-on-surface-devices-in-need-of-repair-or-replacement"></a>Exchange на устройствах Surface, которые нуждаются в ремонте или замене
 
-Корпорация Майкрософт автоматически проверяет каждую регистрацию Autopilot на Surface и отключит регистрацию устройства в клиенте клиента.  Корпорация Майкрософт гарантирует, что заменяющее устройство будет зарегистрироваться в Windows Autopilot после отправки замены клиенту. Эта служба доступна во всех заказах на обслуживание Exchange устройств напрямую корпорацией Майкрософт.
+Корпорация Майкрософт автоматически проверяет каждую регистрацию Surface для автопилота и отключит устройство от клиента- клиента.  Корпорация Майкрософт гарантирует, что заменяющее устройство будет Windows автопилот после отправки замены клиенту. Эта служба доступна во всех заказах службы обмена устройствами непосредственно с Корпорацией Майкрософт.
 
 > [!NOTE]
-> Когда клиенты возвращают устройства с помощью партнера, он отвечает за управление процессом обмена, включая регистрацию и регистрацию устройств в Windows Autopilot.
+> Когда клиенты используют партнер для возврата устройств, партнер отвечает за управление процессом обмена, включая регистрацию и регистрацию устройств в Windows автопилоте.
 
-##  <a name="microsoft-support-registration"></a>Регистрация в службе поддержки Майкрософт
+## <a name="microsoft-support-registration"></a>Регистрация службы поддержки Майкрософт
 
-Клиенты и поставщики облачных решений Майкрософт могут регистрировать устройства Surface, отсылая запросы в службу поддержки Майкрософт. Дополнительные см. в [подразделе "Поддержка регистрации Surface для Windows Autopilot".](surface-autopilot-registration-support.md)
+Клиенты и поставщики облачных решений Майкрософт могут регистрировать устройства Surface, отсылая запросы в Службу поддержки Майкрософт. Дополнительные дополнительные документы см. в Windows surface [Registration Support for Windows autopilot.](surface-autopilot-registration-support.md)
 
-##  <a name="surface-partners-enabled-for-windows-autopilot"></a>Партнеры Surface, включенные для Windows Autopilot
+## <a name="surface-partners-enabled-for-windows-autopilot"></a>Партнеры Surface включены для Windows автопилота
 
-Выберите партнеров Surface, которые могут зарегистрировать устройства Surface в Windows Autopilot для вас во время покупки. Они также могут погрузить зарегистрированные устройства непосредственно вашим пользователям. Устройства можно полностью настроить с помощью процесса нулевого касания с помощью Windows Autopilot, Azure AD и управления мобильными устройствами.
+Партнеры Surface могут записать устройства Surface в Windows автопилоте для вас на момент покупки. Они также могут отгрузки зарегистрированных устройств непосредственно пользователям. Устройства можно настроить полностью с помощью нулевого касания с помощью Windows автопилота, Azure AD и управления мобильными устройствами.
 
-К партнерам Surface, включенным для Windows Autopilot, относятся:
+Партнеры Surface, которые включены для Windows автопилота, включают:
 
-| Партнеры ИЗ США | Глобальные партнеры | Дистрибьюторы в США |
+| Партнеры США | Глобальные партнеры | Дистрибьюторы в США |
 |--------------|---------------|-------------------|
-| * [CDW](https://www.cdw.com/) | * [ТАКЖЕ](https://www.also.com/ec/cms5/de_1010/1010_anbieter/microsoft/windows-autopilot/index.jsp) | * [Synnex](https://www.synnexcorp.com/us/microsoft/surface-autopilot/)  |
-| * [Подключение](https://www.connection.com/brand/microsoft/microsoft-surface)   | * [ATEA](https://www.atea.com/) | * [Techdata](https://www.techdata.com/)  |
-| * [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface/windows-autopilot.html)  | * [Bechtle](https://www.bechtle.com/marken/microsoft/microsoft-windows-autopilot) | * [Ingram](https://go.microsoft.com/fwlink/p/?LinkID=2128954)   |
-| * [СИБ](https://www.shi.com/Surface) | * [Cancom](https://www.cancom.de/) |    |
-| * [LDI Connect](https://www.myldi.com/managed-it/)  | * [Computacenter](https://www.computacenter.com/uk) |    |
-| * [F1](https://www.functiononeit.com/#empower)  |   |  |
-| * [Защищенная защита доверия](https://go.microsoft.com/fwlink/p/?LinkID=2129005) | | | 
+|  [CDW](https://www.cdw.com/) |  [ТАКЖЕ](https://www.also.com/ec/cms5/da_2800/2800-msportal/products-and-solutions/surface/surface-is-more/surface-and-wa/index.jsp) |  [Synnex](https://www.synnexcorp.com/us/microsoft/surface-autopilot/)  |
+|  ["Подключение"](https://www.connection.com/brand/microsoft/microsoft-surface)   |  [ATEA](https://www.atea.com/) |  [Techdata](https://www.techdata.com/)  |
+|  [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface/windows-autopilot.html)  |  [Bechtle](https://www.bechtle.com/marken/microsoft/microsoft-windows-autopilot) |  [Ingram](https://go.microsoft.com/fwlink/p/?LinkID=2128954)   |
+|  [SHI](https://www.shi.com/Surface) |  [Cancom](https://www.cancom.de/) |    |
+|  [LDI Подключение](https://www.myldi.com/managed-it/)  |  [Computacenter](https://www.computacenter.com/uk) |    |
+|  [F1](https://www.functiononeit.com/#empower)  |   |  |
+|  [Защищенный траст](https://go.microsoft.com/fwlink/p/?LinkID=2129005) | | |
 
-##  <a name="learn-more"></a>Подробнее
+## <a name="learn-more"></a>Подробнее
 
-Дополнительные сведения о Windows Autopilot см. в:
-- [Общие сведения о Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
-- [Требования к Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements)
+Дополнительные сведения о Windows автопилоте см. в
+
+- [Общие сведения о Windows Autopilot](/windows/deployment/windows-autopilot/windows-10-autopilot)
+- [Требования к Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot-requirements)
 - [Поддержка регистрации Surface для Windows Autopilot](surface-autopilot-registration-support.md)

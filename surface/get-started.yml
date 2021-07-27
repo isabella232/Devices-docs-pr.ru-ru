@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 021d30e782bc50e0c89fad6478c8e784234c768d
-  ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+  ms.openlocfilehash: 9367329bcaa7c42a31cc8de5ffcee2e65f4c8437
+  ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "11613928"
+  ms.lasthandoff: 07/24/2021
+  ms.locfileid: "11676513"
 landingContent:
 - title: Устройства Surface
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Удаленные решения для работы с Surface
+      url: https://www.microsoft.com/surface/business/remote-work-solutions
     - text: Surface Laptop 4 + для бизнеса
       url: https://www.microsoft.com/surface/business/surface-laptop-4
     - text: Surface Pro 7+ для бизнеса
@@ -32,7 +34,7 @@ landingContent:
       url: https://www.microsoft.com/surface/business/surface-pro-x
     - text: Все продукты семейства Surface
       url: https://www.microsoft.com/surface/business
-- title: Начало работы
+- title: Get started
   linkLists:
   - linkListType: get-started
     links:
@@ -86,7 +88,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Обзор безопасности surface
+    - text: Обзор безопасности Surface
       url: surface-security.md
     - text: Защита DMA на устройствах Surface
       url: dma-protect.md
@@ -102,6 +104,14 @@ landingContent:
       url: surface-enterprise-management-mode.md
     - text: Параметр ограничения батареи
       url: battery-limit.md
+- title: Рентабельность рентабельности surface
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Повышение рентабельности (ROI) с помощью Microsoft Surface
+      url: forrester-tei-study.md
+    - text: Общий экономический эффект Microsoft Surface для образования
+      url: forrester-tei-edu-study.md
 - title: Участие в сообществе Surface
   linkLists:
   - linkListType: learn
@@ -116,7 +126,7 @@ landingContent:
   linkLists:
   - linkListType: learn
     links:
-    - text: Обратитесь в службу поддержки Surface
+    - text: Обращение в службу поддержки Surface
       url: contact-surface-support.md
     - text: Планы гарантий и защиты Surface для бизнеса
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support

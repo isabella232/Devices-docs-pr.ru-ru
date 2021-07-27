@@ -12,16 +12,16 @@ ms.date: 1/15/2021
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 30f7cd7d861b6497cd536aeb0ea348b6946a2674
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.openlocfilehash: 83b3db2e9fa3da253c16d208b752bd7b6e6be771
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271363"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676423"
 ---
-# Развертывание, управление и обслуживание Surface Pro X
+# <a name="deploying-managing--servicing-surface-pro-x"></a>Развертывание, управление и обслуживание Surface Pro X
 
-##  <a name="introduction"></a>Введение
+## <a name="introduction"></a>Введение
 
 Созданный с учетом соответствия коммерческим требованиям к высокой производительности, Surface Pro X положил начало новому этапу путем использования самого мощного процессора в своем классе, наборов микросхем Microsoft SQ1 и Microsoft SQ1 ARM.
 
@@ -29,44 +29,44 @@ Surface Pro X работает на платформе ЦП с частотой 
 
 Surface Pro X предназначен почти исключительно для современных облачных сред и лучше всего работает в паре с Microsoft 365, Intune и Windows Autopilot. В этой статье описывается как это выглядит, а также описываются основные моменты развертывания, управления и обслуживания Surface Pro X.
 
-##  <a name="deploying-surface-pro-x"></a>Развертывание Surface Pro X
+## <a name="deploying-surface-pro-x"></a>Развертывание Surface Pro X
 
 Для наилучшего взаимодействия выполняйте развертывание Surface Pro X с помощью Windows Autopilot или с помощью поставщика облачных решений (Майкрософт) или выполняйте подготовку самостоятельно с помощью профилей развертывания Autopilot и связанных функций. Дополнительные сведения см. в разделе:
 
 - [Windows Autopilot и устройства Surface](windows-autopilot-and-surface-devices.md)
-- [Общие сведения о Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)
+- [Общие сведения о Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot)
 
 Развертывание с помощью программы Autopilot имеет несколько преимуществ. Оно позволяет использовать операционную систему с заводской подготовкой, оптимизированную для автоматического развертывания, чтобы включить предварительную установку Office Pro Plus.
 
 Организации, уже использующие современные решения по управлению, безопасности и повышению производительности, с легкостью смогут воспользоваться уникальными функциями производительности в Surface Pro X. Пользователи, использующие современные бизнес-приложения, приложения Microsoft Store (UWP) или решения для удаленных рабочих столов, также могут воспользоваться этими преимуществами.
 
-##  <a name="image-based-deployment-considerations"></a>Соображения по поводу использования развертывания из образа
+## <a name="image-based-deployment-considerations"></a>Соображения по поводу использования развертывания из образа
 
 Microsoft Deployment Toolkit (MDT) и Microsoft Endpoint Configuration Manager (ранее System Center Configuration Manager) сейчас не поддерживает Surface Pro X для развертывания операционной системы. Пользователям, применяющим развертывание на основе образа, следует рассмотреть Surface Pro 7+, пока они продолжают оценивать подходящее время для перехода на современные решения для развертывания. 
 
-##  <a name="managing-surface-pro-x-devices"></a>Управление устройствами Surface Pro X
+## <a name="managing-surface-pro-x-devices"></a>Управление устройствами Surface Pro X
 
-###  <a name="intune"></a>Intune
+### <a name="intune"></a>Intune
 
 Компонент Microsoft Enterprise Mobility + Security Intune интегрируется с Azure Active Directory для управления удостоверениями и доступом и предоставляет возможности подробного управления зарегистрированными устройствами Surface Pro X. Политики управления мобильными устройствами (MDM) Intune имеют ряд преимуществ по сравнению со старыми локальными средствами, такими как групповая политика Windows. Это включает в себя более быстрое время входа в систему и более оптимизированный каталог политик, обеспечивающих полное управление устройствами из облака. Например, вы можете управлять LTE с помощью профилей eSIM для настройки планов данных и развертывания кодов активации для нескольких устройств.<br> 
 
-Дополнительные сведения об использовании Intune см. в [документации по Intune](https://docs.microsoft.com/intune/).
+Дополнительные сведения об использовании Intune см. в [документации по Intune](/intune).
 
-###  <a name="co-management"></a>Совместное управление
+### <a name="co-management"></a>Совместное управление
 
 После развертывания в Autopilot вы можете присоединить устройства Surface Pro X к Azure AD или Active Directory (гибридное присоединение к Azure AD), где вы сможете управлять устройствами с помощью Intune или совместно управлять ими с помощью Endpoint Configuration Manager, который установит 32-разрядный клиент x86 ConfigMgr.
 
-###  <a name="third-party-mdm-solutions"></a>Сторонние решения для MDM
+### <a name="third-party-mdm-solutions"></a>Сторонние решения для MDM
 
 Для управления устройствами Surface Pro X вы можете использовать сторонние средства MDM. Для получения дополнительных сведений обратитесь к поставщику MDM.
 
-###  <a name="antivirus-software"></a>Антивирусное программное обеспечение
+### <a name="antivirus-software"></a>Антивирусное программное обеспечение
 
 Защитник Windows поможет защитить Windows 10 на компьютерах на базе ARM в течение поддерживаемого жизненного цикла устройства Windows 10. 
 
 Некоторое антивирусное ПО сторонних разработчиков нельзя установить на компьютере с Windows 10, работающем на процессоре на базе ARM. Взаимодействие со сторонними поставщиками антивирусных программ для обеспечения готовности антивирусной программы для компьютеров на базе ARM продолжается. Обратитесь к поставщику антивирусной программы, чтобы узнать, когда его приложения будут доступны.
 
-##  <a name="servicing-surface-pro-x"></a>Обслуживание Surface Pro X
+## <a name="servicing-surface-pro-x"></a>Обслуживание Surface Pro X
 
 Surface Pro X поставляется с Windows 10 версии 2004 и поддерживает Windows 10 версии 1903 и более поздние версии. Как устройство на основе ARM, он имеет специальные требования к поддержанию последних версий драйверов и встроенного ПО. 
 
@@ -75,17 +75,17 @@ Surface Pro X был спроектирован с учетом использо
 1. Перейдите в раздел **Пуск** > **Параметры > Обновление и безопасность > Центр обновления Windows** > **Дополнительные параметры.**
 2. В разделе **Выберите способ установки обновлений** выберите параметр **Автоматически (рекомендуется)**.
 
-###  <a name="recommendations-for-commercial-customers"></a>Рекомендации для коммерческих клиентов
+### <a name="recommendations-for-commercial-customers"></a>Рекомендации для коммерческих клиентов
 
-- Используйте Центр обновления Windows или Центр обновления Windows для бизнеса для поддержки последних версий драйверов и встроенного ПО. Дополнительные сведения см. в разделе [Развертывание обновлений с помощью Центра обновления Windows для бизнеса](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
+- Используйте Центр обновления Windows или Центр обновления Windows для бизнеса для поддержки последних версий драйверов и встроенного ПО. Дополнительные сведения см. в разделе [Развертывание обновлений с помощью Центра обновления Windows для бизнеса](/windows/deployment/update/waas-manage-updates-wufb).
 - Дополнительные сведения о развертывании обновлений на устройствах Surface и управлении ими см. в статье [Управление обновлениями драйверов и встроенного ПО Surface, а также их развертывание](manage-surface-driver-and-firmware-updates.md).
 - Обратите внимание, что службы WSUS не поддерживают возможность доставки драйверов и встроенного ПО на Surface Pro X.
 
-##  <a name="running-apps-on-surface-pro-x"></a>Запуск приложений на Surface Pro X
+## <a name="running-apps-on-surface-pro-x"></a>Запуск приложений на Surface Pro X
 
 Большинство приложений работают на компьютерах с Windows 10 на базе ARM с ограниченным набором исключений.
 
-###  <a name="supported-apps"></a>Поддерживаемые приложения
+### <a name="supported-apps"></a>Поддерживаемые приложения
 
 - Большинство приложений Win32 x86 запускаются на Surface Pro X.
 - Собственные приложения ARM64 и приложения UWP Microsoft Store обеспечивают удобство взаимодействия с пользователем благодаря полной скорости работы процессора на базе ARM при оптимизации времени работы от батареи.
@@ -94,38 +94,38 @@ Surface Pro X был спроектирован с учетом использо
 > [!NOTE]
 > В ближайшее время ожидается выпуск предварительной версии 64-разрядной эмуляции в рамках программы предварительной оценки Windows, которая позволит запускать 64-разрядные (x64) приложения на Surface Pro X.
 
-###  <a name="fasttrack-app-assure"></a>Приложение FastTrack Assure 
+### <a name="fasttrack-app-assure"></a>Приложение FastTrack Assure 
 
-Программа App Assure доступна коммерческим клиентам для их бизнес-приложений, приложений независимых поставщиков ПО и собственных приложений Microsoft, предназначенных для Windows 10 на ARM. Если коммерческие клиенты сталкиваются с проблемой совместимости приложений с использованием Windows 10 на ARM, то корпорация Майкрософт предоставит ресурсы для разработчиков для устранения неполадок и помощи в исправлении приложений без дополнительных затрат. Дополнительные сведения см. на сайте [aka.ms/AppAssure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure).
+Программа App Assure доступна коммерческим клиентам для их бизнес-приложений, приложений независимых поставщиков ПО и собственных приложений Microsoft, предназначенных для Windows 10 на ARM. Если коммерческие клиенты сталкиваются с проблемой совместимости приложений с использованием Windows 10 на ARM, то корпорация Майкрософт предоставит ресурсы для разработчиков для устранения неполадок и помощи в исправлении приложений без дополнительных затрат. Дополнительные сведения см. на сайте [aka.ms/AppAssure](/fasttrack/products-and-capabilities#app-assure).
 
 Дополнительные сведения о запуске приложений на Surface Pro X см. в разделе:
 
 - [Вопросы и ответы, касающиеся поддержки компьютеров на базе ARM с Windows 10](https://support.microsoft.com/help/4521606)
-- [Документация по Windows 10 на ARM](https://docs.microsoft.com/windows/arm)
+- [Документация по Windows 10 на ARM](/windows/arm)
 
-##  <a name="virtual-desktops-(vdi)"></a>Виртуальные рабочие столы (VDI)
+## <a name="virtual-desktops-vdi"></a>Виртуальные рабочие столы (VDI)
 
 Виртуальный рабочий стол Windows обеспечивает доступ к настольным компьютерам, приложениям и данным Windows на любых вычислительных устройствах или платформах из любого местоположения. Для получения дополнительных сведений см. [сайт "Виртуальный рабочий стол Windows"](https://aka.ms/wvd). 
 
-##  <a name="browsing-with-surface-pro-x"></a>Просмотр веб-страниц с помощью Surface Pro X
+## <a name="browsing-with-surface-pro-x"></a>Просмотр веб-страниц с помощью Surface Pro X
 
 Популярные браузеры запускаются на Surface Pro X:
 
 - Поставляемые в комплекте Edge, Firefox, Chrome и Internet Explorer все работают на Surface Pro X.
 - Firefox и Microsoft Edge на основе Chromium самостоятельно работают и, следовательно, обладают повышенной производительностью на ПК с Windows 10 на процессоре на основе ARM.
 
-##  <a name="installing-and-using-microsoft-office"></a>Установка и использование Microsoft Office
+## <a name="installing-and-using-microsoft-office"></a>Установка и использование Microsoft Office
 
 - Используйте Office 365 для наилучшего взаимодействия с ПК с Windows 10 на процессоре на базе ARM.
 - Функция Office 365 "нажми и работай" устанавливает Outlook, Word, Excel и PowerPoint, оптимизированные для работы на ПК с Windows 10 на процессоре на базе ARM.
 - Программа Microsoft Teams отлично работает на Surface Pro X.
 - Для "бессрочных версий" Office, таких как Office 2019, установите 32-разрядную версию.
 
-##  <a name="vpn"></a>VPN
+## <a name="vpn"></a>VPN
 
 Чтобы проверить, поддерживает ли конкретная сторонняя сеть VPN ПК с Windows 10 на процессоре на базе ARM, обратитесь к поставщику VPN.
 
-##  <a name="feature-summary"></a>Сводка по функциям
+## <a name="feature-summary"></a>Сводка по функциям
 
 В приведенных ниже таблицах показана доступность выбранных основных функций на Surface Pro X с Windows 10 на ARM.
 
@@ -176,20 +176,20 @@ Surface Pro X был спроектирован с учетом использо
 
 
 
-##  <a name="faq"></a>Вопросы и ответы
+## <a name="faq"></a>Вопросы и ответы
 
-###  <a name="can-i-deploy-surface-pro-x-with-mdt-or-endpoint-configuration-manager"></a>Можно ли развернуть Surface Pro X с помощью MDT или Endpoint Configuration Manager?
+### <a name="can-i-deploy-surface-pro-x-with-mdt-or-endpoint-configuration-manager"></a>Можно ли развернуть Surface Pro X с помощью MDT или Endpoint Configuration Manager?
 
 Microsoft Deployment Toolkit (MDT) и Microsoft Endpoint Configuration Manager в настоящее время не поддерживают Surface Pro X для развертывания операционной системы. Пользователям, применяющим развертывание на основе образа, следует рассмотреть Surface Pro 7+, пока они продолжают оценивать подходящее время для перехода в облако.
 
-###  <a name="how-can-i-deploy-surface-pro-x"></a>Как развернуть Surface Pro X?
+### <a name="how-can-i-deploy-surface-pro-x"></a>Как развернуть Surface Pro X?
 
 Разворачивайте Surface Pro X с помощью Windows Autopilot.
 
-###  <a name="is-a-bmr-available"></a>Доступен ли BMR?
+### <a name="is-a-bmr-available"></a>Доступен ли BMR?
 
 Да, см. раздел [Скачивание образа для восстановления для Surface](https://support.microsoft.com/surfacerecoveryimage).
 
-###  <a name="is-intune-required-to-manage-surface-pro-x"></a>Требуется ли Intune для управления Surface Pro X?
+### <a name="is-intune-required-to-manage-surface-pro-x"></a>Требуется ли Intune для управления Surface Pro X?
 
 Intune рекомендуется использовать, но это не является обязательным. После развертывания в Autopilot вы можете присоединить устройства Surface Pro X к Azure AD или Active Directory (гибридное присоединение к Azure AD), где вы сможете управлять устройствами с помощью Intune или совместно управлять ими с помощью Endpoint Configuration Manager, который установит 32-разрядный клиент x86 ConfigMgr.

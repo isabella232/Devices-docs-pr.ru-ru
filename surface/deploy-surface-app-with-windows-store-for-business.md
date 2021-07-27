@@ -14,12 +14,12 @@ ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
 ms.date: 4/16/2021
-ms.openlocfilehash: c7a882859339ff3d7feeb685c62672bc57c301ec
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 339a6a3ab76f36004f2399b333d48487c9d6e31d
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576529"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676691"
 ---
 # <a name="deploy-surface-app-with-microsoft-store-for-business-and-education"></a>Развертывание приложения Surface с Microsoft Store для бизнеса и образованием
 
@@ -47,21 +47,7 @@ ms.locfileid: "11576529"
 - Surface Pro 3
 
 
-Приложение Surface — это легкое Microsoft Store, которое обеспечивает управление многими настройками и опциями, в том числе: 
-
-* Включение и отключение кнопки Windows на устройстве Surface 
- 
-
-* Регулировка чувствительности ручки Surface 
- 
-
-* Настройка действий кнопки ручки Surface 
- 
-
-* Включение и отключение расширенных аудиофункций Surface 
- 
-
-* Быстрый доступ к документации и информации для поддержки устройства
+Приложение Surface — это легкое Microsoft Store, которое обеспечивает управление многими настройками и опциями, связанными с Surface, с быстрым доступом к данным о устройстве, включая серийный номер, имя модели Surface, версию UEFI и связанные драйверы.  
 
 Пользователи, использующие Windows Update, обычно получают приложение Surface в рамках автоматических обновлений. Но если ваша организация готовит изображения для развертывания на устройствах Surface, вы можете включить приложение Surface (ранее называемое Surface Hub) в процесс визуализации и развертывания, а не требовать от пользователей каждого отдельного устройства скачивать и устанавливать приложение из Microsoft Store или Microsoft Store для бизнеса. 
 
@@ -70,7 +56,7 @@ ms.locfileid: "11576529"
 
 ## <a name="surface-app-overview"></a>Обзор приложения Surface
 
-Приложение Surface доступно в качестве бесплатной загрузки из [Microsoft Store.](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P) Пользователи могут скачать и установить его из Microsoft Store, но если ваша организация использует Microsoft Store для бизнеса вместо этого, вам потребуется добавить его в инвентарь вашего магазина и, возможно, включить приложение в Windows процесса развертывания. Эти процессы обсуждаются в этой статье. Дополнительные сведения о Microsoft Store для бизнеса см. [Microsoft Store для бизнеса](https://docs.microsoft.com/microsoft-store/) в Windows TechCenter. 
+Приложение Surface доступно в качестве бесплатной загрузки из [Microsoft Store.](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P) Пользователи могут скачать и установить его из Microsoft Store, но если ваша организация использует Microsoft Store для бизнеса вместо этого, вам потребуется добавить его в инвентарь вашего магазина и, возможно, включить приложение в Windows процесса развертывания. Эти процессы обсуждаются в этой статье. Дополнительные сведения о Microsoft Store для бизнеса см. [в Microsoft Store для бизнеса.](/microsoft-store/) 
 
 ## <a name="add-surface-app-to-a-microsoft-store-for-business-account"></a>Добавление приложения Surface в Microsoft Store для бизнеса учетную запись 
 
@@ -78,19 +64,17 @@ ms.locfileid: "11576529"
 
 1. Если вы еще этого не сделали, создайте Microsoft Store для бизнеса [учетную запись.](https://www.microsoft.com/business-store) 
 
-2. Войдите на портал. 
+2. Вход на портал. 
 
-3. Включить автономное лицензирование: **щелкните параметры Manage->Store,** а затем выберите приложение **Show offline licensed** для людей, которые будут делать покупки в почтовом ящике магазина, как показано на рисунке 1. Дополнительные сведения о Microsoft Store для бизнеса моделей лицензирования приложений см. в Microsoft Store для бизнеса [Apps in Microsoft Store для бизнеса education.](https://docs.microsoft.com/microsoft-store/)
+3. Включить автономное лицензирование: **** щелкните Управление Параметры, а затем выберите приложение Show  >  **** **offline licensed** для людей, покупок в почтовом ящике магазина, как показано на рисунке 1. Дополнительные сведения о Microsoft Store для бизнеса моделей лицензирования приложений см. в Microsoft Store для бизнеса [Apps in Microsoft Store для бизнеса education.](/microsoft-store/)
 
    > [!div class="mx-imgBorder"]
    > ![Показать автономные лицензии приложений-контрольных ящиков](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
    *Рисунок 1. Включить приложения для автономного использования*
 
-4. Добавьте приложение Surface в свою Microsoft Store для бизнеса учетную запись, следуя этой процедуре:
+4. Добавьте приложение Surface в свою Microsoft Store для бизнеса учетную запись:
 
-    * Щелкните **меню Магазин.**
-    
-    * В поле поиска введите **приложение Surface**и нажмите значок поиска.
+    * Поиск в магазине приложения **Surface** 
     
     * После того как приложение Surface будет представлено в результатах поиска, щелкните значок приложения.
     
@@ -233,4 +217,4 @@ ms.locfileid: "11576529"
 
 3. Выберите **Установите одно приложение и** укажите Surface **App** в **качестве установленного приложения.**
 
-Дополнительные сведения о в том числе приложениях в Windows развертывания см. в Windows 10 с microsoft [Deployment набор средств.](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit)
+Дополнительные сведения о в том, чтобы включить приложения в Windows развертывания, см. в руб. Подготовка к развертыванию [с помощью MDT.](/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt)

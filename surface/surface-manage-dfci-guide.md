@@ -1,5 +1,5 @@
 ---
-title: Управление параметрами UEFI Surface в Intune
+title: Управление DFCI на устройствах Surface
 description: В этой статье рассказывается о настройке среды DFCI в Microsoft Intune и управлении настройками прошивки для целевых устройств Surface.
 ms.localizationpriority: medium
 ms.prod: w10
@@ -20,18 +20,18 @@ appliesto:
 - Surface Book 3
 - Surface Laptop Go
 - Surface Laptop 4
-ms.openlocfilehash: b74aeab45dd2354550f0dff712af5b37b853111c
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 871bead0ae5f73c546b8dbe219d71b819d3a865e
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576519"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676453"
 ---
-# <a name="intune-management-of-surface-uefi-settings"></a>Управление параметрами UEFI Surface в Intune
+# <a name="manage-dfci-on-surface-devices"></a>Управление DFCI на устройствах Surface
 
 ## <a name="introduction"></a>Введение
 
-Возможность управления устройствами из облака значительно упростила развертывание ИТ-служб и их подготовка на всем жизненном цикле. С помощью профилей интерфейса конфигурации микропрограммных программ (DFCI), встроенных в Microsoft Intune, управление Surface UEFI расширяет современный стек управления до уровня оборудования UEFI. [](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows) DFCI поддерживает установку без касания, устраняет пароли BIOS, обеспечивает контроль параметров безопасности, включая параметры загрузки и встроенные периферийные устройства, и закладывая основу для расширенных сценариев безопасности в будущем. Ответы на часто задаваемые вопросы см. в [фото: Ignite 2019: Announcing remote management of Surface UEFI settings from Intune.](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)
+Возможность управления устройствами из облака значительно упростила развертывание ИТ-служб и их подготовка на всем жизненном цикле. С помощью профилей интерфейса конфигурации микропрограммных программ (DFCI), встроенных в Microsoft Intune, управление Surface UEFI расширяет современный стек управления до уровня оборудования UEFI. [](/intune/configuration/device-firmware-configuration-interface-windows) DFCI поддерживает установку без касания, устраняет пароли BIOS, обеспечивает контроль параметров безопасности, включая параметры загрузки и встроенные периферийные устройства, и закладывая основу для расширенных сценариев безопасности в будущем. Ответы на часто задаваемые вопросы см. в [фото: Ignite 2019: Announcing remote management of Surface UEFI settings from Intune.](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)
 
 ### <a name="background"></a>Фон
 
@@ -64,15 +64,15 @@ ms.locfileid: "11576519"
 > [!NOTE]
 > Surface Pro X не поддерживает управление настройками DFCI для встроенной камеры, аудио и Wi-Fi/Bluetooth.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 - Устройства должны быть зарегистрированы Windows автопилотом партнером поставщик облачных решений (Майкрософт) [(CSP)](https://partner.microsoft.com/membership/cloud-solution-provider) или дистрибьютором OEM.
 
-- Перед настройкой DFCI для Surface необходимо ознакомиться с требованиями к конфигурации [автопилота](https://docs.microsoft.com/intune/) в Microsoft Intune и [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure AD).
+- Перед настройкой DFCI для Surface необходимо ознакомиться с требованиями к конфигурации [автопилота](/intune/) в Microsoft Intune и [Azure Active Directory](/azure/active-directory/) (Azure AD).
 
 ## <a name="before-you-begin"></a>Перед началом работы
 
-Добавьте целевые устройства Surface в группу безопасности Azure AD. Дополнительные сведения о создании и управлении группами безопасности см. в документации [Intune.](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups)
+Добавьте целевые устройства Surface в группу безопасности Azure AD. Дополнительные сведения о создании и управлении группами безопасности см. в документации [Intune.](/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups)
 
 ## <a name="configure-dfci-management-for-surface-devices"></a>Настройка управления DFCI для устройств Surface
 
@@ -85,7 +85,7 @@ ms.locfileid: "11576519"
 1. Вопишитесь в клиента по devicemanagement.microsoft.com.
 2. В центре администрирования Microsoft Endpoint Manager Устройства > профилей конфигурации > **создайте** профиль и введите имя; например, **политика конфигурации DFCI.**
 3. Выберите **Windows 10 и более поздний тип** платформы.
-4. В списке выпаданий типа профилей выберите **интерфейс** конфигурации микропрограммного обеспечения устройства, чтобы открыть лезвие DFCI, содержащее все доступные параметры политики. Сведения о параметрах DFCI см. в таблице 1 на этой странице или документации [Intune.](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows) Параметры DFCI можно настроить во время начального или более позднего процесса настройки, редактировать профиль DFCI.
+4. В списке выпаданий типа профилей выберите **интерфейс** конфигурации микропрограммного обеспечения устройства, чтобы открыть лезвие DFCI, содержащее все доступные параметры политики. Сведения о параметрах DFCI см. в таблице 1 на этой странице или документации [Intune.](/intune/configuration/device-firmware-configuration-interface-windows) Параметры DFCI можно настроить во время начального или более позднего процесса настройки, редактировать профиль DFCI.
 
     ![Создание профиля DFCI](images/df1.png)
 
@@ -114,7 +114,7 @@ ms.locfileid: "11576519"
 
 Чтобы устройства применяли конфигурацию DFCI во время OOBE перед входом пользователей, необходимо настроить состояние регистрации.
 
-Дополнительные сведения можно получить на странице Настройка страницы состояния [регистрации.](https://docs.microsoft.com/intune/enrollment/windows-enrollment-status)
+Дополнительные сведения можно получить на странице Настройка страницы состояния [регистрации.](/intune/enrollment/windows-enrollment-status)
 
 
 ## <a name="configure-dfci-settings-on-surface-devices"></a>Настройка параметров DFCI на устройствах Surface
@@ -148,7 +148,7 @@ DFCI включает в себя упрощенный набор политик
 > [!NOTE]
 >  DFCI в Intune включает два параметра, которые в настоящее время не применяются к устройствам Surface: (1) Виртуализация ЦП и IO и (2) отключение загрузки из сетевых адаптеров.
  
-Intune предоставляет теги Scope для делегирования административных прав и правил применимости для управления типами устройств. Дополнительные сведения о поддержке управления политиками и подробные сведения обо всех параметрах DFCI можно найти в Microsoft Intune [документации.](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)
+Intune предоставляет теги Scope для делегирования административных прав и правил применимости для управления типами устройств. Дополнительные сведения о поддержке управления политиками и подробные сведения обо всех параметрах DFCI можно найти в Microsoft Intune [документации.](/intune/configuration/device-firmware-configuration-interface-windows)
 
 ## <a name="register-devices-in-autopilot"></a>Регистрация устройств в автопилоте
 
@@ -160,7 +160,7 @@ Intune предоставляет теги Scope для делегировани
 
 - В Endpoint Manager в devicemanagement.microsoft.com перейдите к **** устройствам > устройств > Windows регистрации > Windows устройств автопилота и выберите **Sync**.
 
- Дополнительные сведения можно получить в [режиме синхронизации Windows устройства вручную.](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows)
+ Дополнительные сведения можно получить в [режиме синхронизации Windows устройства вручную.](/intune-user-help/sync-your-device-manually-windows)
 
 > [!NOTE]
 > При настройке параметров непосредственно в UEFI необходимо убедиться, что устройство полностью перезапустится до стандартного Windows входа.
@@ -190,7 +190,7 @@ Intune предоставляет теги Scope для делегировани
 **Удаление управления DFCI и возвращение устройства в новое состояние фабрики:**
 
 1. Удалить устройство из Intune:
-    1. В Endpoint Manager в devicemanagement.microsoft.com выберите Группы **> все устройства**. Выберите устройства, которые необходимо удалить, а затем выберите **Retire/Wipe.** Дополнительные дополнительные ссылки на [удаление устройств с помощью удаления, стирки или](https://docs.microsoft.com/intune/remote-actions/devices-wipe)вручную открепить устройство. 
+    1. В Endpoint Manager в devicemanagement.microsoft.com выберите Группы **> все устройства**. Выберите устройства, которые необходимо удалить, а затем выберите **Retire/Wipe.** Дополнительные дополнительные ссылки на [удаление устройств с помощью удаления, стирки или](/intune/remote-actions/devices-wipe)вручную открепить устройство. 
 2. Удаление регистрации автопилота из Intune:
     1.  Выберите **регистрацию > Windows устройств > устройств.**
     2. В Windows устройствах автопилота выберите устройства, которые необходимо удалить, а затем выберите **Delete**.
@@ -203,4 +203,4 @@ Intune предоставляет теги Scope для делегировани
 - [Ignite 2019: объявление удаленного управления настройками Surface UEFI из Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333) 
  [Windows автопилот](https://www.microsoft.com/microsoft-365/windows/windows-autopilot)
 - [Windows Autopilot и устройства Surface](windows-autopilot-and-surface-devices.md) 
-- [Используйте профили DFCI на Windows устройствах Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)
+- [Используйте профили DFCI на Windows устройствах Microsoft Intune](/intune/configuration/device-firmware-configuration-interface-windows)

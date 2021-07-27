@@ -19,12 +19,12 @@ appliesto:
 - Surface Laptop 2
 - Surface Laptop 3
 - Surface Laptop 4
-ms.openlocfilehash: c02837b0cfda72c6f2a447b99ff4c94a027bb29c
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.openlocfilehash: 1ee3376a24d3e83cc66c8a220a1f7afa195840d0
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11613868"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676723"
 ---
 # <a name="how-to-enable-the-surface-laptop-keyboard-during-mdt-deployment"></a>Как включить клавиатуру Surface Laptop во время развертывания MDT
 
@@ -36,7 +36,7 @@ ms.locfileid: "11613868"
 > - Нажмите кнопку Power и удерживайте ее в течение 30 секунд. Если вы подключены к блоку питания (PSU), нажмите кнопку Power и удерживайте ее до тех пор, пока не увидите свет в конце шнура PSU, а затем отключите его.
 
 > [!IMPORTANT]
-> При развертывании изображения Windows 10 на Surface Laptop с предустановленным Windows 10 В режиме S см. в руб. KB [4032347.](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues)Проблемы при развертывании Windows на устройства Surface с предустановленными Windows 10 в режиме S .
+> Если вы развертывание Windows 10 изображения в Surface Laptop с предустановленным Windows 10 в режиме S см. в 4032347 KB, проблемы при развертывании Windows на устройства Surface с предустановленными [Windows 10 в режиме S](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues).
 
 ## <a name="add-keyboard-drivers-to-the-selection-profile"></a>Добавление драйверов клавиатуры в профиль выбора
 
@@ -95,4 +95,4 @@ ms.locfileid: "11613868"
 
     ![Изображение, отображаее Surface Laptop драйверов (1-го поколения) в Surface Laptop папке Workbench развертывания](./images/surface-laptop-keyboard-5.png)
 
-После настройки MDT Deployment Share для использования нового профиля выбора и связанных параметров продолжайте процесс развертывания, как описано в развертывании изображения Windows 10 с помощью [MDT: Шаг 6: Создание](/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence)последовательности задач развертывания.
+После настройки MDT Deployment Share для использования нового профиля выбора и связанных параметров продолжайте процесс развертывания, как описано в развертывании изображения Windows 10 с помощью [MDT: Шаг 6: Создание](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence)последовательности задач развертывания.

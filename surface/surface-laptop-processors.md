@@ -12,14 +12,14 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 50c7c9109d98448f10afcf3105974c8bee9515af
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 52b988315951132284c7016752a6817dadbf74c6
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11578359"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676623"
 ---
-# <a name="surface-laptop-4-processors-tech-overview"></a>Surface Laptop 4 процессора технического обзора
+# <a name="surface-laptop-4-processors-tech-overview"></a>Технический обзор процессоров Surface Laptop 4
 
 Surface Laptop 4 предназначен для предоставления коммерческим клиентам богатого набора параметров устройств, чтобы помочь принимающим решениям лучше согласовать цели закупок устройств со все более конкретными требованиями роли. По сравнению Surface Laptop 3:
 
@@ -85,7 +85,7 @@ Surface Laptop 4 предназначен для предоставления к
 | TDP по умолчанию / TDP    | 15W               | 15W               |
 | Max Temps            | 105C              | 105 C             |
 
-Общие сведения об процессорах AMD в Surface Laptop 4 см. [в amD Ryzen](https://www.amd.com/processors/ryzen)
+Общие сведения об процессорах AMD в Surface Laptop 4 см. в Surface Laptop [Microsoft Surface Laptop Powered by AMD Ryzen Mobile Processors.](https://www.amd.com/processors/ryzen-surface-edition)
 
 ## <a name="surface-laptop-4-skus"></a>Surface Laptop 4 SKUs
 
