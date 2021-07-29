@@ -1,6 +1,6 @@
 ---
-title: Параметр ограничения заряда батареи (Surface)
-description: Ограничение заряда батареи — это параметр UEFI, который изменяет способ зарядки батареи устройства Surface и может продлить срок его действия.
+title: Параметр Ограничения батареи (Surface)
+description: Ограничение заряда батареи — это параметр UEFI, который изменяет заряд батареи устройства Surface и может продлить его долговечность.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
@@ -13,88 +13,67 @@ ms.localizationpriority: medium
 manager: laurawi
 audience: itpro
 ms.date: 1/15/2021
-ms.openlocfilehash: 8ce1dcfc621a547aca9ca1db322f3ed2ce082728
-ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
+ms.openlocfilehash: 07e4131321387a410e5abd5b7039128942b1b339
+ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271146"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "11708800"
 ---
-# Параметр ограничения батареи
+# <a name="battery-limit-setting"></a>Параметр ограничения батареи
 
-Параметр ограничения заряда батареи — это параметр UEFI, который изменяет способ заряда батареи устройства Surface и может продлить срок его действия. Этот параметр рекомендуется в тех случаях, когда устройство постоянно подключено к сети, например при интеграции устройств в решения киоска.  
+Параметр Battery Limit — это параметр UEFI, который изменяет заряд батареи устройства Surface и может продлить срок службы. Этот параметр рекомендуется использовать в тех случаях, когда устройство постоянно подключено к мощности, например при интеграции устройств в решения киосков.  
 
-##  <a name="how-battery-limit-works"></a>Как работает ограничение заряда батареи
+## <a name="how-battery-limit-works"></a>Как работает ограничение заряда батареи
 
-Установка на устройстве ограничения заряда батареи изменяет протокол для зарядки батареи устройства. Если включено ограничение заряда батареи, заряд батареи будет ограничен 50 % от максимальной емкости. Уровень заряда, сообщаемой в Windows, отражает это ограничение. Таким образом, будет видно, что заряд батареи составляет до 50 % и не будет отвечать за это ограничение. Если вы включаете ограничение заряда батареи, когда заряд устройства превышает 50 %, значок батареи будет показывать, что устройство подключено к подключению, но отключается, пока устройство не достигнет 50 % от максимальной емкости заряда.  
+Настройка устройства на пределе батареи изменяет протокол для зарядки батареи устройства. Когда включено ограничение заряда батареи, заряд батареи будет ограничен 50% от максимальной емкости. Уровень заряда, о чем Windows, будет отражать это ограничение. Таким образом, она показывает, что батарея заряжается до 50% и не будет заряжаться сверх этого предела. Если вы включаете ограничение заряда батареи, пока заряд устройства превышает 50%, значок Battery покажет, что устройство подключено, но разряжается до тех пор, пока устройство не достигнет 50% от максимальной емкости заряда.  
 
-##  <a name="supported-devices"></a>Поддерживаемые устройства
+## <a name="supported-devices"></a>Поддерживаемые устройства
 
-Параметр UEFI ограничения заряда батареи встроен в новейшие устройства Surface, включая Surface Pro 7+, Surface Pro 7 и Surface Laptop 3. Более ранним устройствам требуется обновление [микропрограммы UEFI Surface,](manage-surface-driver-and-firmware-updates.md)доступное через Обновление Windows или с помощью драйверов MSI и пакетов микропрограмм на сайте [поддержки Surface.](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware-for-surface) Проверьте [, включить "Ограничение](https://support.microsoft.com/help/4464941) заряда батареи" для устройств Surface, которые должны быть подключены в течение длительного времени для определенной версии UEFI Surface, необходимой для каждого поддерживаемого устройства. 
+Параметр UEFI ограничения батареи встроен в последние устройства Surface, включая Surface Pro 7+, Surface Pro 7 и Surface Laptop 3. Более ранние устройства требуют обновления прошивки [Surface UEFI,](manage-surface-driver-and-firmware-updates.md)доступной через Windows Update или с помощью драйвера MSI и пакетов прошивки на сайте [surface Support.](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware-for-surface) Проверьте [включить "Ограничение батареи"](https://support.microsoft.com/help/4464941) для устройств Surface, которые должны быть подключены в течение длительного времени для определенной версии Surface UEFI, необходимой для каждого поддерживаемого устройства.
 
-##  <a name="enabling-battery-limit-in-surface-uefi-(surface-pro-4-and-later)"></a>Включение ограничения заряда батареи в Surface UEFI (Surface Pro 4 и более поздних)
+## <a name="enabling-battery-limit-in-surface-uefi-surface-pro-4-and-later"></a>Включение ограничения батареи в Surface UEFI (Surface Pro 4 и более поздней)
 
-Параметр ограничения заряда батареи UEFI Surface можно настроить путем загрузки в Surface UEFI (**Power + Vol Up** при включаемом устройстве). Выберите **конфигурацию загрузки,** а затем в **** области **"Дополнительные**параметры" в меню "Включить режим ограничения заряда" **вкл.**  
+Параметр Surface UEFI Battery Limit можно настроить, загрузив в Surface UEFI **(Power + Vol Up** при включаемом устройстве). Выберите **конфигурацию загрузки,** а затем, в **статье Расширенные параметры**, чтобы включить режим ограничения **батареи** **в .**  
 
-![Дополнительные параметры ограничения заряда батареи](images/enable-bl.png) 
+![Дополнительные параметры ограничения батареи](images/enable-bl.png)
 
-##  <a name="enabling-battery-limit-on-surface-go-and-surface-go-2"></a>Включение ограничения заряда батареи на Surface Go и Surface Go 2
-Параметр ограничения заряда батареи Surface можно настроить, загрузив surface UEFI (**Power + Vol Up** при включаемом устройстве). Выберите **конфигурацию загрузки,** а затем в режиме терминала переместим ползунок вправо, чтобы установить для ограничения заряда батареи **включено.** ****  
+## <a name="enabling-battery-limit-on-surface-go-and-surface-go-2"></a>Включение ограничения заряда батареи в Surface Go и Surface Go 2
 
-![Ограничение заряда батареи в режиме терминала в Surface Go](images/go-batterylimit.png) 
+Параметр Surface Battery Limit можно настроить, загрузив в Surface UEFI **(Power + Vol Up** при включаемом устройстве). Выберите **конфигурацию загрузки,** а затем в режиме **киоска**переместим ползунок вправо, чтобы установить ограничение батареи на **включено.**  
 
-##  <a name="enabling-battery-limit-in-surface-uefi-(surface-pro-3)"></a>Включение ограничения заряда батареи в Surface UEFI (Surface Pro 3)
+![Ограничение батареи в режиме киоска в Surface Go](images/go-batterylimit.png)
 
-Параметр ограничения заряда батареи UEFI Surface можно настроить путем загрузки в Surface UEFI (**Power + Vol Up** при включаемом устройстве). Выберите **режим терминала,** выберите **ограничение заряда**батареи, а затем выберите **"Включено".**
+## <a name="enabling-battery-limit-in-surface-uefi-surface-pro-3"></a>Включение ограничения батареи в Surface UEFI (Surface Pro 3)
 
-![Снимок экрана: дополнительные параметры](images/enable-bl-sp3.png) 
+Параметр Surface UEFI Battery Limit можно настроить, загрузив в Surface UEFI **(Power + Vol Up** при включаемом устройстве). Выберите **режим киоска,** выберите **ограничение батареи,** а затем выберите **Включено**.
 
-![Дополнительные параметры](images/enable-bl-sp3-2.png) 
+![Снимок экрана расширенных параметров](images/enable-bl-sp3.png)
 
-##  <a name="enabling-battery-limit-using-surface-enterprise-management-mode-(semm)-or-surface-pro-3-firmware-powershell-scripts"></a>Включение ограничения заряда батареи с помощью скриптов PowerShell для режима управления Surface Enterprise (SEMM) или Surface Pro 3
+![Дополнительные параметры](images/enable-bl-sp3-2.png)
 
-Ограничение заряда батареи UEFI Surface также доступно для настройки с помощью следующих методов:
+## <a name="enabling-battery-limit-using-surface-enterprise-management-mode-semm-or-surface-pro-3-firmware-powershell-scripts"></a>Включение ограничения батареи с помощью Enterprise режима управления surface (SEMM) или Surface Pro 3 скриптов powerShell прошивки
 
-- Surface Pro 4 и более поздние 
-    - [Microsoft Surface UEFI Configurator](https://docs.microsoft.com/surface/surface-enterprise-management-mode)  
-    - Сценарии Powershell диспетчера UEFI Surface (SEMM_Powershell.zip) в [средствах Surface для загрузки ИТ-отдела](https://www.microsoft.com/download/details.aspx?id=46703)
-- Surface Pro 3 
-    - [SP3_Firmware_Powershell_Scripts.zip](https://www.microsoft.com/download/details.aspx?id=46703)
+Ограничение батареи Surface UEFI также доступно для настройки с помощью следующих методов:
 
-###  <a name="using-microsoft-surface-uefi-configurator"></a>Использование Microsoft Surface UEFI Configurator
+- Surface Pro 4 и более поздней
+  - [Конфигуратор Microsoft Surface UEFI](surface-enterprise-management-mode.md)  
+    - Сценарии Surface UEFI Manager Powershell (SEMM_Powershell.zip) в [Surface Tools для скачивания ИТ-услуг](https://www.microsoft.com/download/details.aspx?id=46703)
 
-Чтобы настроить режим ограничения заряда батареи, установите **** параметр "Переопределения терминала" на странице "Дополнительные параметры" в SEMM (Surface Pro 4 и более поздних). ****
+### <a name="using-microsoft-surface-uefi-configurator"></a>Использование конфигуратора Microsoft Surface UEFI
 
-![Снимок экрана с расширенными настройками](images/semm-bl.png)
+Чтобы настроить режим ограничения батареи, установите параметр **Переопределения** киоска на странице Параметры конфигурации в SEMM (Surface Pro 4 и более поздней). ****
 
-###  <a name="using-surface-uefi-manager-powershell-scripts"></a>Использование сценариев PowerShell диспетчера UEFI Surface
+![Снимок экрана расширенных параметров](images/semm-bl.png)
 
-Управление ограничением заряда батареи осуществляется с помощью следующего параметра:  
+### <a name="using-surface-uefi-manager-powershell-scripts"></a>Использование скриптов Surface UEFI Manager PowerShell
+
+Элемент ограничения батареи управляется с помощью следующего параметра:  
 
 `407 = Battery Profile`
 
-**Описание:** схема активного управления для шаблона использования батареи
+**Описание.** Схема активного управления шаблоном использования батареи
 
-**По умолчанию:**  `0` 
+**По умолчанию:**  `0`
 
-Установите этот `1` режим, чтобы включить ограничение заряда батареи.
-
-###  <a name="using-surface-pro-3-firmware-tools"></a>Использование средств микропрограмм Surface Pro 3
-
-Управление ограничением заряда батареи осуществляется с помощью следующего параметра:  
-
-**Name**: BatteryLimitEnable
-
-**Описание:** BatteryLimit
-
-**Текущее значение:**  `0` 
-
-**Значение по умолчанию:** `0`
-
-**Предложенное значение:** `0` 
-
-Установите этот `1` режим, чтобы включить ограничение заряда батареи.
-
->[!NOTE]
->Чтобы настроить этот параметр, необходимо [ использовать ](https://www.microsoft.com/download/details.aspx?id=46703)SP3_Firmware_Powershell_Scripts.zip. 
-
+Установите это, `1` чтобы включить ограничение батареи.
