@@ -79,11 +79,9 @@
                   href: unenroll-surface-devices-from-semm.md
                 - name: Использование Microsoft Endpoint Configuration Manager для управления устройствами с помощью SEMM
                   href: use-system-center-configuration-manager-to-manage-devices-with-semm.md
-            - name: Устранение распространенных проблем с Surface с помощью набора средств диагностики Surface для бизнеса
-              href: surface-diagnostic-toolkit-for-business-intro.md
+            - name: Набор средств диагностики Surface для бизнеса
+              href: surface-diagnostic-toolkit-business.md
               items:
-                - name: Развертывание набора средств диагностики Surface для бизнеса
-                  href: surface-diagnostic-toolkit-business.md
                 - name: Использование набора средств диагностики Surface для бизнеса в режиме компьютера
                   href: surface-diagnostic-toolkit-desktop-mode.md
                 - name: Запуск набора средств диагностики Surface для бизнеса с помощью команд
