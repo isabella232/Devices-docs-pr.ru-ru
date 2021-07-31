@@ -1,6 +1,6 @@
 ---
 title: Пробуждение по локальной сети для устройств Surface
-description: Узнайте, как можно использовать wake On LAN для удаленного пробуждения устройств для автоматического выполнения задач управления.
+description: Устройства Surface, которые работают Windows 10 версии 1607 или более поздней версии и используют адаптер Surface Ethernet для подключения к проводной сети, способны будиться на локальной сети (WOL) из modern Standby.
 keywords: обновление, развертывание, драйвер, wol, wake-on-lan
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -13,83 +13,84 @@ ms.topic: article
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 6/04/2021
-ms.openlocfilehash: 83989461ca557d27740252149418056688774d3f
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.date: 7/30/2021
+ms.openlocfilehash: 58ec7b7cdf0ad7b437619d7587db6084673de71a
+ms.sourcegitcommit: 6a7f96a497c8749a5997972db139542563769101
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11613807"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "11710593"
 ---
-# <a name="wake-on-lan-for-surface-devices"></a>Пробуждение по локальной сети для устройств Surface
+# <a name="wake-on-lan-for-surface-devices"></a>Пробуждение по локальной сети для устройств Surface 
 
-Чтобы поддерживать устройства в полной мере в курсе, ИТ-администраторы должны иметь возможность управлять устройствами, когда они не используются, как правило, во время ночных окон обслуживания. Wake on LAN (WOL) позволяет администраторам удаленно разбудить устройства и автоматически выполнять задачи управления с помощью Microsoft Endpoint Manager или сторонних решений.
+Устройства Surface, Windows 10 версии 1607 или более поздней версии, способны выполнять wake On LAN (WOL) из современного standby (также известного как Подключенное standby). С помощью WOL ИТ-администраторы могут удаленно разбудить устройства и автоматически выполнять задачи управления с помощью Microsoft Endpoint Manager или сторонних решений.
 
-## <a name="requirements"></a>Требования
+>[!NOTE]
+>Чтобы поддерживать WOL, устройства Surface должны подключаться к власти переменного тока и использовать адаптер Surface Ethernet, подключенный к проводной сети.
 
-Устройства должны быть подключены к власти переменного тока и иметь проводное подключение к одному из следующих совместимых адаптеров Ethernet:
+## <a name="supported-devices"></a>Поддерживаемые устройства
 
-- Адаптер Ethernet Surface USB 3.0 Gigabit
+Адаптеры Ethernet с поддержкой WOL:
+
+- Адаптер Ethernet Surface USB 3.0 Gigabit 
 - Адаптер Surface Ethernet
 - Surface USB-C для Ethernet и USB-адаптер
-- Концентратор адаптеров для путешествий Microsoft USB-C
-- Док-станция Surface.
+- Surface Dock
 - Surface Dock 2
+- Станция док-станции surface для Surface Pro 3
+
+Устройства Surface с поддержкой WOL:
+
+- Surface 3
+- Surface Pro 3
+- Surface Pro 4
+- Surface Pro (5-й gen)
+- Surface Pro (5th Gen) с LTE Advanced
+- Surface Book
+- Surface Laptop (1-й gen)
+- Surface Pro 6
+- Surface Book 2
+- Surface Laptop 2
+- Surface Go
+- Surface Go с функцией LTE Advanced
+- Surface Studio 2 (см. Surface Studio 2 инструкции ниже)
+- Surface Pro 7
+- Surface Pro 7+
+- Surface Laptop 3
+- Surface Laptop Go
+- Surface Laptop 4
+
+## <a name="using-wol"></a>Использование WOL 
+
+Если устройства Surface не используются, они введите состояние с низким питанием, известное как Modern Standby или Connected Standby. ИТ-администраторы могут удаленно запускать устройства с помощью запроса на пробуждение (волшебный пакет), который содержит адрес управления доступом к мультимедиа (MAC) целевого устройства Surface. Карта сетевого интерфейса назначения (NIC) сравнивает MAC-адрес с собственным перед пробуждением устройства. Если mac-адрес в запросе на пробуждение пакетов не совпадает с mac-адресом в пункте назначения NIC, NIC не разбудит устройство. Чтобы узнать больше, просмотрите [документацию источников wake](/windows-hardware/design/device-experiences/modern-standby-wake-sources)
+
+## <a name="modern-standby"></a>Современный режим ожидания
+
+Современное режим ожидания начинается, когда пользователь заставляет систему входить во спящий режим или устройство переходит в спящий режим в зависимости от Windows параметров питания, установленных пользователем. Например, пользователь нажимает кнопку питания, закрывает крышку или выбирает Режим сна на кнопке питания в Windows меню . WOL работает по умолчанию для устройств Surface в современном режиме ожидания, Windows 10 версии 1607 или более поздней версии. Дополнительная конфигурация ИТ не требуется, за исключением Surface Studio 2.
+
+## <a name="surface-studio-2-instructions"></a>Surface Studio 2 инструкции
+
+Чтобы включить WOL Surface Studio 2, необходимо использовать следующую процедуру
+
+1. Редактор open Registry **(Начните**  >  ****  >  ** поискregedit.exe) **и создайте следующие клавиши реестра:
+
+   ```console
+   ; Set CONNECTIVITYINSTANDBY to 1:
+   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\F15576E8-98B7-4186-B944-EAFA664402D9]
+   "Attributes"=dword:00000001
+   ; Set EnforceDisconnectedStandby to 0:
+   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+   "EnforceDisconnectedStandby"=dword:00000000
+   ```
+
+2. Выполнить следующую команду
+
+    ```powercfg /SETACVALUEINDEX SCHEME_BALANCED SUB_NONE CONNECTIVITYINSTANDBY 1```
 
 > [!NOTE]
-> Surface Dock 2 обеспечивает лучшую поддержку wake на локальной сети без необходимости дополнительной ИТ-конфигурации. Дополнительные дополнительные информации см. в [сайте Wake on LAN for Surface Dock 2.](wake-on-lan-surface-dock2.md)
+> Если обновить версию Windows 10 на Surface Studio 2 (например, обновить с Windows 10 20H2 до 21H1), вам потребуется снова следовать этим инструкциям, чтобы включить WOL.
 
-## <a name="how-it-works"></a>Принцип работы
 
-Если устройства Surface не используются, они введите состояние с низким питанием, известное как Modern Standby или Connected Standby. ИТ-администраторы могут удаленно запускать устройства с помощью запроса на пробуждение (волшебный пакет), который содержит адрес управления доступом к мультимедиа (MAC) целевого устройства Surface. Многие решения управления, такие как Microsoft Endpoint Configuration Manager и сторонние Microsoft Store, предоставляют встроенную поддержку WOL. Дополнительные информацию о бодрствования устройствах с помощью диспетчера конфигурации конечной точки см. в этой ссылке [Configure Wake on LAN - Configuration Manager.](/mem/configmgr/core/clients/deploy/configure-wake-on-lan)
+### <a name="to-wake-from-hibernation-s4-or-shutdown-s5"></a>Для пробуждения от спячки (S4) или остановки (S5) 
 
-Поддержка wake на локальной сети зависит от состояния сна: подключенного ожидания или hibernation (состояние питания S4).
-
-## <a name="connected-standby"></a>Подключенный режим ожидания
-
-По умолчанию Windows 10 поддерживает wake на lan-устройствах Surface в подключенной режиме ожидания.
-
-### <a name="supported-surface-devices---connected-standby"></a>Поддерживаемые устройства Surface — подключенное в режиме ожидания
-
-- Surface Laptop 4 (только процессоры Intel)
-- Surface Laptop 3 (только процессоры Intel)
-- Surface Pro 7+
-- Surface Pro 7
-- Surface Pro X
-- Surface Go 2
-- Surface Laptop Go
-- Surface Book 3
-
-## <a name="hibernation"></a>Спячка
-
-Чтобы разбудить устройства из режима Hibernation, необходимо включить параметр политики UEFI с помощью режима управления [surface Enterprise](surface-enterprise-management-mode.md) (SEMM) (не требуется для устройств, подключенных к Surface Dock 2).
-
-### <a name="supported-surface-devices---hibernation"></a>Поддерживаемые устройства Surface - Hibernation
-
-- Surface Laptop 4 (только процессоры Intel)
-- Surface Laptop 3 (только процессоры Intel)
-- Surface Pro 7+
-- Surface Pro 7
-- Surface Laptop Go
-- Surface Book 3
-
-### <a name="to-enable-wake-on-lan-uefi-setting"></a>Включить параметр Wake на локальной сети UEFI
-
-Чтобы включить параметр Wake on LAN UEFI, необходимо записать целевые устройства в SEMM, создать пакет конфигурации и применить пакет к устройствам. Дополнительные сведения см. в разделе:
-
-- [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
-- [Регистрация устройств Surface в SEMM и их настройка](enroll-and-configure-surface-devices-with-semm.md)
-
-1. Загрузка и установка [**конфигуратора Surface UEFI.**](https://www.microsoft.com/download/details.aspx?id=46703)
-2. Выберите **пакет**  >  **начните**  >  **настройку Create**+ Certificate  > **Protection**.
-3. Перейдите **к расширенным настройкам** и включив **wake on lan-сайт** **в On**.
-4. Примени пакет к целевым устройствам.
-
-    > [!div class="mx-imgBorder"]
-    > ![Включить wake на параметре политики LAN UEFI](images/wol-uefi.png)
-
-## <a name="learn-more"></a>Подробнее
-
-- [Wake on LAN for Surface Dock 2](wake-on-lan-surface-dock2.md)
-- [Microsoft Surface USB-C для Ethernet и USB-адаптер](https://www.microsoft.com/p/surface-usb-c-to-ethernet-and-usb-adapter/8wt81cglrblp?)
-- [Адаптер Ethernet Surface USB 3.0 Gigabit](https://www.microsoft.com/p/surface-usb-30-gigabit-ethernet-adapter/8xn9fqvzbvq0?)
+- Для устройств, подключенных к Surface Dock 2, см. в руб. [Wake on LAN for Surface Dock 2](wake-on-lan-surface-dock2.md)
