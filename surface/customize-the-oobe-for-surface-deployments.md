@@ -14,12 +14,12 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: e72abd2fbd3289989d64f23bbc06fa72d3c5b1d2
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: f704541a2d862550250794308df6201c38b09e15
+ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676652"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11721269"
 ---
 # <a name="customize-the-oobe-for-surface-deployments"></a>Настройка запуска при первом включении в случае развертывания Surface
 
@@ -44,7 +44,7 @@ ms.locfileid: "11676652"
 
 Если во время запуска при первом включении доступен адаптер беспроводной сети, отобразится страница **Присоединиться к беспроводной сети**, которая предлагает пользователю подключиться к беспроводной сети. Эта страница не скрывается автоматически технологиями развертывания, включая MDT 2013, и, соответственно, будет отображаться, даже если развертывание настроено на полную автоматизацию.
 
-Для предотвращения остановки автоматического развертывания этой страницей необходимо скрыть эту страницу, настроив дополнительный параметр в файле ответов — **HideWirelessSetupInOOBE**. Дополнительные сведения о параметре **HideWirelessSetupInOOBE** можно найти в [справочнике по автоматической установке Windows](/previous-versions/windows/it-pro/windows-8.1-and-8/ff716213(v=win.10)).
+Для предотвращения остановки автоматического развертывания этой страницей необходимо скрыть эту страницу, настроив дополнительный параметр в файле ответов — **HideWirelessSetupInOOBE**. Дополнительные сведения о параметре **HideWirelessSetupInOOBE** можно найти в [справочнике по автоматической установке Windows](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-hidewirelesssetupinoobe).
 
 ## <a name="scenario-2-surface-pen-pairing-in-oobe"></a>Сценарий 2: связывание ручки Surface во время запуска при первом включении
 

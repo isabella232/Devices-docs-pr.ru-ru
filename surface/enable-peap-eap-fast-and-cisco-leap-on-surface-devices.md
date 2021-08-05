@@ -13,18 +13,18 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.openlocfilehash: 3cb8af88e0aab78d5c1aa7f30c983d1da81216c0
-ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
+ms.openlocfilehash: e887a449fb00b76c14de5b8ede51a1ba91a6b4c4
+ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11708750"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11721249"
 ---
 # <a name="enable-peap-eap-fast-and-cisco-leap-on-surface-devices"></a>Включение PEAP, EAP-FAST и Cisco LEAP на устройствах Surface
 
 Узнайте, как включить поддержку протоколов PEAP, EAP-FAST и Cisco LEAP на устройстве Surface.
 
-Если вы используете PEAP, EAP-FAST или Cisco LEAP в корпоративной сети, возможно, вы уже знаете, что эти 3 протокола беспроводной проверки подлинности не поддерживаются устройствами Surface с заводскими настройками. Некоторые пользователи узнают это, когда пытаются подключиться к беспроводной сети; другие могут узнать об этом, когда сталкиваются невозможностью получения доступа к ресурсам в сети, например к общим файлам и внутренним сайтам. Подробнее: [Протокол EAP](/previous-versions/windows/it-pro/windows-xp/bb457039(v=technet.10)?).
+Если вы используете PEAP, EAP-FAST или Cisco LEAP в корпоративной сети, возможно, вы уже знаете, что эти 3 протокола беспроводной проверки подлинности не поддерживаются устройствами Surface с заводскими настройками. Некоторые пользователи узнают это, когда пытаются подключиться к беспроводной сети; другие могут узнать об этом, когда сталкиваются невозможностью получения доступа к ресурсам в сети, например к общим файлам и внутренним сайтам. Подробнее: [Протокол EAP](/windows-server/networking/technologies/extensible-authentication-protocol/network-access).
 
 Можно добавить поддержку всех протоколов, запустив небольшой пакет MSI с USB-накопителя или из общей папки. Для организаций, которые хотят включить поддержку EAP на своих устройствах Surface, формат пакета MSI поддерживает развертывание со многими средствами управления и развертывания, например microsoft Deployment набор средств (MDT) и Microsoft Endpoint Configuration Manager.
 
