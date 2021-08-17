@@ -10,7 +10,7 @@
           items:
             - name: Обзор безопасности Surface
               href: surface-security.md
-            - name: Виртуальный рабочий стол Windows на Surface
+            - name: Виртуальный рабочий стол Azure на Surface
               href: windows-virtual-desktop-surface.md
             - name: Технический обзор процессоров Surface Laptop 4
               href: surface-laptop-processors.md
