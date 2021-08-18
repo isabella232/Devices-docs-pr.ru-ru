@@ -27,7 +27,7 @@
 ## Развертывание
 ### [Внедрение Surface Hub 2S и обучение](surface-hub-2s-adoption-kit.md)
 ### [Видео о внедрении Surface Hub 2S](surface-hub-2s-adoption-videos.md)
-### [Первая настройка Surface Hub 2S](surface-hub-2s-setup.md)
+### [Первая настройка Surface Hub 2S](first-run-program-surface-hub.md)
 ### [Подключение устройств к Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Создание и тестирование учетной записи устройства](create-and-test-a-device-account-surface-hub.md)
 ### [Создание пакетов подготовки для Surface Hub](provisioning-packages-for-surface-hub.md)
