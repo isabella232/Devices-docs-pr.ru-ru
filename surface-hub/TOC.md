@@ -32,7 +32,9 @@
 ### [Создание и тестирование учетной записи устройства](create-and-test-a-device-account-surface-hub.md)
 ### [Создание пакетов подготовки для Surface Hub](provisioning-packages-for-surface-hub.md)
 ### [Установка приложений на устройстве Microsoft Surface Hub](install-apps-on-surface-hub.md)
-### [Создание локальных учетных записей Surface Hub 2S с помощью PowerShell](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+### [Создание локальных учетных записей Surface Hub 2S с помощью PowerShell](/microsoftteams/rooms/with-skype-for-business-server-2015)
+### [Комнаты Microsoft Teams на Surface Hub](surface-hub-teams-rooms.md)
+### [Настройка сетевых подключений и качества обслуживания для Microsoft Teams на Surface Hub](surface-hub-teams-rooms-networking.md)
 ### [Приложение Surface Hub Teams](hub-teams-app.md)
 ### [Сертифицированные для Teams аксессуары для Surface Hub 2S](surface-hub-2s-certifications.md)
 
@@ -83,11 +85,11 @@
 
 ## Развертывание
 ### [Создание и тестирование учетной записи устройства](create-and-test-a-device-account-surface-hub.md)
-#### [Развертывание в сети](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+#### [Развертывание в сети](/microsoftteams/rooms/with-office-365)
 
-#### [Локальное развертывание (с одним лесом)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+#### [Локальное развертывание (с одним лесом)](/microsoftteams/rooms/with-skype-for-business-server-2015)
 
-#### [Локальное развертывание (с несколькими лесами)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments)
+#### [Локальное развертывание (с несколькими лесами)](/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments)
 #### [Гибридное развертывание](hybrid-deployment-surface-hub-device-accounts.md)
 #### [Свойства Microsoft Exchange](exchange-properties-for-surface-hub-device-accounts.md)
 #### [Применение политик ActiveSync к учетным записям устройств](apply-activesync-policies-for-surface-hub-device-accounts.md)
