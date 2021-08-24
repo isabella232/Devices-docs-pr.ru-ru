@@ -19,12 +19,12 @@ appliesto:
 - Surface Laptop 2
 - Surface Laptop 3
 - Surface Laptop 4
-ms.openlocfilehash: 1ee3376a24d3e83cc66c8a220a1f7afa195840d0
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 96c1a641ae964752afa4f4ea3c2817a026a419ba
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676723"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11912014"
 ---
 # <a name="how-to-enable-the-surface-laptop-keyboard-during-mdt-deployment"></a>Как включить клавиатуру Surface Laptop во время развертывания MDT
 
@@ -78,21 +78,21 @@ ms.locfileid: "11676723"
 
 1. Убедитесь, что папка WindowsPEX64 теперь содержит импортируемые драйверы, как показано на следующем рисунке:
 
-   ![Изображение, на которое показаны недавно импортируемые драйверы в папке WindowsPEX64 workbench развертывания](./images/surface-laptop-keyboard-2.png)
+   ![Изображение, на которое показаны недавно импортируемые драйверы в папке WindowsPEX64 workbench развертывания.](./images/surface-laptop-keyboard-2.png)
 1. Настройте профиль выбора, использующий папку WindowsPEX64, как показано на следующем рисунке:
 
-   ![Изображение, отображаее папку WindowsPEX64, выбранную в рамках профиля выбора](./images/surface-laptop-keyboard-3.png)
+   ![Изображение, отображаее папку WindowsPEX64, выбранную в рамках профиля выбора.](./images/surface-laptop-keyboard-3.png)
 1. Настройте Windows свойств PE для доли развертывания MDT, чтобы использовать новый профиль выбора следующим образом:
     - Для **платформы**выберите **x64**.
     - Для **профиля Selection**выберите новый профиль.
     - Выберите **Включить все драйверы из профиля выбора.**
 
-    ![Изображение, отображаее Windows свойств PE в MDT Deployment Share](./images/surface-laptop-keyboard-4.png)
+    ![Изображение, отображаее Windows свойств PE в MDT Deployment Share.](./images/surface-laptop-keyboard-4.png)
 4. Убедитесь, что вы настроили оставшиеся Surface Laptop драйверы с помощью профиля выбора или **переменной DriverGroup001.**
     - Для Surface Laptop (1-й gen) модель **Surface Laptop**. Остальные драйверы Surface Laptop должны находиться в папке \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop, как показано на следующем рисунке.
     - Для Surface Laptop 2 модель Surface Laptop **2**. Остальные драйверы Surface Laptop должны находиться в папке \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 2.
     - Для Surface Laptop 3 с процессором Intel модель Surface Laptop 3. Остальные драйверы Surface Laptop находятся в папке \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 3.
 
-    ![Изображение, отображаее Surface Laptop драйверов (1-го поколения) в Surface Laptop папке Workbench развертывания](./images/surface-laptop-keyboard-5.png)
+    ![Изображение, отображаее Surface Laptop драйверов (1-го поколения) в Surface Laptop папке Workbench развертывания.](./images/surface-laptop-keyboard-5.png)
 
 После настройки MDT Deployment Share для использования нового профиля выбора и связанных параметров продолжайте процесс развертывания, как описано в развертывании изображения Windows 10 с помощью [MDT: Шаг 6: Создание](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence)последовательности задач развертывания.

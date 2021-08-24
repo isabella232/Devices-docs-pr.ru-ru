@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 4308ce1ea8ff382dc15706e68d2d706d0fd33f5f
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 384d2d76274121236e76b1b5e45b30505e929c19
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576759"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911810"
 ---
 # <a name="manage-surface-hub-with-an-mdm-provider"></a>Управление Surface Hub с помощью поставщика MDM
 
@@ -65,7 +65,7 @@ Microsoft Intune и другие поставщики MDM используют C
 4. Выберите **Создание,** добавьте имя и выберите **Далее.**
 6. Теперь вы можете просматривать и выбирать из предустановленных параметров ограничения устройств для Surface Hub следующих категорий: Приложения и опыт, оперативные сведения Azure, обслуживание, сеанс и беспроводная проекция. В примере, показанном на следующем рисунке, указывается 4-часовое окно обслуживания и 15-минутное время для возобновления работы экрана, сна и сеанса.
 
-     ![Настройка параметров Surface Hub с помощью профиля ограничения устройств Intune](images/sh-device-restrictions.png)
+     ![Настройка параметров Surface Hub с профилем ограничения устройств Intune.](images/sh-device-restrictions.png)
 
 Дополнительные сведения о создании и управлении профилями см. в странице Ограничение возможностей устройств [с использованием политики в Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-configure#create-the-profile)
  

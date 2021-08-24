@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 04/15/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: c94cb701fb1b7fcdc0168a795f57a4e497317902
-ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
+ms.openlocfilehash: fb0948623ec9c12aa818e4829285ea77229bf71d
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "11585970"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911584"
 ---
 # <a name="update-pen-firmware-on-surface-hub-2s"></a>Обновление ручки со встроенным ПО Surface Hub 2S
 
@@ -29,7 +29,7 @@ ms.locfileid: "11585970"
 1. Убедитесь Surface Hub что перо 2 сопряжено с Surface Hub 2S: **** Нажмите и удерживайте верхнюю кнопку, пока не начнет мигать индикатор белого индикатора.
 
     > [!div class="mx-imgBorder"]
-    > ![Surface Hub 2 пера](images/sh2-pen-1.png)
+    > ![Surface Hub 2 пера.](images/sh2-pen-1.png)
 
 2. В Surface Hub в качестве администратора откройте **Параметры,** а затем сканируйте новые Bluetooth устройства.
 
@@ -44,7 +44,7 @@ ms.locfileid: "11585970"
 1. Соедините ручку Surface Hub 2 с компьютером с Bluetooth: нажмите **** и удерживайте верхнюю кнопку, пока не начнет мигать светодиодный свет белого индикатора.
 
     > [!div class="mx-imgBorder"]
-    > ![Surface Hub 2 пера](images/sh2-pen-1.png)
+    > ![Surface Hub 2 пера.](images/sh2-pen-1.png)
 
 2. На компьютере сканируйте новые Bluetooth устройства.
 

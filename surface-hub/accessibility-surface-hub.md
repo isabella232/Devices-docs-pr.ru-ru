@@ -11,19 +11,19 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 11dc83be7966e49d2ac8a5fb0d1e0642abf025d8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a2520897a0ada7dc0ba23472c2b0f809ccb232d1
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10835816"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11910974"
 ---
-# Специальные возможности (Surface Hub)
+# <a name="accessibility-surface-hub"></a>Специальные возможности (Surface Hub)
 
 Microsoft Surface Hub предоставляет такие же функции специальных возможностей, как и Windows 10.
 
 
-##  <a name="default-accessibility-settings"></a>Параметры специальных возможностей по умолчанию
+## <a name="default-accessibility-settings"></a>Параметры специальных возможностей по умолчанию
 
 Полный список параметров специальных возможностей доступен ИТ-администраторам в приложении **Параметры**. Далее описываются параметры специальных возможностей Surface Hub по умолчанию.
 
@@ -41,7 +41,7 @@ Microsoft Surface Hub предоставляет такие же функции 
 1. Закройте экран приветствия.
 2. Откройте **Быстрые действия** > **Специальные возможности** из строки состояния.
 
-    ![Снимок экрана плитки "Специальные возможности"](images/ease-of-access.png)
+    ![Снимок экрана плитки "Простота доступа".](images/ease-of-access.png)
     
 3. Включите экранного диктора.
 4. Щелкните **Диспетчер задач**.
@@ -57,16 +57,16 @@ Microsoft Surface Hub предоставляет такие же функции 
 - Клавиши управления курсором мыши
 
 
-##  <a name="change-accessibility-settings-during-a-meeting"></a>Изменение параметров специальных возможностей во время собрания
+## <a name="change-accessibility-settings-during-a-meeting"></a>Изменение параметров специальных возможностей во время собрания
 
 Во время собрания пользователи могут переключать функции и приложения специальных возможностей несколькими способами:
 - [Сочетания клавиш](https://support.microsoft.com/help/13813/windows-10-microsoft-surface-hub-keyboard-shortcuts)
 - **Быстрые действия** > **Специальные возможности** из строки состояния
 
-> ![Изображение центра быстрых действий в Surface Hub](images/sh-quick-action.png)
+> ![Изображение, показывающая центр быстрого действия на Surface Hub.](images/sh-quick-action.png)
 
 
-##  <a name="related-topics"></a>Связанные статьи
+## <a name="related-topics"></a>Статьи по теме
 
 [Управление Microsoft Surface Hub](manage-surface-hub.md)
 

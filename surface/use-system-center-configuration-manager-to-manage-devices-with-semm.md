@@ -14,12 +14,12 @@ manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 10/28/2020
-ms.openlocfilehash: 9f3db9428e188aa20399d26c066507d76c90ba57
-ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
+ms.openlocfilehash: 3a70f08ded5ad19b8bc2dc8a7e4fe6d85d972c43
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11708790"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911624"
 ---
 # <a name="use-microsoft-endpoint-configuration-manager-to-manage-devices-with-semm"></a>Использование Microsoft Endpoint Configuration Manager для управления устройствами с помощью SEMM
 
@@ -30,7 +30,7 @@ ms.locfileid: "11708790"
 > [!Note]
 > Хотя описанный в этой статье процесс может работать с более ранними версиями Endpoint Configuration Manager или с другими сторонними решениями управления, управление SEMM с Microsoft Surface UEFI Manager и PowerShell поддерживается только с текущим филиалом Endpoint Configuration Manager.
 
-#### <a name="prerequisites"></a>Предварительные требования
+#### <a name="prerequisites"></a>Что вам понадобится
 
 Перед началом процесса, описанного в этой статье, ознакомьтесь со следующими технологиями и средствами:
 
@@ -80,7 +80,7 @@ ms.locfileid: "11708790"
 
    * **Сведения о** импорте — мастер создания приложений разобьет файл .msi и прочитает имя приложения **и** код **продукта.** SurfaceUEFIManagerSetup.msi должен быть указан как единственный файл в строке **Content Files,** как показано на рисунке 1. Выберите **Далее,** чтобы продолжить.
 
-      ![Сведения из установки Surface UEFI Manager автоматически размыкаются](images/config-mgr-semm-fig1.png "Information from Surface UEFI Manager setup is automatically parsed")
+      ![Сведения из установки Surface UEFI Manager автоматически размыкаются.](images/config-mgr-semm-fig1.png "Information from Surface UEFI Manager setup is automatically parsed")
 
       *Рисунок 1. Сведения из установки Microsoft Surface UEFI Manager автоматически размыкаются*
 
@@ -423,7 +423,7 @@ ms.locfileid: "11708790"
      * **Общие сведения** — введите имя типа развертывания (например, сценарии конфигурации SEMM), а затем выберите **Далее** для продолжения.
      * **Содержимое** — **выберите Обзор** рядом с полем **Расположение** контента, а затем выберите папку, в которой расположены скрипты конфигурации SEMM. В поле **Программа установки** введите команду [установки,](#deploy-semm-configuration-manager-scripts) найденную ранее в этой статье. В поле **Uninstall Program** [](#deploy-semm-configuration-manager-scripts) введите команду удалить, найденную ранее в этой статье (показано на рисунке 2). Выберите **Далее,** чтобы перейти на следующую страницу.
     
-     ![Установите скрипты диспетчера конфигурации SEMM в качестве команд установки и списания](images/config-mgr-semm-fig2.png "Set the SEMM Configuration Manager scripts as the install and uninstall commands")
+     ![Установите скрипты диспетчера конфигурации SEMM в качестве команд установки и списания.](images/config-mgr-semm-fig2.png "Set the SEMM Configuration Manager scripts as the install and uninstall commands")
 
      *Рисунок 2. Установите скрипты диспетчера конфигурации SEMM в качестве команд установки и списания*
 
@@ -438,7 +438,7 @@ ms.locfileid: "11708790"
        - Введите имя сертификата, введенного в строке 58 сценария в поле **Значение.**
        - Выберите **ОК,** чтобы закрыть **окно Правила обнаружения.**
 
-     ![Использование ключа реестра для идентификации устройств, зарегистрированных в SEMM](images/config-mgr-semm-fig3.png "Use a registry key to identify devices enrolled in SEMM")
+     ![Используйте ключ реестра для идентификации устройств, зарегистрированных в SEMM.](images/config-mgr-semm-fig3.png "Use a registry key to identify devices enrolled in SEMM")
      
      *Рисунок 3. Использование ключа реестра для идентификации устройств, зарегистрированных в SEMM*
 

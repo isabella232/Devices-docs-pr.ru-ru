@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/14/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 472dc41bd73ace90cccdeb4e52884401c2f9d6d7
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.openlocfilehash: bdf39a2e664aa9abbd2fbf4790aec0b04c084f64
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11613858"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911884"
 ---
 # <a name="migrate-to-windows-10-pro-or-enterprise-on-surface-hub-2"></a>Переход на Windows 10 Pro или Корпоративная в Surface Hub 2
 
@@ -187,7 +187,7 @@ Surface Hub 2S поставляется с Windows 10 для совместно�
 1. Подключение USB-накопитель на компьютере.
 1. Выберите **концентратор 2S**и выберите **Далее**.
 
-   ![Снимок экрана показывает, где выбрать концентратор 2S](images/shm-fig13.png)
+   ![Снимок экрана показывает, где выбрать Концентратор 2S.](images/shm-fig13.png)
 
    > [!WARNING]
    > Все существующие данные на USB-диске будут стерт при построении пакета SEMM. Перед созданием пакета SEMM удалите все файлы, необходимые для usb-накопителя.

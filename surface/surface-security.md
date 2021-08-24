@@ -1,5 +1,5 @@
 ---
-title: Обзор безопасности surface
+title: Обзор безопасности Surface
 description: В этой статье представлен обзор безопасности устройств Surface
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,14 +12,14 @@ ms.date: 06/04/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 67ba96129d69cafaa7a1b24ce3dde98767b676ef
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.openlocfilehash: 193053745628b434c07a63f23a042e95fead32eb
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11614144"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911814"
 ---
-# <a name="surface-security-overview"></a>Обзор безопасности surface
+# <a name="surface-security-overview"></a>Обзор безопасности Surface
 
 Недавние достижения в области исследований в области безопасности показывают, что по мере того, как в ОС и подключенные службы встроено больше средств защиты, злоумышленники ищут другие возможности эксплуатации с использованием прошивки, которая становится одной из главных целей.
 
@@ -41,7 +41,7 @@ Surface диски безопасности с помощью углубленн
 | Физический TPM 2.0                | Доверенный модуль платформы — выделенный микроконтроллер, предназначенный для обеспечения безопасности оборудования с помощью интегрированных ключей шифрования.<br>Шифрует и сохраняет ключи (BitLocker, Windows Hello, AD Credentials,)<br>PCR — реестры конфигурации платформ, которые обеспечивает безопасность измерений и соответствующих метрик для обнаружения изменений в предыдущей конфигурации.  | [Обзор технологии доверенного платформенного модуля](/windows/security/information-protection/tpm/trusted-platform-module-overview)                 |
 | Windows Hello для бизнеса      | Заменяет пароли с помощью сильной двух факторов проверки подлинности на ПК и мобильных устройствах. Эта биометрическая проверка подлинности состоит из нового типа учетных данных пользователей, привязанных к устройству и использующих биометрический или ПИН-код.                                                                                                                   | [Как Windows Hello для бизнеса — Microsoft 365 безопасность](/windows/security/identity-protection/hello-for-business/hello-how-it-works) |
 | Интегрированное шифрование           | Встроенное шифрование включено BitLocker для защиты и шифрования данных, а Windows Hello для включения входа без паролей в сочетании с физическими TPM и UEFI.                                                                                                                                                                 | [BitLocker (Windows 10) — Microsoft 365 безопасности](/windows/security/information-protection/bitlocker/bitlocker-overview)                     |
-| Расширенная защита от угроз в Microsoft Defender | Предоставляет платформу безопасности конечных точек предприятия, предназначенную для предотвращения, обнаружения, расследования и реагирования на расширенные угрозы.                                                                                                                                                                               | [Расширенная защита от угроз в Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)                 |
+| Microsoft Defender для конечной точки | Предоставляет платформу безопасности конечных точек предприятия, предназначенную для предотвращения, обнаружения, расследования и реагирования на расширенные угрозы.                                                                                                                                                                               | [Microsoft Defender для конечной точки](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)                 |
 
 ## <a name="factory-level-security-protocols-and-inspection"></a>Протоколы безопасности и проверки уровня фабрики
 
@@ -87,7 +87,7 @@ HVCI использует VBS для существенного усиления
 Как показано на рисунке 2, целостность прошивки проверяется на каждом этапе от нажатия кнопки питания до запуска операционной системы.
 
  > [!div class="mx-imgBorder"]
- > ![Рисунок 1. Безопасная загрузка для устройств Surface ](images/secboot.png)
+ > ![Рисунок 1. Безопасность загрузки для устройств Surface. ](images/secboot.png)
   *Рис. 1. Безопасная загрузка для устройств Surface*
 
 | Шаг  | Этап безопасной загрузки                                                                                                                                                                                                                                      |

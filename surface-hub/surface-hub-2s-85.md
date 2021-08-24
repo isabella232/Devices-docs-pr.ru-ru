@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 02/26/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: b87d7c5bff6f885d69c3f74d6c1e454f47b89c4f
-ms.sourcegitcommit: b7fa6865e8f4209552a8130b861a1edef1b6666d
+ms.openlocfilehash: c5cddde47b2046badf3f6deba5791b7642e044f3
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "11615529"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11912034"
 ---
 # <a name="surface-hub-2s-85-overview--tech-specs"></a>Surface Hub 2S 85" & технических спецификаций
 
@@ -26,7 +26,7 @@ ms.locfileid: "11615529"
 - **Согласованная Surface Hub 2S.** Обеспечивает такой же дизайн премиум-класса, технологию отображения 4K, сенсорную, перо/тумба, картридж и поддержку камеры, Surface Hub 2S 50".
 - **Интеграция с существующими и новыми системами A/V.** Сочетается с Microsoft Teams сертифицированными периферийными устройствами и интегрируется с Комнаты Microsoft Teams.
 
-![Surface Hub 2S 85"](images/hub-2s-85.png)
+![Surface Hub 2S 85".](images/hub-2s-85.png)
 
 ## <a name="surface-hub-2s-85-tech-specs"></a>Технические характеристики Surface Hub 2S 85"
 
@@ -37,7 +37,7 @@ ms.locfileid: "11615529"
 |**Насыщенность**| 185 фунтов (84 кг)                                                                                                                                                                                                                                            |
 |**Вес доставки**| 399 фунтов (181 кг)                                                                                                                                                                                                                                            |
 |**Разрешение**| 3840 x 2160                                                                                                                                                                                                                                               |
-|**Монитор**| PixelSense™ Display, соотношение аспектов 16:9, 10-битный цвет, ширина границы 30,5 мм, антигларие, ЖК IPS, сенсорный экран в ячейке с 20 одновременными сенсорными точками                                                                                                           |
+|**Display**| PixelSense™ Display, соотношение аспектов 16:9, 10-битный цвет, ширина границы 30,5 мм, антигларие, ЖК IPS, сенсорный экран в ячейке с 20 одновременными сенсорными точками                                                                                                           |
 |**Вычисления**| Модульный вычислительный картридж<br>Четырехъядерный процессор Intel 8-го поколения® core™ i5, 8 ГБ оперативной памяти, 128 ГБ SSD <sup> 1</sup>                                                                                                                                                      |
 |**Программное <sup> обеспечение 2</sup>**| Windows 10 для совместной работы OS<br>Microsoft Teams для Surface Hub<br>Skype для бизнеса<br>Доска (Майкрософт)<br>Microsoft Office (Мобильный)<br>Microsoft Power BI                                                                                               |
 |**Подключения**| USB-A<br>Mini-DisplayPort вывода видео<br>RJ45 Gigabit Ethernet<br>Ввод видео HDMI<br>USB-C® с вводом DisplayPort<br>(3) USB-C® (на дисплее)                                                                                                           |

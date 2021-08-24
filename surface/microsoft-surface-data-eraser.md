@@ -15,12 +15,12 @@ ms.author: greglin
 ms.topic: article
 audience: itpro
 ms.date: 05/17/2021
-ms.openlocfilehash: d96581cd67e9cd4171fbb745aed4e9b34e2f0627
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 292c20c9999d9f226f28daed87069c78b43fd4bf
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576629"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911194"
 ---
 # <a name="microsoft-surface-data-eraser"></a>Microsoft Surface Data Eraser
 
@@ -77,12 +77,12 @@ ms.locfileid: "11576629"
 
 3. Нажмите кнопку **Start**, чтобы подтвердить, что к компьютеру подключен USB-накопитель емкостью 4ГБ или более, как показано на рисунке1.
 
-   ![Запуск средства Microsoft Surface Data Eraser](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
+   ![Запустите средство для стирки данных microsoft Surface.](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
 
    *Рис. 1. Запуск средства Microsoft Surface Data Eraser*
 4. Выберите **x64 для** большинства устройств Surface или **ARM64** для Surface Pro X на странице **Выбор** архитектуры, как показано на рисунке 2. Выберите пункт **Продолжить**.
 
-    ![Выбор архитектуры](images/dataeraser-arch.png "Architecture Selection")<br>
+    ![Выбор архитектуры.](images/dataeraser-arch.png "Architecture Selection")<br>
        *Рисунок 2. Выбор архитектуры устройств*
 
 5. Выберите USB-накопитель по вашему выбору на странице **выбор большого** **** пальца USB, как показано на рисунке 3, а затем нажмите кнопку Начните процесс создания USB. Выбранный накопитель будет отформатирован, и все имеющиеся на нем данные будут потеряны.
@@ -90,7 +90,7 @@ ms.locfileid: "11576629"
    >[!TIP]
    >Если кнопка "Пуск" недоступна, убедитесь, что емкость накопителя составляет не менее 4ГБ.
   
-   ![Выбор USB-накопителя](images/dataeraser-usb-selection.png "USB thumb drive selection")
+   ![Выбор большого пальца USB.](images/dataeraser-usb-selection.png "USB thumb drive selection")
 
    *Рисунок 3. Выбор USB-накопителя*
 
@@ -98,7 +98,7 @@ ms.locfileid: "11576629"
 
 7. После появления экрана **Congratulations** накопитель можно извлечь. Теперь этот накопитель можно вставить в устройство Surface, загрузить с него устройство и стереть данные на устройстве. Щелкните **Полное,** чтобы завершить процесс создания USB, как показано на рисунке 4.
 
-   ![Процесс создания USB-накопителя с Surface Data Eraser](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
+   ![Процесс создания USB-интерфейса Surface Data Eraser.](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
 
    *Рисунок 4. Завершение процесса создания USB-накопителя с Microsoft Surface Data Eraser*
 
@@ -122,7 +122,7 @@ ms.locfileid: "11576629"
 
 3. При загрузке устройства Surface отображается текстовый **файл SoftwareLicenseTerms,** как показано на рисунке 5.
 
-   ![Загрузка с USB-накопителя с Microsoft Surface Data Eraser](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
+   ![Загрузка USB-накопителя Microsoft Surface Data Eraser.](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
    *Рисунок 5. Загрузка с USB-накопителя с Microsoft Surface Data Eraser*
 
@@ -135,7 +135,7 @@ ms.locfileid: "11576629"
    >[!CAUTION]
    >Средство Microsoft Surface Data Eraser удалит все данные, включая файлы операционной системы Windows, необходимые для загрузки устройства, безопасным и невосстанавливаемым способом. Для загрузки устройства Surface, данные на котором были удалены с помощью Microsoft Surface Data Eraser, сначала необходимо переустановить операционную систему Windows. Чтобы удалить данные с устройства Surface без удаления операционной системы Windows, можно использовать функцию **Возврат компьютера в исходное состояние**. Однако это не помешает восстановлению данных с помощью криминалистических методов или методов восстановления данных. Подробнее см. в разделе [Параметры восстановления в Windows 10](https://support.microsoft.com/help/12415/windows-10-recovery-options).
 
-   ![Отображается стираемый раздел](images/sda-fig5-erase.png "Partition to be erased is displayed")
+   ![Отображается раздел, который будет стираться.](images/sda-fig5-erase.png "Partition to be erased is displayed")
   
    *Рисунок 6. В Microsoft Surface Data Eraser отображается стираемый раздел*
 

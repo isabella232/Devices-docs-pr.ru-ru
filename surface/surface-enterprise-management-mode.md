@@ -14,12 +14,12 @@ manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
 ms.date: 04/16/2021
-ms.openlocfilehash: 08221db2e4a49ccce1b372689b4dc30d8241ad0d
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 8e30234e72b6533da3d36ca38188c7e199beeeac
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676703"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11910994"
 ---
 # <a name="microsoft-surface-enterprise-management-mode"></a>Режим Enterprise Microsoft Surface
 
@@ -58,7 +58,7 @@ SeMM также использует сертификат для защиты к
 >[!TIP]
 >Теперь вы можете использовать конфигуратор Surface UEFI и SEMM для управления портами на surface Dock 2. Дополнительные дополнительные ссылки см. в [пункте Безопасные порты дока поверхности 2 с помощью SEMM.](secure-surface-dock-ports-semm.md)
 
-![Конфигуратор Microsoft Surface UEFI](images/surface-ent-mgmt-fig1-uefi-configurator.png "Microsoft Surface UEFI Configurator")
+![Конфигуратор Microsoft Surface UEFI.](images/surface-ent-mgmt-fig1-uefi-configurator.png "Microsoft Surface UEFI Configurator")
 
 *Рисунок 1. Конфигуратор Microsoft Surface UEFI*
 
@@ -76,7 +76,7 @@ SeMM также использует сертификат для защиты к
 
 Пакеты конфигурации Surface UEFI являются основным механизмом реализации и управления SEMM на устройствах Surface. Эти пакеты содержат файл конфигурации и файл сертификата, как показано на рисунке 2. Файл конфигурации содержит параметры UEFI, указанные при создании пакета в конфигураторе Microsoft Surface UEFI. Когда пакет конфигурации запускается впервые на устройстве Surface, которое еще не зарегистрировано в SEMM, он содержит файл сертификата в прошивке устройства и регистрирует устройство в SEMM. При регистрации устройства в SEMM и до хранения сертификата и завершения регистрации вам будет предложено подтвердить операцию, предоставив последние две цифры отпечатка пальца сертификата SEMM. Это подтверждение требует, чтобы пользователь физически присутствовал на устройстве во время регистрации для выполнения подтверждения.
 
-![Защита пакета конфигурации SEMM с помощью сертификата](images/surface-ent-mgmt-fig2-securepackage.png "Secure a SEMM configuration package with a certificate")
+![Защита пакета конфигурации SEMM с помощью сертификата.](images/surface-ent-mgmt-fig2-securepackage.png "Secure a SEMM configuration package with a certificate")
 
 *Рисунок 2. Защита пакета конфигурации SEMM с помощью сертификата*
 
@@ -120,7 +120,7 @@ SeMM также использует сертификат для защиты к
 | Автоматическая мощность                      | Позволяет управлять автоматическим питанием в настройках загрузки. Если этот параметр не настроен, включена автоматическая мощность.                                                                                                        |
 | Одновременная многопотость (SMT) | Позволяет управлять одновременным многопотоком (SMT), чтобы включить или отключить гипертекст. Если этот параметр не настроен, smT включен.                                                  |
 |Включить ограничение батареи| Позволяет управлять функциями ограничения батареи. Если этот параметр не настроен, включено ограничение батареи |
-| Security                           | Отображает страницу безопасности **** Surface UEFI. Если этот параметр не настроен, отображается страница Безопасности.                                                                                                                 |
+| Безопасность                           | Отображает страницу безопасности **** Surface UEFI. Если этот параметр не настроен, отображается страница Безопасности.                                                                                                                 |
 | Устройства                            | Отображает страницу Surface UEFI **Devices.** Если этот параметр не настроен, отображается страница Devices.                                                                                                                     |
 | Загрузка                               | Отображает страницу загрузки Surface **UEFI.** Если этот параметр не настроен, отображается страница Загрузка.                                                                                                                                                            |
 | DateTime                           | Отображает страницу Surface UEFI **DateTime.** Если этот параметр не настроен, отображается страница DateTime.                                                                                                                |
@@ -129,13 +129,13 @@ SeMM также использует сертификат для защиты к
 >[!TIP]
 >При создании пакета конфигурации SEMM на странице **Успешно** показаны два символа, как показано на рисунке 3.
 
-![Дисплей отпечатка пальца сертификата](images/surface-ent-mgmt-fig5-success.png "Certificate thumbprint display")
+![Отображение отпечатка пальца сертификата.](images/surface-ent-mgmt-fig5-success.png "Certificate thumbprint display")
 
 *Рисунок 3. Отображение последних двух символов отпечатка пальца сертификата на странице Успешно*
 
 Эти символы являются последними двумя символами отпечатка пальца сертификата и должны быть записаны или записаны. Символы должны подтвердить регистрацию в SEMM на устройстве Surface, как показано на рисунке 4.
 
-![Подтверждение регистрации в SEMM](images/surface-ent-mgmt-fig6-enrollconfirm.png "Enrollment confirmation in SEMM")
+![Подтверждение регистрации в SEMM.](images/surface-ent-mgmt-fig6-enrollconfirm.png "Enrollment confirmation in SEMM")
 
 *Рисунок 4. Подтверждение регистрации в SEMM с отпечатком сертификата SEMM*
 
@@ -163,7 +163,7 @@ SeMM также использует сертификат для защиты к
 В некоторых сценариях может быть невозможно использовать пакет сброса Surface UEFI. (Например, если Windows становится непригодным для пользоваемых устройств Surface.) В этих сценариях можно отослать устройство Surface **** из SEMM через страницу управления Enterprise Surface UEFI (показано на рисунке 5) с помощью операции запроса на восстановление.
 
 > [!div class="mx-imgBorder"]
-> ![Инициировать запрос на восстановление SEMM](images/surface-ent-mgmt-fig7-semmrecovery.png "Initiate a SEMM recovery request")
+> ![Инициировать запрос на восстановление SEMM.](images/surface-ent-mgmt-fig7-semmrecovery.png "Initiate a SEMM recovery request")
 
 *Рисунок 5. Инициировать запрос на восстановление SEMM на странице Enterprise управления*
 

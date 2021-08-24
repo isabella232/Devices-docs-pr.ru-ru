@@ -15,67 +15,67 @@ ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ms.date: 5/08/2020
-ms.openlocfilehash: 3ede7311289dc4bc720735c0142ff3a46fbb69e7
-ms.sourcegitcommit: 582c5a79881c58c4f1aa66cfcab46db966ca9f24
+ms.openlocfilehash: 48f89e8929bdb9d075bea988558fea234da5bbd2
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016560"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911424"
 ---
-# Microsoft Surface Deployment Accelerator
+# <a name="microsoft-surface-deployment-accelerator"></a>Microsoft Surface Deployment Accelerator
 
-Ускоритель развертывания Microsoft Surface (SDA) автоматизирует создание и настройку рекомендуемого опыта развертывания Майкрософт с помощью бесплатных средств развертывания Microsoft.
+Ускоритель развертывания microsoft Surface (SDA) автоматизирует создание и конфигурацию рекомендованного Microsoft развертывания с помощью бесплатных средств развертывания Майкрософт.
 
-В апреле 2020 для упрощения и автоматизации развертывания изображений Surface в корпоративной среде средство SDA позволяет создавать "Заводский" образ Windows, который можно настроить для организационных требований.
+Измененный в апреле 2020 г. для упрощения и автоматизации развертывания изображений Surface в корпоративной среде, средство SDA позволяет создавать "заводской" образ Windows, который можно настроить под организационные требования.
 
-Открытый источник, управляемый сценарием SDA использует комплект средств оценки и развертывания Windows (ADK) для Windows 10, который упрощает создание образов Windows (WIM) в тестовых и рабочих средах. Если последнее приложение ADK еще не установлено, оно будет загружено и установлено при запуске средства SDA.
+Инструмент SDA с открытым исходным кодом, управляемый сценарием, использует набор Windows и развертывания (ADK) для Windows 10, облегчая создание Windows изображений (WIM) в тестовых или производственных средах. Если последняя ADK еще не установлена, она будет загружена и установлена при запуске средства SDA.
 
-Полученное изображение точно соответствует конфигурации изображений восстановления исходного состояния системы (BMR), без предустановленных приложений, таких как Microsoft Office или приложение UWP Surface.
+Полученный образ тесно совпадает с конфигурацией изображений Bare Metal Recovery (BMR), без предварительно установленных приложений, таких как Microsoft Office или приложение Surface UWP.
 
-##  <a name="requirements"></a>Требования
+## <a name="requirements"></a>Требования
 
-1. Съемный USB-диск с размером не менее 16 ГБ. USB-накопитель будет отформатирован.
-2. ISO-файл в Windows 10 Pro или Windows 10 Корпоративная. Средство создания мультимедиа можно использовать для загрузки Windows 10 и создания ISO-файла. Дополнительные сведения можно найти в разделе [Загрузка Windows 10](https://www.microsoft.com/software-download/windows10).
-3. Устройство под управлением Windows 10 версии 2004 или более поздней с доступом к Интернету.
+1. Usb-накопитель размером не менее 16 ГБ. Usb-накопитель будет отформатирован.
+2. Файл .iso с Windows 10 Pro или Windows 10 Корпоративная. Средство создания мультимедиа можно использовать для загрузки Windows 10 и создания файла .iso. Дополнительные сведения см. в [Windows 10](https://www.microsoft.com/software-download/windows10).
+3. Устройство с Windows 10 версии 2004 или более поздней версии с доступом в Интернет.
 
-Подробный список требований вы найдете в разделе [необходимые условия](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) в документе Readme.
+Подробный [список](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) требований см. в разделе Предварительные условия документа README.
 
-##  <a name="how-to-run-the-sda"></a>Как запустить SDA
+## <a name="how-to-run-the-sda"></a>Запуск SDA
 
-**Чтобы запустить SDA, выполните указанные ниже действия.**
+**Для запуска SDA:**
 
-1. Перейдите на [SurfaceDeploymentAccelerator](https://github.com/microsoft/SurfaceDeploymentAccelerator) в GitHub. 
-2. Ознакомьтесь с документацией по [readmeм](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md) .
-3. На странице [SurfaceDeploymentAccelerator](https://github.com/microsoft/SurfaceDeploymentAccelerator) нажмите кнопку **код** и выберите **загрузить ZIP** , чтобы сохранить файлы на локальном компьютере.
-4. Щелкните ZIP-файл правой кнопкой мыши и выберите пункт **Свойства**.
-5. На вкладке **Общие** установите флажок **разблокировать** и нажмите кнопку **ОК**.
-6. Извлеките ZIP-файл в папку на жестком диске (например: C:\SDA).
-7. Откройте запрос Windows PowerShell с повышенными привилегиями и настройте ExecutionPolicy для текущего сеанса, чтобы он был неограниченным.
+1. Перейдите [в SurfaceDeploymentAccelerator](https://github.com/microsoft/SurfaceDeploymentAccelerator) на GitHub. 
+2. Просмотрите [документацию README.](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md)
+3. На странице [SurfaceDeploymentAccelerator](https://github.com/microsoft/SurfaceDeploymentAccelerator) нажмите кнопку **Код** и выберите **скачать ZIP,** чтобы сохранить файлы локально на компьютере.
+4. Щелкните правой кнопкой мыши .zip файл и нажмите **кнопку Свойства**.
+5. На **вкладке General** выберите блокировку **Разблокировки** и нажмите **кнопку ОК.**
+6. Извлеките .zip в расположение на жестком диске (например: C:\SDA).
+7. Откройте повышенный Windows PowerShell и установите ExecutionPolicy для текущего сеанса на Неограниченное.
 
     ```powershell
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
     ```
-8. Запустите сценарий SDA, указав параметры для своей среды. Этот сценарий можно использовать для создания изображений для установки Windows 10 на различных устройствах Surface. Полный список поддерживаемых устройств можно найти в [описании параметров устройства](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#full-parameter-documentation) в статье readme по sda. 
+8. Запустите сценарий SDA, указывающий параметры для среды. Скрипт можно использовать для создания изображений для Windows 10 на различных устройствах Surface. Полный список поддерживаемых устройств см. в описании [параметра Device](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#full-parameter-documentation) в статье SDA README. 
 
-    Например, следующая команда создаст загрузочный USB-накопитель, который можно использовать для [установки Windows 10 на Surface Hub 2](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os):
+    Например, следующая команда создаст загружаемый USB-накопитель, который можно использовать для установки Windows 10 на [Surface Hub 2:](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os)
 
     ```powershell
     .\CreateSurfaceWindowsImage.ps1 -ISO C:\SDA\enterprise_client.iso -OSSKU Enterprise -DestinationFolder C:\Output -Device SurfaceHub2 -CreateUSB $True
     ```
-    Ниже приведен пример выходных данных сценария.
+    Пример вывода сценария приведен ниже.
 
-   ![Запуск средства акселератора для развертывания Surface](images/sda1.png)
+   ![Запуск ускорителя развертывания Surface.](images/sda1.png)
 
-    Для выполнения сценария потребуется около 45 минут, но это может занять больше времени в зависимости от доступности ресурсов ЦП и дискового пространства. 
+    Для запуска скрипта потребуется около 45 минут, но это может занять больше времени в зависимости от доступных ресурсов ЦП и диска. 
 
-    После создания образа Windows сценарий предложит вам вставить и подтвердить букву USB-накопителя. USB-диск будет отформатирован, настроен как загрузочный и скопированы файлы, чтобы включить установку настраиваемого образа Windows 10 для устройств Surface.
+    После создания Windows, скрипт попросит вас вставить и подтвердить букву диска usb-диска. Затем USB-накопитель будет отформатирован, настроен как загружаемый, а файлы скопированы для установки настраиваемого Windows 10 для устройств Surface.
 
-9. Вставьте USB-накопитель на устройство, на котором вы хотите установить Windows 10, и перезагрузите компьютер, чтобы начать установку Windows 10. Загрузка с USB-порта должна быть включена в BIOS, при этом может потребоваться временно отключить безопасную загрузку.
+9. Вставьте USB-накопитель на устройство, на котором необходимо установить Windows 10 и перезагрузать, чтобы приступить к Windows 10. Usb-загрузка должна быть включена в BIOS, для чего может потребоваться временное отключение безопасной загрузки.
 
 > [!IMPORTANT]
-> Загрузка с USB-накопителя начнется сразу же после установки Windows 10. Перед вставкой USB и перезапуском убедитесь, что устройство готово к работе. 
+> Загрузка с USB-накопителя немедленно начнется Windows 10. Убедитесь, что устройство готово перед вставкой USB и перезапуском. 
 
-##  <a name="related-links"></a>Дополнительные ссылки
+## <a name="related-links"></a>Дополнительные ссылки
 
- - [Средство развертывания исходного образа, выпущенное в GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
- - [Скачивание и установка Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+ - [Средство развертывания изображений с открытым исходным кодом, выпущенное GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
+ - [Загрузка и установка Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)

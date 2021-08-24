@@ -12,12 +12,12 @@ ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
 ms.date: 2/08/2021
-ms.openlocfilehash: 544aa8ab7cb9bb443f368bfbbcecb1fa256d32c5
-ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
+ms.openlocfilehash: 070139370fc8175a116cb2e2a329404af8ac09b9
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11708760"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911154"
 ---
 # <a name="surface-dock-1-firmware-update"></a>Обновление встроенного ПО для Surface Dock 1
 
@@ -65,7 +65,7 @@ ms.locfileid: "11708760"
 
    Если обновление не будет успешным, то ID события 2007 будет отображаться как событие **ошибки,** а не **Информация**. Кроме того, версия, зарегистрированная в Windows реестра, не будет текущей.
 
-5. После завершения обновления обновленные значения DWORD будут отображаться в реестре Windows, соответствующем текущей версии средства. Подробные [сведения см. в](#versions-reference) справочном разделе Versions в этой статье. Например:
+5. После завершения обновления обновленные значения DWORD будут отображаться в реестре Windows, соответствующем текущей версии средства. Подробные [сведения см. в](#versions-reference) справочном разделе Versions в этой статье. Пример:
 
     - Component10CurrentFwVersion 0x04ac3970 (78395760)
     - Component20CurrentFwVersion 0x04915a70 (76634736)
@@ -86,7 +86,7 @@ ms.locfileid: "11708760"
 
 - **Msiexec.exe /i \<path to msi file\> /quiet /norestart**
 
-Например:
+Пример:
 
 ```console
 msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi" /quiet /norestart
@@ -125,7 +125,7 @@ msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 
 2. Найди ключи реестра: **Component10CurrentFwVersion и Component20CurrentFwVersion,** которые ссылаются на прошивку, которая в настоящее время находится на устройстве.
 
-   ![Процесс установки обновления прошивки Surface Dock 1](images/regeditDock.png)
+   ![Процесс установки обновления прошивки Surface Dock 1.](images/regeditDock.png)
 
 3. Проверка ключевых значений нового реестра соответствует обновленным ключевым значениям реестра, указанным в ссылке Версии в конце этого документа. Если значения совпадают, прошивка была успешно обновлена.
 

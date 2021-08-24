@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 08/02/2021
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 9a98eb9bab9b0be7f225dedf00ee6cfe7944b05e
-ms.sourcegitcommit: 657d0d73a51f0dd35ad60740ed523164a55d2e04
+ms.openlocfilehash: a6b1dcdb3cf0ff8fe2f6485520c6b6301f5d2b2f
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "11720933"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11912004"
 ---
 # <a name="secure-surface-dock-2-ports-with-surface-enterprise-management-mode-semm"></a>Безопасные порты surface Dock 2 с режимом Enterprise Surface (SEMM)
 
@@ -64,7 +64,7 @@ ms.locfileid: "11720933"
 
 В этом разделе даны спецификации для создания сертификатов, необходимых для управления портами surface Dock 2.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Что вам понадобится
 
 В этой статье предполагается, что вы либо получите сертификаты от сторонного поставщика, либо уже имеете знания в службах сертификатов PKI и знаете, как создать свой собственный.  Вы должны ознакомиться с общими рекомендациями по созданию сертификатов, описанными в документации Surface Enterprise Management [Mode (SEMM),](surface-enterprise-management-mode.md) за одним исключением. Сертификаты, задокументированные на этой странице, требуют 30-летний срок действия сертификата док-станции **и**20 лет для сертификата проверки подлинности **хостов.**
 
@@ -106,15 +106,15 @@ ms.locfileid: "11720933"
 
 1. Запустите **настраиватель Surface UEFI.**
 
-   ![Настройка run Surface UEFI](images/secure-surface-dock-ports-semm-1.png)
+   ![Запустите настраиватель Surface UEFI.](images/secure-surface-dock-ports-semm-1.png)
 
 1. Выберите **док Surface.**
 
-   ![Выбор док-станции Surface](images/secure-surface-dock-ports-semm-2.png)
+   ![Выберите Surface Dock.](images/secure-surface-dock-ports-semm-2.png)
 
 1. Введите **соответствующие сертификаты**  на странице сертификата. Демонстрационные сертификаты доступны в [Surface Tools для ИТ:](https://www.microsoft.com/download/details.aspx?id=46703) ** скачайте **SEMM_PowerShell.zipи обратитесь ** кCreateSurfaceDock2Certificates.ps1**. Убедитесь, что **SurfaceDock2_WmiInstanceProvider** перед запуском сценариев демонстрации.
 
-   ![введите соответствующие сертификаты](images/secure-surface-dock-ports-semm-3.png)
+   ![введите соответствующие сертификаты.](images/secure-surface-dock-ports-semm-3.png)
 
 1. Добавьте соответствующие RNs док-станции в список.
 
@@ -146,19 +146,19 @@ ms.locfileid: "11720933"
 
 1. Включите все порты для пользователей с проверкой подлинности и отключите их для неавентированных пользователей.
 
-   ![Включение портов для пользователей с проверкой подлинности](images/secure-surface-dock-ports-semm-4.png)
+   ![Включение портов для пользователей с проверкой подлинности.](images/secure-surface-dock-ports-semm-4.png)
 
 1. Примените пакет конфигурации к целевому устройству и подключите Surface Dock 2.
 
 1. Откройте **surface App** и выберите Surface **Dock,** чтобы просмотреть итоговую состояние политики док-станции Surface. Если параметры политики применяются, Surface App указывает, что порты доступны.
 
-   ![Приложение Surface показывает, что все порты доступны для пользователей с проверкой подлинности](images/secure-surface-dock-ports-semm-5.png)
+   ![Приложение Surface показывает, что все порты доступны для пользователей с проверкой подлинности.](images/secure-surface-dock-ports-semm-5.png)
 
 1. Теперь необходимо убедиться, что параметры политики успешно отключили все порты для неавентированных пользователей. Подключение Surface Dock 2 для неуправленного устройства, то есть любого устройства Surface, не в рамках управления созданным пакетом конфигурации.
 
 1. Откройте **surface App и** выберите Surface **Dock**. В результате состояние политики указывает, что порты отключены.
 
-   ![Приложение Surface, показывающая отключенные порты для неавентированных пользователей ](images/secure-surface-dock-ports-semm-6.png)
+   ![Приложение Surface, показывающая отключенные порты для неавентированных пользователей.](images/secure-surface-dock-ports-semm-6.png)
 
 >[!TIP]
 >Если вы хотите сохранить право собственности на устройство, но разрешить всем пользователям полный доступ, вы можете сделать новый пакет со всем включено. Если вы хотите полностью удалить ограничения и право собственности на устройство (чтобы оно не было неустановлено), выберите **настройка Reset** in Surface UEFI, чтобы создать пакет, который будет применяться к целевым устройствам.

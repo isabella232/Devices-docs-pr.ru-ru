@@ -14,12 +14,12 @@ ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
 ms.date: 4/16/2021
-ms.openlocfilehash: 339a6a3ab76f36004f2399b333d48487c9d6e31d
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 463f5670c5e2b7eac9ac7a41b5b2b04da3ebb83e
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676691"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911184"
 ---
 # <a name="deploy-surface-app-with-microsoft-store-for-business-and-education"></a>Развертывание приложения Surface с Microsoft Store для бизнеса и образованием
 
@@ -69,7 +69,7 @@ ms.locfileid: "11676691"
 3. Включить автономное лицензирование: **** щелкните Управление Параметры, а затем выберите приложение Show  >  **** **offline licensed** для людей, покупок в почтовом ящике магазина, как показано на рисунке 1. Дополнительные сведения о Microsoft Store для бизнеса моделей лицензирования приложений см. в Microsoft Store для бизнеса [Apps in Microsoft Store для бизнеса education.](/microsoft-store/)
 
    > [!div class="mx-imgBorder"]
-   > ![Показать автономные лицензии приложений-контрольных ящиков](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
+   > ![Показать автономные лицензии приложений.](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
    *Рисунок 1. Включить приложения для автономного использования*
 
 4. Добавьте приложение Surface в свою Microsoft Store для бизнеса учетную запись:
@@ -81,7 +81,7 @@ ms.locfileid: "11676691"
     * Вам будет представлен выбор (выберите **Online** или **Offline),** как показано на рисунке 2.
     
       > [!div class="mx-imgBorder"]
-      > ![Выберите режим автономного лицензирования и добавьте приложение в инвентарь](images/deploysurfapp-fig2-selectingofflinelicense.png "Select the Offline licensing mode and add the app to your inventory")   
+      > ![Выберите режим автономного лицензирования и добавьте приложение в свой инвентарь.](images/deploysurfapp-fig2-selectingofflinelicense.png "Select the Offline licensing mode and add the app to your inventory")   
       *Рисунок 2. Выберите режим автономного лицензирования и добавьте приложение в инвентарь*
     
     * Щелкните **автономный** режим, чтобы выбрать режим автономного лицензирования.
@@ -89,8 +89,8 @@ ms.locfileid: "11676691"
     * Нажмите **кнопку Получить приложение,** чтобы добавить приложение в Microsoft Store для бизнеса инвентаризации. Как показано на рисунке 3, вы увидите диалоговое окно, которое подсказивает вам, что автономные приложения можно развернуть с помощью средства управления или загрузить со страницы инвентаризации компании в их частном магазине.
     
       > [!div class="mx-imgBorder"]
-      > ![Окно подтверждения приложения с автономной лицензией ](images/deploysurfapp-fig3-acknowledge.png "Offline-licensed app acknowledgement window")
-       *На рисунке 3. Подтверждение приложения с автономной лицензией*
+      > ![Окно подтверждения приложения с автономной лицензией. ](images/deploysurfapp-fig3-acknowledge.png "Offline-licensed app acknowledgement window")
+       *Рис. 3. Подтверждение приложения с автономной лицензией*
       
     * Нажмите кнопку **ОК**.
 
@@ -106,7 +106,7 @@ ms.locfileid: "11676691"
 4. Выберите нужные **параметры платформы** и **архитектуры** из доступных выборов для выбранного приложения, как показано на рисунке 4.
 
     > [!div class="mx-imgBorder"]
-    > ![Пример пакета AppxBundle](images/deploysurfapp-fig4-downloadappxbundle.png "Example of the AppxBundle package")<br/>
+    > ![Пример пакета AppxBundle.](images/deploysurfapp-fig4-downloadappxbundle.png "Example of the AppxBundle package")<br/>
     *Рисунок 4. Скачайте пакет AppxBundle для приложения*
     
 5. Нажмите **кнопку Скачать**. Пакет AppxBundle будет загружен. Убедитесь, что вы обратите внимание на путь скачаного файла, так как это потребуется в этой статье.
@@ -121,7 +121,7 @@ ms.locfileid: "11676691"
 На рисунке 5 показаны необходимые рамки для приложения Surface.
 
 > [!div class="mx-imgBorder"]
-> ![Необходимые рамки для приложения Surface](images/deploysurfapp-fig5-requiredframework.png "Required frameworks for the Surface app")<br/>
+> ![Необходимые рамки для приложения Surface.](images/deploysurfapp-fig5-requiredframework.png "Required frameworks for the Surface app")<br/>
 *Рисунок 5. Необходимые рамки для приложения Surface*
 
 >[!NOTE]

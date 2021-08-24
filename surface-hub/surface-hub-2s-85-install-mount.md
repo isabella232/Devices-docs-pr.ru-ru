@@ -11,20 +11,20 @@ audience: Admin
 ms.topic: article
 ms.date: 03/22/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 9b7a3e49f3fa05117fa37cbd47695e54ff26e899
-ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
+ms.openlocfilehash: 823c80e812038a0d2f2efaca65d97d1379f03e35
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "11470497"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911214"
 ---
 # <a name="install-and-mount-surface-hub-2s-85"></a>Установка и установка Surface Hub 2S 85"
 
-В этой статье содержится вспомогательная инструкция по физической установке Microsoft Surface Hub 2S 85 " в коммерческих средах. 
+В этой статье содержится вспомогательная инструкция по физической Microsoft Surface Hub 2S 85 " в коммерческих средах. 
 
 ## <a name="unboxing-video"></a>Unboxing video
 
-- Перед началом просмотра просмотрите видео "Microsoft Surface Hub 2S 85" и "Настройка":
+- Перед началом просмотра просмотрите Microsoft Surface Hub 2S 85 " Unboxing and Set Up video:
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwwgL]
 
@@ -48,14 +48,14 @@ ms.locfileid: "11470497"
 3. Откройте и удалите шесть (6) клипов с концов.
 4. Снимите крышку, а затем снимите и снимите передние и задние панели.
 
- ![Удаление внешней упаковки](images/hub85mount1a.png) <br>
+ ![Удаление внешней упаковки.](images/hub85mount1a.png) <br>
 
 ## <a name="2-remove-black-outer-packaging-foam"></a>2. Удаление черной внешней пены упаковки
 
 1. Удаление частей пены черного угла (4).
 2. Удалите поддержку пены черной центральной пены.
 
- ![Удаление черной внешней пены упаковки](images/hub85mount2a.png) <br>
+ ![Удаление черной внешней пены упаковки.](images/hub85mount2a.png) <br>
 
 > [!Caution]
 > Не удаляй белые пены, привязки или упаковочные материалы до тех пор, пока концентратор 2S не будет примыкать к телеге или стене, на которой она будет размещена.
@@ -68,14 +68,14 @@ ms.locfileid: "11470497"
 2. Тормоза колес блокировки (4).
 3. Сдвиньте внутреннюю упаковку с поддона.
 
- ![Удаление внутренней рамки упаковки из поддона](images/hub85mount3b.png) <br>
+ ![Удалите внутреннюю рамку упаковки из поддона.](images/hub85mount3b.png) <br>
 
 ## <a name="4-rotate-packaging-frame-to-fit-elevator"></a>4. Поверните рамку упаковки, чтобы соответствовать лифту
 
 1. Вращать кадр, чтобы соответствовать лифту
 2. Поверните на окнутом конце внутренней рамы и сдвиньте его в лифт.
 
- ![Вращать рамку упаковки, чтобы соответствовать лифту](images/hub85mount4a.png) <br>
+ ![Вращайте рамку упаковки, чтобы соответствовать лифту.](images/hub85mount4a.png) <br>
 
 > [!TIP]
 > Колесная поддонка настраивается для внутреннего следа упаковки кадров и может использоваться во время процесса доставки сайта установки. Внутренняя часть каркаса из дерева имеет нейлоновую заносную пластину.
@@ -85,18 +85,18 @@ ms.locfileid: "11470497"
 1. Слайд из лифта
 2. Тормоза колес блокировки (x4).
 
- ![Удаление из лифта](images/hub85mount5a.png) <br>
+ ![Удаление из лифта.](images/hub85mount5a.png) <br>
 
 
-## <a name="6-place-surface-hub-85-back-on-pallet"></a>6. Место Surface Hub 85 " обратно на поддоне
+## <a name="6-place-surface-hub-85-back-on-pallet"></a>6. Поместите Surface Hub 85" обратно на поддон
 
 1. С помощью буклета поверните обратно на поддон.
 2. Разблокировка колесных тормозов (x4).
 3. Перемещение продукта в расположение стены или корзины.
 
- ![Место Surface Hub 85 " обратно на поддоне](images/hub85mount6a.png) <br>
+ ![Поместите Surface Hub 85" обратно на поддон.](images/hub85mount6a.png) <br>
 
-## <a name="7-place-surface-hub-85-on-wall-mount-or-cart"></a>7. Место Surface Hub 85 " на горе стены или корзине
+## <a name="7-place-surface-hub-85-on-wall-mount-or-cart"></a>7. Поместите Surface Hub 85" на настенную гору или корзину
 
 1. Поместите Концентратор 2S перед стеной или тележкой.
 2. Тормоза колес блокировки (x4).
@@ -108,7 +108,7 @@ ms.locfileid: "11470497"
 8. Удалите конечный элемент, подняв вертикально.
 9. Удалите куски дерева с помощью четырех румяных винтов на деревянной базе.
 
-   ![Место Surface Hub 85" на настенной горе или корзине](images/hub85mount7a.png) <br>
+   ![Поместите Surface Hub 85" на настенную гору или корзину.](images/hub85mount7a.png) <br>
 
    > [!CAUTION]
    >  Не оставляйте Концентратор 2S 85 без присмотра. Для удержания устройства в вертикальном положении требуется дополнительный человек. После удаления конечных частей минимум одному человеку необходимо поддерживать контакт с концентратором 2S до завершения размещения на стене или корзины.
@@ -135,18 +135,18 @@ ms.locfileid: "11470497"
  
 ## <a name="mounting-surface-hub-2s-85"></a>Монтаж Surface Hub 2S 85" 
 
-В Surface Hub 2S 85 используется шаблон 600 x 600 VESA. Как показано на следующем изображении, Корпорация Майкрософт в партнерстве со [Steelcase](https://www.steelcase.com/products/collaboration/steelcase-roam/) создает параметры монтажа, совместимые с уникальным дизайном Surface Hub 2S 85". 
+Модель Surface Hub 2S 85" использует шаблон 600 x 600 VESA. Как показано на следующем изображении, Корпорация Майкрософт в партнерстве со [Steelcase](https://www.steelcase.com/products/collaboration/steelcase-roam/) создает параметры монтажа, совместимые с уникальным дизайном Surface Hub 2S 85". 
 
-![Настенная гора Steelcase](images/sh2-steelcasemount.png) <br>
+![Настенная гора Steelcase.](images/sh2-steelcasemount.png) <br>
 
 ### <a name="mounting-dimensions"></a>Размеры крепления
 
 При использовании других (не-Steelcase) параметров крепления, вам потребуется spacers для учета вычислительного корпуса на задней части устройства. Spacers и другие сертифицированные аксессуары доступны в [Salamander Designs](http://www.salamandercommercial.com/surface-hub-2).
 
 
-![Детали размеров Surface Hub 85" для монтажа](images/sh2-85-measure2.png) <br>
+![Surface Hub размеров 85" для монтажа.](images/sh2-85-measure2.png) <br>
 
-![Размеры Surface Hub 85" для монтажа](images/sh2-85-measure1.png) <br>
+![Surface Hub 85" для монтажа.](images/sh2-85-measure1.png) <br>
 
 
 ## <a name="supplemental-strapping-kit"></a>Дополнительный комплект ремешка

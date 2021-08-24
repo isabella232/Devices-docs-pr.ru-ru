@@ -10,12 +10,12 @@ ms.date: 08/28/2017
 ms.reviewer: ''
 manager: laurawi
 localizationpriority: medium
-ms.openlocfilehash: f8a2bf8ddb75ca6dd3ff89e16fe0d37e099be29d
-ms.sourcegitcommit: 85f5a2e67b34fe073ec588ed441ebee239ab0ac6
+ms.openlocfilehash: e07591a25958677fb6efd5411d75f8b8e1549fed
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400740"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11912024"
 ---
 # <a name="sign-in-to-surface-hub-with-microsoft-authenticator"></a>Вход в Surface Hub с помощью проверки Microsoft Authenticator
 
@@ -31,7 +31,7 @@ ms.locfileid: "11400740"
 
 - [Настройте многофакторную идентификацию](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings). Убедитесь, что выбран параметр **Уведомление в мобильном приложении**. 
 
-    ![параметры многофакторной идентификации](images/mfa-options.png)
+    ![многофакторные параметры проверки подлинности.](images/mfa-options.png)
 
 - Включить размещение контента в службах Azure AD, таких как Office, SharePoint и т.д. 
 
@@ -70,18 +70,18 @@ ms.locfileid: "11400740"
     >[!NOTE]
     >Если вы не знаете, как запланировать собрание на Surface Hub, см. раздел [Планирование собраний на Surface Hub](https://support.microsoft.com/help/17325/surfacehub-schedulemeeting).
 
-    ![снимок экрана: параметр входа на Surface Hub](images/sign-in.png)
+    ![снимок экрана параметра Вход в Surface Hub.](images/sign-in.png)
 
 2. Вы увидите список людей, приглашенных на собрание. Выберите себя (или того, кому необходимо выполнить вход, — убедитесь, что этот человек прошел все шаги для настройки своего устройства перед собранием), а затем выберите **Продолжить**.
 
-    ![снимок экрана: список участников собрания](images/attendees.png)
+    ![снимок экрана списка участников собрания.](images/attendees.png)
 
     Вы увидите код на устройстве Surface Hub.
 
-    ![снимок экрана: код для подтверждения входа в систему](images/approve-signin.png)
+    ![снимок экрана кода для утверждения вход.](images/approve-signin.png)
 
 3. Для подтверждения входа откройте приложение Microsoft Authenticator, введите код из четырех цифр, отображаемый на Surface Hub, и выберите **Подтвердить**. Затем потребуется ввести ПИН-код или использовать отпечаток пальца, чтобы завершить вход. 
 
-    ![снимок экрана подтверждения входа в приложении Microsoft Authenticator](images/approve-signin2.png)
+    ![снимок экрана "Утверждение" в Microsoft Authenticator.](images/approve-signin2.png)
 
 Теперь можно получить доступ ко всем файлам с помощью приложения OneDrive.

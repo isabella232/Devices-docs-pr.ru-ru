@@ -12,12 +12,12 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: a43566461ab6bbac8045326801617bd6f723316e
-ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
+ms.openlocfilehash: 14b4b5ee72ac92618a2906894840a51dd2229d42
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11708770"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911164"
 ---
 # <a name="whats-new-in-surface-dock-2"></a>Новые возможности в Surface Dock 2
 
@@ -52,7 +52,7 @@ Surface Dock 2 предназначен для упрощения ИТ-упра�
 
 ## <a name="surface-dock-2-components"></a>Компоненты Surface Dock 2
 
-![Компоненты Surface Dock 2](./images/surface-dock2.png)
+![Компоненты Surface Dock 2.](./images/surface-dock2.png)
  
 ### <a name="usb"></a>USB
 

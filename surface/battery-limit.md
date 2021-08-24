@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 manager: laurawi
 audience: itpro
 ms.date: 1/15/2021
-ms.openlocfilehash: 07e4131321387a410e5abd5b7039128942b1b339
-ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
+ms.openlocfilehash: 52e43a1ac14f89f5671b6fad8fc2e1ef49480470
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11708800"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911844"
 ---
 # <a name="battery-limit-setting"></a>Параметр ограничения батареи
 
@@ -36,21 +36,21 @@ ms.locfileid: "11708800"
 
 Параметр Surface UEFI Battery Limit можно настроить, загрузив в Surface UEFI **(Power + Vol Up** при включаемом устройстве). Выберите **конфигурацию загрузки,** а затем, в **статье Расширенные параметры**, чтобы включить режим ограничения **батареи** **в .**  
 
-![Дополнительные параметры ограничения батареи](images/enable-bl.png)
+![Параметры Ограничения заряда батареи.](images/enable-bl.png)
 
 ## <a name="enabling-battery-limit-on-surface-go-and-surface-go-2"></a>Включение ограничения заряда батареи в Surface Go и Surface Go 2
 
 Параметр Surface Battery Limit можно настроить, загрузив в Surface UEFI **(Power + Vol Up** при включаемом устройстве). Выберите **конфигурацию загрузки,** а затем в режиме **киоска**переместим ползунок вправо, чтобы установить ограничение батареи на **включено.**  
 
-![Ограничение батареи в режиме киоска в Surface Go](images/go-batterylimit.png)
+![Ограничение батареи в режиме киоска в Surface Go.](images/go-batterylimit.png)
 
 ## <a name="enabling-battery-limit-in-surface-uefi-surface-pro-3"></a>Включение ограничения батареи в Surface UEFI (Surface Pro 3)
 
 Параметр Surface UEFI Battery Limit можно настроить, загрузив в Surface UEFI **(Power + Vol Up** при включаемом устройстве). Выберите **режим киоска,** выберите **ограничение батареи,** а затем выберите **Включено**.
 
-![Снимок экрана расширенных параметров](images/enable-bl-sp3.png)
+![Снимок экрана расширенных параметров.](images/enable-bl-sp3.png)
 
-![Дополнительные параметры](images/enable-bl-sp3-2.png)
+![Расширенные параметры.](images/enable-bl-sp3-2.png)
 
 ## <a name="enabling-battery-limit-using-surface-enterprise-management-mode-semm-or-surface-pro-3-firmware-powershell-scripts"></a>Включение ограничения батареи с помощью Enterprise режима управления surface (SEMM) или Surface Pro 3 скриптов powerShell прошивки
 
@@ -64,7 +64,7 @@ ms.locfileid: "11708800"
 
 Чтобы настроить режим ограничения батареи, установите параметр **Переопределения** киоска на странице Параметры конфигурации в SEMM (Surface Pro 4 и более поздней). ****
 
-![Снимок экрана расширенных параметров](images/semm-bl.png)
+![Снимок экрана расширенных параметров.](images/semm-bl.png)
 
 ### <a name="using-surface-uefi-manager-powershell-scripts"></a>Использование скриптов Surface UEFI Manager PowerShell
 

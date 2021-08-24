@@ -14,12 +14,12 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 7/30/2021
-ms.openlocfilehash: 935cec6eed15b7831bffafdc2078a9cadf2067e2
-ms.sourcegitcommit: 6a7f96a497c8749a5997972db139542563769101
+ms.openlocfilehash: 84a87342891dac2e4c0b0490458941c82fa0d018
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710583"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911614"
 ---
 # <a name="wake-on-lan-with-surface-dock-2"></a>Пробуждение по локальной сети с использованием Surface Dock 2
 
@@ -30,7 +30,7 @@ ms.locfileid: "11710583"
 Устройства должны иметь проводное подключение к Surface Dock 2 и оставаться подключенными к ac Power.
 
 > [!div class="mx-imgBorder"]
-> ![Surface Dock 2](images/surface-dock2-angled.png)
+> ![Surface Dock 2.](images/surface-dock2-angled.png)
 
 > [!NOTE]
 > Устройства для пробуждения, подключенные к Surface Dock 2, не требуют использования режима управления Enterprise Surface (SEMM) или включения параметров политики UEFI.

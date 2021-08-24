@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 08/17/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 947d73febb41562b44d5ecb102511be314ad987e
-ms.sourcegitcommit: 3810c4310e9f5b5b9ad7b4584eaede2789ccd946
+ms.openlocfilehash: 95b3e9dceab3304da627807cf28a9e37a5af10d4
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "11902979"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911454"
 ---
 # <a name="first-time-setup-for-surface-hub"></a>Установка первого Surface Hub
 
@@ -30,31 +30,31 @@ ms.locfileid: "11902979"
 
 1. По умолчанию Кортана позволяет направлять вас по этому процессу. Чтобы отключить Кортана помощь, выберите значок микрофона.
 
-    :::image type="content" source="images/hub-setup-cortana.png" alt-text="Кортана позволяет направлять вас по процессу":::
+    :::image type="content" source="images/hub-setup-cortana.png" alt-text="Кортана позволяет направлять вас по этому процессу.":::
 
 2. **Выберите регион.** Подтвердим область автоматического обнаружения и выберите **Да.**
 
-    :::image type="content" source="images/hub-setup-region.png" alt-text="Выберите регион":::
+    :::image type="content" source="images/hub-setup-region.png" alt-text="Выберите регион.":::
 
 3. **Подтверждение макета клавиатуры.** Выберите **Да**.
 
-    :::image type="content" source="images/hub-setup-keyboard.png" alt-text="Подтверждение макета клавиатуры":::
+    :::image type="content" source="images/hub-setup-keyboard.png" alt-text="Подтверждение макета клавиатуры.":::
 
 4. Чтобы добавить вторую клавиатуру, выберите **макет Добавить**. В противном случае выберите **Пропустить**.
 
-    :::image type="content" source="images/hub-setup-2keyboard.png" alt-text="Добавление второй клавиатуры":::
+    :::image type="content" source="images/hub-setup-2keyboard.png" alt-text="Добавьте вторую клавиатуру.":::
 
 5. **Подключение в сеть.** Если кабель Ethernet уже подключен, Surface Hub автоматически подключается к сети. Кроме того, можно подключиться к беспроводной сети. **Примечание:** Невозможно подключиться к беспроводной сети в горячих точках (пленных порталах), которые перенаправляют запросы на вход на веб-сайт поставщика. Выберите **Далее**.
 
-    :::image type="content" source="images/hub-setup-network.png" alt-text="Подключение к сети":::
+    :::image type="content" source="images/hub-setup-network.png" alt-text="Подключение в сеть.":::
 
 6. **Принятие Windows 10 лицензионного соглашения.** Выберите **Accept**.
 
-    :::image type="content" source="images/hub-setup-license.png" alt-text="Принятие Windows 10 лицензионного соглашения":::
+    :::image type="content" source="images/hub-setup-license.png" alt-text="Принятие Windows 10 лицензионного соглашения.":::
 
 7. **Введите сведения о** учетной записи устройства с помощью либо адреса upN (user@contoso.com), либо доменного адреса на уровне (CONTOSO\user). Используйте формат, который соответствует вашей среде, и введите пароль.
 
-    :::image type="content" source="images/hub-setup-device-account.png" alt-text="Ввод данных учетной записи устройства":::
+    :::image type="content" source="images/hub-setup-device-account.png" alt-text="Введите сведения об учетной записи устройства.":::
 
 | Среда                                              | Требуемый формат учетной записи устройства |
 | -------------------------------------------------------- | ---------------------------------- |
@@ -69,11 +69,11 @@ ms.locfileid: "11902979"
 
 9. Surface Hub автоматически обнаруживает сведения Exchange сервера и SIP-адресов из домена, введенного на предыдущем шаге. Или при необходимости укайте Exchange адрес сервера и выберите **Далее**.
 
-    :::image type="content" source="images/hub-setup-exchange.png" alt-text="Exchange сервера и SIP-адрес":::
+    :::image type="content" source="images/hub-setup-exchange.png" alt-text="Exchange сервера и SIP-адрес.":::
 
 10. **Назови это устройство.** Введите имя устройства или используйте предложенное. **Выберите Далее**.
 
-    :::image type="content" source="images/hub-setup-name.png" alt-text="Имя этого устройства":::
+    :::image type="content" source="images/hub-setup-name.png" alt-text="Назови это устройство.":::
 
 - Имя **Friendly отображается** в левом нижнем углу Surface Hub 2S и отображается при проеции на устройство.
 - Имя **устройства определяет** устройство, когда он связан с Active Directory или Azure Active Directory, а также при регистрации устройства в Intune.
@@ -90,7 +90,7 @@ ms.locfileid: "11902979"
 
 1. **Выберите тип учетной записи администратора.** Выберите один из следующих вариантов: службы домена Active Directory, Azure Active Directory или локальный администратор.
 
-    :::image type="content" source="images/hub-setup-join.png" alt-text="Выберите тип учетной записи администратора":::
+    :::image type="content" source="images/hub-setup-join.png" alt-text="Выберите тип учетной записи администратора.":::
 
 ### <a name="active-directory-domain-services"></a>Доменные службы Active Directory
 
@@ -103,7 +103,7 @@ ms.locfileid: "11902979"
 1. Если вы собираетесь управлять Surface Hub с помощью Microsoft Intune или поставщика MDM, выберите Microsoft Azure Active Directory **.**
 2. Выберите Далее и впишитесь с учетной записью работы или школы. При перенаправлении необходимо проверить подлинность с помощью страницы входа в организацию и при желании предоставить дополнительные учетные данные. В противном случае введите пароль и выберите **Далее.**
 
-    :::image type="content" source="images/hub-setup-signin.png" alt-text="Вход с учетной записью работы или школы":::
+    :::image type="content" source="images/hub-setup-signin.png" alt-text="Вход с учетной записью работы или школы.":::
 
 >[!NOTE]
 >Чтобы настроить, кто может использовать приложение Параметры для администрирования surface Hubs, убедитесь, что автоматическая регистрация intune включена в клиенте перед присоединением устройства к Azure AD. Затем политики intune можно использовать для настройки не глобальных администраторов [в](surface-hub-2s-nonglobal-admin.md) Surface Hubs.
@@ -112,13 +112,13 @@ ms.locfileid: "11902979"
 
 - Введите имя пользователя и запоминающийся пароль для локального администратора. (Если [](surface-hub-2s-recover-reset.md) вы забыли локальный пароль администратора, вам потребуется восстановить устройство и повторить процесс установки.)  
 
-    :::image type="content" source="images/hub-setup-local-admin.png" alt-text="Ввод запоминаемого пароля для учетной записи локального администратора":::
+    :::image type="content" source="images/hub-setup-local-admin.png" alt-text="Введите запоминающийся пароль для учетной записи местного администратора.":::
 
 ### <a name="choose-privacy-settings-for-your-device"></a>Выбор параметров конфиденциальности для устройства
 
 - Выберите из доступных параметров конфиденциальности и выберите **Accept.**
 
-    :::image type="content" source="images/hub-setup-privacy.png" alt-text="Выбор параметров конфиденциальности":::
+    :::image type="content" source="images/hub-setup-privacy.png" alt-text="Выберите параметры конфиденциальности.":::
 
 ### <a name="use-provisioning-packages"></a>Использование пакетов подготовки
 
