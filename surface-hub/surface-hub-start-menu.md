@@ -10,12 +10,12 @@ ms.date: 08/15/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: cf9649b8d1f747722064793fbbde70116bc7f424
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: ff08b8ab6e59af77761fb365980af261c47030a9
+ms.sourcegitcommit: 09a47921ec2e565a92ba2baa61e181d218706ad9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576849"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "11921828"
 ---
 # <a name="configure-surface-hub-start-menu"></a>Настройка меню "Пуск" Surface Hub
 
@@ -31,14 +31,14 @@ ms.locfileid: "11576849"
 
     -или-
 
-- настроить требуемое меню "Пуск" на компьютере (закрепив только приложения, доступные на Surface Hub), а затем [экспортировать макет](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout#export-the-start-layout).
+- настроить требуемое меню "Пуск" на компьютере (закрепив только приложения, доступные на Surface Hub), а затем [экспортировать макет](/windows/configuration/customize-and-export-start-layout#export-the-start-layout).
 
 >[!TIP]
 >Чтобы добавить плитку с веб-ссылкой на меню "Пуск" компьютера, перейдите по ссылке в Microsoft Edge, выберите `...` в верхнем правом углу и выберите **Закрепить эту страницу в меню "Пуск"**. Пример отображения ссылок в XML-файле см. в разделе [Макет начального экрана, содержащий ссылку Microsoft Edge](#edge).
 
-Чтобы изменить XML-файл по умолчанию или экспортированный макет, изучите раздел [XML-файл макета меню "Пуск"](https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop). Существует несколько [различий между макетом меню "Пуск" на настольном ПК и Surface Hub.](#differences)
+Чтобы изменить XML-файл по умолчанию или экспортированный макет, изучите раздел [XML-файл макета меню "Пуск"](/windows/configuration/start-layout-xml-desktop). Существует несколько [различий между макетом меню "Пуск" на настольном ПК и Surface Hub.](#differences)
 
-После создания XML-файла макета меню "Пуск" [создайте политику MDM для применения макета.](https://docs.microsoft.com/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)
+После создания XML-файла макета меню "Пуск" [создайте политику MDM для применения макета.](/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)
 
 <span id="differences" />
 
@@ -46,7 +46,7 @@ ms.locfileid: "11576849"
 
 Существует несколько основных различий между меню "Пуск" для Surface Hub и компьютера Windows 10.
 
-- Вы не можете использовать **DesktopApplicationTile** (в XML макета начните, так как Windows настольные приложения (Win32) не поддерживаются https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) Surface Hub.
+- Вы не можете использовать **[DesktopApplicationTile](/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile)** в XML макета начните, так как Windows настольных приложений (Win32) не поддерживаются Surface Hub.
 - Нельзя использовать XML-файл макета меню "Пуск" для настройки панели задач или экрана приветствия для Surface Hub.  
 - Политика макета "Начните" должна быть назначена только устройствам, а не пользователям.
 - Параметр OMA-URI, который используется в политике, `./Device/Vendor/MSFT/Policy/Config/Start/StartLayout`
@@ -66,8 +66,8 @@ ms.locfileid: "11576849"
     <StartLayoutCollection>
       <defaultlayout:StartLayout GroupCellWidth="8" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout">
         <start:Group Name="" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-        <start:Tile
-            AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+        <start:DesktopApplicationTile
+            DesktopApplicationID="MSEdge"
             Size="2x2"
             Row="0"
             Column="0"/>
@@ -141,8 +141,8 @@ ms.locfileid: "11576849"
               Size="2x2"
               Row="0"
               Column="4"/>
-    <start:Tile
-              AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+          <start:DesktopApplicationTile
+              DesktopApplicationID="MSEdge"
               Size="2x2"
               Row="2"
               Column="0"/>
