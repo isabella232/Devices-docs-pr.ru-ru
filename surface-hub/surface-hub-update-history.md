@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: a611653c557f7df4d8029502f82a09f0000e5756
-ms.sourcegitcommit: 0d1a23988be4da24a8d42b391e1c60e624465fa4
+ms.openlocfilehash: 40bca71dcc740cf95b79bd9386c5217a1772c9e1
+ms.sourcegitcommit: 1d540913ca2d49ef5b8fa3c6dffe9131a197b270
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "11710388"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "11936772"
 ---
 # <a name="surface-hub-update-history"></a>Журнал обновлений Surface Hub
 
@@ -29,6 +29,16 @@ Windows 10 была разработана как служба, а это озн
 Обратитесь на страницу["Surface Hub важные](https://support.microsoft.com/products/surface-devices/surface-hub)сведения" для связанных тем текущих и прошлых выпусков, которые могут потребовать вашего внимания.
 
 ## <a name="windows-10-team-2020-update-20h2"></a>Windows 10 для совместной работы обновления 2020 (20H2)
+
+<details>
+<summary>1 сентября 2021 г. — обновление для Team на основе KB5005101* (сборка ОС 19042.1202)</summary>
+
+Это обновление для Surface Hub содержит улучшения качества и исправления безопасности. Основные обновления для Surface Hub, описанные в Windows 10 для совместной работы [2020 обновление 1](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/windows-10-team-2020-update-1-released-to-all-surface-hubs/ba-p/2653503), а также включают в себя ниже:
+
+* Повышает надежность некоторых сценариев настройки учетной записи устройств при использовании локального Exchange почтового ящика.
+
+Обратитесь к руководству [по Surface Hub администрирования](/surface-hub/) для включения и отключения функций и служб устройства. *[KB5005101](https://support.microsoft.com/help/5005101)
+</details>
 
 <details>
 <summary>29 июля 2021 г. — обновление для Team на основе KB5004296* (сборка ОС 19042.1151)</summary>
