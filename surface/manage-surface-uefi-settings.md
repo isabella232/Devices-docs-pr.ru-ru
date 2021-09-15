@@ -13,12 +13,12 @@ ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
 ms.date: 04/13/2021
-ms.openlocfilehash: 60ace1e2b9344faeb9f130a56686ffac4643fc37
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.openlocfilehash: e21febfcbcbf139aea832c51e354759c0a49f896
+ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911324"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "11939540"
 ---
 # <a name="manage-surface-uefi-settings"></a>Управление параметрами UEFI Surface
 
@@ -96,7 +96,7 @@ ms.locfileid: "11911324"
 
 *Рисунок 3. Добавление пароля для защиты параметров UEFI Surface*
 
-На странице Security также можно изменить конфигурацию безопасной загрузки устройства Surface. Технология безопасной загрузки предотвращает загрузку несанкционированного кода на устройстве Surface, обеспечивая защиту от заражений буткитами и руткитами. Вы можете отключить безопасную загрузку, чтобы на устройстве Surface можно было загружать сторонние операционные системы и загрузочные носители. Можно также настроить secure Boot для работы с сторонними сертификатами, как показано на рисунке 4. Дополнительные сведения о [безопасной загрузке](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview) см. в библиотеке TechNet.
+На странице Security также можно изменить конфигурацию безопасной загрузки устройства Surface. Технология безопасной загрузки предотвращает загрузку несанкционированного кода на устройстве Surface, обеспечивая защиту от заражений буткитами и руткитами. Вы можете отключить безопасную загрузку, чтобы на устройстве Surface можно было загружать сторонние операционные системы и загрузочные носители. Можно также настроить secure Boot для работы с сторонними сертификатами, как показано на рисунке 4. Дополнительные дополнительные информации см. в [см. в ленте Secure Boot.](/windows-hardware/design/device-experiences/oem-secure-boot)
 
 ![Настройка безопасной загрузки.](images/manage-surface-uefi-fig3.png "Configure Secure Boot")
 

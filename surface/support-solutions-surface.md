@@ -1,5 +1,5 @@
 ---
-title: Основные решения по поддержке для устройств Surface в масштабах предприятия
+title: Топ-решения поддержки устройств Surface на предприятии
 description: Узнайте об основных решениях распространенных проблем при использовании устройств Surface на предприятии.
 ms.assetid: CF58F74D-8077-48C3-981E-FCFDCA34B34A
 ms.reviewer: ''
@@ -15,61 +15,60 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 661d84adbff40ff6cd89fb0c71c60fa795f4236c
-ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
+ms.openlocfilehash: 65cd0822f9419d2a2b678c598681891539855c9f
+ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10893081"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "11939530"
 ---
-# Основные решения поддержки для устройств Surface
+# <a name="top-support-solutions-for-surface-devices"></a>Основные решения поддержки для устройств Surface
 
 > [!Note]
-> **Домашние пользователи**: Эта статья предназначена только для ИТ-специалистов и агентов технической поддержки и применима только к устройствам Surface. Если вам нужна помощь в решении проблемы с вашим домашним устройством, посетите страницу [Справка по устройствам Surface](https://support.microsoft.com/products/surface-devices).
+> **Домашние**пользователи. Эта статья предназначена только для использования ИТ-специалистами и агентами технической поддержки и применяется только к устройствам Surface. Если вы ищете помощь с проблемой с домашним устройством, см. в справке [Surface Devices.](https://support.microsoft.com/products/surface-devices)
 
-Ниже приведены рекомендации по устранению распространенных проблем, возникающих при использовании устройств Surface на предприятии. Если в этой статье не указана ваша неполадка, [обратитесь в службу поддержки Surface](contact-surface-support.md?tabs=online).
+Это решения службы поддержки Майкрософт для решения распространенных проблем, которые могут возникнуть при использовании устройств Surface на предприятии. Если проблема не указана здесь, обратитесь [в службу поддержки Surface.](contact-surface-support.md?tabs=online)
 
-##  <a name="surface-drivers-and-firmware"></a>Драйверы и микропрограммы Surface
+## <a name="surface-drivers-and-firmware"></a>Драйверы surface и прошивка
 
 Корпорация Майкрософт регулярно выпускает обновления и решения для устройств Surface. Необходимо вовремя обновлять устройства Surface, чтобы они могли получать будущие обновления, в том числе обновления безопасности.
 
 - [Журнал обновлений Surface](https://www.microsoft.com/surface/support/install-update-activate/surface-update-history)
 - [Установка обновлений Surface и Windows](https://www.microsoft.com/surface/support/performance-and-maintenance/install-software-updates-for-surface?os=windows-10&=undefined)
-- [Загрузка драйверов и встроенного по для Surface](https://support.microsoft.com/help/4023482)
-- [Развертывание последних версий встроенного ПО и драйверов для устройств Surface](https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices)
-- [Управление обновлениями драйверов и встроенного ПО Surface](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
-- [Управление обновлениями драйвера Surface в Configuration Manager](https://support.microsoft.com/help/4098906)
+- [Скачайте драйверы и прошивку для Surface](https://support.microsoft.com/help/4023482)
+- [Управление обновлениями драйверов и встроенного ПО Surface, а также их развертывание](manage-surface-driver-and-firmware-updates.md)
+- [Управление обновлениями драйвера Surface в диспетчере конфигурации](https://support.microsoft.com/help/4098906)
 
-##  <a name="surface-dock-issues"></a>Проблемы с подкреплением Surface
+## <a name="surface-dock-issues"></a>Проблемы с доком Surface
 
 - [Устранение неполадок с Surface Dock и стыковочными узлами Surface](https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations)
-- [Устранение неполадок с подключением к рабочей области на втором экране](https://support.microsoft.com/help/4023496)
-- [Обновление встроенного по Surface Dock (Майкрософт)](https://docs.microsoft.com/surface/surface-dock-updater)
+- [Устранение неполадок, соединяющих Surface со вторым экраном](https://support.microsoft.com/help/4023496)
+- [Обновление прошивки Microsoft Surface Dock 1](surface-dock-firmware-update.md)
 
-##  <a name="device-cover-or-keyboard-issues"></a>Проблемы с обложкой или клавиатурой устройств
+## <a name="device-cover-or-keyboard-issues"></a>Проблемы с обложкой или клавиатурой устройств
 
 - [Устранение неполадок с обложкой Type Cover или клавиатурой Surface](https://www.microsoft.com/surface/support/hardware-and-drivers/troubleshoot-surface-keyboards)
 
-##  <a name="screen-cracked-or-scratched-issues"></a>Трещины или царапины на экране
+## <a name="screen-cracked-or-scratched-issues"></a>Трещины или царапины на экране
 
-- [Обратитесь в службу поддержки Surface](contact-surface-support.md?tabs=online)
+- [Обращение в службу поддержки Surface](contact-surface-support.md?tabs=online)
 
-##  <a name="surface-power-or-battery-issues"></a>Проблемы с питанием и батареей Surface
+## <a name="surface-power-or-battery-issues"></a>Проблемы с питанием поверхности или аккумулятором
 
-- [Способ оплаты Surface (сведения о Surfaces)](https://support.microsoft.com/help/4023496)
-- [Батарея Surface не взимается или поверхность не работает на батарее](https://support.microsoft.com/help/4023536)
+- [Как зарядить Surface (сведения о PSU surface)](https://support.microsoft.com/help/4023496)
+- [Батарея Surface не будет заряжаться или Surface не будет работать на батарее](https://support.microsoft.com/help/4023536)
 - [Планшет Surface не включается или не выходит из спящего режима](https://support.microsoft.com/help/4023537)
 - [Оптимизация использования батареи Surface](https://support.microsoft.com/help/4483194)
 
-##  <a name="reset-device"></a>Сброс устройства
+## <a name="reset-device"></a>Устройство сброса
 
-- [Создание и использование диска восстановления USB для Surface](https://support.microsoft.com/help/4023512)
-- [Вопросы и ответы: защита данных при отправке рабочей области на обслуживание](https://support.microsoft.com/help/4023508)
-- [Microsoft Surface Data Eraser](https://docs.microsoft.com/surface/microsoft-surface-data-eraser)
+- [Создание и использование накопителя восстановления USB для Surface](https://support.microsoft.com/help/4023512)
+- [FaQ. Защита данных при отправке surface для службы](https://support.microsoft.com/help/4023508)
+- [Microsoft Surface Data Eraser](microsoft-surface-data-eraser.md)
 
-##  <a name="deployment-issues"></a>Проблемы при развертывании
+## <a name="deployment-issues"></a>Проблемы с развертыванием
 
-- [DISK0 не найден при развертывании Windows на Surface Pro моделей 1796 или Surface.](https://support.microsoft.com/help/4046108)
-- [Модель Surface Pro 1796 и Surface (1 ТБАЙТ) отображаются два устройства](https://support.microsoft.com/help/4046105)
-- [Справочная информация о SKU системы](https://docs.microsoft.com/surface/surface-system-sku-reference)
+- [DISK0 не найден при развертывании Windows в Surface Pro Model 1796 или Surface Laptop](https://support.microsoft.com/help/4046108)
+- [Surface Pro Модель 1796 и Surface Laptop 1TB отображают два диска](https://support.microsoft.com/help/4046105)
+- [Ссылка на SKU системы](surface-system-sku-reference.md)
 
