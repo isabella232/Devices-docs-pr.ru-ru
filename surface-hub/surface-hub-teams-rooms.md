@@ -11,16 +11,16 @@ ms.date: 08/20/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 2d8bd08c150c1665365ae21bc87fd3485b8c69a8
-ms.sourcegitcommit: b5e7ea8118b848846cf1fb332ed7bf96c4583d20
+ms.openlocfilehash: 05160bc2c1b77843b8ad832452501d7b065a8bc6
+ms.sourcegitcommit: 38bde856b6091097d25745f6d080edebf72e3e17
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "11909979"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "12030824"
 ---
 # <a name="microsoft-teams-rooms-on-surface-hub"></a>Комнаты Microsoft Teams на Surface Hub
 
-Комнаты Teams для Surface Hub автоматически заменит текущее приложение [Surface Hub Teams](hub-teams-app.md) в рамках 4-недельного глобального проката начиная с 23 сентября. Демонстрация нового Teams, доступная в настоящее время в качестве предварительного просмотра с помощью программы Windows Insider, см. в Комнаты Teams на [Surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/introducing-teams-rooms-on-surface-hub/ba-p/2118373).
+Комнаты Teams для Surface Hub автоматически заменит текущее приложение [Surface Hub Teams](hub-teams-app.md) в рамках 4-недельного глобального проката начиная с 30 сентября. Демонстрация нового Teams, доступная в настоящее время в качестве предварительного просмотра с помощью программы Windows Insider, см. в Комнаты Teams на [Surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/introducing-teams-rooms-on-surface-hub/ba-p/2118373).
 
 ## <a name="whats-new"></a>Что нового?
 
