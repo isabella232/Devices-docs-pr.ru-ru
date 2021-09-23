@@ -1,5 +1,5 @@
 ---
-title: Выбор ОПЕРАЦИОННОй системы Surface
+title: Выбор ОС Surface
 description: В этой статье описывается, как коммерческие клиенты могут приобретать новые устройства Surface Windows 10 или Windows 11.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -16,8 +16,8 @@ ms.openlocfilehash: cc6a9cebf389885a3a21f594a30653dccbd22a8a
 ms.sourcegitcommit: 389b24de1759d60339f4fe9257d1bdd68267bc39
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034375"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12036980"
 ---
 # <a name="os-choice-for-new-surface-devices"></a>Выбор ОС для новых устройств Surface
  
