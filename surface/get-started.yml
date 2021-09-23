@@ -15,22 +15,22 @@ metadata:
   ms.sourcegitcommit: 389b24de1759d60339f4fe9257d1bdd68267bc39
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/22/2021
-  ms.locfileid: "12034338"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "12037143"
 landingContent:
 - title: Устройства Surface
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Выбор ОПЕРАЦИОННОй системы Surface
+    - text: Выбор ОС Surface
       url: surface-os-choice.md
     - text: Surface Pro 8 для бизнеса
       url: https://www.microsoft.com/surface/business/surface-pro-8
     - text: Surface Pro X для бизнеса
       url: https://www.microsoft.com/surface/business/surface-pro-x
-    - text: Surface Laptop Студия для бизнеса
+    - text: Surface Laptop Studio для бизнеса
       url: https://www.microsoft.com/surface/business/surface-laptop-studio
-    - text: Surface Go 3 для бизнеса
+    - text: Surface Go 3 для Business
       url: https://www.microsoft.com/surface/business/surface-go-3
     - text: Surface Laptop Перейти к бизнесу
       url: https://www.microsoft.com/surface/business/surface-laptop-go
@@ -130,7 +130,7 @@ landingContent:
   linkLists:
   - linkListType: learn
     links:
-    - text: Обращение в службу поддержки Surface
+    - text: Обратитесь в службу поддержки Surface
       url: contact-surface-support.md
     - text: Планы гарантий и защиты Surface для бизнеса
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
