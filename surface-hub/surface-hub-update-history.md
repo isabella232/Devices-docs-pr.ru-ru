@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 40bca71dcc740cf95b79bd9386c5217a1772c9e1
-ms.sourcegitcommit: 1d540913ca2d49ef5b8fa3c6dffe9131a197b270
+ms.openlocfilehash: 57acd34fc83c3f186d3ed4683e6e0f191b9291be
+ms.sourcegitcommit: e330b89272eee8d4ef1836bacd2c91084ad3a36b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "11936772"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "12057666"
 ---
 # <a name="surface-hub-update-history"></a>Журнал обновлений Surface Hub
 
@@ -29,6 +29,24 @@ Windows 10 была разработана как служба, а это озн
 Обратитесь на страницу["Surface Hub важные](https://support.microsoft.com/products/surface-devices/surface-hub)сведения" для связанных тем текущих и прошлых выпусков, которые могут потребовать вашего внимания.
 
 ## <a name="windows-10-team-2020-update-20h2"></a>Windows 10 для совместной работы обновления 2020 (20H2)
+
+<details>
+<summary>30 сентября 2021 г. — KB5004196, KB5004198 и KB5004199</summary>
+
+Эти обновления Surface Hub клиент Teams, агент центра администрирования Teams и агент управляемых комнат собраний. Основные функции описаны [в Teams Room на Surface Hub](surface-hub-teams-rooms.md).
+ 
+Обратитесь к руководству [по Surface Hub администрирования](/surface-hub/) для включения и отключения функций и служб устройства.
+</details>
+
+<details>
+<summary>30 сентября 2021 г. — обновление для Team на основе KB5005611* (сборка ОС 19042.1266)</summary>
+
+Это обновление для Surface Hub содержит улучшения качества и исправления безопасности. Основные обновления для Surface Hub, которые еще не описаны в Windows 10 [обновления,](https://support.microsoft.com/help/4581839/windows-10-update-history)включают:
+
+* Заменяет режим собрания 1 (Teams/SfB доступен) на функциональность Mode 2 (только Teams); можно использовать любой параметр, но оба имеют одинаковый эффект.
+
+Обратитесь к руководству [по Surface Hub администрирования](/surface-hub/) для включения и отключения функций и служб устройства. *[KB5005611](https://support.microsoft.com/help/5005611)
+</details>
 
 <details>
 <summary>1 сентября 2021 г. — обновление для Team на основе KB5005101* (сборка ОС 19042.1202)</summary>

@@ -8,15 +8,15 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 08/20/2021
-ms.reviewer: ''
+ms.reviewer: dpandre
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 05160bc2c1b77843b8ad832452501d7b065a8bc6
-ms.sourcegitcommit: 38bde856b6091097d25745f6d080edebf72e3e17
+ms.openlocfilehash: 3cb72801f58424ed8c515e57cbd25799f3a9d709
+ms.sourcegitcommit: e330b89272eee8d4ef1836bacd2c91084ad3a36b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/21/2021
-ms.locfileid: "12030824"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "12057686"
 ---
 # <a name="microsoft-teams-rooms-on-surface-hub"></a>Комнаты Microsoft Teams на Surface Hub
 
@@ -29,7 +29,7 @@ ms.locfileid: "12030824"
 - Комнаты Teams на Surface Hub может работать бок о бок с другими приложениями или свести к минимуму.
 - Администраторы могут настраивать такие функции, как "Координированная встреча" и "Регистрация близости" для Surface Hub. [XML-файлы](/microsoftteams/rooms/surface-hub-manage-config#teams-configuration-file-syntax) поддерживаются и будут перенесены в новую модель параметров.
 - Новые параметры QoS и сетевые требования. Дополнительные дополнительные возможности см. в см. в перенастройке сети и качестве обслуживания [для Microsoft Teams Room на Surface Hub.](surface-hub-teams-rooms-networking.md)
-- Изменения Teams режиме, заменив Skype для бизнеса как приложение для совместной работы и собраний по умолчанию. Подробнее см. в [Microsoft Teams для Surface Hub.](/MicrosoftTeams/teams-surface-hub)
+- Если по умолчанию еще нет, Teams может быть назначено в **** качестве приложения по умолчанию для собраний и вызовов в Параметры  >  **Surface Hub**  >  **вызовов & аудио**. Дополнительные информацию о режимах собраний и их настройке с помощью политики MDM см. в Surface Hub с [поставщиком MDM.](manage-settings-with-mdm-for-surface-hub.md#changing-default-business-communications-platform)
 
 ## <a name="in-meeting-experience"></a>В ходе собраний
 
@@ -61,3 +61,27 @@ ms.locfileid: "12030824"
 
 - **Teams Центр администрирования.** Teams Центр администрирования предоставляет всеобъемлющую платформу самообуправления для мониторинга и управления Комнаты Teams на Teams устройствах. Teams Центр администрирования будет доступен для Комнаты Microsoft Teams без дополнительных затрат.
 - **Комнаты Microsoft Teams управляемой службы.** Управляемый [Комнаты Microsoft Teams](/microsoftteams/rooms/microsoft-teams-rooms-premium) — это облачная служба управления ИТ и мониторинга, которая поддерживает Комнаты Microsoft Teams устройства и периферийные устройства в курсе и активно отслеживается, поддерживая среду, оптимизированую для отличного пользовательского интерфейса.
+
+
+## <a name="support-for-teams-rooms-in-government-community-cloud-high-gcc-h"></a>Поддержка Комнаты Teams в облако сообщества для государственных организаций High (GCC-H)
+
+Когда Комнаты Teams для Surface Hub в этом году будет опубликовано публичное обновление клиента до версии 1.4.00.25354, чтобы он мог подключаться к клиенту GCC-H, а затем автоматически обновляться:
+
+ - Подтвердите, что в вашем концентраторе установленО накопительное обновление KB5005611 или более позднее Windows накопительное обновление
+ - Используйте [Teams_Uninstall_win32.ppkg](https://download.microsoft.com/download/8/3/F/83FD5089-D14E-42E3-AF7C-6FC36F80D347/Teams_Uninstall_Win32.ppkg) для удаления текущих Комнаты Teams в Surface Hub версии
+ - Перезапуск устройства
+ - Установите [Teams_win32.ppkg](https://download.microsoft.com/download/8/3/F/83FD5089-D14E-42E3-AF7C-6FC36F80D347/Teams_Win32.ppkg) для установки версии 1.4.00.25354
+ - Снова перезапустите устройство
+
+Подробные действия:
+
+1. Сохраните оба пакета подготовка к корневому диску USB.
+2.  Вставьте USB-накопитель в Surface Hub.
+3.  В Surface Hub откройте меню , выберите все приложения и выберите Параметры.
+4.  Предоставление учетных данных администратора концентратора при запросе.
+5.  Перейдите **Surface Hub**  >  **управления устройствами**Добавьте или  >  **удалите**пакет подготовка, а затем **выберите Добавить пакет**.
+6.  В **статье Выбор пакета**выберите пакет Teams_Uninstall_win32.ppkg, а затем перезапустите Surface Hub.
+7.  В Surface Hub откройте меню , выберите все приложения и выберите Параметры.
+8.  Предоставление учетных данных администратора концентратора при запросе.
+9.  Перейдите **Surface Hub**  >  **управления устройствами**Добавьте или  >  **удалите**пакет подготовка, а затем **выберите Добавить пакет**.
+10. В **статье Выбор пакета**выберите пакет Teams_win32.ppkg, а затем перезапустите Surface Hub.
