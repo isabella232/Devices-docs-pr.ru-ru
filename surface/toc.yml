@@ -14,12 +14,16 @@
               href: windows-virtual-desktop-surface.md
             - name: Технический обзор процессоров Surface Laptop 4
               href: surface-laptop-processors.md
-            - name: Технический обзор GPU Surface Book 3
+            - name: Технический обзор Surface Headphones 2+
+              href: surface-headphones.md
+        - name: Профессиональная графика Surface
+          items:
+            - name: Обзор графики Surface Laptop Studio
+              href: surface-laptop-studio-graphics.md
+            - name: Технический обзор Surface Book 3
               href: surface-book-GPU-overview.md
             - name: Технический обзор Surface Book 3 Quadro RTX 3000
               href: surface-book-quadro.md
-            - name: Технический обзор Surface Headphones 2+
-              href: surface-headphones.md
         - name: Заказ устройств Surface
           items:
             - name: Выбор ОС Surface
