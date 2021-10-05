@@ -1,5 +1,5 @@
 ---
-title: Surface Laptop Обзор студийной графики
+title: Обзор графики Surface Laptop Studio
 description: В этой статье выделены GPUs в Surface Lapto Studio.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,14 +12,14 @@ ms.date: 10/04/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 80221d49f10f1a2fdc57723d1b6122333e1b192a
-ms.sourcegitcommit: 247e97d3ed856fa9814e95db7e04e5d4054f6bb5
+ms.openlocfilehash: d5c7690cd90427bb7a9a6b2b452e527aa1b608dd
+ms.sourcegitcommit: 7ffb1d2d86a713a3ed4a7faa8ac82cfc49dbd55e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/05/2021
-ms.locfileid: "12067731"
+ms.locfileid: "12068450"
 ---
-# <a name="surface-laptop-studio-graphics-overview"></a>Surface Laptop Обзор студийной графики
+# <a name="surface-laptop-studio-graphics-overview"></a>Обзор графики Surface Laptop Studio
 
 Surface Laptop Studio интегрирует полностью модернизированные возможности вычислений и графики в новый универсальный форм-фактор. Под руководством четырехъядерного 11-го поколения Intel® Core™ i7 и NVIDIA® RTX™ A2000 или NVIDIA® GeForce RTX™ 3050 Ti, Surface Laptop Studio предоставляет архитекторам, инженерам, ученым данных и творческим специалистам вычислительные возможности для их наилучшей работы.
  
@@ -54,7 +54,7 @@ GeForce RTX 3050 Ti включает:
 - Ультрабыстрая трехмерная визуализация благодаря ускорениям RTX и DLSS в таких приложениях, как Blender или Autodesk® Maya. 
 - Игры следующего поколения с графикой RTX и высокой производительностью благодаря DLSS, а также сверхнизкой задержке с помощью NVIDIA Reflex.
 
-## <a name="nvidia-rtx-a2000-laptop-gpu"></a>GPU ноутбука NVIDIA RTX A2000
+### <a name="nvidia-rtx-a2000-laptop-gpu"></a>GPU ноутбука NVIDIA RTX A2000
 
 NVIDIA RTX A2000 предлагает профессиональные возможности визуализации графики и ИИ для требовательных профессиональных процессов, включая производство и дизайн продуктов, моделирование мультимедиа и развлечений, анимирование и визуализацию, архитектуру, проектирование и строительство.
  

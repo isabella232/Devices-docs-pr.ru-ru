@@ -11,12 +11,12 @@ ms.date: 08/20/2021
 ms.reviewer: dpandre
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 3cb72801f58424ed8c515e57cbd25799f3a9d709
-ms.sourcegitcommit: e330b89272eee8d4ef1836bacd2c91084ad3a36b
+ms.openlocfilehash: a2f382b1120ba071e7dc709f1464ddb1e5118d28
+ms.sourcegitcommit: 7ffb1d2d86a713a3ed4a7faa8ac82cfc49dbd55e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "12057686"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "12068469"
 ---
 # <a name="microsoft-teams-rooms-on-surface-hub"></a>Комнаты Microsoft Teams на Surface Hub
 
@@ -29,7 +29,7 @@ ms.locfileid: "12057686"
 - Комнаты Teams на Surface Hub может работать бок о бок с другими приложениями или свести к минимуму.
 - Администраторы могут настраивать такие функции, как "Координированная встреча" и "Регистрация близости" для Surface Hub. [XML-файлы](/microsoftteams/rooms/surface-hub-manage-config#teams-configuration-file-syntax) поддерживаются и будут перенесены в новую модель параметров.
 - Новые параметры QoS и сетевые требования. Дополнительные дополнительные возможности см. в см. в перенастройке сети и качестве обслуживания [для Microsoft Teams Room на Surface Hub.](surface-hub-teams-rooms-networking.md)
-- Если по умолчанию еще нет, Teams может быть назначено в **** качестве приложения по умолчанию для собраний и вызовов в Параметры  >  **Surface Hub**  >  **вызовов & аудио**. Дополнительные информацию о режимах собраний и их настройке с помощью политики MDM см. в Surface Hub с [поставщиком MDM.](manage-settings-with-mdm-for-surface-hub.md#changing-default-business-communications-platform)
+- Если по умолчанию еще нет, Teams может быть назначено в **** качестве приложения по умолчанию для собраний и вызовов в Параметры  >  **Surface Hub**  >  **вызовов & аудио**. Дополнительные информацию о режимах собраний и их настройке с помощью политики MDM см. в Surface Hub с [поставщиком MDM.](manage-settings-with-mdm-for-surface-hub.md#changing-default-app-for-meetings--calls)
 
 ## <a name="in-meeting-experience"></a>В ходе собраний
 
