@@ -1,6 +1,6 @@
 ---
 title: Microsoft Surface Data Eraser (Surface)
-description: Узнайте, как надежно стирать данные с устройств Surface с помощью средства Microsoft Surface Data Eraser.
+description: Средство для стирки данных microsoft Surface позволяет безопасно стирать данные с устройств Surface.
 ms.assetid: 8DD3F9FE-5458-4467-BE26-E9200341CF10
 ms.reviewer: hachidan
 manager: laurawi
@@ -14,25 +14,26 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 05/17/2021
-ms.openlocfilehash: 292c20c9999d9f226f28daed87069c78b43fd4bf
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.date: 10/06/2021
+ms.openlocfilehash: e97bc719fb93b0a0b74c7ca51b68cbc59efa9f4a
+ms.sourcegitcommit: fe54b2bab8b205302438426b86c0aa8269ff82ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911194"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "12081227"
 ---
 # <a name="microsoft-surface-data-eraser"></a>Microsoft Surface Data Eraser
 
 Узнайте, как надежно стирать данные с устройств Surface с помощью средства Microsoft Surface Data Eraser.
 
-[Microsoft Surface Data Eraser](https://www.microsoft.com/download/details.aspx?id=46703) — это средство, которое загружается с USB-накопителя и позволяет выполнять надежное удаление всех данных с совместимого устройства Surface. Для использования USB-накопителя с Microsoft Surface Data Eraser требуется только возможность загрузки с USB. Благодаря простому графическому интерфейсу пользоваться им очень просто; прибегать к командной строке не требуется. Создать USB-носитель легко можно с помощью предусмотренного в средстве мастера, который называется Microsoft Surface Data Eraser Wrapper. Подробнее о возможностях и методиках стирания данных, которые корпорация Майкрософт использует при сервисном обслуживании Surface, см. в статье [Защита персональных данных в случае отправки планшета Surface в сервисный центр](https://www.microsoft.com/surface/support/security-sign-in-and-accounts/data-wiping-policy).
+[Microsoft Surface Data Eraser](https://www.microsoft.com/download/details.aspx?id=46703) — это средство, которое загружается с USB-накопителя и позволяет выполнять надежное удаление всех данных с совместимого устройства Surface. Для использования USB-накопителя с Microsoft Surface Data Eraser требуется только возможность загрузки с USB. Подробнее о возможностях и методиках стирания данных, которые корпорация Майкрософт использует при сервисном обслуживании Surface, см. в статье [Защита персональных данных в случае отправки планшета Surface в сервисный центр](https://www.microsoft.com/surface/support/security-sign-in-and-accounts/data-wiping-policy).
 
 >[!IMPORTANT]
 >Средство Microsoft Surface Data Eraser использует команду в формате NVM Express (NVMe) для удаления данных согласно разрешениям в [специальном издании NIST 800-88 (редакция 1](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf).
 
 В число совместимых устройств Surface входят:
 
+- Surface Laptop Studio
 - Surface Book (все выпуски)
 - Surface Go (все выпуски)
 - Surface Pro X (все выпуски)
@@ -46,67 +47,53 @@ ms.locfileid: "11911194"
 Используйте Microsoft Surface Data Eraser при:
 
 - Подготовка устройства Surface, которое будет отправлено на ремонт.
-- Вывод устройства Surface из эксплуатации. корпоративного или организационного использования.
-- Перенацелить устройство Surface для использования в новом отделе или для использования новым пользователем.
-- Стандартная практика при выполнении повторной визуализации для устройств, используемых с конфиденциальными данными.
-
->[!NOTE]
->Устройства сторонних производителей, устройства Surface под управлением Windows RT (включая Surface и Surface 2), а также Surface Pro несовместимы с Microsoft Surface Data Eraser.
-
->[!NOTE]
->Поскольку для запуска Microsoft Surface Data Eraser требуется возможность загрузки с USB, если устройство не настроено для загрузки с USB или если ему не удается загрузиться либо пройти POST, Microsoft Surface Data Eraser работать не будет.
-
->[!NOTE]
->Очистка поверхностных данных Surface Studio и Surface Studio 2 может занять до 6 минут для загрузки в WinPE до стирки диска.
+- Вывод устройства Surface из корпоративного или организационного использования.
+- Перепрофилирование устройства Surface для нового пользователя.
+- Reimage devices containing sensitive data.
 
 ## <a name="how-to-create-a-microsoft-surface-data-eraser-usb-stick"></a>Как создать USB-накопитель с Microsoft Surface Data Eraser
 
-Чтобы создать USB-накопитель с Microsoft Surface Data Eraser, сначала скачайте программу установки Microsoft Surface Data Eraser из Центра загрузки Майкрософт, перейдя по ссылке в начале этой статьи. Для *создания* USB-накопителя устройство Surface не требуется. После скачивания установочного файла на свой компьютер сделайте следующее, чтобы установить средство создания Microsoft Surface Data Eraser:
+Установив средство создания Microsoft Surface Data Eraser, сделайте следующее, чтобы создать USB-накопитель с Microsoft Surface Data Eraser. Прежде чем приступить, убедитесь, что к компьютеру подключен накопитель стандарта USB3.0 емкостью 4ГБ или более.
 
 1. Запустите DataEraserSetup.msi файл установки, загруженный из [Центра загрузки Майкрософт.](https://www.microsoft.com/download/details.aspx?id=46703)
 
-2. Установите флажок, чтобы принять условия лицензионного соглашения, а затем нажмите кнопку **Install**.
+2. Выберите **Сборку,** чтобы приступить к процессу создания USB-интерфейса Microsoft Surface Data Eraser, как показано на рисунке 1.
 
-3. Нажмите кнопку **Finish**, чтобы закрыть окно установки Microsoft Surface Data Eraser.
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig1-build.png" alt-text="Рисунок 1. Начало средства для стирки данных на поверхности Майкрософт":::<br>
+  *Рисунок 1. Начало средства для стирки данных на поверхности Майкрософт*
 
-Установив средство создания Microsoft Surface Data Eraser, сделайте следующее, чтобы создать USB-накопитель с Microsoft Surface Data Eraser. Прежде чем приступить, убедитесь, что к компьютеру подключен накопитель стандарта USB3.0 емкостью 4ГБ или более.
+3. Выберите **Продолжить,** чтобы подтвердить, что у вас подключен USB-накопитель не менее 4 ГБ, как показано на рисунке 2.
+   
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig2-continue.png" alt-text="Рисунок 2. Подтверждение подключения USB-накопителя не менее 4 ГБ":::<br>
+   *Рисунок 2. Подтверждение подключения USB-накопителя не менее 4 ГБ*
 
-1. Запустите Microsoft Surface Data Eraser из меню "Пуск" или с начального экрана.
+4. Выберите x64 (только для устройств **2021+)** для устройств 2021 или более новых, выберите **x64** для 2020 г. и более старые устройства или **ARM64** для Surface Pro X на странице **Выбор** архитектуры, как показано на рисунке-3. Выберите пункт **Продолжить**.
 
-2. Нажмите кнопку **Build**, чтобы запустить процесс создания USB-накопителя с Microsoft Surface Data Eraser.
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig3-select.png" alt-text="Рисунок 3. Выбор архитектуры устройств":::
 
-3. Нажмите кнопку **Start**, чтобы подтвердить, что к компьютеру подключен USB-накопитель емкостью 4ГБ или более, как показано на рисунке1.
+5. Выберите usb-накопитель по вашему выбору на странице выбор большого **** пальца **USB,** как показано на рисунке 4, а затем выберите Начните процесс создания USB. Выбранный накопитель будет отформатирован, и все имеющиеся на нем данные будут потеряны.
 
-   ![Запустите средство для стирки данных microsoft Surface.](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig4-start.png" alt-text="Рисунок 4. Выбор большого пальца USB>":::<br>
+   *Рисунок 4. Выбор USB-накопителя*
 
-   *Рис. 1. Запуск средства Microsoft Surface Data Eraser*
-4. Выберите **x64 для** большинства устройств Surface или **ARM64** для Surface Pro X на странице **Выбор** архитектуры, как показано на рисунке 2. Выберите пункт **Продолжить**.
-
-    ![Выбор архитектуры.](images/dataeraser-arch.png "Architecture Selection")<br>
-       *Рисунок 2. Выбор архитектуры устройств*
-
-5. Выберите USB-накопитель по вашему выбору на странице **выбор большого** **** пальца USB, как показано на рисунке 3, а затем нажмите кнопку Начните процесс создания USB. Выбранный накопитель будет отформатирован, и все имеющиеся на нем данные будут потеряны.
-
-   >[!TIP]
+  >[!TIP]
    >Если кнопка "Пуск" недоступна, убедитесь, что емкость накопителя составляет не менее 4ГБ.
-  
-   ![Выбор большого пальца USB.](images/dataeraser-usb-selection.png "USB thumb drive selection")
 
-   *Рисунок 3. Выбор USB-накопителя*
+6. В процессе создания USB-накопитель будет отформатирован, и на него будут скопированы все двоичные файлы. Выбор **успеха**.
 
-6. В процессе создания USB-накопитель будет отформатирован, и на него будут скопированы все двоичные файлы. Нажмите кнопку **Success**.
+7. После появления экрана **Congratulations** накопитель можно извлечь. Теперь этот накопитель можно вставить в устройство Surface, загрузить с него устройство и стереть данные на устройстве. Выберите **Полный,** чтобы завершить процесс создания USB, как показано на рисунке 5.
 
-7. После появления экрана **Congratulations** накопитель можно извлечь. Теперь этот накопитель можно вставить в устройство Surface, загрузить с него устройство и стереть данные на устройстве. Щелкните **Полное,** чтобы завершить процесс создания USB, как показано на рисунке 4.
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig5-complete.png" alt-text="Завершите средство для стирки данных microsoft Surface":::<br>
+   *Рисунок 5. Завершение процесса создания USB-накопителя с Microsoft Surface Data Eraser*
 
-   ![Процесс создания USB-интерфейса Surface Data Eraser.](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
-
-   *Рисунок 4. Завершение процесса создания USB-накопителя с Microsoft Surface Data Eraser*
-
-8. Щелкните **X**, чтобы закрыть Microsoft Surface Data Eraser.
+8. Выберите **X,** чтобы закрыть ластик Microsoft Surface Data.
 
 ## <a name="how-to-use-a-microsoft-surface-data-eraser-usb-stick"></a>Как пользоваться USB-накопителем с Microsoft Surface Data Eraser
 
 После создания USB-накопителя с Microsoft Surface Data Eraser загрузить поддерживаемое устройство Surface с USB-накопителя можно следующим образом:
+
+>[!NOTE]
+>Очистка поверхностных данных Surface Studio и Surface Studio 2 может занять до 6 минут для загрузки в WinPE до стирки диска.
 
 1. Вставьте загрузочный USB-накопитель с Microsoft Surface Data Eraser в поддерживаемое устройство Surface.
 
@@ -141,7 +128,7 @@ ms.locfileid: "11911194"
 
 7. Если вы нажали **Y** на шаге6, появится дополнительное диалоговое окно для подтверждения вашего выбора, поскольку стирание данных— процесс необратимый.
 
-8. Нажмите кнопку **Yes**, чтобы продолжить стирание данных с устройства Surface.
+8. Выберите **Да** для продолжения стирки данных на устройстве Surface.
 
    >[!TIP]
    >При запуске Surface Data Eraser на USB-накопителе Surface Data Eraser создается файл журнала в папке **SurfaceDataEraserLogs**.
@@ -149,6 +136,14 @@ ms.locfileid: "11911194"
 ## <a name="changes-and-updates"></a>Изменения и обновления
 
 Корпорация Майкрософт периодически обновляет Microsoft Surface Data Eraser. Далее представлены сведения об изменениях в каждой версии.
+
+### <a name="3421390"></a>3.42.139.0
+
+*Дата выпуска: 5 октября 2021 г.*
+
+Эта версия стиратель Surface Data включает в себя:
+
+- Отдельный параметр на 2021 год и поддержка новых устройств, включая Surface Laptop Studio, Surface Pro 8 и Surface Go 3.
 
 ### <a name="3391390"></a>3.39.139.0
 
@@ -170,7 +165,7 @@ ms.locfileid: "11911194"
 
 *Дата выпуска: 9 сентября 2020 г.*
 
-Эта версия eraser Surface Data включает исправления ошибок и добавляет поддержку для: 
+Эта версия eraser Surface Data включает исправления ошибок и добавляет поддержку для:
 
 - Архитектура повторного проектирования, чтобы уменьшить необходимость обновления с новыми выпусками продукта
 - Уведомление, доступное для новых обновлений инструмента
