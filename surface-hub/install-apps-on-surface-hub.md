@@ -13,12 +13,12 @@ ms.topic: article
 ms.date: 07/16/2021
 ms.localizationpriority: medium
 audience: ITPro
-ms.openlocfilehash: a8c11406c7786e379999ff32f482815d6b180b24
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 3c4869f8aadbd849a608b5a35bf0e76ff3e78508
+ms.sourcegitcommit: 38e98402ab1380521029e792a83c00391997e1fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676663"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "12089331"
 ---
 # <a name="install-apps-on-your-microsoft-surface-hub"></a>Установка приложений на устройстве Microsoft Surface Hub
 
@@ -73,11 +73,11 @@ ms.locfileid: "11676663"
 - Файл *закодированной* лицензии (если для распространения приложения используется MDM)
 - Любые необходимые файлы зависимостей
 
-Дополнительные сведения см. в разделе [Загрузка приложения с автономной лицензией](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app).
+Дополнительные сведения см. в разделе [Загрузка приложения с автономной лицензией](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app).
 
 ### <a name="install-offline-licensed-apps-via-provisioning-package"></a>Установка приложений с автономной лицензией с помощью пакета подготовка
 
-Можно вручную установить приложения с автономной лицензией, загруженные из Магазина для бизнеса, на нескольких устройствах Surface Hub с использованием пакетов подготовки. Используйте конструктор образов и конфигураций Windows (ICD) для создания пакета подготовки, содержащего пакет приложения и файл *незакодированной* лицензии, который вы скачали из Магазина для бизнеса. Дополнительные сведения см. в разделе [Создание пакетов подготовки](provisioning-packages-for-certificates-surface-hub.md).
+Можно вручную установить приложения с автономной лицензией, загруженные из Магазина для бизнеса, на нескольких устройствах Surface Hub с использованием пакетов подготовки. Используйте конструктор образов и конфигураций Windows (ICD) для создания пакета подготовки, содержащего пакет приложения и файл *незакодированной* лицензии, который вы скачали из Магазина для бизнеса. Дополнительные сведения см. в [пункте Создание](provisioning-packages-for-certificates-surface-hub.md)пакетов для Surface Hub.
 
 ### <a name="supported-mdm-provider"></a>Поддерживаемая служба MDM
 
@@ -118,7 +118,7 @@ ms.locfileid: "11676663"
 
 #### <a name="create-provisioning-package"></a>Создание пакета подготовка
 
-Используйте Visual Studio для создания пакета приложений для вашего приложения UWP, подписанного с использованием тестового сертификата. Затем используйте конструктор образов и конфигураций Windows (ICD) для создания пакета подготовки, содержащего пакет приложения. Дополнительные сведения см. в разделе [Создание пакетов подготовки](provisioning-packages-for-certificates-surface-hub.md).
+Используйте Visual Studio для создания пакета приложений для вашего приложения UWP, подписанного с использованием тестового сертификата. Затем используйте конструктор образов и конфигураций Windows (ICD) для создания пакета подготовки, содержащего пакет приложения. Дополнительные сведения см. в [пункте Создание](provisioning-packages-for-certificates-surface-hub.md)пакетов для Surface Hub.
 
 ## <a name="submit-apps-to-the-microsoft-store"></a>Отправка приложений в Microsoft Store
 

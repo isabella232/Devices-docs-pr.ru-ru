@@ -11,16 +11,16 @@ audience: Admin
 ms.topic: article
 ms.date: 01/27/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 2c4e6c5a20bac85429e7e464bbf4d19788be2af7
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 059398152dff86dffe901264fe3503e080df0cf5
+ms.sourcegitcommit: 38e98402ab1380521029e792a83c00391997e1fd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576889"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "12089341"
 ---
 # <a name="microsoft-teams-certified-audio-and-video-accessories-for-surface-hub-2s"></a>Сертифицированные для Microsoft Teams аудио и видео аксессуары для Surface Hub 2S
 
-Surface Hub модели 2S 50 и 85 [](https://www.microsoft.com/microsoft-teams/across-devices/devices/product?deviceid=31) " сертифицированы для Microsoft Teams 2,3 м в качестве устройства all-in-one в пространствах лужи и совместной работы. Семейство Surface Hub 2S можно распространить на более крупные комнаты со следующими тестированными и утвержденными Microsoft Teams сертифицированными периферийными устройствами, которые в сочетании с Surface Hub 2S 50 и 85".
+Surface Hub модели 2S 50 и 85 [](https://www.microsoft.com/microsoft-teams/across-devices/devices/category/teams-rooms/20) " сертифицированы для Microsoft Teams 2,3 м в качестве устройства all-in-one в пространствах лужи и совместной работы. Семейство Surface Hub 2S можно распространить на более крупные комнаты со следующими тестированными и утвержденными Microsoft Teams сертифицированными периферийными устройствами, которые в сочетании с Surface Hub 2S 50 и 85".
 
 ## <a name="microsoft-teams-certified-audio-accessories"></a>Microsoft Teams аудио аксессуары 
 
