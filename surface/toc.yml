@@ -8,6 +8,8 @@
       items:
         - name: Технические обзоры
           items:
+            - name: Выбор ОС Surface
+              href: surface-os-choice.md
             - name: Обзор безопасности Surface
               href: surface-security.md
             - name: Виртуальный рабочий стол Azure на Surface

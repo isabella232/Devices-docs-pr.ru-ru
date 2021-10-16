@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 60a0956cf83b466587197ca401dc41b95952be03
-  ms.sourcegitcommit: 389b24de1759d60339f4fe9257d1bdd68267bc39
+  ms.openlocfilehash: 1d46bea76ffb0641aeee1c51f88dcbb1ff2d56bf
+  ms.sourcegitcommit: 74ab91db82ae611854c070ddb14daa28acf7051f
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "12037143"
+  ms.lasthandoff: 10/16/2021
+  ms.locfileid: "12096447"
 landingContent:
 - title: Устройства Surface
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Какие устройства Surface можно обновить до Windows 11?
+      url: https://support.microsoft.com/surface/which-surface-devices-can-be-upgraded-to-windows-11-76c3c125-82e0-4d1e-9550-12ed09f9058e
     - text: Выбор ОС Surface
       url: surface-os-choice.md
     - text: Surface Pro 8 для бизнеса
@@ -36,14 +38,14 @@ landingContent:
       url: https://www.microsoft.com/surface/business/surface-laptop-go
     - text: Все продукты семейства Surface
       url: https://www.microsoft.com/surface/business
-- title: Get started
+- title: Начало работы
   linkLists:
   - linkListType: get-started
     links:
-    - text: Технический обзор процессоров Surface Laptop 4
+    - text: Обзор графики Surface Laptop Studio
+      url: surface-laptop-studio-graphics.md
+    - text: Surface Laptop обзор 4 процессоров
       url: surface-laptop-processors.md
-    - text: Технический обзор Surface Headphones 2+
-      url: surface-headphones.md
     - text: Виртуальный рабочий стол Azure на Surface
       url: windows-virtual-desktop-surface.md
     - text: Удаленные решения для работы с Surface
@@ -88,6 +90,8 @@ landingContent:
       url: support-solutions-surface.md
     - text: Жизненный цикл драйвера Surface и встроенного ПО для устройств под управлением Windows
       url: surface-driver-firmware-lifecycle-support.md
+    - text: Операционные системы с поддержкой Surface
+      url: https://support.microsoft.com/surface/surface-supported-operating-systems-9559cc3c-7a38-31b6-d9fb-571435e84cd1
 - title: Изучение руководства по безопасности
   linkLists:
   - linkListType: how-to-guide
@@ -130,7 +134,7 @@ landingContent:
   linkLists:
   - linkListType: learn
     links:
-    - text: Обратитесь в службу поддержки Surface
+    - text: Обращение в службу поддержки Surface
       url: contact-surface-support.md
     - text: Планы гарантий и защиты Surface для бизнеса
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
