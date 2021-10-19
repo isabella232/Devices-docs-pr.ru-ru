@@ -12,12 +12,12 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 65bd923cdfceecf51e59a9cf66b5b4eff44a8374
-ms.sourcegitcommit: 74ab91db82ae611854c070ddb14daa28acf7051f
+ms.openlocfilehash: 9c923b22d3921e71f1be127f2ba31c361b4ad1d7
+ms.sourcegitcommit: 4012a9499f658799197fedc7ea1a0c35d6127ed5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "12096467"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12101216"
 ---
 # <a name="whats-new-in-surface-dock-2"></a>Новые возможности в Surface Dock 2
 
@@ -67,7 +67,9 @@ Surface Dock 2 предназначен для упрощения ИТ-упра�
     
 - Двойное 4K@60hz. Поддерживает до двух дисплеев на следующих устройствах:
 
+  - Surface Laptop Studio
   - Surface Book 3
+  - Surface Pro 8
   - Surface Pro 7
   - Surface Pro 7+
   - Surface Pro X
@@ -82,6 +84,7 @@ Surface Dock 2 предназначен для упрощения ИТ-упра�
   - Surface Laptop (1-й gen)
   - Surface Go
   - Surface Go 2
+  - Surface Go 3
   - Surface Book 2
 
 ### <a name="ethernet"></a>Ethernet

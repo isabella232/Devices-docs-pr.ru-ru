@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/25/2021
+ms.date: 10/19/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: fcd7df80615e406a1dab061b473ef7f3dbd065e1
-ms.sourcegitcommit: 38e98402ab1380521029e792a83c00391997e1fd
+ms.openlocfilehash: 3b9dbf0e4b7412967c3f2c68ddc10a6fccac8907
+ms.sourcegitcommit: 4012a9499f658799197fedc7ea1a0c35d6127ed5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "12089271"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12101226"
 ---
 # <a name="whats-new-in-windows-10-team-2020-update"></a>Новые возможности обновления Windows 10 для совместной работы 2020
 
@@ -45,12 +45,12 @@ Windows 10 для совместной работы обновления 2020 г
 
 ## <a name="browser-and-pen"></a>Браузер и перо
 
-- **Поддержка нового Microsoft Edge**. Microsoft Edge была восстановлена для оптимальной производительности, безопасности и конфиденциальности совместимости. Дополнительные дополнительные возможности см. в [сайте Install and configure the new Microsoft Edge на Surface Hub.](surface-hub-install-chromium-edge.md)
+- **Новые Microsoft Edge по умолчанию.** Microsoft Edge была восстановлена для оптимальной производительности, безопасности и конфиденциальности совместимости. Подробнее см. в [Microsoft Edge в Surface Hub.](surface-hub-install-chromium-edge.md)
 - **Двухъядерный inking на Surface Hub 2S**.   Пользователи могут отбелить доску и работать бок о бок на Surface Hub 2S с помощью двух Surface Hub 2 ручки. Обновления прошивки, необходимые для внося двойной пера, будут выпущены с последующим обновлением.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams  
 
-- **Microsoft Teams установлен по умолчанию.**        Microsoft Teams включено в качестве приложения для собраний, вызовов и совместной работы на новых устройствах Surface Hub, которые можно изменить или настроить с помощью MDM или непосредственно Surface Hub с помощью Параметры приложения. Дополнительные сведения см. [в Microsoft Teams обзор развертывания.](/microsoftteams/deploy-overview)
+- **Microsoft Teams установлен по умолчанию.**        Microsoft Teams включено в качестве приложения для собраний, вызовов и совместной работы на новых устройствах Surface Hub, которые можно изменить или настроить с помощью MDM или непосредственно Surface Hub с помощью Параметры приложения. Дополнительные информации см. в [[Развертывание Microsoft Teams.](/MicrosoftTeams/teams-surface-hub)
 - **Поддержка близости Присоединиться к Microsoft Teams**.  Proximity Join позволяет пользователям принимать запланированные Microsoft Teams вызовы в соседнем Surface Hub с помощью ноутбука или телефона или плавно перебирать в ходе выполнения собрания в соседний Surface Hub. Windows 10 для совместной работы 2020 обновление добавляет поддержку управления мобильными устройствами (MDM) для настройки proximity Join. Дополнительные дополнительные информации см. в. 
 
   - [Microsoft Teams блог](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-devices-for-shared-spaces-july-and-august-update/ba-p/1604833). 
