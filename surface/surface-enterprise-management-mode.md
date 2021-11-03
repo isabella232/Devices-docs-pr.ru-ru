@@ -13,13 +13,13 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 04/16/2021
-ms.openlocfilehash: 8e30234e72b6533da3d36ca38188c7e199beeeac
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.date: 10/25/2021
+ms.openlocfilehash: 127f9303751417ad4c24442ba0a5e177fc338475
+ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11910994"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12154064"
 ---
 # <a name="microsoft-surface-enterprise-management-mode"></a>Режим Enterprise Microsoft Surface
 
@@ -31,7 +31,7 @@ Microsoft Surface Enterprise (SEMM) — это функция устройств
 SeMM также использует сертификат для защиты конфигурации от несанкционированного изменения или удаления. Чтобы перенести Surface Hub 2S на Windows 10 Pro или Windows Enterprise, требуется SEMM.
 
 >[!NOTE]
->SEMM доступен только на устройствах с прошивки Surface UEFI. Это включает большинство других устройств Surface, включая Surface Pro 7+, Surface Pro X, Surface Hub 2S, Surface Laptop 4 коммерческих SKUs с процессором Intel, Surface Laptop 4 коммерческих SKUs с процессором AMD, Surface Laptop 3 коммерческих SKUs с процессором Intel и Surface Laptop Go. SEMM не поддерживается на 15-Surface Laptop 3 SKU с процессором AMD (доступен только как розничный SKU).
+>SEMM доступен только на устройствах с прошивки Surface UEFI. Это включает большинство других устройств Surface, включая Surface Pro 8, Surface Pro X, Surface Laptop Studio, Surface Hub 2S, Surface Laptop 4 коммерческих SKUs с процессором Intel, Surface Laptop 4 коммерческих SKUs с процессором AMD, Surface Laptop 3 коммерческих skUs с процессором Intel и Surface Laptop Go. SEMM не поддерживается на 15-Surface Laptop 3 SKU с процессором AMD (доступен только как розничный SKU).
 
 Когда устройства Surface настроены SEMM и защищены сертификатом SEMM, они считаются *зарегистрированными в* SEMM. После удаления сертификата SEMM и возврата пользователю устройства управления настройками UEFI устройство Surface ** считается незавершенным в SEMM.
 
@@ -40,9 +40,6 @@ SeMM также использует сертификат для защиты к
 - Автономный инструмент SEMM — конфигуратор Microsoft Surface UEFI — описан в этой статье.
 
 - Интеграция с Microsoft Endpoint Configuration Manager. Сведения см. в [Microsoft Endpoint Configuration Manager для управления устройствами с ПОМОЩЬЮ SEMM.](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
-
-> [!NOTE]
-> SEMM поддерживается Surface Pro X только через диспетчер UEFI. Вы можете скачать UEFI Manager из [Surface Tools для ИТ.](https://www.microsoft.com/download/details.aspx?id=46703) Дополнительные сведения можно получить в области развертывания, управления и [обслуживания Surface Pro X.](surface-pro-arm-app-management.md)
 
 ## <a name="microsoft-surface-uefi-configurator"></a>Конфигуратор Microsoft Surface UEFI
 
@@ -71,6 +68,9 @@ SeMM также использует сертификат для защиты к
 ### <a name="download-microsoft-surface-uefi-configurator"></a>Скачайте настраиватель Microsoft Surface UEFI
 
 Вы можете скачать конфигуратор Microsoft Surface UEFI со страницы [Surface Tools для ИТ](https://www.microsoft.com/download/details.aspx?id=46703) в Центре загрузки Майкрософт.
+
+- Для устройств Intel/AMD скачайте: **SurfaceUEFI_Configurator_v2.94.139.0_x64.msi**
+- Для ARM устройств скачайте: **SurfaceUEFI_Configurator_v2.94.139.0_x86.msi.**
 
 ### <a name="configuration-package"></a>Пакет конфигурации
 
@@ -172,7 +172,7 @@ SeMM также использует сертификат для защиты к
 >[!NOTE]
 >Срок действия запроса на сброс истекает через два часа после создания.
 
-Пошаговой пошаговую пошаговую пошаговую отгрузка устройств Surface из [SEMM](https://technet.microsoft.com/itpro/surface/unenroll-surface-devices-from-semm)см. в этой части.
+Пошаговой пошаговую пошаговую пошаговую отгрузка устройств Surface из [SEMM](unenroll-surface-devices-from-semm.md)см. в этой части.
 
 ## <a name="surface-enterprise-management-mode-certificate-requirements"></a>Требования Enterprise режима управления surface
 
@@ -262,6 +262,12 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 Образцы PowerShell, которые создают пакет config для определенного типа устройств, также могут использоваться для создания пакета сброса, независимого от серийного номера. Если сертификат по-прежнему действителен, можно создать пакет сброса с помощью PowerShell для сброса SEMM.
 
 ## <a name="version-history"></a>История версии
+
+### <a name="version-2941390"></a>Версия 2.94.139.0
+
+Эта версия SEMM включает в себя:
+
+- Поддержка Surface Laptop Studio, Surface Pro 8 и Surface Go 3
 
 ### <a name="version-2831390"></a>Версия 2.83.139.0
 

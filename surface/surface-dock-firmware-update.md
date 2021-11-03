@@ -11,13 +11,13 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.date: 2/08/2021
-ms.openlocfilehash: 070139370fc8175a116cb2e2a329404af8ac09b9
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.date: 10/25/2021
+ms.openlocfilehash: ebdb6e5999eb3564a21d23e661fa75d90a32e698
+ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911154"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12154054"
 ---
 # <a name="surface-dock-1-firmware-update"></a>Обновление встроенного ПО для Surface Dock 1
 
@@ -30,6 +30,24 @@ ms.locfileid: "11911154"
 
 > [!IMPORTANT]
 > В этой статье содержатся технические инструкции для ИТ-администраторов. Если вы домашний пользователь, обратитесь к веб-сайту Поддержки Microsoft Как обновить прошивку [Surface Dock.](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock)   Инструкции на сайте поддержки такие же, как и общие шаги по установке ниже, но в этой статье приведены дополнительные сведения для мониторинга, проверки и развертывания обновления на нескольких устройствах в сети.
+
+## <a name="supported-devices"></a>Поддерживаемые устройства
+
+Обновление прошивки Surface Dock 1 поддерживается на следующих устройствах:
+
+- Surface Pro 3 и более поздней
+- Surface Pro X (все поколения)
+- Surface 3
+- Surface Book (все поколения)
+- Surface Laptop Studio
+- Surface Studio (все поколения)
+- Surface Laptop (все поколения)
+- Surface Laptop Go
+- Surface Go (все поколения)
+
+### <a name="minimum-os-requirement"></a>Минимальные требования к ОС
+
+- Windows 10 версии 1803 или более поздней версии
 
 ## <a name="install-surface-dock-1-firmware-update"></a>Установка обновления прошивки Surface Dock 1
 

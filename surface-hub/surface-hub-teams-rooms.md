@@ -11,16 +11,16 @@ ms.date: 08/20/2021
 ms.reviewer: dpandre
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: a2f382b1120ba071e7dc709f1464ddb1e5118d28
-ms.sourcegitcommit: 7ffb1d2d86a713a3ed4a7faa8ac82cfc49dbd55e
+ms.openlocfilehash: d5586e41a400c8e39c82aabf403db477f8af5c0e
+ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "12068469"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12154164"
 ---
 # <a name="microsoft-teams-rooms-on-surface-hub"></a>Комнаты Microsoft Teams на Surface Hub
 
-Комнаты Teams для Surface Hub автоматически заменит текущее приложение [Surface Hub Teams](hub-teams-app.md) в рамках 4-недельного глобального проката начиная с 30 сентября. Демонстрация нового Teams, доступная в настоящее время в качестве предварительного просмотра с помощью программы Windows Insider, см. в Комнаты Teams на [Surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/introducing-teams-rooms-on-surface-hub/ba-p/2118373).
+Комнаты Teams для Surface Hub автоматически заменил предыдущее приложение [Surface Hub Teams](hub-teams-app.md) при установке [KB5004196, KB5004198 и KB5004199](surface-hub-update-history.md).
 
 ## <a name="whats-new"></a>Что нового?
 
