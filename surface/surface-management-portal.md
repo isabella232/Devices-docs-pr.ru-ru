@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/28/2021
+ms.date: 11/02/2021
 ms.reviewer: hachinda
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: bba49151973423d269dfdcf8eb5039ed5e39787f
-ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
+ms.openlocfilehash: f3fcc6ddcda0cf8016e1ba9383da2b5be511c0f1
+ms.sourcegitcommit: 714a56ede92eb6b16878aef8fdf94f9d2bda7204
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12154181"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "12154381"
 ---
 # <a name="surface-management-portal-overview"></a>Обзор портала управления поверхностью
 
@@ -30,6 +30,8 @@ ms.locfileid: "12154181"
 Сведения о соблюдении требований к устройству, действиях поддержки и обеспечении гарантийного покрытия. Быстро см. состояние каждого устройства, которое по-прежнему находится в гарантии или истекающее в ближайшее время, и состояние активных запросов поддержки с поставщиками оборудования.
 
 Когда устройства Surface регистрируются для управления облаками и пользователи в первый раз включались в систему, информация с этих устройств Surface автоматически поступает на портал управления поверхностью, предоставляя вам единую области стекла для действий администратора устройств, определенных surface.
+
+См. также. [Известные проблемы ниже.](#known-issues) 
 
 ## <a name="get-started"></a>Начало работы
 
@@ -70,6 +72,10 @@ ms.locfileid: "12154181"
 ## <a name="try-for-free"></a>Попробовать бесплатно
 
 Портал управления поверхностью доступен клиентам, которые используют Microsoft Endpoint Manager и зарегистрировали устройства Surface через Intune. Если вы не в компании Intune, установите клиента Intune сегодня, посетив [Quickstart:](/mem/intune/fundamentals/free-trial-sign-up)Попробуйте Microsoft Intune бесплатно .
+
+## <a name="known-issues"></a>Известные проблемы
+
+- Портал может неправильно загружаться для небольшого числа клиентов. Надстройка активно изучает эту проблему. *2 ноября 2021 г.*
 
 ## <a name="learn-more"></a>Подробнее
 
