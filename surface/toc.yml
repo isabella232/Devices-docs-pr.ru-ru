@@ -56,6 +56,12 @@
           href: surface-system-sku-reference.md
     - name: Развертывание и управление
       items:
+        - name: Портал управления Surface
+          items:
+            - name: Обзор портала управления Surface
+              href: surface-management-portal.md
+            - name: Что такое портал управления Surface?
+              href: /mem/intune/fundamentals/surface-management-portal
         - name: Windows Autopilot
           items:
             - name: Windows Autopilot и устройства Surface
@@ -94,7 +100,7 @@
               items:
                 - name: Использование набора средств диагностики Surface для бизнеса в режиме компьютера
                   href: surface-diagnostic-toolkit-desktop-mode.md
-                - name: Запуск набора средств диагностики Surface для бизнеса с помощью команд
+                - name: Запуск консоли приложения командной строки с помощью средства диагностики Surface для бизнеса
                   href: surface-diagnostic-toolkit-command-line.md
             - name: Surface Data Eraser
               href: microsoft-surface-data-eraser.md
@@ -172,6 +178,8 @@
           href: contact-surface-support.md
     - name: Гарантия и обслуживание
       items:
+        - name: Жизненный цикл драйвера Surface и встроенного ПО для устройств под управлением Windows
+          href: surface-driver-firmware-lifecycle-support.md
         - name: Планы гарантий и защиты Surface для бизнеса
           href: 'https://www.microsoft.com/surface/business/warranty-service-offerings-and-support'
         - name: Условия
