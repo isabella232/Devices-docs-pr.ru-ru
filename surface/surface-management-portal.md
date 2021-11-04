@@ -12,12 +12,12 @@ ms.date: 11/02/2021
 ms.reviewer: hachinda
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: f3fcc6ddcda0cf8016e1ba9383da2b5be511c0f1
-ms.sourcegitcommit: 714a56ede92eb6b16878aef8fdf94f9d2bda7204
+ms.openlocfilehash: a131e663aadbd10be039cff777001383178f7fc1
+ms.sourcegitcommit: 16889d72b0af81dfe79267c41574c3774e81f178
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "12154381"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155177"
 ---
 # <a name="surface-management-portal-overview"></a>Обзор портала управления поверхностью
 
@@ -37,7 +37,7 @@ ms.locfileid: "12154381"
 
 Войдите в Microsoft Endpoint Manager, нажмите кнопку **Все службы,** а затем щелкните **Surface Management Portal**.
 
-:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="Начните портал управления поверхностью":::
+:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="Начните портал управления поверхностью":::
 
 ## <a name="monitor-surface-devices"></a>Монитор устройств Surface
 
@@ -52,7 +52,7 @@ ms.locfileid: "12154381"
 
 Выберите **отчет View,** чтобы просмотреть сведения о каждой категории сведений, предоставляя диагностические сведения, которые можно настроить и экспортировать.
 
-:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-view-report.png" alt-text="Получить сведения об устройстве Surface и просмотреть отчет":::
+:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-view-report.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-view-report.png" alt-text="Получить сведения об устройстве Surface и просмотреть отчет":::
 
 ## <a name="device-warranty-and-coverage"></a>Гарантия и покрытие устройств
 
@@ -67,7 +67,7 @@ ms.locfileid: "12154381"
 
 Портал управления поверхностью предоставляет полную видимость действий поддержки наряду со статусом каждого запроса.
 
-:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-support.png" alt-text="Сведения об активности службы поддержки, а также состояние каждого запроса.":::
+:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-support.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-support.png" alt-text="Сведения об активности службы поддержки, а также состояние каждого запроса.":::
 
 ## <a name="try-for-free"></a>Попробовать бесплатно
 
@@ -75,7 +75,7 @@ ms.locfileid: "12154381"
 
 ## <a name="known-issues"></a>Известные проблемы
 
-- Портал может неправильно загружаться для небольшого числа клиентов. Надстройка активно изучает эту проблему. *2 ноября 2021 г.*
+- Устранена проблема, из-за которую портал не был правильно загружен для небольшого числа клиентов. (3 ноября 2021 г.).
 
 ## <a name="learn-more"></a>Подробнее
 
