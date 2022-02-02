@@ -14,12 +14,12 @@ ms.audience: itpro
 ms.date: 07/21/2021
 ms.reviewer: scottmca
 manager: laurawi
-ms.openlocfilehash: 3cae417caab1249894ab10950be4ec457ed88932
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 6127685edb0c098235734439ffbffac8c2c508ca
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676393"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338452"
 ---
 # <a name="surface-device-compatibility-with-windows-10-long-term-servicing-channel-ltsc"></a>Совместимость устройств surface с Windows 10 Long-Term каналом обслуживания (LTSC)
 
@@ -28,11 +28,11 @@ ms.locfileid: "11676393"
 В отличие от параметра обслуживания SAC, ранее известного как параметры обслуживания Current Branch (CB) или Current Branch for Business (CBB), в Long-Term параметрах нельзя выбрать Long-Term канал обслуживания (LTS Windows 10 C). Чтобы использовать параметр обслуживания LTSC, необходимо установить отдельное Windows 10 Корпоративная, известное как Windows 10 Корпоративная LTSC, ранее известное как Windows 10 Корпоративная LTSB (long-term servicing Branch).
 
 >[!TIP]
->Последние сведения о LTSC см. в следующем часто задаваемом вопросе: следующий выпуск Windows 10 канала долгосрочного обслуживания [(LTSC).](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-next-windows-10-long-term-servicing-channel-ltsc-release/ba-p/2147232)
+>Последние сведения о LTSC см. в следующем часто задаваемом вопросе: следующий выпуск Windows 10 канала долгосрочного обслуживания [(LTSC](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-next-windows-10-long-term-servicing-channel-ltsc-release/ba-p/2147232)).
 
  Помимо предоставления расширенной модели обслуживания, Windows 10 Корпоративная LTSC также предоставляет среду с несколькими Windows удалены. Основные функции Surface, на которые влияет LTSC, включают:
 
-* Windows Обновления функций, включая такие улучшения, как:
+* Windows обновления функций, в том числе такие улучшения, как:
 
   *  Улучшения прямого отторжения и отторжения ладоней, предоставляемые в Windows 10 версии 1607 (также именуемой юбилейным обновлением)
   *  Улучшенная поддержка приложений с высоким уровнем DPI, предоставляемых в Windows 10 версии 1703 (также именуемой обновлением Creators)
@@ -48,7 +48,7 @@ ms.locfileid: "11676393"
 Параметр обслуживания LTSC предназначен для типов и сценариев устройств, где ключевым атрибутом являются функции или функции, которые никогда не изменяются. Примеры включают системы, которые обрабатывают питание или медицинское оборудование, или встроенные системы в киосках, такие как банкоматы или системы билетов в аэропорту.
 
 >[!NOTE]
->Общие сведения о Windows, включая LTSC, см. в обзоре [Windows как услуга.](/windows/deployment/update/waas-overview)
+>Общие сведения о Windows, включая LTSC, см. в [обзоре Windows как услуга](/windows/deployment/update/waas-overview).
 
 В качестве общего руководства устройства, которые соответствуют следующим критериям, считаются устройствами общего назначения и должны быть в паре с Windows 10 Pro или Windows 10 Корпоративная с помощью Semi-Annual канала обслуживания:
 
@@ -67,8 +67,8 @@ ms.locfileid: "11676393"
 * Замена устройств Surface (например, устройства, замененные по гарантии) может содержать тонкие вариации в компонентах оборудования, для которых требуются обновленные драйверы устройств и прошивка. Совместимость с этими обновлениями может потребовать установки более последней версии Windows 10 Корпоративная LTSC или Windows 10 Pro или Enterprise с параметром обслуживания SAC.
 
 >[!NOTE]
->Организации, которые стандартизют определенную версию Windows 10 Корпоративная LTSC, могут быть не в состоянии принять новые поколения оборудования Surface, такие как Surface Pro 7, Surface Pro X или Surface Laptop 3 без обновления более поздней версии Windows 10 Корпоративная LTSC или Windows 10 Pro или Enterprise. Дополнительные сведения можно получить в [faQ жизненного](/lifecycle/faq/windows#what-are-the-requirements-for-servicing-and-updating-the-windows-10-long-term-servicing-channel--ltsc--)цикла — Windows .
+>Организации, которые стандартизируйте конкретную версию Windows 10 Корпоративная LTSC, могут быть не в состоянии принять новые поколения оборудования Surface, такие как Surface Pro 8, Surface Pro X или Surface Laptop 4 без обновления более поздней версии Windows 10 Корпоративная LTSC или Windows 10 Pro или Enterprise. Дополнительные сведения можно получить в faQ жизненного цикла [— Windows](/lifecycle/faq/windows#what-are-the-requirements-for-servicing-and-updating-the-windows-10-long-term-servicing-channel--ltsc--).
 
 Устройства Surface, Windows 10 Корпоративная выпуск LTSC, не получат новых функций. Во многих случаях эти функции запрашиваются клиентами для улучшения использования и возможностей оборудования Surface. Например, новые улучшения для приложений с высоким уровнем DPI в Windows 10 версии 1703. Клиенты, которые используют устройства Surface в конфигурации LTSC, не увидят улучшений до тех пор, пока не обновятся до нового выпуска Windows 10 Корпоративная LTSC или обновления до версии Windows 10 с поддержкой параметра обслуживания SAC.
 
-Устройства можно изменить с Windows 10 Корпоративная LTSC на более недавнюю версию Windows 10 Корпоративная с поддержкой параметра обслуживания SAC без потери пользовательских данных при выполнении установки обновления. Вы также можете выполнить установку обновления на нескольких устройствах, используя шаблоны последовательности задач обновления, доступные в microsoft Deployment набор средств (MDT) и Microsoft Endpoint Configuration Manager. Дополнительные сведения см. в [сайте Upgrade Surface devices to Windows 10 microsoft Deployment набор средств.](upgrade-surface-devices-to-windows-10-with-mdt.md)
+Устройства можно изменить с Windows 10 Корпоративная LTSC на более недавнюю версию Windows 10 Корпоративная с поддержкой параметра обслуживания SAC без потери пользовательских данных при выполнении установки обновления. Вы также можете выполнить установку обновления на нескольких устройствах, используя шаблоны последовательности задач обновления, доступные в microsoft Deployment набор средств (MDT) и Microsoft Endpoint Configuration Manager. Дополнительные сведения см. в [сайте Upgrade Surface devices to Windows 10 microsoft Deployment набор средств](upgrade-surface-devices-to-windows-10-with-mdt.md).

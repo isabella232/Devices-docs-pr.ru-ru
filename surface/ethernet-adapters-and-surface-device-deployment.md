@@ -14,12 +14,12 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: 0eb0eb1e1d73852a2131c5aa5d6a7731ce78d54f
-ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
+ms.openlocfilehash: 39c51b311a1c1329d0f1f54b787e975d42be0737
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "11721259"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338222"
 ---
 # <a name="ethernet-adapters-and-surface-deployment"></a>Адаптеры Ethernet и развертывание на устройствах Surface
 
@@ -39,6 +39,7 @@ ms.locfileid: "11721259"
 
 - Surface USB-C для Ethernet и адаптер USB 3.0
 - Переходник Surface USB 3.0 до Gigabit Ethernet
+- Концентратор surface USB-C
 - Surface Dock
 - Surface Dock 2
 - Док-станция Surface 3.
@@ -82,4 +83,4 @@ ms.locfileid: "11721259"
 
 При развертывании с помощью WDS MAC-адрес используется для идентификации компьютера, только если сервер развертывания настроен на взаимодействие только с известными предварительно подготовленными клиентами. Во время предварительной подготовки клиента администратор создает учетную запись компьютера в Active Directory и указывает этот компьютер по MAC-адресу или UUID системы. Во избежание конфликтов, вызываемых совместным использованием адаптеров Ethernet, необходимо использовать [UUID системы для указания предварительно подготовленных клиентов](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc742034(v=ws.11)). В качестве альтернативы можно настроить WDS на взаимодействие с неизвестными клиентами, не требующее указания по MAC-адресу или UUID системы, выбрав параметр **Отвечать всем клиентским компьютерам (известным и неизвестным)** на [вкладке **Ответ PXE**](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732360(v=ws.11)) в разделе **Свойства сервера развертывания Windows**.
 
-Вероятность возникновения конфликтов при совместном использовании адаптеров Ethernet резко возрастает при работе с Configuration Manager. Тогда как WDS использует MAC-адреса только для определения отдельных систем при соответствующих настройках, Configuration Manager использует MAC-адреса для указания конкретных систем при выполнении развертывания как на новых, так и на неизвестных компьютерах. Это может привести к неверной настройке устройств и даже к невозможности развертывания нескольких систем с использованием одного адаптера Ethernet. Существует несколько потенциальных решений для этой ситуации, которые подробно описаны в публикации How [to Use The Same External Ethernet Adapter For Multiple SCCM OSD](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-to-use-the-same-external-ethernet-adapter-for-multiple-sccm/ba-p/257374), в блоге в блоге Core Infrastructure and Security Blog.
+Вероятность возникновения конфликтов при совместном использовании адаптеров Ethernet резко возрастает при работе с Configuration Manager. Тогда как WDS использует MAC-адреса только для определения отдельных систем при соответствующих настройках, Configuration Manager использует MAC-адреса для указания конкретных систем при выполнении развертывания как на новых, так и на неизвестных компьютерах. Это может привести к неверной настройке устройств и даже к невозможности развертывания нескольких систем с использованием одного адаптера Ethernet. Существует несколько потенциальных решений для этой ситуации, которые подробно описаны в публикации How [to Use The Same External Ethernet Adapter for Multiple SCCM OSD](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-to-use-the-same-external-ethernet-adapter-for-multiple-sccm/ba-p/257374), в блоге в блоге Core Infrastructure and Security Blog.

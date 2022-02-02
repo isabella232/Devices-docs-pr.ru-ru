@@ -13,13 +13,13 @@ ms.topic: article
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 7/30/2021
-ms.openlocfilehash: 84a87342891dac2e4c0b0490458941c82fa0d018
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.date: 11/30/2021
+ms.openlocfilehash: 09982dff2e44ffc2ebe9b890588e5a62a3259cf5
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911614"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338492"
 ---
 # <a name="wake-on-lan-with-surface-dock-2"></a>Пробуждение по локальной сети с использованием Surface Dock 2
 
@@ -40,12 +40,14 @@ ms.locfileid: "11911614"
 - Surface Laptop 4 (процессоры Intel)
 - Surface Laptop 4 (процессоры AMD)
 - Surface Laptop 3 (процессоры Intel)
+- Surface Pro 8
 - Surface Pro 7+
 - Surface Pro 7
 - Surface Pro X
-- Surface Go 2
+- Surface Go (все поколения)
 - Surface Laptop Go
 - Surface Book 3
+- Surface Laptop Studio
 
 Surface Dock 2 обеспечивает поддержку WOL для устройств в следующих состояниях мощности:
 
@@ -53,7 +55,7 @@ Surface Dock 2 обеспечивает поддержку WOL для устро
 - Hibernation (состояние питания S4)
 - Отключение (состояние питания S5 "soft off")
 
-Дополнительные дополнительные информацию о состояниях власти [см.](/windows/win32/power/system-power-states)в этой информации.
+Дополнительные дополнительные информацию о состояниях власти см. в [дополнительных подробной информации о состояниях power system](/windows/win32/power/system-power-states).
 
 ## <a name="how-it-works"></a>Принцип работы
 
