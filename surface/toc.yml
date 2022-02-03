@@ -8,6 +8,8 @@
       items:
         - name: Технические обзоры
           items:
+            - name: Обзор Surface Laptop SE
+              href: surface-laptop-se-overview.md
             - name: Выбор ОС Surface
               href: surface-os-choice.md
             - name: Обзор безопасности Surface
@@ -22,6 +24,8 @@
           items:
             - name: Обзор графики Surface Laptop Studio
               href: surface-laptop-studio-graphics.md
+            - name: 'Приложения Surface Laptop Studio, протестированные/сертифицированные независимыми поставщиками программного обеспечения'
+              href: surface-laptop-studio-isv-certification.md
             - name: Технический обзор Surface Book 3
               href: surface-book-GPU-overview.md
             - name: Технический обзор Surface Book 3 Quadro RTX 3000
@@ -44,7 +48,9 @@
               href: 'https://www.microsoft.com/surface/business/surface-laptop-go'
             - name: Surface Studio 2 для бизнеса
               href: 'https://www.microsoft.com/surface/business/surface-studio-2'
-    - name: План
+            - name: Surface Laptop SE для образования
+              href: 'https://www.microsoft.com/surface/business/surface-laptop-se'
+    - name: Планирование
       items:
         - name: Совместимость устройств Surface с Windows 10 с долгосрочным обслуживанием (Long-Term Servicing Branch)
           href: surface-device-compatibility-with-windows-10-ltsc.md
@@ -56,6 +62,8 @@
           href: surface-system-sku-reference.md
     - name: Развертывание и управление
       items:
+        - name: 'Операционные системы, поддерживаемые Surface'
+          href: 'https://support.microsoft.com/surface/surface-supported-operating-systems-9559cc3c-7a38-31b6-d9fb-571435e84cd1'
         - name: Портал управления Surface
           items:
             - name: Обзор портала управления Surface
@@ -74,7 +82,7 @@
           items:
             - name: Surface Deployment Accelerator
               href: microsoft-surface-deployment-accelerator.md
-            - name: Развертывание Windows 10 на устройствах Surface с помощью MDT
+            - name: Подготовка развертывания Surface с помощью MDT
               href: deploy-windows-10-to-surface-devices-with-mdt.md
             - name: Включение клавиатуры для Surface Laptop при развертывании MDT
               href: enable-surface-keyboard-for-windows-pe-deployment.md
@@ -150,7 +158,9 @@
               href: wake-on-power-for-surface.md
         - name: Рекомендации
           items:
-            - name: Оптимизация соединения с Wi-Fi для устройств Surface
+            - name: Оптимизация видеоконференций на устройствах Surface
+              href: optimize-video-conferencing-on-surface.md
+            - name: Оптимизация подключения к Wi-Fi на устройствах Surface
               href: surface-wireless-connect.md
             - name: Рекомендуемые параметры питания для устройств Surface
               href: maintain-optimal-power-settings-on-Surface-devices.md
@@ -166,6 +176,10 @@
               href: surface-pro-arm-app-management.md
             - name: Совместимость приложений с Surface Pro X
               href: surface-pro-arm-app-performance.md
+        - name: Аксессуары
+          items:
+            - name: Заметки разработчика тактильной обратной связи для Surface Slim Pen 2
+              href: surface-slim-pen2-haptics-dev-notes.md
     - name: Устранение неполадок
       items:
         - name: Основные решения поддержки для устройств Surface
