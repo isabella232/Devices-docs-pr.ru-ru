@@ -19,7 +19,7 @@
           href: 'https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d'
         - name: Общие сведения о конфиденциальности данных и Surface Hub
           href: general-data-privacy-regulation-and-surface-hub.md
-    - name: План
+    - name: Планирование
       items:
         - name: Руководство по подготовке узла Surface Hub 2S
           href: surface-hub-2s-site-readiness-guide.md
@@ -129,6 +129,8 @@
           href: surface-hub-update-history.md
         - name: Восстановление и сброс Surface Hub 2S
           href: surface-hub-2s-recover-reset.md
+        - name: Возвращение Surface Hub в серию видео об Office
+          href: surface-hub-return-to-office-videos.md
         - name: Устранение неполадок с Miracast на Surface Hub
           href: miracast-troubleshooting.md
         - name: 'Каналы Miracast Surface Hub 149–165 не поддерживаются в Европе, Японии и Израиле'
@@ -260,6 +262,8 @@
           href: surface-hub-ssd-replacement.md
         - name: Основные решения поддержки для Surface Hub
           href: support-solutions-surface-hub.md
+        - name: Возвращение Surface Hub в серию видео об Office
+          href: surface-hub-return-to-office-videos.md
         - name: Устранение неполадок с Microsoft Surface Hub
           href: troubleshoot-surface-hub.md
         - name: 'Известные проблемы: ОС Windows 10 для совместной работы'
