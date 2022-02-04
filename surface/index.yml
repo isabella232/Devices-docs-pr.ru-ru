@@ -29,12 +29,12 @@ conceptualContent:
   items:
     - title: Общие сведения о Surface
       links:
+        - url: /surface/surface-laptop-se-overview
+          itemType: concept
+          text: Surface Laptop SE для образования
         - url: 'https://www.microsoft.com/surface/business/surface-pro-8'
           itemType: concept
           text: Surface Pro 8 для бизнеса
-        - url: 'https://www.microsoft.com/surface/business/surface-laptop-studio'
-          itemType: concept
-          text: Surface Laptop Studio для бизнеса
         - url: 'https://www.microsoft.com/surface/business'
           itemType: concept
           text: Все продукты семейства Surface
