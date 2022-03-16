@@ -1,6 +1,6 @@
 ---
 title: Как включить клавиатуру Surface Laptop во время развертывания MDT
-description: При развертывании MDT Windows 10 на ноутбуки Surface необходимо импортировать драйверы клавиатуры для использования в Windows PE.
+description: При развертывании MDT Windows 10 на ноутбуки Surface необходимо импортировать драйверы клавиатуры для использования в Windows pe.
 keywords: windows 10 surface, automate, customize, mdt
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,16 +21,18 @@ appliesto:
 - Surface Laptop 4
 - Surface Laptop Studio
 - Surface Pro 8
-ms.openlocfilehash: b65fbcb0221fe923e1e2240b8da163d868b46122
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8707d022ae5e3d3f34c59fab88328b5720896898
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338272"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449192"
 ---
 # <a name="how-to-enable-the-surface-laptop-keyboard-during-mdt-deployment"></a>Как включить клавиатуру Surface Laptop во время развертывания MDT
 
-В этой статье используется подход к развертыванию, использующий microsoft Deployment набор средств (MDT). Вы также можете применить эти сведения к другим методологиям развертывания. На большинстве типов устройств Surface клавиатура должна работать во время установки lite Touch (LTI). Однако для Surface Laptop требуются дополнительные драйверы, чтобы включить клавиатуру. Для Surface Laptop (1-го gen) и Surface Laptop 2 устройств необходимо подготовить структуру папок и профили выбора, которые позволяют указать драйверы клавиатуры для использования во время Windows предварительной среды (Windows PE) этапа LTI. Дополнительные сведения об этой структуре папок см. в Windows 10 с помощью [MDT: Шаг 5: Подготовка репозитория драйверов](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository).
+В этой статье используется подход к развертыванию, использующий microsoft Deployment набор средств (MDT). Вы также можете применить эти сведения к другим методологиям развертывания. На большинстве типов устройств Surface клавиатура должна работать во время установки lite Touch (LTI). Однако для Surface Laptop требуются дополнительные драйверы. Для устройств Surface Laptop (1-й gen) и Surface Laptop 2 необходимо подготовить структуру папок и профили выбора, которые позволяют указать драйверы клавиатуры для использования во время Windows предварительной среды (Windows PE) этапа LTI. Дополнительные сведения об этой структуре папок см. в Windows 10 с помощью [MDT: Шаг 5: Подготовка репозитория драйверов](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository).
 
 > [!TIP]
 > При использовании драйверов клавиатуры для Surface Laptop 2 и Surface Laptop 3 в одном экземпляре загрузки Windows PE может потребоваться вручную сбросить прошивку, если клавиатура или сенсорная панель не работают в Windows PE:
@@ -38,13 +40,13 @@ ms.locfileid: "12338272"
 > - Нажмите кнопку Power и удерживайте ее в течение 30 секунд. Если вы подключены к блоку питания (PSU), нажмите кнопку Power и удерживайте ее до тех пор, пока не увидите свет в конце шнура PSU, а затем отключите его.
 
 > [!IMPORTANT]
-> При развертывании Windows 10 изображения в Surface Laptop с предустановленным Windows 10 режимом S см. в 4032347 KB, проблемы при развертывании Windows на устройства Surface с предустановленными [Windows 10 в режиме S](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues).
+> При развертывании Windows 10 изображения в Surface Laptop с предустановленным Windows 10 режимом S см. в 4032347 KB, проблемы при развертывании Windows на устройства Surface с предустановленными Windows 10 [в режиме S](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues).
 
 ## <a name="add-keyboard-drivers-to-the-selection-profile"></a>Добавление драйверов клавиатуры в профиль выбора
 
-1. Скачайте последний Surface Laptop .msi из соответствующих местоположений:
+1. Скачайте последний Surface Laptop .msi файл из соответствующих местоположений:
     - [Surface Laptop (1-й gen) Драйверы и прошивка](https://www.microsoft.com/download/details.aspx?id=55489)
-    - [Surface Laptop 2 драйвера и микропрограммы](https://www.microsoft.com/download/details.aspx?id=57515)
+    - [Surface Laptop 2 драйвера и прошивки](https://www.microsoft.com/download/details.aspx?id=57515)
     - [Surface Laptop 3 с драйверами процессоров Intel и программным обеспечением](https://www.microsoft.com/download/details.aspx?id=100429)
     - [Surface Laptop 4 с драйверами процессоров Intel и программным обеспечением](https://www.microsoft.com/download/102924)
     - [Surface Laptop 4 с драйверами процессора AMD и программным обеспечением](https://www.microsoft.com/download/102923)
@@ -100,6 +102,6 @@ ms.locfileid: "12338272"
     - Для Surface Laptop 2 модель Surface Laptop **2**. Остальные драйверы Surface Laptop должны находиться в папке \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 2.
     - Для Surface Laptop 3 с процессором Intel модель Surface Laptop 3. Остальные драйверы Surface Laptop находятся в папке \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 3.
 
-    ![Изображение, отображаее Surface Laptop драйверов (1-го поколения) в Surface Laptop папке Workbench развертывания.](./images/surface-laptop-keyboard-5.png)
+    ![Изображение, на которое Surface Laptop драйверы 1-го поколения в Surface Laptop папке Workbench развертывания.](./images/surface-laptop-keyboard-5.png)
 
 После настройки MDT Deployment Share для использования нового профиля выбора и связанных параметров продолжайте процесс развертывания, как описано в развертывании изображения Windows 10 с помощью [MDT: Шаг 6: Создание](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence) последовательности задач развертывания.

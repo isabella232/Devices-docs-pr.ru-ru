@@ -15,19 +15,22 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 65cd0822f9419d2a2b678c598681891539855c9f
-ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 0308c2e721e441ebb354e6cfb8a22a5a5a26d268
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "11939530"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449452"
 ---
 # <a name="top-support-solutions-for-surface-devices"></a>Основные решения поддержки для устройств Surface
 
 > [!Note]
-> **Домашние**пользователи. Эта статья предназначена только для использования ИТ-специалистами и агентами технической поддержки и применяется только к устройствам Surface. Если вы ищете помощь с проблемой с домашним устройством, см. в справке [Surface Devices.](https://support.microsoft.com/products/surface-devices)
+> **Домашние** пользователи. Эта статья предназначена только для использования ИТ-специалистами и агентами технической поддержки и применяется только к устройствам Surface. Если вы ищете помощь с проблемой с домашним устройством, см. в справке [surface Devices](https://support.microsoft.com/products/surface-devices).
 
-Это решения службы поддержки Майкрософт для решения распространенных проблем, которые могут возникнуть при использовании устройств Surface на предприятии. Если проблема не указана здесь, обратитесь [в службу поддержки Surface.](contact-surface-support.md?tabs=online)
+Это решения службы поддержки Майкрософт для решения распространенных проблем, которые могут возникнуть при использовании устройств Surface на предприятии. Если проблема не указана здесь, обратитесь [в службу поддержки Surface](contact-surface-support.md?tabs=online).
 
 ## <a name="surface-drivers-and-firmware"></a>Драйверы surface и прошивка
 
@@ -51,7 +54,7 @@ ms.locfileid: "11939530"
 
 ## <a name="screen-cracked-or-scratched-issues"></a>Трещины или царапины на экране
 
-- [Обращение в службу поддержки Surface](contact-surface-support.md?tabs=online)
+- [Обратитесь в службу поддержки Surface](contact-surface-support.md?tabs=online)
 
 ## <a name="surface-power-or-battery-issues"></a>Проблемы с питанием поверхности или аккумулятором
 
@@ -69,6 +72,6 @@ ms.locfileid: "11939530"
 ## <a name="deployment-issues"></a>Проблемы с развертыванием
 
 - [DISK0 не найден при развертывании Windows в Surface Pro Model 1796 или Surface Laptop](https://support.microsoft.com/help/4046108)
-- [Surface Pro Модель 1796 и Surface Laptop 1TB отображают два диска](https://support.microsoft.com/help/4046105)
+- [Surface Pro Model 1796 и Surface Laptop 1TB отображают два диска](https://support.microsoft.com/help/4046105)
 - [Ссылка на SKU системы](surface-system-sku-reference.md)
 

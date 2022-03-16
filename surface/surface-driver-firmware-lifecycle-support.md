@@ -12,8 +12,16 @@ ms.date: 11/30/2021
 ms.reviewer: phorton
 manager: laurawi
 audience: itpro
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 54a6fd560b16d29e8a155bcf24efd814a6d5bf77
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449622"
 ---
-
 # <a name="surface-driver-and-firmware-lifecycle-for-windows-based-devices"></a>Жизненный цикл драйвера Surface и встроенного ПО для устройств под управлением Windows
  
 В ответ на запросы клиентов на более подробные сведения о жизненном цикле для планирования развертывания оборудования и программного обеспечения и управления им Surface предлагает дополнительные рекомендации по обновлениям драйверов и встроенного ПО.

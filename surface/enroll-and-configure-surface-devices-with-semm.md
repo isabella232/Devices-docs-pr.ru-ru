@@ -14,31 +14,34 @@ ms.audience: itpro
 ms.reviewer: hachinda
 manager: laurawi
 ms.date: 1/15/2021
-ms.openlocfilehash: 61b15bf1d7ae5f99d57fb4dcd7bd9f83d9eb4b0a
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 7626c6b5d98f65cbaa4f3ffae7649bd5dc05b56f
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12337942"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449492"
 ---
 # <a name="enroll-and-configure-surface-devices-with-semm"></a>Регистрация устройств Surface в SEMM и их настройка
 
-С помощью режима управления Enterprise Microsoft Surface можно безопасно настроить параметры Surface UEFI на устройстве Surface и управлять этими настройками на устройствах Surface в организации. Если устройство Surface управляется SEMM, это устройство считается зарегистрированным *(иногда* его называют активированным). В этой статье показано, как создать пакет конфигурации Surface UEFI, который не только будет управлять настройками Surface UEFI, но и зарегистрировать устройство Surface в SEMM.
+В режиме управления Enterprise Microsoft Surface (SEMM) можно надежно настроить параметры Surface UEFI на устройстве Surface и управлять этими настройками на устройствах Surface в организации. Если устройство Surface управляется SEMM, это устройство считается зарегистрированным *(иногда* его называют активированным). В этой статье показано, как создать пакет конфигурации Surface UEFI, который не только будет управлять настройками Surface UEFI, но и зарегистрировать устройство Surface в SEMM.
 
-Дополнительный обзор seMM на высоком уровне см. в [Enterprise Microsoft Surface.](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode)
+Дополнительный обзор SEMM на высоком уровне см. в [Enterprise Microsoft Surface.](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode)
 
-В качестве альтернативы SEMM более новые устройства Surface поддерживают удаленное управление подмножество параметров прошивки с помощью Microsoft Intune. Дополнительные сведения см. в руководстве [Intune параметров Surface UEFI](surface-manage-dfci-guide.md).
+В качестве альтернативы SEMM более новые устройства Surface поддерживают удаленное управление подмножество параметров прошивки Microsoft Intune. Дополнительные сведения см. в руководстве [Intune параметров Surface UEFI](surface-manage-dfci-guide.md).
 
 > [!NOTE]
-> SEMM поддерживается Surface Pro X только через диспетчер UEFI. Дополнительные сведения можно получить в [области развертывания, управления и обслуживания Surface Pro X](surface-pro-arm-app-management.md).
+> SEMM поддерживается на Surface Pro X только через диспетчер UEFI. Дополнительные сведения можно найти в [области развертывания, управления и обслуживания Surface Pro X](surface-pro-arm-app-management.md).
 
 #### <a name="download-and-install-microsoft-surface-uefi-configurator"></a>Загрузка и установка конфигуратора Microsoft Surface UEFI
 
 Инструментом, используемым для создания пакетов SEMM, является конфигуратор Microsoft Surface UEFI. Вы можете скачать конфигуратор Microsoft Surface UEFI со страницы [Surface Tools для ИТ](https://www.microsoft.com/download/details.aspx?id=46703) в Центре загрузки Майкрософт.
-Запустите файл конфигурации Microsoft Surface UEFI Windows (.msi) для начала установки средства. После завершения установки найдите конфигуратор Microsoft Surface UEFI в разделе Все приложения вашего меню .
+Запустите файл конфигуратора Windows Microsoft Surface .msi (.msi) для начала установки средства. После завершения установки найдите конфигуратор Microsoft Surface UEFI в разделе Все приложения вашего меню .
 
 >[!NOTE]
->Конфигурация Microsoft Surface UEFI поддерживается только на Windows 10.
+>Настраиватель Microsoft Surface UEFI поддерживается только Windows 10 и Windows 11.
 
 ## <a name="create-a-surface-uefi-configuration-package"></a>Создание пакета конфигурации Surface UEFI
 
@@ -64,7 +67,7 @@ ms.locfileid: "12337942"
 
 5. Когда вам будет предложено подтвердить пароль сертификата, введите и подтвердите пароль для файла сертификата, а затем нажмите **кнопку ОК**.
 
-6. Нажмите **кнопку Защита** паролей, чтобы добавить пароль в Surface UEFI. Этот пароль будет необходим при загрузке в UEFI. Если этот пароль не введен, будут отображаться только сведения о ******ПК, Enterprise** управлении и выходе.**** **** Этот шаг является необязательным.
+6. Нажмите **кнопку Защита** паролей, чтобы добавить пароль в Surface UEFI. Этот пароль будет необходим при загрузке в UEFI. Если этот пароль не введен, будут отображаться только сведения о ******ПК, Enterprise** управления и exit. ******** Этот шаг является необязательным.
 
 7. При запросе введите и подтвердите выбранный пароль для Surface UEFI и нажмите кнопку **ОК**. Если вы хотите очистить существующий пароль Surface UEFI, оставьте поле паролей пустым.
 
@@ -144,23 +147,23 @@ ms.locfileid: "12337942"
 
 *Рисунок 10. Проверка регистрации устройства Surface в SEMM в viewer событий*
 
-Вы также можете убедиться, что устройство зарегистрировано в SEMM в Surface UEFI — пока устройство зарегистрировано, Surface UEFI будет содержать страницу управления Enterprise (**** как показано на рисунке 11).
+Вы также можете убедиться, что устройство зачислилось в SEMM в Surface UEFI — во время регистрации устройства Surface UEFI будет содержать страницу управления **** Enterprise (как показано на рисунке 11).
 
-:::image type="content" alt-text="Страница управления surface UEFI Enterprise управления." source="images/surface-semm-enroll-fig11.png":::
+:::image type="content" alt-text="Страница управления surface UEFI Enterprise UEFI." source="images/surface-semm-enroll-fig11.png":::
 
 *Рисунок 11. Страница управления Surface UEFI Enterprise*
 
 
 ## <a name="configure-surface-uefi-settings-with-semm"></a>Настройка параметров Surface UEFI с помощью SEMM
 
-После регистрации устройства в SEMM можно запустить пакеты конфигурации Surface UEFI, подписанные с тем же сертификатом SEMM для применения новых параметров Surface UEFI. Эти параметры применяются автоматически при следующем сапоги устройства, без какого-либо взаимодействия с пользователем. Вы можете использовать решения развертывания приложений Microsoft Endpoint Configuration Manager для развертывания пакетов конфигурации Surface UEFI на устройствах Surface для изменения или управления настройками в Surface UEFI.
+После регистрации устройства в SEMM можно запустить пакеты конфигурации Surface UEFI, подписанные с тем же сертификатом SEMM для применения новых параметров Surface UEFI. Эти параметры применяются автоматически при следующем сапоги устройства, без какого-либо взаимодействия с пользователем. С помощью решений развертывания приложений Microsoft Endpoint Configuration Manager развертывание пакетов конфигурации Surface UEFI на устройствах Surface для изменения или управления настройками в Surface UEFI.
 
-Дополнительные сведения о развертывании Windows установщика (.msi) в диспетчере конфигурации см. в [Microsoft Endpoint Configuration Manager.](https://technet.microsoft.com/library/mt627959)
+Дополнительные сведения о развертывании Windows установщика (.msi) с диспетчером конфигурации см. в [Microsoft Endpoint Configuration Manager.](https://technet.microsoft.com/library/mt627959)
 
-Если у вас есть защищенный пароль Surface UEFI, пользователи без пароля, пытавшегося загрузиться в **** Surface UEFI **, будут** иметь только сведения о **** **ПК, об** управлении Enterprise и выходе.
+Если вы обеспечили Surface UEFI паролем, пользователи без **** пароля, пытавшегося загрузиться в Surface UEFI **, будут** иметь только сведения о **ПК, об** управлении **** Enterprise и выходе.
 
 Если вы не зафиксировали Surface UEFI с помощью пароля или пользователь введет пароль правильно, параметры, настроенные с ПОМОЩЬЮ SEMM, будут затемнеть (недоступны), а текст Некоторые параметры, управляемые организацией, будут отображаться в верхней части страницы, как показано на рисунке 12.
 
-:::image type="content" alt-text="Параметры с помощью SEMM, отключенного в Surface UEFI." source="images/surface-semm-enroll-fig12.png":::
+:::image type="content" alt-text="Параметры с отключением SEMM в Surface UEFI." source="images/surface-semm-enroll-fig12.png":::
 
 *Рисунок 12. Параметры, управляемые SEMM, будут отключены в Surface UEFI*

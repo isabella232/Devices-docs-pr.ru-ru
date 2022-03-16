@@ -1,5 +1,5 @@
 ---
-title: Портал управления поверхностью
+title: Портал управления Surface
 description: В этой статье описывается, как новый портал управления поверхностью предоставляет централизованное решение для самостоятельного обслуживания, управления устройствами Surface и мониторинга их масштабирования.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,16 +12,19 @@ ms.date: 11/02/2021
 ms.reviewer: hachinda
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: a131e663aadbd10be039cff777001383178f7fc1
-ms.sourcegitcommit: 16889d72b0af81dfe79267c41574c3774e81f178
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8c0f4f6c80ff7341b795839c3897dff6733414bc
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155177"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448882"
 ---
-# <a name="surface-management-portal-overview"></a>Обзор портала управления поверхностью
+# <a name="surface-management-portal-overview"></a>Обзор портала управления Surface
 
-Встроенный в Microsoft Endpoint Manager, новый портал управления поверхностью предоставляет централизованное решение для самостоятельного обслуживания, управления и мониторинга устройств Surface в масштабе.
+Встроенный Microsoft Endpoint Manager, новый портал управления поверхностью предоставляет централизованное решение для самостоятельного обслуживания, управления устройствами Surface и мониторинга в масштабе.
 
 ## <a name="introduction"></a>Введение
 
@@ -31,17 +34,17 @@ ms.locfileid: "12155177"
 
 Когда устройства Surface регистрируются для управления облаками и пользователи в первый раз включались в систему, информация с этих устройств Surface автоматически поступает на портал управления поверхностью, предоставляя вам единую области стекла для действий администратора устройств, определенных surface.
 
-См. также. [Известные проблемы ниже.](#known-issues) 
+См. также. [Известные проблемы ниже](#known-issues) . 
 
 ## <a name="get-started"></a>Начало работы
 
-Войдите в Microsoft Endpoint Manager, нажмите кнопку **Все службы,** а затем щелкните **Surface Management Portal**.
+Войдите в Microsoft Endpoint Manager, щелкните **Все службы**, а затем щелкните **Портал управления поверхностью**.
 
 :::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="Начните портал управления поверхностью":::
 
 ## <a name="monitor-surface-devices"></a>Монитор устройств Surface
 
-Выберите **Монитор,** чтобы отобразить сведения для всех устройств Surface, в том числе:
+Выберите **Монитор** , чтобы отобразить сведения для всех устройств Surface, в том числе:
 
 - Устройства не соответствует требованиям, что может означать, что пользователи не могут получить доступ к информации, требующей входа в Azure AD.
 - Устройства, которые не зарегистрированы.
@@ -71,7 +74,7 @@ ms.locfileid: "12155177"
 
 ## <a name="try-for-free"></a>Попробовать бесплатно
 
-Портал управления поверхностью доступен клиентам, которые используют Microsoft Endpoint Manager и зарегистрировали устройства Surface через Intune. Если вы не в компании Intune, установите клиента Intune сегодня, посетив [Quickstart:](/mem/intune/fundamentals/free-trial-sign-up)Попробуйте Microsoft Intune бесплатно .
+Портал управления поверхностью доступен клиентам, которые используют Microsoft Endpoint Manager и зарегистрировали устройства Surface через Intune. Если вы не в компании Intune, установите клиента Intune сегодня, посетив [Quickstart: Попробуйте Microsoft Intune бесплатно](/mem/intune/fundamentals/free-trial-sign-up).
 
 ## <a name="known-issues"></a>Известные проблемы
 
@@ -81,4 +84,4 @@ ms.locfileid: "12155177"
 
 - [Что такое microsoft Surface Management Portal?](/mem/intune/fundamentals/surface-management-portal?)
 - [Microsoft Mechanics](https://youtu.be/_MmutkqNudk)
-- [Surface ИТ Pro блога: портал управления поверхностью](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-management-portal/ba-p/1419017)
+- [Surface ИТ Pro в блоге: портал управления поверхностью](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-management-portal/ba-p/1419017)

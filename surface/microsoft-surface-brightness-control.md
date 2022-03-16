@@ -12,12 +12,15 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 660a96a8825002c6d52d067dac77894bb0c0b7a9
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 7c27bacde65ef8c0fab75b123283bf2e6699afed
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12337832"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449112"
 ---
 # <a name="surface-brightness-control"></a>Элемент управления яркостью устройств Surface
 
@@ -27,7 +30,7 @@ ms.locfileid: "12337832"
 - Уровень яркости при затемнение.
 - Максимальный уровень яркости при использовании.
 
-Скачайте управление яркостью поверхности из [Surface Tools для ИТ](https://www.microsoft.com/download/details.aspx?id=46703). Выберите ** файлSurface_Brightness_Control_v1.16.137.0.msiв ** доступном списке.
+Скачайте управление яркостью поверхности из [Surface Tools для ИТ](https://www.microsoft.com/download/details.aspx?id=46703). Выберите файл **Surface_Brightness_Control_v1.16.137.0.msi** в доступном списке.
 
 ## <a name="supported-devices"></a>Поддерживаемые устройства
 
@@ -44,14 +47,14 @@ ms.locfileid: "12337832"
 
 ## <a name="run-surface-brightness-control"></a>Управление яркостью поверхности
 
-- Установите **Surface_Brightness_Control_v1.16.137.0.msi** на целевое устройство, и surface Brightness Control начнет работать немедленно.
+- Установите **Surface_Brightness_Control_v1.16.137.0.msi** на целевое устройство, и управление яркостью поверхности начнет работать немедленно.
 
 ## <a name="configure-surface-brightness-control"></a>Настройка управления яркостью поверхности
 
 Вы можете настроить значения по умолчанию с помощью Windows реестра. Дополнительные сведения об использовании Windows реестра можно найти в [документации реестра](/windows/desktop/sysinfo/registry).
 
-1. **Запустите regedit из** командной подсказки, чтобы открыть редактор Windows реестра.
-2. Перейдите на компьютер\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Surface\Surface Brightness Control.
+1. **Запустите regedit** из командной подсказки, чтобы открыть редактор Windows реестра.
+2. Перейдите к компьютеру\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Surface\Surface Brightness Control.
 3. Настройка ключевых значений реестра, как описано в следующей таблице.
 
 > [!TIP]
@@ -71,7 +74,7 @@ FullBrightness   | По умолчанию: 100  <br>Параметр: диап�
 ### <a name="version-116137br"></a>Версия 1.16.137<br>
 
 *Дата выпуска: 22 октября 2019 г.*<br>
-Эта версия Surface Brightness Control добавляет поддержку для следующего: -Recompiled для x86, добавляя поддержку Surface Pro 7, Surface Pro X и Surface Laptop 3.
+Эта версия Surface Brightness Control добавляет поддержку для следующего: -Recompiled для x86, добавляя поддержку для Surface Pro 7, Surface Pro X и Surface Laptop 3.
 
 ### <a name="version-1122390"></a>Версия 1.12.239.0
 

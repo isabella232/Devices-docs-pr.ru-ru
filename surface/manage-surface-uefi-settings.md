@@ -13,12 +13,15 @@ ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
 ms.date: 01/18/2022
-ms.openlocfilehash: 94e39a67ef80e4e95db3441778af915d2e535bab
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 7da3a2908acc654abd86406af36eba4929bf4760
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338176"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449662"
 ---
 # <a name="manage-surface-uefi-settings"></a>Управление параметрами UEFI Surface
 
@@ -41,7 +44,7 @@ ms.locfileid: "12338176"
 
 ## <a name="support-for-cloud-based-management"></a>Поддержка облачного управления
 
-С учетом профилей интерфейса конфигурации микропрограммных программ (DFCI), встроенных в Microsoft Intune (теперь доступны для общего просмотра), управление Surface UEFI расширяет современный стек управления до уровня оборудования UEFI. DFCI поддерживает установку без касания, устраняет пароли BIOS, обеспечивает контроль параметров безопасности, включая параметры загрузки и встроенные периферийные устройства, и закладывая основу для расширенных сценариев безопасности в будущем. DFCI в настоящее время доступен для DFCI для Surface Laptop SE, Surface Laptop Studio, Surface Pro 8, Surface Go 3, Surface Laptop 4, Surface Laptop Go, Surface Book 3, Surface Laptop 3, Surface Pro 7+, Surface Pro 7 и Surface Pro X.   Дополнительные сведения см. в руководстве [Intune параметров Surface UEFI](surface-manage-dfci-guide.md).
+С учетом профилей интерфейса конфигурации микропрограммных программ (DFCI), встроенных в Microsoft Intune (теперь доступны для общего просмотра), управление Surface UEFI расширяет современный стек управления до уровня оборудования UEFI. DFCI поддерживает установку без касания, устраняет пароли BIOS, обеспечивает контроль параметров безопасности, включая параметры загрузки и встроенные периферийные устройства, и закладывая основу для расширенных сценариев безопасности в будущем. DFCI в настоящее время доступен для Surface Laptop SE, Surface Laptop Studio, Surface Pro 8, Surface Go 3, Surface Laptop 4, Surface Laptop Go, Surface Book 3, Surface Laptop 3, Surface Pro 7+, Surface Pro 7 и Surface Pro X.   Дополнительные сведения см. в руководстве [Intune параметров Surface UEFI](surface-manage-dfci-guide.md).
 
 ## <a name="open-surface-uefi-menu"></a>Меню Open Surface UEFI
 

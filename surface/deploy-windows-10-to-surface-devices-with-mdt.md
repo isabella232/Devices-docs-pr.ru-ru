@@ -14,12 +14,15 @@ ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
 ms.date: 10/12/2020
-ms.openlocfilehash: 9578893ad96d84380adfc038dd42c4791d29c7cd
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: b12704e7e0709e1a6315d0d5e5eb7a68799acfe9
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338282"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449512"
 ---
 # <a name="prepare-surface-deployment-with-microsoft-deployment-toolkit"></a>Подготовка развертывания Surface с помощью microsoft Deployment набор средств
 
@@ -35,7 +38,7 @@ ms.locfileid: "12338282"
 - Windows 10
 
 > [!NOTE]
-> MDT не поддерживается на Surface Pro X. Дополнительные сведения можно получить в [области развертывания, управления и обслуживания Surface Pro X](surface-pro-arm-app-management.md).
+> MDT не поддерживается на Surface Pro X. Дополнительные сведения можно найти в [области развертывания, управления и обслуживания Surface Pro X](surface-pro-arm-app-management.md).
 
 Для получения последних сведений об использовании MDT обратитесь к развертыванию Windows 10 [с помощью MDT](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
 

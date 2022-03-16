@@ -15,12 +15,15 @@ ms.author: greglin
 ms.topic: article
 audience: itpro
 ms.date: 10/06/2021
-ms.openlocfilehash: e97bc719fb93b0a0b74c7ca51b68cbc59efa9f4a
-ms.sourcegitcommit: fe54b2bab8b205302438426b86c0aa8269ff82ea
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: e40c967003fc6dd40725e5015c01497eb3fa141a
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "12081227"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449652"
 ---
 # <a name="microsoft-surface-data-eraser"></a>Microsoft Surface Data Eraser
 
@@ -55,23 +58,23 @@ ms.locfileid: "12081227"
 
 Установив средство создания Microsoft Surface Data Eraser, сделайте следующее, чтобы создать USB-накопитель с Microsoft Surface Data Eraser. Прежде чем приступить, убедитесь, что к компьютеру подключен накопитель стандарта USB3.0 емкостью 4ГБ или более.
 
-1. Запустите DataEraserSetup.msi файл установки, загруженный из [Центра загрузки Майкрософт.](https://www.microsoft.com/download/details.aspx?id=46703)
+1. Запустите DataEraserSetup.msi файл установки, загруженный из [Центра загрузки Майкрософт](https://www.microsoft.com/download/details.aspx?id=46703).
 
-2. Выберите **Сборку,** чтобы приступить к процессу создания USB-интерфейса Microsoft Surface Data Eraser, как показано на рисунке 1.
+2. Выберите **Сборку** , чтобы приступить к процессу создания USB-интерфейса Microsoft Surface Data Eraser, как показано на рисунке 1.
 
    :::image type="content" source="images/microsoft-surface-data-eraser/fig1-build.png" alt-text="Рисунок 1. Начало средства для стирки данных на поверхности Майкрософт":::<br>
   *Рисунок 1. Начало средства для стирки данных на поверхности Майкрософт*
 
-3. Выберите **Продолжить,** чтобы подтвердить, что у вас подключен USB-накопитель не менее 4 ГБ, как показано на рисунке 2.
+3. Выберите **Продолжить** , чтобы подтвердить, что у вас подключен USB-накопитель не менее 4 ГБ, как показано на рисунке 2.
    
    :::image type="content" source="images/microsoft-surface-data-eraser/fig2-continue.png" alt-text="Рисунок 2. Подтверждение подключения USB-накопителя не менее 4 ГБ":::<br>
    *Рисунок 2. Подтверждение подключения USB-накопителя не менее 4 ГБ*
 
-4. Выберите x64 (только для устройств **2021+)** для устройств 2021 или более новых, выберите **x64** для 2020 г. и более старые устройства или **ARM64** для Surface Pro X на странице **Выбор** архитектуры, как показано на рисунке-3. Выберите пункт **Продолжить**.
+4. Выберите **x64 (только для устройств 2021 +) для устройств 2021** или более новых, выберите **x64** для 2020 г. и более старые устройства или **ARM64** для Surface Pro X на странице **Выбор** архитектуры, как показано на рисунке-3. Выберите пункт **Продолжить**.
 
    :::image type="content" source="images/microsoft-surface-data-eraser/fig3-select.png" alt-text="Рисунок 3. Выбор архитектуры устройств":::
 
-5. Выберите usb-накопитель по вашему выбору на странице выбор большого **** пальца **USB,** как показано на рисунке 4, а затем выберите Начните процесс создания USB. Выбранный накопитель будет отформатирован, и все имеющиеся на нем данные будут потеряны.
+5. Выберите usb-накопитель по вашему выбору на странице выбор большого пальца **USB**, как показано на рисунке 4****, а затем выберите Начните процесс создания USB. Выбранный накопитель будет отформатирован, и все имеющиеся на нем данные будут потеряны.
 
    :::image type="content" source="images/microsoft-surface-data-eraser/fig4-start.png" alt-text="Рисунок 4. Выбор большого пальца USB>":::<br>
    *Рисунок 4. Выбор USB-накопителя*
@@ -79,14 +82,14 @@ ms.locfileid: "12081227"
   >[!TIP]
    >Если кнопка "Пуск" недоступна, убедитесь, что емкость накопителя составляет не менее 4ГБ.
 
-6. В процессе создания USB-накопитель будет отформатирован, и на него будут скопированы все двоичные файлы. Выбор **успеха**.
+6. В процессе создания USB-накопитель будет отформатирован, и на него будут скопированы все двоичные файлы. Выберите **Успех**.
 
-7. После появления экрана **Congratulations** накопитель можно извлечь. Теперь этот накопитель можно вставить в устройство Surface, загрузить с него устройство и стереть данные на устройстве. Выберите **Полный,** чтобы завершить процесс создания USB, как показано на рисунке 5.
+7. После появления экрана **Congratulations** накопитель можно извлечь. Теперь этот накопитель можно вставить в устройство Surface, загрузить с него устройство и стереть данные на устройстве. Выберите **Полный** , чтобы завершить процесс создания USB, как показано на рисунке 5.
 
    :::image type="content" source="images/microsoft-surface-data-eraser/fig5-complete.png" alt-text="Завершите средство для стирки данных microsoft Surface":::<br>
    *Рисунок 5. Завершение процесса создания USB-накопителя с Microsoft Surface Data Eraser*
 
-8. Выберите **X,** чтобы закрыть ластик Microsoft Surface Data.
+8. Выберите **X** , чтобы закрыть ластик Microsoft Surface Data.
 
 ## <a name="how-to-use-a-microsoft-surface-data-eraser-usb-stick"></a>Как пользоваться USB-накопителем с Microsoft Surface Data Eraser
 
@@ -107,7 +110,7 @@ ms.locfileid: "12081227"
    >[!TIP]
    >Если устройство не загружается с USB-носителя после выполнения этих шагов, возможно, следует включить параметр **Enable Alternate Boot Sequence** в UEFI Surface. Подробнее о конфигурации загрузки UEFI Surface см. в статье [Управление параметрами UEFI Surface](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
 
-3. При загрузке устройства Surface отображается текстовый **файл SoftwareLicenseTerms,** как показано на рисунке 5.
+3. При загрузке устройства Surface отображается текстовый **файл SoftwareLicenseTerms** , как показано на рисунке 5.
 
    ![Загрузка USB-накопителя Microsoft Surface Data Eraser.](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
@@ -260,4 +263,4 @@ ms.locfileid: "12081227"
 - Ноутбук Surface
 
 >[!NOTE]
->Средство создания USB-носителей Microsoft Surface Data Eraser не работает в Windows 10 S. Для того чтобы выполнить очистку ноутбука Surface Laptop под управлением Windows 10 S, необходимо сначала создать USB-носитель Microsoft Surface Data Eraser на другом компьютере с Windows 10 Pro или Windows 10 Корпоративная.
+>Средство создания USB-диска Microsoft Surface Data Eraser не может работать на Windows 10 S. Чтобы удалить Surface Laptop с Windows 10 S, сначала необходимо создать USB-накопитель Microsoft Surface Data Eraser на другом компьютере с Windows 10/11 Pro или Windows 10/11 Enterprise.

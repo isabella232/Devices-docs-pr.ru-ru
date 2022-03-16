@@ -14,12 +14,15 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 11/30/2021
-ms.openlocfilehash: 09982dff2e44ffc2ebe9b890588e5a62a3259cf5
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8f09941b555ba1b0870bd1e27fa1b85d0d72a19c
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338492"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448442"
 ---
 # <a name="wake-on-lan-with-surface-dock-2"></a>Пробуждение по локальной сети с использованием Surface Dock 2
 

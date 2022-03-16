@@ -10,12 +10,12 @@ ms.date: 01/18/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 8edc5bf1da384809e38451c9d164503bfcc10241
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.openlocfilehash: 01ee3530f7d9db9947d4be6395660170cfb30142
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911774"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448712"
 ---
 # <a name="whats-new-in-windows-10-version-1703-for-microsoft-surface-hub"></a>Новые возможности Windows 10 (версия 1703 для Microsoft Surface Hub)
 
@@ -53,15 +53,6 @@ Windows 10 версии 1703 (также называемая Creators Update) �
 ## <a name="miracast-on-your-existing-wireless-network-or-lan"></a>Использование Miracast в существующей беспроводной или локальной сети 
 
 Корпорация Майкрософт добавила возможность [отправки потока Miracast по локальной сети](miracast-over-infrastructure.md) вместо прямого беспроводного соединения. 
-    
-## <a name="cloud-recovery"></a>Восстановление в облаке
-
-После сброса устройства Surface Hub вы сможете скачать и установить заводскую сборку операционной системы из облака. [Дополнительные сведения о восстановлении в облаке.](device-reset-surface-hub.md#cloud-recovery)
-
->[!NOTE]
->Восстановление в облаке не работает, если вы используете прокси-серверы.
-    
-![Переустановка.](images/reinstall.png)
     
 ## <a name="end-session"></a>Завершить сеанс
 

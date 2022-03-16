@@ -1,5 +1,5 @@
 ---
-title: Режим Enterprise surface (Surface)
+title: Режим Enterprise Surface (Surface)
 description: Узнайте, как эта функция устройств Surface с помощью Surface UEFI помогает обеспечить безопасность и управление настройками прошивки в организации.
 keywords: uefi, настройка, прошивка, безопасность, semm
 ms.prod: w10
@@ -14,21 +14,24 @@ manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
 ms.date: 12/08/2021
-ms.openlocfilehash: 8b9a39d412efeff30a7f864d5c38b6135dca4b9b
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 4e1d9b012b79fadc7876d3cd5d8004eee4955ea8
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338102"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449202"
 ---
 # <a name="microsoft-surface-enterprise-management-mode"></a>Режим Enterprise Microsoft Surface
 
-Microsoft Surface Enterprise (SEMM) — это функция устройств Surface с интерфейсом surface Unified Extensible Firmware (UEFI). SeMM можно использовать для:
+Режим управления Enterprise Microsoft Surface (SEMM) — это функция устройств Surface с интерфейсом surface Unified Extensible Firmware (UEFI). SeMM можно использовать для:
 
 - Безопасность и управление настройками прошивки в организации.
 - Подготовка параметров UEFI и установка их на устройстве Surface.
 
-SeMM также использует сертификат для защиты конфигурации от несанкционированного изменения или удаления. Чтобы перенести Surface Hub 2S на Windows 10 Pro или Windows Enterprise, требуется SEMM.
+SeMM также использует сертификат для защиты конфигурации от несанкционированного изменения или удаления. Для переноса Surface Hub 2S в Windows 10 Pro или Windows Enterprise требуется SEMM.
 
 ## <a name="supported-devices"></a>Поддерживаемые устройства
 
@@ -101,10 +104,10 @@ SEMM доступен только на устройствах с прошивк
 
 *Рисунок 2. Защита пакета конфигурации SEMM с помощью сертификата*
 
-Дополнительные сведения о требованиях к сертификату SEMM см. в разделе [Surface Enterprise management Mode certificate requirements](#surface-enterprise-management-mode-certificate-requirements) later in this article.
+Дополнительные сведения о требованиях к сертификату SEMM см. в разделе Surface [Enterprise режиме](#surface-enterprise-management-mode-certificate-requirements) управления.
 
 >[!TIP]
->У вас есть возможность требовать пароль UEFI с SEMM. Если это так, пароль необходим для просмотра страниц **безопасности, устройств********, конфигурации** загрузки и Enterprise управления **** surface UEFI.
+>У вас есть возможность требовать пароль UEFI с SEMM. Если это так, пароль необходим для просмотра страниц **безопасности, устройств********, конфигурации** загрузки и Enterprise страниц **** управления Surface UEFI.
 
 После регистрации устройства в SEMM файл конфигурации считывается, а указанные в файле параметры применяются к UEFI. При запуске пакета конфигурации на устройстве, уже зарегистрированном в SEMM, подпись файла конфигурации проверяется на сертификат, хранимый в прошивке устройства. Если подпись не совпадает, к устройству не применяются изменения.
 
@@ -145,7 +148,7 @@ SEMM доступен только на устройствах с прошивк
 | Устройства                            | Отображает страницу Surface UEFI **Devices** . Если этот параметр не настроен, отображается страница Devices.                                                                                                                     |
 | Загрузка                               | Отображает страницу загрузки Surface **UEFI.** Если этот параметр не настроен, отображается страница Загрузка.                                                                                                                                                            |
 | DateTime                           | Отображает страницу Surface UEFI **DateTime** . Если этот параметр не настроен, отображается страница DateTime.                                                                                                                |
-| EnableOSMigration                          | Позволяет перенести Surface Hub 2 из Windows 10 для совместной работы в Windows 10 Pro или Enterprise. Если этот параметр не настроен, Surface Hub 2 устройства могут запускать только Windows 10 для совместной работы ОС. Примечание. Двойная загрузка между Windows 10 для совместной работы и Windows 10 Pro/Enterprise недоступна на Surface Hub 2.                                                                                                           |
+| EnableOSMigration                          | Позволяет перенести Surface Hub 2 из Windows 10 для совместной работы в Windows 10/11 Pro или Enterprise. Если этот параметр не настроен, Surface Hub 2 устройства могут запускать только Windows 10 для совместной работы ОС. Примечание. Двойная загрузка между Windows 10 для совместной работы и Windows 10/11 Pro/Enterprise недоступна на Surface Hub 2.                                                                                                           |
 
 >[!TIP]
 >При создании пакета конфигурации SEMM на странице **Успешно** показаны два символа, как показано на рисунке 3.
@@ -171,7 +174,7 @@ SEMM доступен только на устройствах с прошивк
 >6. В **выпадаемом** меню Show **** необходимо выбрать **** только все или свойства.
 >7. Выберите **поле Thumbprint** .
 
-Чтобы записать устройство Surface в SEMM или применить конфигурацию UEFI из пакета конфигурации, запустите файл .msi с административными привилегиями на предназначенном устройстве Surface. Вы можете использовать технологии развертывания приложений или операционной системы, например [Microsoft Endpoint Configuration Manager](/mem/configmgr) или [microsoft Deployment набор средств](/mem/configmgr/mdt). При регистрации устройства в SEMM необходимо физически присутствовать, чтобы подтвердить регистрацию на устройстве. При применении конфигурации к устройствам, которые уже зарегистрированы в SEMM, взаимодействие с пользователем не требуется.
+Чтобы записать устройство Surface в SEMM или применить конфигурацию UEFI из пакета конфигурации, запустите файл .msi с административными привилегиями на предназначенном устройстве Surface. Вы можете использовать технологии развертывания приложений или операционной системы, [например Microsoft Endpoint Configuration Manager](/mem/configmgr) или [microsoft Deployment набор средств](/mem/configmgr/mdt). При регистрации устройства в SEMM необходимо физически присутствовать, чтобы подтвердить регистрацию на устройстве. При применении конфигурации к устройствам, которые уже зарегистрированы в SEMM, взаимодействие с пользователем не требуется.
 
 Пошаговый пошаговый пошаговый процесс регистрации устройства Surface в SEMM или применения конфигурации Surface UEFI с SEMM см. в записи и настройке устройств [Surface с ПОМОЩЬЮ SEMM](enroll-and-configure-surface-devices-with-semm.md).
 
@@ -181,7 +184,7 @@ SEMM доступен только на устройствах с прошивк
 
 ### <a name="recovery-request"></a>Запрос на восстановление
 
-В некоторых сценариях может быть невозможно использовать пакет сброса Surface UEFI. (Например, если Windows становится непригодным для пользоваемых устройств Surface.) В этих сценариях можно отослать устройство Surface из SEMM через страницу **** управления Enterprise Surface UEFI (показано на рисунке 5) с помощью операции запроса на восстановление.
+В некоторых сценариях может быть невозможно использовать пакет сброса Surface UEFI. (Например, если Windows на устройстве Surface становится непригодным для пользоваемых устройств.) В этих сценариях можно отослать устройство Surface из SEMM через страницу **** управления Enterprise Surface UEFI (показано на рисунке 5) с помощью операции запроса на восстановление.
 
 > [!div class="mx-imgBorder"]
 > ![Инициировать запрос на восстановление SEMM.](images/surface-ent-mgmt-fig7-semmrecovery.png "Initiate a SEMM recovery request")
@@ -295,7 +298,7 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 Эта версия SEMM включает в себя:
 
 - Поддержка Surface Laptop 4
-- Поддержка одновременного многоуровневого варианта для Surface Pro 7
+- Поддержка одновременного многопрочитания для Surface Pro 7
 - Удаление устаревших параметров SEMM  
 - Улучшенная подпись MSI
 
@@ -320,10 +323,10 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 Эта версия SEMM включает в себя:
 
 - Возможность отключения звука в Surface Hub2S с помощью SEMM.
-- Поддержка Surface Pro X для dock 2.
+- Поддержка Surface Pro X для Dock 2.
 - Поддержка диспетчера UEFI для операций, связанных с dock 2.
 - Исправлена ошибка сброса пакета Surface Go.
-- Поддержка переноса Surface Hub 2 устройств Windows 10 для совместной работы оси на Windows 10 Pro или Enterprise.
+- Поддержка переноса Surface Hub 2 устройств с Windows 10 для совместной работы оси на Windows 10 Pro или Enterprise.
 
 ### <a name="version-2711390"></a>Версия 2.71.139.0
 
@@ -346,7 +349,7 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 
 - Поддержка Surface Pro, Surface Pro X и Surface Laptop 3 моделей 13.5 и 15" с процессором Intel.
     >[!NOTE]
-    >Surface Laptop процессор AMD 3 15 не поддерживается.
+    >Surface Laptop 3 15" процессор AMD не поддерживается.
 - Поддержка функции Wake on Power.
 
 ### <a name="version-2541390"></a>Версия 2.54.139.0

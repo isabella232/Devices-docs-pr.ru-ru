@@ -20,16 +20,19 @@ ms.topic: article
 manager: laurawi
 ms.audience: itpro
 ms.date: 12/08/2021
-ms.openlocfilehash: e8e4ddbd559fc6aea2d04e61208b911ebef3ec22
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 44508875254d2e3d004afef710b43ada2911de08
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338402"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448662"
 ---
 # <a name="wake-on-power-for-surface-devices"></a>Пробуждение при подаче питания для устройств Surface
 
-Устройства Surface могут быть отключены во время работы вне рабочего стола или в режиме спячку, чтобы сохранить время автономной работы. Чтобы повысить управляемость этих устройств, wake on Power позволяет совместимым устройствам Surface автоматически запускаться при повторном присоединении к мощности. Чтобы настроить Wake on Power, можно использовать режим управления surface Enterprise (SEMM) либо через конфигуратор Surface UEFI или UEFI Manager.
+Устройства Surface могут быть отключены во время работы вне рабочего стола или в режиме спячку, чтобы сохранить время автономной работы. Чтобы повысить управляемость этих устройств, wake on Power позволяет совместимым устройствам Surface автоматически запускаться при повторном присоединении к мощности. Чтобы настроить Wake on Power, можно использовать режим управления Enterprise Surface (SEMM) либо через конфигуратор Surface UEFI, либо с помощью диспетчера UEFI.
 
 Функция Wake on Power доступна на следующих устройствах:
 
@@ -53,7 +56,7 @@ ms.locfileid: "12338402"
 Конфигуратор Surface UEFI позволяет сохранять отдельные параметры UEFI в пакете Windows установки .msi для распространения на целевые устройства. 
 
 > [!NOTE]
-> В этой статье предполагается, что вы знаете, как использовать SEMM. Дополнительные сведения см. в [документации surface Enterprise mode (SEMM](surface-enterprise-management-mode.md)).
+> В этой статье предполагается, что вы знаете, как использовать SEMM. Дополнительные сведения см. [в документации surface Enterprise mode (SEMM](surface-enterprise-management-mode.md)).
 
 ## <a name="to-enable-wake-on-power"></a>Включить wake on Power
 
@@ -80,7 +83,7 @@ ms.locfileid: "12338402"
 
 Пакет MSI можно применить к устройствам по всей сети с помощью средств распространения программного обеспечения, таких как Microsoft Endpoint Configuration Manager. Эта процедура включает действия по установке пакета на локальном компьютере. 
 
-1.  В командной подсказке на повышенных уровнях введите полный путь .msi для запуска .msi пакета. 
+1.  При повышенной командной подсказке введите полный путь .msi для запуска .msi пакета. 
 
     ```
     C:\SEMM\wake-on-power.msi 

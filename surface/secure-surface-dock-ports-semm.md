@@ -15,12 +15,15 @@ ms.topic: article
 ms.date: 08/02/2021
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 7f9d1bd0b1d8e23432b0e855b2ec5c55d49c250c
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 3eae976b1559c59bf44a94a62eb98dd3a3687424
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338112"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448492"
 ---
 # <a name="secure-surface-dock-2-ports-with-surface-enterprise-management-mode-semm"></a>Безопасные порты surface Dock 2 с режимом Enterprise Surface (SEMM)
 
@@ -56,7 +59,7 @@ ms.locfileid: "12338112"
 
 ### <a name="install-semm-and-surface-uefi-configurator"></a>Установка конфигурации SEMM и Surface UEFI
 
-Установите SEMM,SurfaceUEFI_Configurator_v2.83.139.0.msi ** .** Это автономный установщик и содержит все необходимое для создания и распространения пакетов конфигурации для Surface Dock 2.
+Установите SEMM, ** запускаяSurfaceUEFI_Configurator_v2.83.139.0.msi.** Это автономный установщик и содержит все необходимое для создания и распространения пакетов конфигурации для Surface Dock 2.
 
 - **Скачайте настраиватель Surface UEFI из** [Surface Tools для ИТ](https://www.microsoft.com/download/details.aspx?id=46703).
 
@@ -64,9 +67,9 @@ ms.locfileid: "12338112"
 
 В этом разделе даны спецификации для создания сертификатов, необходимых для управления портами surface Dock 2.
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Что вам понадобится
 
-В этой статье предполагается, что вы либо получите сертификаты от сторонного поставщика, либо уже имеете знания в службах сертификатов PKI и знаете, как создать свой собственный.  За одним исключением следует ознакомиться с общими рекомендациями по созданию сертификатов, описанными в документации [Surface Enterprise Mode (SEMM](surface-enterprise-management-mode.md)). Сертификаты, задокументированные на этой странице, требуют 30-летний срок действия сертификата док-станции **и** 20 лет для сертификата проверки подлинности **на сайте**.
+В этой статье предполагается, что вы либо получите сертификаты от сторонного поставщика, либо уже имеете знания в службах сертификатов PKI и знаете, как создать свой собственный.  Вы должны ознакомиться с общими рекомендациями по созданию сертификатов, описанными в документации [Surface Enterprise Management Mode (SEMM),](surface-enterprise-management-mode.md) за одним исключением. Сертификаты, задокументированные на этой странице, требуют 30-летний срок действия сертификата док-станции **и** 20 лет для сертификата проверки подлинности **на сайте**.
 
 Дополнительные сведения см. [](/windows/win32/seccrypto/certificate-services-architecture) в документации по архитектуре служб сертификатов и обзоре соответствующих глав в [Windows Server 2019 Inside Out](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277) или [Windows Server 2008 PKI и certificate Security](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788), доступных в Microsoft Press.
 
@@ -112,7 +115,7 @@ ms.locfileid: "12338112"
 
    ![Выберите Surface Dock.](images/secure-surface-dock-ports-semm-2.png)
 
-1. Введите **соответствующие сертификаты**  на странице сертификата. Демонстрационные сертификаты доступны в [Surface Tools для ИТ](https://www.microsoft.com/download/details.aspx?id=46703): ** скачайте **SEMM_PowerShell.zipи обратитесь ** кCreateSurfaceDock2Certificates.ps1**. Убедитесь, **что SurfaceDock2_WmiInstanceProvider перед** запуском сценариев демонстрации.
+1. Введите **соответствующие сертификаты**  на странице сертификата. Демонстрационные сертификаты доступны в [Surface Tools для ИТ](https://www.microsoft.com/download/details.aspx?id=46703)**: скачайте **SEMM_PowerShell.zipи обратитесь ** кCreateSurfaceDock2Certificates.ps1**. Убедитесь, **что SurfaceDock2_WmiInstanceProvider перед** запуском сценариев демонстрации.
 
    ![введите соответствующие сертификаты.](images/secure-surface-dock-ports-semm-3.png)
 
@@ -125,7 +128,7 @@ ms.locfileid: "12338112"
 
    ![Выберите компоненты, которые необходимо активировать или отключить.](images/secure-surface-dock-ports-semm-4.png)
 
-   - Аутентификация пользователя относится к устройству Surface, на которое установлены соответствующие сертификаты, настроенные в пакете конфигурации .msi, который вы применили к целевым устройствам. Это относится к любому пользователю, который заверяется на устройстве.
+   - Аутентификация пользователя относится к устройству Surface, на которое установлены соответствующие сертификаты, настроенные в пакете .msi конфигурации, который применяется к целевым устройствам. Это относится к любому пользователю, который заверяется на устройстве.
    - Неавентированный пользователь ссылается на любое другое устройство.
    - Выберите **Сброс** , чтобы создать специальный пакет "Сброс", который удалит любой предыдущий пакет конфигурации, который был принят доком.
 
@@ -133,8 +136,8 @@ ms.locfileid: "12338112"
 
 ### <a name="apply-the-configuration-package-to-a-surface-dock-2"></a>Применение пакета конфигурации к surface Dock 2
 
-1. Возьмите файл .msi, созданный конфигуратором Surface UEFI, и установите его на устройство-хост Surface. Совместимые хост-устройства Surface Book 3, Surface Laptop Studio, Surface Laptop 3, Surface Laptop 4, Surface Pro 7+, и Surface Pro 7.
-1. Подключение в док-станцию Surface Dock 2. При подключении параметров политики dock UEFI применяются.
+1. Возьмите файл .msi, созданный конфигуратором Surface UEFI, и установите его на устройство-хост Surface. Совместимые хост-устройства Surface Book 3, Surface Laptop Studio, Surface Laptop 3, Surface Laptop 4, Surface Pro 7+, Surface Pro 7.
+1. Подключение док-станцию Surface Dock 2. При подключении параметров политики dock UEFI применяются.
 
 ## <a name="verify-managed-state-using-the-surface-app"></a>Проверка управляемого состояния с помощью Surface App
 
@@ -169,5 +172,5 @@ ms.locfileid: "12338112"
 
 - [Документация Enterprise режима управления surface (SEMM)](surface-enterprise-management-mode.md)
 - [Архитектура служб сертификатов](/windows/win32/seccrypto/certificate-services-architecture)
-- [Windows Server 2019 Inside Out](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)
+- [Windows Server 2019 inside Out](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)
 - [Windows 2008 PKI и безопасность сертификатов](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788)
