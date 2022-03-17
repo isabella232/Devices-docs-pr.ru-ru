@@ -109,7 +109,7 @@
           href: save-bitlocker-key-surface-hub.md
         - name: Обновление ручки со встроенным ПО Surface Hub 2S
           href: surface-hub-2s-pen-firmware.md
-        - name: Настройка параметров доступности
+        - name: Настройка параметров специальных возможностей
           href: accessibility-surface-hub.md
     - name: Защита
       items:
@@ -212,7 +212,7 @@
               href: local-management-surface-hub-settings.md
             - name: Управление паролями
               href: password-management-for-surface-hub-device-accounts.md
-            - name: Настройка параметров доступности
+            - name: Настройка параметров специальных возможностей
               href: accessibility-surface-hub.md
             - name: Изменение учетной записи устройства Surface Hub
               href: change-surface-hub-device-account.md
