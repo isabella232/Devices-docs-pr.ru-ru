@@ -15,24 +15,23 @@ ms.localizationpriority: medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 7ead08e49d3eee2d616ac9fcf06b85dd82e136dc
-ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
+ms.openlocfilehash: fa393eca697897ee620732b543ebb6889aa035d1
+ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "11474736"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "12472578"
 ---
 # <a name="applying-activesync-policies-to-device-accounts-surface-hub"></a>Применение политик ActiveSync к учетным записям устройств (Surface Hub)
 
+Surface Hub в Windows 10 для совместной работы 1703 и более ранних версий использовали ActiveSync для синхронизации почты & календаря.
 
-Surface Hubs, использующие учетные записи устройств Active Directory (в формате Hub **в домене\имя** пользователя) и локальной службы Exchange, используют ActiveSync для синхронизации почты и календаря. Это позволяет пользователям присоединяться к запланированным собраниям и начинать их с устройства Surface Hub, а также отправлять доски по почте.
+Ниже Surface Hub требования к политикам ActiveSync в вашей организации.
 
-Чтобы эти компоненты можно было использовать, политики ActiveSync вашей организации необходимо настроить следующим образом.
-
--   Не должно быть глобальных политик, которые блокируют синхронизацию почтового ящика ресурса, используемого учетной записью устройства Surface Hub. Если существует такая политика блокировки, необходимо добавить Surface Hub в качестве разрешенного устройства.
+-   Не может быть глобальных политик, которые блокируют синхронизацию почтового ящика ресурсов, используемого учетной записью Surface Hub устройства. При наличии такой политики блокировки необходимо добавить Surface Hub как разрешенное устройство.
 -   Необходимо настроить политику почтового ящика мобильного устройства, параметру **PasswordEnabled** которой присвоено значение False. Другие параметры политики почтового ящика мобильного устройства не совместимы с Surface Hub.
 
-## <a name="allowing-the-deviceid"></a>Разрешение deviceID
+## <a name="allowing-the-deviceid"></a>Разрешение идентификатора устройства
 
 В организации может использоваться глобальная политика, которая блокирует синхронизацию учетных записей, подготовленных на устройствах Surface Hub. Сведения о настройке этого свойства см. в разделе [Разрешение идентификаторов устройств для ActiveSync](appendix-a-powershell-scripts-for-surface-hub.md#allowing-device-ids-for-activesync).
 
