@@ -15,12 +15,12 @@ audience: itpro
 appliesto:
 - Windows 10
 - Windows 11
-ms.openlocfilehash: 54a6fd560b16d29e8a155bcf24efd814a6d5bf77
-ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
+ms.openlocfilehash: 37cea81c7d23b2b00e5d7d1136963fae55d9c193
+ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "12449622"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "12472438"
 ---
 # <a name="surface-driver-and-firmware-lifecycle-for-windows-based-devices"></a>Жизненный цикл драйвера Surface и встроенного ПО для устройств под управлением Windows
  
@@ -77,6 +77,7 @@ ms.locfileid: "12449622"
 | Surface Pro 8                      | 5 октября 2021 г.   |5 октября 2025 г.|
 | Surface Laptop Studio              | 5 октября 2021 г.   |5 октября 2025 г.|
 | Surface Go 3                       | 5 октября 2021 г.   |5 октября 2025 г.|
+| Surface Laptop SE                  | 11января 2022г.  |11 января 2026 г.|
 
  **1.** *Определяет устройства с объявленной ранее датой окончания поддержки встроенного ПО и драйверов.*
 

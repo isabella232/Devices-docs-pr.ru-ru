@@ -14,12 +14,12 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: bb947ae85d725a140ea2cc789575c0d40436ba97
-  ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
+  ms.openlocfilehash: a373029bf07e6f36486342d2e27209365ff7c1b3
+  ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
   ms.translationtype: HT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/16/2022
-  ms.locfileid: "12449212"
+  ms.lasthandoff: 04/06/2022
+  ms.locfileid: "12472568"
 landingContent:
 - title: Что нового
   linkLists:
@@ -27,6 +27,10 @@ landingContent:
     links:
     - text: Новейшие выпущенные обновления ОС Surface Hub
       url: surface-hub-2020-update-whats-new.md
+    - text: Установка прогрессивных веб-приложений на Surface Hub
+      url: install-pwa-surface-hub.md
+    - text: Установка камеры Surface Hub 2 Smart Camera и управление ею
+      url: surface-hub-2-smart-camera.md
     - text: Возвращение Surface Hub в серию видео об Office
       url: surface-hub-return-to-office-videos.md
     - text: Комнаты Microsoft Teams на Surface Hub
