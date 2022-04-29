@@ -17,12 +17,12 @@ ms.date: 12/08/2021
 appliesto:
 - Windows 10
 - Windows 11
-ms.openlocfilehash: 9e08b3dd804b8b4ac6e2ee4dd4041ed2e684d5d7
-ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
+ms.openlocfilehash: 5e54a56a49e16ce23d760337f5ae8a1d76ab7728
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "12472648"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497752"
 ---
 # <a name="microsoft-surface-enterprise-management-mode-semm"></a>Режим управления Enterprise Microsoft Surface (SEMM)
 
@@ -264,7 +264,7 @@ $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\Te
 4. Убедитесь, что ваши разрешения настроены для запуска скриптов. По умолчанию скрипты блокируются, если вы не измените политику выполнения. Дополнительные сведения см. [в разделе "Политики выполнения"](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 5. В командной строке введите полный путь к скрипту и нажмите клавишу **ВВОД**. Скрипт создает демонстрационный сертификат с именем TempOwner.pfx.
 
-Кроме того, вы можете создать собственный самозаверяющий сертификат с помощью PowerShell. Дополнительные сведения см. в [разделе New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate).
+Кроме того, вы можете создать собственный самозаверяющий сертификат с помощью PowerShell. Дополнительные сведения см. в [разделе New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2022-ps&preserve-view=true).
 
 >[!NOTE]
 >Для организаций, использующих автономный корень в инфраструктуре PKI, microsoft Surface UEFI Configurator необходимо запустить в среде, подключенной к корневому ЦС, для проверки подлинности сертификата SEMM. Пакеты, созданные Microsoft Surface UEFI Configurator, могут передаваться как файлы, поэтому их можно передавать за пределы автономной сетевой среды со съемным хранилищем, например USB-накопителем.
