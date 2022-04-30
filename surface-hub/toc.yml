@@ -65,13 +65,13 @@
           href: provisioning-packages-for-surface-hub.md
         - name: Установка прогрессивных веб-приложений на Surface Hub
           href: install-pwa-surface-hub.md
-        - name: Windows10 Pro или Корпоративная
+        - name: Windows 10/11 Pro или Enterprise
           items:
-            - name: Переход на Windows 10 Pro или Корпоративная в Surface Hub 2
+            - name: Переход на Windows 10/11 Pro или Корпоративная в Surface Hub 2
               href: surface-hub-2s-migrate-os.md
-            - name: Настройка Windows 10 Pro или Корпоративная на Surface Hub 2
+            - name: Настройка Windows 10/11 Pro или Корпоративная на Surface Hub 2
               href: surface-hub-2-post-install.md
-            - name: Основные надстройки для Windows 10 Pro и Корпоративная в Surface Hub 2
+            - name: Основные надстройки для Windows 10/11 Pro и Корпоративная в Surface Hub 2
               href: surface-hub-2-essential-add-ons.md
         - name: Microsoft Teams
           items:
